@@ -1227,7 +1227,7 @@ ACMD(do_users)
 	"UNDEFINED",
 	state, idletime, timeptr);
 
-    if (d->host && *d->host)
+    if (*d->host)
       sprintf(line + strlen(line), "[%s]\r\n", d->host);
     else
       strcat(line, "[Hostname unknown]\r\n");
@@ -1409,7 +1409,8 @@ ACMD(do_where)
 ACMD(do_levels)
 {
   char buf[MAX_STRING_LENGTH];
-  size_t i, len = 0;
+  int i;
+  size_t len = 0;
   int nlen;
 
   if (IS_NPC(ch)) {

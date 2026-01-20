@@ -191,6 +191,8 @@ int Board_write_message(int board_type, struct char_data *ch, char *arg, struct 
   time_t ct;
   char buf[MAX_INPUT_LENGTH], buf2[MAX_NAME_LENGTH + 3];
 
+  (void)board;
+
   if (GET_LEVEL(ch) < WRITE_LVL(board_type)) {
     send_to_char(ch, "You are not holy enough to write on this board.\r\n");
     return (1);
@@ -359,6 +361,8 @@ int Board_remove_msg(int board_type, struct char_data *ch, char *arg, struct obj
   char number[MAX_INPUT_LENGTH], buf[MAX_INPUT_LENGTH];
   struct descriptor_data *d;
 
+  (void)board;
+
   one_argument(arg, number);
 
   if (!*number || !is_number(number))
@@ -481,21 +485,33 @@ void Board_load_board(int board_type)
       perror("SYSERR: Error reading board");
     return;
   }
-  fread(&(num_of_msgs[board_type]), sizeof(int), 1, fl);
+  if (fread(&(num_of_msgs[board_type]), sizeof(int), 1, fl) != 1) {
+    log("SYSERR: Board file %d corrupt.  Resetting.", board_type);
+    Board_reset_board(board_type);
+    return;
+  }
   if (num_of_msgs[board_type] < 1 || num_of_msgs[board_type] > MAX_BOARD_MESSAGES) {
     log("SYSERR: Board file %d corrupt.  Resetting.", board_type);
     Board_reset_board(board_type);
     return;
   }
   for (i = 0; i < num_of_msgs[board_type]; i++) {
-    fread(&(msg_index[board_type][i]), sizeof(struct board_msginfo), 1, fl);
+    if (fread(&(msg_index[board_type][i]), sizeof(struct board_msginfo), 1, fl) != 1) {
+      log("SYSERR: Board file %d corrupt.  Resetting.", board_type);
+      Board_reset_board(board_type);
+      return;
+    }
     if ((len1 = msg_index[board_type][i].heading_len) <= 0) {
       log("SYSERR: Board file %d corrupt!  Resetting.", board_type);
       Board_reset_board(board_type);
       return;
     }
     CREATE(tmp1, char, len1);
-    fread(tmp1, sizeof(char), len1, fl);
+    if (fread(tmp1, sizeof(char), len1, fl) != (size_t)len1) {
+      log("SYSERR: Board file %d corrupt!  Resetting.", board_type);
+      Board_reset_board(board_type);
+      return;
+    }
     MSG_HEADING(board_type, i) = tmp1;
 
     if ((MSG_SLOTNUM(board_type, i) = find_slot()) == -1) {
@@ -505,7 +521,11 @@ void Board_load_board(int board_type)
     }
     if ((len2 = msg_index[board_type][i].message_len) > 0) {
       CREATE(tmp2, char, len2);
-      fread(tmp2, sizeof(char), len2, fl);
+      if (fread(tmp2, sizeof(char), len2, fl) != (size_t)len2) {
+	log("SYSERR: Board file %d corrupt!  Resetting.", board_type);
+	Board_reset_board(board_type);
+	return;
+      }
       msg_storage[MSG_SLOTNUM(board_type, i)] = tmp2;
     } else
       msg_storage[MSG_SLOTNUM(board_type, i)] = NULL;

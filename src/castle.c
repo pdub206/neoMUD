@@ -352,6 +352,8 @@ int do_npc_rescue(struct char_data *ch_hero, struct char_data *ch_victim)
 int block_way(struct char_data *ch, int cmd, char *arg, room_vnum iIn_room,
 	          int iProhibited_direction)
 {
+  (void)arg;
+
   if (cmd != ++iProhibited_direction)
     return (FALSE);
 
@@ -452,9 +454,9 @@ SPECIAL(king_welmar)
     "$n proclaims 'principe dignos'."
   };
 
-  const char bedroom_path[] = "s33004o1c1S.";
-  const char throne_path[] = "W3o3cG52211rg.";
-  const char monolog_path[] = "ABCDPPPP.";
+  static const char bedroom_path[] = "s33004o1c1S.";
+  static const char throne_path[] = "W3o3cG52211rg.";
+  static const char monolog_path[] = "ABCDPPPP.";
 
   static const char *path;
   static int path_index;

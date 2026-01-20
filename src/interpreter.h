@@ -9,7 +9,7 @@
 ************************************************************************ */
 
 #define ACMD(name)  \
-   void name(struct char_data *ch, char *argument, int cmd, int subcmd)
+   void name(struct char_data *ch, char *argument __attribute__((unused)), int cmd __attribute__((unused)), int subcmd __attribute__((unused)))
 
 ACMD(do_move);
 

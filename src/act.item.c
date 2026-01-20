@@ -758,6 +758,7 @@ void name_from_drinkcon(struct obj_data *obj)
   char *new_name, *cur_name, *next;
   const char *liqname;
   int liqlen, cpylen;
+  size_t new_size;
 
   if (!obj || (GET_OBJ_TYPE(obj) != ITEM_DRINKCON && GET_OBJ_TYPE(obj) != ITEM_FOUNTAIN))
     return;
@@ -769,7 +770,8 @@ void name_from_drinkcon(struct obj_data *obj)
   }
 
   liqlen = strlen(liqname);
-  CREATE(new_name, char, strlen(obj->name) - strlen(liqname)); /* +1 for NUL, -1 for space */
+  new_size = strlen(obj->name) - strlen(liqname); /* +1 for NUL, -1 for space */
+  CREATE(new_name, char, new_size);
 
   for (cur_name = obj->name; cur_name; cur_name = next) {
     if (*cur_name == ' ')
@@ -783,9 +785,23 @@ void name_from_drinkcon(struct obj_data *obj)
     if (!strn_cmp(cur_name, liqname, liqlen))
       continue;
 
-    if (*new_name)
-      strcat(new_name, " ");	/* strcat: OK (size precalculated) */
-    strncat(new_name, cur_name, cpylen);	/* strncat: OK (size precalculated) */
+    if (*new_name) {
+      size_t new_len = strlen(new_name);
+      if (new_len + 1 < new_size) {
+	new_name[new_len++] = ' ';
+	new_name[new_len] = '\0';
+      }
+    }
+    if (cpylen > 0) {
+      size_t new_len = strlen(new_name);
+      size_t to_copy = cpylen;
+      if (new_len < new_size - 1) {
+	if (to_copy > new_size - 1 - new_len)
+	  to_copy = new_size - 1 - new_len;
+	memcpy(new_name + new_len, cur_name, to_copy);
+	new_name[new_len + to_copy] = '\0';
+      }
+    }
   }
 
   if (GET_OBJ_RNUM(obj) == NOTHING || obj->name != obj_proto[GET_OBJ_RNUM(obj)].name)

@@ -240,7 +240,8 @@ void run_autowiz(void)
     /* Abusing signed -> unsigned conversion to avoid '-1' check. */
     if (res < sizeof(buf)) {
       mudlog(CMP, LVL_IMMORT, FALSE, "Initiating autowiz.");
-      system(buf);
+      if (system(buf) < 0)
+	log("SYSERR: autowiz command failed.");
       reboot_wizlists();
     } else
       log("Cannot run autowiz: command-line doesn't fit in buffer.");

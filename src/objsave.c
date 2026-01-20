@@ -101,6 +101,10 @@ int Obj_to_store(struct obj_data *obj, FILE *fl, int location)
   int j;
   struct obj_file_elem object;
 
+#if !USE_AUTOEQ
+  (void)location;
+#endif
+
   object.item_number = GET_OBJ_VNUM(obj);
 #if USE_AUTOEQ
   object.location = location;
@@ -383,7 +387,12 @@ void Crash_listrent(struct char_data *ch, char *name)
     break;
   }
   while (!feof(fl)) {
-    fread(&object, sizeof(struct obj_file_elem), 1, fl);
+    if (fread(&object, sizeof(struct obj_file_elem), 1, fl) != 1) {
+      if (feof(fl))
+        break;
+      fclose(fl);
+      return;
+    }
     if (ferror(fl)) {
       fclose(fl);
       return;
@@ -409,6 +418,8 @@ void Crash_listrent(struct char_data *ch, char *name)
 
 int Crash_write_rentcode(struct char_data *ch, FILE *fl, struct rent_info *rent)
 {
+  (void)ch;
+
   if (fwrite(rent, sizeof(struct rent_info), 1, fl) < 1) {
     perror("SYSERR: writing rent code");
     return (0);
@@ -452,9 +463,12 @@ int Crash_load(struct char_data *ch)
     mudlog(NRM, MAX(LVL_IMMORT, GET_INVIS_LEV(ch)), TRUE, "%s entering game with no equipment.", GET_NAME(ch));
     return (1);
   }
-  if (!feof(fl))
-    fread(&rent, sizeof(struct rent_info), 1, fl);
-  else {
+  if (!feof(fl)) {
+    if (fread(&rent, sizeof(struct rent_info), 1, fl) != 1) {
+      fclose(fl);
+      return (1);
+    }
+  } else {
     log("SYSERR: Crash_load: %s's rent file was empty!", GET_NAME(ch));
     return (1);
   }
@@ -494,7 +508,13 @@ int Crash_load(struct char_data *ch)
   }
 
   while (!feof(fl)) {
-    fread(&object, sizeof(struct obj_file_elem), 1, fl);
+    if (fread(&object, sizeof(struct obj_file_elem), 1, fl) != 1) {
+      if (feof(fl))
+        break;
+      perror("SYSERR: Reading crash file: Crash_load");
+      fclose(fl);
+      return (1);
+    }
     if (ferror(fl)) {
       perror("SYSERR: Reading crash file: Crash_load");
       fclose(fl);
@@ -1065,6 +1085,8 @@ int gen_receptionist(struct char_data *ch, struct char_data *recep,
   int cost;
   const char *action_table[] = { "smile", "dance", "sigh", "blush", "burp",
 	  "cough", "fart", "twiddle", "yawn" };
+
+  (void)arg;
 
   if (!cmd && !rand_number(0, 5)) {
     do_action(recep, NULL, find_command(action_table[rand_number(0, 8)]), 0);

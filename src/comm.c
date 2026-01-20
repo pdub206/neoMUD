@@ -2063,12 +2063,14 @@ void nonblock(socket_t s)
 
 RETSIGTYPE reread_wizlists(int sig)
 {
+  (void)sig;
   reread_wizlist = TRUE;
 }
 
 
 RETSIGTYPE unrestrict_game(int sig)
 {
+  (void)sig;
   emergency_unban = TRUE;
 }
 
@@ -2077,6 +2079,7 @@ RETSIGTYPE unrestrict_game(int sig)
 /* clean up our zombie kids to avoid defunct processes */
 RETSIGTYPE reap(int sig)
 {
+  (void)sig;
   while (waitpid(-1, NULL, WNOHANG) > 0);
 
   my_signal(SIGCHLD, reap);
@@ -2085,6 +2088,7 @@ RETSIGTYPE reap(int sig)
 /* Dying anyway... */
 RETSIGTYPE checkpointing(int sig)
 {
+  (void)sig;
   if (!tics) {
     log("SYSERR: CHECKPOINT shutdown: tics not updated. (Infinite loop suspected)");
     abort();
@@ -2096,6 +2100,7 @@ RETSIGTYPE checkpointing(int sig)
 /* Dying anyway... */
 RETSIGTYPE hupsig(int sig)
 {
+  (void)sig;
   log("SYSERR: Received SIGHUP, SIGINT, or SIGTERM.  Shutting down...");
   exit(1);			/* perhaps something more elegant should
 				 * substituted */
@@ -2437,6 +2442,8 @@ void act(const char *str, int hide_invisible, struct char_data *ch,
 void setup_log(const char *filename, int fd)
 {
   FILE *s_fp;
+
+  (void)fd;
 
 #if defined(__MWERKS__) || defined(__GNUC__)
   s_fp = stderr;

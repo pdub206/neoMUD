@@ -204,7 +204,12 @@ void read_from_file(void *buf, int size, long filepos)
   }
 
   fseek(mail_file, filepos, SEEK_SET);
-  fread(buf, size, 1, mail_file);
+  if (fread(buf, size, 1, mail_file) != 1) {
+    log("SYSERR: Mail system -- fatal error #3!!! (read failed at %ld)", filepos);
+    no_mail = TRUE;
+    fclose(mail_file);
+    return;
+  }
   fclose(mail_file);
   return;
 }
@@ -530,6 +535,8 @@ void postmaster_send_mail(struct char_data *ch, struct char_data *mailman,
   long recipient;
   char buf[MAX_INPUT_LENGTH], **mailwrite;
 
+  (void)cmd;
+
   if (GET_LEVEL(ch) < MIN_MAIL_LEVEL) {
     snprintf(buf, sizeof(buf), "$n tells you, 'Sorry, you have to be level %d to send mail!'", MIN_MAIL_LEVEL);
     act(buf, FALSE, mailman, 0, ch, TO_VICT);
@@ -572,6 +579,9 @@ void postmaster_send_mail(struct char_data *ch, struct char_data *mailman,
 void postmaster_check_mail(struct char_data *ch, struct char_data *mailman,
 			  int cmd, char *arg)
 {
+  (void)cmd;
+  (void)arg;
+
   if (has_mail(GET_IDNUM(ch)))
     act("$n tells you, 'You have mail waiting.'", FALSE, mailman, 0, ch, TO_VICT);
   else
@@ -584,6 +594,9 @@ void postmaster_receive_mail(struct char_data *ch, struct char_data *mailman,
 {
   char buf[256];
   struct obj_data *obj;
+
+  (void)cmd;
+  (void)arg;
 
   if (!has_mail(GET_IDNUM(ch))) {
     snprintf(buf, sizeof(buf), "$n tells you, 'Sorry, you don't have any mail waiting.'");

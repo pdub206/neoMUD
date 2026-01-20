@@ -55,7 +55,7 @@
 #endif
 
 #define SPECIAL(name) \
-   int (name)(struct char_data *ch, void *me, int cmd, char *argument)
+   int (name)(struct char_data *ch, void *me __attribute__((unused)), int cmd, char *argument __attribute__((unused)))
 
 
 /* room-related defines *************************************************/

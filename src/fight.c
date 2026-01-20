@@ -155,12 +155,18 @@ void load_messages(void)
     fight_messages[i].msg = NULL;
   }
 
-  fgets(chk, 128, fl);
+  if (!fgets(chk, 128, fl)) {
+    log("SYSERR: Error reading combat message file %s: %s", MESS_FILE, strerror(errno));
+    fclose(fl);
+    exit(1);
+  }
   while (!feof(fl) && (*chk == '\n' || *chk == '*'))
-    fgets(chk, 128, fl);
+    if (!fgets(chk, 128, fl))
+      break;
 
   while (*chk == 'M') {
-    fgets(chk, 128, fl);
+    if (!fgets(chk, 128, fl))
+      break;
     sscanf(chk, " %d\n", &type);
     for (i = 0; (i < MAX_MESSAGES) && (fight_messages[i].a_type != type) &&
 	 (fight_messages[i].a_type); i++);
@@ -186,9 +192,11 @@ void load_messages(void)
     messages->god_msg.attacker_msg = fread_action(fl, i);
     messages->god_msg.victim_msg = fread_action(fl, i);
     messages->god_msg.room_msg = fread_action(fl, i);
-    fgets(chk, 128, fl);
+    if (!fgets(chk, 128, fl))
+      break;
     while (!feof(fl) && (*chk == '\n' || *chk == '*'))
-      fgets(chk, 128, fl);
+      if (!fgets(chk, 128, fl))
+	break;
   }
 
   fclose(fl);
@@ -848,6 +856,8 @@ int damage(struct char_data *ch, struct char_data *victim, int dam, int attackty
 int compute_thaco(struct char_data *ch, struct char_data *victim)
 {
   int calc_thaco;
+
+  (void)victim;
 
   if (!IS_NPC(ch))
     calc_thaco = thaco(GET_CLASS(ch), GET_LEVEL(ch));

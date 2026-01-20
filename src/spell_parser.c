@@ -97,8 +97,6 @@ void say_spell(struct char_data *ch, int spellnum, struct char_data *tch,
 	            struct obj_data *tobj)
 {
   char lbuf[256], buf[256], buf1[256], buf2[256];	/* FIXME */
-  const char *format;
-
   struct char_data *i;
   int j, ofs = 0;
 
@@ -121,18 +119,21 @@ void say_spell(struct char_data *ch, int spellnum, struct char_data *tch,
   }
 
   if (tch != NULL && IN_ROOM(tch) == IN_ROOM(ch)) {
-    if (tch == ch)
-      format = "$n closes $s eyes and utters the words, '%s'.";
-    else
-      format = "$n stares at $N and utters the words, '%s'.";
+    if (tch == ch) {
+      snprintf(buf1, sizeof(buf1), "$n closes $s eyes and utters the words, '%s'.", skill_name(spellnum));
+      snprintf(buf2, sizeof(buf2), "$n closes $s eyes and utters the words, '%s'.", buf);
+    } else {
+      snprintf(buf1, sizeof(buf1), "$n stares at $N and utters the words, '%s'.", skill_name(spellnum));
+      snprintf(buf2, sizeof(buf2), "$n stares at $N and utters the words, '%s'.", buf);
+    }
   } else if (tobj != NULL &&
-	     ((IN_ROOM(tobj) == IN_ROOM(ch)) || (tobj->carried_by == ch)))
-    format = "$n stares at $p and utters the words, '%s'.";
-  else
-    format = "$n utters the words, '%s'.";
-
-  snprintf(buf1, sizeof(buf1), format, skill_name(spellnum));
-  snprintf(buf2, sizeof(buf2), format, buf);
+	     ((IN_ROOM(tobj) == IN_ROOM(ch)) || (tobj->carried_by == ch))) {
+    snprintf(buf1, sizeof(buf1), "$n stares at $p and utters the words, '%s'.", skill_name(spellnum));
+    snprintf(buf2, sizeof(buf2), "$n stares at $p and utters the words, '%s'.", buf);
+  } else {
+    snprintf(buf1, sizeof(buf1), "$n utters the words, '%s'.", skill_name(spellnum));
+    snprintf(buf2, sizeof(buf2), "$n utters the words, '%s'.", buf);
+  }
 
   for (i = world[IN_ROOM(ch)].people; i; i = i->next_in_room) {
     if (i == ch || i == tch || !i->desc || !AWAKE(i))
@@ -1006,4 +1007,3 @@ void mag_assign_spells(void)
   skillo(SKILL_STEAL, "steal");
   skillo(SKILL_TRACK, "track");
 }
-

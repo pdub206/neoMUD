@@ -71,6 +71,9 @@ int length[] =
  */
 void smash_tilde(char *str)
 {
+#if 1
+  (void)str;
+#endif
 #if 0
   /*
    * Erase any ~'s inserted by people in the editor.  This prevents anyone

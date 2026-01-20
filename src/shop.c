@@ -82,6 +82,7 @@ int add_to_list(struct shop_buy_data *list, int type, int *len, int *val);
 int end_read_list(struct shop_buy_data *list, int len, int error);
 void read_line(FILE *shop_f, const char *string, void *data);
 void destroy_shops(void);
+static void shop_format(char *out, size_t out_size, const char *fmt, const char *name, int num);
 
 
 /* config arrays */
@@ -457,7 +458,7 @@ struct obj_data *get_purchase_obj(struct char_data *ch, char *arg,
       if (msg) {
         char buf[MAX_INPUT_LENGTH];
 
-	snprintf(buf, sizeof(buf), shop_index[shop_nr].no_such_item1, GET_NAME(ch));
+	shop_format(buf, sizeof(buf), shop_index[shop_nr].no_such_item1, GET_NAME(ch), 0);
 	do_tell(keeper, buf, cmd_tell, 0);
       }
       return (NULL);
@@ -547,7 +548,7 @@ void shopping_buy(char *arg, struct char_data *ch, struct char_data *keeper, int
   if (buy_price(obj, shop_nr, keeper, ch) > GET_GOLD(ch) && !IS_GOD(ch)) {
     char actbuf[MAX_INPUT_LENGTH];
 
-    snprintf(actbuf, sizeof(actbuf), shop_index[shop_nr].missing_cash2, GET_NAME(ch));
+    shop_format(actbuf, sizeof(actbuf), shop_index[shop_nr].missing_cash2, GET_NAME(ch), 0);
     do_tell(keeper, actbuf, cmd_tell, 0);
 
     switch (SHOP_BROKE_TEMPER(shop_nr)) {
@@ -615,10 +616,10 @@ void shopping_buy(char *arg, struct char_data *ch, struct char_data *keeper, int
 
   strlcpy(tempstr, times_message(ch->carrying, 0, bought), sizeof(tempstr));
 
-  snprintf(tempbuf, sizeof(tempbuf), "$n buys %s.", tempstr);
+  snprintf(tempbuf, sizeof(tempbuf), "$n buys %.*s.", (int)sizeof(tempbuf) - 10, tempstr);
   act(tempbuf, FALSE, ch, obj, 0, TO_ROOM);
 
-  snprintf(tempbuf, sizeof(tempbuf), shop_index[shop_nr].message_buy, GET_NAME(ch), goldamt);
+  shop_format(tempbuf, sizeof(tempbuf), shop_index[shop_nr].message_buy, GET_NAME(ch), goldamt);
   do_tell(keeper, tempbuf, cmd_tell, 0);
 
   send_to_char(ch, "You now have %s.\r\n", tempstr);
@@ -641,7 +642,7 @@ struct obj_data *get_selling_obj(struct char_data *ch, char *name, struct char_d
     if (msg) {
       char tbuf[MAX_INPUT_LENGTH];
 
-      snprintf(tbuf, sizeof(tbuf), shop_index[shop_nr].no_such_item2, GET_NAME(ch));
+      shop_format(tbuf, sizeof(tbuf), shop_index[shop_nr].no_such_item2, GET_NAME(ch), 0);
       do_tell(keeper, tbuf, cmd_tell, 0);
     }
     return (NULL);
@@ -657,7 +658,7 @@ struct obj_data *get_selling_obj(struct char_data *ch, char *name, struct char_d
     snprintf(buf, sizeof(buf), "%s You've got to be kidding, that thing is worthless!", GET_NAME(ch));
     break;
   case OBJECT_NOTOK:
-    snprintf(buf, sizeof(buf), shop_index[shop_nr].do_not_buy, GET_NAME(ch));
+    shop_format(buf, sizeof(buf), shop_index[shop_nr].do_not_buy, GET_NAME(ch), 0);
     break;
   case OBJECT_DEAD:
     snprintf(buf, sizeof(buf), "%s %s", GET_NAME(ch), MSG_NO_USED_WANDSTAFF);
@@ -766,7 +767,7 @@ void shopping_sell(char *arg, struct char_data *ch, struct char_data *keeper, in
   if (GET_GOLD(keeper) + SHOP_BANK(shop_nr) < sell_price(obj, shop_nr, keeper, ch)) {
     char buf[MAX_INPUT_LENGTH];
 
-    snprintf(buf, sizeof(buf), shop_index[shop_nr].missing_cash1, GET_NAME(ch));
+    shop_format(buf, sizeof(buf), shop_index[shop_nr].missing_cash1, GET_NAME(ch), 0);
     do_tell(keeper, buf, cmd_tell, 0);
     return;
   }
@@ -797,10 +798,10 @@ void shopping_sell(char *arg, struct char_data *ch, struct char_data *keeper, in
   GET_GOLD(ch) += goldamt;
 
   strlcpy(tempstr, times_message(0, name, sold), sizeof(tempstr));
-  snprintf(tempbuf, sizeof(tempbuf), "$n sells %s.", tempstr);
+  snprintf(tempbuf, sizeof(tempbuf), "$n sells %.*s.", (int)sizeof(tempbuf) - 11, tempstr);
   act(tempbuf, FALSE, ch, obj, 0, TO_ROOM);
 
-  snprintf(tempbuf, sizeof(tempbuf), shop_index[shop_nr].message_sell, GET_NAME(ch), goldamt);
+  shop_format(tempbuf, sizeof(tempbuf), shop_index[shop_nr].message_sell, GET_NAME(ch), goldamt);
   do_tell(keeper, tempbuf, cmd_tell, 0);
 
   send_to_char(ch, "The shopkeeper now has %s.\r\n", tempstr);
@@ -1046,12 +1047,84 @@ int end_read_list(struct shop_buy_data *list, int len, int error)
 }
 
 
+static void shop_format(char *out, size_t out_size, const char *fmt, const char *name, int num)
+{
+  size_t left = out_size;
+
+  if (out_size == 0)
+    return;
+  *out = '\0';
+
+  while (*fmt && left > 1) {
+    if (*fmt != '%') {
+      *out++ = *fmt++;
+      *out = '\0';
+      left--;
+      continue;
+    }
+    fmt++;
+    if (*fmt == '%') {
+      *out++ = *fmt++;
+      *out = '\0';
+      left--;
+      continue;
+    }
+    if (*fmt == 's') {
+      int written = snprintf(out, left, "%s", name);
+      if (written < 0 || (size_t)written >= left)
+	return;
+      out += written;
+      left -= written;
+      fmt++;
+      continue;
+    }
+    if (*fmt == 'd') {
+      int written = snprintf(out, left, "%d", num);
+      if (written < 0 || (size_t)written >= left)
+	return;
+      out += written;
+      left -= written;
+      fmt++;
+      continue;
+    }
+    /* Skip unknown specifiers. */
+    fmt++;
+  }
+}
+
 void read_line(FILE *shop_f, const char *string, void *data)
 {
   char buf[READ_SIZE];
+  char *endptr;
 
-  if (!get_line(shop_f, buf) || !sscanf(buf, string, data)) {
+  if (!get_line(shop_f, buf)) {
     log("SYSERR: Error in shop #%d, near '%s' with '%s'", SHOP_NUM(top_shop), buf, string);
+    exit(1);
+  }
+
+  if (!strcmp(string, "%d")) {
+    long val = strtol(buf, &endptr, 10);
+    if (endptr == buf) {
+      log("SYSERR: Error in shop #%d, near '%s' with '%s'", SHOP_NUM(top_shop), buf, string);
+      exit(1);
+    }
+    *((int *)data) = (int)val;
+  } else if (!strcmp(string, "%hd")) {
+    long val = strtol(buf, &endptr, 10);
+    if (endptr == buf) {
+      log("SYSERR: Error in shop #%d, near '%s' with '%s'", SHOP_NUM(top_shop), buf, string);
+      exit(1);
+    }
+    *((sh_int *)data) = (sh_int)val;
+  } else if (!strcmp(string, "%f")) {
+    float val = (float)strtod(buf, &endptr);
+    if (endptr == buf) {
+      log("SYSERR: Error in shop #%d, near '%s' with '%s'", SHOP_NUM(top_shop), buf, string);
+      exit(1);
+    }
+    *((float *)data) = val;
+  } else {
+    log("SYSERR: Error in shop #%d, unknown format '%s'", SHOP_NUM(top_shop), string);
     exit(1);
   }
 }
@@ -1090,7 +1163,10 @@ int read_type_list(FILE *shop_f, struct shop_buy_data *list,
     return (read_list(shop_f, list, 0, max, LIST_TRADE));
 
   do {
-    fgets(buf, sizeof(buf), shop_f);
+    if (!fgets(buf, sizeof(buf), shop_f)) {
+      log("SYSERR: Error in shop #%d while reading type list.", SHOP_NUM(top_shop));
+      exit(1);
+    }
     if ((ptr = strchr(buf, ';')) != NULL)
       *ptr = '\0';
     else
@@ -1102,7 +1178,7 @@ int read_type_list(FILE *shop_f, struct shop_buy_data *list,
       for (tindex = 0; *item_types[tindex] != '\n'; tindex++)
         if (!strn_cmp(item_types[tindex], buf, strlen(item_types[tindex]))) {
           num = tindex;
-          strcpy(buf, buf + strlen(item_types[tindex]));	/* strcpy: OK (always smaller) */
+          memmove(buf, buf + strlen(item_types[tindex]), strlen(buf + strlen(item_types[tindex])) + 1);
           break;
         }
 

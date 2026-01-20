@@ -260,12 +260,15 @@ void olc_interpreter(void *targ, int mode, char *arg)
     }
 
   }
+  (void)error;
 }
 
 
 /* can_modify: determine if a particular char can modify a vnum */
 int can_modify(struct char_data *ch, int vnum)
 {
+  (void)ch;
+  (void)vnum;
   return (1);
 }
 
@@ -348,4 +351,7 @@ void olc_bitvector(int *bv, const char **names, char *arg)
 
 void olc_set_show(struct char_data *ch, int olc_mode, char *arg)
 {
+  (void)ch;
+  (void)olc_mode;
+  (void)arg;
 }

@@ -78,7 +78,8 @@ void read_aliases(struct char_data *ch)
     if (fscanf(file, "%d\n", &length) != 1)
       goto read_alias_error;
 
-    fgets(xbuf, length + 1, file);
+    if (!fgets(xbuf, length + 1, file))
+      goto read_alias_error;
     t2->alias = strdup(xbuf);
 
     /* Build the replacement. */
@@ -86,7 +87,8 @@ void read_aliases(struct char_data *ch)
        goto read_alias_error;
 
     *xbuf = ' ';		/* Doesn't need terminated, fgets() will. */
-    fgets(xbuf + 1, length + 1, file);
+    if (!fgets(xbuf + 1, length + 1, file))
+      goto read_alias_error;
     t2->replacement = strdup(xbuf); 
 
     /* Figure out the alias type. */
@@ -125,4 +127,3 @@ void delete_aliases(const char *charname)
   if (remove(filename) < 0 && errno != ENOENT)
     log("SYSERR: deleting alias file %s: %s", filename, strerror(errno));
 }
-

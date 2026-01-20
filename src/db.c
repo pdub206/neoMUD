@@ -483,7 +483,10 @@ void reset_time(void)
   if ((bgtime = fopen(TIME_FILE, "r")) == NULL)
     log("SYSERR: Can't read from '%s' time file.", TIME_FILE);
   else {
-    fscanf(bgtime, "%ld\n", &beginning_of_time);
+    if (fscanf(bgtime, "%ld\n", &beginning_of_time) != 1) {
+      log("SYSERR: Can't read from '%s' time file.", TIME_FILE);
+      beginning_of_time = 0;
+    }
     fclose(bgtime);
   }
   if (beginning_of_time == 0)
@@ -592,9 +595,12 @@ void build_player_index(void)
   }
 
   for (;;) {
-    fread(&dummy, sizeof(struct char_file_u), 1, player_fl);
-    if (feof(player_fl))
+    if (fread(&dummy, sizeof(struct char_file_u), 1, player_fl) != 1) {
+      if (feof(player_fl))
+	break;
+      log("SYSERR: Error reading playerfile.");
       break;
+    }
 
     /* new record */
     nr++;
@@ -704,20 +710,36 @@ void index_boot(int mode)
   else
     index_filename = INDEX_FILE;
 
-  snprintf(buf2, sizeof(buf2), "%s%s", prefix, index_filename);
+  if (strlen(prefix) + strlen(index_filename) >= sizeof(buf2)) {
+    log("SYSERR: Index filename too long.");
+    exit(1);
+  }
+  strcpy(buf2, prefix);
+  strcat(buf2, index_filename);
   if (!(db_index = fopen(buf2, "r"))) {
     log("SYSERR: opening index file '%s': %s", buf2, strerror(errno));
     exit(1);
   }
 
   /* first, count the number of records in the file so we can malloc */
-  fscanf(db_index, "%s\n", buf1);
+  if (fscanf(db_index, "%s\n", buf1) != 1) {
+    log("SYSERR: format error in index file '%s'.", buf2);
+    exit(1);
+  }
   while (*buf1 != '$') {
-    snprintf(buf2, sizeof(buf2), "%s%s", prefix, buf1);
+    if (strlen(prefix) + strlen(buf1) >= sizeof(buf2)) {
+      log("SYSERR: Index filename too long.");
+      exit(1);
+    }
+    strcpy(buf2, prefix);
+    strcat(buf2, buf1);
     if (!(db_file = fopen(buf2, "r"))) {
       log("SYSERR: File '%s' listed in '%s/%s': %s", buf2, prefix,
 	  index_filename, strerror(errno));
-      fscanf(db_index, "%s\n", buf1);
+      if (fscanf(db_index, "%s\n", buf1) != 1) {
+	log("SYSERR: format error in index file '%s'.", index_filename);
+	exit(1);
+      }
       continue;
     } else {
       if (mode == DB_BOOT_ZON)
@@ -729,7 +751,10 @@ void index_boot(int mode)
     }
 
     fclose(db_file);
-    fscanf(db_index, "%s\n", buf1);
+    if (fscanf(db_index, "%s\n", buf1) != 1) {
+      log("SYSERR: format error in index file '%s'.", index_filename);
+      exit(1);
+    }
   }
 
   /* Exit if 0 records, unless this is shops */
@@ -777,9 +802,17 @@ void index_boot(int mode)
   }
 
   rewind(db_index);
-  fscanf(db_index, "%s\n", buf1);
+  if (fscanf(db_index, "%s\n", buf1) != 1) {
+    log("SYSERR: format error in index file '%s'.", index_filename);
+    exit(1);
+  }
   while (*buf1 != '$') {
-    snprintf(buf2, sizeof(buf2), "%s%s", prefix, buf1);
+    if (strlen(prefix) + strlen(buf1) >= sizeof(buf2)) {
+      log("SYSERR: Index filename too long.");
+      exit(1);
+    }
+    strcpy(buf2, prefix);
+    strcat(buf2, buf1);
     if (!(db_file = fopen(buf2, "r"))) {
       log("SYSERR: %s: %s", buf2, strerror(errno));
       exit(1);
@@ -806,7 +839,10 @@ void index_boot(int mode)
     }
 
     fclose(db_file);
-    fscanf(db_index, "%s\n", buf1);
+    if (fscanf(db_index, "%s\n", buf1) != 1) {
+      log("SYSERR: format error in index file '%s'.", index_filename);
+      exit(1);
+    }
   }
   fclose(db_index);
 
@@ -2170,8 +2206,10 @@ int load_char(const char *name, struct char_file_u *char_element)
 
   if ((player_i = get_ptable_by_name(name)) >= 0) {
     fseek(player_fl, player_i * sizeof(struct char_file_u), SEEK_SET);
-    fread(char_element, sizeof(struct char_file_u), 1, player_fl);
-    return (player_i);
+    if (fread(char_element, sizeof(struct char_file_u), 1, player_fl) != 1)
+      return (-1);
+    else
+      return (player_i);
   } else
     return (-1);
 }
@@ -2350,7 +2388,7 @@ void char_to_store(struct char_data *ch, struct char_file_u *st)
 
   if (ch->player.description) {
     if (strlen(ch->player.description) >= sizeof(st->description)) {
-      log("SYSERR: char_to_store: %s's description length: %d, max: %d! "
+      log("SYSERR: char_to_store: %s's description length: %zu, max: %zu! "
          "Truncated.", GET_PC_NAME(ch), strlen(ch->player.description),
          sizeof(st->description));
       ch->player.description[sizeof(st->description) - 3] = '\0';
@@ -2380,6 +2418,7 @@ void char_to_store(struct char_data *ch, struct char_file_u *st)
 
 void save_etext(struct char_data *ch)
 {
+  (void)ch;
 /* this will be really cool soon */
 }
 
@@ -3018,10 +3057,9 @@ int check_bitvector_names(bitvector_t bits, size_t namecount, const char *whatam
 
   for (flagnum = namecount; flagnum < sizeof(bitvector_t) * 8; flagnum++)
     if ((1 << flagnum) & bits) {
-      log("SYSERR: %s has unknown %s flag, bit %d (0 through %d known).", whatami, whatbits, flagnum, namecount - 1);
+      log("SYSERR: %s has unknown %s flag, bit %d (0 through %zu known).", whatami, whatbits, flagnum, namecount - 1);
       error = TRUE;
     }
 
   return (error);
 }
-

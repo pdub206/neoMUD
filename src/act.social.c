@@ -176,8 +176,7 @@ char *fread_action(FILE *fl, int nr)
 {
   char buf[MAX_STRING_LENGTH];
 
-  fgets(buf, MAX_STRING_LENGTH, fl);
-  if (feof(fl)) {
+  if (!fgets(buf, MAX_STRING_LENGTH, fl) || feof(fl)) {
     log("SYSERR: fread_action: unexpected EOF near action #%d", nr);
     exit(1);
   }
@@ -231,7 +230,10 @@ void boot_social_messages(void)
 
   /* now read 'em */
   for (;;) {
-    fscanf(fl, " %s ", next_soc);
+    if (fscanf(fl, " %s ", next_soc) != 1) {
+      log("SYSERR: format error in social file near social #%d", curr_soc);
+      exit(1);
+    }
     if (*next_soc == '$')
       break;
     if (fscanf(fl, " %d %d \n", &hide, &min_pos) != 2) {

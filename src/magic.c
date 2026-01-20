@@ -594,6 +594,9 @@ void mag_masses(int level, struct char_data *ch, int spellnum, int savetype)
 {
   struct char_data *tch, *tch_next;
 
+  (void)level;
+  (void)savetype;
+
   for (tch = world[IN_ROOM(ch)].people; tch; tch = tch_next) {
     tch_next = tch->next_in_room;
     if (tch == ch)
@@ -617,6 +620,8 @@ void mag_areas(int level, struct char_data *ch, int spellnum, int savetype)
 {
   struct char_data *tch, *next_tch;
   const char *to_char = NULL, *to_room = NULL;
+
+  (void)savetype;
 
   if (ch == NULL)
     return;
@@ -729,6 +734,9 @@ void mag_summons(int level, struct char_data *ch, struct obj_data *obj,
   int pfail = 0, msg = 0, fmsg = 0, num = 1, handle_corpse = FALSE, i;
   mob_vnum mob_num;
 
+  (void)level;
+  (void)savetype;
+
   if (ch == NULL)
     return;
 
@@ -797,6 +805,9 @@ void mag_points(int level, struct char_data *ch, struct char_data *victim,
 {
   int healing = 0, move = 0;
 
+  (void)ch;
+  (void)savetype;
+
   if (victim == NULL)
     return;
 
@@ -825,6 +836,9 @@ void mag_unaffects(int level, struct char_data *ch, struct char_data *victim,
 {
   int spell = 0, msg_not_affected = TRUE;
   const char *to_vict = NULL, *to_room = NULL;
+
+  (void)level;
+  (void)type;
 
   if (victim == NULL)
     return;
@@ -875,6 +889,9 @@ void mag_alter_objs(int level, struct char_data *ch, struct obj_data *obj,
 		         int spellnum, int savetype)
 {
   const char *to_char = NULL, *to_room = NULL;
+
+  (void)level;
+  (void)savetype;
 
   if (obj == NULL)
     return;
@@ -946,6 +963,8 @@ void mag_creations(int level, struct char_data *ch, int spellnum)
   struct obj_data *tobj;
   obj_vnum z;
 
+  (void)level;
+
   if (ch == NULL)
     return;
   /* level = MAX(MIN(level, LVL_IMPL), 1); - Hm, not used. */
@@ -969,4 +988,3 @@ void mag_creations(int level, struct char_data *ch, int spellnum)
   act("$n creates $p.", FALSE, ch, tobj, 0, TO_ROOM);
   act("You create $p.", FALSE, ch, tobj, 0, TO_CHAR);
 }
-

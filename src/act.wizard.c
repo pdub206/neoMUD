@@ -1631,7 +1631,6 @@ ACMD(do_wiznet)
 	buf2[MAX_INPUT_LENGTH + MAX_NAME_LENGTH + 32];
   struct descriptor_data *d;
   char emote = FALSE;
-  char any = FALSE;
   int level = LVL_IMMORT;
 
   skip_spaces(&argument);
@@ -1644,6 +1643,7 @@ ACMD(do_wiznet)
   switch (*argument) {
   case '*':
     emote = TRUE;
+    /* fall through */
   case '#':
     one_argument(argument + 1, buf1);
     if (is_number(buf1)) {
@@ -1659,7 +1659,7 @@ ACMD(do_wiznet)
 
   case '@':
     send_to_char(ch, "God channel status:\r\n");
-    for (any = 0, d = descriptor_list; d; d = d->next) {
+    for (d = descriptor_list; d; d = d->next) {
       if (STATE(d) != CON_PLAYING || GET_LEVEL(d->character) < LVL_IMMORT)
         continue;
       if (!CAN_SEE(ch, d->character))
@@ -2585,4 +2585,3 @@ ACMD(do_set)
   if (is_file)
     free_char(cbuf);
 }
-
