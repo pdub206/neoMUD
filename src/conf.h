@@ -1,333 +1,288 @@
-/* src/conf.h.  Generated automatically by configure.  */
-/* src/conf.h.in.  Generated automatically from configure.in by autoheader.  */
+/* src/conf.h.  Generated from conf.h.in by configure.  */
+/* src/conf.h.in.  Generated from cnf/configure.in by autoheader.  */
 
-/* Define to empty if the keyword does not work.  */
-/* #undef const */
-
-/* Define if you don't have vprintf but do have _doprnt.  */
-/* #undef HAVE_DOPRNT */
-
-/* Define if you have <sys/wait.h> that is POSIX.1 compatible.  */
-#define HAVE_SYS_WAIT_H 1
-
-/* Define if you have the vprintf function.  */
-#define HAVE_VPRINTF 1
-
-/* Define to `int' if <sys/types.h> doesn't define.  */
-/* #undef pid_t */
-
-/* Define as the return type of signal handlers (int or void).  */
-#define RETSIGTYPE void
-
-/* Define to `unsigned' if <sys/types.h> doesn't define.  */
-/* #undef size_t */
-
-/* Define if you have the ANSI C header files.  */
-#define STDC_HEADERS 1
-
-/* Define if you can safely include both <sys/time.h> and <time.h>.  */
-#define TIME_WITH_SYS_TIME 1
-
-/* Define if we're compiling CircleMUD under any type of UNIX system.  */
-#define CIRCLE_UNIX 1
-
-/* Define if the system is capable of using crypt() to encrypt.  */
+/* Define if the system is capable of using crypt() to encrypt. */
 #define CIRCLE_CRYPT 1
 
-/* Define if we don't have proper support for the system's crypt().  */
-/* #undef HAVE_UNSAFE_CRYPT */
+/* Define if we're compiling CircleMUD under any type of UNIX system. */
+#define CIRCLE_UNIX 1
 
-/* Define is the system has struct in_addr.  */
-#define HAVE_STRUCT_IN_ADDR 1
-
-/* Define to `int' if <sys/socket.h> doesn't define.  */
-/* #undef socklen_t */
-
-/* Define to `int' if <sys/types.h> doesn't define.  */
-/* #undef ssize_t */
-
-/* Define if you have the gettimeofday function.  */
-#define HAVE_GETTIMEOFDAY 1
-
-/* Define if you have the inet_addr function.  */
-#define HAVE_INET_ADDR 1
-
-/* Define if you have the inet_aton function.  */
-#define HAVE_INET_ATON 1
-
-/* Define if you have the select function.  */
-#define HAVE_SELECT 1
-
-/* Define if you have the snprintf function.  */
-#define HAVE_SNPRINTF 1
-
-/* Define if you have the strcasecmp function.  */
-#define HAVE_STRCASECMP 1
-
-/* Define if you have the strdup function.  */
-#define HAVE_STRDUP 1
-
-/* Define if you have the strerror function.  */
-#define HAVE_STRERROR 1
-
-/* Define if you have the stricmp function.  */
-/* #undef HAVE_STRICMP */
-
-/* Define if you have the strlcpy function.  */
-#define HAVE_STRLCPY 1
-
-/* Define if you have the strncasecmp function.  */
-#define HAVE_STRNCASECMP 1
-
-/* Define if you have the strnicmp function.  */
-/* #undef HAVE_STRNICMP */
-
-/* Define if you have the strstr function.  */
-#define HAVE_STRSTR 1
-
-/* Define if you have the vsnprintf function.  */
-#define HAVE_VSNPRINTF 1
-
-/* Define if you have the <arpa/inet.h> header file.  */
+/* Define to 1 if you have the <arpa/inet.h> header file. */
 #define HAVE_ARPA_INET_H 1
 
-/* Define if you have the <arpa/telnet.h> header file.  */
+/* Define to 1 if you have the <arpa/telnet.h> header file. */
 #define HAVE_ARPA_TELNET_H 1
 
-/* Define if you have the <assert.h> header file.  */
+/* Define to 1 if you have the <assert.h> header file. */
 #define HAVE_ASSERT_H 1
 
-/* Define if you have the <crypt.h> header file.  */
+/* Define to 1 if you have the <crypt.h> header file. */
 #define HAVE_CRYPT_H 1
 
-/* Define if you have the <errno.h> header file.  */
+/* Define to 1 if you don't have `vprintf' but do have `_doprnt.' */
+/* #undef HAVE_DOPRNT */
+
+/* Define to 1 if you have the <errno.h> header file. */
 #define HAVE_ERRNO_H 1
 
-/* Define if you have the <fcntl.h> header file.  */
+/* Define to 1 if you have the <fcntl.h> header file. */
 #define HAVE_FCNTL_H 1
 
-/* Define if you have the <limits.h> header file.  */
-#define HAVE_LIMITS_H 1
+/* Define to 1 if you have the `gettimeofday' function. */
+#define HAVE_GETTIMEOFDAY 1
 
-/* Define if you have the <mcheck.h> header file.  */
-#define HAVE_MCHECK_H 1
+/* Define to 1 if you have the `inet_addr' function. */
+#define HAVE_INET_ADDR 1
 
-/* Define if you have the <memory.h> header file.  */
-#define HAVE_MEMORY_H 1
+/* Define to 1 if you have the `inet_aton' function. */
+#define HAVE_INET_ATON 1
 
-/* Define if you have the <net/errno.h> header file.  */
-/* #undef HAVE_NET_ERRNO_H */
+/* Define to 1 if you have the <inttypes.h> header file. */
+#define HAVE_INTTYPES_H 1
 
-/* Define if you have the <netdb.h> header file.  */
-#define HAVE_NETDB_H 1
-
-/* Define if you have the <netinet/in.h> header file.  */
-#define HAVE_NETINET_IN_H 1
-
-/* Define if you have the <signal.h> header file.  */
-#define HAVE_SIGNAL_H 1
-
-/* Define if you have the <string.h> header file.  */
-#define HAVE_STRING_H 1
-
-/* Define if you have the <strings.h> header file.  */
-#define HAVE_STRINGS_H 1
-
-/* Define if you have the <sys/fcntl.h> header file.  */
-#define HAVE_SYS_FCNTL_H 1
-
-/* Define if you have the <sys/resource.h> header file.  */
-#define HAVE_SYS_RESOURCE_H 1
-
-/* Define if you have the <sys/select.h> header file.  */
-#define HAVE_SYS_SELECT_H 1
-
-/* Define if you have the <sys/socket.h> header file.  */
-#define HAVE_SYS_SOCKET_H 1
-
-/* Define if you have the <sys/stat.h> header file.  */
-#define HAVE_SYS_STAT_H 1
-
-/* Define if you have the <sys/time.h> header file.  */
-#define HAVE_SYS_TIME_H 1
-
-/* Define if you have the <sys/types.h> header file.  */
-#define HAVE_SYS_TYPES_H 1
-
-/* Define if you have the <sys/uio.h> header file.  */
-#define HAVE_SYS_UIO_H 1
-
-/* Define if you have the <unistd.h> header file.  */
-#define HAVE_UNISTD_H 1
-
-/* Define if you have the malloc library (-lmalloc).  */
+/* Define to 1 if you have the `malloc' library (-lmalloc). */
 /* #undef HAVE_LIBMALLOC */
 
-/* Check for a prototype to accept. */
-/* #undef NEED_ACCEPT_PROTO */
+/* Define to 1 if you have the <limits.h> header file. */
+#define HAVE_LIMITS_H 1
 
-/* Check for a prototype to atoi. */
-/* #undef NEED_ATOI_PROTO */
+/* Define to 1 if you have the <mcheck.h> header file. */
+#define HAVE_MCHECK_H 1
 
-/* Check for a prototype to atol. */
-/* #undef NEED_ATOL_PROTO */
+/* Define to 1 if you have the <memory.h> header file. */
+#define HAVE_MEMORY_H 1
 
-/* Check for a prototype to bind. */
-/* #undef NEED_BIND_PROTO */
+/* Define to 1 if you have the <minix/config.h> header file. */
+/* #undef HAVE_MINIX_CONFIG_H */
 
-/* Check for a prototype to bzero. */
-/* #undef NEED_BZERO_PROTO */
+/* Define to 1 if you have the <netdb.h> header file. */
+#define HAVE_NETDB_H 1
 
-/* Check for a prototype to chdir. */
-/* #undef NEED_CHDIR_PROTO */
+/* Define to 1 if you have the <netinet/in.h> header file. */
+#define HAVE_NETINET_IN_H 1
 
-/* Check for a prototype to close. */
-/* #undef NEED_CLOSE_PROTO */
+/* Define to 1 if you have the <net/errno.h> header file. */
+/* #undef HAVE_NET_ERRNO_H */
 
-/* Check for a prototype to crypt. */
-/* #undef NEED_CRYPT_PROTO */
+/* Define to 1 if you have the `select' function. */
+#define HAVE_SELECT 1
 
-/* Check for a prototype to fclose. */
-/* #undef NEED_FCLOSE_PROTO */
+/* Define to 1 if you have the <signal.h> header file. */
+#define HAVE_SIGNAL_H 1
 
-/* Check for a prototype to fcntl. */
-/* #undef NEED_FCNTL_PROTO */
+/* Define to 1 if you have the `snprintf' function. */
+#define HAVE_SNPRINTF 1
 
-/* Check for a prototype to fflush. */
-/* #undef NEED_FFLUSH_PROTO */
+/* Define to 1 if you have the <stdint.h> header file. */
+#define HAVE_STDINT_H 1
 
-/* Check for a prototype to fprintf. */
-/* #undef NEED_FPRINTF_PROTO */
+/* Define to 1 if you have the <stdio.h> header file. */
+#define HAVE_STDIO_H 1
 
-/* Check for a prototype to fputc. */
-/* #undef NEED_FPUTC_PROTO */
+/* Define to 1 if you have the <stdlib.h> header file. */
+#define HAVE_STDLIB_H 1
 
-/* Check for a prototype to fputs. */
-/* #undef NEED_FPUTS_PROTO */
+/* Define to 1 if you have the `strcasecmp' function. */
+#define HAVE_STRCASECMP 1
 
-/* Check for a prototype to fread. */
-/* #undef NEED_FREAD_PROTO */
+/* Define to 1 if you have the `strdup' function. */
+#define HAVE_STRDUP 1
 
-/* Check for a prototype to fscanf. */
-/* #undef NEED_FSCANF_PROTO */
+/* Define to 1 if you have the `strerror' function. */
+#define HAVE_STRERROR 1
 
-/* Check for a prototype to fseek. */
-/* #undef NEED_FSEEK_PROTO */
+/* Define to 1 if you have the `stricmp' function. */
+/* #undef HAVE_STRICMP */
 
-/* Check for a prototype to fwrite. */
-/* #undef NEED_FWRITE_PROTO */
+/* Define to 1 if you have the <strings.h> header file. */
+#define HAVE_STRINGS_H 1
 
-/* Check for a prototype to getpeername. */
-/* #undef NEED_GETPEERNAME_PROTO */
+/* Define to 1 if you have the <string.h> header file. */
+#define HAVE_STRING_H 1
 
-/* Check for a prototype to getpid. */
-/* #undef NEED_GETPID_PROTO */
+/* Define to 1 if you have the `strlcpy' function. */
+#define HAVE_STRLCPY 1
 
-/* Check for a prototype to getrlimit. */
-/* #undef NEED_GETRLIMIT_PROTO */
+/* Define to 1 if you have the `strncasecmp' function. */
+#define HAVE_STRNCASECMP 1
 
-/* Check for a prototype to getsockname. */
-/* #undef NEED_GETSOCKNAME_PROTO */
+/* Define to 1 if you have the `strnicmp' function. */
+/* #undef HAVE_STRNICMP */
 
-/* Check for a prototype to gettimeofday. */
-/* #undef NEED_GETTIMEOFDAY_PROTO */
+/* Define to 1 if you have the `strstr' function. */
+#define HAVE_STRSTR 1
 
-/* Check for a prototype to htonl. */
-/* #undef NEED_HTONL_PROTO */
+/* Define if the system has struct in_addr. */
+#define HAVE_STRUCT_IN_ADDR 1
 
-/* Check for a prototype to htons. */
-/* #undef NEED_HTONS_PROTO */
+/* Define to 1 if you have the <sys/fcntl.h> header file. */
+#define HAVE_SYS_FCNTL_H 1
 
-/* Check for a prototype to inet_addr. */
-/* #undef NEED_INET_ADDR_PROTO */
+/* Define to 1 if you have the <sys/resource.h> header file. */
+#define HAVE_SYS_RESOURCE_H 1
 
-/* Check for a prototype to inet_aton. */
-/* #undef NEED_INET_ATON_PROTO */
+/* Define to 1 if you have the <sys/select.h> header file. */
+#define HAVE_SYS_SELECT_H 1
 
-/* Check for a prototype to inet_ntoa. */
-/* #undef NEED_INET_NTOA_PROTO */
+/* Define to 1 if you have the <sys/socket.h> header file. */
+#define HAVE_SYS_SOCKET_H 1
 
-/* Check for a prototype to listen. */
-/* #undef NEED_LISTEN_PROTO */
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#define HAVE_SYS_STAT_H 1
 
-/* Check for a prototype to ntohl. */
-/* #undef NEED_NTOHL_PROTO */
+/* Define to 1 if you have the <sys/time.h> header file. */
+#define HAVE_SYS_TIME_H 1
 
-/* Check for a prototype to perror. */
-/* #undef NEED_PERROR_PROTO */
+/* Define to 1 if you have the <sys/types.h> header file. */
+#define HAVE_SYS_TYPES_H 1
 
-/* Check for a prototype to printf. */
-/* #undef NEED_PRINTF_PROTO */
+/* Define to 1 if you have the <sys/uio.h> header file. */
+#define HAVE_SYS_UIO_H 1
 
-/* Check for a prototype to qsort. */
-/* #undef NEED_QSORT_PROTO */
+/* Define to 1 if you have <sys/wait.h> that is POSIX.1 compatible. */
+#define HAVE_SYS_WAIT_H 1
 
-/* Check for a prototype to read. */
-/* #undef NEED_READ_PROTO */
+/* Define to 1 if you have the <unistd.h> header file. */
+#define HAVE_UNISTD_H 1
 
-/* Check for a prototype to remove. */
-/* #undef NEED_REMOVE_PROTO */
+/* Define to 1 if you have the `vprintf' function. */
+#define HAVE_VPRINTF 1
 
-/* Check for a prototype to rewind. */
-/* #undef NEED_REWIND_PROTO */
+/* Define to 1 if you have the `vsnprintf' function. */
+#define HAVE_VSNPRINTF 1
 
-/* Check for a prototype to select. */
-/* #undef NEED_SELECT_PROTO */
+/* Define to 1 if you have the <wchar.h> header file. */
+#define HAVE_WCHAR_H 1
 
-/* Check for a prototype to setitimer. */
-/* #undef NEED_SETITIMER_PROTO */
+/* Define to the address where bug reports for this package should be sent. */
+#define PACKAGE_BUGREPORT ""
 
-/* Check for a prototype to setrlimit. */
-/* #undef NEED_SETRLIMIT_PROTO */
+/* Define to the full name of this package. */
+#define PACKAGE_NAME ""
 
-/* Check for a prototype to setsockopt. */
-/* #undef NEED_SETSOCKOPT_PROTO */
+/* Define to the full name and version of this package. */
+#define PACKAGE_STRING ""
 
-/* Check for a prototype to snprintf. */
-/* #undef NEED_SNPRINTF_PROTO */
+/* Define to the one symbol short name of this package. */
+#define PACKAGE_TARNAME ""
 
-/* Check for a prototype to socket. */
-/* #undef NEED_SOCKET_PROTO */
+/* Define to the home page for this package. */
+#define PACKAGE_URL ""
 
-/* Check for a prototype to sprintf. */
-/* #undef NEED_SPRINTF_PROTO */
+/* Define to the version of this package. */
+#define PACKAGE_VERSION ""
 
-/* Check for a prototype to sscanf. */
-/* #undef NEED_SSCANF_PROTO */
+/* Define as the return type of signal handlers (`int' or `void'). */
+#define RETSIGTYPE void
 
-/* Check for a prototype to strcasecmp. */
-/* #undef NEED_STRCASECMP_PROTO */
+/* Define to 1 if all of the C90 standard headers exist (not just the ones
+   required in a freestanding environment). This macro is provided for
+   backward compatibility; new code need not use it. */
+#define STDC_HEADERS 1
 
-/* Check for a prototype to strdup. */
-/* #undef NEED_STRDUP_PROTO */
+/* Define to 1 if you can safely include both <sys/time.h> and <time.h>. This
+   macro is obsolete. */
+#define TIME_WITH_SYS_TIME 1
 
-/* Check for a prototype to strerror. */
-/* #undef NEED_STRERROR_PROTO */
+/* Enable extensions on AIX 3, Interix.  */
+#ifndef _ALL_SOURCE
+# define _ALL_SOURCE 1
+#endif
+/* Enable general extensions on macOS.  */
+#ifndef _DARWIN_C_SOURCE
+# define _DARWIN_C_SOURCE 1
+#endif
+/* Enable general extensions on Solaris.  */
+#ifndef __EXTENSIONS__
+# define __EXTENSIONS__ 1
+#endif
+/* Enable GNU extensions on systems that have them.  */
+#ifndef _GNU_SOURCE
+# define _GNU_SOURCE 1
+#endif
+/* Enable X/Open compliant socket functions that do not require linking
+   with -lxnet on HP-UX 11.11.  */
+#ifndef _HPUX_ALT_XOPEN_SOCKET_API
+# define _HPUX_ALT_XOPEN_SOCKET_API 1
+#endif
+/* Identify the host operating system as Minix.
+   This macro does not affect the system headers' behavior.
+   A future release of Autoconf may stop defining this macro.  */
+#ifndef _MINIX
+/* # undef _MINIX */
+#endif
+/* Enable general extensions on NetBSD.
+   Enable NetBSD compatibility extensions on Minix.  */
+#ifndef _NETBSD_SOURCE
+# define _NETBSD_SOURCE 1
+#endif
+/* Enable OpenBSD compatibility extensions on NetBSD.
+   Oddly enough, this does nothing on OpenBSD.  */
+#ifndef _OPENBSD_SOURCE
+# define _OPENBSD_SOURCE 1
+#endif
+/* Define to 1 if needed for POSIX-compatible behavior.  */
+#ifndef _POSIX_SOURCE
+/* # undef _POSIX_SOURCE */
+#endif
+/* Define to 2 if needed for POSIX-compatible behavior.  */
+#ifndef _POSIX_1_SOURCE
+/* # undef _POSIX_1_SOURCE */
+#endif
+/* Enable POSIX-compatible threading on Solaris.  */
+#ifndef _POSIX_PTHREAD_SEMANTICS
+# define _POSIX_PTHREAD_SEMANTICS 1
+#endif
+/* Enable extensions specified by ISO/IEC TS 18661-5:2014.  */
+#ifndef __STDC_WANT_IEC_60559_ATTRIBS_EXT__
+# define __STDC_WANT_IEC_60559_ATTRIBS_EXT__ 1
+#endif
+/* Enable extensions specified by ISO/IEC TS 18661-1:2014.  */
+#ifndef __STDC_WANT_IEC_60559_BFP_EXT__
+# define __STDC_WANT_IEC_60559_BFP_EXT__ 1
+#endif
+/* Enable extensions specified by ISO/IEC TS 18661-2:2015.  */
+#ifndef __STDC_WANT_IEC_60559_DFP_EXT__
+# define __STDC_WANT_IEC_60559_DFP_EXT__ 1
+#endif
+/* Enable extensions specified by ISO/IEC TS 18661-4:2015.  */
+#ifndef __STDC_WANT_IEC_60559_FUNCS_EXT__
+# define __STDC_WANT_IEC_60559_FUNCS_EXT__ 1
+#endif
+/* Enable extensions specified by ISO/IEC TS 18661-3:2015.  */
+#ifndef __STDC_WANT_IEC_60559_TYPES_EXT__
+# define __STDC_WANT_IEC_60559_TYPES_EXT__ 1
+#endif
+/* Enable extensions specified by ISO/IEC TR 24731-2:2010.  */
+#ifndef __STDC_WANT_LIB_EXT2__
+# define __STDC_WANT_LIB_EXT2__ 1
+#endif
+/* Enable extensions specified by ISO/IEC 24747:2009.  */
+#ifndef __STDC_WANT_MATH_SPEC_FUNCS__
+# define __STDC_WANT_MATH_SPEC_FUNCS__ 1
+#endif
+/* Enable extensions on HP NonStop.  */
+#ifndef _TANDEM_SOURCE
+# define _TANDEM_SOURCE 1
+#endif
+/* Enable X/Open extensions.  Define to 500 only if necessary
+   to make mbstate_t available.  */
+#ifndef _XOPEN_SOURCE
+/* # undef _XOPEN_SOURCE */
+#endif
 
-/* Check for a prototype to stricmp. */
-#define NEED_STRICMP_PROTO 
 
-/* Check for a prototype to strlcpy. */
-/* #undef NEED_STRLCPY_PROTO */
+/* Define to empty if `const' does not conform to ANSI C. */
+/* #undef const */
 
-/* Check for a prototype to strncasecmp. */
-/* #undef NEED_STRNCASECMP_PROTO */
+/* Define as a signed integer type capable of holding a process identifier. */
+/* #undef pid_t */
 
-/* Check for a prototype to strnicmp. */
-#define NEED_STRNICMP_PROTO 
+/* Define to `unsigned int' if <sys/types.h> does not define. */
+/* #undef size_t */
 
-/* Check for a prototype to system. */
-/* #undef NEED_SYSTEM_PROTO */
+/* Define to `int' if <sys/socket.h> doesn't define. */
+/* #undef socklen_t */
 
-/* Check for a prototype to time. */
-/* #undef NEED_TIME_PROTO */
-
-/* Check for a prototype to unlink. */
-/* #undef NEED_UNLINK_PROTO */
-
-/* Check for a prototype to vsnprintf. */
-/* #undef NEED_VSNPRINTF_PROTO */
-
-/* Check for a prototype to write. */
-/* #undef NEED_WRITE_PROTO */
-
+/* Define to `int' if <sys/types.h> does not define. */
+/* #undef ssize_t */

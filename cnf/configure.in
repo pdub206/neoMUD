@@ -4,7 +4,16 @@ AC_SUBST(MYFLAGS)
 AC_SUBST(NETLIB)
 AC_SUBST(CRYPTLIB)
 
-AC_CONFIG_HEADER(src/conf.h)
+AH_TEMPLATE([CIRCLE_UNIX],
+  [Define if we're compiling CircleMUD under any type of UNIX system.])
+AH_TEMPLATE([CIRCLE_CRYPT],
+  [Define if the system is capable of using crypt() to encrypt.])
+AH_TEMPLATE([HAVE_STRUCT_IN_ADDR],
+  [Define if the system has struct in_addr.])
+AH_TEMPLATE([socklen_t],
+  [Define to `int' if <sys/socket.h> doesn't define.])
+
+AC_CONFIG_HEADERS(src/conf.h)
 AC_DEFINE(CIRCLE_UNIX)
 
 dnl Find the 'more' program
@@ -12,11 +21,21 @@ AC_CHECK_PROGS(MORE, less most more cat)
 
 dnl Checks for programs.
 AC_PROG_CC
+AC_USE_SYSTEM_EXTENSIONS
 
 dnl If we're using gcc, use gcc options.
 dnl If not, test for various common switches to make a 'cc' compiler
 dnl compile ANSI C code.
 if test $ac_cv_prog_gcc = yes; then
+
+  dnl Determine if gcc accepts -std=c11.
+  AC_CACHE_CHECK(whether ${CC-cc} accepts -std=c11, ac_cv_gcc_c11,
+  [
+    OLDCFLAGS=$CFLAGS
+    CFLAGS="$CFLAGS -std=c11"
+    AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[]], [[]])], ac_cv_gcc_c11=yes, ac_cv_gcc_c11=no)
+    CFLAGS=$OLDCFLAGS
+  ])
 
   dnl Determine if gcc -Wall causes warnings on isascii(), etc.
   AC_CACHE_CHECK(whether ${CC-cc} -Wall also needs -Wno-char-subscripts,
@@ -24,12 +43,12 @@ if test $ac_cv_prog_gcc = yes; then
   [
     OLDCFLAGS=$CFLAGS
     CFLAGS="$CFLAGS -Wall -Werror"
-    AC_TRY_COMPILE([#include <ctype.h>],
-       [ int i; char c = '0';
-         i = isascii(c);
-         i = isdigit(c);
-         i = isprint(c);
-       ], ac_cv_char_warn=no, ac_cv_char_warn=yes)
+    AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[#include <ctype.h>]], [[
+      int i; char c = '0';
+      i = isascii(c);
+      i = isdigit(c);
+      i = isprint(c);
+    ]])], ac_cv_char_warn=no, ac_cv_char_warn=yes)
     CFLAGS=$OLDCFLAGS
   ])
 
@@ -38,7 +57,7 @@ if test $ac_cv_prog_gcc = yes; then
   [
     OLDCFLAGS=$CFLAGS
     CFLAGS="$CFLAGS -Wno-char-subscripts"
-    AC_TRY_COMPILE(, , ac_cv_gcc_ncs=yes, ac_cv_gcc_ncs=no)
+    AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[]], [[]])], ac_cv_gcc_ncs=yes, ac_cv_gcc_ncs=no)
     CFLAGS=$OLDCFLAGS
   ])
 
@@ -47,7 +66,48 @@ if test $ac_cv_prog_gcc = yes; then
   [
     OLDCFLAGS=$CFLAGS
     CFLAGS="$CFLAGS -fno-builtin"
-    AC_TRY_COMPILE(, , ac_cv_gcc_fnb=yes, ac_cv_gcc_fnb=no)
+    AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[]], [[]])], ac_cv_gcc_fnb=yes, ac_cv_gcc_fnb=no)
+    CFLAGS=$OLDCFLAGS
+  ])
+
+  dnl Determine if gcc accepts common warning flags.
+  AC_CACHE_CHECK(whether ${CC-cc} accepts -Wextra, ac_cv_gcc_wextra,
+  [
+    OLDCFLAGS=$CFLAGS
+    CFLAGS="$CFLAGS -Wextra"
+    AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[]], [[]])], ac_cv_gcc_wextra=yes, ac_cv_gcc_wextra=no)
+    CFLAGS=$OLDCFLAGS
+  ])
+
+  AC_CACHE_CHECK(whether ${CC-cc} accepts -Wformat=2, ac_cv_gcc_wformat2,
+  [
+    OLDCFLAGS=$CFLAGS
+    CFLAGS="$CFLAGS -Wformat=2"
+    AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[]], [[]])], ac_cv_gcc_wformat2=yes, ac_cv_gcc_wformat2=no)
+    CFLAGS=$OLDCFLAGS
+  ])
+
+  AC_CACHE_CHECK(whether ${CC-cc} accepts -Wshadow, ac_cv_gcc_wshadow,
+  [
+    OLDCFLAGS=$CFLAGS
+    CFLAGS="$CFLAGS -Wshadow"
+    AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[]], [[]])], ac_cv_gcc_wshadow=yes, ac_cv_gcc_wshadow=no)
+    CFLAGS=$OLDCFLAGS
+  ])
+
+  AC_CACHE_CHECK(whether ${CC-cc} accepts -Wstrict-prototypes, ac_cv_gcc_wstrict_prototypes,
+  [
+    OLDCFLAGS=$CFLAGS
+    CFLAGS="$CFLAGS -Wstrict-prototypes"
+    AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[]], [[]])], ac_cv_gcc_wstrict_prototypes=yes, ac_cv_gcc_wstrict_prototypes=no)
+    CFLAGS=$OLDCFLAGS
+  ])
+
+  AC_CACHE_CHECK(whether ${CC-cc} accepts -Wmissing-prototypes, ac_cv_gcc_wmissing_prototypes,
+  [
+    OLDCFLAGS=$CFLAGS
+    CFLAGS="$CFLAGS -Wmissing-prototypes"
+    AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[]], [[]])], ac_cv_gcc_wmissing_prototypes=yes, ac_cv_gcc_wmissing_prototypes=no)
     CFLAGS=$OLDCFLAGS
   ])
 
@@ -64,6 +124,30 @@ if test $ac_cv_prog_gcc = yes; then
     else
       MYFLAGS=""
     fi
+  fi
+
+  if test ${ac_cv_gcc_c11:-ERROR} = yes; then
+    MYFLAGS="$MYFLAGS -std=c11"
+  fi
+
+  if test ${ac_cv_gcc_wextra:-ERROR} = yes; then
+    MYFLAGS="$MYFLAGS -Wextra"
+  fi
+
+  if test ${ac_cv_gcc_wformat2:-ERROR} = yes; then
+    MYFLAGS="$MYFLAGS -Wformat=2"
+  fi
+
+  if test ${ac_cv_gcc_wshadow:-ERROR} = yes; then
+    MYFLAGS="$MYFLAGS -Wshadow"
+  fi
+
+  if test ${ac_cv_gcc_wstrict_prototypes:-ERROR} = yes; then
+    MYFLAGS="$MYFLAGS -Wstrict-prototypes"
+  fi
+
+  if test ${ac_cv_gcc_wmissing_prototypes:-ERROR} = yes; then
+    MYFLAGS="$MYFLAGS -Wmissing-prototypes"
   fi
 
 else
@@ -120,7 +204,7 @@ EOF
   fi
 
   AC_CACHE_CHECK([for struct in_addr], ac_cv_struct_in_addr,
-    [ AC_TRY_COMPILE([$headers],[struct in_addr tp; tp.s_addr;], ac_cv_struct_in_addr=yes, ac_cv_struct_in_addr=no)])
+    [ AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[$headers]], [[struct in_addr tp; tp.s_addr;]])], ac_cv_struct_in_addr=yes, ac_cv_struct_in_addr=no)])
 
   if test $ac_cv_struct_in_addr = yes; then
     AC_DEFINE(HAVE_STRUCT_IN_ADDR)
@@ -133,7 +217,7 @@ if test $ac_cv_header_sys_socket_h = no; then
   ac_cv_socklen_t = no;
 else
   AC_CACHE_CHECK([for typedef socklen_t], ac_cv_socklen_t,
-    [ AC_TRY_COMPILE([#include <sys/socket.h>],[socklen_t sl; sl=0;], ac_cv_socklen_t=yes, ac_cv_socklen_t=no)])
+    [ AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[#include <sys/socket.h>]], [[socklen_t sl; sl=0;]])], ac_cv_socklen_t=yes, ac_cv_socklen_t=no)])
 fi
 
 if test $ac_cv_socklen_t = no; then
