@@ -1,2 +1,3 @@
 # neoMUD
-MUD engine written in golang
+
+An attempt at bringing CircleMUD into the 2020's era.
