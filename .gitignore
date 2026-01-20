@@ -1,0 +1,16 @@
+bin/*
+doc/*
+lib/*
+log/*
+config.*
+
+src/*.o
+
+Makefile
+.DS_Store
+*.log
+
+.cvsignore
+.accepted
+
+syslog

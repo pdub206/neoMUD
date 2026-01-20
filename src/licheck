@@ -1,0 +1,21 @@
+#!/bin/sh
+
+cat << EOF
+
+CircleMUD is free software, but it is copyrighted and licensed under the
+GNU Lesser General Public License (LGPL). You must read and agree to abide
+by the LGPL before using CircleMUD.
+
+This message will only appear once (the first time you compile the server),
+but is contained in the file LICENSE if you'd like to refer back to it in
+the future.
+
+Press return to read the license.
+EOF
+read temp
+cat ../LICENSE | $1
+echo
+echo Press return to ACCEPT the terms of the LGPL.
+echo Press Control-C if you DO NOT ACCEPT the terms of this license.
+read temp
+touch .accepted
