@@ -1,0 +1,936 @@
+[[rooms]]
+vnum = 6301
+name = "The Webbed Entrance"
+description = "   Sticky, sticky, sticky!  The ground is cluttered with leaves,\r\ndecayed remains of webbed crickets, beetle, rats, dogs, and even\r\nhumans.  You begin to wonder about what lies ahead.  The air is\r\ndamp here, and even the little light that shines through the\r\ncanopy seems to be absorbed into the webbing.\r\n"
+flags = "c"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6302
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6132
+[[rooms]]
+vnum = 6302
+name = "The Webby Passage"
+description = "   You find that footing here is very good, almost too good.  The\r\nlimbs are coated with cobwebs and seem unusually strong for tree\r\nbranches.  Paths lead in four directions.  The eastward path goes\r\ndown a bit.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6304
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6305
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6301
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6303
+[[rooms]]
+vnum = 6303
+name = "The Wasp Hive"
+description = "   Drones scuttle about in this room.  The cells on the walls are\r\nhoneycomb in shape and many of the maggots and wasps you see have\r\nfang-marks on their bodies.  You sense some order in their markings.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6302
+[[rooms]]
+vnum = 6304
+name = "The Webby Passage"
+description = "   Another webby passage, all sticky and wet.  Tiny ballooning\r\nspiders fill the air.  It seems that these young ones are newborns.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6305
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6302
+[[rooms]]
+vnum = 6305
+name = "Beneath The Busy Path"
+description = "   You here the sounds of crawling arachnids above.  The rhythms of\r\nthe footsteps suggest a primitive order in there movement.  The light\r\nseems brighter upwards.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6304
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 6306
+[[rooms]]
+vnum = 6306
+name = "On The Busy Path"
+description = "   Spiders, spiders, everywhere!  It is almost ant-like in efficiency\r\nwith one big difference.  The spiders here are carrying ant-corpses,\r\nas well as rats, wolves, and humans.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6307
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 6305
+[[rooms]]
+vnum = 6307
+name = "On The Busy Path"
+description = "   Spiders, spiders, everywhere!  It is almost ant-like in efficiency\r\nwith one big difference.  The spiders here are carrying ant-corpses,\r\nas well as cats, wolves, and humans.  \r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6306
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6308
+[[rooms]]
+vnum = 6308
+name = "On The Busy Path"
+description = "   Spiders, spiders, everywhere!  It is almost ant-like in efficiency\r\nwith one big difference.  The spiders here are carrying ant-corpses,\r\nas well as cats, dogs, and humans.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6307
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6306
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6305
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6309
+[[rooms]]
+vnum = 6309
+name = "A Split In The Path"
+description = "   As always, there is a split in the road.  One road is strewn with\r\ncricket feelers.  The other is well-kept and suitable for smooth\r\ntravelling.  The webbing that was prevalent in earlier rooms is almost\r\nnon-existant now.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6310
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6308
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6320
+[[rooms]]
+vnum = 6310
+name = "A Fuzzy Tree Limb"
+description = "   You are on a 'fuzzy' tree limb.  Interesting, since the branches\r\nseem to have 'hairs' sprouting from its bark.  As you look closer\r\nyou see millions of aphids covering each limb.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6309
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6311
+[[rooms]]
+vnum = 6311
+name = "The Tree Trunk"
+description = "   You feel that you can rest here safely.  There is evidence of\r\nwebbing here, but it is of a finer quality.\r\n"
+flags = "c"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6310
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6312
+[[rooms]]
+vnum = 6312
+name = "The Tree Lair Entrance"
+description = "   It seems the inhabitant of this place does not web her victims,\r\nas evidenced by the remains before you.  The area is cluttered with\r\ndesiccated corpses, apparently bitten but unwebbed, and drained of\r\ntheir life juices.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6311
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6313
+[[rooms]]
+vnum = 6313
+name = "The Wolf Spider Lair"
+description = "   Very dark, as all lairs of spiders are.  Not much of furnishings\r\nsave an exit.  The wolf spider keeps no corpses here, but rather\r\nthrows them out at her leisure.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6312
+[[rooms]]
+vnum = 6320
+name = "The Webless Path"
+description = "   Strange.  No webbing here.  In fact, no sounds whatsoever.  \r\nThe path continues northward, where you find that you may have\r\nto tightrope your way across a ravine.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6309
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6321
+[[rooms]]
+vnum = 6321
+name = "Above The Ravine"
+description = "   Stranger still.  Your feet get a real firm grip on the spiderline.\r\nYou are above a deep ravine.  This line connects you between two trees.\r\nBelow you can see a prismatic web with lots of animal bones caught in it:\r\nsome bear and small deer bones in fact.  No human skeletons are visible \r\n(yet).\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6320
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6323
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 6322
+[[rooms]]
+vnum = 6322
+name = "The Rainbow Web"
+description = "   This is the rainbow web -- each strand, each link, a hue of violently\r\nsharp colors and contrasts.  The resident here seems to have a command\r\nof light as well.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 6321
+[[rooms]]
+vnum = 6323
+name = "The Web Forest"
+description = "   The trees here take on a different appearance -- they are not trees\r\nanymore, but disjointed make-shift silken made shafts, sticky to the\r\ntouch, and webby in texture.  This is another world it would appear.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6321
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 6324
+[[rooms]]
+vnum = 6324
+name = "The Slave Pit"
+description = "   You have entered the slave pit.  A voice blares in the distance,\r\n'Get back to work, maggots!'  Rails upon rails of mined gold and silver\r\nclutter the trail beneath you.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6325
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 6323
+[[rooms]]
+vnum = 6325
+name = "The Tether Path"
+description = "   Another tether path just like the rest of them.  Surprisingly\r\nwell-lit by the golden orbs that hang from the sides, you can see\r\nthe paths become finer and finer in quality.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6326
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6324
+[[rooms]]
+vnum = 6326
+name = "A Road Crossing"
+description = "   Another shifty little strand of webs, almost ethereal in nature.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6325
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 6327
+[[rooms]]
+vnum = 6327
+name = "A Leader Strand"
+description = "   This strand is weightier, more sturdy.  It shimmers as you step on\r\nit.  You are definitely not in the Midgaardian realms anymore.  Just\r\nwhere you are you can't tell.  It feels like you're moving through\r\nether.  You can still get back down to more surer lands.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6328
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 6326
+[[rooms]]
+vnum = 6328
+name = "The Entrance Of The Ethereal Web"
+description = "   You are at the entrance to ethereal web.  Flickering in and out,\r\nin and out, each strand reveals a different hue from black to green \r\nto blue.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6331
+[[rooms]]
+vnum = 6330
+name = "The Young Wormkin's Crib"
+description = "   A playpen of sorts, with maggots of wasps and other baby\r\nvermin lying about.  You feel that humans have been played with\r\nhere too, and eaten later.  You sense that the maker of this\r\nplace has an appetite for dragon meat, and uses this room as a\r\nbreeding area.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 6331
+[[rooms]]
+vnum = 6331
+name = "The Base Of The Web"
+description = "   Large strands connect at this point.  The node shimmers and\r\nflickers within the ether.  You see many flying creatures --\r\ninsects, pegasi, and dragon wormkins -- navigate the dangerous\r\npassages of the web.  Exits go in many directions.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6330
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6332
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6333
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6334
+[[rooms]]
+vnum = 6332
+name = "Through The Trees"
+description = "   This part of the web intersects through the branches of some\r\ntrees.  Various leaves and other debris that the many drones have\r\nnot picked up yet lie here.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6331
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6335
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6333
+[[rooms]]
+vnum = 6333
+name = "Above The Clouds"
+description = "   You can see all of Midgaard in this ethereal web.  Many\r\nof the larger dragons that do wish to fly seem to fly away\r\nfrom the sticky strands of the web.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6331
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6334
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6335
+[[rooms]]
+vnum = 6334
+name = "On A Cloud"
+description = "   This cloud is rather thick in consistency.  You suddenly realize\r\nthis is not a typical cloud, but it might be the nest of an aerial\r\ncreature.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 6331
+[[rooms]]
+vnum = 6335
+name = "A Link In The Ethereal Web"
+description = "   This is another link in the ethereal web.  Various creatures seem\r\nto get caught (or hypnotized) by its sticky strands.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6336
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6331
+[[rooms]]
+vnum = 6336
+name = "The Tenuous Strand"
+description = "   Very windy here since it goes up into the sky somewhat.  Still, it\r\nis safe enough to move around.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6340
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6341
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 6331
+[[rooms]]
+vnum = 6340
+name = "The Elder Wormkin's Room"
+description = "   A more mature wormkin it seems resides here.  Various tomes\r\nof arcane lore clutter the area, along with shards of armor and\r\nweaponry.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 6331
+[[rooms]]
+vnum = 6341
+name = "Another Tree Limb"
+description = "   Once again the web crosses another tree limb.  To the side you\r\nsee the possible entrance to another creature's lair.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6342
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6334
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6345
+[[rooms]]
+vnum = 6342
+name = "The Bird Spider's Lair"
+description = "   This is a big game hunter among most spiders.  Crushed\r\njewels and weapons suggest the inhabitant must have powerful\r\njaws.  Beware!\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 6331
+[[rooms]]
+vnum = 6345
+name = "A Link In The Ethereal Web"
+description = "   This is another link in the ethereal web.  Various creatures\r\nseem to get caught (or hypnotized) by its sticky strands.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6350
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6346
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 6345
+[[rooms]]
+vnum = 6346
+name = "The Quiet Tree Top"
+description = "   This is a quiet tree top.  Downwards you can see a familiar path\r\nthat may lead back to Midgaard.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6345
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6347
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 6132
+[[rooms]]
+vnum = 6347
+name = "On The Web"
+description = "   RRRRRRRRRRROOOOOOOOOOOOOAAAAAAAAAAAAAARR!  You hear the roar\r\nof a powerful beast.  Dragon, you think.  You shiver in your boots\r\nas you tiptoe along this section of the web.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6346
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6355
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 6331
+[[rooms]]
+vnum = 6350
+name = "The Ki-Rin Chamber"
+description = "   A wise ki-rin was entrapped here many years ago.  It is from her\r\nthat the ruler of this realm draws magical strength.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6347
+[[rooms]]
+vnum = 6355
+name = "A Link In The Ethereal Web"
+description = "   This is another link in the ethereal web.  Various creatures\r\nseem to get caught (or hypnotized) by its sticky strands.  To\r\nthe north you sense the heavy breathing of a fiery animal.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6360
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6365
+[[rooms]]
+vnum = 6360
+name = "Yevaud's Lair"
+description = "   Yevaud, the Usurper of Midgaard, resides here.  A voice cries\r\nout, 'BEWARE, the Usurper of Midgaard lives here!  FLEE while you can!'\r\nBut even Yevaud has his master... or so you deduce.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6355
+[[rooms]]
+vnum = 6365
+name = "A Link In The Ethereal Web"
+description = "   This is another link in the ethereal web.  Various creatures\r\nseem to get caught (or hypnotized) by its sticky strands.  A\r\nsingle spider line lies to the north, while ghastly seemings are\r\ndue southward.  The grim entrance of Arachnos' Lair is downward.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6371
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6331
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6366
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 6390
+[[rooms]]
+vnum = 6366
+name = "The Entrance To The Donjonkeep"
+description = "   A dark path at the end of the web strand, you see ahead\r\na torch lit chamber where the souls of unavenged adventurers\r\ncome and gnash their teeth.  The howls and screams of many\r\necho through the hall ways.  You see one definite path ahead.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6367
+[[rooms]]
+vnum = 6367
+name = "The Guardian's Room"
+description = "   A chair sits here for a tireless guardian who ensures that no\r\nsoul escapes.  Other than that, the room is undecorated.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6368
+
+[[rooms.extra]]
+keyword = "chair"
+description = "An ordinary chair, well used, glued to the ground by spiderweb.\r\n"
+[[rooms]]
+vnum = 6368
+name = "The Realm Of The Hopeless"
+description = "   Here you see many misguided souls who think they still live.\r\nThey search for those who killed them without warrant, and seek\r\nthe free souls of living beings to inhabit and perhaps adventure\r\nonce more.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6369
+[[rooms]]
+vnum = 6369
+name = "The Realm Of The Hopeless"
+description = "   Here you see many misguided souls who think they still live.\r\nThey search for those who killed them without warrant, and seek\r\nthe free souls of living beings to inhabit and perhaps adventure\r\nonce more.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6368
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6370
+[[rooms]]
+vnum = 6370
+name = "The Donjonkeep"
+description = "   No souls have ever lived in this place.  The wails of slaves and\r\nthe howls of wolves are the only way you can describe the sounds you\r\nhear.  The walls are thin and wispy.  The only light you receive is\r\nthe shimmering from the strand of the ethereal web you used to get\r\nhere.  \r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6371
+[[rooms]]
+vnum = 6371
+name = "The Single Spider Line"
+description = "   A single spider line supports you once more.  As you look across\r\nthe ether you seen a single shack up ahead with a light in the window.\r\nYou sense a great evil coming from the north and feel inclined to go\r\nback on the ethereal web and take your chances there.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6331
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6372
+[[rooms]]
+vnum = 6372
+name = "The Single Spider Line"
+description = "   A single spider line supports you once more.  The shack comes\r\ncloser into view and you are even more inclined to go back now.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6371
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6373
+[[rooms]]
+vnum = 6373
+name = "The Hermit's Corner"
+description = "   Here you see evidence of a vagrant's abode.  The shack is to the\r\nnorth, if you dare enter it.  You get the sneaking feeling you should\r\ngo back now.  The skies above you darken and roar with the laughter\r\nof thunder.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6372
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6380
+[[rooms]]
+vnum = 6380
+name = "Mahatma's Inescapable Trap"
+description = "   Mahatma, that silly thief, is here, and he steals everything you\r\nhave.  He says 'Here, have a quick trip to the Temple of Midgaard.'\r\nHe plunges a black dagger into your back...\r\n"
+flags = "bd"
+sector = 0
+[[rooms]]
+vnum = 6390
+name = "The Entrance To The Arachnos' Lair"
+description = "   All strands inevitably lead here, the center of the web, the\r\nentrance to Arachnos' Lair.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6391
+[[rooms]]
+vnum = 6391
+name = "The Sticky Chamber"
+description = "   You can still bail out since your knees are shaking from the\r\nanticipation (or is it fear?).  The sky is clear on this strand of \r\nweb, surprisingly unsticky.  The strand does not vibrate like the \r\nothers.  A few ballooning spiders pass by, cackling 'You're gonna\r\ndie, you're gonna fry.  Good bye!'\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6392
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 6331
+[[rooms]]
+vnum = 6392
+name = "The Great Door"
+description = "   Before you you see a large, web-like door.  Various designs\r\nof ancient runes and names of Midgaard heroes are etched into\r\nthe webwork.  Perhaps lists of victims?  You can't tell.  \r\n"
+flags = "d"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+keyword = "door"
+door = 2
+key = 6300
+to_room = 6399
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6391
+[[rooms]]
+vnum = 6399
+name = "The Lair Of Arachnos"
+description = "   This is the lair of the Empress Spider, Arachnos.  You can\r\nsee a lavishly adorned rainbow web, her lair allows her to move\r\nto any universe she wishes by using her magical strands to the\r\nPrime Material Plane.  Coffers upon coffers of gold, magical\r\njewels and gems await.  Unfortunately Arachnos is a baggy spider\r\ntoo, and webs all her treasures to her beautiful silken body.\r\n"
+flags = "g"
+sector = 2
+
+[[rooms.exits]]
+dir = 2
+keyword = "door"
+door = 2
+key = 6300
+to_room = 6392

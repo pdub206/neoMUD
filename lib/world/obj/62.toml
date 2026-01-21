@@ -1,0 +1,116 @@
+[[objects]]
+vnum = 6200
+name = "key"
+short_descr = "a key"
+description = "A key sits here."
+type = 18
+extra_flags = "cdq"
+wear_flags = "16385"
+values = [6200, 0, 0, 0]
+weight = 1
+cost = 20
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "key"
+description = "It is a plain looking key.\r\n"
+[[objects]]
+vnum = 6201
+name = "manacles"
+short_descr = "a set of manacles"
+description = "A set of iron manacles lie here."
+type = 9
+extra_flags = "h"
+wear_flags = "129"
+values = [0, 0, 0, 0]
+weight = 20
+cost = 100
+rent = 20
+
+[[objects.extra_desc]]
+keyword = "manacles"
+description = "They're big steel cuffs, meant to be locked around the hands.\r\n"
+
+[[objects.affects]]
+location = 18
+modifier = -20
+[[objects]]
+vnum = 6202
+name = "shackles"
+short_descr = "a set of shackles"
+description = "A set of shackles sit here, discarded."
+type = 9
+extra_flags = "h"
+wear_flags = "65"
+values = [0, 0, 0, 0]
+weight = 20
+cost = 100
+rent = 20
+
+[[objects.extra_desc]]
+keyword = "shackles"
+description = "Big iron cuffs, meant to be locked around the ankles.\r\n"
+
+[[objects.affects]]
+location = 14
+modifier = -80
+[[objects]]
+vnum = 6203
+name = "Runestone rune stone"
+short_descr = "the Runestone"
+description = "A small stone with an inscription sits here."
+type = 1
+extra_flags = "a"
+wear_flags = "16385"
+values = [0, 0, -1, 0]
+weight = 1
+cost = 10000
+rent = 2000
+
+[[objects.extra_desc]]
+keyword = "runestone rune stone"
+description = "It is a small, carved stone with a strange symbol\r\ncarved upon it.  Strange...\r\n"
+
+[[objects.affects]]
+location = 12
+modifier = 8
+[[objects]]
+vnum = 6204
+name = "club"
+short_descr = "a club"
+description = "A crude wooden club sits here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 2, 2, 7]
+weight = 12
+cost = 10
+rent = 2
+
+[[objects.extra_desc]]
+keyword = "club"
+description = "It is a big, wooden club.\r\n"
+[[objects]]
+vnum = 6205
+name = "Starkblade knife dagger blade"
+short_descr = "Starkblade"
+description = "A knife hums with eternal energy here."
+type = 5
+extra_flags = "bp"
+wear_flags = "8193"
+values = [0, 3, 7, 3]
+weight = 1
+cost = 100000
+rent = 20000
+
+[[objects.extra_desc]]
+keyword = "starkblade knife dagger blade"
+description = "It is an odd knife, with an inset of sapphire in the\r\npommel.  It hums constantly, and your hand stings a \r\nbit when you touch it.\r\n"
+
+[[objects.affects]]
+location = 12
+modifier = 10
+
+[[objects.affects]]
+location = 13
+modifier = -20

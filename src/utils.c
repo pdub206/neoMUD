@@ -640,7 +640,8 @@ void core_dump_real(const char *who, int line)
   fflush(stdout);
   fflush(stderr);
   fflush(logfile);
-  fflush(player_fl);
+  if (player_fl)
+    fflush(player_fl);
   /* Everything, just in case, for the systems that support it. */
   fflush(NULL);
 

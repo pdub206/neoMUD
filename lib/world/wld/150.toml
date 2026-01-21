@@ -1,0 +1,1763 @@
+[[rooms]]
+vnum = 15000
+name = "The King's Road"
+description = "   You stand at the beginning of the actual King's Road.  The road is wide\r\nenough for several horses to ride along side by side with room to spare.\r\nThe stones which make up the road have been put into place with such skill\r\nthat the road seems to be perfectly smooth and perfectly straight.\r\n   You spot a small trail leading to the south through the undergrowth which\r\nsurrounds the road at this point.\r\nA traveller passes by and waves cheerfully at you.\r\n"
+flags = "c"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "The King's Road continues in a straight line to the east towards a grand\r\ncastle.\r\n"
+door = 0
+key = -1
+to_room = 15001
+
+[[rooms.exits]]
+dir = 2
+description = "A small overgrown trail leads through the undergrowth to the south.\r\n"
+door = 0
+key = -1
+to_room = 15061
+
+[[rooms.exits]]
+dir = 3
+description = "The King's Road thins out a bit into a lane just to the west.\r\n"
+door = 0
+key = -1
+to_room = 3502
+
+[[rooms.extra]]
+keyword = "traveller"
+description = "The traveller smiles cheerfully and calls 'hello' when you greet him,\r\nbut continues on his way.\r\nThe traveller is in excellent condition.\r\n"
+[[rooms]]
+vnum = 15001
+name = "The King's Road"
+description = "   You stand in the center of the great King's Road.  The road is very well\r\nbuilt, and goes in a straight line due east-west.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "The King's Road continues in a straight line to the east.\r\n"
+door = 0
+key = -1
+to_room = 15002
+
+[[rooms.exits]]
+dir = 3
+description = "You see that the King's Road continues westwards towards a large city.\r\n"
+door = 0
+key = -1
+to_room = 15000
+[[rooms]]
+vnum = 15002
+name = "The King's Road"
+description = "   You stand on the King's Road, which leads east and west.  The\r\nskill of the builders is apparent, since it is impossible to notice\r\nany turn or irregularity in the road.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "You see a castle in the far east.\r\n"
+door = 0
+key = -1
+to_room = 15003
+
+[[rooms.exits]]
+dir = 3
+description = "The King's Road continues in a straight line to the west.\r\n"
+door = 0
+key = -1
+to_room = 15001
+[[rooms]]
+vnum = 15003
+name = "On The King's Road Outside A Castle"
+description = "   You are standing on the King's Road.  Before you is a large\r\nCastle, evidently built not so much for strength as for beauty.\r\nIt is not totally without defences, though, for it is surrounded\r\nby a deep moat, and its windows are just narrow slits for archers\r\nto shoot through.  To the north there is a drawbridge across the\r\nmoat.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see the drawbridge.\r\n"
+door = 0
+key = -1
+to_room = 15004
+
+[[rooms.exits]]
+dir = 3
+description = "The King's Road continues in a straight line to the west.\r\n"
+door = 0
+key = -1
+to_room = 15002
+[[rooms]]
+vnum = 15004
+name = "On The Drawbridge"
+description = "   You have arrived at the drawbridge leading into the Castle.  Before\r\nyou is a huge, double-doored gate.  It seems very strong.  You see some\r\nwhirls in the moat.\r\n"
+flags = "c"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "The gate has huge, but intricately carved hinges.  As the Castle itself,\r\nit seems designed not only for strength, but also for beauty.\r\n"
+keyword = "gate door"
+door = 1
+key = -1
+to_room = 15007
+
+[[rooms.exits]]
+dir = 2
+description = "You see the King's Road.\r\n"
+door = 0
+key = -1
+to_room = 15003
+
+[[rooms.extra]]
+keyword = "whirls whirl moat"
+description = "You can't see much, but it seems that something beneath the surface\r\nis creating them.\r\n"
+[[rooms]]
+vnum = 15005
+name = "The Kitchen"
+description = "   You are in the Kitchen.  Lots of helpers hurry to do the Chief Cook's\r\nbidding, and there is a wonderful smell that makes you feel very hungry.\r\nAll around the room, there are shelves with different kinds of cooking \r\ngear stacked on them.  There is an exit to the north, and one to the east;\r\nboth leading to small passages.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see a small, dimly lit passage.\r\n"
+door = 0
+key = -1
+to_room = 15010
+
+[[rooms.exits]]
+dir = 1
+description = "You see a small, dimly lit passage.\r\n"
+door = 0
+key = -1
+to_room = 15006
+[[rooms]]
+vnum = 15006
+name = "A Small Passage"
+description = "   You are standing in a small passage, that is clearly intended mostly\r\nfor the servants of the Castle.  It is only dimly lit and quite narrow.\r\nThe passage leads west, and to the east there is a small door.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "The door is small and uninteresting.\r\n"
+keyword = "door small"
+door = 1
+key = -1
+to_room = 15007
+
+[[rooms.exits]]
+dir = 3
+description = "You hear clanging of pots, and smell cooking meat.\r\n"
+door = 0
+key = -1
+to_room = 15005
+[[rooms]]
+vnum = 15007
+name = "The Entrance Hall"
+description = "   You are standing in the impressive Entrance Hall of the Castle.\r\nTo the north is an exit into the Great Hall.  There is also an exit\r\neast, and a small door to the west.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the King's Great Hall.\r\n"
+door = 0
+key = -1
+to_room = 15012
+
+[[rooms.exits]]
+dir = 1
+description = "There seems to be a small guard room to the east.\r\n"
+door = 0
+key = -1
+to_room = 15008
+
+[[rooms.exits]]
+dir = 2
+description = "To the south, there is a gate, that leads to the Drawbridge.\r\n"
+keyword = "gate"
+door = 1
+key = -1
+to_room = 15004
+
+[[rooms.exits]]
+dir = 3
+description = "The door is small and uninteresting.\r\n"
+keyword = "door small"
+door = 1
+key = -1
+to_room = 15006
+[[rooms]]
+vnum = 15008
+name = "The Guard Room"
+description = "   You are in a small room, evidently meant for guards currently\r\nnot on duty.  There is only one exit, back to the entrance hall.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+description = "You see the Castle Entrance.\r\n"
+door = 0
+key = -1
+to_room = 15007
+[[rooms]]
+vnum = 15009
+name = "Under The Tower"
+description = "   You are below one the three mighty towers of the Castle.  There are\r\nno guards here, and you sense that this part of the Castle is largely\r\nunused.  There are stairs going up to the tower, and there is also an\r\nexit to the north.\r\n"
+flags = "cd"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see a small, dimly lit passage.\r\n"
+door = 0
+key = -1
+to_room = 15014
+
+[[rooms.exits]]
+dir = 4
+description = "The stairs are old, but in good repair. They lead up into the tower.\r\n"
+door = 0
+key = -1
+to_room = 15034
+
+[[rooms.extra]]
+keyword = "stairs"
+description = "The stairs are old, but in good repair. They lead up into the tower.\r\n"
+[[rooms]]
+vnum = 15010
+name = "The Small Passage"
+description = "   You are standing in a small passage, that is clearly intended \r\nmainly for the servants of the Castle.  The passage leads north\r\nand south.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see a small, dimly lit passage.\r\n"
+door = 0
+key = -1
+to_room = 15015
+
+[[rooms.exits]]
+dir = 2
+description = "You hear the clanging of pots, and smell cooking meat.\r\n"
+door = 0
+key = -1
+to_room = 15005
+[[rooms]]
+vnum = 15011
+name = "The Great Hall"
+description = "   You are standing in the south-west end of the Great Hall. It \r\nis truly vast; the roof is so high above your head, that it seems no\r\ncloser than the clouds outside.  The roof is beautifully painted, by\r\nsomeone who must have been a true master.  The hall is very large,\r\nand could easily seat several hundred people at a banquet.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the King's Great Hall.\r\n"
+door = 0
+key = -1
+to_room = 15016
+
+[[rooms.exits]]
+dir = 1
+description = "You see the King's Great Hall.\r\n"
+door = 0
+key = -1
+to_room = 15012
+
+[[rooms.extra]]
+keyword = "roof paintings paint"
+description = "The paintings on the roof depict the great heroes and gods.  One of \r\nthe gods is fairly heavy-bellied and incredibly hairy, with a massive\r\nbeard.  Also among them are the great enemies and wrongdoers, such as\r\nthe evil Goddess Yochlol and the powerful evil Wizard Tharoecon.\r\n"
+[[rooms]]
+vnum = 15012
+name = "The Great Hall"
+description = "   You are standing in the southern end of the Great Hall.  It\r\nis truly vast; the roof is so high above your head, that it seems no\r\ncloser than the clouds outside.  The roof is beautifully painted, by\r\nsomeone who must have been a true master.  The hall is very large,\r\nand could easily seat several hundred people at a banquet.  To your\r\nnorth, you see King Welmar's great throne, and to the south is the\r\nCastle Entrance.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the part of the Great Hall where the throne is.\r\n"
+door = 0
+key = -1
+to_room = 15017
+
+[[rooms.exits]]
+dir = 1
+description = "You see the King's Great Hall.\r\n"
+door = 0
+key = -1
+to_room = 15013
+
+[[rooms.exits]]
+dir = 2
+description = "You see the Castle Entrance.\r\n"
+door = 0
+key = -1
+to_room = 15007
+
+[[rooms.exits]]
+dir = 3
+description = "You see the King's Great Hall.\r\n"
+door = 0
+key = -1
+to_room = 15011
+
+[[rooms.extra]]
+keyword = "roof paintings paint"
+description = "The paintings on the roof depict the great heroes and gods.  One of \r\nthe gods is fairly heavy-bellied and incredibly hairy, with a massive\r\nbeard.  Also among them are the great enemies and wrongdoers, such as\r\nthe evil Goddess Yochlol and the powerful evil Wizard Tharoecon.\r\n"
+[[rooms]]
+vnum = 15013
+name = "The Great Hall"
+description = "   You are standing in the south-east end of the Great Hall.  It\r\nis truly vast; the roof is so high above your head, that it seems no\r\ncloser than the clouds outside.  The roof is beautifully painted, by\r\nsomeone who must have been a true master.  The hall is very large,\r\nand could easily seat several hundred people at a banquet.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the King's Great Hall.\r\n"
+door = 0
+key = -1
+to_room = 15018
+
+[[rooms.exits]]
+dir = 3
+description = "You see the King's Great Hall.\r\n"
+door = 0
+key = -1
+to_room = 15012
+
+[[rooms.extra]]
+keyword = "roof paintings paint"
+description = "The paintings on the roof depict the great heroes and gods.  One of\r\nthe gods is fairly heavy-bellied and incredibly hairy, with a massive\r\nbeard.  Also among them are the great enemies and wrongdoers, such as\r\nthe evil Goddess Yochlol and the powerful, evil Wizard Tharoecon.\r\n"
+[[rooms]]
+vnum = 15014
+name = "A Passage"
+description = "   You are standing in a passage, that leads north and south.  To the south\r\nit leads towards one of towers.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the small passage continue.\r\n"
+door = 0
+key = -1
+to_room = 15019
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 15009
+[[rooms]]
+vnum = 15015
+name = "The Passage"
+description = "   You are in a passage, that leads north and south. To the east there\r\nis an exit to the Great Hall.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the passage continue.\r\n"
+door = 0
+key = -1
+to_room = 15020
+
+[[rooms.exits]]
+dir = 1
+description = "You see the King's Great Hall.\r\n"
+door = 0
+key = -1
+to_room = 15016
+
+[[rooms.exits]]
+dir = 2
+description = "You see the passage continue.\r\n"
+door = 0
+key = -1
+to_room = 15010
+[[rooms]]
+vnum = 15016
+name = "The Great Hall"
+description = "   You are standing in the north-west end of the Great Hall.  It \r\nis truly vast; the roof is so high above your head, that it seems no\r\ncloser than the clouds outside.  The roof is beautifully painted, by\r\nsomeone who must have been a true master.  The hall is very large,\r\nand could easily seat several hundred people at a banquet.  To your\r\neast, you see King Welmar's great throne, and to the west there is\r\nan exit to a passage.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "You see the part of the Great Hall where the throne is.\r\n"
+door = 0
+key = -1
+to_room = 15017
+
+[[rooms.exits]]
+dir = 2
+description = "You see the King's Great Hall.\r\n"
+door = 0
+key = -1
+to_room = 15011
+
+[[rooms.exits]]
+dir = 3
+description = "You see a passage.\r\n"
+door = 0
+key = -1
+to_room = 15015
+
+[[rooms.extra]]
+keyword = "roof paintings paint"
+description = "The paintings on the roof depict the great heroes and gods.  One of\r\nthe gods is fairly heavy-bellied and incredibly hairy, with a massive\r\nbeard.  Also among them are the great enemies and wrongdoers, such as\r\nthe evil Goddess Yochlol and the powerful evil Wizard Tharoecon.\r\n"
+[[rooms]]
+vnum = 15017
+name = "By The Throne In The Great Hall"
+description = "   You are standing by the King's huge ivory throne.  The throne is, to\r\nan even greater degree than the Hall itself, a masterpiece.  It is\r\nintricately and beautifully carved, and it seems to be made out of a \r\nsingle block of ivory, though you shiver at the thought of meeting\r\nthe animal that died to yield a piece of that size.  The Hall continues\r\nto the east, west and south.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "You see the King's Great Hall.\r\n"
+door = 0
+key = -1
+to_room = 15018
+
+[[rooms.exits]]
+dir = 2
+description = "You see the King's Great Hall.\r\n"
+door = 0
+key = -1
+to_room = 15012
+
+[[rooms.exits]]
+dir = 3
+description = "You see the King's Great Hall.\r\n"
+door = 0
+key = -1
+to_room = 15016
+
+[[rooms.extra]]
+keyword = "throne ivory"
+description = "It is large and very beautiful.  The carvings are mainly of animals and\r\nmagic beasts.\r\n"
+
+[[rooms.extra]]
+keyword = "roof paintings paint"
+description = "The paintings on the roof depict the great heroes and gods.  One of\r\nthe gods is fairly heavy-bellied and incredibly hairy, with a massive\r\nbeard.  Also among them are the great enemies and wrongdoers, such as\r\nthe evil Goddess Yochlol and the powerful evil Wizard Tharoecon.\r\n"
+[[rooms]]
+vnum = 15018
+name = "The Great Hall"
+description = "   You are standing in the north-east end of the Great Hall.  It\r\nis truly vast; the roof is so high above your head, that it seems no\r\ncloser than the clouds outside.  The roof is beautifully painted, by\r\nsomeone who must have been a true master.  The hall is very large,\r\nand could easily seat several hundred people at a banquet.  To your\r\nwest, you see King Welmar's great throne, and to the east there is\r\nan exit to a small passage.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "You see a passage.\r\n"
+door = 0
+key = -1
+to_room = 15019
+
+[[rooms.exits]]
+dir = 2
+description = "You see the King's Great Hall.\r\n"
+door = 0
+key = -1
+to_room = 15013
+
+[[rooms.exits]]
+dir = 3
+description = "You see the part of the Great Hall where the throne is.\r\n"
+door = 0
+key = -1
+to_room = 15017
+
+[[rooms.extra]]
+keyword = "roof paintings paint"
+description = "The paintings on the roof depict the great heroes and gods.  One of \r\nthe gods is fairly heavy-bellied and incredibly hairy, with a massive\r\nbeard.  Also among them are the great enemies and wrongdoers, such as\r\nthe evil Goddess Yochlol and the powerful evil Wizard Tharoecon.\r\n"
+[[rooms]]
+vnum = 15019
+name = "The Small Passage"
+description = "   You are standing in a small passage, that leads north and south.\r\nTo the west, there is an exit into the Great Hall.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "The passage continues to the north.\r\n"
+door = 0
+key = -1
+to_room = 15024
+
+[[rooms.exits]]
+dir = 2
+description = "The passage continues to the south.\r\n"
+door = 0
+key = -1
+to_room = 15014
+
+[[rooms.exits]]
+dir = 3
+description = "To the west you see the Great Hall.\r\n"
+door = 0
+key = -1
+to_room = 15018
+[[rooms]]
+vnum = 15020
+name = "The Passage"
+description = "   You are standing in a north-south leading passage.  There is a door\r\nto the east.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "The passage leads to a staircase.\r\n"
+door = 0
+key = -1
+to_room = 15025
+
+[[rooms.exits]]
+dir = 1
+description = "The door is quite small and unobtrusive.\r\n"
+keyword = "door"
+door = 1
+key = -1
+to_room = 15021
+
+[[rooms.exits]]
+dir = 2
+description = "The passage continues to the south.\r\n"
+door = 0
+key = -1
+to_room = 15015
+[[rooms]]
+vnum = 15021
+name = "The Servants' Corridor"
+description = "   You are standing in a corridor, that stretches further to the east.\r\nThere are doors to the north and west.  The corridor itself is mainly\r\nused by servants, and lacks some of the beauty of the rest of the\r\ncastle.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "There is a door there!\r\n"
+keyword = "door"
+door = 1
+key = -1
+to_room = 15026
+
+[[rooms.exits]]
+dir = 1
+description = "The corridor seems to come to its end a bit further east.\r\n"
+door = 0
+key = -1
+to_room = 15022
+
+[[rooms.exits]]
+dir = 3
+description = "The door to the west is made out of wood.\r\n"
+keyword = "door wood"
+door = 1
+key = -1
+to_room = 15020
+[[rooms]]
+vnum = 15022
+name = "The End Of The Servants' Corridor"
+description = "   The corridor leads only west from here, but there is a door to\r\nthe north.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "The door leads to a room intended for the butler.\r\n"
+keyword = "door"
+door = 1
+key = 15009
+to_room = 15027
+
+[[rooms.exits]]
+dir = 3
+description = "You see the corridor continue.\r\n"
+door = 0
+key = -1
+to_room = 15021
+[[rooms]]
+vnum = 15023
+name = "The Training Room"
+description = "   This is the Training Room of the men of the Castle guard.  It is\r\nvery large, with weapons standing in racks by all the walls.  Most\r\nof the weapons seem to be intended for training only, with blunt\r\nedges and the like, but there are some that might be useful for\r\nreal fighting.  There is a door to the north.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "The door is large and heavy.\r\n"
+keyword = "door large heavy"
+door = 1
+key = -1
+to_room = 15028
+
+[[rooms.exits]]
+dir = 1
+description = "You see a small passage.\r\n"
+door = 0
+key = -1
+to_room = 15024
+[[rooms]]
+vnum = 15024
+name = "The Small Passage"
+description = "   You are standing in a small passage leading north and south.  There\r\nis also an exit to the west, from which grunts, cheers and heavy blows\r\ncan be heard.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "The passage leads north to some stairs.\r\n"
+door = 0
+key = -1
+to_room = 15029
+
+[[rooms.exits]]
+dir = 2
+description = "You see the passage continuing.\r\n"
+door = 0
+key = -1
+to_room = 15019
+
+[[rooms.exits]]
+dir = 3
+description = "You see the Training Room.\r\n"
+door = 0
+key = -1
+to_room = 15023
+[[rooms]]
+vnum = 15025
+name = "The Stair Room"
+description = "   You are standing below a great staircase, that leads up to the\r\nsecond floor of the Castle.  The stairs are made of marble, and there\r\nare pillars carved in the likenesses of trees with little animals\r\nrunning up and down the trunks.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "You see the passage.\r\n"
+door = 0
+key = -1
+to_room = 15020
+
+[[rooms.exits]]
+dir = 4
+description = "The stairs lead up to the second floor.\r\n"
+door = 0
+key = -1
+to_room = 15049
+
+[[rooms.extra]]
+keyword = "pillar pillars tree trees"
+description = "Very nice. Squirrels and little birds all over.\r\n"
+
+[[rooms.extra]]
+keyword = "stairs stair"
+description = "Made out of marble, and as all the rest of the Castle made primarily\r\nfor beauty and with great skill.\r\n"
+[[rooms]]
+vnum = 15026
+name = "The Servants' Quarters"
+description = "   You are standing in a large room, that seems to house many of the\r\nservants.  The room is full of comfortable-looking beds.  There is also\r\na large chest, probably containing some of the servants' belongings.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "The door is made out of wood.\r\n"
+keyword = "door wood"
+door = 1
+key = -1
+to_room = 15021
+
+[[rooms.extra]]
+keyword = "bed"
+description = "The beds all look comfortable, despite the fact that this is just\r\nthe servants' place.\r\n"
+[[rooms]]
+vnum = 15027
+name = "The Butler's Quarters"
+description = "   You see at once that this must be the butler's room, for it lies\r\nin the servants' wing, and still it is large and comfortable; almost\r\nluxurious, in fact.  There is a large bed and a drawer in the room.\r\nThe only exit is via the door to the south.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "You see the corridor.\r\n"
+keyword = "door"
+door = 1
+key = 15009
+to_room = 15022
+
+[[rooms.extra]]
+keyword = "bed"
+description = "Looks very comfortable indeed.\r\n"
+[[rooms]]
+vnum = 15028
+name = "The Guards' Barracks"
+description = "   You are standing in a very large room with bunks all over.  It is\r\nobvious, that this is where the guards off duty spend most of their\r\ntime, drinking and gambling or, probably, mostly sleeping.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "The door is large and heavy.\r\n"
+keyword = "door large heavy"
+door = 1
+key = -1
+to_room = 15023
+
+[[rooms.extra]]
+keyword = "bunk bunks"
+description = "They look a bit hard, but you could sleep in them.\r\n"
+[[rooms]]
+vnum = 15029
+name = "The Stairs"
+description = "   You are standing by a staircase leading down.  As you look down,\r\nyou notice that for the first time since you entered the castle,\r\nthings are not aesthetically made.  Instead it looks more functional\r\nand prison-like.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "You see the small passage.\r\n"
+door = 0
+key = -1
+to_room = 15024
+
+[[rooms.exits]]
+dir = 5
+description = "The stairs down lead into darkness.\r\n"
+door = 0
+key = -1
+to_room = 15055
+
+[[rooms.extra]]
+keyword = "stairs stair staircase"
+description = "They seem to be made of granite, and stretch down into a more dimly\r\nlit area than where you come from.\r\n"
+[[rooms]]
+vnum = 15030
+name = "At A Bend In The Corridor"
+description = "   You are standing at a place where the corridor bends from east to north.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the corridor continue.\r\n"
+door = 0
+key = -1
+to_room = 15035
+
+[[rooms.exits]]
+dir = 1
+description = "You see the corridor continue.\r\n"
+door = 0
+key = -1
+to_room = 15031
+[[rooms]]
+vnum = 15031
+name = "The Corridor"
+description = "   You are standing in a long corridor, decorated with tapestries\r\ndepicting old times and old heroes.  It leads east and west.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "You see the corridor continue.\r\n"
+door = 0
+key = -1
+to_room = 15032
+
+[[rooms.exits]]
+dir = 3
+description = "You see the corridor continue.\r\n"
+door = 0
+key = -1
+to_room = 15030
+[[rooms]]
+vnum = 15032
+name = "The Corridor"
+description = "   You are standing in a long corridor, decorated with tapestries\r\ndepicting old times and old heroes.  It leads east and west.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "You see the corridor continue.\r\n"
+door = 0
+key = -1
+to_room = 15033
+
+[[rooms.exits]]
+dir = 3
+description = "You see the corridor continue.\r\n"
+door = 0
+key = -1
+to_room = 15031
+[[rooms]]
+vnum = 15033
+name = "The Corridor"
+description = "   You are standing in a long corridor, decorated with tapestries\r\ndepicting old times and old heroes.  The corridor continues west,\r\nand to the north you see the luxurious guest wing.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the guest wing.\r\n"
+door = 0
+key = -1
+to_room = 15038
+
+[[rooms.exits]]
+dir = 3
+description = "You see the corridor continue.\r\n"
+door = 0
+key = -1
+to_room = 15032
+[[rooms]]
+vnum = 15034
+name = "In The South-East Tower"
+description = "   This part of the tower is fairly uninteresting, but it leads further\r\nupwards...\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 4
+description = "The room at the top of the tower seems darkish for some reason.\r\n"
+door = 0
+key = -1
+to_room = 15052
+
+[[rooms.exits]]
+dir = 5
+description = "You see the stairs at the bottom of the tower.\r\n"
+door = 0
+key = -1
+to_room = 15009
+[[rooms]]
+vnum = 15035
+name = "The Corridor"
+description = "   You are standing in a long corridor, decorated with tapestries\r\ndepicting old times and old heroes.  It leads north and south.  There\r\nis also an exit to the east here.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the corridor continue.\r\n"
+door = 0
+key = -1
+to_room = 15040
+
+[[rooms.exits]]
+dir = 1
+description = "You see a small room.\r\n"
+door = 0
+key = -1
+to_room = 15036
+
+[[rooms.exits]]
+dir = 2
+description = "You see the corridor continue.\r\n"
+door = 0
+key = -1
+to_room = 15030
+[[rooms]]
+vnum = 15036
+name = "By The Treasure Room"
+description = "   You are standing by a great iron door.  The door is very large, and\r\nseems very solid indeed.  There is a sign posted by it. \r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "You see a large steel door.\r\n"
+keyword = "door steel large"
+door = 2
+key = 15007
+to_room = 15037
+
+[[rooms.exits]]
+dir = 3
+description = "You see the corridor.\r\n"
+door = 0
+key = -1
+to_room = 15035
+
+[[rooms.extra]]
+keyword = "sign"
+description = "\r\n              TREASURE ROOM\r\n\r\n   Authorized personnel only - all others keep out.\r\n   ANY trespassing will be SEVERELY punished!!\r\n\r\n"
+[[rooms]]
+vnum = 15037
+name = "The Great Treasury"
+description = "   As you enter this room, you are astonished by the riches that\r\nare stowed away here; not so much in gold, but paintings, tapestries,\r\nskillful carvings and sculptures all over the vast room.  You realise,\r\nhowever, that most of these things are too well known to be sold\r\nanywhere, without branding yourself as a thief, and condemning yourself\r\nto instant death at the hands of the Royal Guard.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+description = "You see a large steel door.\r\n"
+keyword = "door large steel"
+door = 2
+key = 15007
+to_room = 15036
+
+[[rooms.extra]]
+keyword = "painting paintings carving carvings sculptures tapestries"
+description = "It seems they are stored here temporarily to enable changing\r\nof the decoration in the Castle on a regular basis.\r\n"
+[[rooms]]
+vnum = 15038
+name = "The Guest Wing"
+description = "   You have arrived at the part of the Castle where prominent\r\nguests are housed.  To the east there is a large, ornamented\r\ndoor, and a somewhat smaller one leads north. \r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "The door seems to lead to a guest room.\r\n"
+keyword = "door small"
+door = 1
+key = -1
+to_room = 15043
+
+[[rooms.exits]]
+dir = 1
+description = "You see the guest suite behind the ornamented door.\r\n"
+keyword = "door ornament ornamented"
+door = 1
+key = -1
+to_room = 15039
+
+[[rooms.exits]]
+dir = 2
+description = "You see the corridor.\r\n"
+door = 0
+key = -1
+to_room = 15033
+[[rooms]]
+vnum = 15039
+name = "The Guest Suite"
+description = "   This must be where only the most highly regarded guests stay, since\r\nit is luxurious beyond your wildest imagination.  This is only the living\r\nroom of the suite, but it is huge and tastefully decorated.  All the\r\nfurniture is not only beautiful, but also made for comfort.  To the\r\nnorth, there is an exit to the bedroom, and there is a door to the west.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the bedroom.\r\n"
+door = 0
+key = -1
+to_room = 15044
+
+[[rooms.exits]]
+dir = 3
+description = "Behind the door you see the entrance to the Guest Wing.\r\n"
+keyword = "door"
+door = 1
+key = -1
+to_room = 15038
+[[rooms]]
+vnum = 15040
+name = "The Corridor"
+description = "   You are standing in a long corridor, decorated with tapestries\r\ndepicting old times and old heroes.  It leads north and south.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the corridor continue.\r\n"
+door = 0
+key = -1
+to_room = 15045
+
+[[rooms.exits]]
+dir = 2
+description = "You see the corridor continue.\r\n"
+door = 0
+key = -1
+to_room = 15035
+[[rooms]]
+vnum = 15041
+name = "The Ball Room"
+description = "   You are standing in the great Ball Room.  It is a truly large room,\r\nwith a stage for an orchestra in the south-east end.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the Ball Room.\r\n"
+door = 0
+key = -1
+to_room = 15046
+
+[[rooms.exits]]
+dir = 1
+description = "To the east you see the stage.\r\n"
+door = 0
+key = -1
+to_room = 15042
+[[rooms]]
+vnum = 15042
+name = "By The Stage"
+description = "   Before you you see the stage.  It is large enough for some 40 \r\nmusicians to play on at the same time.  The Ball Room continues\r\nto the west and north.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the Ball Room.\r\n"
+door = 0
+key = -1
+to_room = 15047
+
+[[rooms.exits]]
+dir = 3
+description = "You see the Ball Room.\r\n"
+door = 0
+key = -1
+to_room = 15041
+[[rooms]]
+vnum = 15043
+name = "A Guest Room"
+description = "   You are standing in a large room.  Although it is comfortable enough,\r\nyou can tell it is not meant for any of the most illustrious guests,\r\nsince it lacks that extreme luxury found elsewhere in the Castle.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "Behind the door, you see the entrance to the Guest Wing.\r\n"
+keyword = "door"
+door = 1
+key = -1
+to_room = 15038
+[[rooms]]
+vnum = 15044
+name = "The Bedroom"
+description = "   This room is dominated by the huge four-poster bed, that stands\r\nagainst the northern wall.  The room is large and cosy, and the bed\r\nvirtually begs you to lie down in it and sleep.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "You see the living room of the suite.\r\n"
+door = 0
+key = -1
+to_room = 15039
+
+[[rooms.extra]]
+keyword = "bed"
+description = "Large, comfortable, bolstered... Invites you to sleep in it.\r\n"
+[[rooms]]
+vnum = 15045
+name = "The Corridor"
+description = "   You are standing in a long corridor, decorated with tapestries\r\ndepicting old times and old heroes.  It leads north and south.  There\r\nis an exit to the east, that leads to a large room.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the corridor continue.\r\n"
+door = 0
+key = -1
+to_room = 15049
+
+[[rooms.exits]]
+dir = 1
+description = "You see the Ball Room.\r\n"
+door = 0
+key = -1
+to_room = 15046
+
+[[rooms.exits]]
+dir = 2
+description = "You see the corridor continue.\r\n"
+door = 0
+key = -1
+to_room = 15040
+[[rooms]]
+vnum = 15046
+name = "The Ball Room"
+description = "   You are standing in the great Ball Room.  It is a truly large room,\r\nwith a stage for an orchestra in the south-east end.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "You see the Ball Room.\r\n"
+door = 0
+key = -1
+to_room = 15047
+
+[[rooms.exits]]
+dir = 2
+description = "You see the Ball Room.\r\n"
+door = 0
+key = -1
+to_room = 15041
+
+[[rooms.exits]]
+dir = 3
+description = "You see the corridor.\r\n"
+door = 0
+key = -1
+to_room = 15045
+[[rooms]]
+vnum = 15047
+name = "The Ball Room"
+description = "   You are standing in the great Ball Room.  It is a truly large room,\r\nwith a stage for an orchestra in the south-east end.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "To the east, you can enter a tower.\r\n"
+door = 0
+key = -1
+to_room = 15048
+
+[[rooms.exits]]
+dir = 2
+description = "To the south you see the stage.\r\n"
+door = 0
+key = -1
+to_room = 15042
+
+[[rooms.exits]]
+dir = 3
+description = "You see the Ball Room.\r\n"
+door = 0
+key = -1
+to_room = 15046
+[[rooms]]
+vnum = 15048
+name = "In The Tower"
+description = "   You are standing in the north-eastern of the three great watch-\r\ntowers of the Castle.  To the west, you can enter the Ball Room and\r\nthere are stairs leading up into the Tower.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+description = "You see the Ball Room.\r\n"
+door = 0
+key = -1
+to_room = 15047
+
+[[rooms.exits]]
+dir = 4
+description = "The stairs lead a long way up to the top of the Tower.\r\n"
+door = 0
+key = -1
+to_room = 15054
+
+[[rooms.extra]]
+keyword = "stairs"
+description = "The stairs are made out of granite, and seem solid enough.\r\n"
+[[rooms]]
+vnum = 15049
+name = "The Grand Staircase"
+description = "   You are standing on a great staircase, that leads up and down.  To \r\nthe east, there is a large oak door, and a corridor leads south.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "The door is large and made out of oak.\r\n"
+keyword = "door oak large"
+door = 1
+key = 15014
+to_room = 15050
+
+[[rooms.exits]]
+dir = 2
+description = "You see the corridor.\r\n"
+door = 0
+key = -1
+to_room = 15045
+
+[[rooms.exits]]
+dir = 4
+description = "The stairs continue up to the top of the tower.\r\n"
+door = 0
+key = -1
+to_room = 15053
+
+[[rooms.exits]]
+dir = 5
+description = "The stairs lead down to the first floor of the Castle.\r\n"
+door = 0
+key = -1
+to_room = 15025
+
+[[rooms.extra]]
+keyword = "stairs"
+description = "The stairs are made of marble, and there are pillars carved in the\r\nlikenesses of trees with little animals running up and down the\r\ntrunks.\r\n"
+[[rooms]]
+vnum = 15050
+name = "The Cosy Room"
+description = "   You have entered a large, cosy living room.  There is a fireplace\r\nwith a fire burning, and a few comfortable chairs around a little\r\ntable.  There is a door to the west, and also an exit to the east.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "You see a large bedroom.\r\n"
+door = 0
+key = -1
+to_room = 15051
+
+[[rooms.exits]]
+dir = 3
+description = "The door is large, and made out of oak.\r\n"
+keyword = "door large oak"
+door = 1
+key = 15014
+to_room = 15049
+
+[[rooms.extra]]
+keyword = "chairs"
+description = "The chairs are arranged around the fireplace.\r\n"
+
+[[rooms.extra]]
+keyword = "table"
+description = "The table is made of mahogany, and elegant in a cosy way(!)\r\n"
+
+[[rooms.extra]]
+keyword = "fire fireplace"
+description = "The fire is built out of logs, and seems to be able to burn for \r\nquite a while longer.\r\n"
+[[rooms]]
+vnum = 15051
+name = "King Welmar's Bedroom"
+description = "   This is a large room, with a wonderful view.  To one side of the\r\nroom, stands a large four-poster bed.  All around the room there are\r\nmassive bookshelves, filled with all kinds of books.  The titles include\r\nworks such as: 'A Treatise on the History of Midgaard and surrounding\r\nareas', 'Magic - A Beginner's Introduction' and many others.  There is\r\nan exit to the west.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+description = "There is a large and cosy room to the west.\r\n"
+door = 0
+key = -1
+to_room = 15050
+
+[[rooms.extra]]
+keyword = "magic"
+description = "Beginner?  This book goes beyond most of what YOU know about magic\r\nanyway.  But then, there are levels of magical knowledge, it seems.\r\n"
+
+[[rooms.extra]]
+keyword = "history midgaard"
+description = "A dry tome, filled with boring knowledge.\r\n"
+
+[[rooms.extra]]
+keyword = "bed"
+description = "Seems nice enough to sleep in, though you would never dare to, since\r\nit is a Royal Bed!\r\n"
+
+[[rooms.extra]]
+keyword = "books book shelf shelves bookshelf bookshelves"
+description = "Most of the books seem worn, as if thoroughly studied.  The King\r\nevidently is interested in keeping himself educated.\r\n"
+[[rooms]]
+vnum = 15052
+name = "Up In The Tower"
+description = "   After a long climb, you finally reach the top of the tower.  This\r\nroom is small, and the only light source is a flickering candle, on\r\na cluttered table, in the middle of the room.  The only obvious exit\r\nis back down the stairs.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 5
+description = "The stairs go down the tower.\r\n"
+door = 0
+key = -1
+to_room = 15034
+
+[[rooms.extra]]
+keyword = "candle"
+description = "Small, uninteresting... A candle that is as normal as can be.\r\n"
+
+[[rooms.extra]]
+keyword = "table"
+description = "On the table are various objects, all very strange-looking.\r\n"
+[[rooms]]
+vnum = 15053
+name = "The Top Of The Tower"
+description = "   You have arrived at the top of the tower.  This tower is pretty\r\nuninteresting, and seems made purely for reasons of defence and \r\nguarding.  The windows are slits for bowmen, very narrow on the \r\noutward side and broad inwards to allow a wide shooting angle.\r\nThe only evident exit is down the stairs again.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 5
+description = "The stairs go down to the second floor.\r\n"
+door = 0
+key = -1
+to_room = 15049
+
+[[rooms.extra]]
+keyword = "window slit"
+description = "As you look out the windows, you are granted a view of the countryside.\r\n"
+[[rooms]]
+vnum = 15054
+name = "The Top Of The Tower"
+description = "   This is the highest of all the towers, and is obviously used for\r\nlookout purposes.  The view is splendid in all four directions.  All\r\naround you, the rich countryside spreads out to the horizon.  To the\r\nnorth and east you see a vast mountain range, and far to the west\r\na beautiful lake.  A bit closer, the town of Midgaard lies at the\r\nend of the King's Road.  The only exit you can see is down again.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "To the north, the tall White Mountains have their highest peaks.\r\nThe mountaintops disappear in the white clouds, far above the \r\nplains.  The sight of those high, far mountains fills you with a\r\ndesire to scale them, to see the world from that vantage.\r\n"
+door = 0
+key = -1
+to_room = -1
+
+[[rooms.exits]]
+dir = 1
+description = "In the east you see an arm of the dominating mountain range on this\r\ncontinent, the White Mountains.  Though not as high as those in the\r\nnorth, the sight of those mountains fills you with awe.\r\n"
+door = 0
+key = -1
+to_room = -1
+
+[[rooms.exits]]
+dir = 2
+description = "To the south, rolling hills stretch away, as far as you can see.\r\n"
+door = 0
+key = -1
+to_room = -1
+
+[[rooms.exits]]
+dir = 3
+description = "As you look west, you see a river flowing through all of Midgaard\r\nand continuing beyond it towards a great lake.  Still further\r\naway, you can glimpse something silvery that has to be the Sea.\r\n"
+door = 0
+key = -1
+to_room = -1
+
+[[rooms.exits]]
+dir = 5
+description = "You see the stairs going back down to the second floor.\r\n"
+door = 0
+key = -1
+to_room = 15048
+[[rooms]]
+vnum = 15055
+name = "The Bottom Of The Stairs"
+description = "   The stairs lead down to a damp part of the castle, you can hear\r\nwater dripping somewhere around you.  The area is lit by a single\r\ntorch flickering in the room which this staircase is built off of.\r\n   The stairs lead upwards and they open up onto a fairly small\r\nroom to the east.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "A small room opens up to the east.\r\n"
+door = 0
+key = -1
+to_room = 15056
+
+[[rooms.exits]]
+dir = 4
+description = "The stairs lead upwards out of this dank, dark place.\r\n"
+door = 0
+key = -1
+to_room = 15029
+[[rooms]]
+vnum = 15056
+name = "The Guard Room"
+description = "   You are at a loss to explain why someone would want to spend all\r\nday down here.  The only explanation that seems even remotely logical\r\nto you is that there must be an important prisoner kept in one of the\r\ncells through the south door.\r\n   The decorations of the room are sparse, merely a table, a chair,\r\nand a deck of cards.  A stairwell has been built into the western wall\r\nand it leads upwards. \r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "Through the peep hole at the top of the small wooden door you can see\r\nthat there is a small corridor leading past several cells.\r\n"
+keyword = "door wooden"
+door = 1
+key = 15017
+to_room = 15057
+
+[[rooms.exits]]
+dir = 3
+description = "A small stairwell built into the western wall of the room leads upwards.\r\n"
+door = 0
+key = -1
+to_room = 15055
+
+[[rooms.extra]]
+keyword = "card floor"
+description = "The card on the floor seems to be the Ace of Spades... a bad card to find\r\nindeed.  What could be the bad luck brought about by this discovery?\r\n"
+
+[[rooms.extra]]
+keyword = "table cards deck"
+description = "There is a deck of cards on the table in a small pile.  There is one card\r\nlying on the floor however.\r\n"
+[[rooms]]
+vnum = 15057
+name = "The Prison"
+description = "   This small passage is about thirty feet long and is well lit by the\r\ntorches on each wall.  The torches have been locked inside small metal\r\ncages to ensure that they are not removed.  The strangest thing about\r\nthe torches however, is the manner in which they burn, they have what\r\nappears to be a constant flame in that it does not flicker whatsoever,\r\nand does not give off any smoke.  Perhaps they have been magicked to\r\nburn forever...\r\n   There are three cells along this passage way, one on each side of\r\nthe corridor right near the north end and one isolated at the south\r\nend of the corridor with a small metal plaque located over the door\r\nin the keystone of the archway.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "A small wooden door blocks the way out of the prison.\r\n"
+keyword = "door wooden"
+door = 1
+key = 15017
+to_room = 15056
+
+[[rooms.exits]]
+dir = 1
+description = "A cell door is set into the eastern wall.\r\n"
+keyword = "door cell"
+door = 2
+key = 15017
+to_room = 15060
+
+[[rooms.exits]]
+dir = 2
+description = "The cell door to the south has been double padlocked and there is a\r\nplaque placed in the keystone above the door.\r\n"
+keyword = "door cell"
+door = 2
+key = 15017
+to_room = 15059
+
+[[rooms.exits]]
+dir = 3
+description = "A cell door is set into the western wall.\r\n"
+keyword = "door cell"
+door = 2
+key = 15017
+to_room = 15058
+
+[[rooms.extra]]
+keyword = "plaque keystone"
+description = "The plaque in the keystone is engraved with four simple words:\r\n\r\n                Ergan, Murderer of Townsbridge\r\n\r\n"
+[[rooms]]
+vnum = 15058
+name = "A Cell"
+description = "   This cell is in a shambles.  There is a small hole in the\r\nwestern wall where something has broken through the stones\r\ninto the cell.  There is a cell door in the eastern wall.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "The cell door to the east leads back to the prison hallway.\r\n"
+keyword = "door cell"
+door = 2
+key = 15017
+to_room = 15057
+
+[[rooms.extra]]
+keyword = "hole"
+description = "The hole is much too small for you to clamber through.\r\n"
+[[rooms]]
+vnum = 15059
+name = "Ergan's Cell"
+description = "   This large cell is almost like a living quarters with a cot\r\nin one corner serving as a bed, a small table built out of the\r\nwall in another corner.  There is even a rug in the center of\r\nthe floor to keep some warmth.  It seems that the prisoner kept\r\nhere is treated quite well, almost too well for a murderer of\r\nan entire town...\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "The cell door to the north leads back to the prison hallway.\r\n"
+keyword = "door cell"
+door = 2
+key = 15017
+to_room = 15057
+[[rooms]]
+vnum = 15060
+name = "A Cell"
+description = "   This small cell is damp and dark and looks like noone and nothing\r\nhas lived in it for quite some time.  A small cell door is located in\r\nthe west wall.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+description = "The cell door to the west leads back to the prison hallway.\r\n"
+keyword = "door cell"
+door = 2
+key = 15017
+to_room = 15057
+[[rooms]]
+vnum = 15061
+name = "An Overgrown Trail"
+description = "   Moving off of the King's Road, you find yourself on a small\r\nfading trail which appears to have been so little used that it\r\nhas almost completely grown over with vegitation from the woods\r\nhere.  Sounds of the forest can be heard all round and you feel\r\na peaceful feeling come over you as you realize that mankind\r\nhas not passed this way for some time.\r\n   The faded trail appears to lead north and south.\r\n"
+flags = "0"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+description = "The travel upon the King's Road can be heard off to the north.\r\n"
+door = 0
+key = -1
+to_room = 15000
+
+[[rooms.exits]]
+dir = 2
+description = "The trail continues southwards.\r\n"
+door = 0
+key = -1
+to_room = 15062
+[[rooms]]
+vnum = 15062
+name = "An Overgrown Trail"
+description = "   Continuing through the heavy undergrowth, you find yourself\r\nin the middle of the forest.  The sounds of the forest can be\r\nheard all round and you feel a peaceful feeling come over you\r\nas you realize that mankind has not passed this way for some\r\ntime.\r\n   The fading trail you are on appears to have been so little\r\nused that it has almost completely grown over with vegitation\r\nfrom the woods here.  \r\n   The faded trail appears to lead north and east.\r\n"
+flags = "0"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+description = "The trail continues northwards.\r\n"
+door = 0
+key = -1
+to_room = 15061
+
+[[rooms.exits]]
+dir = 1
+description = "The trail appears to continue to the east.\r\n"
+door = 0
+key = -1
+to_room = 15063
+[[rooms]]
+vnum = 15063
+name = "An Overgrown Trail"
+description = "   Continuing through the heavy undergrowth, you find yourself\r\nin the middle of the forest.  The sounds of the forest can be\r\nheard all round and you feel a peaceful feeling come over you\r\nas you realize that mankind has not passed this way for some\r\ntime.\r\n   The fading trail you are on appears to have been so little\r\nused that it has almost completely grown over with vegitation\r\nfrom the woods here.  \r\n   The faded trail appears to lead west and south.  To the south\r\na strange eerie silence seems to hang in the air, almost blocking\r\nout all the sounds that you can hear from the north and east.\r\n"
+flags = "0"
+sector = 4
+
+[[rooms.exits]]
+dir = 2
+description = "The undergrowth begins to open up to the south and you can see what\r\nappears to be a small village to the south.  It is very quiet, almost\r\ntoo quiet.\r\n"
+door = 0
+key = -1
+to_room = 15064
+
+[[rooms.exits]]
+dir = 3
+description = "The overgrown trail continues to the northwest.\r\n"
+door = 0
+key = -1
+to_room = 15062
+[[rooms]]
+vnum = 15064
+name = "A Dirt Road"
+description = "   As you leave the forest to the north, you find yourself at\r\nwhat appears to be the beginning of a dirt road and a small\r\nvillage.  Upon first laying eyes on this place you realize\r\nthat there is something funny about this settlement... there\r\nis no sound other that the whistling wind here.  You would have\r\nexpected to hear people going about their regular business, but\r\nthe village is silent.  You cannot see any movement around the\r\nvillage either.  It is almost as still and silent as the woods\r\nto the north.\r\nThere is a small sign lying by the side of the road here.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "An trail leads into the heavy undergrowth to the north.\r\n"
+door = 0
+key = -1
+to_room = 15063
+
+[[rooms.exits]]
+dir = 2
+description = "The dirt road continues through the village to the south.\r\n"
+door = 0
+key = -1
+to_room = 15065
+
+[[rooms.exits]]
+dir = 3
+description = "A house stands a short distance off the west side of the road, its\r\ndoor hanging ajar.\r\n"
+door = 0
+key = -1
+to_room = 15068
+
+[[rooms.extra]]
+keyword = "sign"
+description = "\r\n/----------------------------------\\\r\n|     Welcome to the hamlet of     |\r\n|           Townsbridge            |\r\n|                                  |\r\n|                                  |\r\n|     Population:  276             |\r\n|                                  |\r\n\\----------------------------------/\r\n\r\nThe number 276 has been scratched out and replaced with the\r\nnumber 0.\r\n\r\n"
+[[rooms]]
+vnum = 15065
+name = "A Small Intersection"
+description = "   Continuing along the dirt road, you find yourself at a place where\r\na small path splits away from the main road and leads off to the west.\r\nThe woods around the village seem to be pressing inwards towards you\r\nas if the village hides a secret which they do not want to be spread\r\nabout.\r\n   There is another house standing on the east side of the road.  \r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "The dirt road continues to the north.\r\n"
+door = 0
+key = -1
+to_room = 15064
+
+[[rooms.exits]]
+dir = 1
+description = "You can hear a wailing sound coming from the house to the east.\r\n"
+door = 0
+key = -1
+to_room = 15069
+
+[[rooms.exits]]
+dir = 2
+description = "The dirt road continues towards the south where a horrible smell\r\npermeates the air.\r\n"
+door = 0
+key = -1
+to_room = 15066
+
+[[rooms.exits]]
+dir = 3
+description = "A small, dark trail leads off into the woods to the west.\r\n"
+door = 0
+key = -1
+to_room = 15072
+[[rooms]]
+vnum = 15066
+name = "A Dirt Road"
+description = "   This section of the dirt road is quiet, but there is an awful stench\r\nin the air.  It brings to mind rotting corpses and raw sewage.  The woods\r\ncontiue to press closely about you, and almost totally surround the small\r\nbuilding to the west with a thatched roof.  There is a blackened shell of\r\na building to the east with a small sign hanging out front from a black\r\nand charred chain.\r\n   The dirt road continues north and south.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "The small dirt road continues towards the north.\r\n"
+door = 0
+key = -1
+to_room = 15065
+
+[[rooms.exits]]
+dir = 1
+description = "The building to the east is merely a shell of what it once probably\r\nwas.  The walls are blackened as if they had been exposed to fire at\r\nsome point in the past...\r\n"
+door = 0
+key = -1
+to_room = 15071
+
+[[rooms.exits]]
+dir = 2
+description = "The stench from the south is almost overpowering now... it seems that\r\nthe source wouldn't be too far from here.\r\n"
+door = 0
+key = -1
+to_room = 15067
+
+[[rooms.exits]]
+dir = 3
+description = "A small quiet cottage stands on the west side of the road, apparently\r\nuntouched by the desecration and destruction that appears to have hit\r\nthis small village.\r\n"
+door = 0
+key = -1
+to_room = 15070
+
+[[rooms.extra]]
+keyword = "sign"
+description = "The sign is covered with soot and the wood is quite charred, but you can\r\nstill make out the following letters:\r\n\r\n        T   TO  SB  DGE   NER L    RE\r\n\r\n"
+[[rooms]]
+vnum = 15067
+name = "A Large Pit"
+description = "   The dirt road ends at the edge of a large pit here and you now\r\nrealize where the awful smell was coming from.  This pit appears\r\nto be a mass grave for the citizens of the village.  There are\r\nbones and corpses lying all over the place.  A lot of the corpses\r\nlook too recent to be from the Townsbridge murders of almost a\r\ndecade ago, but the village seems to have been empty for almost\r\nthat long.\r\n   The dirt road leads away from the carnage to the north.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Just near the north edge of the pit a small and narrow trail leads\r\naway.\r\n"
+door = 0
+key = -1
+to_room = 15066
+[[rooms]]
+vnum = 15068
+name = "A House"
+description = "   This house is a wreck, furniture has been strewn all about\r\nthe room, and it looks like a tornado landed right in the middle\r\nof the room.  The destruction that has taken place in this room\r\nis almost beyond belief.  The oddest part of it all though, is\r\nhow it all seems so recent, since there are no cobwebs, and there\r\nis no dust on anything.\r\n   The dirt road can be seen to the east through the doorway.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "You can see the dirt road through the doorway to the east.\r\n"
+door = 0
+key = -1
+to_room = 15064
+[[rooms]]
+vnum = 15069
+name = "A House"
+description = "   This darkened room is barely lit by the outdoor light, but what\r\nyou can see of it gives you the creeps.  There are cobwebs dangling\r\nfrom everything, a thick layer of dust begins to rise up at your\r\npassage, and a strange howl comes from somewhere around you.  The\r\nfurniture in this house is old and of a type that hasn't been seen\r\naround these lands for some time.  If it was in better shape, you\r\nmight be able to sell it as antique.\r\n   The meager light of the road shines through the doorway to the\r\nwest.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+description = "You can see the dirt road through the doorway to the west.\r\n"
+door = 0
+key = -1
+to_room = 15065
+[[rooms]]
+vnum = 15070
+name = "A Small Cottage"
+description = "   This cottage looks to have been left in exactly the same shape as\r\nit was in quite some time ago.  It looks as if the residents left one\r\nday and haven't returned home yet.  Oddly enough, the furniture is\r\ndust free and the food on the table still looks fresh.  This house is\r\nreally strange, perhaps it wuld be in your best interests to leave as\r\nsoon as humanly possible.\r\n   The road is back through the open doorway to the east.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "You can see the dirt road through the doorway to the east.\r\n"
+door = 0
+key = -1
+to_room = 15066
+[[rooms]]
+vnum = 15071
+name = "The Burned Shop"
+description = "   As you enter this small building, you notice that that blackened\r\nwalls are due to a fire that seemed to burn here unattended for quite\r\nsome time.  There is almost nothing left of the roof that would have\r\nonce covered this building, and the north and east walls have been\r\nburnt to almost half the height of the other two walls.  There are\r\nsome burnt goods around on the ground and the remains of a counter\r\nnear what is left of the north wall seems to indicate that this was\r\nonce a shop.\r\n   The road lies to the west through the blackened wall.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 3
+description = "You can see the dirt road to the west.\r\n"
+door = 0
+key = -1
+to_room = 15066
+[[rooms]]
+vnum = 15072
+name = "A Dark Path"
+description = "   As you move away form the open air into the darkness of the path\r\nand the sinister looking woods around you, you get a feeling of awe\r\nand something almost akin to horror.  The wood around is completely\r\nsilent, not even the rustling of leaves or the cracking of branches\r\nbreaks the silence.  The final thing you notice is that the darkness\r\nall around you seems to be almost contrived, and doesn't seem natural\r\nfor this kind of vegitation.\r\n   The path continues west and you can see light to the east.\r\n"
+flags = "ad"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "The path continues towards a small intersection with a dirt road.\r\n"
+door = 0
+key = -1
+to_room = 15065
+
+[[rooms.exits]]
+dir = 3
+description = "The path continues through the darkness.\r\n"
+door = 0
+key = -1
+to_room = 15073
+[[rooms]]
+vnum = 15073
+name = "A Dark Path"
+description = "   This narrow path leads through the overhanging trees in the unnatural\r\ndarkness.  It seems almost as if the trees are crowding in on you here,\r\nas if they didn't want to feel your presence.  The wood is almost totally\r\nsilent and you wonder silently to yourself why this could be.\r\n   The path appears to continue east and west.\r\n"
+flags = "ad"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "The path continues through the darkness.\r\n"
+door = 0
+key = -1
+to_room = 15072
+
+[[rooms.exits]]
+dir = 3
+description = "The glow from the west appears to be quite strong, but it does not\r\ngive enough light to see by here, nor can you see the source of the\r\nglow.\r\n"
+door = 0
+key = -1
+to_room = 15074
+[[rooms]]
+vnum = 15074
+name = "The Circle Of Stones"
+description = "   You are at the edge of a circle of seven large monolith-like stones.\r\nEach stone towers over your head and appears to be at least double your\r\nheight.  The stones are made of a dark black material, almost black in\r\ncolour.\r\n   In the center of the ring of stones, you can see a black circular\r\nmirror-like disk on the ground.  The surface is highly reflective and\r\nalmost appears to be rippling.  The trees surrounding the circle tower\r\nfar above your heads blocking out the sky.\r\n   A strange glow seems to be emanating from each stone, almost green\r\nin colour.  This glow provides enough light for you to see with even\r\nthough the sky above has been blotted out.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "A narrow path leads away into the darkness.\r\n"
+door = 0
+key = -1
+to_room = 15073
+
+[[rooms.exits]]
+dir = 4
+description = "You cannot see the sky above since the trees around the stone ring\r\nblock it out entirely.\r\n"
+door = 0
+key = -1
+to_room = -1
+
+[[rooms.extra]]
+keyword = "stones glow stone ring circle"
+description = "Each stone is at least fifteen feet tall, maybe more, and the dark\r\nmaterial glows with a greenish aura providing more than enough light\r\nfor you to see by.\r\n"

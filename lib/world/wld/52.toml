@@ -1,0 +1,1122 @@
+[[rooms]]
+vnum = 5200
+name = "The Grand Gate Of Thalos"
+description = "   You stand in the archway of a gigantic stone archway.  The two\r\nsteel gates have been forced open and have rusted in place.  A hollow\r\ngust of wind blows by you into the deserted, and seemingly destroyed,\r\ncity.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "The desert sands stretch on for miles and miles.\r\n"
+door = 0
+key = -1
+to_room = 5044
+
+[[rooms.exits]]
+dir = 3
+description = "You see devastation everywhere.  Houses lie in ruin and skeletons litter\r\nthe streets.  You see strange beasts stalking the shadows.\r\n"
+door = 0
+key = -1
+to_room = 5201
+[[rooms]]
+vnum = 5201
+name = "Main Street"
+description = "   This was once a magnificent street, but now is in total ruin.  The\r\nstreets are barren and windswept and the silence is unending.  To the south\r\nyou see a ruined cottage while north leads into a dark back alley.  Howls\r\nand screams echo through the deserted city.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "It seems to be a dark alley.\r\n"
+door = 0
+key = -1
+to_room = 5239
+
+[[rooms.exits]]
+dir = 1
+description = "The entrance to the city lies this way.\r\n"
+door = 0
+key = -1
+to_room = 5200
+
+[[rooms.exits]]
+dir = 2
+description = "A ruined shack lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 5235
+
+[[rooms.exits]]
+dir = 3
+description = "Main Street lies this way.\r\n"
+door = 0
+key = -1
+to_room = 5202
+[[rooms]]
+vnum = 5202
+name = "Main Street"
+description = "   This was once a magnificent street, but now is in total ruin.  The\r\nstreets are barren and windswept and the silence is unending.  On one\r\nside is a collapsed house while on the other is the entrance to a large\r\nruined mansion.  Eerie sounds echo within the mansion.  Near the center of \r\ntown you see a large domed building, relatively intact.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "The remnants of a store lie this way.\r\n"
+door = 0
+key = -1
+to_room = 5236
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5201
+
+[[rooms.exits]]
+dir = 2
+description = "It looks like what used to be the main building in the city.\r\n"
+door = 0
+key = -1
+to_room = 5232
+
+[[rooms.exits]]
+dir = 3
+description = "A withered garden path lies this way.\r\n"
+door = 0
+key = -1
+to_room = 5203
+[[rooms]]
+vnum = 5203
+name = "A Garden Path"
+description = "   A circular path surrounds a magnificent domed temple in the center\r\nof the city.  Flowers have withered away and the once lush trees are bare.\r\nVines and ivy snake up the sides of the temple and entangle themselves\r\naround your feet.  A sudden volley of howls pierces the air.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "The garden path continues around the building.\r\n"
+door = 0
+key = -1
+to_room = 5204
+
+[[rooms.exits]]
+dir = 1
+description = "This is the main street leading to the city's entrance.\r\n"
+door = 0
+key = -1
+to_room = 5202
+
+[[rooms.exits]]
+dir = 2
+description = "The garden path continues around the building.\r\n"
+door = 0
+key = -1
+to_room = 5206
+
+[[rooms.exits]]
+dir = 3
+description = "Inside the temple, small patches of light shoot through each doorway as\r\nwell as a few holes in the ceiling.\r\n"
+door = 0
+key = -1
+to_room = 5250
+[[rooms]]
+vnum = 5204
+name = "A Garden Path"
+description = "   A circular path surrounds a magnificent domed temple in the center\r\nof the city.  Flowers have withered away and the once lush trees are bare.\r\nVines and ivy snake up the sides of the temple and entangle themselves\r\naround your feet.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A side street leads of to the northern half of the city.\r\n"
+door = 0
+key = -1
+to_room = 5211
+
+[[rooms.exits]]
+dir = 1
+description = "The garden path continues around the building.\r\n"
+door = 0
+key = -1
+to_room = 5203
+
+[[rooms.exits]]
+dir = 2
+description = "Inside the temple, small patches of light shoot through each doorway as\r\nwell as a few holes in the ceiling.\r\n"
+door = 0
+key = -1
+to_room = 5250
+
+[[rooms.exits]]
+dir = 3
+description = "The garden path continues around the building.\r\n"
+door = 0
+key = -1
+to_room = 5205
+[[rooms]]
+vnum = 5205
+name = "A Garden Path"
+description = "   A circular path surrounds a magnificent domed temple in the center\r\nof the city.  Flowers have withered away and the once lush trees are bare.\r\nVines and ivy creep up the sides of the temple and entangle themselves \r\naround your feet.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "The garden path continues around the building.\r\n"
+door = 0
+key = -1
+to_room = 5204
+
+[[rooms.exits]]
+dir = 1
+description = "Inside the temple, small patches of light shoot through each doorway as\r\nwell as a few cracks in the ceiling.\r\n"
+door = 0
+key = -1
+to_room = 5250
+
+[[rooms.exits]]
+dir = 2
+description = "The garden path continues around the building.\r\n"
+door = 0
+key = -1
+to_room = 5206
+
+[[rooms.exits]]
+dir = 3
+description = "What looks like a market place lies this way.\r\n"
+door = 0
+key = -1
+to_room = 5207
+[[rooms]]
+vnum = 5206
+name = "A Garden Path"
+description = "   A circular path surrounds a magnificent domed temple in the center \r\nof the city.  Flowers have withered away and the once lush trees are bare.\r\nVines and ivy creep up the sides of the temple and entangle themselves \r\naround your feet.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "Inside the temple, small patches of light shoot through each doorway as\r\nwell as a few cracks in the ceiling.\r\n"
+door = 0
+key = -1
+to_room = 5250
+
+[[rooms.exits]]
+dir = 1
+description = "The garden path continues around the building.\r\n"
+door = 0
+key = -1
+to_room = 5203
+
+[[rooms.exits]]
+dir = 2
+description = "A small side street leads to the southern half of the city.\r\n"
+door = 0
+key = -1
+to_room = 5212
+
+[[rooms.exits]]
+dir = 3
+description = "The garden path continues around the building.\r\n"
+door = 0
+key = -1
+to_room = 5205
+[[rooms]]
+vnum = 5207
+name = "The Market Place"
+description = "   You stand in the middle of a large square lined on each side with\r\nbaskets, carts, and stands of all shapes and sizes.  Abandoned, these\r\nlittle shops still contain some of their goods once sold to a demanding\r\npublic.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A small table has been toppled over, spilling fine jewellery and gems\r\nonto the ground.\r\n"
+door = 0
+key = -1
+to_room = 5225
+
+[[rooms.exits]]
+dir = 1
+description = "A small garden path encircles a large domed temple in the center of the \r\ncity.\r\n"
+door = 0
+key = -1
+to_room = 5205
+
+[[rooms.exits]]
+dir = 2
+description = "Rotted remains of fruits and vegetables lie strewn about.\r\n"
+door = 0
+key = -1
+to_room = 5220
+
+[[rooms.exits]]
+dir = 3
+description = "The market place continues.\r\n"
+door = 0
+key = -1
+to_room = 5208
+[[rooms]]
+vnum = 5208
+name = "The Market Place"
+description = "   You stand at the end of the market square.  Stands and carts line\r\neach side, filled with remnants of fine foods and exquisite goods.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "Tattered carpets and ruined bales of silk sit idly by a run down stand.\r\n"
+door = 0
+key = -1
+to_room = 5222
+
+[[rooms.exits]]
+dir = 1
+description = "The center of the market lies this way.\r\n"
+door = 0
+key = -1
+to_room = 5207
+
+[[rooms.exits]]
+dir = 2
+description = "From the massive stench, this must have been a meat and poultry stand.\r\nIt lies totally bare.\r\n"
+door = 0
+key = -1
+to_room = 5217
+[[rooms]]
+vnum = 5209
+name = "A Side Street"
+description = "   This small side street leads east and west into back alleys while\r\nto the south you see the temple.  The incessant howling tears at your\r\nmind.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5243
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5210
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5228
+[[rooms]]
+vnum = 5210
+name = "A Side Street"
+description = "   You are in the common section of the city.  Ruined buildings made of\r\nclay and stone is all the view has to offer.  Most of these homes are \r\nnothing but piles of rubble, but some look almost safe enough to venture\r\ninto.\r\n   The street continues north and south and buildings line the street.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5209
+
+[[rooms.exits]]
+dir = 1
+description = "A small doorway leads into a partially collapsed house.\r\n"
+door = 1
+key = -1
+to_room = 5244
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5211
+
+[[rooms.exits]]
+dir = 3
+description = "A small clay dwelling sits here.\r\n"
+door = 0
+key = -1
+to_room = 5226
+[[rooms]]
+vnum = 5211
+name = "A Side Street"
+description = "   This small side street leads away from the garden path to the south.\r\nAround you stand large piles or rubble where the houses of commoners\r\nused to be.  A lone howl makes you worry greatly about your safety here.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5210
+
+[[rooms.exits]]
+dir = 1
+description = "An unusually tall dwelling stands looming over you.\r\n"
+door = 0
+key = -1
+to_room = 5237
+
+[[rooms.exits]]
+dir = 2
+description = "A garden path circles around the temple.\r\n"
+door = 0
+key = -1
+to_room = 5204
+
+[[rooms.exits]]
+dir = 3
+description = "Here lies a small stone house with a thatched roof.\r\n"
+door = 0
+key = -1
+to_room = 5227
+[[rooms]]
+vnum = 5212
+name = "A Side Street"
+description = "   This small side street leads south away from the temple into the\r\nbusiness section of town.  The destruction that leveled this city was not\r\nbiased; these important looking buildings have been almost totally\r\ndestroyed.  There is a hole in the wall of a very large structure to the\r\neast.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A small garden path encircles the temple.\r\n"
+door = 0
+key = -1
+to_room = 5206
+
+[[rooms.exits]]
+dir = 1
+description = "This possibly could be the city hall.\r\n"
+door = 0
+key = -1
+to_room = 5232
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5213
+
+[[rooms.exits]]
+dir = 3
+description = "Inside the building you see long pieces of metal, an oven, and some\r\nanvils.\r\n"
+door = 0
+key = -1
+to_room = 5221
+[[rooms]]
+vnum = 5213
+name = "A Side Street"
+description = "   This small side street is lined with the remains of once great\r\nbuildings.  To the west is a dark, foreboding structure while to the\r\neast lies the entrance to a small tavern.  The street continues north\r\nand south.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5212
+
+[[rooms.exits]]
+dir = 1
+description = "From the looks of it, this was once a two story abode.  The entire second\r\nfloor has collapsed leaving a very little part of the bar still free\r\nfrom debris.\r\n"
+door = 0
+key = -1
+to_room = 5230
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5214
+
+[[rooms.exits]]
+dir = 3
+description = "This seems to be the only guild house in the entire city.  Its dark nature\r\nmakes you wonder about its origins.\r\n"
+door = 0
+key = -1
+to_room = 5219
+[[rooms]]
+vnum = 5214
+name = "A Side Street"
+description = "   You are at the end of a long street leading to the center of the city.\r\nA long dark alley runs east and west.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5213
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5229
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5218
+[[rooms]]
+vnum = 5215
+name = "Under A Ruined Watchtower"
+description = "   You stand at the base of a tall watchtower built to protect the city\r\nfrom invaders.  From the looks of things, it did not do a good job.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5216
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5218
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 5247
+[[rooms]]
+vnum = 5216
+name = "A Back Alley"
+description = "   This alley leads to the rear of what used to be a meat stand.  You wince\r\nat the stench.  South is one of the city watchtowers.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see the back-side of the market place meat stand.\r\n"
+door = 0
+key = -1
+to_room = 5217
+
+[[rooms.exits]]
+dir = 2
+description = "A tall watchtower stands a silent vigil over the city.\r\n"
+door = 0
+key = -1
+to_room = 5215
+[[rooms]]
+vnum = 5217
+name = "The Meat Stand"
+description = "   A large stand has been set up here with metal hooks and wooden racks\r\nin the background.  Hanging on the hooks are very small scraps of meat\r\nand other game.  This stand is relatively empty, and a sudden burst of\r\nhowling and screaming makes you realize why this is so.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "The market place lies this way.\r\n"
+door = 0
+key = -1
+to_room = 5208
+
+[[rooms.exits]]
+dir = 1
+description = "This is a cart full of rotted vegetables and fruits.\r\n"
+door = 0
+key = -1
+to_room = 5220
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5216
+[[rooms]]
+vnum = 5218
+name = "A Back Alley"
+description = "   A narrow alley leads east to a wider street and west to one of \r\nthe city watchtowers.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "A small side street greets you.\r\n"
+door = 0
+key = -1
+to_room = 5214
+
+[[rooms.exits]]
+dir = 3
+description = "A tall watchtower stands a silent vigil over the city.\r\n"
+door = 0
+key = -1
+to_room = 5215
+[[rooms]]
+vnum = 5219
+name = "The Guild House"
+description = "   You are standing in what once was this city's ONLY guild house.\r\nTables and chairs have been smashed and broken weapons lie strewn about\r\nthe floor as if some massive battle had taken place here.  Draped along \r\nthe back wall is a tattered, jet-black banner with the symbol of the\r\nDarkside set upon it.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "A small side street runs past the building.\r\n"
+door = 0
+key = -1
+to_room = 5213
+[[rooms]]
+vnum = 5220
+name = "The Produce Stand"
+description = "   A large cart sits here carrying rotted fruit and vegetables.  Flies \r\nswarm all about what seems to be the last remaining bits of food left\r\nin the city.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "The market place is deserted.\r\n"
+door = 0
+key = -1
+to_room = 5207
+
+[[rooms.exits]]
+dir = 3
+description = "A strong stench emanates from the meat stand next to you.\r\n"
+door = 0
+key = -1
+to_room = 5217
+[[rooms]]
+vnum = 5221
+name = "The Smithy"
+description = "   In here you find tools and anvils used to make various weapons\r\nand items.  The walls have been stripped clean and only a few incomplete\r\npieces of armor and weaponry are left.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "A small side street runs past the building.\r\n"
+door = 0
+key = -1
+to_room = 5212
+[[rooms]]
+vnum = 5222
+name = "The Tapestry Stand"
+description = "   Tattered and torn tapestries and rugs lie heaped in piles.  Fancy\r\nrobes and various articles of clothing are now just rags.  You stare at \r\nthe strange piles for a long time until a piercing howl makes you\r\nthink these might be beds.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5223
+
+[[rooms.exits]]
+dir = 1
+description = "A fine jewellery stand lies in ruin next to you.\r\n"
+door = 0
+key = -1
+to_room = 5225
+
+[[rooms.exits]]
+dir = 2
+description = "The market place is deserted.\r\n"
+door = 0
+key = -1
+to_room = 5208
+[[rooms]]
+vnum = 5223
+name = "A Back Alley"
+description = "   A narrow alley leads north to one of the city watchtowers while\r\nto the south there lies a market stand full of torn clothes and rugs.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A tall watchtower stands a silent vigil over the city.\r\n"
+door = 0
+key = -1
+to_room = 5224
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5222
+[[rooms]]
+vnum = 5224
+name = "Under The Watchtower"
+description = "   You stand under one of the city watchtowers built to protect\r\nthe city from invaders.  Obviously, it failed.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5228
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5223
+
+[[rooms.exits]]
+dir = 4
+description = "Above you looms a tall watchtower.\r\n"
+door = 0
+key = -1
+to_room = 5246
+[[rooms]]
+vnum = 5225
+name = "The Jewellery Stand"
+description = "   A table has been tipped over, spilling fine jewellery and gems\r\nacross the market place.  Most of these trinkets are battered and \r\ntarnished and few would have any value anymore.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 2
+description = "The market place is deserted.\r\n"
+door = 0
+key = -1
+to_room = 5207
+
+[[rooms.exits]]
+dir = 3
+description = "Next to you is a stand full of ruined clothes and rugs.\r\n"
+door = 0
+key = -1
+to_room = 5222
+[[rooms]]
+vnum = 5226
+name = "A Ruined Clay Dwelling"
+description = "   This was once a very plain house with nothing more than a few chairs\r\nand a bed.  A cold fireplace suggests that the city has been abandoned\r\nfor quite a while.  Almost nothing remains of this humble abode.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "Outside is a small side street.\r\n"
+door = 0
+key = -1
+to_room = 5210
+[[rooms]]
+vnum = 5227
+name = "A Collapsed Stone Dwelling"
+description = "   This small house has completely collapsed upon itself leaving piles\r\nof debris here and there.  A few rafters still stand with thatched straw\r\nhanging down and a hot wind gusts through the hollow dwelling.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "A small side street runs past the house.\r\n"
+door = 0
+key = -1
+to_room = 5211
+[[rooms]]
+vnum = 5228
+name = "A Back Alley"
+description = "   A narrow alley leads west to one of the city watchtowers and east to\r\na small side street.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5209
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5224
+[[rooms]]
+vnum = 5229
+name = "An Abandoned Shop"
+description = "   From the outside this place looks like an ordinary pile of rubble,\r\nbut inside these cramped quarters you discover what used to be a shop\r\nfilled with armor, weapons, and various other goods.  A small sign\r\nflutters in the wind.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 3
+description = "A small side street runs past the shop.\r\n"
+door = 0
+key = -1
+to_room = 5214
+[[rooms]]
+vnum = 5230
+name = "The Tavern Of The Sun"
+description = "   A glorious place in its prime, this tavern now lies in ruin; tables\r\nand chairs are broken scattered, bottles and glasses shattered, and\r\na small performance stage crushed.  Musical instruments and personal\r\nbelongings lie under the rubble, but the people they once belonged to are \r\nnot with them.  Looking up you see that the entire second floor and roof \r\nhas fallen in, leaving a gaping hole above.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 3
+description = "A small side street runs past the tavern.\r\n"
+door = 0
+key = -1
+to_room = 5213
+[[rooms]]
+vnum = 5231
+name = "The South Wing Of The City Hall"
+description = "   You stand in a large room attached to this end of the hallway which \r\nleads back north to the reception area.  Pedestals and columns have fallen\r\nand most of the valuable items have been taken, leaving worthless debris.\r\nA few chairs have survived, as well as a large curved desk.  To the east\r\nis a vine-covered archway leading out into a private courtyard.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "The long hallway leads back to the main reception area of the city hall.\r\n"
+door = 0
+key = -1
+to_room = 5232
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5234
+[[rooms]]
+vnum = 5232
+name = "The City Hall"
+description = "   This is the main reception area of Thalos' city hall.  The walls have\r\nbeen charred and scored massively and debris is spread from wall to wall.\r\nA large gaping hole in the west wall allows you to see out to one of\r\nthe city's side streets.  Obviously no one will be seeing you through today.  \r\nHallways lead south and east.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "Main street runs past the city hall.\r\n"
+door = 0
+key = -1
+to_room = 5202
+
+[[rooms.exits]]
+dir = 1
+description = "A hallway leads to the east wing of the city hall.\r\n"
+door = 0
+key = -1
+to_room = 5233
+
+[[rooms.exits]]
+dir = 2
+description = "A hallway leads to the south wing of the city hall.\r\n"
+door = 0
+key = -1
+to_room = 5231
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5212
+[[rooms]]
+vnum = 5233
+name = "The East Wing Of The City Hall"
+description = "   Here lies the remnants of a fancy office, possibly the mayor's.  A few\r\nwithered plants and broken pieces of furniture make this place anything\r\nbut fancy, though.  The only thing remaining intact here is a large\r\nglass cabinet.  A long hallway leads west back to the reception area and\r\nan ivy-covered archway leads south into a private courtyard.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5234
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5232
+[[rooms]]
+vnum = 5234
+name = "The Private Gardens And Courtyard Of Thalos"
+description = "   What a shame that this mass destruction also touched this once\r\nbeautiful place.  The temple's garden path has nothing on this garden.\r\nFlowers and trees have been smashed into the ground and lawn benches\r\nthrown through walls.  A large marble fountain in the center of the\r\ncourtyard still stands, though, defying any attempts to destroy its\r\nbeauty.  Above stands the remnants of one of the watchtowers.  Archways \r\nnorth and west lead back into the city hall.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5233
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5231
+[[rooms]]
+vnum = 5235
+name = "A Small Guard House"
+description = "   This was once the barracks for Thalos' Cityguards.  Now just an empty\r\nshell, this small shack still stands guarding the entrance both to the\r\ncity and to the city hall.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "Main street runs by this building.\r\n"
+door = 0
+key = -1
+to_room = 5201
+[[rooms]]
+vnum = 5236
+name = "A Collapsed Home"
+description = "   All that's left of this house is a few scattered piles of rubble\r\nand a very large blast crater.  Obviously someone or something important \r\nwas once housed here.  A shrieking howl chills your blood.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 2
+description = "Main street runs past this ruined home.\r\n"
+door = 0
+key = -1
+to_room = 5202
+[[rooms]]
+vnum = 5237
+name = "A Tall Dwelling"
+description = "   This seems to be the tallest structure remaining in the city.  At\r\none time this could have been an inn of some sort, but now it is just\r\na mess.  The back wall as been completely knocked down revealing an \r\nentrance into another building through yet another collapsed wall.\r\nBetween the two buildings are a few blast craters and boulders.  An old\r\nset of wooden steps leads up to a creaking second floor.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5238
+
+[[rooms.exits]]
+dir = 3
+description = "A small side street winds past the dwelling.\r\n"
+door = 0
+key = -1
+to_room = 5211
+
+[[rooms.exits]]
+dir = 4
+description = "The stairs and even the entire second floor itself looks very unsafe\r\nfor travel.  Gusts of wind make them creak and shudder.\r\n"
+door = 0
+key = -1
+to_room = 5245
+[[rooms]]
+vnum = 5238
+name = "A Small Shack"
+description = "   This cramped dwelling could not have housed more than one person.  Now\r\nwith the back wall missing, it could hold many more.  Looking around you\r\nfind broken shelves and workbenches with various vials and pouches spilling\r\ncontents all across the floor.  This was possibly the magic shop of the\r\ncity.  The doorway to the east is blocked, making the only exit back west.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5237
+[[rooms]]
+vnum = 5239
+name = "A Back Alley"
+description = "   A narrow back alley goes south to main street and north towards\r\na watchtower.  A mass of howls catches you of guard.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5240
+
+[[rooms.exits]]
+dir = 2
+description = "Main street runs past here.\r\n"
+door = 0
+key = -1
+to_room = 5201
+[[rooms]]
+vnum = 5240
+name = "A Back Alley"
+description = "   A narrow back alley leads north to one of the city watchtowers\r\nand south towards main street.  To the west is a doorway to a small\r\nhouse blocked by debris.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A tall watchtower stands a silent vigil over the city.\r\n"
+door = 0
+key = -1
+to_room = 5241
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5239
+[[rooms]]
+vnum = 5241
+name = "Under A Watchtower"
+description = "   You stand under a tall watchtower.  Narrow back alleys lead west and\r\nsouth and a very weak looking ladder leads up into the tower.  Above you,\r\nyou hear the screams of tens of starving lamias!  Beware!\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5240
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5243
+
+[[rooms.exits]]
+dir = 4
+description = "Winds howl high above your head in the tower above.  You hear the screams\r\nof tens of howling lamias above you!\r\n"
+door = 0
+key = -1
+to_room = 5248
+[[rooms]]
+vnum = 5242
+name = "A Bath House"
+description = "   This was once the bath house for the commoners of the city.  Hot\r\nsteamy water still wells up from a hole in the floor.  Obviously there\r\nis a hot spring located under the city (making the decision to put\r\na city here seem much more reasonable).  Closer inspection of the water\r\nyields a dead body floating around in it, skin melted away from months\r\nof floating in there.  The west wall has collapsed revealing another\r\ncollapsed house.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5243
+
+[[rooms.exits]]
+dir = 3
+description = "The wall has collapsed on the adjoining house, creating a new opening\r\nin it.\r\n"
+door = 0
+key = -1
+to_room = 5244
+[[rooms]]
+vnum = 5243
+name = "A Back Alley"
+description = "   A narrow back alley leads west to a small side street and east to one \r\nof the city watchtowers.  Great amounts of steam issue forth from the\r\nbuilding to the south.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "A watchtower stands a silent vigil over the city.\r\n"
+door = 0
+key = -1
+to_room = 5241
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5242
+
+[[rooms.exits]]
+dir = 3
+description = "A side street runs by here.\r\n"
+door = 0
+key = -1
+to_room = 5209
+[[rooms]]
+vnum = 5244
+name = "An Upright House"
+description = "   This home is practically the only one around that is still standing.\r\nExcept for the massive hole in the east wall, everything else looks\r\nintact, including the windows.  Great amounts of steam issue forth from\r\nthe hole in the east wall.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5242
+
+[[rooms.exits]]
+dir = 3
+description = "A small side street runs past the house.\r\n"
+door = 0
+key = -1
+to_room = 5210
+[[rooms]]
+vnum = 5245
+name = "On The Second Floor"
+description = "   The minute you step off onto this floor you realize it was a mistake.\r\nThe old rotted floorboards suddenly give way and you fall down, impaling\r\nyourself on jagged boards below.\r\n"
+flags = "bd"
+sector = 1
+[[rooms]]
+vnum = 5246
+name = "The North-West Watchtower"
+description = "   You stand atop one of the city watchtowers.  The view is magnificent\r\nfrom here and you can see all the way to the western mountains.  No wonder\r\nthis place stood for so long.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 5
+description = "The city lies below.\r\n"
+door = 0
+key = -1
+to_room = 5224
+[[rooms]]
+vnum = 5247
+name = "The South-West Watchtower"
+description = "   You stand atop one of the city watchtowers.  The view is magnificent\r\nfrom here and you can see all the way to the western mountains.  To the\r\nsouth the desert stretches to the horizon.  No wonder this place stood\r\nfor so long.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 5
+description = "The city lies below.\r\n"
+door = 0
+key = -1
+to_room = 5215
+[[rooms]]
+vnum = 5248
+name = "The North-East Watchtower"
+description = "   You stand atop one of the city watchtowers.  The view is magnificent\r\nfrom here and you the desert sand stretches to the horizon.  No wonder\r\nthis place stood for so long.  The ladder leading down seems rotted in\r\nsome places!\r\n"
+flags = "c"
+sector = 1
+
+[[rooms.exits]]
+dir = 5
+description = "The city lies below... far, far below.\r\n"
+door = 0
+key = -1
+to_room = 5249
+[[rooms]]
+vnum = 5249
+name = "Under A Watchtower"
+description = "   As you descend the ladder, the rotted rungs break, sending you quickly\r\nto your demise far below on the city street.  Splat.\r\n"
+flags = "bd"
+sector = 1
+[[rooms]]
+vnum = 5250
+name = "The Temple Of Thalos"
+description = "   You stand within one of the most holy places in the realm.  This\r\nstunning domed temple once housed the city's worshipers en masse.  \r\nUnfortunately, it succumbed to the destruction brought on this city.\r\nLong benches lie toppled and the altar desecrated.  Large chunks of stone\r\nhave fallen from the walls and roof, sending sunlight streaming in on\r\nyou.  A few books lie about, conveying to you a holy message in a\r\nstrange tongue.  \r\n     Wind gusts through the four archways and howls and screams can be\r\nheard from all parts of the city.\r\n"
+flags = "cdh"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A side street leads to the northern half of the city.\r\n"
+door = 0
+key = -1
+to_room = 5204
+
+[[rooms.exits]]
+dir = 1
+description = "Main street leads out to the main gate of the city.\r\n"
+door = 0
+key = -1
+to_room = 5203
+
+[[rooms.exits]]
+dir = 2
+description = "A side street leads to the southern part of the city.\r\n"
+door = 0
+key = -1
+to_room = 5206
+
+[[rooms.exits]]
+dir = 3
+description = "The market place lies this way.\r\n"
+door = 0
+key = -1
+to_room = 5205

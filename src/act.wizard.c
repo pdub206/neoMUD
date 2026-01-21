@@ -2575,8 +2575,7 @@ ACMD(do_set)
       save_char(vict);
     if (is_file) {
       char_to_store(vict, &tmp_store);
-      fseek(player_fl, (player_i) * sizeof(struct char_file_u), SEEK_SET);
-      fwrite(&tmp_store, sizeof(struct char_file_u), 1, player_fl);
+      save_char_file(name, &tmp_store);
       send_to_char(ch, "Saved in file.\r\n");
     }
   }

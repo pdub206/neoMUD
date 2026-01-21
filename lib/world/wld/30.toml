@@ -1,0 +1,1424 @@
+[[rooms]]
+vnum = 3000
+name = "The Reading Room"
+description = "   You are in a small, simple room which is mostly empty, save a few\r\nwooden desks and benches.  To the east you hear the bustle of the Temple\r\nof Midgaard, a sharp contrast to the relative quiet of this peaceful\r\nroom.\r\n"
+flags = "cdeh"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "You see the Temple of Midgaard.\r\n"
+door = 0
+key = -1
+to_room = 3001
+[[rooms]]
+vnum = 3001
+name = "The Temple Of Midgaard"
+description = "   You are in the southern end of the temple hall in the Temple of Midgaard.\r\nThe temple has been constructed from giant marble blocks, eternal in\r\nappearance, and most of the walls are covered by ancient wall paintings\r\npicturing Gods, Giants and peasants.\r\n   Large steps lead down through the grand temple gate, descending the huge\r\nmound upon which the temple is built and ends on the temple square below.\r\nTo the west, you see the Reading Room.  The donation room is in a small\r\nalcove to your east.\r\n"
+flags = "cdeh"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "At the northern end of the temple hall is a statue and a huge altar.\r\n"
+door = 0
+key = -1
+to_room = 3054
+
+[[rooms.exits]]
+dir = 1
+description = "In the east, you see a small alcove with a rickety wooden sign which\r\nreads \"Midgaard Donation Room.\"\r\n"
+door = 0
+key = -1
+to_room = 3063
+
+[[rooms.exits]]
+dir = 2
+description = "You look down the huge stone steps at the temple square below.\r\n"
+door = 0
+key = -1
+to_room = 3005
+
+[[rooms.exits]]
+dir = 3
+description = "You see the Reading Room.\r\n"
+door = 0
+key = -1
+to_room = 3000
+
+[[rooms.exits]]
+dir = 5
+description = "You see the temple square.\r\n"
+door = 0
+key = -1
+to_room = 3005
+[[rooms]]
+vnum = 3002
+name = "The Clerics' Inner Sanctum"
+description = "   This is the inner sanctum.  A picture of the mighty Thor, is hanging on\r\nthe wall, just above the altar which is set against the western wall.  A well\r\nin the middle of the floor leads down into darkness.  Vile smells waft from\r\nthe depths.\r\n"
+flags = "cd"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "You see your favorite place, the bar of divination.\r\n"
+door = 0
+key = -1
+to_room = 3003
+
+[[rooms.exits]]
+dir = 5
+description = "You can't see what is down there, it is too dark.  Looks like it would be\r\nimpossible to climb back up.\r\n"
+door = 0
+key = -1
+to_room = 7026
+[[rooms]]
+vnum = 3003
+name = "The Bar Of Divination"
+description = "   The bar is one of the finest in the land, lucky it is members only.  Fine\r\nfurniture is set all around the room.  A small sign is hanging on the wall.\r\n"
+flags = "cdh"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "You see the entrance.\r\n"
+door = 0
+key = -1
+to_room = 3004
+
+[[rooms.exits]]
+dir = 3
+description = "You see the inner sanctum.\r\n"
+door = 0
+key = -1
+to_room = 3002
+
+[[rooms.extra]]
+keyword = "sign"
+description = "The sign reads:\r\nFree instructions provided by the waiter:\r\n\r\n   Buy  - Buy something (drinkable) from the waiter.\r\n   List - The waiter will show you all the different drinks and\r\n          specialties, and tell the price of each.\r\n"
+[[rooms]]
+vnum = 3004
+name = "The Entrance To The Clerics' Guild"
+description = "   The entrance hall is a small modest room, reflecting the true nature of\r\nthe Clerics.  The exit leads east to the temple square.  A small entrance to\r\nthe bar is in the northern wall.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the bar, richly decorated with really stylish furniture.\r\n"
+door = 0
+key = -1
+to_room = 3003
+
+[[rooms.exits]]
+dir = 1
+description = "You see the Temple Square.\r\n"
+door = 0
+key = -1
+to_room = 3005
+[[rooms]]
+vnum = 3005
+name = "The Temple Square"
+description = "   You are standing on the temple square.  Huge marble steps lead up to the\r\ntemple gate.  The entrance to the Clerics' Guild is to the west, and the old\r\nGrunting Boar Inn, is to the east.  Just south of here you see the market\r\nsquare, the center of Midgaard.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see the temple.\r\n"
+door = 0
+key = -1
+to_room = 3001
+
+[[rooms.exits]]
+dir = 1
+description = "You see the good old Grunting Boar Inn.\r\n"
+door = 0
+key = -1
+to_room = 3006
+
+[[rooms.exits]]
+dir = 2
+description = "You see the Market Square.\r\n"
+door = 0
+key = -1
+to_room = 3014
+
+[[rooms.exits]]
+dir = 3
+description = "You see the entrance to the Clerics' Guild.\r\n"
+door = 0
+key = -1
+to_room = 3004
+[[rooms]]
+vnum = 3006
+name = "The Entrance Hall Of The Grunting Boar Inn"
+description = "   You are standing in the entrance hall of the Grunting Boar Inn.  The hall\r\nhas been wisely decorated with simple, functional furniture.  The heavy smell\r\nof dust and aging paper drifts in from the Post Office to the north.  A small\r\nstaircase leads up to the reception and the bar is to the east.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the Midgaard Post Office.\r\n"
+door = 0
+key = -1
+to_room = 3062
+
+[[rooms.exits]]
+dir = 1
+description = "Surprise!  You see the bar.\r\n"
+door = 0
+key = -1
+to_room = 3007
+
+[[rooms.exits]]
+dir = 3
+description = "You see the temple square.\r\n"
+door = 0
+key = -1
+to_room = 3005
+
+[[rooms.exits]]
+dir = 4
+description = "You see the reception.\r\n"
+door = 0
+key = -1
+to_room = 3008
+[[rooms]]
+vnum = 3007
+name = "The Grunting Boar"
+description = "   You are standing in the bar.  The bar is set against the northern wall, old\r\narchaic writing, carvings and symbols cover its top.  A fireplace is built into\r\nthe western wall, and through the southeastern windows you can see the temple\r\nsquare.  This place makes you feel like home.\r\nA small sign with big letters is fastened to the bar.\r\n"
+flags = "dh"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+description = "You see the exit to the entrance hall.\r\n"
+door = 0
+key = -1
+to_room = 3006
+
+[[rooms.extra]]
+keyword = "writing carving carvings symbols symbol"
+description = "Although it is very hard to understand, you think it looks a lot like beer,\r\npoems about beer, and small beer-mugs.\r\n"
+
+[[rooms.extra]]
+keyword = "sign"
+description = "The sign reads:\r\nFree instructions provided by the Grunting Boar Inn.\r\n\r\n   Buy  - Buy something (drinkable) from the bartender.\r\n   List - The bartender will show you all the different drinks and\r\n          specialties, and tell the price of each.\r\n"
+[[rooms]]
+vnum = 3008
+name = "The Reception"
+description = "   You are standing in the reception.  The staircase leads down to the\r\nentrance hall.  An exit to the north leads to the Cryogenic Center.\r\nThere is a small sign on the counter.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the Cryogenic Center.\r\n"
+door = 0
+key = -1
+to_room = 3064
+
+[[rooms.exits]]
+dir = 5
+description = "You see the entrance hall.\r\n"
+door = 0
+key = -1
+to_room = 3006
+
+[[rooms.extra]]
+keyword = "sign"
+description = "Rooms are expensive but good!  You may:\r\n\r\n   Offer - get an offer on a room - Time is in real life days.\r\n   Rent  - Rent a room (saves your stuff, and quits the game),\r\n           minimum charge is one day.\r\n\r\n\r\n                          MY WAY OR THE HIGHWAY\r\n                             PAY YOUR RENT!\r\n                WE WON'T THINK TWICE BEFORE KICKING YOU OUT.\r\n"
+[[rooms]]
+vnum = 3009
+name = "The Bakery"
+description = "   You are standing inside the small bakery.  A sweet scent of Danish and\r\nfine bread fills the room.  The bread and Danish are arranged in fine order\r\non the shelves, and seem to be of the finest quality.\r\nA small sign is on the counter.\r\n"
+flags = "dh"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "You see the main street.\r\n"
+door = 0
+key = -1
+to_room = 3013
+
+[[rooms.extra]]
+keyword = "sign"
+description = "Free instructions provided by the store:\r\n\r\n   Buy  - Will buy you some bread or pastry.\r\n   List - The baker will kindly tell you the price and sort of the bread in\r\n          his bakery.\r\n"
+
+[[rooms.extra]]
+keyword = "danish pastry"
+description = "You see that this is truly delicious pastry.  Must be made by a Dane from\r\nDenmark (which surely is not the capital of Sweden!).  Former ruler of\r\nScandinavia, England, Northern Germany, Northern France, Russia, Greenland,\r\nIceland, Estonia etc.  etc.\r\n   The sight of those large, wholesome chokoladeboller makes your mouth water\r\nand your soul sing.\r\n"
+[[rooms]]
+vnum = 3010
+name = "The General Store"
+description = "   You are inside the general store.  All sorts of items are stacked on shelves\r\nbehind the counter, safely out of your reach.\r\nA small note hangs on the wall.\r\n"
+flags = "dh"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "You see the main street.\r\n"
+door = 0
+key = -1
+to_room = 3015
+
+[[rooms.extra]]
+keyword = "note"
+description = "The note reads:\r\n\r\n  List  - Show which various items are in the store.\r\n  Buy   - Buy an item.\r\n  Value - The shopkeeper will (free of charge) tell how much he will\r\n          pay for your item.\r\n  Sell  - Sell an item.\r\n"
+[[rooms]]
+vnum = 3011
+name = "The Weapon Shop"
+description = "   You are inside the weapon shop.  There is a small note on the counter.\r\n"
+flags = "dh"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "You see the main street.\r\n"
+door = 0
+key = -1
+to_room = 3016
+
+[[rooms.extra]]
+keyword = "note"
+description = "The note reads:\r\n\r\n  List  - Show which various items are in the store.\r\n  Buy   - Buy an item.\r\n  Value - The shopkeeper will (free of charge) tell how much he will\r\n          pay for your item.\r\n  Sell  - Sell an item.\r\n"
+[[rooms]]
+vnum = 3012
+name = "Main Street"
+description = "   You are at the end of the main street of Midgaard.  South of here is the\r\nentrance to the Guild of Magic Users.  The street continues east towards the\r\nmarket square.  The magic shop is to the north and to the west is the city\r\ngate.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see the magic shop.\r\n"
+door = 0
+key = -1
+to_room = 3033
+
+[[rooms.exits]]
+dir = 1
+description = "You see the main street.\r\n"
+door = 0
+key = -1
+to_room = 3013
+
+[[rooms.exits]]
+dir = 2
+description = "You see the entrance to the Guild of Magic Users.\r\n"
+door = 0
+key = -1
+to_room = 3017
+
+[[rooms.exits]]
+dir = 3
+description = "You see the city gate.\r\n"
+door = 0
+key = -1
+to_room = 3040
+[[rooms]]
+vnum = 3013
+name = "Main Street"
+description = "   You are on the main street passing through the City of Midgaard.  South of\r\nhere is the entrance to the Armory, and the bakery is to the north.  East of\r\nhere is the market square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see the bakery.\r\n"
+door = 0
+key = -1
+to_room = 3009
+
+[[rooms.exits]]
+dir = 1
+description = "You see the market square.\r\n"
+door = 0
+key = -1
+to_room = 3014
+
+[[rooms.exits]]
+dir = 2
+description = "You see the armory.\r\n"
+door = 0
+key = -1
+to_room = 3020
+
+[[rooms.exits]]
+dir = 3
+description = "You see the main street.\r\n"
+door = 0
+key = -1
+to_room = 3012
+[[rooms]]
+vnum = 3014
+name = "Market Square"
+description = "   You are standing on the market square, the famous Square of Midgaard.\r\nA large, peculiar looking statue is standing in the middle of the square.\r\nRoads lead in every direction, north to the temple square, south to the\r\ncommon square, east and westbound is the main street.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see the temple square.\r\n"
+door = 0
+key = -1
+to_room = 3005
+
+[[rooms.exits]]
+dir = 1
+description = "You see the main street.\r\n"
+door = 0
+key = -1
+to_room = 3015
+
+[[rooms.exits]]
+dir = 2
+description = "You see the common square.\r\n"
+door = 0
+key = -1
+to_room = 3025
+
+[[rooms.exits]]
+dir = 3
+description = "You see the main street.\r\n"
+door = 0
+key = -1
+to_room = 3013
+
+[[rooms.extra]]
+keyword = "statue"
+description = "What you see is the Midgaard Worm, stretching around the Palace of Midgaard.\r\n"
+[[rooms]]
+vnum = 3015
+name = "Main Street"
+description = "   You are on the main street crossing through town.  To the north is the\r\ngeneral store, and the main street continues east.  To the west you see and\r\nhear the market place, to the south a small door leads into the Pet Shop.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see the general store.\r\n"
+door = 0
+key = -1
+to_room = 3010
+
+[[rooms.exits]]
+dir = 1
+description = "You see the main street.\r\n"
+door = 0
+key = -1
+to_room = 3016
+
+[[rooms.exits]]
+dir = 2
+description = "You see the Pet Shop.\r\n"
+door = 0
+key = -1
+to_room = 3031
+
+[[rooms.exits]]
+dir = 3
+description = "You see the market square.\r\n"
+door = 0
+key = -1
+to_room = 3014
+[[rooms]]
+vnum = 3016
+name = "Main Street"
+description = "   The main street, to the north is the weapon shop and to the south is the\r\nGuild of Swordsmen.  To the east you leave town and to the west the street\r\nleads to the market square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see the weapon shop.\r\n"
+door = 0
+key = -1
+to_room = 3011
+
+[[rooms.exits]]
+dir = 1
+description = "You see the city gate.\r\n"
+door = 0
+key = -1
+to_room = 3041
+
+[[rooms.exits]]
+dir = 2
+description = "You see the swordsmen's guild.\r\n"
+door = 0
+key = -1
+to_room = 3021
+
+[[rooms.exits]]
+dir = 3
+description = "You see the main street leading to the market square.\r\n"
+door = 0
+key = -1
+to_room = 3015
+[[rooms]]
+vnum = 3017
+name = "The Entrance To The Mages' Guild"
+description = "   The entrance hall to this guild is a small, poor lighted room.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the main street.\r\n"
+door = 0
+key = -1
+to_room = 3012
+
+[[rooms.exits]]
+dir = 2
+description = "You see your favorite place, the Mages' Bar.\r\n"
+door = 0
+key = -1
+to_room = 3018
+[[rooms]]
+vnum = 3018
+name = "The Mages' Bar"
+description = "   The bar is one of the weirdest in the land.  Mystical images float around\r\nthe air.  Illusions of fine furniture appear all around the room.\r\n"
+flags = "cdh"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the lobby.\r\n"
+door = 0
+key = -1
+to_room = 3017
+
+[[rooms.exits]]
+dir = 1
+description = "You see the laboratory.\r\n"
+door = 0
+key = -1
+to_room = 3019
+[[rooms]]
+vnum = 3019
+name = "The Mages' Laboratory"
+description = "   This is the Magical Experiments Laboratory.  Dark smoke-stained stones\r\narch over numerous huge oaken tables, most of these cluttered with strange-\r\nlooking pipes and flasks.  The floor is covered with half-erased pentagrams\r\nand even weirder symbols, and a blackboard in a dark corner has only been\r\npartially cleaned, some painful-looking letters faintly visible.  A well in\r\nthe middle of the floor leads down into darkness.  Vile smells waft from the\r\ndepths.\r\n"
+flags = "cd"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+description = "You see the bar.\r\n"
+door = 0
+key = -1
+to_room = 3018
+
+[[rooms.exits]]
+dir = 5
+description = "You can't see what is down there, it is too dark.  Looks like it would be\r\nimpossible to climb back up.\r\n"
+door = 0
+key = -1
+to_room = 7017
+[[rooms]]
+vnum = 3020
+name = "The Armory"
+description = "   The armory with all kinds of armors on the walls and in the window.  You\r\nsee helmets, shields and chain mails.  To the north is the main street.\r\nOn the wall is a small note.\r\n"
+flags = "dh"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the main street.\r\n"
+door = 0
+key = -1
+to_room = 3013
+
+[[rooms.extra]]
+keyword = "note"
+description = "You can use these commands for trading:\r\n\r\n  value <item>     To get the price of an item in your possession.\r\n  sell <item>      To sell something.\r\n  buy <item>       To buy something (provided that the shop has it in store).\r\n  list             Gives you a listing of the shop's inventory.\r\n\r\n        WE DON'T GIVE CREDIT; WE DON'T EXPECT TO RECEIVE CREDIT!\r\n                             NO HAGGLING\r\n"
+[[rooms]]
+vnum = 3021
+name = "The Entrance Hall To The Guild Of Swordsmen"
+description = "   The entrance hall to the Guild of Swordsmen.  A place where one has to be\r\ncareful not to say something wrong (or right).  To the east is the bar and to\r\nthe north is the main street.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the main street.\r\n"
+door = 0
+key = -1
+to_room = 3016
+
+[[rooms.exits]]
+dir = 1
+description = "You see the swordsmen's bar, many noises comes from there.\r\n"
+door = 0
+key = -1
+to_room = 3022
+[[rooms]]
+vnum = 3022
+name = "The Bar Of Swordsmen"
+description = "   The bar of swordsmen, once upon a time beautifully furnished.  But now the\r\nfurniture is all around you in small pieces.  To the south is the yard, and\r\nto the west is the entrance hall.\r\n"
+flags = "cdh"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "You see the practice yard.\r\n"
+door = 0
+key = -1
+to_room = 3023
+
+[[rooms.exits]]
+dir = 3
+description = "You see the entrance hall to the warriors' guild.\r\n"
+door = 0
+key = -1
+to_room = 3021
+[[rooms]]
+vnum = 3023
+name = "The Tournament And Practice Yard"
+description = "   This is the practice yard of the fighters.  To the north is the bar.\r\nA well leads down into darkness.\r\n"
+flags = "cd"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the bar.\r\n"
+door = 0
+key = -1
+to_room = 3022
+
+[[rooms.exits]]
+dir = 5
+description = "You can't see what is down there, it is too dark.  Looks like it would be\r\nimpossible to climb back up.\r\n"
+door = 0
+key = -1
+to_room = 7048
+[[rooms]]
+vnum = 3024
+name = "The Eastern End Of Poor Alley"
+description = "   You are at the poor alley.  South of here is the Grubby Inn and to the\r\neast you see common square.  The alley continues further west.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "You see the common square.\r\n"
+door = 0
+key = -1
+to_room = 3025
+
+[[rooms.exits]]
+dir = 2
+description = "You see the Inn.\r\n"
+door = 0
+key = -1
+to_room = 3048
+
+[[rooms.exits]]
+dir = 3
+description = "You see the poor alley.\r\n"
+door = 0
+key = -1
+to_room = 3044
+[[rooms]]
+vnum = 3025
+name = "The Common Square"
+description = "   The common square, people pass you, talking to each other.  To the west is\r\nthe poor alley and to the east is the dark alley.  To the north, this square\r\nis connected to the market square.  From the south you notice a nasty smell.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see the market square.\r\n"
+door = 0
+key = -1
+to_room = 3014
+
+[[rooms.exits]]
+dir = 1
+description = "You see the dark alley.\r\n"
+door = 0
+key = -1
+to_room = 3026
+
+[[rooms.exits]]
+dir = 2
+description = "You see the city dump.\r\n"
+door = 0
+key = -1
+to_room = 3030
+
+[[rooms.exits]]
+dir = 3
+description = "You see Poor Alley.\r\n"
+door = 0
+key = -1
+to_room = 3024
+[[rooms]]
+vnum = 3026
+name = "The Dark Alley"
+description = "   The dark alley, to the west is the common square and to the south is the\r\nGuild of Thieves.  The alley continues east.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "The alley continues east.\r\n"
+door = 0
+key = -1
+to_room = 3045
+
+[[rooms.exits]]
+dir = 2
+description = "You see the entrance to the thieves' guild.\r\n"
+door = 0
+key = -1
+to_room = 3027
+
+[[rooms.exits]]
+dir = 3
+description = "You see the common square.\r\n"
+door = 0
+key = -1
+to_room = 3025
+
+[[rooms.extra]]
+keyword = "guild"
+description = "It is the thieves' guild, don't enter if you care about your health or money.\r\n"
+[[rooms]]
+vnum = 3027
+name = "The Entrance Hall To The Guild Of Thieves"
+description = "   The entrance hall to the thieves' and assassins' guild.  A place where you\r\ncan lose both your life and your money, if you are not careful.  To the north\r\nis the dark alley and to the east is the thieves' bar.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the alley.\r\n"
+door = 0
+key = -1
+to_room = 3026
+
+[[rooms.exits]]
+dir = 1
+description = "You see the thieves bar, where everything disappears.\r\n"
+door = 0
+key = -1
+to_room = 3028
+[[rooms]]
+vnum = 3028
+name = "The Thieves' Bar"
+description = "   The bar of the thieves.  Once upon a time this place was beautifully\r\nfurnished, but now it seems almost empty.  To the south is the yard, and to\r\nthe west is the entrance hall.\r\n   (Maybe the furniture has been stolen?!)\r\n"
+flags = "cdh"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "You see the secret yard.\r\n"
+door = 0
+key = -1
+to_room = 3029
+
+[[rooms.exits]]
+dir = 3
+description = "You see the entrance hall to the thieves' guild.\r\n"
+door = 0
+key = -1
+to_room = 3027
+
+[[rooms.extra]]
+keyword = "furniture"
+description = "As you look at the furniture, the chair you sit on disappears.\r\n"
+[[rooms]]
+vnum = 3029
+name = "The Secret Yard"
+description = "   The secret practice yard of thieves and assassins.  To the north is the\r\nbar.  A well leads down into darkness.\r\n"
+flags = "cd"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the bar.\r\n"
+door = 0
+key = -1
+to_room = 3028
+
+[[rooms.exits]]
+dir = 5
+description = "You can't see what is down there, it is too dark.  Looks like it would be\r\nimpossible to climb back up.\r\n"
+door = 0
+key = -1
+to_room = 7043
+[[rooms]]
+vnum = 3030
+name = "The Dump"
+description = "   The dump, where the people from the city drop their garbage.  Through the\r\ngarbage you can see a large junction of pipes, looks like the entrance to the\r\nsewer system.  North of here you see the common square.\r\n"
+flags = "c"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "You see the common square.\r\n"
+door = 0
+key = -1
+to_room = 3025
+
+[[rooms.exits]]
+dir = 5
+description = "You see the sewers.\r\n"
+keyword = "grate"
+door = 2
+key = 3005
+to_room = 7030
+[[rooms]]
+vnum = 3031
+name = "The Pet Shop"
+description = "   The Pet Shop is a small crowded store, full of cages and animals of\r\nvarious sizes.  There is a sign on the wall.\r\n"
+flags = "cdh"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the main street.\r\n"
+door = 0
+key = -1
+to_room = 3015
+
+[[rooms.extra]]
+keyword = "sign"
+description = "The sign reads:\r\n\r\n  Use 'List' to see the available pets.\r\n  Use 'Buy <pet>' to buy yourself a pet.\r\n\r\n  Instructions for having pets:\r\n\r\n  You can use 'order <pet> <instructions>' to order your pets around.\r\n  If you abuse your pet, it will no longer regard you as its master.\r\n  If you have several pets you may use 'order followers <instructions>'\r\n\r\n  You can name the pet you buy with: 'buy <pet> <name>'\r\n\r\n Regards,\r\n\r\n The Shopkeeper\r\n\r\n"
+[[rooms]]
+vnum = 3032
+name = "Pet Shop Store"
+description = "   This  is the small dark room in which the Pet shop keeps his pets.\r\nIt is vital that this room's virtual number is exactly one larger\r\nthan the Pet Shop number.\r\n"
+flags = "dk"
+sector = 0
+[[rooms]]
+vnum = 3033
+name = "The Magic Shop"
+description = "   Behind the counter you see various items, neatly placed in racks,\r\npresumably most of them are magic.\r\n"
+flags = "dh"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "You see the main street.\r\n"
+door = 0
+key = -1
+to_room = 3012
+[[rooms]]
+vnum = 3040
+name = "Inside The West Gate Of Midgaard"
+description = "   You are by two small towers that have been built into the city wall and\r\nconnected with a footbridge across the heavy wooden gate.  Main Street leads\r\neast and Wall Road leads south from here.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "You see Main Street.\r\n"
+door = 0
+key = -1
+to_room = 3012
+
+[[rooms.exits]]
+dir = 2
+description = "You see the road running along the inner side of the city wall.  You notice\r\nthat it is called Wall Road.\r\n"
+door = 0
+key = -1
+to_room = 3042
+
+[[rooms.exits]]
+dir = 3
+description = "The city gate is to the west.\r\n"
+keyword = "gate"
+door = 1
+key = 3112
+to_room = 3052
+
+[[rooms.extra]]
+keyword = "wall"
+description = "It is built from large grey rocks that have been fastened to each other with\r\nsome kind of mortar.  It is far too high to climb.\r\n"
+
+[[rooms.extra]]
+keyword = "tower towers"
+description = "Both of the towers are built from large grey rocks that have been fastened to\r\neach other with some kind of mortar, just like the city wall.\r\n"
+
+[[rooms.extra]]
+keyword = "gate"
+description = "It is a set of very big double doors made from hard wood.  They have been\r\nreinforced with large iron bands to make them even more sturdy.  One of the\r\ndoors is equipped with a very big lock.\r\n"
+
+[[rooms.extra]]
+keyword = "bridge footbridge"
+description = "It is too high up to reach but it looks as if one easily could walk across it\r\nfrom one tower to the other.\r\n"
+[[rooms]]
+vnum = 3041
+name = "Inside The East Gate Of Midgaard"
+description = "   You are by two small towers that have been built into the city wall and\r\nconnected with a footbridge across the heavy wooden gate.  Main Street leads\r\nwest from here.  To the south you see the Water Shop.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "You see the city gate.\r\n"
+keyword = "gate"
+door = 1
+key = 3112
+to_room = 3053
+
+[[rooms.exits]]
+dir = 2
+description = "You see the water shop.\r\n"
+door = 0
+key = -1
+to_room = 3058
+
+[[rooms.exits]]
+dir = 3
+description = "You see Main Street.\r\n"
+door = 0
+key = -1
+to_room = 3016
+
+[[rooms.extra]]
+keyword = "wall"
+description = "It is built from large grey rocks that have been fastened to each other with\r\nsome kind of mortar.  It is far too high to climb.\r\n"
+
+[[rooms.extra]]
+keyword = "tower towers"
+description = "Both of the towers are built from large grey rocks that have been fastened to\r\neach other with some kind of mortar, just like the city wall.\r\n"
+
+[[rooms.extra]]
+keyword = "gate"
+description = "It is a set of very big double doors made from hard wood.  They have been\r\nreinforced with large iron bands to make them even more sturdy.  One of the\r\ndoors is equipped with a very big lock.\r\n"
+
+[[rooms.extra]]
+keyword = "bridge footbridge"
+description = "It is too high up to reach but it looks as if one easily could walk across it\r\nfrom one tower to the other.\r\n"
+[[rooms]]
+vnum = 3042
+name = "Wall Road"
+description = "   You are walking next to the western city wall.  The road continues further\r\nsouth and the city gate is just north of here.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see the city gate.\r\n"
+door = 0
+key = -1
+to_room = 3040
+
+[[rooms.exits]]
+dir = 2
+description = "The road continues further south.\r\n"
+door = 0
+key = -1
+to_room = 3043
+
+[[rooms.extra]]
+keyword = "wall"
+description = "It is built from large grey rocks that have been fastened to each other with\r\nsome kind of mortar.  It is far too high to climb.\r\n"
+[[rooms]]
+vnum = 3043
+name = "Wall Road"
+description = "   You are walking next to the western city wall.  Wall Road continues further\r\nnorth and south.  A small, poor alley leads east.\r\nSome letters have been written on the wall here.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "The road continues further north.\r\n"
+door = 0
+key = -1
+to_room = 3042
+
+[[rooms.exits]]
+dir = 1
+description = "Poor Alley leads east.\r\n"
+door = 0
+key = -1
+to_room = 3044
+
+[[rooms.exits]]
+dir = 2
+description = "The road continues further south.\r\n"
+door = 0
+key = -1
+to_room = 3047
+
+[[rooms.extra]]
+keyword = "wall"
+description = "It is built from large grey rocks that have been fastened to each other with\r\nsome kind of mortar.  It is far too high to climb.\r\n"
+
+[[rooms.extra]]
+keyword = "wall writing letters"
+description = "It says 'Who watches the watchmen?'\r\n"
+[[rooms]]
+vnum = 3044
+name = "Poor Alley"
+description = "   You are on Poor Alley, which continues further east.  You see the\r\ncity wall to the west.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "The alley leads east.\r\n"
+door = 0
+key = -1
+to_room = 3024
+
+[[rooms.exits]]
+dir = 3
+description = "The alley leads west.\r\n"
+door = 0
+key = -1
+to_room = 3043
+[[rooms]]
+vnum = 3045
+name = "The Dark Alley At The Levee"
+description = "   You are standing in the alley which continues east and west.  South of\r\nhere you see the levee.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "The alley leads east.\r\n"
+door = 0
+key = -1
+to_room = 3046
+
+[[rooms.exits]]
+dir = 2
+description = "You see the levee.\r\n"
+door = 0
+key = -1
+to_room = 3049
+
+[[rooms.exits]]
+dir = 3
+description = "The alley leads west.\r\n"
+door = 0
+key = -1
+to_room = 3026
+[[rooms]]
+vnum = 3046
+name = "The Eastern End Of The Alley"
+description = "   You are standing at the eastern end of the alley, the city wall is just\r\neast, blocking any further movement.  A small warehouse is directly south of\r\nhere.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 2
+description = "You see the warehouse.\r\n"
+door = 0
+key = -1
+to_room = 3050
+
+[[rooms.exits]]
+dir = 3
+description = "You see the alley.\r\n"
+door = 0
+key = -1
+to_room = 3045
+[[rooms]]
+vnum = 3047
+name = "Wall Road"
+description = "   You are standing on the road next to the western city wall, which\r\ncontinues north.  South of here is a bridge across the river.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see the road.\r\n"
+door = 0
+key = -1
+to_room = 3043
+
+[[rooms.exits]]
+dir = 2
+description = "You see the bridge.\r\n"
+door = 0
+key = -1
+to_room = 3051
+
+[[rooms.extra]]
+keyword = "wall"
+description = "It is built from large grey rocks that have been fastened to each other with\r\nsome kind of mortar.  It is far too high to climb.\r\n"
+[[rooms]]
+vnum = 3048
+name = "Grubby Inn"
+description = "   You are inside the old Grubby Inn.  This place has not been cleaned for\r\nseveral decades; vile smells make you dizzy.\r\n"
+flags = "dh"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the alley.\r\n"
+door = 0
+key = -1
+to_room = 3024
+[[rooms]]
+vnum = 3049
+name = "The Levee"
+description = "   You are at the levee.  South of here you see the river gently flowing west.\r\nThe river bank is very low making it possible to enter the river.\r\n"
+flags = "h"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see the alley.\r\n"
+door = 0
+key = -1
+to_room = 3045
+
+[[rooms.exits]]
+dir = 2
+description = "You see the river flowing west.\r\n"
+door = 0
+key = -1
+to_room = 3203
+[[rooms]]
+vnum = 3050
+name = "The Deserted Warehouse"
+description = "   You are inside the warehouse.  The room is decorated with various old\r\nitems from ships.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the alley.\r\n"
+door = 0
+key = -1
+to_room = 3046
+[[rooms]]
+vnum = 3051
+name = "On The Bridge"
+description = "   You are standing on the stone bridge crosses the river.  The bridge is\r\nbuilt out from the western city wall and the river flows west through an\r\nopening in the wall ten feet below the bridge.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see the road.\r\n"
+door = 0
+key = -1
+to_room = 3047
+
+[[rooms.exits]]
+dir = 2
+description = "You see the Concourse.\r\n"
+door = 0
+key = -1
+to_room = 3100
+
+[[rooms.extra]]
+keyword = "wall"
+description = "It is built from large grey rocks that have been fastened to each other with\r\nsome kind of mortar.  It is far too high to climb.\r\n"
+
+[[rooms.extra]]
+keyword = "opening"
+description = "You cannot really see it from here as it is somewhere beneath your feet.\r\n"
+
+[[rooms.extra]]
+keyword = "bridge"
+description = "It is built from large grey rocks that have been fastened to each other with\r\nsome kind of mortar, just like the wall.\r\n"
+[[rooms]]
+vnum = 3052
+name = "Outside The West Gate Of Midgaard"
+description = "   You are by two small towers that have been built into the city wall and\r\nconnected with a footbridge across the heavy wooden gate.  To the west you\r\ncan see the edge of a big forest.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "The city gate is to the east.\r\n"
+keyword = "gate"
+door = 1
+key = 3112
+to_room = 3040
+
+[[rooms.exits]]
+dir = 3
+description = "The forest edge is to the west.\r\n"
+door = 0
+key = -1
+to_room = 6092
+
+[[rooms.extra]]
+keyword = "wall"
+description = "It is built from large grey rocks that have been fastened to each other with\r\nsome kind of mortar.  It is far too high to climb.\r\n"
+
+[[rooms.extra]]
+keyword = "tower towers"
+description = "Both of the towers are built from large grey rocks that have been fastened to\r\neach other with some kind of mortar, just like the city wall.\r\n"
+
+[[rooms.extra]]
+keyword = "gate"
+description = "It is a set of very big double doors made from hard wood.  They have been\r\nreinforced with large iron bands to make them even more sturdy.  One of the\r\ndoors is equipped with a very big lock.\r\n"
+
+[[rooms.extra]]
+keyword = "bridge footbridge"
+description = "It is too high up to reach but it looks as if one easily could walk across it\r\nfrom one tower to the other.\r\n"
+[[rooms]]
+vnum = 3053
+name = "Outside The East Gate Of Midgaard"
+description = "   You are by two small towers that have been built into the city wall and\r\nconnected with a footbridge across the heavy wooden gate.  To the east the\r\nplains stretch out in the distance.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "You see the plains.\r\n"
+door = 0
+key = -1
+to_room = 3503
+
+[[rooms.exits]]
+dir = 3
+description = "You see the city gate.\r\n"
+keyword = "gate"
+door = 1
+key = 3112
+to_room = 3041
+
+[[rooms.extra]]
+keyword = "wall"
+description = "It is built from large grey rocks that have been fastened to each other with\r\nsome kind of mortar.  It is far too high to climb.\r\n"
+
+[[rooms.extra]]
+keyword = "tower towers"
+description = "Both of the towers are built from large grey rocks that have been fastened to\r\neach other with some kind of mortar, just like the city wall.\r\n"
+
+[[rooms.extra]]
+keyword = "gate"
+description = "It is a set of very big double doors made from hard wood.  They have been\r\nreinforced with large iron bands to make them even more sturdy.  One of the\r\ndoors is equipped with a very big lock.\r\n"
+
+[[rooms.extra]]
+keyword = "bridge footbridge"
+description = "It is too high up to reach but it looks as if one easily could walk across it\r\nfrom one tower to the other.\r\n"
+[[rooms]]
+vnum = 3054
+name = "By The Temple Altar"
+description = "   You are by the temple altar in the northern end of the Temple of\r\nMidgaard.  A huge altar made from white polished marble is standing\r\nin front of you and behind it is a ten foot tall sitting statue of\r\nOdin, the King of the Gods.\r\n   To the north, steps lead out the back of the temple towards the\r\ncountryside.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the vast Midgaard countryside.\r\n"
+door = 0
+key = -1
+to_room = 3059
+
+[[rooms.exits]]
+dir = 2
+description = "You see the southern end of the temple.\r\n"
+door = 0
+key = -1
+to_room = 3001
+
+[[rooms.extra]]
+keyword = "statue odin king god"
+description = "The statue represents the one-eyed Odin sitting on a his throne.  He has\r\nlong, grey hair and beard and a strict look on his face.  On top of the\r\nthrone, just above his shoulders, his two ravens Hugin and Munin are sitting\r\nand at his feet are his wolves Gere and Freke.\r\n"
+
+[[rooms.extra]]
+keyword = "altar"
+description = "Even though the altar is more than ten feet long it appears to be made from\r\na single block of white virgin marble.\r\n"
+[[rooms]]
+vnum = 3055
+name = "Odin's Store"
+description = "   This is the small dark room in which Odin keeps the player items that he\r\ntakes care of.  It is vital that this room's virtual number is exactly one\r\nlarger than the room by the temple altar.\r\n"
+flags = "dj"
+sector = 0
+[[rooms]]
+vnum = 3058
+name = "Ye Olde Water Shoppe"
+description = "   You are standing in the center of a small wooden shop whose walls are\r\ncovered with racks upon racks of water jugs.  Several large barrels with\r\nspigots are stacked in the corner.\r\n"
+flags = "dh"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the East Gate.\r\n"
+door = 0
+key = -1
+to_room = 3041
+[[rooms]]
+vnum = 3059
+name = "Behind The Temple Altar"
+description = "   You are on a dirt path leading away from the Temple Altar which is south\r\nof here.  To the north, the path continues through the lush contryside of\r\nMidgaard towards the Dragonhelm Mountains far off to the north.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see the lush, green countryside of Midgaard.\r\n"
+door = 0
+key = -1
+to_room = 3060
+
+[[rooms.exits]]
+dir = 2
+description = "You see the Temple Altar.\r\n"
+door = 0
+key = -1
+to_room = 3054
+[[rooms]]
+vnum = 3060
+name = "The Great Field Of Midgaard"
+description = "   You are walking on a wide dirt path through the lush, green, fresh\r\nMidgaard countryside.  You can see to the horizon to the north, east,\r\nand west; the busy city of Midgaard lies to the south.  All around you\r\nis healthy green grass and an occasional large oak tree.  The sun feels\r\nwonderful on your face and a pleasant wind blows through your hair.  Birds\r\nchirp quietly to themselves and you can smell the faint scent of flowers\r\nand freshly cut grass.  You feel like you could lie down in the grass and\r\nstay here forever, surrounded by powerful beauty in all directions.\r\n   The path you are on continues north through the field and south back\r\nto Midgaard.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see more of the path through the Great Field.\r\n"
+door = 0
+key = -1
+to_room = 3061
+
+[[rooms.exits]]
+dir = 2
+description = "You see the path which goes back to Midgaard.\r\n"
+door = 0
+key = -1
+to_room = 3059
+[[rooms]]
+vnum = 3061
+name = "The Great Field Of Midgaard"
+description = "   You are walking on a wide dirt path through the lush, green, fresh\r\nMidgaard countryside.  You can see to the horizon to the north, east,\r\nand west; the busy city of Midgaard lies to the south.  All around you\r\nis healthy green grass and an occasional large oak tree.  The sun feels\r\nwonderful on your face and a pleasant wind blows through your hair.  Birds\r\nchirp quietly to themselves and you can smell the faint scent of flowers\r\nand freshly cut grass.  You feel like you could lie down in the grass and\r\nstay here forever, surrounded by powerful beauty in all directions.\r\n   There is a strange structure on the eastern side of the path.  A small\r\ndirt path splits off of the main path and leads off to the west.\r\n"
+flags = "c"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "The path continues northwards bringing you ever closer to the Dragonhelm\r\nMountains.\r\n"
+door = 0
+key = -1
+to_room = 3065
+
+[[rooms.exits]]
+dir = 1
+description = "There is a strange structure to the east on the edge of the trail.\r\n"
+door = 0
+key = -1
+to_room = 18600
+
+[[rooms.exits]]
+dir = 2
+description = "You see more of the Field.\r\n"
+door = 0
+key = -1
+to_room = 3060
+
+[[rooms.exits]]
+dir = 3
+description = "There is a strange path leading towards a rusty gate to the west.\r\n"
+door = 0
+key = -1
+to_room = 3066
+[[rooms]]
+vnum = 3062
+name = "The Post Office"
+description = "   You are in the central post office for Midgaard.  Piles of assorted mail\r\nlay untouched in the corners, collecting cobwebs.  Several large crates have\r\nbeen pried open by curious customs agents, and are now stacked along the west\r\nwall, hiding plenty of 'WANTED' posters.\r\nThere is a sign posted on the wall here.\r\n"
+flags = "deh"
+sector = 1
+
+[[rooms.exits]]
+dir = 2
+description = "You see the entrance to the Grunting Boar Inn and Tavern.\r\n"
+door = 0
+key = -1
+to_room = 3006
+
+[[rooms.extra]]
+keyword = "WANTED posters poster wall"
+description = "Faces of various known Killers and Thieves can barely be seen behind the\r\ncrates on the west wall.  Some of them look quite familar, sorta like that\r\nguy who you saw in the Reception a minute ago... but then again, they are\r\nrather hard to see past the crates.\r\n"
+
+[[rooms.extra]]
+keyword = "crates opened large"
+description = "As you know, it is illegal to send contraband items through the Midgaard\r\nMail.  The customs agents use this as a great excuse to seize liquor,\r\nrare spices, and just about anything they might find useful or profitable.\r\n"
+
+[[rooms.extra]]
+keyword = "cobwebs"
+description = "They seem to cover everything here, even the Postmaster himself.\r\n"
+
+[[rooms.extra]]
+keyword = "letters envelopes assorted"
+description = "Envelopes of all sizes are heaped into hugh piles around the room.  As you\r\nlook closer, you see a letter that you had posted a full week ago, laying\r\nunnoticed and slightly rat-chewed towards the bottom of the pile.\r\n"
+
+[[rooms.extra]]
+keyword = "sign"
+description = "**********************************************************\r\n*     \t\t\t\t\t\t\t *\r\n*    Mail Instructions:                                  *\r\n*\t\t\t\t\t\t\t *\r\n*      To send a note to someone:                        *\r\n*         MAIL <playername>\t\t\t\t *\r\n*     \t\t\t\t\t\t\t *\r\n*      To see if you have any mail:                      *\r\n*         CHECK\t\t\t\t\t\t *\r\n*\t\t\t\t\t\t\t *\r\n*      To get the Postmaster to give you your mail:      *\r\n*         RECEIVE\t\t\t\t\t *\r\n*\t\t\t\t\t\t\t *\r\n*         Stamps cost 150 coins per letter               *\r\n*         Type 'HELP MAIL' for more info                 *\r\n**********************************************************\r\n"
+[[rooms]]
+vnum = 3063
+name = "The Midgaard Donation Room"
+description = "   You are in a small, undecorated room just off of the main temple.  There\r\nare a couple of small wooden benches here where people occasionally sit\r\nwhile they wait for items to appear.  The temple is to the west.\r\n"
+flags = "cde"
+sector = 1
+
+[[rooms.exits]]
+dir = 3
+description = "The busy temple is back west.\r\n"
+door = 0
+key = -1
+to_room = 3001
+[[rooms]]
+vnum = 3064
+name = "The Cryogenic Center"
+description = "   You are standing in an impossible white sterile room with cylindrical\r\nbody-length canisters lined up against the walls.  The Reception is to the\r\nsouth.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 2
+description = "The Reception is to the south.\r\n"
+door = 0
+key = -1
+to_room = 3008
+[[rooms]]
+vnum = 3065
+name = "The Great Field Of Midgaard"
+description = "   You are walking on a wide dirt path through the lush, green, fresh\r\nMidgaard countryside.  You can see to the horizon to the north, east,\r\nand west; the busy city of Midgaard lies to the south.  All around you\r\nis healthy green grass and an occasional large oak tree.  The sun feels\r\nwonderful on your face and a pleasant wind blows through your hair.  Birds\r\nchirp quietly to themselves and you can smell the faint scent of flowers\r\nand freshly cut grass.  You feel like you could lie down in the grass and\r\nstay here forever, surrounded by powerful beauty in all directions.\r\n   The way north appears to be blocked by a large plot device and you cannot\r\nsee any way around it.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Unfortunately the way north is blocked by a large plot device and there\r\ndoes not seem to be any way around it.\r\n"
+door = 0
+key = -1
+to_room = -1
+
+[[rooms.exits]]
+dir = 2
+description = "The path continues through the field to the south past an odd structure\r\non the eastern side of the path.\r\n"
+door = 0
+key = -1
+to_room = 3061
+
+[[rooms.extra]]
+keyword = "plot device"
+description = "What more is a plot device than something to block a certain direction\r\nfor reasons beyond your comprehension.\r\n"
+[[rooms]]
+vnum = 3066
+name = "The Dirt Path"
+description = "   You are walking along a narrow dirt path through the lush, green,\r\nfresh Midgaard countryside.  You can see to the horizon to the north\r\nand east; the busy city of Midgaard lies to the south.  All around\r\nyou is healthy green grass and an occasional large oak tree.  The sun\r\nfeels wonderful on your face and a pleasant wind blows through your\r\nhair.  Birds chirp quietly to themselves and you can smell the faint\r\nscent of flowers and freshly cut grass.  You feel like you could lie\r\ndown in the grass and stay here forever, surrounded by powerful beauty\r\nin all directions.\r\n   There is a large rusty gate sitting in a stone archway just to the\r\nwest.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+description = "The path meets up with a larger path just to the east.\r\n"
+door = 0
+key = -1
+to_room = 3061
+
+[[rooms.exits]]
+dir = 3
+description = "There is a large rusty gate just to the west.\r\n"
+door = 0
+key = -1
+to_room = 3600

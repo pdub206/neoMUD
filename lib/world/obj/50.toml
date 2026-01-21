@@ -1,0 +1,432 @@
+[[objects]]
+vnum = 5000
+name = "pick mining"
+short_descr = "a small mining pick"
+description = "A small mining pick made of what appears to be silver lies on the ground."
+type = 5
+extra_flags = "j"
+wear_flags = "8193"
+values = [0, 1, 9, 11]
+weight = 3
+cost = 600
+rent = 500
+[[objects]]
+vnum = 5001
+name = "suit mail banded"
+short_descr = "a glowing suit of banded mail"
+description = "A glowing suit of banded mail lies on the ground."
+type = 9
+extra_flags = "ag"
+wear_flags = "9"
+values = [7, 0, 0, 0]
+weight = 0
+cost = 75000
+rent = 20000
+
+[[objects.affects]]
+location = 2
+modifier = 2
+
+[[objects.affects]]
+location = 17
+modifier = -4
+[[objects]]
+vnum = 5002
+name = "halberd"
+short_descr = "a halberd"
+description = "A mighty halberd lies against the wall."
+type = 5
+extra_flags = "gi"
+wear_flags = "8193"
+values = [0, 3, 5, 3]
+weight = 16
+cost = 12000
+rent = 10000
+
+[[objects.affects]]
+location = 18
+modifier = 2
+
+[[objects.affects]]
+location = 19
+modifier = 2
+[[objects]]
+vnum = 5003
+name = "amulet mushroom"
+short_descr = "a mushroom amulet"
+description = "A mushroom-shaped amulet lies on the ground."
+type = 9
+extra_flags = "gp"
+wear_flags = "5"
+values = [0, 0, 0, 0]
+weight = 2
+cost = 1500
+rent = 4000
+
+[[objects.affects]]
+location = 5
+modifier = 2
+[[objects]]
+vnum = 5005
+name = "bone leg"
+short_descr = "a large leg bone"
+description = "A large leg bone rests on the ground."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 1, 4, 7]
+weight = 5
+cost = 300
+rent = 60
+[[objects]]
+vnum = 5006
+name = "cactus cup water"
+short_descr = "a small cactus cup"
+description = "A small cactus cup lies on the ground."
+type = 17
+extra_flags = "0"
+wear_flags = "1"
+values = [5, 5, 0, 0]
+weight = 6
+cost = 30
+rent = 5
+[[objects]]
+vnum = 5007
+name = "basket wicker small"
+short_descr = "a small wicker basket"
+description = "A small wicker basket sits on the ground."
+type = 15
+extra_flags = "0"
+wear_flags = "1"
+values = [100, 5, -1, 0]
+weight = 50
+cost = 5000
+rent = 50
+[[objects]]
+vnum = 5008
+name = "basket wicker small"
+short_descr = "a small wicker basket"
+description = "A small wicker basket sits on the ground."
+type = 15
+extra_flags = "0"
+wear_flags = "1"
+values = [100, 5, -1, 0]
+weight = 50
+cost = 5000
+rent = 50
+[[objects]]
+vnum = 5009
+name = "basket wicker small"
+short_descr = "a small wicker basket"
+description = "A small wicker basket sits on the ground."
+type = 15
+extra_flags = "0"
+wear_flags = "1"
+values = [100, 5, -1, 0]
+weight = 50
+cost = 5000
+rent = 50
+[[objects]]
+vnum = 5010
+name = "basket wicker small"
+short_descr = "a small wicker basket"
+description = "A small wicker basket sits on the ground."
+type = 15
+extra_flags = "0"
+wear_flags = "0"
+values = [100, 5, -1, 0]
+weight = 50
+cost = 5000
+rent = 50
+[[objects]]
+vnum = 5011
+name = "rope coil"
+short_descr = "a coil of rope"
+description = "A long coil of rope lies on the ground."
+type = 12
+extra_flags = "0"
+wear_flags = "1"
+values = [0, 0, 0, 0]
+weight = 12
+cost = 450
+rent = 45
+[[objects]]
+vnum = 5012
+name = "stakes bundle bunch"
+short_descr = "a bunch of stakes"
+description = "A small bundle of stakes lies here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 1, 2, 11]
+weight = 6
+cost = 250
+rent = 30
+[[objects]]
+vnum = 5013
+name = "map tattered old"
+short_descr = "an old, tattered map"
+description = "An old, tattered, and much faded map lies here."
+type = 12
+extra_flags = "0"
+wear_flags = "1"
+values = [0, 0, 0, 0]
+weight = 1
+cost = 300
+rent = 20
+[[objects]]
+vnum = 5014
+name = "turban padded"
+short_descr = "a thick padded turban"
+description = "A thick padded turban lies here."
+type = 9
+extra_flags = "gh"
+wear_flags = "17"
+values = [0, 0, 0, 0]
+weight = 15
+cost = 4300
+rent = 100
+
+[[objects.affects]]
+location = 17
+modifier = 1
+[[objects]]
+vnum = 5015
+name = "coins treasure"
+short_descr = "a great pile of treasure"
+description = "A great, gleaming pile of treasure lies at your feet."
+type = 20
+extra_flags = "0"
+wear_flags = "1"
+values = [46270, 0, 0, 0]
+weight = 0
+cost = 0
+rent = 0
+[[objects]]
+vnum = 5016
+name = "sabre curved long"
+short_descr = "a long, curved sabre"
+description = "A long, curved sabre stands upright in the ground."
+type = 5
+extra_flags = "l"
+wear_flags = "8193"
+values = [0, 1, 8, 3]
+weight = 7
+cost = 1050
+rent = 200
+
+[[objects.affects]]
+location = 18
+modifier = 2
+[[objects]]
+vnum = 5017
+name = "scimitar curved"
+short_descr = "a curved scimitar"
+description = "A curved scimitar lies at your feet."
+type = 5
+extra_flags = "l"
+wear_flags = "8193"
+values = [0, 1, 7, 3]
+weight = 6
+cost = 600
+rent = 150
+
+[[objects.affects]]
+location = 18
+modifier = 1
+[[objects]]
+vnum = 5018
+name = "cutlass pointed long"
+short_descr = "a long, pointed cutlass"
+description = "A long, pointed cutlass lies here."
+type = 5
+extra_flags = "l"
+wear_flags = "8193"
+values = [0, 1, 7, 3]
+weight = 5
+cost = 550
+rent = 10
+[[objects]]
+vnum = 5019
+name = "potion pink"
+short_descr = "a pink potion"
+description = "A pink potion stands here."
+type = 10
+extra_flags = "0"
+wear_flags = "1"
+values = [25, 33, 17, -1]
+weight = 6
+cost = 600
+rent = 100
+[[objects]]
+vnum = 5020
+name = "wand platinum"
+short_descr = "a platinum wand"
+description = "A platinum wand lies here."
+type = 3
+extra_flags = "b"
+wear_flags = "16385"
+values = [30, 10, 10, 32]
+weight = 8
+cost = 1900
+rent = 1000
+[[objects]]
+vnum = 5021
+name = "bow golden"
+short_descr = "a golden bow"
+description = "A powerful golden bow lies here."
+type = 5
+extra_flags = "abfgio"
+wear_flags = "8193"
+values = [0, 4, 6, 12]
+weight = 20
+cost = 150000
+rent = 20000
+[[objects]]
+vnum = 5022
+name = "scroll encrypted"
+short_descr = "an encrypted scroll"
+description = "An encrypted scroll lies at your feet."
+type = 2
+extra_flags = "0"
+wear_flags = "1"
+values = [22, 14, 35, 43]
+weight = 7
+cost = 1500
+rent = 500
+[[objects]]
+vnum = 5023
+name = "chest iron bound"
+short_descr = "an iron bound chest"
+description = "An iron bound chest with a shiny lock sits here."
+type = 15
+extra_flags = "0"
+wear_flags = "0"
+values = [200, 13, 5024, 0]
+weight = 200
+cost = 1000
+rent = 0
+[[objects]]
+vnum = 5024
+name = "key golden"
+short_descr = "a golden key"
+description = "A shiny golden key lies here."
+type = 18
+extra_flags = "c"
+wear_flags = "16385"
+values = [10, 0, 0, 0]
+weight = 1
+cost = 150
+rent = 0
+[[objects]]
+vnum = 5025
+name = "bracelet copper"
+short_descr = "a copper bracelet"
+description = "A tarnished copper bracelet lies at your feet."
+type = 9
+extra_flags = "gh"
+wear_flags = "4097"
+values = [-5, 0, 0, 0]
+weight = 10
+cost = 23000
+rent = 2500
+
+[[objects.affects]]
+location = 13
+modifier = 10
+
+[[objects.affects]]
+location = 19
+modifier = -4
+[[objects]]
+vnum = 5026
+name = "ruby gem"
+short_descr = "a large ruby"
+description = "A large ruby lies on the ground, collecting dust."
+type = 8
+extra_flags = "gh"
+wear_flags = "16385"
+values = [20, 0, 0, 0]
+weight = 9
+cost = 4000
+rent = 200
+[[objects]]
+vnum = 5027
+name = "diamond gem"
+short_descr = "a glittering diamond"
+description = "A glittering diamond lies at your feet."
+type = 8
+extra_flags = "g"
+wear_flags = "16385"
+values = [21, 0, 0, 0]
+weight = 10
+cost = 9500
+rent = 200
+[[objects]]
+vnum = 5028
+name = "sapphire gem"
+short_descr = "a brilliant sapphire"
+description = "A brilliant sapphire lies here, twinkling happily."
+type = 8
+extra_flags = "g"
+wear_flags = "16385"
+values = [22, 0, 0, 0]
+weight = 7
+cost = 3500
+rent = 200
+[[objects]]
+vnum = 5029
+name = "lapis lazuli blue gem"
+short_descr = "a deep blue lapis lazuli"
+description = "A deep blue lapis lazuli gem lies here."
+type = 8
+extra_flags = "g"
+wear_flags = "16385"
+values = [24, 0, 0, 0]
+weight = 11
+cost = 8500
+rent = 200
+[[objects]]
+vnum = 5030
+name = "jewel tiger"
+short_descr = "the Tiger Jewel"
+description = "The Tiger Jewel lies here blazing."
+type = 8
+extra_flags = "256"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 23
+cost = 43000
+rent = 1500
+
+[[objects.affects]]
+location = 2
+modifier = 1
+[[objects]]
+vnum = 5031
+name = "jewel red-eyed"
+short_descr = "the red-eyed jewel"
+description = "The red-eyed jewel glares at you greedily."
+type = 8
+extra_flags = "h"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 30
+cost = 35000
+rent = 600
+
+[[objects.affects]]
+location = 3
+modifier = -2
+[[objects]]
+vnum = 5032
+name = "emerald gem fiery green"
+short_descr = "a fiery green emerald"
+description = "A fiery green emerald sits here."
+type = 8
+extra_flags = "g"
+wear_flags = "16385"
+values = [23, 0, 0, 0]
+weight = 7
+cost = 5500
+rent = 200

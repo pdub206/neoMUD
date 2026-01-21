@@ -1,0 +1,981 @@
+[[rooms]]
+vnum = 5100
+name = "The City Entrance"
+description = "   You are at the entrance to a small underground city.  A great adamantite\r\ngate lies open to the west allowing entrance into the city.\r\n"
+flags = "acd"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+description = "A huge gate opens to the west allowing entrance into the city.\r\n"
+keyword = "gate"
+door = 1
+key = -1
+to_room = 5101
+
+[[rooms.exits]]
+dir = 4
+description = "A passageway opens up into a fairly large cave above.\r\n"
+door = 0
+key = -1
+to_room = 5011
+
+[[rooms.extra]]
+keyword = "gate"
+description = "A large adamantite gate with giant spider shaped emblems stands here.\r\n"
+[[rooms]]
+vnum = 5101
+name = "A City Street"
+description = "   You walk along a highly ornate street going north-south.  A large gate\r\nlies to the east while a building lies to the west.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5123
+
+[[rooms.exits]]
+dir = 1
+keyword = "gate"
+door = 1
+key = -1
+to_room = 5100
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5102
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5122
+[[rooms]]
+vnum = 5102
+name = "A City Street"
+description = "   You walk along a highly ornate city street going north and west.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5101
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5103
+[[rooms]]
+vnum = 5103
+name = "A City Street"
+description = "   You walk along a highly ornate city street going east-west.  A large house\r\nstands to the south.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5102
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5104
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5106
+[[rooms]]
+vnum = 5104
+name = "The 3rd House"
+description = "   You stand inside the 3rd house of the city; it is fairly well decorated\r\nby drow standards having a few statues, murals and such.  A door leads to the \r\nsouth.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5103
+
+[[rooms.exits]]
+dir = 2
+keyword = "door"
+door = 1
+key = -1
+to_room = 5105
+[[rooms]]
+vnum = 5105
+name = "The Throne Room"
+description = "   The throne room of the 3rd house is about as decorated as the inner\r\ncourtyard except with a blood covered altar in the center of the room.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+keyword = "door"
+door = 1
+key = -1
+to_room = 5104
+[[rooms]]
+vnum = 5106
+name = "A City Street"
+description = "   You walk along a highly ornate city street going east-west.  To the north\r\nis a large building.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5118
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5103
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5107
+[[rooms]]
+vnum = 5107
+name = "A City Street"
+description = "   You walk along a highly ornate city street leading north and east.  To the\r\nsouth is an extremely large house.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5110
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5106
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5108
+[[rooms]]
+vnum = 5108
+name = "The 2nd House"
+description = "   You stand inside the 2nd house of the city.  The room is highly decorated\r\nwith statues of spiders and murals everywhere.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5107
+
+[[rooms.exits]]
+dir = 3
+keyword = "door"
+door = 1
+key = -1
+to_room = 5109
+[[rooms]]
+vnum = 5109
+name = "The Throne Room"
+description = "   The throne room of the 2nd house is just a little more decorative than\r\nthe inner courtyard having an altar in the center of the room.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+keyword = "door"
+door = 1
+key = -1
+to_room = 5108
+[[rooms]]
+vnum = 5110
+name = "The Main Gate"
+description = "   You are at the entrance to the 1st house of the city.  A large gate,\r\nalmost as big and elegant as the one at the entrance to the city, stands\r\nhere.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5114
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5107
+
+[[rooms.exits]]
+dir = 3
+description = "A large gate lies to the west.\r\n"
+keyword = "gate"
+door = 1
+key = -1
+to_room = 5111
+[[rooms]]
+vnum = 5111
+name = "The 1st House"
+description = "   You stand in the inner courtyard of the 1st and largest house in the city.\r\nThe room is extremely large and decorative.  Mural and paintings hang on the \r\nwalls depicting some battles and a spider queen.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+keyword = "gate"
+door = 1
+key = -1
+to_room = 5110
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5112
+[[rooms]]
+vnum = 5112
+name = "The Throne Room"
+description = "   The throne room of the 1st house is in one word...awesome.  It is so\r\nhorrifying it is almost beautiful.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+keyword = "door"
+door = 1
+key = -1
+to_room = 5113
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5111
+[[rooms]]
+vnum = 5113
+name = "The Main Chamber"
+description = "   This is the council chamber for the Matron Mother herself.  A huge table\r\nand chairs surrounding it sits in the center of the room.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+keyword = "door"
+door = 1
+key = -1
+to_room = 5112
+[[rooms]]
+vnum = 5114
+name = "A City Street"
+description = "   You walk along a highly ornate city street leading north-south and east.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5115
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5117
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5110
+[[rooms]]
+vnum = 5115
+name = "A City Street"
+description = "   You walk along a highly ornate city street leading south.  A building is\r\nto the west.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5114
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5116
+[[rooms]]
+vnum = 5116
+name = "The Clerics' Academy"
+description = "   This is the most lavish of the academies being that it is for the clerics.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5115
+[[rooms]]
+vnum = 5117
+name = "A City Street"
+description = "   You walk along a highly ornate city street going east-west.  To the north\r\nis a giant temple.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "The entrance to the temple of Lloth is blocked by large ornamental gates.\r\n"
+keyword = "gates gate"
+door = 1
+key = -1
+to_room = 5119
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5121
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5114
+[[rooms]]
+vnum = 5118
+name = "The Warriors' Academy"
+description = "   This looks more like a barracks than a school.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5106
+[[rooms]]
+vnum = 5119
+name = "The Entrance To The Temple Of Lloth"
+description = "   The temple is the largest building in the city.  Even its doors are beyond\r\nimagination.  Inside of the temple entrance, the walls are made of gold and \r\nadamantite.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+keyword = "gates gate"
+door = 1
+key = -1
+to_room = 5117
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 5126
+[[rooms]]
+vnum = 5120
+name = "The Mages' Academy"
+description = "   The Mages' Academy is fairly well decorated and you can see that the\r\ndrow prefer magic over physical power greatly.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5121
+[[rooms]]
+vnum = 5121
+name = "A City Street"
+description = "   You walk along a highly ornate city street going eastward.  To the north\r\nis a building.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5120
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5123
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5117
+[[rooms]]
+vnum = 5122
+name = "The Slave Chamber"
+description = "   The room is in shambles.  Straw is strewn all about the room as beds for\r\nthe unfortunate creatures who have fallen prey to drow imperialism.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5101
+[[rooms]]
+vnum = 5123
+name = "A City Street"
+description = "   You walk along a highly ornate city street leading west and south.  To\r\nthe north is a relatively small house.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+keyword = "gate"
+door = 1
+key = -1
+to_room = 5124
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5101
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5121
+[[rooms]]
+vnum = 5124
+name = "The 4th House"
+description = "   You stand inside the 4th house of the city.  Its inner courtyard is rather \r\ndull by drow standards and rather small as well.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5125
+
+[[rooms.exits]]
+dir = 2
+keyword = "gate"
+door = 1
+key = -1
+to_room = 5123
+[[rooms]]
+vnum = 5125
+name = "The Throne Room"
+description = "   The throne room is basically similar to the inner courtyard in regards\r\nto decor.  there is a small throne behind the altar but that is about it.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5124
+[[rooms]]
+vnum = 5126
+name = "The Entrance Hall"
+description = "   You stand in the entrance way to the temple which opens up to the north\r\ninto a large hallway going east and west.  Small statues os spiders line the\r\nentrance way's walls.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5127
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 5119
+[[rooms]]
+vnum = 5127
+name = "A Hallway"
+description = "   You are in a long hallway lined with adamantite.  The walls are engraved\r\nwith pictures of elves and spiders.  The hallway continues east and west.  As\r\nyou look down the hallway you can make out one or two figures moving away from\r\nyou.\r\nTo the north is a obsidian stairway.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5135
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5128
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5126
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5131
+[[rooms]]
+vnum = 5128
+name = "A Long Hallway"
+description = "   You are in a long hallway lined with adamantite.  The walls are engraved\r\nwith pictures of elves and spiders.  The hallway continues east and west.  As\r\nyou look down the hallway you can make out one or two figures moving away from\r\nyou.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5129
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5127
+[[rooms]]
+vnum = 5129
+name = "A Long Hallway"
+description = "   You are in a long hallway lined with adamantite.  The walls are engraved\r\nwith pictures of elves and spiders.  The hallway continues east and west.  As\r\nyou look down the hallway you can make out one or two figures moving away from\r\nyou.\r\nTo the north is a door.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+keyword = "door"
+door = 1
+key = -1
+to_room = 5150
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5130
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5128
+[[rooms]]
+vnum = 5130
+name = "A Long Hallway"
+description = "   You are in a long hallway lined with adamantite.  The walls are engraved\r\nwith pictures of elves and spiders.  The hallway continues east and west.  As\r\nyou look down the hallway you can make out one or two figures moving away from\r\nyou.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5134
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5129
+[[rooms]]
+vnum = 5131
+name = "A Long Hallway"
+description = "   You are in a long hallway lined with adamantite.  The walls are engraved\r\nwith pictures of elves and spiders.  The hallway continues east and west.  As\r\nyou look down the hallway you can make out one or two figures moving away from\r\nyou.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5127
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5132
+[[rooms]]
+vnum = 5132
+name = "A Long Hallway"
+description = "   You are in a long hallway lined with adamantite.  The walls are engraved\r\nwith pictures of elves and spiders.  The hallway continues east and west.  As\r\nyou look down the hallway you can make out one or two figures moving away from\r\nyou.\r\nTo the south is a door.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5131
+
+[[rooms.exits]]
+dir = 2
+keyword = "door"
+door = 1
+key = -1
+to_room = 5133
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5134
+[[rooms]]
+vnum = 5133
+name = "The Warriors' Barracks"
+description = "   The room is a complete mess.  None of the beds are made, clothes and other\r\nitems have been left all about the room.  Well drow warriors never were known\r\nfor neatness.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+keyword = "door"
+door = 1
+key = -1
+to_room = 5131
+[[rooms]]
+vnum = 5134
+name = "A Long Hallway"
+description = "   You are in a long hallway lined with adamantite.  The walls are engraved\r\nwith pictures of elves and spiders.  The hallway continues east and west.  As\r\nyou look down the hallway you can make out one or two figures moving away from\r\nyou.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5132
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5130
+[[rooms]]
+vnum = 5135
+name = "The Grand Stairway"
+description = "   You are standing at the bottom of a giant obsidian and adamantite \r\nstairway.  The edges are trimmed with gold.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5127
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 5136
+[[rooms]]
+vnum = 5136
+name = "The Grand Hallway"
+description = "   You are standing in the middle of a grand hallway.  The walls are \r\nof the purest adamantite with gold trim.  Mosaics line the walls.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5138
+
+[[rooms.exits]]
+dir = 1
+keyword = "door"
+door = 1
+key = -1
+to_room = 5137
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 5135
+[[rooms]]
+vnum = 5137
+name = "The Mages' Barracks"
+description = "   The mage's living quarters is rather clean with the exception of a few\r\nused component containers.  It is rather well decorated as well.  Cots line\r\nthe floor for the mages to sleep on.  The only door is to the west.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+keyword = "door"
+door = 1
+key = -1
+to_room = 5136
+[[rooms]]
+vnum = 5138
+name = "The Grand Hallway"
+description = "   You are walking down a grand hallway, heavily decorated with adamantite\r\nand gold.  To the north the hall goes down a flight of stairs while a door is \r\nto the west.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5136
+
+[[rooms.exits]]
+dir = 3
+keyword = "door"
+door = 1
+key = -1
+to_room = 5139
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 5140
+[[rooms]]
+vnum = 5139
+name = "The Clerics' Barracks"
+description = "   The bed chamber is brightly decorated with spider shaped statues, murals\r\nand the like.  Large beds line the floor making this a comfortable room to\r\nlive in.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+keyword = "door"
+door = 1
+key = -1
+to_room = 5138
+[[rooms]]
+vnum = 5140
+name = "The Grand Stairway"
+description = "   You are climbing a set of obsidian stairs surrounded by adamantite walls.\r\nTo the north are a set of large golden doors.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+keyword = "doors door golden gold"
+door = 1
+key = -1
+to_room = 5141
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 5138
+[[rooms]]
+vnum = 5141
+name = "The Main Chamber"
+description = "   This is the south side of a large auditorium used for services by the\r\ndrow priestesses.  In the center is a large sacrificial pit and beyond that\r\nis an altar.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5142
+
+[[rooms.exits]]
+dir = 2
+keyword = "doors door golden gold"
+door = 1
+key = -1
+to_room = 5140
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5144
+[[rooms]]
+vnum = 5142
+name = "The Eastern Side Of The Main Chamber"
+description = "   You are on the eastern side of the chamber overlooking the pit.  To the\r\neast is a door while to the north is an altar.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5145
+
+[[rooms.exits]]
+dir = 1
+keyword = "door"
+door = 1
+key = -1
+to_room = 5146
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5141
+[[rooms]]
+vnum = 5143
+name = "The Sacrificial Pit"
+description = "   As you climb down into the pit, thousands of spiders cover you, tearing\r\nyour fragile body to shreds.  \r\n \r\nLloth thanks you for your sacrifice.\r\n\r\n"
+flags = "bd"
+sector = 0
+[[rooms]]
+vnum = 5144
+name = "The Western Side Of The Main Chamber"
+description = "   You are on the western side of the main chamber overlooking a sacrificial\r\npit.  To the north is an altar.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5145
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5141
+[[rooms]]
+vnum = 5145
+name = "The Altar"
+description = "   You are standing in front of a highly and freshly bloodstained altar.  \r\nEngraved on the top of the altar is a giant spider with a human head.  Looking \r\ndown from the altar you see a large sacrificial pit with thousands of swarming\r\nspiders looking for their next meal!\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5148
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5142
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5144
+
+[[rooms.exits]]
+dir = 5
+description = "Thousands of spiders eye you with undisguised hunger.\r\n"
+door = 0
+key = -1
+to_room = 5143
+[[rooms]]
+vnum = 5146
+name = "The Slave Cells"
+description = "   This is the main room to the cell chambers for the slaves to be \r\nsacrificed.  You notice there are no guards around.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+keyword = "cell"
+door = 1
+key = -1
+to_room = 5147
+
+[[rooms.exits]]
+dir = 3
+keyword = "door"
+door = 1
+key = -1
+to_room = 5142
+[[rooms]]
+vnum = 5147
+name = "The Slave Pen"
+description = "   Rotten meat and breads lie about the floor while shackles hang from the \r\nwalls.  The room reeks of death.  You almost become nauseous and decide to\r\nleave the room since you were obviously too late to save the slave.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+keyword = "cell"
+door = 1
+key = -1
+to_room = 5146
+[[rooms]]
+vnum = 5148
+name = "The Dias"
+description = "   You stand upon a dias behind the altar.  Above you is a enormous illusion\r\nof a female drow turning into a giant spider and back again.  There is a door \r\nto the west.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5145
+
+[[rooms.exits]]
+dir = 3
+keyword = "door"
+door = 2
+key = 5115
+to_room = 5149
+[[rooms]]
+vnum = 5149
+name = "The Treasury"
+description = "   This is obviously only a temporary storage place for the collected \r\ntreasure being rather bare.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+keyword = "door"
+door = 2
+key = 5115
+to_room = 5148
+[[rooms]]
+vnum = 5150
+name = "The Weaponsmaster's Chamber"
+description = "   This one-person bedchamber is very elegant.  The owner must be held in\r\nhigh regard to get this kind of treatment.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+keyword = "door"
+door = 1
+key = -1
+to_room = 5129

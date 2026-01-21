@@ -1,0 +1,236 @@
+[[objects]]
+vnum = 7200
+name = "rod devil"
+short_descr = "the devil rod"
+description = "The mysterious devil rod lies on the floor."
+type = 5
+extra_flags = "gj"
+wear_flags = "8193"
+values = [0, 2, 5, 3]
+weight = 6
+cost = 16000
+rent = 800
+
+[[objects.extra_desc]]
+keyword = "devil rod"
+description = "This is indeed a mysterious rod.  It is dark black at the base but has four\r\nvery sharp purple tentacles at the end.\r\n"
+
+[[objects.affects]]
+location = 18
+modifier = 3
+
+[[objects.affects]]
+location = 1
+modifier = -1
+[[objects]]
+vnum = 7201
+name = "mace large"
+short_descr = "the large mace"
+description = "A large mace lies here."
+type = 5
+extra_flags = "g"
+wear_flags = "8193"
+values = [0, 1, 6, 7]
+weight = 10
+cost = 1000
+rent = 400
+
+[[objects.extra_desc]]
+keyword = "large mace"
+description = "The mace is pretty large with a weight of 10 lbs.  The head is actually four\r\npurple tentacles tied together.\r\n"
+
+[[objects.affects]]
+location = 19
+modifier = 2
+[[objects]]
+vnum = 7202
+name = "mace small"
+short_descr = "the small mace"
+description = "a small mace has been left here."
+type = 5
+extra_flags = "g"
+wear_flags = "8193"
+values = [0, 1, 6, 7]
+weight = 6
+cost = 600
+rent = 200
+
+[[objects.extra_desc]]
+keyword = "small mace"
+description = "This weapon does look like it does a lot of damage, but then you never know.\r\nIt consists of a black handle and a purple head.\r\n"
+
+[[objects.affects]]
+location = 19
+modifier = 1
+[[objects]]
+vnum = 7203
+name = "cloak purple"
+short_descr = "a purple cloak"
+description = "A purple cloak lies on the floor."
+type = 11
+extra_flags = "g"
+wear_flags = "5"
+values = [0, 0, 0, 0]
+weight = 20
+cost = 5000
+rent = 6000
+
+[[objects.extra_desc]]
+keyword = "cloak purple"
+description = "This is a very fine made cloak from an unknown material, in a nice purple\r\ncolor.\r\n"
+
+[[objects.affects]]
+location = 24
+modifier = 2
+
+[[objects.affects]]
+location = 17
+modifier = -10
+[[objects]]
+vnum = 7204
+name = "potion blue neon"
+short_descr = "a neon blue potion"
+description = "A neon blue potion stands on the floor."
+type = 10
+extra_flags = "g"
+wear_flags = "1"
+values = [14, 6, 15, 16]
+weight = 4
+cost = 100
+rent = 1000
+
+[[objects.extra_desc]]
+keyword = "potion blue"
+description = "In the flask is a transparent electric blue liquid.\r\n"
+[[objects]]
+vnum = 7205
+name = "key black"
+short_descr = "a black key"
+description = "A black key has been left on the floor."
+type = 18
+extra_flags = "c"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 2
+cost = 0
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "black key"
+description = "This little key is made from a black metal of unknown origin.\r\n"
+[[objects]]
+vnum = 7206
+name = "skull white"
+short_descr = "a strange white skull"
+description = "A strange white skull lies on the floor looking at you."
+type = 9
+extra_flags = "abh"
+wear_flags = "17"
+values = [1, 0, 0, 0]
+weight = 30
+cost = 0
+rent = 250
+
+[[objects.extra_desc]]
+keyword = "white skull"
+description = "The skull has two small horns in the forehead. You notice some writing on\r\nthe inside.\r\n"
+
+[[objects.extra_desc]]
+keyword = "writing text"
+description = "You read the number '666'.\r\n"
+
+[[objects.affects]]
+location = 2
+modifier = -4
+[[objects]]
+vnum = 7207
+name = "gauntlets muddy"
+short_descr = "a pair of muddy gauntlets"
+description = "A pair of muddy gauntlets have been thrown away here."
+type = 9
+extra_flags = "g"
+wear_flags = "129"
+values = [6, 0, 0, 0]
+weight = 10
+cost = 6000
+rent = 1500
+
+[[objects.extra_desc]]
+keyword = "muddy gauntlets"
+description = "These gauntlets are muddy indeed, however they look very effective.\r\n"
+
+[[objects.affects]]
+location = 1
+modifier = 1
+[[objects]]
+vnum = 7208
+name = "stick small"
+short_descr = "a small stick"
+description = "A small stick lies here."
+type = 1
+extra_flags = "0"
+wear_flags = "16385"
+values = [0, 0, -1, 0]
+weight = 4
+cost = 200
+rent = 200
+
+[[objects.extra_desc]]
+keyword = "small stick"
+description = "The small stick does not look interesting at all.  But just as you are going\r\nto throw it away you notice some small letters.\r\n"
+
+[[objects.extra_desc]]
+keyword = "letters letter"
+description = "They read:\r\n\r\nHold me\r\n\r\n"
+[[objects]]
+vnum = 7209
+name = "boots muddy"
+short_descr = "a pair of muddy boots"
+description = "A pair of muddy boots has been dropped here."
+type = 9
+extra_flags = "g"
+wear_flags = "65"
+values = [4, 0, 0, 0]
+weight = 10
+cost = 75
+rent = 500
+
+[[objects.extra_desc]]
+keyword = "boots muddy"
+description = "The boots are muddy and they look well worn, but also very comfortable.\r\n"
+
+[[objects.affects]]
+location = 14
+modifier = 15
+[[objects]]
+vnum = 7210
+name = "treasure coins"
+short_descr = "a huge treasure"
+description = "There is a huge treasure here, looking very valuable."
+type = 20
+extra_flags = "0"
+wear_flags = "1"
+values = [6522, 0, 0, 0]
+weight = 5
+cost = 6522
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "treasure coins"
+description = "This looks like a whole lot of coins.\r\n"
+[[objects]]
+vnum = 7211
+name = "sword short"
+short_descr = "a short sword"
+description = "A short sword is lying here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 2, 3, 3]
+weight = 4
+cost = 100
+rent = 300
+
+[[objects.extra_desc]]
+keyword = "short sword"
+description = "This is a very nice little weapon.\r\n"

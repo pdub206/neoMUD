@@ -1,0 +1,1794 @@
+[[rooms]]
+vnum = 5001
+name = "A Long Tunnel"
+description = "   You encounter some rapids as you enter this tunnel cut out of\r\nthe mountains by the river.\r\n"
+flags = "ad"
+sector = 7
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5002
+
+[[rooms.exits]]
+dir = 3
+description = "There appear to be some bars here, making passage to the west\r\ndifficult.\r\n"
+door = 0
+key = -1
+to_room = 3205
+[[rooms]]
+vnum = 5002
+name = "A Long Tunnel"
+description = "   The tunnel branches off north.\r\n"
+flags = "ad"
+sector = 7
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5008
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5003
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5001
+[[rooms]]
+vnum = 5003
+name = "A Long Tunnel"
+description = "   The tunnel branches off south.\r\n"
+flags = "ad"
+sector = 7
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5004
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5017
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5002
+[[rooms]]
+vnum = 5004
+name = "A Tunnel Intersection"
+description = "   The tunnel branches off to the north and south.\r\n"
+flags = "ad"
+sector = 7
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5643
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5005
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5018
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5003
+[[rooms]]
+vnum = 5005
+name = "An Underground Lake"
+description = "   You are floating on a jet-black underground lake fed by dripping\r\nwater and lime from above.  The tunnel continues to the east and the\r\nriver leads back west.  Leading upwards to the northwest is a roughly\r\nhewn hallway.\r\n"
+flags = "ad"
+sector = 7
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5671
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5006
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5023
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5004
+[[rooms]]
+vnum = 5006
+name = "A Long Narrow Tunnel"
+description = "   The tunnel rises sharply to the east.  Another narrow tunnel\r\nleads away to the north.\r\n"
+flags = "adi"
+sector = 5
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5016
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5007
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5005
+[[rooms]]
+vnum = 5007
+name = "A Wide Tunnel"
+description = "   The tunnel continues east and west.  To the east the tunnel dives\r\ndown into a bright light.  A small passage way opens to the north.\r\n"
+flags = "ad"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5026
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5006
+[[rooms]]
+vnum = 5008
+name = "The Cave-In"
+description = "   You stand at the edge of a large pile of rubble created from the last\r\nrockslide.\r\n"
+flags = "ad"
+sector = 5
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5002
+
+[[rooms.exits]]
+dir = 5
+description = "You can easily slide down the rocks without getting hurt.\r\n"
+door = 0
+key = -1
+to_room = 5009
+[[rooms]]
+vnum = 5009
+name = "At The Foot Of The Rubble"
+description = "   You are at the bottom of a large pile of rubble.  A tunnel branches\r\noff to the north and east.\r\n"
+flags = "ad"
+sector = 5
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5010
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5012
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 5008
+[[rooms]]
+vnum = 5010
+name = "A Cave Entrance"
+description = "   You stand in the middle of a large and beautiful cave.  A path leads\r\ndeeper into the darkness.\r\n"
+flags = "ad"
+sector = 5
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5009
+
+[[rooms.exits]]
+dir = 5
+description = "You look down into the cave.  Bones are strewn about everywhere.\r\n"
+door = 0
+key = -1
+to_room = 5011
+[[rooms]]
+vnum = 5011
+name = "A Giant Cave"
+description = "   This cavern overwhelms you.  The walls and ceiling seem miles away.\r\nBones of previous adventurers lie strewn on the cavern floor.  There is\r\na passage that spirals downwards in the northeast corner of the cavern.\r\n"
+flags = "ad"
+sector = 5
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 5010
+
+[[rooms.exits]]
+dir = 5
+description = "The passageway spirals down into the gloom.\r\n"
+door = 0
+key = -1
+to_room = 5100
+[[rooms]]
+vnum = 5012
+name = "A Narrow Bend"
+description = "   The tunnel turns to the south and west.\r\n"
+flags = "ad"
+sector = 5
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5013
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5009
+[[rooms]]
+vnum = 5013
+name = "A Large Cave"
+description = "   You are standing in a large cave.  Many furs are spread out on the floor.\r\n"
+flags = "ad"
+sector = 5
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5012
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5014
+[[rooms]]
+vnum = 5014
+name = "A Damp Hallway"
+description = "   The walls here are extremely damp, as well as the floor.\r\n"
+flags = "ad"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+description = "You hear drops of water.\r\n"
+door = 0
+key = -1
+to_room = 5015
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5013
+[[rooms]]
+vnum = 5015
+name = "An Underground Pool"
+description = "   You are wading in a knee deep pool of lime-water.\r\n"
+flags = "ad"
+sector = 6
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5016
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5014
+[[rooms]]
+vnum = 5016
+name = "A Damp Hallway"
+description = "   The walls of the tunnel are extremely damp here.  The tunnel\r\nleads sharply upwards to the south as it starts to get narrow.\r\n"
+flags = "ad"
+sector = 5
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5006
+
+[[rooms.exits]]
+dir = 3
+description = "You hear drops of water.\r\n"
+door = 0
+key = -1
+to_room = 5015
+[[rooms]]
+vnum = 5017
+name = "A Narrow Crawlway"
+description = "   This crawlway is just big enough for a human to crawl through or a\r\nhalfling to walk through.\r\n"
+flags = "ad"
+sector = 5
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5003
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5018
+
+[[rooms.exits]]
+dir = 2
+description = "You smell the fragrant odor of fungus.\r\n"
+door = 0
+key = -1
+to_room = 5019
+[[rooms]]
+vnum = 5018
+name = "A Large Cavern"
+description = "   You have entered a very large cavern.  The rock formations would amaze\r\nalmost any dwarf.\r\n"
+flags = "ad"
+sector = 5
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5004
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5017
+[[rooms]]
+vnum = 5019
+name = "A Fungus Patch"
+description = "   As you walk through the fungus patch, you are shot at by many millions of\r\nspores.  You can hardly breathe.\r\n"
+flags = "ad"
+sector = 5
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5017
+
+[[rooms.exits]]
+dir = 1
+description = "The fragrant smell of fungus spores continues to the east.\r\n"
+door = 0
+key = -1
+to_room = 5020
+[[rooms]]
+vnum = 5020
+name = "The Fungus Path"
+description = "   As you walk along the path, millions of spores are shot at you.  It is\r\ndifficult to breathe.\r\n"
+flags = "ad"
+sector = 5
+
+[[rooms.exits]]
+dir = 2
+description = "A giant mushroom temple stands to the south.\r\n"
+door = 0
+key = -1
+to_room = 5021
+
+[[rooms.exits]]
+dir = 3
+description = "The fragrant smell of spores continues to the west.\r\n"
+door = 0
+key = -1
+to_room = 5019
+[[rooms]]
+vnum = 5021
+name = "The Fungus Temple"
+description = "   You find yourself standing inside of a giant mushroom.  The inside\r\nis decorated in the fashion of a temple.\r\n"
+flags = "ad"
+sector = 5
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5020
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5022
+[[rooms]]
+vnum = 5022
+name = "A Sloping Passage"
+description = "   You follow a path sloping down from the fungus temple.\r\n"
+flags = "ad"
+sector = 5
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5023
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5021
+[[rooms]]
+vnum = 5023
+name = "A Sloping Passage"
+description = "   You are on a path that gently slopes up from the underground pool.\r\n"
+flags = "ad"
+sector = 5
+
+[[rooms.exits]]
+dir = 0
+description = "You hear sounds of trickling water.\r\n"
+door = 0
+key = -1
+to_room = 5005
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5022
+[[rooms]]
+vnum = 5024
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sand constantly shifting around\r\nyou.  A pyramid lies to the east and a snow-capped mountain range to the \r\nwest.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5030
+
+[[rooms.exits]]
+dir = 1
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5034
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5025
+[[rooms]]
+vnum = 5025
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the east and a snow-capped mountain range to the \r\nwest.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5024
+
+[[rooms.exits]]
+dir = 1
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5031
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5026
+[[rooms]]
+vnum = 5026
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the east and a snow-capped mountain range to the\r\nwest.  The hole which you tumbled out of is too high for you to reach.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5025
+
+[[rooms.exits]]
+dir = 1
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5036
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5027
+[[rooms]]
+vnum = 5027
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the east and a snow-capped mountain range to the\r\nwest.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5026
+
+[[rooms.exits]]
+dir = 1
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5033
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5028
+[[rooms]]
+vnum = 5028
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the north-east and a snow-capped mountain range to\r\nthe west.  You spy a narrow dirt trail leading away to the west into the\r\nfoothills.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5027
+
+[[rooms.exits]]
+dir = 1
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5033
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5029
+
+[[rooms.exits]]
+dir = 3
+description = "A small dirt trail leads off to the west where it joins a large clay road\r\nsome distance away.\r\n"
+door = 0
+key = -1
+to_room = 12068
+[[rooms]]
+vnum = 5029
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the north-east and a snow-capped mountain range to\r\nthe west.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5028
+
+[[rooms.exits]]
+dir = 1
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5037
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5044
+[[rooms]]
+vnum = 5030
+name = "A Small Oasis"
+description = "   You stand beside a small pool of crystal-blue water bathed in the\r\nshade of a few scarce palm trees.  To the north you see a small\r\nencampment stopped for the day.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "You see three tents and some camels hitched to a stake.  Shadows moving \r\nacross the tents suggest activity.\r\n"
+door = 0
+key = -1
+to_room = 5056
+
+[[rooms.exits]]
+dir = 1
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5036
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5032
+
+[[rooms.exits]]
+dir = 3
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5025
+[[rooms]]
+vnum = 5031
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the east.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5031
+
+[[rooms.exits]]
+dir = 1
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5031
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5032
+
+[[rooms.exits]]
+dir = 3
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5024
+[[rooms]]
+vnum = 5032
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the east.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5035
+
+[[rooms.exits]]
+dir = 1
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5036
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5033
+
+[[rooms.exits]]
+dir = 3
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5032
+[[rooms]]
+vnum = 5033
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the north-east.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5037
+
+[[rooms.exits]]
+dir = 1
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5037
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5043
+
+[[rooms.exits]]
+dir = 3
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5028
+[[rooms]]
+vnum = 5034
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the south-east.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5038
+
+[[rooms.exits]]
+dir = 1
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5035
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5034
+
+[[rooms.exits]]
+dir = 3
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5035
+[[rooms]]
+vnum = 5035
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the east, it looks enormous, even from this distance.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5039
+
+[[rooms.exits]]
+dir = 1
+description = "Even from here, you can sense a great evil residing within the pyramid\r\nprotruding from the sand to the east.\r\n"
+door = 0
+key = -1
+to_room = 5300
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5032
+
+[[rooms.exits]]
+dir = 3
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5034
+[[rooms]]
+vnum = 5036
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the north-east.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5035
+
+[[rooms.exits]]
+dir = 1
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5041
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5032
+
+[[rooms.exits]]
+dir = 3
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5030
+[[rooms]]
+vnum = 5037
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the north-east.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5048
+
+[[rooms.exits]]
+dir = 1
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5033
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5042
+
+[[rooms.exits]]
+dir = 3
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5033
+[[rooms]]
+vnum = 5038
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the south.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5046
+
+[[rooms.exits]]
+dir = 1
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5045
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5040
+
+[[rooms.exits]]
+dir = 3
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5034
+[[rooms]]
+vnum = 5039
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting\r\naround you.  A pyramid lies to the south.  The gates of a city lie a\r\nshort distance off to the north.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Some city gates stand off to the north.\r\n"
+door = 0
+key = -1
+to_room = 5411
+
+[[rooms.exits]]
+dir = 1
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5039
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5048
+
+[[rooms.exits]]
+dir = 3
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5039
+[[rooms]]
+vnum = 5040
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  You are standing near a gigantic pyramid located a couple hundred\r\nmeters west of you.  From here you can sense the great evil which resides\r\nwithin the massive structure.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5036
+
+[[rooms.exits]]
+dir = 1
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5049
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5041
+
+[[rooms.exits]]
+dir = 3
+description = "The pyramid can be seen across the sands to the west.\r\n"
+door = 0
+key = -1
+to_room = 5300
+[[rooms]]
+vnum = 5041
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the north.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Even from here, you can sense a great evil residing within the pyramid\r\nprotruding from the sand to the north.\r\n"
+door = 0
+key = -1
+to_room = 5040
+
+[[rooms.exits]]
+dir = 1
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5048
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5041
+
+[[rooms.exits]]
+dir = 3
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5037
+[[rooms]]
+vnum = 5042
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the north.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5049
+
+[[rooms.exits]]
+dir = 1
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5055
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5043
+
+[[rooms.exits]]
+dir = 3
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5041
+[[rooms]]
+vnum = 5043
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the north.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5042
+
+[[rooms.exits]]
+dir = 1
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5055
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5044
+
+[[rooms.exits]]
+dir = 3
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5033
+[[rooms]]
+vnum = 5044
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the north and a ruined city to the west.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5050
+
+[[rooms.exits]]
+dir = 1
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5055
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5029
+
+[[rooms.exits]]
+dir = 3
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5200
+[[rooms]]
+vnum = 5045
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the south.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5045
+
+[[rooms.exits]]
+dir = 1
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5052
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5045
+
+[[rooms.exits]]
+dir = 3
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5038
+[[rooms]]
+vnum = 5046
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the south-west.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5038
+
+[[rooms.exits]]
+dir = 1
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5047
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5047
+
+[[rooms.exits]]
+dir = 3
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5039
+[[rooms]]
+vnum = 5047
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the west.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5046
+
+[[rooms.exits]]
+dir = 1
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5051
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5053
+
+[[rooms.exits]]
+dir = 3
+description = "Even from here, you can sense a great evil residing within the pyramid\r\nprotruding from the sand to the west.\r\n"
+door = 0
+key = -1
+to_room = 5040
+[[rooms]]
+vnum = 5048
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the west.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5039
+
+[[rooms.exits]]
+dir = 1
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5048
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5053
+
+[[rooms.exits]]
+dir = 3
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5041
+[[rooms]]
+vnum = 5049
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the north-west.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5053
+
+[[rooms.exits]]
+dir = 1
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5054
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5050
+
+[[rooms.exits]]
+dir = 3
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5042
+[[rooms]]
+vnum = 5050
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the north.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see... and a pyramid in the distance.\r\n"
+door = 0
+key = -1
+to_room = 5300
+
+[[rooms.exits]]
+dir = 1
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5054
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5044
+
+[[rooms.exits]]
+dir = 3
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5042
+[[rooms]]
+vnum = 5051
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the south-west and a deep canyon to the east.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5051
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5052
+
+[[rooms.exits]]
+dir = 3
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5047
+[[rooms]]
+vnum = 5052
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the south-west and a deep canyon to the east.  Just\r\nbelow you can make out a tiny ledge.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5051
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5053
+
+[[rooms.exits]]
+dir = 3
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5045
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 5063
+[[rooms]]
+vnum = 5053
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the west and a deep canyon to the east.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5052
+
+[[rooms.exits]]
+dir = 1
+description = "A rickety rope bridge stretches across the canyon... it doesn't look too safe.\r\n"
+door = 0
+key = -1
+to_room = 5062
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5054
+
+[[rooms.exits]]
+dir = 3
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5049
+[[rooms]]
+vnum = 5054
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the west and a deep canyon to the east.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5053
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5055
+
+[[rooms.exits]]
+dir = 3
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5050
+[[rooms]]
+vnum = 5055
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around  \r\nyou.  A pyramid lies to the north-west and a deep canyon to the east.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5054
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5055
+
+[[rooms.exits]]
+dir = 3
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5043
+[[rooms]]
+vnum = 5056
+name = "A Nomad Camp"
+description = "   This small group of desert nomads has stopped for the day to rest\r\nand refresh themselves beside this beautiful oasis.  Three tents and some\r\ncamels make up the party.  From within two of the tents you hear muffled\r\nvoices, obviously surprised at your visit.\r\n"
+flags = "g"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Some camels are tied up to a mass of stakes plugged into the ground.\r\n"
+door = 0
+key = -1
+to_room = 5058
+
+[[rooms.exits]]
+dir = 1
+description = "You see inside one of the tents a huddled mass of people, probably slaves.\r\n"
+door = 0
+key = -1
+to_room = 5057
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5030
+
+[[rooms.exits]]
+dir = 3
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5025
+[[rooms]]
+vnum = 5057
+name = "Inside A Small Tent"
+description = "   This is a small and simple tent with few possessions in sight.  Lying\r\nhere and there are young-looking men and women, possibly slaves to the\r\nleader of this band.\r\n"
+flags = "dg"
+sector = 2
+
+[[rooms.exits]]
+dir = 3
+description = "You see the center of the nomad camp.\r\n"
+door = 0
+key = -1
+to_room = 5056
+[[rooms]]
+vnum = 5058
+name = "Beside The Camels"
+description = "   Here stand about ten camels, all hitched to some stakes plugged into \r\nthe ground.  To the east you see a small tent while to the north you see a \r\nlarger, fancier tent.\r\n"
+flags = "g"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "This tent seems to be the temporary abode of the nomad leader.  You make a\r\nmental note to visit it before you leave.\r\n"
+door = 0
+key = -1
+to_room = 5060
+
+[[rooms.exits]]
+dir = 1
+description = "In this tent there are very large men, all carrying weapons.\r\n"
+door = 0
+key = -1
+to_room = 5059
+
+[[rooms.exits]]
+dir = 2
+description = "You see the center of the nomad camp.\r\n"
+door = 0
+key = -1
+to_room = 5056
+
+[[rooms.exits]]
+dir = 3
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5024
+[[rooms]]
+vnum = 5059
+name = "The Warriors' Tent"
+description = "   This tent has a few furnishings, but mainly it holds the band's \r\nprotectors.  They all stare at you coldly as you enter.\r\n"
+flags = "dg"
+sector = 2
+
+[[rooms.exits]]
+dir = 3
+description = "Outside you see some peaceful camels.\r\n"
+door = 0
+key = -1
+to_room = 5058
+[[rooms]]
+vnum = 5060
+name = "The Main Tent"
+description = "   This tent is as lavishly decorated on the inside as it is on the\r\noutside.  A fancy carpet lies on the sand and numerous baskets line the\r\nwalls.\r\n"
+flags = "dg"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5061
+
+[[rooms.exits]]
+dir = 2
+description = "You see some peaceful camels.\r\n"
+door = 0
+key = -1
+to_room = 5058
+[[rooms]]
+vnum = 5061
+name = "The Main Tent"
+description = "   This is where the leader of this band of nomads resides.  He is \r\ndefinitely rich as you inspect the tapestries, baskets, and a few\r\npaintings as well.\r\n"
+flags = "dg"
+sector = 2
+
+[[rooms.exits]]
+dir = 3
+description = "You see the entrance to this tent.\r\n"
+door = 0
+key = -1
+to_room = 5060
+[[rooms]]
+vnum = 5062
+name = "The Rickety Rope Bridge"
+description = "   You carefully begin to walk across the bridge, but suddenly the rope\r\nbreaks and you fall...\r\n                     ... and fall\r\n                            and fall\r\n                               and fall\r\n                                    ... to your death on the rocks below.\r\n"
+flags = "bd"
+sector = 5
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5053
+[[rooms]]
+vnum = 5063
+name = "The Wind-Swept Ledge"
+description = "   Being very careful not to lose your balance, you look around and\r\nfind that this canyon is about a half a kilometer deep.  To the west is\r\na dark cave leading under the desert sands and above you a rope bridge\r\nspans the gap.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5064
+
+[[rooms.exits]]
+dir = 4
+description = "The desert sands blow down in your face.\r\n"
+door = 0
+key = -1
+to_room = 5052
+[[rooms]]
+vnum = 5064
+name = "The Cave Mouth"
+description = "   The air in here is MUCH cooler than outside.  From the west you hear \r\nstrange sounds, but can see nothing.  The cave slopes down into the \r\ndarkness.\r\n"
+flags = "ad"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+description = "Outside is lighter and very windy.\r\n"
+door = 0
+key = -1
+to_room = 5063
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5065
+[[rooms]]
+vnum = 5065
+name = "The Mysterious Lair"
+description = "   You have stumbled upon the home of something.  From the treasure\r\nhaphazardly strewn about and the rotting carcasses, you would guess\r\nthat this is a dragon's lair.  As to what type, you can't really say.\r\nThe cave narrows out into a tunnel to the west.\r\n"
+flags = "adgh"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5064
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5066
+[[rooms]]
+vnum = 5066
+name = "A Wide Tunnel"
+description = "   This tunnel seems to go on forever into the darkness.  You carefully\r\nfeel your way along the walls.\r\n"
+flags = "ad"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5065
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5067
+[[rooms]]
+vnum = 5067
+name = "A Narrower Tunnel"
+description = "   The tunnel becomes very narrow and you fight to squeeze your way through.\r\nThe floor seems to level off a little.\r\n"
+flags = "ad"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5066
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 5068
+[[rooms]]
+vnum = 5068
+name = "A Narrow Crack"
+description = "   This part of the tunnel is the hardest to move through as the walls\r\nmove in to meet you.\r\n"
+flags = "adi"
+sector = 5
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 5067
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5069
+[[rooms]]
+vnum = 5069
+name = "A Small Cavern"
+description = "   It is dark and damp and bats hang from the ceiling.  A narrow crack is\r\nin the east wall.  The floor now slopes upwards.\r\n"
+flags = "ad"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5068
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 5070
+[[rooms]]
+vnum = 5070
+name = "A Small Shaft"
+description = "   From within this shaft you can see a narrow hole in the roof just\r\nlarge enough for one person.  Back east is the cavern.\r\n"
+flags = "ad"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 5069
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 5009

@@ -26,7 +26,7 @@ default: all
 all: $(BINDIR)/autowiz $(BINDIR)/delobjs $(BINDIR)/listrent \
 	$(BINDIR)/mudpasswd $(BINDIR)/play2to3 $(BINDIR)/purgeplay \
 	$(BINDIR)/shopconv $(BINDIR)/showplay $(BINDIR)/sign $(BINDIR)/split \
-	$(BINDIR)/wld2html
+	$(BINDIR)/tomlmigrate $(BINDIR)/wld2html
 
 autowiz: $(BINDIR)/autowiz
 
@@ -48,19 +48,22 @@ sign: $(BINDIR)/sign
 
 split: $(BINDIR)/split
 
+tomlmigrate: $(BINDIR)/tomlmigrate
+	@true
+
 wld2html: $(BINDIR)/wld2html
 
 $(BINDIR)/autowiz: autowiz.c $(INCDIR)/conf.h $(INCDIR)/sysdep.h \
-	$(INCDIR)/structs.h $(INCDIR)/utils.h $(INCDIR)/db.h
-	$(CC) $(CFLAGS) -o $(BINDIR)/autowiz autowiz.c
+	$(INCDIR)/structs.h $(INCDIR)/utils.h $(INCDIR)/db.h $(INCDIR)/toml.h
+	$(CC) $(CFLAGS) -o $(BINDIR)/autowiz autowiz.c $(INCDIR)/toml.c
 
 $(BINDIR)/delobjs: delobjs.c $(INCDIR)/conf.h $(INCDIR)/sysdep.h \
-	$(INCDIR)/structs.h $(INCDIR)/utils.h
-	$(CC) $(CFLAGS) -o $(BINDIR)/delobjs delobjs.c
+	$(INCDIR)/structs.h $(INCDIR)/utils.h $(INCDIR)/toml.h
+	$(CC) $(CFLAGS) -o $(BINDIR)/delobjs delobjs.c $(INCDIR)/toml.c
 
 $(BINDIR)/listrent: listrent.c $(INCDIR)/conf.h $(INCDIR)/sysdep.h \
-	$(INCDIR)/structs.h
-	$(CC) $(CFLAGS) -o $(BINDIR)/listrent listrent.c
+	$(INCDIR)/structs.h $(INCDIR)/toml.h
+	$(CC) $(CFLAGS) -o $(BINDIR)/listrent listrent.c $(INCDIR)/toml.c
 
 $(BINDIR)/mudpasswd: mudpasswd.c $(INCDIR)/conf.h $(INCDIR)/sysdep.h \
 	$(INCDIR)/structs.h $(INCDIR)/utils.h
@@ -70,16 +73,16 @@ $(BINDIR)/play2to3: play2to3.c $(INCDIR)/conf.h $(INCDIR)/sysdep.h
 	$(CC) $(CFLAGS) -o $(BINDIR)/play2to3 play2to3.c
 
 $(BINDIR)/purgeplay: purgeplay.c $(INCDIR)/conf.h $(INCDIR)/sysdep.h \
-	$(INCDIR)/structs.h $(INCDIR)/utils.h
-	$(CC) $(CFLAGS) -o $(BINDIR)/purgeplay purgeplay.c
+	$(INCDIR)/structs.h $(INCDIR)/utils.h $(INCDIR)/toml.h
+	$(CC) $(CFLAGS) -o $(BINDIR)/purgeplay purgeplay.c $(INCDIR)/toml.c
 
 $(BINDIR)/shopconv: shopconv.c $(INCDIR)/conf.h $(INCDIR)/sysdep.h \
 	$(INCDIR)/structs.h $(INCDIR)/db.h $(INCDIR)/utils.h $(INCDIR)/shop.h
 	$(CC) $(CFLAGS) -o $(BINDIR)/shopconv shopconv.c
 
 $(BINDIR)/showplay: showplay.c $(INCDIR)/conf.h $(INCDIR)/sysdep.h \
-	$(INCDIR)/structs.h
-	$(CC) $(CFLAGS) -o $(BINDIR)/showplay showplay.c
+	$(INCDIR)/structs.h $(INCDIR)/toml.h
+	$(CC) $(CFLAGS) -o $(BINDIR)/showplay showplay.c $(INCDIR)/toml.c
 
 $(BINDIR)/sign: sign.c $(INCDIR)/conf.h $(INCDIR)/sysdep.h
 	$(CC) $(CFLAGS) -o $(BINDIR)/sign sign.c 
@@ -87,5 +90,10 @@ $(BINDIR)/sign: sign.c $(INCDIR)/conf.h $(INCDIR)/sysdep.h
 $(BINDIR)/split: split.c $(INCDIR)/conf.h $(INCDIR)/sysdep.h
 	$(CC) $(CFLAGS) -o $(BINDIR)/split split.c
 
-$(BINDIR)/wld2html: wld2html.c $(INCDIR)/conf.h $(INCDIR)/sysdep.h
-	$(CC) $(CFLAGS) -o $(BINDIR)/wld2html wld2html.c
+$(BINDIR)/tomlmigrate: tomlmigrate.c $(INCDIR)/conf.h $(INCDIR)/sysdep.h \
+	$(INCDIR)/structs.h $(INCDIR)/utils.h $(INCDIR)/db.h $(INCDIR)/shop.h \
+	$(INCDIR)/constants.h
+	$(CC) $(CFLAGS) -o $(BINDIR)/tomlmigrate tomlmigrate.c $(INCDIR)/constants.c
+
+$(BINDIR)/wld2html: wld2html.c $(INCDIR)/conf.h $(INCDIR)/sysdep.h $(INCDIR)/toml.h
+	$(CC) $(CFLAGS) -o $(BINDIR)/wld2html wld2html.c $(INCDIR)/toml.c

@@ -1,0 +1,1401 @@
+[[rooms]]
+vnum = 6200
+name = "In The Forest"
+description = "   The trail ends here where the mountains begin abruptly.\r\nLooking up, you note that the climb would be rough,\r\nhazardous, and probably not worth the effort; the energy\r\nbarrier continues up the mountain side out of sight.  The\r\nonly exit is back to the east.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6201
+
+[[rooms.extra]]
+keyword = "barrier energy"
+description = "You can faintly see the woods continue beyond it, but it\r\nseems there's no way through.  The field rises high up\r\ninto the air, and seems to form a ceiling above the woods,\r\npreventing a flying entrance.  You'd also bet it extends\r\ndeep into the ground.\r\n"
+[[rooms]]
+vnum = 6201
+name = "In The Forest"
+description = "   To the west the mountains rise high up, rocky and\r\nlifeless.  The trail you are walking on heads west\r\nto the end of the forest, and back east.  Each way the\r\nstrange energy barrier stands just to the north,\r\ninscrutable, magical, and impenetrable.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6202
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6200
+
+[[rooms.extra]]
+keyword = "barrier energy"
+description = "You can faintly see the woods continue beyond it, but it\r\nseems there's no way through.  The field rises high up\r\ninto the air, and seems to form a ceiling above the woods,\r\npreventing a flying entrance.  You'd also bet it extends\r\ndeep into the ground.\r\n"
+[[rooms]]
+vnum = 6202
+name = "In The Forest"
+description = "   This trail runs parallel to the energy barrier to your\r\nnorth, seemingly all the way up to the mountains to the\r\nwest that form the boundries of this valley.  Walking\r\nalong, you scare a small squirrel, which leaps through\r\nthe barrier without a second thought!  Your hand is still\r\nrepulsed by the magical field, however.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6203
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6201
+
+[[rooms.extra]]
+keyword = "barrier energy"
+description = "You can faintly see the woods continue beyond it, but it\r\nseems there's no way through.  The field rises high up\r\ninto the air, and seems to form a ceiling above the woods,\r\npreventing a flying entrance.  You'd also bet it extends\r\ndeep into the ground.\r\n"
+[[rooms]]
+vnum = 6203
+name = "In The Forest"
+description = "   The northern pathway stops abruptly here, halted by\r\nsome sort of glowing energy barrier running through the\r\nwoods.  A game trail, seemingly well traveled, runs east-\r\nwest along the magical barrier's length.  Very strange.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6204
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6139
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6202
+
+[[rooms.extra]]
+keyword = "barrier energy"
+description = "You can faintly see the woods continue beyond it, but it\r\nseems there's no way through.  The field rises high up\r\ninto the air, and seems to form a ceiling above the woods,\r\npreventing a flying entrance.  You'd also bet it extends\r\ndeep into the ground.\r\n"
+[[rooms]]
+vnum = 6204
+name = "In The Forest"
+description = "   The energy barrier runs through the woods on its east-\r\nwest course here, just north of the trail you are walking\r\non.  A faint humming seems to eminate from the glowing\r\nfield, pushing the normal sounds of the forest into the\r\nbackground.  For a short moment, you wonder if the field\r\nis keeping something in, or you out.  It makes you\r\nwonder...\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6205
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6203
+
+[[rooms.extra]]
+keyword = "barrier energy"
+description = "You can faintly see the woods continue beyond it, but it\r\nseems there's no way through.  The field rises high up\r\ninto the air, and seems to form a ceiling above the woods,\r\npreventing a flying entrance.  You'd also bet it extends\r\ndeep into the ground.\r\n"
+[[rooms]]
+vnum = 6205
+name = "In The Forest"
+description = "   The energy field makes a sudden ninety-degree turn\r\nhere, running to the north and west out of sight through\r\nthe thickening woods.  The trail you are on curves to\r\nskirt the edge of the magical barrier in either direction.\r\nCurious... who or what is keeping this field in place,\r\nand for what purpose?\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6206
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6204
+
+[[rooms.extra]]
+keyword = "barrier energy"
+description = "You can faintly see the woods continue beyond it, but it\r\nseems there's no way through.  The field rises high up\r\ninto the air, and seems to form a ceiling above the woods,\r\npreventing a flying entrance.  You'd also bet it extends\r\ndeep into the ground.\r\n"
+[[rooms]]
+vnum = 6206
+name = "In The Forest"
+description = "   The woods thicken here, and surpisingly, you see a tree\r\ncompletely cut in half by the magical barrier running\r\nnorth-south here.  The tree looks healthy and unaffected\r\nby the energy field passing right through its center.\r\nOdd...\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6207
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6205
+
+[[rooms.extra]]
+keyword = "barrier energy"
+description = "You can faintly see the woods continue beyond it, but it\r\nseems there's no way through.  The field rises high up\r\ninto the air, and seems to form a ceiling above the woods,\r\npreventing a flying entrance.  You'd also bet it extends\r\ndeep into the ground.\r\n"
+[[rooms]]
+vnum = 6207
+name = "In The Forest"
+description = "   The magical energy barrier runs straight north-south,\r\nunaffected by dips in the grounds, intervening rocks and\r\ntrees, everything.  From the north, you hear a faint\r\nrushing noise above the humming of the field.  The trail\r\nyou are on continues to the north and south, only a few\r\nfeet away from the barrier it follows.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6208
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6206
+
+[[rooms.extra]]
+keyword = "barrier energy"
+description = "You can faintly see the woods continue beyond it, but it\r\nseems there's no way through.  The field rises high up\r\ninto the air, and seems to form a ceiling above the woods,\r\npreventing a flying entrance.  You'd also bet it extends\r\ndeep into the ground.\r\n"
+[[rooms]]
+vnum = 6208
+name = "In The Forest"
+description = "   Here the field changes color, becoming almost\r\ntransparent.  Beyond, you think you can make out a few\r\nshapes, but nothing too terribly distinct.  From the north\r\ncomes the rushing sound of water, and through the trees\r\nyou believe you can see a river cutting through the\r\nforest.  The trail you are on leads north-south through\r\nthe woods, following the energy barrier all along its\r\nlength.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6209
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6207
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6210
+
+[[rooms.extra]]
+keyword = "barrier energy"
+description = "You can see a clearing beyond, the barrier not fully blocking\r\nout the area behind.  You think it might be possible to push\r\nyour way through, if the damn thing doesn't kill you first.\r\n"
+[[rooms]]
+vnum = 6209
+name = "The River's Edge"
+description = "   A river flows through the forest here, its water clean\r\nand clear.  The energy barrier runs right out into the\r\nmiddle of the river, and then makes another ninety-degree\r\nturn to the west.  The water seems to have no problem\r\npenetrating the magical field, however.\r\n   The river seems too wide and too swift to cross here.\r\nIt appears the only way to go is back to the south.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6208
+
+[[rooms.extra]]
+keyword = "barrier energy"
+description = "You can faintly see the woods continue beyond it, but it\r\nseems there's no way through.  The field rises high up\r\ninto the air, and seems to form a ceiling above the woods,\r\npreventing a flying entrance.  You'd also bet it extends\r\ndeep into the ground.\r\n"
+[[rooms]]
+vnum = 6210
+name = "Just Passing Through..."
+description = "   The energy barrier seems to push against you\r\nineffectively as you shove your way through it.  All your\r\nhairs stick up on your body from the static electricity,\r\nand electric shocks sting your body from every metallic\r\npiece of equipment you are carrying.  You think with a\r\nfinal shove, you can break through to the other side...\r\n"
+flags = "c"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6208
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6211
+[[rooms]]
+vnum = 6211
+name = "By The Barrier"
+description = "   To the west the magical energy barrier crackles and\r\nhums to itself, almost looking harmless.  Almost -- all\r\naround on the ground are charred corpses and bodies.\r\nSeveral poles with skulls on top face to the west, warning\r\ntravellers on the forest paths away from here.  The air\r\nsmells of death and decay, and the air is very still.  You\r\nfeel uncomfortable.\r\n"
+flags = "c"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6210
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6212
+
+[[rooms.extra]]
+keyword = "corpse body bodies corpses skull skulls"
+description = "Demi-human, from the size.  The foreheads slop down to a\r\nblocky brow, and the braincase seems rather small.  On\r\na hunch, you check one of the feet of a torched body.\r\nCloven, like a pig's... Orcs.\r\n"
+[[rooms]]
+vnum = 6212
+name = "A Clearing In The Forest"
+description = "   Several trails in the forest intersect here in a small\r\nclearing.  The dirt seems matted down, and you see many\r\nfootprints in the soil.   Nearby you hear a bird's chirp\r\nabruptly cut off in a loud squawk, and then silence.  The\r\npaths seem well-traveled, the undergrowth matted down and\r\nthe foilage hacked away to leave plenty of room or a\r\ntraveller to pass in every cardinal direction, excepting\r\nthe west path seems fairly overgrown...\r\n   You feel watched.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6213
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6211
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6217
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6228
+
+[[rooms.extra]]
+keyword = "foot footprint footprints print prints"
+description = "Cloven hoofs, two feet... they walk erect whatever they are.\r\n"
+[[rooms]]
+vnum = 6213
+name = "A Forest Trail"
+description = "   The northern trail winds through the trees, heading\r\nfrom a forest clearings to the south to where there appears\r\nto be a river's edge to the north.  This trail appears to\r\nbe well-used and you spot many tracks in the earth.  Again\r\nthe hairs on the back of your neck stand up, and you wonder\r\nif you're being spied upon.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6214
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6212
+[[rooms]]
+vnum = 6214
+name = "The River's Edge"
+description = "   A beautiful river flows swiftly by, the current looking\r\nquite dangerous in fact.  Out in the center of the river\r\nyou spot the energy barrier enclosure... no way out here.\r\nLooking up, you see a bird fly right through the barrier\r\noverhead and wonder as to the force field's nature.  This\r\npath leads south into the forest, and westwards along the\r\nriver's edge.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6213
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6215
+[[rooms]]
+vnum = 6215
+name = "The River's Edge"
+description = "   The river flows on its course, unhampered by the energy\r\nbarrier passing right down its center for as far as you\r\ncan see in both directions.  The path you are on travels\r\nalong the length of the river to the east and west\r\ninbetween the water and the forest's edge.  Once again you\r\nshiver and feel that unmistakeable sense that you are\r\nbeing watched.  Disturbing.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6214
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6216
+[[rooms]]
+vnum = 6216
+name = "The River's Edge"
+description = "   A large out-cropping of rock blocks this path along the\r\nriver to the west, and you don't spot any way around it; \r\nthe woods are too thick to the south, the river too swift \r\nto the north, the magical barrier above you.  This is a \r\nnice area, however, as evidenced by the amount of traffic\r\nthis path gets.  From the marks in the grass, you guess \r\nthat this is a favored resting spot.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6215
+[[rooms]]
+vnum = 6217
+name = "A Forest Trail"
+description = "   This well-used forest trail leads south.  Among the \r\nfoot-tracks in the dirt, you spot a few animal tracks as \r\nwell, leading you to believe that these trails are used by\r\nhunters.  Why would they be enclosed in this manner, \r\nhowever?\r\n   There is a clearing to the north, and the path\r\ncontinues to the south.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6212
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6219
+[[rooms]]
+vnum = 6218
+name = "A Forest Trail"
+description = "   This trail leads north-south... obviously a gaming\r\ntrail.  The woods, mostly deciduous trees with the\r\naccompanying ground foilage, crowd in to either side.\r\nA shrub to your left shows a fresh cutting wound...\r\nlooks like a sharp object like a knife or machete did\r\nthe damage.\r\n   A crackle in the leaves spins you around, to see\r\nnothing.  Something is watching you, you feel it.\r\nWhere?\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6233
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6226
+[[rooms]]
+vnum = 6219
+name = "A Forest Trail"
+description = "   The trail changes direction here, turning to the north \r\nand west.  A large tree to your south bears an interesting\r\nartifact; a rusty arrowhead embedded in the wood.  It \r\nlooks as if the arrow had been  broken off at the head, \r\nthe wood scratched at, and the arrowhead left behind.  \r\nOtherwise, there doesn't seem to be much of interest in \r\nthis particular section of the woods.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6217
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6220
+[[rooms]]
+vnum = 6220
+name = "A Forest Trail"
+description = "   This is a winding east-west path through the thickening\r\nforest.  The grass along the path is matted down from \r\nfrequent traffic.  The path continues to the east, and \r\nthere seems to be a small clearing to the west.\r\n   A faint noise makes you stand stock still.  You could \r\nhave sworn you heard a voice nearby.  Whatever it was, it \r\nwasn't speaking common.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6219
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6221
+[[rooms]]
+vnum = 6221
+name = "A Small Clearing"
+description = "   In the middle of this small clearing in the forest is a\r\nfairly large rock sticking up out of the ground.  Paths \r\nlead away to the east, west, and south from here.  The \r\ntrees above block out the sky fairly effectively, also\r\nblotting out the glowing energy barrier above your head.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6220
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6222
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6227
+
+[[rooms.extra]]
+keyword = "rock boulder"
+description = "There is dried blood on it.\r\n"
+[[rooms]]
+vnum = 6222
+name = "A Forest Trail"
+description = "   A smaller northern path leads away from the main east-\r\nwest trail here towards a clearing.  The main path leads \r\nwindingly around the trees to the east and west, the woods\r\nblocking out whatever may be ahead.  Again you get that \r\nstrange feeling of being watched.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6221
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6223
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6225
+[[rooms]]
+vnum = 6223
+name = "A Forest Trail"
+description = "  The trail leads east and west here through the forest.  \r\nTo the west you spot an area where a smaller path breaks \r\noff from the main track.  Eastwards seems to be another \r\nsmall clearing that seems to be well used; there are many\r\ntracks leading in that direction.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6224
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6222
+[[rooms]]
+vnum = 6224
+name = "The Dead End"
+description = "   The ground has been cleared of vegetation in this small\r\nclearing, and several large, man-made salt licks lie on\r\nthe ground and stand on poles here.  There are many animal\r\ntracks in the earth -- the salt licks must attract \r\nwildlife for miles around.  You think this would be a good\r\nplace to hide and wait for dinner if you were a hunter...\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6223
+[[rooms]]
+vnum = 6225
+name = "A Forest Trail"
+description = "   This trail leads east-west through the forest foilage,\r\naround the trees and up and down the slight rises.  The\r\narea is quiet and serene, except for the energy barrier\r\nkeeping you in to the south.  For just a moment, you wonder\r\nif you're still being watched...\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6222
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6226
+[[rooms]]
+vnum = 6226
+name = "A Forest Trail"
+description = "   The trail bends here, leading away to the north and \r\neast.  Far off the the distance you hear the squawk of a \r\nlarge bird-of-prey searching the skies for a meal.  The \r\nferns around you rustle gently in the light breeze.  \r\nSomehow, the threatening aura that pervades over the rest\r\nof the area seems absent here.  You feel almost relaxed...\r\n"
+flags = "c"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6218
+[[rooms]]
+vnum = 6227
+name = "A Forest Trail"
+description = "   A bend in the forest trail allows you to go east and\r\nnorth here.  To the east you spot a small clearing, while\r\nnorthwards this trail seems to join a much larger one \r\nleading through the woods.  On the ground is half of a \r\nbroken knife handle, made of bone and dried leather,\r\nuseless now.  You wonder if the owner is watching you \r\nnow -- something certainly is.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6232
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6221
+[[rooms]]
+vnum = 6228
+name = "A Forest Trail"
+description = "   This path leads from the main clearing to the west to \r\nintersect with a north-south path just to the east.  A \r\nsmall sapling on the north side of the trail has a rope \r\ntied around one of its top branches; an unused snare \r\nevidently.  You still feel as if you're being watched in \r\nthe back of your mind, and adrenaline pumps into your\r\nbrain like a lightning fuzz.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6212
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6229
+[[rooms]]
+vnum = 6229
+name = "A Forest Trail"
+description = "   A north-south trail leads through the woods here, with \r\na small side trail leading off to the east.  The trees \r\nprovide adequate cover from the sky, but through a few \r\nholes in the foilage you spot the magical barrier above \r\nyou, keeping you from escaping by flight.  You feel \r\nslightly captured.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6228
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6230
+[[rooms]]
+vnum = 6230
+name = "A Forest Trail"
+description = "   Two trails come together here, a large northern path \r\nheading away from tracks leading to the east and west.  \r\nThe western path seems to be the most traveled, and the \r\neast hardly at all.  There seems to be less trees around \r\nhere... it seems as if many have been cut down by some\r\nsort of crude tools.  This land clearing appears to be \r\nespecially true to the east.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6229
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6231
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6232
+[[rooms]]
+vnum = 6231
+name = "A Clearing"
+description = "   The trees have been cut down around here, and many of \r\nthe trunks hollowed out with sharp stones and lined with \r\ntreated leather to make almost-waterproof tubs.  A foul \r\nsmelling brown fluid, tannin evidently, fills many of \r\nthese, soaking into various bits and pieces of animal \r\nhides.  Crude, but workable.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6230
+[[rooms]]
+vnum = 6232
+name = "A Forest Trail"
+description = "   The trail is widening to the west, where the path leads\r\nall the way up to the side of the mountains that enclose \r\nthis valley.  Many of the trees have been cut down around\r\nhere, and it definitely looks as if the forest is ending.\r\nEastwards the trail leads on into the thick of the forest.\r\nA small split off trail leads away to the south here.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6230
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6227
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6233
+[[rooms]]
+vnum = 6233
+name = "A Forest Trail"
+description = "   The ground is growing more rocky here.  The trees and \r\nother foilage in the forest grow sparse here, finding it \r\nhard to find purchase in the soil.   The forest ends just \r\nto the west, with the trail you are on leading right on up\r\nto the side of the mountains.  A side trail leads south \r\nhere, and the trail also leads back into the thick of the \r\nforest to the east.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6232
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6218
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6234
+[[rooms]]
+vnum = 6234
+name = "A Rocky Trail"
+description = "   The ground is getting very rocky here, causing the \r\ntrees of the woods to become more sparse.  Several bushes \r\nhave found purchase in the soil, but not near enough to \r\nblock free movement in this area.  The trail leads on up \r\nto what appears to be a cave in the side of the mountain \r\nto the west, and a side trail runs along the forest's edge\r\nto the north.  To the east, the trail runs deep into the \r\nforest out of sight.\r\n"
+flags = "0"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6241
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6233
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6242
+[[rooms]]
+vnum = 6235
+name = "A Forest Trail"
+description = "   The trail you are on bends around a large double-\r\ntrunked tree and leads away to the north and west.  The \r\ngreen canopy of leaves overhead make this area fairly dark\r\nand ominous, and that creepy 'watched' feeling returns to\r\nhit you with full force.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6229
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6236
+[[rooms]]
+vnum = 6236
+name = "A Forest Trail"
+description = "   The trail continues here to the east and west, with a \r\nsmall trail splitting off towards a large clearing to the\r\nsouth.  Two wooden poles with skulls on top warn you away\r\nfrom the south, and succeed in making you feel quite\r\nuncomfortable.  Strange...\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6235
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6237
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6238
+[[rooms]]
+vnum = 6237
+name = "A Large Clearing"
+description = "   The earth has been upturned many times here, and\r\nseveral white rocks stick up from the ground in odd\r\npositions.\r\n   Graveyard.\r\n   This must be where they bury their dead -- just dig a\r\nhole and throw the corpse inside, ignoring any previous\r\noccupants in the ground.  How uncivilized... you hope you\r\naren't taken care of in this matter when your time\r\ncomes...\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6236
+[[rooms]]
+vnum = 6238
+name = "A Forest Trail"
+description = "   The trail splits here, one fork heading north towards \r\nthe rushing sounds of a river, and west where the forest \r\nseems to be thinning out a lot.  A sudden motion out of \r\nthe corner of your eye catches your eyes, and you turn \r\nyour head.  Nothing, there's nothing there at all.\r\n   You wonder if you're being stalked.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6239
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6236
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6241
+[[rooms]]
+vnum = 6239
+name = "A River's Edge"
+description = "   The river flows swiftly on its course to the north.\r\nThe trail you are on leads on by the water's edge to the\r\nwest, and back into the forest to the south.  A large\r\nboulder is just to the west, blocking all travel in that\r\ndirection.  Out in the center of the river, the 'roof' of\r\nthe energy field meets the northern 'wall'.  The water\r\npasses right on through the magical barrier, however...\r\nthe barrier is obviously porous to some materials.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6238
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6240
+[[rooms]]
+vnum = 6240
+name = "A River's Edge"
+description = "   The river pours down the side of the mountains to the \r\nwest, originating from a large hole in the face of one of \r\nthe sheer rock protuberances.  The energy barrier climbs \r\nright up the mountain, and seals off any means of escape \r\nby that means.  The trail you are on runs by the side of \r\nthe river to the east, and a path leads by the forest side\r\nto the south.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6239
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6241
+[[rooms]]
+vnum = 6241
+name = "A Rocky Trail"
+description = "   The forest is just to your west, with a side trail \r\nleading deep inside from here.  The main trail you are on,\r\nhowever, heads north towards the river, and south near \r\nwhere a trail leads up to a cave in the mountain side.  \r\nThere doesn't seem to be a whole lot to capture your \r\nattention here...\r\n"
+flags = "0"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6240
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6238
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6234
+[[rooms]]
+vnum = 6242
+name = "A Cave Entrance"
+description = "   You are half blinded by the differences of the outdoors\r\nillumination and the pure darkness of the cave.  A deep,\r\ncloying stench flows out from the cave mouth; the smells\r\nof decay, unwashed bodies, and sickness in one roiling \r\nodor.  Your stomach turns involuntarily, and you wonder \r\nabout going back down the hill to the east, instead of \r\ngoing even further down the western tunnel.\r\n"
+flags = "d"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6234
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6243
+[[rooms]]
+vnum = 6243
+name = "A Tunnel Forking"
+description = "   The tunnel forks here, one branch leading north, the \r\nother west.  Additionally, you can head back outside to \r\nthe east, which seems like a very good idea to your \r\ntortured nasal passages.  Your eyes water from the stench,\r\nand you clench your left hand tightly to keep control of \r\nyour bile.\r\n   Forcing your eyes open, you notice the warning signs\r\npainted around the tunnel to the north.\r\n"
+flags = "ad"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6255
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6242
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6244
+
+[[rooms.extra]]
+keyword = "painting sign signs"
+description = "They are orcish, and you could swear they were all warning\r\nsymbols.\r\n"
+[[rooms]]
+vnum = 6244
+name = "A Tunnel"
+description = "   The floor is slick with the humidity that boils out of\r\nthe lower reaches of this cave, bringing that most awful \r\nsmell with it.  Again, you consider saving your nose the \r\ntrip west and down the tunnel, and heading back east to \r\nthe cave entrance.\r\n"
+flags = "ad"
+sector = 4
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6243
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6245
+[[rooms]]
+vnum = 6245
+name = "A Tunnel"
+description = "   The tunnel takes a deep dip here, and opens up into a \r\nlargish cave to the west.  There seems to be a few faint \r\nlights from inside, and you hear some heavy breathing and \r\nlow grunts from that direction.  The cave entrance to the \r\neast seems far too far away for your comfort...\r\n"
+flags = "ad"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6244
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6251
+[[rooms]]
+vnum = 6246
+name = "A Cave"
+description = "    Heaps of rotting meat and cups of near-drinkable water\r\nsit here; the orc food stores.  You stand here and wonder\r\nin near-disbelief at how the orcs could find this stuff\r\npalatable.  They're orcs; its their nature and their\r\nstomachs you guess.  Oddly enough, you don't even care to \r\ncatalog what they have available -- there's no chance you're \r\ngoing to take any of this...\r\n"
+flags = "d"
+sector = 4
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6247
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6249
+[[rooms]]
+vnum = 6247
+name = "A Cave"
+description = "   A single corpse lies here, well away from a pile of \r\nsimilars to the east.  There are several sharpened stakes \r\nand rocks sitting about conveniently.  The way the corpse \r\nis lying, the stone next to its hand... this is a suicide \r\narea!  You look down upon the orc and comprehend its \r\nsuffering in its twisted form.  How sad.\r\n"
+flags = "d"
+sector = 4
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6248
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6250
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6246
+[[rooms]]
+vnum = 6248
+name = "A Cave"
+description = "   There are bodies here... corpses.  Orcs, the lot of \r\nthem, every single one of them horribly disfigured in \r\nsome senseless way; one whose arms were removed, another \r\nwho lacks anything that could sensibly be called a face. \r\nA few twitch feebly with the last remains of life, the \r\nrest just decompose.  The dim sense of horror budding in \r\nyour head blossoms as you realize the pile in the corner \r\nconsists of dead orc children awaiting burial.\r\n"
+flags = "cd"
+sector = 4
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6251
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6247
+[[rooms]]
+vnum = 6249
+name = "A Cave"
+description = "   A few sleeping pallets, made of moldy straw and \r\nstinking furs are arranged around a small firepit here.  \r\nA wooden cup, carved by a crude tool and cruder hands \r\nsits near the ashes filled with water you consider \r\nundrinkable.  Somewhere to the east you hear an orc \r\nchild's whining cry, and a voice hushes it urgently.  \r\nBeware, orcs!  Adventurers are here!  Hide your children!\r\n"
+flags = "d"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6246
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6250
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6252
+[[rooms]]
+vnum = 6250
+name = "A Cave"
+description = "   Several grass sleeping pallets are here, clustered \r\naround the remains of an old fire.  The sloping of the \r\ncave's ceiling allow for smoke ventilation towards the \r\nsurface in here you note, lucky for the orcs.  A few \r\nstrings of burnt meat still hang over the fire, untended \r\nand uneaten.  On the floor near your feet you spy a small, \r\ntwisted piece of wire... one orc's idea of a treasured ring, \r\nno doubt.  Kicking the trinket away, you try to push the \r\npity out of your heart for these wretches.\r\n"
+flags = "d"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6247
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6251
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6253
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6249
+[[rooms]]
+vnum = 6251
+name = "A Cave"
+description = "   You are standing just inside a largish cave, about a \r\nhundred feet in diameter.  A few dim make-shift lanterns \r\nburning animal fat illuminate the area, just enough so you\r\ncan see the rotted food on the floor, and a few bodies \r\nsprawled throughout the whole area.  Your disgust quickly \r\nturns to horror as you see a horrible creature, half...\r\nwell, half something and half orc dash between two \r\nstalagmites.\r\n"
+flags = "d"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6248
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6245
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6254
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6250
+[[rooms]]
+vnum = 6252
+name = "A Cave"
+description = "   This must be the orc chief's area.  There's an old \r\nprize -- a stolen timeworn human armchair sitting near \r\nthe south wall as a throne.  A mammoth sleeping pallet \r\nmade of piled furs is nearby.  Next to that is the pile \r\nof orc treasure; a pile of well-polished coppers.  You \r\nlook at the pile of worthless coins and wonder at the \r\nimage of orcish raiders.\r\n   These orcs aren't raiders, they are victims.\r\n"
+flags = "d"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6249
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6253
+[[rooms]]
+vnum = 6253
+name = "A Cave"
+description = "   Many sleeping pallets are arranged near the walls, each\r\nmade of heavy fur padding for comfort and warmth.  Many \r\nare covered with blood and other, unidentifiable \r\nsubstances.  Looking around, your only coherent thought \r\nis, 'Don't want to know... don't want to know...'\r\n"
+flags = "d"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6250
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6254
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6252
+[[rooms]]
+vnum = 6254
+name = "A Cave"
+description = "   This area of the cave is one vast orc sickroom.  \r\nMutated and mangled orcs lie on the floor, seeming quiet, \r\nlifeless.  They're not even worth your time, you think, \r\nunless you've the mercy to put them out of their misery.\r\n   You look at the corruption of nature's design and \r\nwonder what forces are at work here... the barrier, the \r\norcs...  What's going on here?\r\n"
+flags = "d"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6251
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6253
+[[rooms]]
+vnum = 6255
+name = "A Tunnel"
+description = "   This forking off from the mail tunnel seems odd; the \r\nwalls are strangely smooth, as if they were carved out by \r\nforces unknown.  The end is abrupt and short, but there is\r\na steel door inset in the wall of the west side of the \r\ntunnel.  The smell from the lower tunnel doesn't seem \r\nnearly as bad here... this might be a good place to rest\r\nand catch your breath.\r\n"
+flags = "acd"
+sector = 4
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6243
+
+[[rooms.exits]]
+dir = 3
+description = "A large steel door.  There seems to be no hinges or knob,\r\nbut there is a small keyhole in the exact center of it.\r\n"
+keyword = "door steel"
+door = 2
+key = 6200
+to_room = 6256
+[[rooms]]
+vnum = 6256
+name = "A Tunnel"
+description = "   This section of man-made tunnel heads north from here,\r\ndoors on either side.  A few glowing spots on the ceiling \r\nilluminate the area to almost a daylight level.  From the \r\nnorth you hear some horrible cries of pain and anguish \r\nthat make you cringe inside and think twice about heading \r\nin that direction.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6258
+
+[[rooms.exits]]
+dir = 1
+keyword = "door steel"
+door = 2
+key = 6200
+to_room = 6255
+
+[[rooms.exits]]
+dir = 3
+description = "This is a normal, wooden door.\r\n"
+keyword = "door wooden"
+door = 1
+key = -1
+to_room = 6257
+[[rooms]]
+vnum = 6257
+name = "A Bedroom"
+description = "   This is a bedroom, catered to someone with a definite \r\nsense of taste.  There's a chest of drawers made of a \r\nsolid section of oak tree.  In fact, most of the furniture\r\nhere has that 'natural look' about it.  The bed is filled \r\nwith soft down with an ornate table lamp close by.  Nice \r\nplace.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "A normal, wooden door.\r\n"
+keyword = "door wooden"
+door = 1
+key = -1
+to_room = 6256
+[[rooms]]
+vnum = 6258
+name = "A Tunnel"
+description = "   This tunnel opens up into a large room to the north, \r\nand to the south, leads towards a set of doors.  The light\r\nis crisp and bright, clearly showing the lack of tool \r\nmarks on the hewn walls... magic?  The room just ahead is \r\nlarge, and also well-lighted, giving it an almost clinical\r\natmosphere.  Somewhere in the recesses of that room \r\nsomething cries out in a horrible crackling voice.  Not \r\ngood.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6266
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6256
+[[rooms]]
+vnum = 6259
+name = "The Laboratory"
+description = "   A full fledge operating table is set up here, outfitted\r\nwith a full set of restraints.  A ledge nearby has a whole\r\narray of sterile medical equipment on it, covered over by \r\na clear lid.  There's a drain in the floor with gradients \r\nleading to it to carry away the blood.  For some reason, \r\nyou don't imagine this as a voluntary operating theatre...\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6260
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6262
+[[rooms]]
+vnum = 6260
+name = "The Laboratory"
+description = "   Another table is set up will all sorts of alchemical \r\napparatus here, vials and beakers, distillation equipment \r\nand et cetera.  The stuff looks expensive, but bulky and \r\nfragile; not good treasure to cart away with you at all.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "A steel cell door.\r\n"
+keyword = "door steel"
+door = 1
+key = 6200
+to_room = 6261
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6263
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6259
+[[rooms]]
+vnum = 6261
+name = "A Cage"
+description = "   This is a small, dirty cage, with only a bucket for \r\nwastes, another bucket for food, and a dirty towel for a \r\nbed.  The whole room has a terrible stench about it. \r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+description = "A steel cell door.\r\n"
+keyword = "door steel"
+door = 1
+key = 6200
+to_room = 6260
+[[rooms]]
+vnum = 6262
+name = "The Laboratory"
+description = "   Some small cages sit here, containing many different \r\ntypes of rodents.  Leaning down to look better, you are \r\nvery surprised as a tiny, common garden mouse growls at \r\nyou and tries to rip your face off through the bars.  \r\nThere are some bulges on its back, and it doesn't seem to \r\nbe in a very good mood.  It quivers some, not fully in\r\ncontrol of its motor functions.  Poor thing.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6259
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6263
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6265
+[[rooms]]
+vnum = 6263
+name = "The Laboratory"
+description = "   A rack stands near the cages on the eastern wall, \r\nfilled with shackles and manacles, bullwhips and worse.  \r\nThey all look well-used.  You give a shiver, and carry on.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6260
+
+[[rooms.exits]]
+dir = 1
+description = "A steel cell door.\r\n"
+keyword = "door cell"
+door = 1
+key = 6200
+to_room = 6264
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6266
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6262
+[[rooms]]
+vnum = 6264
+name = "A Cage"
+description = "   This is a small, dirty cage, with only a bucket for \r\nwastes, another bucket for food, and a dirty towel for a \r\nbed.  The whole room has a terrible stench about it. \r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+description = "A steel cell door.\r\n"
+keyword = "door steel"
+door = 1
+key = 6200
+to_room = 6263
+[[rooms]]
+vnum = 6265
+name = "The Laboratory"
+description = "   This is the southwest corner of the lab.  There's no \r\nequipment here, merely several pairs of heavy steel \r\nshackles on the southern wall.  There's also some a few \r\nsmall bloodstains on the floor beneath the shackles.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6262
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6266
+[[rooms]]
+vnum = 6266
+name = "The Laboratory"
+description = "   This is a fairly roomy laboratory that extends to the \r\nnorth, with cages set on the east side of the room.  A \r\nmetal table here is empty, although you can see some \r\noutlines in the dust that suggest books had laid here \r\nonce.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6263
+
+[[rooms.exits]]
+dir = 1
+description = "A steel cell door.\r\n"
+keyword = "cell door"
+door = 1
+key = 6200
+to_room = 6267
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6258
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6265
+[[rooms]]
+vnum = 6267
+name = "A Cage"
+description = "   This is a small, dirty cage, with only a bucket for \r\nwastes, another bucket for food, and a dirty towel for a \r\nbed.  The whole room has a terrible stench about it.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+description = "A steel cell door.\r\n"
+keyword = "door cell"
+door = 1
+key = 6200
+to_room = 6266

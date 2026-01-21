@@ -8,6 +8,12 @@
 #include "utils.h"
 #include "shop.h"
 
+void do_list(FILE *shop_f, FILE *newshop_f, int max);
+void do_float(FILE *shop_f, FILE *newshop_f);
+void do_int(FILE *shop_f, FILE *newshop_f);
+void do_string(FILE *shop_f, FILE *newshop_f, char *msg);
+int boot_the_shops(FILE *shop_f, FILE *newshop_f, char *filename);
+
 void basic_mud_log(const char *x, ...)
 {
   puts(x);
@@ -58,8 +64,10 @@ void do_list(FILE * shop_f, FILE * newshop_f, int max)
   char buf[MAX_STRING_LENGTH];
 
   for (count = 0; count < max; count++) {
-    fscanf(shop_f, "%d", &temp);
-    fgets(buf, MAX_STRING_LENGTH - 1, shop_f);
+    if (fscanf(shop_f, "%d", &temp) != 1)
+      return;
+    if (!fgets(buf, MAX_STRING_LENGTH - 1, shop_f))
+      return;
     if (temp > 0)
       fprintf(newshop_f, "%d%s", temp, buf);
   }
@@ -73,7 +81,8 @@ void do_float(FILE * shop_f, FILE * newshop_f)
   float f;
   char str[20];
 
-  fscanf(shop_f, "%f \n", &f);
+  if (fscanf(shop_f, "%f \n", &f) != 1)
+    return;
   sprintf(str, "%f", f);
   while ((str[strlen(str) - 1] == '0') && (str[strlen(str) - 2] != '.'))
     str[strlen(str) - 1] = 0;
@@ -85,7 +94,8 @@ void do_int(FILE * shop_f, FILE * newshop_f)
 {
   int i;
 
-  fscanf(shop_f, "%d \n", &i);
+  if (fscanf(shop_f, "%d \n", &i) != 1)
+    return;
   fprintf(newshop_f, "%d \n", i);
 }
 
@@ -159,9 +169,21 @@ int main(int argc, char *argv[])
   }
   for (index = 1; index < argc; index++) {
     sprintf(fn, "%s", argv[index]);
-    sprintf(part, "mv %s %s.tmp", fn, fn);
-    system(part);
-    sprintf(part, "%s.tmp", fn);
+    if (strlcpy(part, "mv ", sizeof(part)) >= sizeof(part) ||
+        strlcat(part, fn, sizeof(part)) >= sizeof(part) ||
+        strlcat(part, " ", sizeof(part)) >= sizeof(part) ||
+        strlcat(part, fn, sizeof(part)) >= sizeof(part) ||
+        strlcat(part, ".tmp", sizeof(part)) >= sizeof(part)) {
+      fprintf(stderr, "shopconv: filename too long: %s\n", fn);
+      exit(1);
+    }
+    if (system(part) < 0)
+      fprintf(stderr, "shopconv: system() failed\n");
+    if (strlcpy(part, fn, sizeof(part)) >= sizeof(part) ||
+        strlcat(part, ".tmp", sizeof(part)) >= sizeof(part)) {
+      fprintf(stderr, "shopconv: filename too long: %s\n", fn);
+      exit(1);
+    }
     sfp = fopen(part, "r");
     if (sfp == NULL) {
       strcat(fn, " could not be opened");
@@ -176,11 +198,26 @@ int main(int argc, char *argv[])
       fclose(nsfp);
       fclose(sfp);
       if (result) {
-	sprintf(part, "mv %s.tmp %s", fn, fn);
-	system(part);
+        if (strlcpy(part, "mv ", sizeof(part)) >= sizeof(part) ||
+            strlcat(part, fn, sizeof(part)) >= sizeof(part) ||
+            strlcat(part, ".tmp ", sizeof(part)) >= sizeof(part) ||
+            strlcat(part, fn, sizeof(part)) >= sizeof(part)) {
+          fprintf(stderr, "shopconv: filename too long: %s\n", fn);
+          exit(1);
+        }
+        if (system(part) < 0)
+          fprintf(stderr, "shopconv: system() failed\n");
       } else {
-	sprintf(part, "mv %s.tmp %s.bak", fn, fn);
-	system(part);
+        if (strlcpy(part, "mv ", sizeof(part)) >= sizeof(part) ||
+            strlcat(part, fn, sizeof(part)) >= sizeof(part) ||
+            strlcat(part, ".tmp ", sizeof(part)) >= sizeof(part) ||
+            strlcat(part, fn, sizeof(part)) >= sizeof(part) ||
+            strlcat(part, ".bak", sizeof(part)) >= sizeof(part)) {
+          fprintf(stderr, "shopconv: filename too long: %s\n", fn);
+          exit(1);
+        }
+        if (system(part) < 0)
+          fprintf(stderr, "shopconv: system() failed\n");
 	printf("Done!\n");
       }
     }

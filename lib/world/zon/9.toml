@@ -1,0 +1,223 @@
+[[zones]]
+vnum = 9
+name = "River Island Of Minos"
+bot = 900
+top = 999
+lifespan = 39
+reset_mode = 1
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 900
+arg2 = 3
+arg3 = 915
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 900
+arg2 = 3
+arg3 = 915
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 900
+arg2 = 3
+arg3 = 915
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 901
+arg2 = 2
+arg3 = 916
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 901
+arg2 = 15
+arg3 = 17
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 901
+arg2 = 2
+arg3 = 916
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 902
+arg2 = 1
+arg3 = 917
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 903
+arg2 = 1
+arg3 = 918
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 904
+arg2 = 1
+arg3 = 919
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 903
+arg2 = 10
+arg3 = 9
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 902
+arg2 = 25
+arg3 = 17
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 905
+arg2 = 1
+arg3 = 920
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 905
+arg2 = 10
+arg3 = 16
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 906
+arg2 = 1
+arg3 = 920
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 907
+arg2 = 5
+arg3 = 16
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 907
+arg2 = 1
+arg3 = 921
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 901
+arg2 = 8
+arg3 = 11
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 900
+arg2 = 1
+arg3 = 17
+
+[[zones.commands]]
+command = "O"
+if_flag = 1
+arg1 = 904
+arg2 = 10
+arg3 = 922
+
+[[zones.commands]]
+command = "O"
+if_flag = 1
+arg1 = 906
+arg2 = 1
+arg3 = 922
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 909
+arg2 = 2
+arg3 = 908
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 909
+arg2 = 2
+arg3 = 908
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 910
+arg2 = 2
+arg3 = 909
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 908
+arg2 = 30
+arg3 = 16
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 910
+arg2 = 2
+arg3 = 909
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 908
+arg2 = 30
+arg3 = 16
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 911
+arg2 = 3
+arg3 = 910
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 911
+arg2 = 3
+arg3 = 910
+
+[[zones.commands]]
+command = "R"
+if_flag = 0
+arg1 = 910
+arg2 = 909
+
+[[zones.commands]]
+command = "O"
+if_flag = 0
+arg1 = 909
+arg2 = 12
+arg3 = 910
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 921
+arg2 = 1
+arg3 = 2

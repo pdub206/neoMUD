@@ -1,0 +1,300 @@
+[[objects]]
+vnum = 5100
+name = "longsword commoner"
+short_descr = "a commoner's longsword"
+description = "A commoner's longsword made of adamantite has been left here."
+type = 5
+extra_flags = "m"
+wear_flags = "8193"
+values = [0, 1, 8, 3]
+weight = 12
+cost = 1000
+rent = 500
+
+[[objects.affects]]
+location = 18
+modifier = 1
+
+[[objects.affects]]
+location = 19
+modifier = 1
+[[objects]]
+vnum = 5101
+name = "longsword noble"
+short_descr = "a noble's longsword"
+description = "A drow noble's longsword, made of adamantite, lies here."
+type = 5
+extra_flags = "m"
+wear_flags = "8193"
+values = [0, 1, 8, 3]
+weight = 12
+cost = 1500
+rent = 800
+
+[[objects.affects]]
+location = 18
+modifier = 2
+
+[[objects.affects]]
+location = 19
+modifier = 2
+[[objects]]
+vnum = 5102
+name = "whip snake twoheaded"
+short_descr = "a two-headed snake whip"
+description = "A whip with two snakes heads lies here."
+type = 5
+extra_flags = "ab"
+wear_flags = "8193"
+values = [0, 2, 6, 3]
+weight = 12
+cost = 1750
+rent = 1500
+
+[[objects.affects]]
+location = 18
+modifier = 2
+
+[[objects.affects]]
+location = 19
+modifier = 2
+[[objects]]
+vnum = 5103
+name = "whip snake threeheaded"
+short_descr = "a three-headed snake whip"
+description = "A whip with three snake heads has been left here."
+type = 5
+extra_flags = "ab"
+wear_flags = "8193"
+values = [0, 2, 7, 3]
+weight = 12
+cost = 5000
+rent = 2300
+
+[[objects.affects]]
+location = 18
+modifier = 2
+
+[[objects.affects]]
+location = 19
+modifier = 2
+[[objects]]
+vnum = 5104
+name = "whip snake fourheaded"
+short_descr = "a four-headed snake whip"
+description = "A whip with four snake heads has been carelessly left here."
+type = 5
+extra_flags = "ab"
+wear_flags = "8193"
+values = [0, 2, 8, 3]
+weight = 12
+cost = 10250
+rent = 4000
+
+[[objects.affects]]
+location = 18
+modifier = 2
+
+[[objects.affects]]
+location = 19
+modifier = 2
+[[objects]]
+vnum = 5105
+name = "longsword black"
+short_descr = "a black longsword"
+description = "A black longsword has been carelessly left here."
+type = 5
+extra_flags = "agm"
+wear_flags = "8193"
+values = [0, 2, 8, 3]
+weight = 12
+cost = 10250
+rent = 4000
+
+[[objects.affects]]
+location = 18
+modifier = 2
+
+[[objects.affects]]
+location = 19
+modifier = 2
+[[objects]]
+vnum = 5106
+name = "whip snake fiveheaded"
+short_descr = "a five-headed snake whip"
+description = "A whip with 5 snake heads has been carelessly dropped here."
+type = 5
+extra_flags = "agj"
+wear_flags = "8193"
+values = [0, 3, 6, 3]
+weight = 12
+cost = 12000
+rent = 4500
+
+[[objects.affects]]
+location = 1
+modifier = -2
+
+[[objects.affects]]
+location = 3
+modifier = -2
+[[objects]]
+vnum = 5107
+name = "whip snake sixheaded"
+short_descr = "a six-headed snake whip"
+description = "A whip with six snake heads has been dropped here very carelessly."
+type = 5
+extra_flags = "agj"
+wear_flags = "8193"
+values = [0, 4, 5, 3]
+weight = 12
+cost = 15000
+rent = 8000
+
+[[objects.affects]]
+location = 1
+modifier = -3
+
+[[objects.affects]]
+location = 3
+modifier = -3
+[[objects]]
+vnum = 5108
+name = "bracers iron"
+short_descr = "a pair of bracers"
+description = "A pair of iron bracers has been dropped here."
+type = 9
+extra_flags = "ag"
+wear_flags = "257"
+values = [8, 0, 0, 0]
+weight = 3
+cost = 2000
+rent = 1000
+
+[[objects.affects]]
+location = 18
+modifier = -1
+[[objects]]
+vnum = 5109
+name = "gauntlets"
+short_descr = "a pair of gauntlets"
+description = "A pair of gauntlets is lying on the ground."
+type = 11
+extra_flags = "a"
+wear_flags = "129"
+values = [0, 0, 0, 0]
+weight = 2
+cost = 10000
+rent = 3000
+
+[[objects.affects]]
+location = 1
+modifier = 2
+[[objects]]
+vnum = 5110
+name = "wand blue silver"
+short_descr = "a silvery blue wand"
+description = "A silvery blue wand has been dropped in the dirt."
+type = 3
+extra_flags = "g"
+wear_flags = "16385"
+values = [10, 3, 3, 30]
+weight = 1
+cost = 4000
+rent = 3000
+[[objects]]
+vnum = 5111
+name = "helmet small"
+short_descr = "a small helmet"
+description = "A small helmet lies up against a rock."
+type = 9
+extra_flags = "g"
+wear_flags = "17"
+values = [1, 0, 0, 0]
+weight = 5
+cost = 6000
+rent = 3000
+
+[[objects.affects]]
+location = 3
+modifier = 3
+[[objects]]
+vnum = 5112
+name = "ring ruby"
+short_descr = "a small ruby ring"
+description = "A small ruby ring lies in the dirt."
+type = 11
+extra_flags = "g"
+wear_flags = "3"
+values = [0, 0, 0, 0]
+weight = 1
+cost = 20000
+rent = 8000
+
+[[objects.affects]]
+location = 13
+modifier = 25
+[[objects]]
+vnum = 5113
+name = "dagger sacrificial spider"
+short_descr = "a spider shaped dagger"
+description = "A dagger with spider leg shaped blades lies on the ground."
+type = 5
+extra_flags = "gjmnp"
+wear_flags = "8193"
+values = [0, 3, 4, 11]
+weight = 8
+cost = 12000
+rent = 15000
+
+[[objects.affects]]
+location = 18
+modifier = 3
+
+[[objects.affects]]
+location = 19
+modifier = 3
+[[objects]]
+vnum = 5114
+name = "hat green"
+short_descr = "a small bright green hat"
+description = "A small bright green hat lies in the dirt."
+type = 9
+extra_flags = "h"
+wear_flags = "17"
+values = [10, 0, 0, 0]
+weight = 1
+cost = 2000
+rent = 600
+
+[[objects.affects]]
+location = 9
+modifier = -15
+
+[[objects.affects]]
+location = 17
+modifier = -2
+[[objects]]
+vnum = 5115
+name = "key adamantite"
+short_descr = "an adamantite key"
+description = "A key made of a strange metal is lying here."
+type = 18
+extra_flags = "c"
+wear_flags = "16385"
+values = [5115, 0, 0, 0]
+weight = 1
+cost = 0
+rent = 0
+[[objects]]
+vnum = 5116
+name = "gold treasure coins"
+short_descr = "a pile of golden coins"
+description = "A large pile of golden coins is lying here."
+type = 20
+extra_flags = "0"
+wear_flags = "1"
+values = [17645, 0, 0, 0]
+weight = 10
+cost = 17645
+rent = 0

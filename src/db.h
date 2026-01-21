@@ -22,6 +22,7 @@
 #define LIB_TEXT_HELP	":text:help:"
 #define LIB_MISC	":misc:"
 #define LIB_ETC		":etc:"
+#define LIB_PLRFILES	":plrfiles:"
 #define LIB_PLRTEXT	":plrtext:"
 #define LIB_PLROBJS	":plrobjs:"
 #define LIB_PLRALIAS	":plralias:"
@@ -33,6 +34,7 @@
 #define LIB_TEXT_HELP	"text/help/"
 #define LIB_MISC	"misc/"
 #define LIB_ETC		"etc/"
+#define LIB_PLRFILES	"plrfiles/"
 #define LIB_PLRTEXT	"plrtext/"
 #define LIB_PLROBJS	"plrobjs/"
 #define LIB_PLRALIAS	"plralias/"
@@ -42,7 +44,7 @@
 #error "Unknown path components."
 #endif
 
-#define SUF_OBJS	"objs"
+#define SUF_OBJS	"toml"
 #define SUF_TEXT	"text"
 #define SUF_ALIAS	"alias"
 
@@ -90,7 +92,9 @@
 #define SOCMESS_FILE	LIB_MISC"socials"  /* messages for social acts	*/
 #define XNAME_FILE	LIB_MISC"xnames"   /* invalid name substrings	*/
 
-#define PLAYER_FILE	LIB_ETC"players"   /* the player database	*/
+#define PLAYER_DIR	LIB_PLRFILES	      /* player file directory */
+#define SUF_PLAYER	"toml"
+#define PLAYER_FILE	LIB_ETC"players"   /* legacy player database */
 #define MAIL_FILE	LIB_ETC"plrmail"   /* for the mudmail system	*/
 #define BAN_FILE	LIB_ETC"badsites"  /* for the siteban system	*/
 #define HCONTROL_FILE	LIB_ETC"hcontrol"  /* for the house system	*/
@@ -105,6 +109,8 @@ char	*fread_string(FILE *fl, const char *error);
 long	get_id_by_name(const char *name);
 char	*get_name_by_id(long id);
 void	save_mud_time(struct time_info_data *when);
+int	get_player_filename(char *filename, size_t fbufsize, const char *orig_name);
+int	save_char_file(const char *name, struct char_file_u *st);
 void	free_extra_descriptions(struct extra_descr_data *edesc);
 void	free_text_files(void);
 void	free_player_index(void);

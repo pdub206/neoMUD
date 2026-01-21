@@ -13,6 +13,8 @@
 #include "conf.h"
 #include "sysdep.h"
 
+#include <dirent.h>
+#include <sys/stat.h>
 
 #include "structs.h"
 #include "utils.h"
@@ -24,6 +26,7 @@
 #include "interpreter.h"
 #include "house.h"
 #include "constants.h"
+#include "toml.h"
 
 /**************************************************************************
 *  declarations of most of the 'global' variables                         *
@@ -91,8 +94,11 @@ void index_boot(int mode);
 void discrete_load(FILE *fl, int mode, char *filename);
 int check_object(struct obj_data *);
 void parse_room(FILE *fl, int virtual_nr);
+void parse_room_toml(toml_table_t *room, const char *filename);
 void parse_mobile(FILE *mob_f, int nr);
+void parse_mobile_toml(toml_table_t *mob, const char *filename);
 char *parse_object(FILE *obj_f, int nr);
+void parse_object_toml(toml_table_t *obj, const char *filename);
 void load_zones(FILE *fl, char *zonename);
 void load_help(FILE *fl);
 void assign_mobiles(void);
@@ -109,6 +115,7 @@ ACMD(do_reboot);
 void boot_world(void);
 int count_alias_records(FILE *fl);
 int count_hash_records(FILE *fl);
+int count_toml_records(FILE *fl, int mode, const char *filename);
 bitvector_t asciiflag_conv(char *flag);
 void parse_simple_mob(FILE *mob_f, int i, int nr);
 void interpret_espec(const char *keyword, const char *value, int i, int nr);
@@ -138,6 +145,7 @@ void load_banned(void);
 void Read_Invalid_List(void);
 void boot_the_shops(FILE *shop_f, char *filename, int rec_count);
 int hsort(const void *a, const void *b);
+static int read_player_toml_file(const char *filename, struct char_file_u *st);
 void prune_crlf(char *txt);
 void destroy_shops(void);
 
@@ -557,61 +565,151 @@ void free_player_index(void)
   top_of_p_table = 0;
 }
 
+static const char *player_middle_dir(const char *name)
+{
+  switch (LOWER(*name)) {
+  case 'a':  case 'b':  case 'c':  case 'd':  case 'e':
+    return ("A-E");
+  case 'f':  case 'g':  case 'h':  case 'i':  case 'j':
+    return ("F-J");
+  case 'k':  case 'l':  case 'm':  case 'n':  case 'o':
+    return ("K-O");
+  case 'p':  case 'q':  case 'r':  case 's':  case 't':
+    return ("P-T");
+  case 'u':  case 'v':  case 'w':  case 'x':  case 'y':  case 'z':
+    return ("U-Z");
+  default:
+    return ("ZZZ");
+  }
+}
+
+int get_player_filename(char *filename, size_t fbufsize, const char *orig_name)
+{
+  char name[PATH_MAX], *ptr;
+  const char *middle;
+
+  if (orig_name == NULL || *orig_name == '\0' || filename == NULL) {
+    log("SYSERR: NULL pointer or empty string passed to get_player_filename(), %p or %p.",
+		orig_name, filename);
+    return (0);
+  }
+
+  strlcpy(name, orig_name, sizeof(name));
+  for (ptr = name; *ptr; ptr++)
+    *ptr = LOWER(*ptr);
+
+  middle = player_middle_dir(name);
+
+  snprintf(filename, fbufsize, "%s%s"SLASH"%s.%s", PLAYER_DIR, middle, name, SUF_PLAYER);
+  return (1);
+}
+
+static void ensure_player_dirs(const char *name)
+{
+  const char *middle = player_middle_dir(name);
+  char path[PATH_MAX];
+  size_t len;
+
+  snprintf(path, sizeof(path), "%s", PLAYER_DIR);
+  len = strlen(path);
+  if (len > 0 && path[len - 1] == SLASH[0])
+    path[len - 1] = '\0';
+
+  if (mkdir(path, 0755) < 0 && errno != EEXIST)
+    log("SYSERR: unable to create player dir %s: %s", path, strerror(errno));
+
+  snprintf(path, sizeof(path), "%s%s", PLAYER_DIR, middle);
+  if (mkdir(path, 0755) < 0 && errno != EEXIST)
+    log("SYSERR: unable to create player subdir %s: %s", path, strerror(errno));
+}
+
+static int count_player_files(void)
+{
+  static const char *plr_dirs[] = {"A-E", "F-J", "K-O", "P-T", "U-Z", "ZZZ", NULL};
+  int count = 0;
+  int i;
+
+  for (i = 0; plr_dirs[i]; i++) {
+    DIR *dir;
+    struct dirent *ent;
+    char path[PATH_MAX];
+
+    snprintf(path, sizeof(path), "%s%s", PLAYER_DIR, plr_dirs[i]);
+    if (!(dir = opendir(path)))
+      continue;
+
+    while ((ent = readdir(dir)) != NULL) {
+      size_t len = strlen(ent->d_name);
+
+      if (len > 5 && !strcmp(ent->d_name + len - 5, ".toml"))
+	count++;
+    }
+    closedir(dir);
+  }
+
+  return (count);
+}
+
+static void add_player_index_entry(const struct char_file_u *st)
+{
+  int pos, i;
+
+  if (top_of_p_table == -1)
+    pos = top_of_p_table = 0;
+  else
+    pos = ++top_of_p_table;
+
+  CREATE(player_table[pos].name, char, strlen(st->name) + 1);
+  for (i = 0; (player_table[pos].name[i] = LOWER(st->name[i])); i++)
+    ;
+  player_table[pos].id = st->char_specials_saved.idnum;
+  top_idnum = MAX(top_idnum, st->char_specials_saved.idnum);
+}
+
 
 /* generate index table for the player file */
 void build_player_index(void)
 {
-  int nr = -1, i;
-  long size, recs;
-  struct char_file_u dummy;
+  static const char *plr_dirs[] = {"A-E", "F-J", "K-O", "P-T", "U-Z", "ZZZ", NULL};
+  int recs, i;
 
-  if (!(player_fl = fopen(PLAYER_FILE, "r+b"))) {
-    if (errno != ENOENT) {
-      perror("SYSERR: fatal error opening playerfile");
-      exit(1);
-    } else {
-      log("No playerfile.  Creating a new one.");
-      touch(PLAYER_FILE);
-      if (!(player_fl = fopen(PLAYER_FILE, "r+b"))) {
-	perror("SYSERR: fatal error opening playerfile");
-	exit(1);
-      }
-    }
-  }
+  top_of_p_table = -1;
+  top_idnum = 0;
 
-  fseek(player_fl, 0L, SEEK_END);
-  size = ftell(player_fl);
-  rewind(player_fl);
-  if (size % sizeof(struct char_file_u))
-    log("\aWARNING:  PLAYERFILE IS PROBABLY CORRUPT!");
-  recs = size / sizeof(struct char_file_u);
-  if (recs) {
-    log("   %ld players in database.", recs);
-    CREATE(player_table, struct player_index_element, recs);
-  } else {
+  recs = count_player_files();
+  if (recs <= 0) {
     player_table = NULL;
-    top_of_p_table = -1;
     return;
   }
 
-  for (;;) {
-    if (fread(&dummy, sizeof(struct char_file_u), 1, player_fl) != 1) {
-      if (feof(player_fl))
-	break;
-      log("SYSERR: Error reading playerfile.");
-      break;
+  log("   %d players in database.", recs);
+  CREATE(player_table, struct player_index_element, recs);
+
+  for (i = 0; plr_dirs[i]; i++) {
+    DIR *dir;
+    struct dirent *ent;
+    char path[PATH_MAX];
+
+    snprintf(path, sizeof(path), "%s%s", PLAYER_DIR, plr_dirs[i]);
+    if (!(dir = opendir(path)))
+      continue;
+
+    while ((ent = readdir(dir)) != NULL) {
+      size_t len = strlen(ent->d_name);
+      struct char_file_u dummy;
+      char filename[PATH_MAX];
+
+      if (len <= 5 || strcmp(ent->d_name + len - 5, ".toml"))
+	continue;
+
+      snprintf(filename, sizeof(filename), "%s%s"SLASH"%s", PLAYER_DIR, plr_dirs[i], ent->d_name);
+      if (!read_player_toml_file(filename, &dummy))
+	continue;
+
+      add_player_index_entry(&dummy);
     }
-
-    /* new record */
-    nr++;
-    CREATE(player_table[nr].name, char, strlen(dummy.name) + 1);
-    for (i = 0; (*(player_table[nr].name + i) = LOWER(*(dummy.name + i))); i++)
-      ;
-    player_table[nr].id = dummy.char_specials_saved.idnum;
-    top_idnum = MAX(top_idnum, dummy.char_specials_saved.idnum);
+    closedir(dir);
   }
-
-  top_of_p_table = nr;
 }
 
 /*
@@ -669,6 +767,53 @@ int count_hash_records(FILE *fl)
     if (*buf == '#')
       count++;
 
+  return (count);
+}
+
+int count_toml_records(FILE *fl, int mode, const char *filename)
+{
+  char errbuf[256];
+  toml_table_t *tab;
+  toml_array_t *arr;
+  const char *key;
+  int count;
+
+  tab = toml_parse_file(fl, errbuf, sizeof(errbuf));
+  if (!tab) {
+    log("SYSERR: TOML parse error in %s: %s", filename, errbuf);
+    exit(1);
+  }
+
+  switch (mode) {
+  case DB_BOOT_WLD:
+    key = "rooms";
+    break;
+  case DB_BOOT_MOB:
+    key = "mobs";
+    break;
+  case DB_BOOT_OBJ:
+    key = "objects";
+    break;
+  case DB_BOOT_ZON:
+    key = "zones";
+    break;
+  case DB_BOOT_SHP:
+    key = "shops";
+    break;
+  default:
+    toml_free(tab);
+    return (0);
+  }
+
+  arr = toml_array_in(tab, key);
+  if (!arr) {
+    log("SYSERR: TOML file %s missing '%s' array.", filename, key);
+    toml_free(tab);
+    exit(1);
+  }
+
+  count = toml_array_nelem(arr);
+  toml_free(tab);
   return (count);
 }
 
@@ -742,12 +887,10 @@ void index_boot(int mode)
       }
       continue;
     } else {
-      if (mode == DB_BOOT_ZON)
-	rec_count++;
-      else if (mode == DB_BOOT_HLP)
+      if (mode == DB_BOOT_HLP)
 	rec_count += count_alias_records(db_file);
       else
-	rec_count += count_hash_records(db_file);
+	rec_count += count_toml_records(db_file, mode, buf2);
     }
 
     fclose(db_file);
@@ -854,60 +997,204 @@ void index_boot(int mode)
 }
 
 
-void discrete_load(FILE *fl, int mode, char *filename)
+static int toml_int_required(const toml_table_t *tab, const char *key,
+			     const char *context, const char *filename)
 {
-  int nr = -1, last;
-  char line[READ_SIZE];
+  toml_datum_t val = toml_int_in(tab, key);
 
-  const char *modes[] = {"world", "mob", "obj"};
+  if (!val.ok) {
+    log("SYSERR: TOML file %s missing integer '%s' in %s.", filename, key, context);
+    exit(1);
+  }
 
-  for (;;) {
-    /*
-     * we have to do special processing with the obj files because they have
-     * no end-of-record marker :(
-     */
-    if (mode != DB_BOOT_OBJ || nr < 0)
-      if (!get_line(fl, line)) {
-	if (nr == -1) {
-	  log("SYSERR: %s file %s is empty!", modes[mode], filename);
-	} else {
-	  log("SYSERR: Format error in %s after %s #%d\n"
-	      "...expecting a new %s, but file ended!\n"
-	      "(maybe the file is not terminated with '$'?)", filename,
-	      modes[mode], nr, modes[mode]);
-	}
-	exit(1);
-      }
-    if (*line == '$')
-      return;
+  return ((int)val.u.i);
+}
 
-    if (*line == '#') {
-      last = nr;
-      if (sscanf(line, "#%d", &nr) != 1) {
-	log("SYSERR: Format error after %s #%d", modes[mode], last);
-	exit(1);
-      }
-      if (nr >= 99999)
-	return;
-      else
-	switch (mode) {
-	case DB_BOOT_WLD:
-	  parse_room(fl, nr);
-	  break;
-	case DB_BOOT_MOB:
-	  parse_mobile(fl, nr);
-	  break;
-	case DB_BOOT_OBJ:
-	  strlcpy(line, parse_object(fl, nr), sizeof(line));
-	  break;
-	}
-    } else {
-      log("SYSERR: Format error in %s file %s near %s #%d", modes[mode],
-	  filename, modes[mode], nr);
-      log("SYSERR: ... offending line: '%s'", line);
+static char *toml_string_required(const toml_table_t *tab, const char *key,
+				  const char *context, const char *filename)
+{
+  toml_datum_t val = toml_string_in(tab, key);
+
+  if (!val.ok) {
+    log("SYSERR: TOML file %s missing string '%s' in %s.", filename, key, context);
+    exit(1);
+  }
+
+  if (val.u.s && !*val.u.s) {
+    free(val.u.s);
+    return (NULL);
+  }
+
+  return (val.u.s);
+}
+
+static char *toml_string_optional(const toml_table_t *tab, const char *key)
+{
+  toml_datum_t val = toml_string_in(tab, key);
+
+  if (!val.ok)
+    return (NULL);
+
+  if (val.u.s && !*val.u.s) {
+    free(val.u.s);
+    return (NULL);
+  }
+
+  return (val.u.s);
+}
+
+static toml_array_t *toml_array_required(const toml_table_t *tab, const char *key,
+					 const char *context, const char *filename)
+{
+  toml_array_t *arr = toml_array_in(tab, key);
+
+  if (!arr) {
+    log("SYSERR: TOML file %s missing array '%s' in %s.", filename, key, context);
+    exit(1);
+  }
+
+  return (arr);
+}
+
+static void toml_copy_string_required(char *dest, size_t destsize,
+				      const toml_table_t *tab, const char *key,
+				      const char *context, const char *filename)
+{
+  char *val = toml_string_required(tab, key, context, filename);
+
+  if (val) {
+    if (strlen(val) >= destsize) {
+      log("SYSERR: TOML string '%s' too long in %s.", key, filename);
+      val[destsize - 1] = '\0';
+    }
+    strlcpy(dest, val, destsize);
+    free(val);
+  } else
+    *dest = '\0';
+}
+
+static void toml_copy_string_optional(char *dest, size_t destsize,
+				      const toml_table_t *tab, const char *key)
+{
+  char *val = toml_string_optional(tab, key);
+
+  if (val) {
+    if (strlen(val) >= destsize)
+      val[destsize - 1] = '\0';
+    strlcpy(dest, val, destsize);
+    free(val);
+  } else
+    *dest = '\0';
+}
+
+static void toml_int_array_required(const toml_table_t *tab, const char *key,
+				    int *out, int count,
+				    const char *context, const char *filename)
+{
+  toml_array_t *arr = toml_array_required(tab, key, context, filename);
+  int i, n = toml_array_nelem(arr);
+
+  for (i = 0; i < count; i++)
+    out[i] = 0;
+
+  if (n < count)
+    count = n;
+
+  for (i = 0; i < count; i++) {
+    toml_datum_t val = toml_int_at(arr, i);
+    if (!val.ok) {
+      log("SYSERR: TOML file %s has invalid integer in %s[%d].", filename, key, i);
       exit(1);
     }
+    out[i] = (int)val.u.i;
   }
+}
+
+static void toml_bool_array_required(const toml_table_t *tab, const char *key,
+				     bool *out, int count,
+				     const char *context, const char *filename)
+{
+  toml_array_t *arr = toml_array_required(tab, key, context, filename);
+  int i, n = toml_array_nelem(arr);
+
+  for (i = 0; i < count; i++)
+    out[i] = 0;
+
+  if (n < count)
+    count = n;
+
+  for (i = 0; i < count; i++) {
+    toml_datum_t val = toml_bool_at(arr, i);
+    if (!val.ok) {
+      log("SYSERR: TOML file %s has invalid bool in %s[%d].", filename, key, i);
+      exit(1);
+    }
+    out[i] = val.u.b ? 1 : 0;
+  }
+}
+
+static int toml_int_optional(const toml_table_t *tab, const char *key, int def)
+{
+  toml_datum_t val = toml_int_in(tab, key);
+
+  if (!val.ok)
+    return (def);
+
+  return ((int)val.u.i);
+}
+
+void discrete_load(FILE *fl, int mode, char *filename)
+{
+  char errbuf[256];
+  toml_table_t *tab;
+  toml_array_t *arr;
+  const char *key;
+  int i, count;
+
+  tab = toml_parse_file(fl, errbuf, sizeof(errbuf));
+  if (!tab) {
+    log("SYSERR: TOML parse error in %s: %s", filename, errbuf);
+    exit(1);
+  }
+
+  switch (mode) {
+  case DB_BOOT_WLD:
+    key = "rooms";
+    break;
+  case DB_BOOT_MOB:
+    key = "mobs";
+    break;
+  case DB_BOOT_OBJ:
+    key = "objects";
+    break;
+  default:
+    toml_free(tab);
+    return;
+  }
+
+  arr = toml_array_required(tab, key, "top-level", filename);
+  count = toml_array_nelem(arr);
+  for (i = 0; i < count; i++) {
+    toml_table_t *entry = toml_table_at(arr, i);
+    if (!entry) {
+      log("SYSERR: TOML file %s has non-table entry in %s[%d].", filename, key, i);
+      toml_free(tab);
+      exit(1);
+    }
+    switch (mode) {
+    case DB_BOOT_WLD:
+      parse_room_toml(entry, filename);
+      break;
+    case DB_BOOT_MOB:
+      parse_mobile_toml(entry, filename);
+      break;
+    case DB_BOOT_OBJ:
+      parse_object_toml(entry, filename);
+      break;
+    }
+  }
+
+  toml_free(tab);
 }
 
 bitvector_t asciiflag_conv(char *flag)
@@ -930,6 +1217,114 @@ bitvector_t asciiflag_conv(char *flag)
     flags = atol(flag);
 
   return (flags);
+}
+
+void parse_room_toml(toml_table_t *room, const char *filename)
+{
+  static int room_nr = 0, zone = 0;
+  int vnum, sector, i, door;
+  char buf[128], flags_buf[128];
+  char *flags;
+  toml_array_t *exits, *extra;
+  struct extra_descr_data *new_descr;
+
+  vnum = toml_int_required(room, "vnum", "room entry", filename);
+  snprintf(buf, sizeof(buf), "room #%d", vnum);
+
+  if (vnum < zone_table[zone].bot) {
+    log("SYSERR: Room #%d is below zone %d.", vnum, zone);
+    exit(1);
+  }
+  while (vnum > zone_table[zone].top)
+    if (++zone > top_of_zone_table) {
+      log("SYSERR: Room %d is outside of any zone.", vnum);
+      exit(1);
+    }
+  world[room_nr].zone = zone;
+  world[room_nr].number = vnum;
+  world[room_nr].name = toml_string_required(room, "name", buf, filename);
+  world[room_nr].description = toml_string_required(room, "description", buf, filename);
+
+  flags = toml_string_required(room, "flags", buf, filename);
+  world[room_nr].room_flags = asciiflag_conv(flags);
+  snprintf(flags_buf, sizeof(flags_buf), "object #%d", vnum);
+  check_bitvector_names(world[room_nr].room_flags, room_bits_count, flags_buf, "room");
+  free(flags);
+
+  sector = toml_int_required(room, "sector", buf, filename);
+  world[room_nr].sector_type = sector;
+
+  world[room_nr].func = NULL;
+  world[room_nr].contents = NULL;
+  world[room_nr].people = NULL;
+  world[room_nr].light = 0;
+
+  for (i = 0; i < NUM_OF_DIRS; i++)
+    world[room_nr].dir_option[i] = NULL;
+
+  world[room_nr].ex_description = NULL;
+
+  exits = toml_array_in(room, "exits");
+  if (exits) {
+    int count = toml_array_nelem(exits);
+
+    for (i = 0; i < count; i++) {
+      toml_table_t *exit_tab = toml_table_at(exits, i);
+      int dir, key, to_room;
+
+      if (!exit_tab) {
+	log("SYSERR: TOML file %s has non-table exit for %s.", filename, buf);
+	exit(1);
+      }
+
+      dir = toml_int_required(exit_tab, "dir", buf, filename);
+      if (dir < 0 || dir >= NUM_OF_DIRS) {
+	log("SYSERR: TOML file %s has invalid dir %d for %s.", filename, dir, buf);
+	exit(1);
+      }
+
+      CREATE(world[room_nr].dir_option[dir], struct room_direction_data, 1);
+      world[room_nr].dir_option[dir]->general_description =
+	toml_string_optional(exit_tab, "description");
+      world[room_nr].dir_option[dir]->keyword =
+	toml_string_optional(exit_tab, "keyword");
+
+      door = toml_int_required(exit_tab, "door", buf, filename);
+      if (door == 1)
+	world[room_nr].dir_option[dir]->exit_info = EX_ISDOOR;
+      else if (door == 2)
+	world[room_nr].dir_option[dir]->exit_info = EX_ISDOOR | EX_PICKPROOF;
+      else
+	world[room_nr].dir_option[dir]->exit_info = 0;
+
+      key = toml_int_required(exit_tab, "key", buf, filename);
+      to_room = toml_int_required(exit_tab, "to_room", buf, filename);
+      world[room_nr].dir_option[dir]->key = key;
+      world[room_nr].dir_option[dir]->to_room = to_room;
+    }
+  }
+
+  extra = toml_array_in(room, "extra");
+  if (extra) {
+    int count = toml_array_nelem(extra);
+
+    for (i = 0; i < count; i++) {
+      toml_table_t *extra_tab = toml_table_at(extra, i);
+
+      if (!extra_tab) {
+	log("SYSERR: TOML file %s has non-table extra description for %s.", filename, buf);
+	exit(1);
+      }
+
+      CREATE(new_descr, struct extra_descr_data, 1);
+      new_descr->keyword = toml_string_required(extra_tab, "keyword", buf, filename);
+      new_descr->description = toml_string_required(extra_tab, "description", buf, filename);
+      new_descr->next = world[room_nr].ex_description;
+      world[room_nr].ex_description = new_descr;
+    }
+  }
+
+  top_of_world = room_nr++;
 }
 
 
@@ -1348,6 +1743,141 @@ void parse_enhanced_mob(FILE *mob_f, int i, int nr)
   exit(1);
 }
 
+void parse_mobile_toml(toml_table_t *mob, const char *filename)
+{
+  static int i = 0;
+  int j, vnum, letter;
+  char *tmpptr, *f1, *f2, *typestr;
+  char buf2[128];
+  toml_table_t *espec;
+
+  vnum = toml_int_required(mob, "vnum", "mob entry", filename);
+  mob_index[i].vnum = vnum;
+  mob_index[i].number = 0;
+  mob_index[i].func = NULL;
+
+  clear_char(mob_proto + i);
+
+  mob_proto[i].player_specials = &dummy_mob;
+  snprintf(buf2, sizeof(buf2), "mob vnum %d", vnum);
+
+  mob_proto[i].player.name = toml_string_required(mob, "name", buf2, filename);
+  tmpptr = mob_proto[i].player.short_descr = toml_string_required(mob, "short_descr", buf2, filename);
+  if (tmpptr && *tmpptr)
+    if (!str_cmp(fname(tmpptr), "a") || !str_cmp(fname(tmpptr), "an") ||
+	!str_cmp(fname(tmpptr), "the"))
+      *tmpptr = LOWER(*tmpptr);
+  mob_proto[i].player.long_descr = toml_string_required(mob, "long_descr", buf2, filename);
+  mob_proto[i].player.description = toml_string_required(mob, "description", buf2, filename);
+  GET_TITLE(mob_proto + i) = NULL;
+
+  f1 = toml_string_required(mob, "mob_flags", buf2, filename);
+  f2 = toml_string_required(mob, "aff_flags", buf2, filename);
+
+  MOB_FLAGS(mob_proto + i) = asciiflag_conv(f1);
+  SET_BIT(MOB_FLAGS(mob_proto + i), MOB_ISNPC);
+  if (MOB_FLAGGED(mob_proto + i, MOB_NOTDEADYET)) {
+    log("SYSERR: Mob #%d has reserved bit MOB_NOTDEADYET set.", vnum);
+    REMOVE_BIT(MOB_FLAGS(mob_proto + i), MOB_NOTDEADYET);
+  }
+  check_bitvector_names(MOB_FLAGS(mob_proto + i), action_bits_count, buf2, "mobile");
+
+  AFF_FLAGS(mob_proto + i) = asciiflag_conv(f2);
+  check_bitvector_names(AFF_FLAGS(mob_proto + i), affected_bits_count, buf2, "mobile affect");
+
+  free(f1);
+  free(f2);
+
+  GET_ALIGNMENT(mob_proto + i) = toml_int_required(mob, "alignment", buf2, filename);
+
+  if (MOB_FLAGGED(mob_proto + i, MOB_AGGRESSIVE) && MOB_FLAGGED(mob_proto + i, MOB_AGGR_GOOD | MOB_AGGR_EVIL | MOB_AGGR_NEUTRAL))
+    log("SYSERR: Mob #%d both Aggressive and Aggressive_to_Alignment.", vnum);
+
+  typestr = toml_string_required(mob, "type", buf2, filename);
+  letter = UPPER(*typestr);
+  free(typestr);
+
+  mob_proto[i].real_abils.str = 11;
+  mob_proto[i].real_abils.intel = 11;
+  mob_proto[i].real_abils.wis = 11;
+  mob_proto[i].real_abils.dex = 11;
+  mob_proto[i].real_abils.con = 11;
+  mob_proto[i].real_abils.cha = 11;
+
+  GET_LEVEL(mob_proto + i) = toml_int_required(mob, "level", buf2, filename);
+  GET_HITROLL(mob_proto + i) = toml_int_required(mob, "hitroll", buf2, filename);
+  GET_AC(mob_proto + i) = toml_int_required(mob, "ac", buf2, filename);
+
+  GET_MAX_HIT(mob_proto + i) = 0;
+  GET_HIT(mob_proto + i) = toml_int_required(mob, "hit", buf2, filename);
+  GET_MANA(mob_proto + i) = toml_int_required(mob, "mana", buf2, filename);
+  GET_MOVE(mob_proto + i) = toml_int_required(mob, "move", buf2, filename);
+
+  GET_MAX_MANA(mob_proto + i) = 10;
+  GET_MAX_MOVE(mob_proto + i) = 50;
+
+  mob_proto[i].mob_specials.damnodice = toml_int_required(mob, "damnodice", buf2, filename);
+  mob_proto[i].mob_specials.damsizedice = toml_int_required(mob, "damsizedice", buf2, filename);
+  GET_DAMROLL(mob_proto + i) = toml_int_required(mob, "damroll", buf2, filename);
+
+  GET_GOLD(mob_proto + i) = toml_int_required(mob, "gold", buf2, filename);
+  GET_EXP(mob_proto + i) = toml_int_required(mob, "exp", buf2, filename);
+  GET_POS(mob_proto + i) = toml_int_required(mob, "position", buf2, filename);
+  GET_DEFAULT_POS(mob_proto + i) = toml_int_required(mob, "default_pos", buf2, filename);
+  GET_SEX(mob_proto + i) = toml_int_required(mob, "sex", buf2, filename);
+
+  GET_CLASS(mob_proto + i) = 0;
+  GET_WEIGHT(mob_proto + i) = 200;
+  GET_HEIGHT(mob_proto + i) = 198;
+
+  for (j = 0; j < 5; j++)
+    GET_SAVE(mob_proto + i, j) = 0;
+
+  if (letter == 'E') {
+    int k, knum;
+
+    espec = toml_table_in(mob, "espec");
+    if (espec) {
+      knum = toml_table_nkval(espec);
+      for (k = 0; k < knum; k++) {
+	const char *key = toml_key_in(espec, k);
+	toml_datum_t sval = toml_string_in(espec, key);
+	toml_datum_t ival;
+
+	if (sval.ok) {
+	  interpret_espec(key, sval.u.s, i, vnum);
+	  free(sval.u.s);
+	  continue;
+	}
+
+	ival = toml_int_in(espec, key);
+	if (ival.ok) {
+	  char numbuf[32];
+	  snprintf(numbuf, sizeof(numbuf), "%lld", (long long)ival.u.i);
+	  interpret_espec(key, numbuf, i, vnum);
+	  continue;
+	}
+
+	log("SYSERR: Mob #%d has invalid espec value for %s.", vnum, key);
+	exit(1);
+      }
+    }
+  } else if (letter != 'S') {
+    log("SYSERR: Unsupported mob type '%c' in mob #%d", letter, vnum);
+    exit(1);
+  }
+
+  mob_proto[i].aff_abils = mob_proto[i].real_abils;
+
+  for (j = 0; j < NUM_WEARS; j++)
+    mob_proto[i].equipment[j] = NULL;
+
+  mob_proto[i].nr = i;
+  mob_proto[i].desc = NULL;
+
+  top_of_mobt = i++;
+}
+
 
 void parse_mobile(FILE *mob_f, int nr)
 {
@@ -1444,6 +1974,117 @@ void parse_mobile(FILE *mob_f, int nr)
 
 
 /* read all objects from obj file; generate index and prototypes */
+void parse_object_toml(toml_table_t *obj, const char *filename)
+{
+  static int i = 0;
+  int j, vnum, count;
+  char *tmpptr, *f1, *f2;
+  char buf2[128];
+  toml_array_t *values, *extra, *affects;
+  struct extra_descr_data *new_descr;
+
+  vnum = toml_int_required(obj, "vnum", "object entry", filename);
+
+  obj_index[i].vnum = vnum;
+  obj_index[i].number = 0;
+  obj_index[i].func = NULL;
+
+  clear_object(obj_proto + i);
+  obj_proto[i].item_number = i;
+
+  snprintf(buf2, sizeof(buf2), "object #%d", vnum);
+
+  obj_proto[i].name = toml_string_required(obj, "name", buf2, filename);
+  if (!obj_proto[i].name) {
+    log("SYSERR: Null obj name or format error at or near %s", buf2);
+    exit(1);
+  }
+  tmpptr = obj_proto[i].short_description = toml_string_required(obj, "short_descr", buf2, filename);
+  if (tmpptr && *tmpptr)
+    if (!str_cmp(fname(tmpptr), "a") || !str_cmp(fname(tmpptr), "an") ||
+	!str_cmp(fname(tmpptr), "the"))
+      *tmpptr = LOWER(*tmpptr);
+
+  tmpptr = obj_proto[i].description = toml_string_required(obj, "description", buf2, filename);
+  if (tmpptr && *tmpptr)
+    CAP(tmpptr);
+  obj_proto[i].action_description = toml_string_optional(obj, "action_description");
+
+  GET_OBJ_TYPE(obj_proto + i) = toml_int_required(obj, "type", buf2, filename);
+  f1 = toml_string_required(obj, "extra_flags", buf2, filename);
+  f2 = toml_string_required(obj, "wear_flags", buf2, filename);
+  GET_OBJ_EXTRA(obj_proto + i) = asciiflag_conv(f1);
+  GET_OBJ_WEAR(obj_proto + i) = asciiflag_conv(f2);
+  free(f1);
+  free(f2);
+
+  values = toml_array_required(obj, "values", buf2, filename);
+  if (toml_array_nelem(values) < 4) {
+    log("SYSERR: Object %s has fewer than 4 values.", buf2);
+    exit(1);
+  }
+  for (j = 0; j < 4; j++) {
+    toml_datum_t val = toml_int_at(values, j);
+    if (!val.ok) {
+      log("SYSERR: Object %s has invalid value[%d].", buf2, j);
+      exit(1);
+    }
+    GET_OBJ_VAL(obj_proto + i, j) = (int)val.u.i;
+  }
+
+  GET_OBJ_WEIGHT(obj_proto + i) = toml_int_required(obj, "weight", buf2, filename);
+  GET_OBJ_COST(obj_proto + i) = toml_int_required(obj, "cost", buf2, filename);
+  GET_OBJ_RENT(obj_proto + i) = toml_int_required(obj, "rent", buf2, filename);
+
+  if (GET_OBJ_TYPE(obj_proto + i) == ITEM_DRINKCON || GET_OBJ_TYPE(obj_proto + i) == ITEM_FOUNTAIN) {
+    if (GET_OBJ_WEIGHT(obj_proto + i) < GET_OBJ_VAL(obj_proto + i, 1))
+      GET_OBJ_WEIGHT(obj_proto + i) = GET_OBJ_VAL(obj_proto + i, 1) + 5;
+  }
+
+  for (j = 0; j < MAX_OBJ_AFFECT; j++) {
+    obj_proto[i].affected[j].location = APPLY_NONE;
+    obj_proto[i].affected[j].modifier = 0;
+  }
+
+  extra = toml_array_in(obj, "extra_desc");
+  if (extra) {
+    count = toml_array_nelem(extra);
+    for (j = 0; j < count; j++) {
+      toml_table_t *extra_tab = toml_table_at(extra, j);
+      if (!extra_tab) {
+	log("SYSERR: Object %s has non-table extra_desc entry.", buf2);
+	exit(1);
+      }
+      CREATE(new_descr, struct extra_descr_data, 1);
+      new_descr->keyword = toml_string_required(extra_tab, "keyword", buf2, filename);
+      new_descr->description = toml_string_required(extra_tab, "description", buf2, filename);
+      new_descr->next = obj_proto[i].ex_description;
+      obj_proto[i].ex_description = new_descr;
+    }
+  }
+
+  affects = toml_array_in(obj, "affects");
+  if (affects) {
+    count = toml_array_nelem(affects);
+    if (count > MAX_OBJ_AFFECT) {
+      log("SYSERR: Too many affects (%d max), %s", MAX_OBJ_AFFECT, buf2);
+      exit(1);
+    }
+    for (j = 0; j < count; j++) {
+      toml_table_t *aff_tab = toml_table_at(affects, j);
+      if (!aff_tab) {
+	log("SYSERR: Object %s has non-table affects entry.", buf2);
+	exit(1);
+      }
+      obj_proto[i].affected[j].location = toml_int_required(aff_tab, "location", buf2, filename);
+      obj_proto[i].affected[j].modifier = toml_int_required(aff_tab, "modifier", buf2, filename);
+    }
+  }
+
+  check_object(obj_proto + i);
+  top_of_objt = i++;
+}
+
 char *parse_object(FILE *obj_f, int nr)
 {
   static int i = 0;
@@ -1588,100 +2229,95 @@ char *parse_object(FILE *obj_f, int nr)
 void load_zones(FILE *fl, char *zonename)
 {
   static zone_rnum zone = 0;
-  int cmd_no, num_of_cmds = 0, line_num = 0, tmp, error;
-  char *ptr, buf[READ_SIZE], zname[READ_SIZE], buf2[MAX_STRING_LENGTH];
+  char errbuf[256];
+  toml_table_t *tab;
+  toml_array_t *zones;
+  int zcount, znum;
 
-  strlcpy(zname, zonename, sizeof(zname));
-
-  /* Skip first 3 lines lest we mistake the zone name for a command. */
-  for (tmp = 0; tmp < 3; tmp++)
-    get_line(fl, buf);
-
-  /*  More accurate count. Previous was always 4 or 5 too high. -gg 2001/1/17
-   *  Note that if a new zone command is added to reset_zone(), this string
-   *  will need to be updated to suit. - ae.
-   */
-  while (get_line(fl, buf))
-    if ((strchr("MOPGERD", buf[0]) && buf[1] == ' ') || (buf[0] == 'S' && buf[1] == '\0'))
-      num_of_cmds++;
-
-  rewind(fl);
-
-  if (num_of_cmds == 0) {
-    log("SYSERR: %s is empty!", zname);
-    exit(1);
-  } else
-    CREATE(Z.cmd, struct reset_com, num_of_cmds);
-
-  line_num += get_line(fl, buf);
-
-  if (sscanf(buf, "#%hd", &Z.number) != 1) {
-    log("SYSERR: Format error in %s, line %d", zname, line_num);
-    exit(1);
-  }
-  snprintf(buf2, sizeof(buf2), "beginning of zone #%d", Z.number);
-
-  line_num += get_line(fl, buf);
-  if ((ptr = strchr(buf, '~')) != NULL)	/* take off the '~' if it's there */
-    *ptr = '\0';
-  Z.name = strdup(buf);
-
-  line_num += get_line(fl, buf);
-  if (sscanf(buf, " %hd %hd %d %d ", &Z.bot, &Z.top, &Z.lifespan, &Z.reset_mode) != 4) {
-    log("SYSERR: Format error in numeric constant line of %s", zname);
-    exit(1);
-  }
-  if (Z.bot > Z.top) {
-    log("SYSERR: Zone %d bottom (%d) > top (%d).", Z.number, Z.bot, Z.top);
+  tab = toml_parse_file(fl, errbuf, sizeof(errbuf));
+  if (!tab) {
+    log("SYSERR: TOML parse error in %s: %s", zonename, errbuf);
     exit(1);
   }
 
-  cmd_no = 0;
+  zones = toml_array_required(tab, "zones", "top-level", zonename);
+  zcount = toml_array_nelem(zones);
+  if (zcount == 0) {
+    log("SYSERR: %s is empty!", zonename);
+    toml_free(tab);
+    exit(1);
+  }
 
-  for (;;) {
-    if ((tmp = get_line(fl, buf)) == 0) {
-      log("SYSERR: Format error in %s - premature end of file", zname);
+  for (znum = 0; znum < zcount; znum++) {
+    toml_table_t *ztab = toml_table_at(zones, znum);
+    toml_array_t *cmds;
+    int cmd_no, cmd_count;
+    char buf2[MAX_STRING_LENGTH];
+
+    if (!ztab) {
+      log("SYSERR: TOML file %s has non-table zone entry.", zonename);
+      toml_free(tab);
       exit(1);
     }
-    line_num += tmp;
-    ptr = buf;
-    skip_spaces(&ptr);
 
-    if ((ZCMD.command = *ptr) == '*')
-      continue;
+    Z.number = toml_int_required(ztab, "vnum", "zone entry", zonename);
+    snprintf(buf2, sizeof(buf2), "zone #%d", Z.number);
 
-    ptr++;
+    Z.name = toml_string_required(ztab, "name", buf2, zonename);
+    Z.bot = toml_int_required(ztab, "bot", buf2, zonename);
+    Z.top = toml_int_required(ztab, "top", buf2, zonename);
+    Z.lifespan = toml_int_required(ztab, "lifespan", buf2, zonename);
+    Z.reset_mode = toml_int_required(ztab, "reset_mode", buf2, zonename);
 
-    if (ZCMD.command == 'S' || ZCMD.command == '$') {
-      ZCMD.command = 'S';
-      break;
-    }
-    error = 0;
-    if (strchr("MOEPD", ZCMD.command) == NULL) {	/* a 3-arg command */
-      if (sscanf(ptr, " %d %d %d ", &tmp, &ZCMD.arg1, &ZCMD.arg2) != 3)
-	error = 1;
-    } else {
-      if (sscanf(ptr, " %d %d %d %d ", &tmp, &ZCMD.arg1, &ZCMD.arg2,
-		 &ZCMD.arg3) != 4)
-	error = 1;
-    }
-
-    ZCMD.if_flag = tmp;
-
-    if (error) {
-      log("SYSERR: Format error in %s, line %d: '%s'", zname, line_num, buf);
+    if (Z.bot > Z.top) {
+      log("SYSERR: Zone %d bottom (%d) > top (%d).", Z.number, Z.bot, Z.top);
+      toml_free(tab);
       exit(1);
     }
-    ZCMD.line = line_num;
-    cmd_no++;
+
+    cmds = toml_array_required(ztab, "commands", buf2, zonename);
+    cmd_count = toml_array_nelem(cmds);
+    if (cmd_count == 0) {
+      log("SYSERR: Zone %d has no commands in %s.", Z.number, zonename);
+      toml_free(tab);
+      exit(1);
+    }
+
+    CREATE(Z.cmd, struct reset_com, cmd_count + 1);
+    for (cmd_no = 0; cmd_no < cmd_count; cmd_no++) {
+      toml_table_t *ctab = toml_table_at(cmds, cmd_no);
+      char *cmdstr;
+      toml_datum_t arg3;
+
+      if (!ctab) {
+	log("SYSERR: Zone %d has non-table command entry in %s.", Z.number, zonename);
+	toml_free(tab);
+	exit(1);
+      }
+
+      cmdstr = toml_string_required(ctab, "command", buf2, zonename);
+      ZCMD.command = *cmdstr;
+      free(cmdstr);
+
+      ZCMD.if_flag = toml_int_required(ctab, "if_flag", buf2, zonename);
+      ZCMD.arg1 = toml_int_required(ctab, "arg1", buf2, zonename);
+      ZCMD.arg2 = toml_int_required(ctab, "arg2", buf2, zonename);
+      arg3 = toml_int_in(ctab, "arg3");
+      ZCMD.arg3 = arg3.ok ? (int)arg3.u.i : 0;
+      ZCMD.line = cmd_no + 1;
+    }
+
+    Z.cmd[cmd_count].command = 'S';
+    Z.cmd[cmd_count].if_flag = 0;
+    Z.cmd[cmd_count].arg1 = 0;
+    Z.cmd[cmd_count].arg2 = 0;
+    Z.cmd[cmd_count].arg3 = 0;
+    Z.cmd[cmd_count].line = 0;
+
+    top_of_zone_table = zone++;
   }
 
-  if (num_of_cmds != cmd_no + 1) {
-    log("SYSERR: Zone command count mismatch for %s. Estimated: %d, Actual: %d", zname, num_of_cmds, cmd_no + 1);
-    exit(1);
-  }
-
-  top_of_zone_table = zone++;
+  toml_free(tab);
 }
 
 #undef Z
@@ -2198,6 +2834,363 @@ char *get_name_by_id(long id)
   return (NULL);
 }
 
+static void toml_write_escaped(FILE *fp, const char *text)
+{
+  const unsigned char *p = (const unsigned char *)(text ? text : "");
+
+  fputc('"', fp);
+  for (; *p; p++) {
+    switch (*p) {
+    case '\\':
+      fputs("\\\\", fp);
+      break;
+    case '"':
+      fputs("\\\"", fp);
+      break;
+    case '\n':
+      fputs("\\n", fp);
+      break;
+    case '\r':
+      fputs("\\r", fp);
+      break;
+    case '\t':
+      fputs("\\t", fp);
+      break;
+    default:
+      if (*p < 32)
+	fprintf(fp, "\\u%04x", *p);
+      else
+	fputc(*p, fp);
+      break;
+    }
+  }
+  fputc('"', fp);
+}
+
+static void toml_write_key_string(FILE *fp, const char *key, const char *text)
+{
+  fprintf(fp, "%s = ", key);
+  toml_write_escaped(fp, text ? text : "");
+  fputc('\n', fp);
+}
+
+static void toml_write_int_array(FILE *fp, const char *key, const int *vals, int count)
+{
+  int i;
+
+  fprintf(fp, "%s = [", key);
+  for (i = 0; i < count; i++) {
+    if (i)
+      fputs(", ", fp);
+    fprintf(fp, "%d", vals[i]);
+  }
+  fputs("]\n", fp);
+}
+
+static void toml_write_bool_array(FILE *fp, const char *key, const bool *vals, int count)
+{
+  int i;
+
+  fprintf(fp, "%s = [", key);
+  for (i = 0; i < count; i++) {
+    if (i)
+      fputs(", ", fp);
+    fputs(vals[i] ? "true" : "false", fp);
+  }
+  fputs("]\n", fp);
+}
+
+static int read_player_toml_table(toml_table_t *tab, struct char_file_u *st, const char *filename)
+{
+  toml_table_t *cs, *ps, *ab, *pt;
+  toml_array_t *aff;
+  int tmp[MAX_SKILLS + 1];
+  int i;
+
+  memset(st, 0, sizeof(*st));
+
+  toml_copy_string_required(st->name, sizeof(st->name), tab, "name", "player", filename);
+  toml_copy_string_optional(st->description, sizeof(st->description), tab, "description");
+  toml_copy_string_optional(st->title, sizeof(st->title), tab, "title");
+  st->sex = toml_int_required(tab, "sex", "player", filename);
+  st->chclass = toml_int_required(tab, "class", "player", filename);
+  st->level = toml_int_required(tab, "level", "player", filename);
+  st->hometown = toml_int_required(tab, "hometown", "player", filename);
+  st->birth = toml_int_required(tab, "birth", "player", filename);
+  st->played = toml_int_required(tab, "played", "player", filename);
+  st->weight = toml_int_required(tab, "weight", "player", filename);
+  st->height = toml_int_required(tab, "height", "player", filename);
+  toml_copy_string_required(st->pwd, sizeof(st->pwd), tab, "password", "player", filename);
+  st->last_logon = toml_int_required(tab, "last_logon", "player", filename);
+  toml_copy_string_optional(st->host, sizeof(st->host), tab, "host");
+
+  cs = toml_table_in(tab, "char_specials");
+  if (!cs) {
+    log("SYSERR: TOML file %s missing [char_specials].", filename);
+    return (0);
+  }
+  st->char_specials_saved.alignment = toml_int_required(cs, "alignment", "char_specials", filename);
+  st->char_specials_saved.idnum = toml_int_required(cs, "idnum", "char_specials", filename);
+  st->char_specials_saved.act = toml_int_required(cs, "act", "char_specials", filename);
+  st->char_specials_saved.affected_by = toml_int_required(cs, "affected_by", "char_specials", filename);
+  toml_int_array_required(cs, "saving_throw", tmp, 5, "char_specials", filename);
+  for (i = 0; i < 5; i++)
+    st->char_specials_saved.apply_saving_throw[i] = (sh_int)tmp[i];
+
+  ps = toml_table_in(tab, "player_specials");
+  if (!ps) {
+    log("SYSERR: TOML file %s missing [player_specials].", filename);
+    return (0);
+  }
+  toml_int_array_required(ps, "skills", tmp, MAX_SKILLS + 1, "player_specials", filename);
+  for (i = 0; i <= MAX_SKILLS; i++)
+    st->player_specials_saved.skills[i] = (byte)tmp[i];
+  st->player_specials_saved.PADDING0 = toml_int_optional(ps, "padding0", 0);
+  toml_bool_array_required(ps, "talks", st->player_specials_saved.talks, MAX_TONGUE, "player_specials", filename);
+  st->player_specials_saved.wimp_level = toml_int_required(ps, "wimp_level", "player_specials", filename);
+  st->player_specials_saved.freeze_level = toml_int_required(ps, "freeze_level", "player_specials", filename);
+  st->player_specials_saved.invis_level = toml_int_required(ps, "invis_level", "player_specials", filename);
+  st->player_specials_saved.load_room = toml_int_required(ps, "load_room", "player_specials", filename);
+  st->player_specials_saved.pref = toml_int_required(ps, "pref", "player_specials", filename);
+  st->player_specials_saved.bad_pws = toml_int_required(ps, "bad_pws", "player_specials", filename);
+  toml_int_array_required(ps, "conditions", tmp, 3, "player_specials", filename);
+  for (i = 0; i < 3; i++)
+    st->player_specials_saved.conditions[i] = (sbyte)tmp[i];
+
+  st->player_specials_saved.spare0 = toml_int_optional(ps, "spare0", 0);
+  st->player_specials_saved.spare1 = toml_int_optional(ps, "spare1", 0);
+  st->player_specials_saved.spare2 = toml_int_optional(ps, "spare2", 0);
+  st->player_specials_saved.spare3 = toml_int_optional(ps, "spare3", 0);
+  st->player_specials_saved.spare4 = toml_int_optional(ps, "spare4", 0);
+  st->player_specials_saved.spare5 = toml_int_optional(ps, "spare5", 0);
+  st->player_specials_saved.spells_to_learn = toml_int_optional(ps, "spells_to_learn", 0);
+  st->player_specials_saved.spare7 = toml_int_optional(ps, "spare7", 0);
+  st->player_specials_saved.spare8 = toml_int_optional(ps, "spare8", 0);
+  st->player_specials_saved.spare9 = toml_int_optional(ps, "spare9", 0);
+  st->player_specials_saved.spare10 = toml_int_optional(ps, "spare10", 0);
+  st->player_specials_saved.spare11 = toml_int_optional(ps, "spare11", 0);
+  st->player_specials_saved.spare12 = toml_int_optional(ps, "spare12", 0);
+  st->player_specials_saved.spare13 = toml_int_optional(ps, "spare13", 0);
+  st->player_specials_saved.spare14 = toml_int_optional(ps, "spare14", 0);
+  st->player_specials_saved.spare15 = toml_int_optional(ps, "spare15", 0);
+  st->player_specials_saved.spare16 = toml_int_optional(ps, "spare16", 0);
+  st->player_specials_saved.spare17 = toml_int_optional(ps, "spare17", 0);
+  st->player_specials_saved.spare18 = toml_int_optional(ps, "spare18", 0);
+  st->player_specials_saved.spare19 = toml_int_optional(ps, "spare19", 0);
+  st->player_specials_saved.spare20 = toml_int_optional(ps, "spare20", 0);
+  st->player_specials_saved.spare21 = toml_int_optional(ps, "spare21", 0);
+
+  ab = toml_table_in(tab, "abilities");
+  if (!ab) {
+    log("SYSERR: TOML file %s missing [abilities].", filename);
+    return (0);
+  }
+  st->abilities.str = toml_int_required(ab, "str", "abilities", filename);
+  st->abilities.str_add = toml_int_required(ab, "str_add", "abilities", filename);
+  st->abilities.intel = toml_int_required(ab, "intel", "abilities", filename);
+  st->abilities.wis = toml_int_required(ab, "wis", "abilities", filename);
+  st->abilities.dex = toml_int_required(ab, "dex", "abilities", filename);
+  st->abilities.con = toml_int_required(ab, "con", "abilities", filename);
+  st->abilities.cha = toml_int_required(ab, "cha", "abilities", filename);
+
+  pt = toml_table_in(tab, "points");
+  if (!pt) {
+    log("SYSERR: TOML file %s missing [points].", filename);
+    return (0);
+  }
+  st->points.mana = toml_int_required(pt, "mana", "points", filename);
+  st->points.max_mana = toml_int_required(pt, "max_mana", "points", filename);
+  st->points.hit = toml_int_required(pt, "hit", "points", filename);
+  st->points.max_hit = toml_int_required(pt, "max_hit", "points", filename);
+  st->points.move = toml_int_required(pt, "move", "points", filename);
+  st->points.max_move = toml_int_required(pt, "max_move", "points", filename);
+  st->points.armor = toml_int_required(pt, "armor", "points", filename);
+  st->points.gold = toml_int_required(pt, "gold", "points", filename);
+  st->points.bank_gold = toml_int_required(pt, "bank_gold", "points", filename);
+  st->points.exp = toml_int_required(pt, "exp", "points", filename);
+  st->points.hitroll = toml_int_required(pt, "hitroll", "points", filename);
+  st->points.damroll = toml_int_required(pt, "damroll", "points", filename);
+
+  for (i = 0; i < MAX_AFFECT; i++) {
+    st->affected[i].type = 0;
+    st->affected[i].duration = 0;
+    st->affected[i].modifier = 0;
+    st->affected[i].location = 0;
+    st->affected[i].bitvector = 0;
+    st->affected[i].next = 0;
+  }
+  aff = toml_array_in(tab, "affected");
+  if (aff) {
+    int count = toml_array_nelem(aff);
+    if (count > MAX_AFFECT)
+      count = MAX_AFFECT;
+    for (i = 0; i < count; i++) {
+      toml_table_t *atab = toml_table_at(aff, i);
+      if (!atab) {
+	log("SYSERR: TOML file %s has non-table affected entry.", filename);
+	return (0);
+      }
+      st->affected[i].type = toml_int_required(atab, "type", "affected", filename);
+      st->affected[i].duration = toml_int_required(atab, "duration", "affected", filename);
+      st->affected[i].modifier = toml_int_required(atab, "modifier", "affected", filename);
+      st->affected[i].location = toml_int_required(atab, "location", "affected", filename);
+      st->affected[i].bitvector = toml_int_required(atab, "bitvector", "affected", filename);
+      st->affected[i].next = 0;
+    }
+  }
+
+  return (1);
+}
+
+static int read_player_toml_file(const char *filename, struct char_file_u *st)
+{
+  char errbuf[256];
+  toml_table_t *tab;
+  FILE *fl;
+  int ok;
+
+  if (!(fl = fopen(filename, "r")))
+    return (0);
+
+  tab = toml_parse_file(fl, errbuf, sizeof(errbuf));
+  fclose(fl);
+  if (!tab) {
+    log("SYSERR: TOML parse error in %s: %s", filename, errbuf);
+    return (0);
+  }
+
+  ok = read_player_toml_table(tab, st, filename);
+  toml_free(tab);
+  return (ok);
+}
+
+static int write_player_toml_file(const char *filename, struct char_file_u *st)
+{
+  FILE *fl;
+  int i;
+  int tmp[MAX_SKILLS + 1];
+  int cond[3];
+
+  if (!(fl = fopen(filename, "w"))) {
+    log("SYSERR: Unable to write player file %s: %s", filename, strerror(errno));
+    return (0);
+  }
+
+  toml_write_key_string(fl, "name", st->name);
+  toml_write_key_string(fl, "description", st->description);
+  toml_write_key_string(fl, "title", st->title);
+  fprintf(fl, "sex = %d\n", st->sex);
+  fprintf(fl, "class = %d\n", st->chclass);
+  fprintf(fl, "level = %d\n", st->level);
+  fprintf(fl, "hometown = %d\n", st->hometown);
+  fprintf(fl, "birth = %ld\n", (long)st->birth);
+  fprintf(fl, "played = %d\n", st->played);
+  fprintf(fl, "weight = %d\n", st->weight);
+  fprintf(fl, "height = %d\n", st->height);
+  toml_write_key_string(fl, "password", st->pwd);
+  fprintf(fl, "last_logon = %ld\n", (long)st->last_logon);
+  toml_write_key_string(fl, "host", st->host);
+
+  fputs("\n[char_specials]\n", fl);
+  fprintf(fl, "alignment = %d\n", st->char_specials_saved.alignment);
+  fprintf(fl, "idnum = %ld\n", st->char_specials_saved.idnum);
+  fprintf(fl, "act = %ld\n", st->char_specials_saved.act);
+  fprintf(fl, "affected_by = %ld\n", st->char_specials_saved.affected_by);
+  for (i = 0; i < 5; i++)
+    tmp[i] = st->char_specials_saved.apply_saving_throw[i];
+  toml_write_int_array(fl, "saving_throw", tmp, 5);
+
+  fputs("\n[player_specials]\n", fl);
+  for (i = 0; i <= MAX_SKILLS; i++)
+    tmp[i] = st->player_specials_saved.skills[i];
+  toml_write_int_array(fl, "skills", tmp, MAX_SKILLS + 1);
+  fprintf(fl, "padding0 = %d\n", st->player_specials_saved.PADDING0);
+  toml_write_bool_array(fl, "talks", st->player_specials_saved.talks, MAX_TONGUE);
+  fprintf(fl, "wimp_level = %d\n", st->player_specials_saved.wimp_level);
+  fprintf(fl, "freeze_level = %d\n", st->player_specials_saved.freeze_level);
+  fprintf(fl, "invis_level = %d\n", st->player_specials_saved.invis_level);
+  fprintf(fl, "load_room = %d\n", st->player_specials_saved.load_room);
+  fprintf(fl, "pref = %ld\n", st->player_specials_saved.pref);
+  fprintf(fl, "bad_pws = %d\n", st->player_specials_saved.bad_pws);
+  cond[0] = st->player_specials_saved.conditions[0];
+  cond[1] = st->player_specials_saved.conditions[1];
+  cond[2] = st->player_specials_saved.conditions[2];
+  toml_write_int_array(fl, "conditions", cond, 3);
+  fprintf(fl, "spare0 = %d\n", st->player_specials_saved.spare0);
+  fprintf(fl, "spare1 = %d\n", st->player_specials_saved.spare1);
+  fprintf(fl, "spare2 = %d\n", st->player_specials_saved.spare2);
+  fprintf(fl, "spare3 = %d\n", st->player_specials_saved.spare3);
+  fprintf(fl, "spare4 = %d\n", st->player_specials_saved.spare4);
+  fprintf(fl, "spare5 = %d\n", st->player_specials_saved.spare5);
+  fprintf(fl, "spells_to_learn = %d\n", st->player_specials_saved.spells_to_learn);
+  fprintf(fl, "spare7 = %d\n", st->player_specials_saved.spare7);
+  fprintf(fl, "spare8 = %d\n", st->player_specials_saved.spare8);
+  fprintf(fl, "spare9 = %d\n", st->player_specials_saved.spare9);
+  fprintf(fl, "spare10 = %d\n", st->player_specials_saved.spare10);
+  fprintf(fl, "spare11 = %d\n", st->player_specials_saved.spare11);
+  fprintf(fl, "spare12 = %d\n", st->player_specials_saved.spare12);
+  fprintf(fl, "spare13 = %d\n", st->player_specials_saved.spare13);
+  fprintf(fl, "spare14 = %d\n", st->player_specials_saved.spare14);
+  fprintf(fl, "spare15 = %d\n", st->player_specials_saved.spare15);
+  fprintf(fl, "spare16 = %d\n", st->player_specials_saved.spare16);
+  fprintf(fl, "spare17 = %ld\n", st->player_specials_saved.spare17);
+  fprintf(fl, "spare18 = %ld\n", st->player_specials_saved.spare18);
+  fprintf(fl, "spare19 = %ld\n", st->player_specials_saved.spare19);
+  fprintf(fl, "spare20 = %ld\n", st->player_specials_saved.spare20);
+  fprintf(fl, "spare21 = %ld\n", st->player_specials_saved.spare21);
+
+  fputs("\n[abilities]\n", fl);
+  fprintf(fl, "str = %d\n", st->abilities.str);
+  fprintf(fl, "str_add = %d\n", st->abilities.str_add);
+  fprintf(fl, "intel = %d\n", st->abilities.intel);
+  fprintf(fl, "wis = %d\n", st->abilities.wis);
+  fprintf(fl, "dex = %d\n", st->abilities.dex);
+  fprintf(fl, "con = %d\n", st->abilities.con);
+  fprintf(fl, "cha = %d\n", st->abilities.cha);
+
+  fputs("\n[points]\n", fl);
+  fprintf(fl, "mana = %d\n", st->points.mana);
+  fprintf(fl, "max_mana = %d\n", st->points.max_mana);
+  fprintf(fl, "hit = %d\n", st->points.hit);
+  fprintf(fl, "max_hit = %d\n", st->points.max_hit);
+  fprintf(fl, "move = %d\n", st->points.move);
+  fprintf(fl, "max_move = %d\n", st->points.max_move);
+  fprintf(fl, "armor = %d\n", st->points.armor);
+  fprintf(fl, "gold = %d\n", st->points.gold);
+  fprintf(fl, "bank_gold = %d\n", st->points.bank_gold);
+  fprintf(fl, "exp = %d\n", st->points.exp);
+  fprintf(fl, "hitroll = %d\n", st->points.hitroll);
+  fprintf(fl, "damroll = %d\n", st->points.damroll);
+
+  for (i = 0; i < MAX_AFFECT; i++) {
+    if (!st->affected[i].type)
+      continue;
+    fputs("\n[[affected]]\n", fl);
+    fprintf(fl, "type = %d\n", st->affected[i].type);
+    fprintf(fl, "duration = %d\n", st->affected[i].duration);
+    fprintf(fl, "modifier = %d\n", st->affected[i].modifier);
+    fprintf(fl, "location = %d\n", st->affected[i].location);
+    fprintf(fl, "bitvector = %ld\n", st->affected[i].bitvector);
+  }
+
+  fclose(fl);
+  return (1);
+}
+
+int save_char_file(const char *name, struct char_file_u *st)
+{
+  char filename[PATH_MAX];
+
+  if (!name || !*name)
+    return (0);
+
+  ensure_player_dirs(name);
+  if (!get_player_filename(filename, sizeof(filename), name))
+    return (0);
+
+  return (write_player_toml_file(filename, st));
+}
+
 
 /* Load a char, TRUE if loaded, FALSE if not */
 int load_char(const char *name, struct char_file_u *char_element)
@@ -2205,11 +3198,12 @@ int load_char(const char *name, struct char_file_u *char_element)
   int player_i;
 
   if ((player_i = get_ptable_by_name(name)) >= 0) {
-    fseek(player_fl, player_i * sizeof(struct char_file_u), SEEK_SET);
-    if (fread(char_element, sizeof(struct char_file_u), 1, player_fl) != 1)
+    char filename[PATH_MAX];
+    if (!get_player_filename(filename, sizeof(filename), name))
       return (-1);
-    else
-      return (player_i);
+    if (!read_player_toml_file(filename, char_element))
+      return (-1);
+    return (player_i);
   } else
     return (-1);
 }
@@ -2236,8 +3230,7 @@ void save_char(struct char_data *ch)
   strncpy(st.host, ch->desc->host, HOST_LENGTH);	/* strncpy: OK (s.host:HOST_LENGTH+1) */
   st.host[HOST_LENGTH] = '\0';
 
-  fseek(player_fl, GET_PFILEPOS(ch) * sizeof(struct char_file_u), SEEK_SET);
-  fwrite(&st, sizeof(struct char_file_u), 1, player_fl);
+  save_char_file(GET_NAME(ch), &st);
 }
 
 
@@ -2443,6 +3436,7 @@ int create_entry(char *name)
   }
 
   CREATE(player_table[pos].name, char, strlen(name) + 1);
+  player_table[pos].id = 0;
 
   /* copy lowercase equivalent of name to table field */
   for (i = 0; (player_table[pos].name[i] = LOWER(name[i])); i++)

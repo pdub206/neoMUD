@@ -1,0 +1,288 @@
+[[objects]]
+vnum = 3100
+name = "cup tea"
+short_descr = "a cup"
+description = "A cup has been set here."
+type = 17
+extra_flags = "0"
+wear_flags = "1"
+values = [8, 8, 11, 0]
+weight = 1
+cost = 5
+rent = 1
+
+[[objects.extra_desc]]
+keyword = "cup"
+description = "It is a small simple cup.\r\n"
+[[objects]]
+vnum = 3101
+name = "cup coffee"
+short_descr = "a cup"
+description = "A cup has been set here."
+type = 17
+extra_flags = "0"
+wear_flags = "1"
+values = [8, 8, 12, 0]
+weight = 1
+cost = 7
+rent = 1
+
+[[objects.extra_desc]]
+keyword = "cup"
+description = "It is a small simple cup.\r\n"
+[[objects]]
+vnum = 3102
+name = "cup water"
+short_descr = "a cup"
+description = "A cup has been set here."
+type = 17
+extra_flags = "0"
+wear_flags = "1"
+values = [12, 12, 15, 0]
+weight = 1
+cost = 2
+rent = 1
+
+[[objects.extra_desc]]
+keyword = "cup"
+description = "It is a large simple cup.\r\n"
+[[objects]]
+vnum = 3103
+name = "bottle water"
+short_descr = "a bottle"
+description = "A bottle of Evian natural spring water is here."
+type = 17
+extra_flags = "0"
+wear_flags = "1"
+values = [24, 24, 15, 0]
+weight = 1
+cost = 10
+rent = 6
+
+[[objects.extra_desc]]
+keyword = "label"
+description = "You've been ripped off!  It says here at the bottom of the label, in really\r\nreally small letters, 'Bottled in the Midgaard branch of Evian Inc.  This\r\nwater is from the natural, mostly clean River of Midgaard.'\r\n"
+
+[[objects.extra_desc]]
+keyword = "bottle"
+description = "It is a large, clean bottle.  There is a large label pasted on the side.\r\n"
+[[objects]]
+vnum = 3104
+name = "canteen water"
+short_descr = "a canteen"
+description = "A canteen has been set on the ground here."
+type = 17
+extra_flags = "0"
+wear_flags = "1"
+values = [80, 80, 15, 0]
+weight = 20
+cost = 45
+rent = 15
+
+[[objects.extra_desc]]
+keyword = "canteen"
+description = "It is a fairly big canteen.  Looks like it can hold a lot of liquid.\r\n"
+[[objects]]
+vnum = 3105
+name = "key iron"
+short_descr = "an iron key"
+description = "An iron key has been left here."
+type = 18
+extra_flags = "c"
+wear_flags = "1"
+values = [0, 0, 0, 0]
+weight = 1
+cost = 0
+rent = 10
+
+[[objects.extra_desc]]
+keyword = "key iron"
+description = "The iron key is not special.  In fact, it is quite boring.\r\n"
+[[objects]]
+vnum = 3106
+name = "key rusty"
+short_descr = "a rusty key"
+description = "A rusty key has been left here."
+type = 18
+extra_flags = "c"
+wear_flags = "1"
+values = [0, 0, 0, 0]
+weight = 1
+cost = 0
+rent = 10
+
+[[objects.extra_desc]]
+keyword = "key rusty"
+description = "The key is a fairly large rusty key.  You notice a lot of dirt it.\r\n"
+[[objects]]
+vnum = 3107
+name = "key wooden"
+short_descr = "a wooden key"
+description = "A wooden key has been left here."
+type = 18
+extra_flags = "c"
+wear_flags = "1"
+values = [0, 0, 0, 0]
+weight = 1
+cost = 0
+rent = 10
+
+[[objects.extra_desc]]
+keyword = "key wooden"
+description = "The wooden key is not special.  In fact it is just about the most boring\r\nkey you've ever seen in your life.\r\n"
+[[objects]]
+vnum = 3108
+name = "key brass"
+short_descr = "a brass key"
+description = "A brass key has been left here."
+type = 18
+extra_flags = "c"
+wear_flags = "1"
+values = [0, 0, 0, 0]
+weight = 1
+cost = 0
+rent = 10
+
+[[objects.extra_desc]]
+keyword = "key brass"
+description = "The brass key is small and looks like it fits a very complicated lock.\r\n"
+[[objects]]
+vnum = 3109
+name = "desk drawer"
+short_descr = "the desk"
+description = "A desk is set against the western wall."
+type = 15
+extra_flags = "0"
+wear_flags = "0"
+values = [34, 15, 3107, 0]
+weight = 100
+cost = 0
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "desk"
+description = "The desk looks very sparse, there is a drawer in the left side.\r\n"
+
+[[objects.extra_desc]]
+keyword = "drawer"
+description = "You notice a keyhole in the drawer.\r\n"
+[[objects]]
+vnum = 3110
+name = "safe"
+short_descr = "the safe"
+description = "A safe is placed in a dark corner of the room."
+type = 15
+extra_flags = "0"
+wear_flags = "0"
+values = [34, 15, 3108, 0]
+weight = 999
+cost = 0
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "safe"
+description = "The safe is very heavy and has a keyhole.\r\n"
+[[objects]]
+vnum = 3111
+name = "bench"
+short_descr = "the Bench"
+description = "A white-painted wooden bench is standing here."
+type = 12
+extra_flags = "0"
+wear_flags = "0"
+values = [0, 0, 0, 0]
+weight = 100
+cost = 600
+rent = 200
+
+[[objects.extra_desc]]
+keyword = "bench"
+description = "It is a quite heavy but very comfortable bench.  It is placed with its front\r\ntowards the river so you can sit and watch the river and the houses on the\r\nother side.\r\n"
+[[objects]]
+vnum = 3112
+name = "key city"
+short_descr = "the City Key"
+description = "The very big City Key is lying here."
+type = 18
+extra_flags = "c"
+wear_flags = "1"
+values = [0, 0, 0, 0]
+weight = 30
+cost = 10000
+rent = 500
+
+[[objects.extra_desc]]
+keyword = "key city"
+description = "It is probably the biggest key you have seen in your life.  It is made from\r\npolished gold and has various patterns on it along with the Midgaard Coat of\r\nArms.\r\n"
+[[objects]]
+vnum = 3113
+name = "fountain water"
+short_descr = "a fountain"
+description = "A small white fountain is standing here, gurgling happily."
+type = 23
+extra_flags = "0"
+wear_flags = "0"
+values = [999, 999, 15, 0]
+weight = 999
+cost = 0
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "fountain water"
+description = "It is very nice.  Made from fine white marble.\r\n"
+[[objects]]
+vnum = 3114
+name = "coins gold"
+short_descr = "a small pile of gold coins"
+description = "A small pile of gold coins lies here."
+type = 20
+extra_flags = "0"
+wear_flags = "1"
+values = [37, 0, 0, 0]
+weight = 0
+cost = 0
+rent = 0
+[[objects]]
+vnum = 3115
+name = "gold coins"
+short_descr = "the gold"
+description = "A lot of gold is here."
+type = 20
+extra_flags = "0"
+wear_flags = "1"
+values = [32385, 0, 0, 0]
+weight = 0
+cost = 32385
+rent = 0
+[[objects]]
+vnum = 3116
+name = "candlestick candle stick pewter"
+short_descr = "a candlestick"
+description = "A pewter candlestick is standing here."
+type = 1
+extra_flags = "0"
+wear_flags = "16385"
+values = [0, 0, 24, 0]
+weight = 5
+cost = 150
+rent = 10
+
+[[objects.extra_desc]]
+keyword = "candlestick"
+description = "It is a rather old-looking three-armed candlestick made from pewter.  Its\r\ncandles are a yellowish white color.\r\n"
+[[objects]]
+vnum = 3117
+name = "tree elm"
+short_descr = "an elm tree"
+description = "An old elm tree grows here."
+type = 13
+extra_flags = "0"
+wear_flags = "0"
+values = [0, 0, 0, 0]
+weight = 0
+cost = 0
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "elm tree"
+description = "The fresh young leaves of the elm tree wave gently in the wind.\r\n"

@@ -29,7 +29,7 @@ OBJFILES = act.comm.o act.informative.o act.item.o act.movement.o \
 	graph.o handler.o house.o interpreter.o limits.o magic.o mail.o \
 	mobact.o modify.o objsave.o olc.o random.o shop.o spec_assign.o \
 	spec_procs.o spell_parser.o spells.o utils.o weather.o \
-	bsd-snprintf.o
+	bsd-snprintf.o toml.o
 
 CXREF_FILES = act.comm.c act.informative.c act.item.c act.movement.c \
 	act.offensive.c act.other.c act.social.c act.wizard.c alias.c ban.c \
@@ -37,7 +37,7 @@ CXREF_FILES = act.comm.c act.informative.c act.item.c act.movement.c \
 	graph.c handler.c house.c interpreter.c limits.c magic.c mail.c \
 	mobact.c modify.c objsave.c olc.c random.c shop.c spec_assign.c\
 	spec_procs.c spell_parser.c spells.c utils.c weather.c \
-	bsd-snprintf.c
+	bsd-snprintf.c toml.c
 
 default: all
 
@@ -204,3 +204,5 @@ weather.o: weather.c conf.h sysdep.h structs.h utils.h comm.h handler.h \
 	$(CC) -c $(CFLAGS) weather.c
 bsd-snprintf.o: bsd-snprintf.c conf.h sysdep.h
 	$(CC) -c $(CFLAGS) bsd-snprintf.c
+toml.o: toml.c conf.h sysdep.h toml.h
+	$(CC) -c $(CFLAGS) toml.c

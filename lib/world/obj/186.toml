@@ -1,0 +1,224 @@
+[[objects]]
+vnum = 18601
+name = "sword newbie"
+short_descr = "a shiny newbie sword"
+description = "A shiny newbie sword is lying here waiting to be possessed."
+type = 5
+extra_flags = "65"
+wear_flags = "8193"
+values = [0, 1, 5, 3]
+weight = 4
+cost = 0
+rent = 0
+
+[[objects.affects]]
+location = 19
+modifier = 1
+[[objects]]
+vnum = 18602
+name = "vest newbie"
+short_descr = "a bright green newbie vest"
+description = "A bright green newbie vest is lying here looking for a body to hug."
+type = 9
+extra_flags = "0"
+wear_flags = "9"
+values = [4, 0, 0, 0]
+weight = 4
+cost = 0
+rent = 0
+[[objects]]
+vnum = 18603
+name = "helm helmet newbie"
+short_descr = "a bright newbie helm"
+description = "A bright newbie helm is hoping a loose head will wander by."
+type = 9
+extra_flags = "65"
+wear_flags = "17"
+values = [3, 0, 0, 0]
+weight = 4
+cost = 0
+rent = 0
+
+[[objects.affects]]
+location = 5
+modifier = 1
+[[objects]]
+vnum = 18604
+name = "cloak dark newbie"
+short_descr = "a dark newbie cloak"
+description = "A dark newbie cloak is lying here hoping to smother you."
+type = 9
+extra_flags = "65"
+wear_flags = "1025"
+values = [0, 0, 0, 0]
+weight = 2
+cost = 100
+rent = 0
+
+[[objects.affects]]
+location = 17
+modifier = -3
+
+[[objects.affects]]
+location = 4
+modifier = 1
+[[objects]]
+vnum = 18605
+name = "ring signet newbie"
+short_descr = "a newbie signet ring"
+description = "A newbie signet ring is lying in the dust here."
+type = 9
+extra_flags = "96"
+wear_flags = "3"
+values = [0, 0, 0, 0]
+weight = 1
+cost = 500
+rent = 0
+
+[[objects.affects]]
+location = 17
+modifier = -2
+[[objects]]
+vnum = 18606
+name = "dagger newbie"
+short_descr = "a shiny newbie dagger"
+description = "A shiny newbie dagger is lying here looking for a back to stab."
+type = 5
+extra_flags = "65"
+wear_flags = "24577"
+values = [0, 1, 4, 11]
+weight = 1
+cost = 0
+rent = 0
+
+[[objects.affects]]
+location = 19
+modifier = 1
+[[objects]]
+vnum = 18607
+name = "collar dragon"
+short_descr = "a pet dragon collar"
+description = "Someone's pet dragon has escaped and left his collar here."
+type = 9
+extra_flags = "64"
+wear_flags = "5"
+values = [0, 0, 0, 0]
+weight = 1
+cost = 0
+rent = 0
+
+[[objects.affects]]
+location = 18
+modifier = 1
+
+[[objects.affects]]
+location = 17
+modifier = -1
+[[objects]]
+vnum = 18608
+name = "key newbie"
+short_descr = "a wee little key"
+description = "A key with the newbie crest on it is here."
+type = 18
+extra_flags = "4"
+wear_flags = "1"
+values = [1, 0, 0, 0]
+weight = 1
+cost = 0
+rent = 0
+[[objects]]
+vnum = 18609
+name = "light jar"
+short_descr = "a brightly glowing jar"
+description = "A jar of glowing fluid wants to brighten your day."
+type = 1
+extra_flags = "65"
+wear_flags = "1"
+values = [0, 0, -1, 0]
+weight = 2
+cost = 0
+rent = 0
+
+[[objects.affects]]
+location = 24
+modifier = -1
+[[objects]]
+vnum = 18610
+name = "horns horn"
+short_descr = "the horns of the Minotaur"
+description = "The horns of the great Minotaur lie here."
+type = 9
+extra_flags = "8192"
+wear_flags = "17"
+values = [2, 0, 0, 0]
+weight = 8
+cost = 100
+rent = 0
+
+[[objects.affects]]
+location = 1
+modifier = 1
+[[objects]]
+vnum = 18611
+name = "hide skin"
+short_descr = "the smelly hide of the Minotaur"
+description = "The hide of the great Minotaur is lying here."
+type = 11
+extra_flags = "8192"
+wear_flags = "1033"
+values = [0, 0, 0, 0]
+weight = 6
+cost = 100
+rent = 0
+
+[[objects.affects]]
+location = 17
+modifier = -6
+
+[[objects.affects]]
+location = 13
+modifier = 15
+[[objects]]
+vnum = 18612
+name = "leggings newbie"
+short_descr = "some cool newbie leggings"
+description = "A pair of neat looking leggings are here."
+type = 9
+extra_flags = "0"
+wear_flags = "33"
+values = [4, 0, 0, 0]
+weight = 4
+cost = 200
+rent = 0
+[[objects]]
+vnum = 18613
+name = "sleeves newbie"
+short_descr = "some cool newbie sleeves"
+description = "A set of nifty sleeves is here."
+type = 9
+extra_flags = "0"
+wear_flags = "257"
+values = [4, 0, 0, 0]
+weight = 3
+cost = 400
+rent = 0
+
+[[objects.affects]]
+location = 3
+modifier = 1
+[[objects]]
+vnum = 18614
+name = "mace newbie"
+short_descr = "a glowing newbie mace"
+description = "A finely crafted newbie mace is waiting for a worthy owner."
+type = 5
+extra_flags = "65"
+wear_flags = "8193"
+values = [0, 2, 6, 7]
+weight = 8
+cost = 300
+rent = 0
+
+[[objects.affects]]
+location = 17
+modifier = -2

@@ -10,6 +10,7 @@
 #include "sysdep.h"
 
 #include "structs.h"
+#include "toml.h"
 
 void Crash_listrent(char *fname);
 
@@ -26,19 +27,44 @@ int main(int argc, char **argv)
 
 void Crash_listrent(char *fname)
 {
-  FILE *fl;
   char buf[MAX_STRING_LENGTH];
-  struct obj_file_elem object;
   struct rent_info rent;
+  int objcount = 0;
+  int i;
+  FILE *fl;
+  toml_table_t *tab, *rent_tab;
+  toml_array_t *objs;
+  char errbuf[256];
 
-  if (!(fl = fopen(fname, "rb"))) {
+  if (!(fl = fopen(fname, "r"))) {
     sprintf(buf, "%s has no rent file.\r\n", fname);
     printf("%s", buf);
     return;
   }
+  tab = toml_parse_file(fl, errbuf, sizeof(errbuf));
+  fclose(fl);
+  if (!tab) {
+    printf("%s has no rent file.\r\n", fname);
+    return;
+  }
+
+  rent_tab = toml_table_in(tab, "rent");
+  if (!rent_tab) {
+    toml_free(tab);
+    printf("%s has no rent file.\r\n", fname);
+    return;
+  }
+  {
+    toml_datum_t rcode = toml_int_in(rent_tab, "rentcode");
+    if (!rcode.ok) {
+      toml_free(tab);
+      printf("%s has no rent file.\r\n", fname);
+      return;
+    }
+    rent.rentcode = (int)rcode.u.i;
+  }
+
   sprintf(buf, "%s\r\n", fname);
-  if (!feof(fl))
-    fread(&rent, sizeof(struct rent_info), 1, fl);
   switch (rent.rentcode) {
   case RENT_RENTED:
     strcat(buf, "Rent\r\n");
@@ -57,15 +83,19 @@ void Crash_listrent(char *fname)
     strcat(buf, "Undef\r\n");
     break;
   }
-  while (!feof(fl)) {
-    fread(&object, sizeof(struct obj_file_elem), 1, fl);
-    if (ferror(fl)) {
-      fclose(fl);
-      return;
+  objs = toml_array_in(tab, "objects");
+  if (objs) {
+    objcount = toml_array_nelem(objs);
+    for (i = 0; i < objcount; i++) {
+      toml_table_t *otab = toml_table_at(objs, i);
+      toml_datum_t val;
+      if (!otab)
+	continue;
+      val = toml_int_in(otab, "item_number");
+      if (val.ok)
+	sprintf(buf, "%s[%5d] %s\n", buf, (int)val.u.i, fname);
     }
-    if (!feof(fl))
-      sprintf(buf, "%s[%5d] %s\n", buf, object.item_number, fname);
   }
   printf("%s", buf);
-  fclose(fl);
+  toml_free(tab);
 }

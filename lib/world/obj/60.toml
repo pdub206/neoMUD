@@ -1,0 +1,364 @@
+[[objects]]
+vnum = 6000
+name = "axe lumber"
+short_descr = "a lumber axe"
+description = "A heavy lumber axe lies here."
+type = 5
+extra_flags = "d"
+wear_flags = "8193"
+values = [0, 2, 3, 3]
+weight = 12
+cost = 50
+rent = 15
+
+[[objects.extra_desc]]
+keyword = "axe lumber"
+description = "It is a heavy axe of the kind lumberjacks use to chop down trees.\r\n"
+
+[[objects.affects]]
+location = 18
+modifier = 1
+[[objects]]
+vnum = 6001
+name = "shirt chequered"
+short_descr = "a chequered shirt"
+description = "A chequered shirt lies here."
+type = 9
+extra_flags = "d"
+wear_flags = "9"
+values = [1, 0, 0, 0]
+weight = 2
+cost = 20
+rent = 8
+
+[[objects.extra_desc]]
+keyword = "shirt chequered"
+description = "It is an extra large, chequered shirt made from heavy cloth.\r\n"
+[[objects]]
+vnum = 6002
+name = "boots leather"
+short_descr = "a pair of worn leather boots"
+description = "A pair of worn leather boots lies here."
+type = 9
+extra_flags = "d"
+wear_flags = "65"
+values = [2, 0, 0, 0]
+weight = 4
+cost = 60
+rent = 10
+
+[[objects.extra_desc]]
+keyword = "boots"
+description = "They are fashioned from rough leather that has been oiled frequently to make\r\nit stay waterproof.  They look worn but quite functional.\r\n"
+[[objects]]
+vnum = 6003
+name = "fireplace"
+short_descr = "a fireplace"
+description = "A fireplace made from stone is set against the east wall."
+type = 15
+extra_flags = "0"
+wear_flags = "0"
+values = [200, 0, 0, 0]
+weight = 0
+cost = 0
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "fireplace"
+description = "It is fashioned from stones of various sizes that have been stacked on top of\r\neach other and fastened with mortar.  Its chimney is constructed likewise and\r\nleads the smoke out through the low cabin ceiling.\r\n"
+[[objects]]
+vnum = 6004
+name = "lantern brass hooded"
+short_descr = "a hooded brass lantern"
+description = "A hooded brass lantern has been left here."
+type = 1
+extra_flags = "0"
+wear_flags = "16385"
+values = [0, 0, 100, 0]
+weight = 4
+cost = 60
+rent = 10
+
+[[objects.extra_desc]]
+keyword = "lantern brass hooded"
+description = "It is a large and robust but somewhat battered oil lantern made from brass,\r\nand it is equipped with a handle to make it handy and a hood to protect its\r\nflame.  Some letters have been scratched on its bottom.\r\n"
+
+[[objects.extra_desc]]
+keyword = "letters"
+description = "The letters say:\r\n\r\nUse 'hold lantern' to activate.\r\n\r\n"
+[[objects]]
+vnum = 6005
+name = "chest wooden"
+short_descr = "a wooden chest"
+description = "A wooden chest stands in the corner."
+type = 15
+extra_flags = "0"
+wear_flags = "1"
+values = [100, 15, 6006, 0]
+weight = 20
+cost = 100
+rent = 10
+
+[[objects.extra_desc]]
+keyword = "chest wooden"
+description = "It is a robust chest made from short, heavy planks that have been fastened\r\ntogether with tenons.  It is equipped with a simple brass lock.\r\n"
+[[objects]]
+vnum = 6006
+name = "key brass"
+short_descr = "a small brass key"
+description = "A small brass key lies here."
+type = 18
+extra_flags = "c"
+wear_flags = "16385"
+values = [6006, 0, 0, 0]
+weight = 1
+cost = 0
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "key brass"
+description = "It is a small, simple brass key with no inscriptions or marks of any kind.\r\n"
+[[objects]]
+vnum = 6007
+name = "coins gold"
+short_descr = "a heap of gold coins"
+description = "Some gold coins lie piled up in a heap on the floor."
+type = 20
+extra_flags = "0"
+wear_flags = "1"
+values = [127, 0, 0, 0]
+weight = 1
+cost = 127
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "coins gold"
+description = "The coins seem to be gold.  They are obviously valuable.\r\n"
+[[objects]]
+vnum = 6010
+name = "blackberries berries"
+short_descr = "some blackberries"
+description = "Some blackberries grow on a bush nearby."
+type = 19
+extra_flags = "c"
+wear_flags = "1"
+values = [3, 0, 0, 0]
+weight = 1
+cost = 0
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "blackberries berries"
+description = "They look very tasty indeed.\r\n"
+[[objects]]
+vnum = 6011
+name = "mushroom"
+short_descr = "a mushroom"
+description = "A small mushroom grows nearby."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [6, 0, 0, 0]
+weight = 1
+cost = 10
+rent = 10
+
+[[objects.extra_desc]]
+keyword = "mushroom"
+description = "It looks to be a tasty little thing.\r\n"
+[[objects]]
+vnum = 6012
+name = "sign"
+short_descr = "a large sign"
+description = "A large sign mounted on a pole is standing by the roadside."
+type = 12
+extra_flags = "0"
+wear_flags = "0"
+values = [0, 0, 0, 0]
+weight = 100
+cost = 0
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "pole"
+description = "Not the most interesting pole in the world.\r\nBetter leave it here, though, as it holds the sign in place.\r\n"
+
+[[objects.extra_desc]]
+keyword = "sign"
+description = "It says :-\r\n\r\n                         Haon-Dor\r\n                         --------\r\n\r\n This is the Forest of Haon-Dor.  Enter at your own risk.\r\n     Please report any strange occurrences to Furry,\r\n     as Quifael and Derkhil are currently indisposed.\r\n\r\n"
+[[objects]]
+vnum = 6013
+name = "barrel water"
+short_descr = "a barrel"
+description = "A water barrel has been left here."
+type = 17
+extra_flags = "0"
+wear_flags = "1"
+values = [40, 40, 15, 0]
+weight = 45
+cost = 60
+rent = 20
+[[objects]]
+vnum = 6014
+name = "water brook"
+short_descr = "a small brook"
+description = "A small brook trickles through the forest beside the path."
+type = 23
+extra_flags = "0"
+wear_flags = "0"
+values = [50000, 50000, 15, 0]
+weight = 0
+cost = 0
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "water brook"
+description = "The water looks clean and refreshing.\r\n"
+[[objects]]
+vnum = 6015
+name = "water lake"
+short_descr = "the lake"
+description = ""
+type = 23
+extra_flags = "0"
+wear_flags = "0"
+values = [50000, 50000, 0, 0]
+weight = 0
+cost = 0
+rent = 0
+[[objects]]
+vnum = 6016
+name = "cudgel oak oaken limb"
+short_descr = "an oaken cudgel"
+description = "A limb has fallen here."
+type = 5
+extra_flags = "g"
+wear_flags = "8193"
+values = [0, 1, 7, 7]
+weight = 16
+cost = 1
+rent = 20
+
+[[objects.affects]]
+location = 19
+modifier = 2
+
+[[objects.affects]]
+location = 1
+modifier = -2
+
+[[objects.extra_desc]]
+keyword = "cudgel oak oaken limb"
+description = "The cudgel looks quite sturdy, and would make a nice weapon.\r\n"
+[[objects]]
+vnum = 6017
+name = "corpse boar"
+short_descr = "the corpse of a boar"
+description = ""
+type = 15
+extra_flags = "0"
+wear_flags = "0"
+values = [100, 0, 0, 0]
+weight = 500
+cost = 1
+rent = 1
+[[objects]]
+vnum = 6018
+name = "slab meat"
+short_descr = "a large slab of meat"
+description = "A large piece of freshly cut boar meat is on the ground here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [24, 0, 0, 0]
+weight = 15
+cost = 40
+rent = 1
+
+[[objects.extra_desc]]
+keyword = "slab meat"
+description = "It looks quite filling.\r\n"
+[[objects]]
+vnum = 6019
+name = "tusks pair"
+short_descr = "a pair of boar tusks"
+description = "A pair of large boar tusks have been dropped here."
+type = 8
+extra_flags = "0"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 10
+cost = 60
+rent = 1
+
+[[objects.extra_desc]]
+keyword = "tusks pair"
+description = "They look like they might be worth something to a craftsman.\r\n"
+[[objects]]
+vnum = 6020
+name = "log hollow floating"
+short_descr = "a hollow log"
+description = ""
+type = 22
+extra_flags = "0"
+wear_flags = "1"
+values = [0, 0, 0, 0]
+weight = 48
+cost = 2
+rent = 1
+
+[[objects.extra_desc]]
+keyword = "log"
+description = "It looks like it would probably float.\r\n"
+[[objects]]
+vnum = 6021
+name = "nest bird"
+short_descr = "the bird's nest"
+description = ""
+type = 15
+extra_flags = "0"
+wear_flags = "0"
+values = [30, 0, 0, 0]
+weight = 0
+cost = 0
+rent = 0
+[[objects]]
+vnum = 6022
+name = "egg blue robin"
+short_descr = "a blue robin's egg"
+description = "A small bluish egg has been left here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [6, 0, 0, 0]
+weight = 1
+cost = 10
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "egg blue robin"
+description = "It is small, but food nonetheless.\r\n"
+[[objects]]
+vnum = 6023
+name = "meat rabbit"
+short_descr = "a piece of rabbit meat"
+description = "A large piece of rabbit meat."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [12, 0, 0, 0]
+weight = 5
+cost = 29
+rent = 20
+[[objects]]
+vnum = 6024
+name = "meat deer venison"
+short_descr = "a piece of venison"
+description = "A large piece of venison."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [24, 0, 0, 0]
+weight = 10
+cost = 80
+rent = 20

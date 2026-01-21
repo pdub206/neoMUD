@@ -1,0 +1,78 @@
+[[shops]]
+vnum = 3301
+producing = [3300, 3301, 3308, 3309, 3310, -1]
+buy_profit = 1.10
+sell_profit = 0.90
+broke_temper = 2
+bitvector = 2
+keeper = 3304
+trade_with = 0
+rooms = [3350, -1]
+open1 = 8
+close1 = 22
+open2 = 0
+close2 = 0
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s We didn't grow any of those this year."
+no_such_item2 = "%s You don't have that!"
+do_not_buy = "%s I won't buy that!"
+missing_cash1 = "%s I can't buy that!"
+missing_cash2 = "%s You can't buy that!"
+message_buy = "%s Ok, %d coins please!"
+message_sell = "%s Ok, %d coins please!"
+[[shops]]
+vnum = 3302
+producing = [3032, 3037, 3038, 3039, -1]
+buy_profit = 1.10
+sell_profit = 0.90
+broke_temper = 2
+bitvector = 0
+keeper = 3301
+trade_with = 0
+rooms = [3345, -1]
+open1 = 8
+close1 = 22
+open2 = 0
+close2 = 0
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s Could you repeat that please?"
+no_such_item2 = "%s I don't buy!"
+do_not_buy = "%s I don't buy!"
+missing_cash1 = "%s I don't buy!"
+missing_cash2 = "%s But you haven't the money!"
+message_buy = "%s Ok, %d gold please."
+message_sell = "%s Ok, %d gold please."
+[[shops]]
+vnum = 3303
+producing = [3319, 3320, 3321, -1]
+buy_profit = 1.20
+sell_profit = 1.00
+broke_temper = 2
+bitvector = 0
+keeper = 3314
+trade_with = 0
+rooms = [3357, -1]
+open1 = 20
+close1 = 2
+open2 = 11
+close2 = 18
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s I don't know how to make one of those!"
+no_such_item2 = "%s We don't *buy* drinks... we sell 'em!"
+do_not_buy = "%s We don't *buy* drinks... we sell 'em!"
+missing_cash1 = "%s We don't *buy* drinks... we sell 'em!"
+missing_cash2 = "%s I don't give 'em away free, you know!"
+message_buy = "%s That's %d gold."
+message_sell = "%s We don't *buy* drinks... we sell 'em!"

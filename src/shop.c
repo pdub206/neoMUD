@@ -23,6 +23,7 @@
 #include "utils.h"
 #include "shop.h"
 #include "constants.h"
+#include "toml.h"
 
 /* External variables */
 extern struct time_info_data time_info;
@@ -1240,76 +1241,246 @@ char *read_shop_message(int mnum, room_vnum shr, FILE *shop_f, const char *why)
   return (tbuf);
 }
 
+static int toml_int_required(const toml_table_t *tab, const char *key,
+			     const char *context, const char *filename)
+{
+  toml_datum_t val = toml_int_in(tab, key);
+
+  if (!val.ok) {
+    log("SYSERR: TOML file %s missing integer '%s' in %s.", filename, key, context);
+    exit(1);
+  }
+
+  return ((int)val.u.i);
+}
+
+static double toml_double_required(const toml_table_t *tab, const char *key,
+				   const char *context, const char *filename)
+{
+  toml_datum_t val = toml_double_in(tab, key);
+
+  if (!val.ok) {
+    log("SYSERR: TOML file %s missing double '%s' in %s.", filename, key, context);
+    exit(1);
+  }
+
+  return (val.u.d);
+}
+
+static char *toml_string_optional(const toml_table_t *tab, const char *key)
+{
+  toml_datum_t val = toml_string_in(tab, key);
+
+  if (!val.ok)
+    return (NULL);
+
+  if (val.u.s && !*val.u.s) {
+    free(val.u.s);
+    return (NULL);
+  }
+
+  return (val.u.s);
+}
+
+static toml_array_t *toml_array_required(const toml_table_t *tab, const char *key,
+					 const char *context, const char *filename)
+{
+  toml_array_t *arr = toml_array_in(tab, key);
+
+  if (!arr) {
+    log("SYSERR: TOML file %s missing array '%s' in %s.", filename, key, context);
+    exit(1);
+  }
+
+  return (arr);
+}
+
+static char *validate_shop_message(char *msg, int mnum, room_vnum shr)
+{
+  int cht, ss = 0, ds = 0, err = 0;
+
+  if (!msg)
+    return (NULL);
+
+  for (cht = 0; msg[cht]; cht++) {
+    if (msg[cht] != '%')
+      continue;
+
+    if (msg[cht + 1] == 's')
+      ss++;
+    else if (msg[cht + 1] == 'd' && (mnum == 5 || mnum == 6)) {
+      if (ss == 0) {
+        log("SYSERR: Shop #%d has %%d before %%s, message #%d.", shr, mnum);
+        err++;
+      }
+      ds++;
+    } else if (msg[cht + 1] != '%') {
+      log("SYSERR: Shop #%d has invalid format '%%%c' in message #%d.", shr, msg[cht + 1], mnum);
+      err++;
+    }
+  }
+
+  if (ss > 1 || ds > 1) {
+    log("SYSERR: Shop #%d has too many specifiers for message #%d. %%s=%d %%d=%d", shr, mnum, ss, ds);
+    err++;
+  }
+
+  if (err) {
+    free(msg);
+    return (NULL);
+  }
+
+  return (msg);
+}
+
+static char *shop_message_from_toml(toml_table_t *msgs, const char *key,
+				    int mnum, room_vnum shr)
+{
+  char *msg = toml_string_optional(msgs, key);
+
+  return (validate_shop_message(msg, mnum, shr));
+}
+
 
 void boot_the_shops(FILE *shop_f, char *filename, int rec_count)
 {
-  char *buf, buf2[256];
-  int temp, count, new_format = FALSE;
-  struct shop_buy_data list[MAX_SHOP_OBJ + 1];
-  int done = FALSE;
+  char errbuf[256];
+  toml_table_t *tab;
+  toml_array_t *shops;
+  int i, count;
 
-  snprintf(buf2, sizeof(buf2), "beginning of shop file %s", filename);
-
-  while (!done) {
-    buf = fread_string(shop_f, buf2);
-    if (*buf == '#') {		/* New shop */
-      sscanf(buf, "#%d\n", &temp);
-      snprintf(buf2, sizeof(buf2), "shop #%d in shop file %s", temp, filename);
-      free(buf);		/* Plug memory leak! */
-      top_shop++;
-      if (!top_shop)
-	CREATE(shop_index, struct shop_data, rec_count);
-      SHOP_NUM(top_shop) = temp;
-      temp = read_list(shop_f, list, new_format, MAX_PROD, LIST_PRODUCE);
-      CREATE(shop_index[top_shop].producing, obj_vnum, temp);
-      for (count = 0; count < temp; count++)
-	SHOP_PRODUCT(top_shop, count) = BUY_TYPE(list[count]);
-
-      read_line(shop_f, "%f", &SHOP_BUYPROFIT(top_shop));
-      read_line(shop_f, "%f", &SHOP_SELLPROFIT(top_shop));
-
-      temp = read_type_list(shop_f, list, new_format, MAX_TRADE);
-      CREATE(shop_index[top_shop].type, struct shop_buy_data, temp);
-      for (count = 0; count < temp; count++) {
-	SHOP_BUYTYPE(top_shop, count) = BUY_TYPE(list[count]);
-	SHOP_BUYWORD(top_shop, count) = BUY_WORD(list[count]);
-      }
-
-      shop_index[top_shop].no_such_item1 = read_shop_message(0, SHOP_NUM(top_shop), shop_f, buf2);
-      shop_index[top_shop].no_such_item2 = read_shop_message(1, SHOP_NUM(top_shop), shop_f, buf2);
-      shop_index[top_shop].do_not_buy = read_shop_message(2, SHOP_NUM(top_shop), shop_f, buf2);
-      shop_index[top_shop].missing_cash1 = read_shop_message(3, SHOP_NUM(top_shop), shop_f, buf2);
-      shop_index[top_shop].missing_cash2 = read_shop_message(4, SHOP_NUM(top_shop), shop_f, buf2);
-      shop_index[top_shop].message_buy = read_shop_message(5, SHOP_NUM(top_shop), shop_f, buf2);
-      shop_index[top_shop].message_sell = read_shop_message(6, SHOP_NUM(top_shop), shop_f, buf2);
-      read_line(shop_f, "%d", &SHOP_BROKE_TEMPER(top_shop));
-      read_line(shop_f, "%d", &SHOP_BITVECTOR(top_shop));
-      read_line(shop_f, "%hd", &SHOP_KEEPER(top_shop));
-
-      SHOP_KEEPER(top_shop) = real_mobile(SHOP_KEEPER(top_shop));
-      read_line(shop_f, "%d", &SHOP_TRADE_WITH(top_shop));
-
-      temp = read_list(shop_f, list, new_format, 1, LIST_ROOM);
-      CREATE(shop_index[top_shop].in_room, room_vnum, temp);
-      for (count = 0; count < temp; count++)
-	SHOP_ROOM(top_shop, count) = BUY_TYPE(list[count]);
-
-      read_line(shop_f, "%d", &SHOP_OPEN1(top_shop));
-      read_line(shop_f, "%d", &SHOP_CLOSE1(top_shop));
-      read_line(shop_f, "%d", &SHOP_OPEN2(top_shop));
-      read_line(shop_f, "%d", &SHOP_CLOSE2(top_shop));
-
-      SHOP_BANK(top_shop) = 0;
-      SHOP_SORT(top_shop) = 0;
-      SHOP_FUNC(top_shop) = NULL;
-    } else {
-      if (*buf == '$')		/* EOF */
-	done = TRUE;
-      else if (strstr(buf, VERSION3_TAG))	/* New format marker */
-	new_format = TRUE;
-      free(buf);		/* Plug memory leak! */
-    }
+  tab = toml_parse_file(shop_f, errbuf, sizeof(errbuf));
+  if (!tab) {
+    log("SYSERR: TOML parse error in %s: %s", filename, errbuf);
+    exit(1);
   }
+
+  shops = toml_array_required(tab, "shops", "top-level", filename);
+  count = toml_array_nelem(shops);
+
+  for (i = 0; i < count; i++) {
+    toml_table_t *shop = toml_table_at(shops, i);
+    toml_array_t *producing, *trade, *rooms;
+    toml_table_t *msgs;
+    int j, prod_count, trade_count, room_count;
+    char buf2[256];
+
+    if (!shop) {
+      log("SYSERR: TOML file %s has non-table shop entry.", filename);
+      toml_free(tab);
+      exit(1);
+    }
+
+    top_shop++;
+    if (!top_shop)
+      CREATE(shop_index, struct shop_data, rec_count);
+
+    SHOP_NUM(top_shop) = toml_int_required(shop, "vnum", "shop entry", filename);
+    snprintf(buf2, sizeof(buf2), "shop #%d in shop file %s", SHOP_NUM(top_shop), filename);
+
+    producing = toml_array_in(shop, "producing");
+    if (producing) {
+      prod_count = toml_array_nelem(producing);
+      CREATE(shop_index[top_shop].producing, obj_vnum, prod_count + 1);
+      for (j = 0; j < prod_count; j++) {
+	toml_datum_t val = toml_int_at(producing, j);
+	if (!val.ok) {
+	  log("SYSERR: Shop #%d has invalid producing entry.", SHOP_NUM(top_shop));
+	  toml_free(tab);
+	  exit(1);
+	}
+	SHOP_PRODUCT(top_shop, j) = real_object((obj_vnum)val.u.i);
+      }
+      SHOP_PRODUCT(top_shop, prod_count) = NOTHING;
+    } else {
+      CREATE(shop_index[top_shop].producing, obj_vnum, 1);
+      SHOP_PRODUCT(top_shop, 0) = NOTHING;
+    }
+
+    SHOP_BUYPROFIT(top_shop) = (float)toml_double_required(shop, "buy_profit", buf2, filename);
+    SHOP_SELLPROFIT(top_shop) = (float)toml_double_required(shop, "sell_profit", buf2, filename);
+
+    trade = toml_array_in(shop, "trade");
+    if (trade) {
+      trade_count = toml_array_nelem(trade);
+      CREATE(shop_index[top_shop].type, struct shop_buy_data, trade_count + 1);
+      for (j = 0; j < trade_count; j++) {
+	toml_table_t *trade_tab = toml_table_at(trade, j);
+	char *word;
+
+	if (!trade_tab) {
+	  log("SYSERR: Shop #%d has non-table trade entry.", SHOP_NUM(top_shop));
+	  toml_free(tab);
+	  exit(1);
+	}
+
+	SHOP_BUYTYPE(top_shop, j) = toml_int_required(trade_tab, "type", buf2, filename);
+	word = toml_string_optional(trade_tab, "word");
+	SHOP_BUYWORD(top_shop, j) = word;
+      }
+      SHOP_BUYTYPE(top_shop, trade_count) = NOTHING;
+      SHOP_BUYWORD(top_shop, trade_count) = NULL;
+    } else {
+      CREATE(shop_index[top_shop].type, struct shop_buy_data, 1);
+      SHOP_BUYTYPE(top_shop, 0) = NOTHING;
+      SHOP_BUYWORD(top_shop, 0) = NULL;
+    }
+
+    msgs = toml_table_in(shop, "messages");
+    if (msgs) {
+      shop_index[top_shop].no_such_item1 = shop_message_from_toml(msgs, "no_such_item1", 0, SHOP_NUM(top_shop));
+      shop_index[top_shop].no_such_item2 = shop_message_from_toml(msgs, "no_such_item2", 1, SHOP_NUM(top_shop));
+      shop_index[top_shop].do_not_buy = shop_message_from_toml(msgs, "do_not_buy", 2, SHOP_NUM(top_shop));
+      shop_index[top_shop].missing_cash1 = shop_message_from_toml(msgs, "missing_cash1", 3, SHOP_NUM(top_shop));
+      shop_index[top_shop].missing_cash2 = shop_message_from_toml(msgs, "missing_cash2", 4, SHOP_NUM(top_shop));
+      shop_index[top_shop].message_buy = shop_message_from_toml(msgs, "message_buy", 5, SHOP_NUM(top_shop));
+      shop_index[top_shop].message_sell = shop_message_from_toml(msgs, "message_sell", 6, SHOP_NUM(top_shop));
+    } else {
+      shop_index[top_shop].no_such_item1 = NULL;
+      shop_index[top_shop].no_such_item2 = NULL;
+      shop_index[top_shop].do_not_buy = NULL;
+      shop_index[top_shop].missing_cash1 = NULL;
+      shop_index[top_shop].missing_cash2 = NULL;
+      shop_index[top_shop].message_buy = NULL;
+      shop_index[top_shop].message_sell = NULL;
+    }
+
+    SHOP_BROKE_TEMPER(top_shop) = toml_int_required(shop, "broke_temper", buf2, filename);
+    SHOP_BITVECTOR(top_shop) = toml_int_required(shop, "bitvector", buf2, filename);
+    SHOP_KEEPER(top_shop) = toml_int_required(shop, "keeper", buf2, filename);
+    SHOP_KEEPER(top_shop) = real_mobile(SHOP_KEEPER(top_shop));
+    SHOP_TRADE_WITH(top_shop) = toml_int_required(shop, "trade_with", buf2, filename);
+
+    rooms = toml_array_in(shop, "rooms");
+    if (rooms) {
+      room_count = toml_array_nelem(rooms);
+      CREATE(shop_index[top_shop].in_room, room_vnum, room_count + 1);
+      for (j = 0; j < room_count; j++) {
+	toml_datum_t val = toml_int_at(rooms, j);
+	if (!val.ok) {
+	  log("SYSERR: Shop #%d has invalid room entry.", SHOP_NUM(top_shop));
+	  toml_free(tab);
+	  exit(1);
+	}
+	SHOP_ROOM(top_shop, j) = (room_vnum)val.u.i;
+      }
+      SHOP_ROOM(top_shop, room_count) = NOWHERE;
+    } else {
+      CREATE(shop_index[top_shop].in_room, room_vnum, 1);
+      SHOP_ROOM(top_shop, 0) = NOWHERE;
+    }
+
+    SHOP_OPEN1(top_shop) = toml_int_required(shop, "open1", buf2, filename);
+    SHOP_CLOSE1(top_shop) = toml_int_required(shop, "close1", buf2, filename);
+    SHOP_OPEN2(top_shop) = toml_int_required(shop, "open2", buf2, filename);
+    SHOP_CLOSE2(top_shop) = toml_int_required(shop, "close2", buf2, filename);
+
+    SHOP_BANK(top_shop) = 0;
+    SHOP_SORT(top_shop) = 0;
+    SHOP_FUNC(top_shop) = NULL;
+  }
+
+  toml_free(tab);
 }
 
 

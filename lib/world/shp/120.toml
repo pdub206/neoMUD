@@ -1,0 +1,168 @@
+[[shops]]
+vnum = 12011
+producing = [3020, 3021, 3022, 3023, 3024, 3025, 12008, -1]
+buy_profit = 2.25
+sell_profit = 0.60
+broke_temper = 0
+bitvector = 0
+keeper = 12011
+trade_with = 0
+rooms = [12006, -1]
+open1 = 0
+close1 = 28
+open2 = 0
+close2 = 0
+
+[[shops.trade]]
+type = 5
+
+[[shops.trade]]
+type = 9
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s We are out of that item right now."
+no_such_item2 = "%s You don't have that.  Stop wasting my time!"
+do_not_buy = "%s This is a weapon and armour shop!  Go someplace else!"
+missing_cash1 = "%s A fine weapon indeed, but more than I can afford."
+missing_cash2 = "%s NO CREDIT!"
+message_buy = "%s Here you go.  That will be %d coins.  Don't get hurt!"
+message_sell = "%s You'll get %d for that."
+[[shops]]
+vnum = 12012
+producing = [12006, 12007, -1]
+buy_profit = 1.20
+sell_profit = 0.60
+broke_temper = 1
+bitvector = 0
+keeper = 12012
+trade_with = 0
+rooms = [12032, -1]
+open1 = 7
+close1 = 13
+open2 = 14
+close2 = 19
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s I don't have anything like that.  Sorry."
+no_such_item2 = "%s I don't think you have that."
+do_not_buy = "%s I don't stock that stuff.  Try another shop."
+missing_cash1 = "%s I can't afford to buy anything, I'm only a poor peddler."
+missing_cash2 = "%s No cash, no goods!"
+message_buy = "%s Here you go.  That'll be... %d coins."
+message_sell = "%s Thank-you very much.  Here are your %d coins as payment."
+[[shops]]
+vnum = 12016
+producing = [-1]
+buy_profit = 1.60
+sell_profit = 0.30
+broke_temper = 1
+bitvector = 0
+keeper = 12016
+trade_with = 0
+rooms = [12003, 12004, 12008, 12015, 12022, 12023, -1]
+open1 = 9
+close1 = 17
+open2 = 18
+close2 = 22
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s We don't sell that."
+no_such_item2 = "%s I don't think you have that."
+do_not_buy = "%s I don't stock that stuff.  Try another shop."
+missing_cash1 = "%s I can't afford to buy anything, I'm only a poor peddler."
+missing_cash2 = "%s No cash, no goods!"
+message_buy = "%s Here you go.  That'll be... %d coins."
+message_sell = "%s Thank-you very much.  Here are your %d coins as payment."
+[[shops]]
+vnum = 12034
+producing = [3050, 3051, 3052, 3053, 3054, 12030, -1]
+buy_profit = 1.85
+sell_profit = 0.50
+broke_temper = 2
+bitvector = 2
+keeper = 12034
+trade_with = 96
+rooms = [12042, -1]
+open1 = 8
+close1 = 18
+open2 = 0
+close2 = 0
+
+[[shops.trade]]
+type = 2
+
+[[shops.trade]]
+type = 3
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s We don't carry that item."
+no_such_item2 = "%s You don't have that."
+do_not_buy = "%s I can't buy that.  See another shop."
+missing_cash1 = "%s We are low on cash.  Come back later."
+missing_cash2 = "%s Sorry, but you can't afford that."
+message_buy = "%s Here you go.  That will cost you %d."
+message_sell = "%s I will give you %d coins for that."
+[[shops]]
+vnum = 12036
+producing = [3000, 3001, 3009, 3010, 3011, 12006, 12007, -1]
+buy_profit = 1.10
+sell_profit = 0.80
+broke_temper = 2
+bitvector = 2
+keeper = 12036
+trade_with = 0
+rooms = [12062, -1]
+open1 = 0
+close1 = 28
+open2 = 0
+close2 = 0
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s We don't have that item in stock right now."
+no_such_item2 = "%s I don't think you have that item."
+do_not_buy = "%s Hmmmm... if I was in a good mood, I'd consider it.  But I'm not."
+missing_cash1 = "%s The Emperor's tax collector just came.  I don't have the cash.  Sorry."
+missing_cash2 = "%s NO CREDIT!  We don't even take the Renaissance Express card!"
+message_buy = "%s That will be %d coins.  Enjoy!"
+message_sell = "%s You'll get %d coins for that."
+[[shops]]
+vnum = 12037
+producing = [3030, 3031, 3032, 3033, 3036, 12003, -1]
+buy_profit = 1.75
+sell_profit = 0.60
+broke_temper = 2
+bitvector = 2
+keeper = 12037
+trade_with = 0
+rooms = [12063, -1]
+open1 = 6
+close1 = 20
+open2 = 0
+close2 = 0
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s We don't have that item on stock."
+no_such_item2 = "%s I don't think you have that."
+do_not_buy = "%s I don't stock that stuff.  Try another shop."
+missing_cash1 = "%s I can't afford it right now.  Come back tomorrow."
+missing_cash2 = "%s No cash, no goods!"
+message_buy = "%s Here you go.  That'll be... %d coins."
+message_sell = "%s Thank-you very much.  Here are your %d coins as payment."

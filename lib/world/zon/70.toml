@@ -1,0 +1,105 @@
+[[zones]]
+vnum = 70
+name = "The Sewer, First Level"
+bot = 7000
+top = 7099
+lifespan = 15
+reset_mode = 2
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7001
+arg2 = 9
+arg3 = 7041
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7001
+arg2 = 9
+arg3 = 7025
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7001
+arg2 = 9
+arg3 = 7004
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7001
+arg2 = 9
+arg3 = 7004
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7002
+arg2 = 3
+arg3 = 7049
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7002
+arg2 = 3
+arg3 = 7031
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7003
+arg2 = 8
+arg3 = 7039
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7003
+arg2 = 8
+arg3 = 7039
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7003
+arg2 = 8
+arg3 = 7039
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7003
+arg2 = 8
+arg3 = 7037
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7003
+arg2 = 8
+arg3 = 7037
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7003
+arg2 = 8
+arg3 = 7050
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 7047
+arg2 = 1
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 7053
+arg2 = 3
+arg3 = 1

@@ -1,0 +1,20 @@
+[[objects]]
+vnum = 7190
+name = "ring silver"
+short_descr = "a glinting silver ring"
+description = "A lovely silver ring has been left here."
+type = 11
+extra_flags = "g"
+wear_flags = "3"
+values = [0, 0, 10, 0]
+weight = 9
+cost = 16000
+rent = 5000
+
+[[objects.affects]]
+location = 17
+modifier = -10
+
+[[objects.affects]]
+location = 18
+modifier = 2

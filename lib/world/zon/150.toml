@@ -1,0 +1,939 @@
+[[zones]]
+vnum = 150
+name = "King Welmar's Castle"
+bot = 15000
+top = 15099
+lifespan = 120
+reset_mode = 2
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15001
+arg2 = 1
+arg3 = 15017
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 15002
+arg2 = 1
+arg3 = 17
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 15003
+arg2 = 1
+arg3 = 6
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 15004
+arg2 = 1
+arg3 = 0
+
+[[zones.commands]]
+command = "G"
+if_flag = 1
+arg1 = 15014
+arg2 = 1
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15003
+arg2 = 1
+arg3 = 15042
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 3022
+arg2 = 100
+arg3 = 16
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 15015
+arg2 = 50
+arg3 = 5
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15004
+arg2 = 1
+arg3 = 15023
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 15006
+arg2 = 100
+arg3 = 16
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 15015
+arg2 = 50
+arg3 = 5
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15005
+arg2 = 1
+arg3 = 15023
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 15006
+arg2 = 100
+arg3 = 16
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 15015
+arg2 = 50
+arg3 = 5
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15006
+arg2 = 1
+arg3 = 15035
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 3022
+arg2 = 100
+arg3 = 16
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 15015
+arg2 = 50
+arg3 = 5
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15007
+arg2 = 1
+arg3 = 15028
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 3022
+arg2 = 100
+arg3 = 16
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 15015
+arg2 = 50
+arg3 = 5
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15008
+arg2 = 1
+arg3 = 15023
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 3022
+arg2 = 100
+arg3 = 16
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 15015
+arg2 = 50
+arg3 = 5
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15009
+arg2 = 1
+arg3 = 15008
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 3022
+arg2 = 100
+arg3 = 16
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 15015
+arg2 = 50
+arg3 = 5
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15010
+arg2 = 1
+arg3 = 15032
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 3022
+arg2 = 100
+arg3 = 16
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 15015
+arg2 = 50
+arg3 = 5
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15011
+arg2 = 1
+arg3 = 15019
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 3022
+arg2 = 100
+arg3 = 16
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 15015
+arg2 = 50
+arg3 = 5
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15012
+arg2 = 1
+arg3 = 15023
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 15015
+arg2 = 50
+arg3 = 5
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 15016
+arg2 = 10
+arg3 = 16
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15013
+arg2 = 1
+arg3 = 15023
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 3022
+arg2 = 100
+arg3 = 16
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15014
+arg2 = 1
+arg3 = 15017
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15016
+arg2 = 1
+arg3 = 15027
+
+[[zones.commands]]
+command = "G"
+if_flag = 1
+arg1 = 15009
+arg2 = 1
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15017
+arg2 = 5
+arg3 = 15010
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15017
+arg2 = 5
+arg3 = 15010
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15017
+arg2 = 5
+arg3 = 15041
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15017
+arg2 = 5
+arg3 = 15041
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15017
+arg2 = 5
+arg3 = 15038
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15019
+arg2 = 1
+arg3 = 15052
+
+[[zones.commands]]
+command = "G"
+if_flag = 1
+arg1 = 3052
+arg2 = 100
+
+[[zones.commands]]
+command = "G"
+if_flag = 1
+arg1 = 3050
+arg2 = 100
+
+[[zones.commands]]
+command = "G"
+if_flag = 1
+arg1 = 15012
+arg2 = 10
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15020
+arg2 = 1
+arg3 = 15017
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 3022
+arg2 = 100
+arg3 = 16
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 15015
+arg2 = 50
+arg3 = 5
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15021
+arg2 = 1
+arg3 = 15017
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 3022
+arg2 = 100
+arg3 = 16
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 15015
+arg2 = 50
+arg3 = 5
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15022
+arg2 = 1
+arg3 = 15005
+
+[[zones.commands]]
+command = "G"
+if_flag = 1
+arg1 = 15019
+arg2 = 50
+
+[[zones.commands]]
+command = "G"
+if_flag = 1
+arg1 = 15020
+arg2 = 50
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15023
+arg2 = 2
+arg3 = 15005
+
+[[zones.commands]]
+command = "G"
+if_flag = 1
+arg1 = 15010
+arg2 = 1
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15023
+arg2 = 2
+arg3 = 15005
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15024
+arg2 = 1
+arg3 = 15036
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 3022
+arg2 = 100
+arg3 = 16
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 15015
+arg2 = 50
+arg3 = 5
+
+[[zones.commands]]
+command = "G"
+if_flag = 1
+arg1 = 15007
+arg2 = 1
+
+[[zones.commands]]
+command = "M"
+if_flag = 1
+arg1 = 15025
+arg2 = 1
+arg3 = 15036
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 3022
+arg2 = 100
+arg3 = 16
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 15015
+arg2 = 50
+arg3 = 5
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15026
+arg2 = 1
+arg3 = 15008
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 3022
+arg2 = 100
+arg3 = 16
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 15015
+arg2 = 50
+arg3 = 5
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15027
+arg2 = 1
+arg3 = 15008
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 3022
+arg2 = 100
+arg3 = 16
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 15015
+arg2 = 50
+arg3 = 5
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15028
+arg2 = 1
+arg3 = 15047
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 3022
+arg2 = 100
+arg3 = 16
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 15015
+arg2 = 50
+arg3 = 5
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15029
+arg2 = 1
+arg3 = 15009
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 3022
+arg2 = 100
+arg3 = 16
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 15015
+arg2 = 50
+arg3 = 5
+
+[[zones.commands]]
+command = "R"
+if_flag = 0
+arg1 = 15023
+arg2 = 3020
+
+[[zones.commands]]
+command = "O"
+if_flag = 0
+arg1 = 3020
+arg2 = 100
+arg3 = 15023
+
+[[zones.commands]]
+command = "R"
+if_flag = 0
+arg1 = 15023
+arg2 = 3021
+
+[[zones.commands]]
+command = "O"
+if_flag = 0
+arg1 = 3021
+arg2 = 100
+arg3 = 15023
+
+[[zones.commands]]
+command = "R"
+if_flag = 0
+arg1 = 15023
+arg2 = 3022
+
+[[zones.commands]]
+command = "O"
+if_flag = 0
+arg1 = 3022
+arg2 = 100
+arg3 = 15023
+
+[[zones.commands]]
+command = "O"
+if_flag = 1
+arg1 = 15001
+arg2 = 1
+arg3 = 15037
+
+[[zones.commands]]
+command = "O"
+if_flag = 0
+arg1 = 15005
+arg2 = 1
+arg3 = 15052
+
+[[zones.commands]]
+command = "O"
+if_flag = 0
+arg1 = 15011
+arg2 = 1
+arg3 = 15026
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15004
+arg2 = 0
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15007
+arg2 = 2
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15007
+arg2 = 3
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15006
+arg2 = 1
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15020
+arg2 = 1
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15021
+arg2 = 3
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15021
+arg2 = 0
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15026
+arg2 = 2
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15022
+arg2 = 0
+arg3 = 2
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15027
+arg2 = 2
+arg3 = 2
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15023
+arg2 = 0
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15028
+arg2 = 2
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15036
+arg2 = 1
+arg3 = 2
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15037
+arg2 = 3
+arg3 = 2
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15038
+arg2 = 0
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15043
+arg2 = 2
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15038
+arg2 = 1
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15039
+arg2 = 3
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15049
+arg2 = 1
+arg3 = 2
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15050
+arg2 = 3
+arg3 = 2
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15000
+arg2 = 1
+arg3 = 15056
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 3022
+arg2 = 100
+arg3 = 16
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 15015
+arg2 = 50
+arg3 = 5
+
+[[zones.commands]]
+command = "G"
+if_flag = 1
+arg1 = 15017
+arg2 = 1
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15002
+arg2 = 1
+arg3 = 15069
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15015
+arg2 = 1
+arg3 = 15059
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15018
+arg2 = 2
+arg3 = 15058
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15018
+arg2 = 2
+arg3 = 15058
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15030
+arg2 = 2
+arg3 = 15067
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15030
+arg2 = 2
+arg3 = 15067
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15031
+arg2 = 2
+arg3 = 15067
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15031
+arg2 = 2
+arg3 = 15067
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 15032
+arg2 = 1
+arg3 = 15074
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 15008
+arg2 = 3
+arg3 = 16
+
+[[zones.commands]]
+command = "O"
+if_flag = 0
+arg1 = 15013
+arg2 = 1
+arg3 = 15054
+
+[[zones.commands]]
+command = "O"
+if_flag = 0
+arg1 = 15018
+arg2 = 1
+arg3 = 15070
+
+[[zones.commands]]
+command = "O"
+if_flag = 0
+arg1 = 15021
+arg2 = 1
+arg3 = 15073
+
+[[zones.commands]]
+command = "O"
+if_flag = 0
+arg1 = 15022
+arg2 = 1
+arg3 = 15065
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15056
+arg2 = 2
+arg3 = 2
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15057
+arg2 = 0
+arg3 = 2
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15057
+arg2 = 1
+arg3 = 2
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15060
+arg2 = 3
+arg3 = 2
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15057
+arg2 = 2
+arg3 = 2
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15059
+arg2 = 0
+arg3 = 2
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15057
+arg2 = 3
+arg3 = 2
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 15058
+arg2 = 1
+arg3 = 2

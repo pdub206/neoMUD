@@ -1,0 +1,154 @@
+[[zones]]
+vnum = 73
+name = "The Tunnels In The Sewer"
+bot = 7300
+top = 7399
+lifespan = 25
+reset_mode = 2
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7040
+arg2 = 1
+arg3 = 7328
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7041
+arg2 = 2
+arg3 = 7344
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7042
+arg2 = 2
+arg3 = 7335
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7043
+arg2 = 3
+arg3 = 7339
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7044
+arg2 = 6
+arg3 = 7306
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7045
+arg2 = 1
+arg3 = 7319
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7046
+arg2 = 1
+arg3 = 7324
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7010
+arg2 = 2
+arg3 = 7329
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 7304
+arg2 = 2
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 7305
+arg2 = 0
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 7305
+arg2 = 2
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 7306
+arg2 = 0
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 7315
+arg2 = 0
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 7316
+arg2 = 2
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 7321
+arg2 = 3
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 7318
+arg2 = 1
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 7324
+arg2 = 0
+arg3 = 2
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 7324
+arg2 = 2
+arg3 = 2
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 7324
+arg2 = 1
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 7325
+arg2 = 3
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 7333
+arg2 = 3
+arg3 = 1

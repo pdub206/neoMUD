@@ -1,0 +1,1168 @@
+[[rooms]]
+vnum = 3100
+name = "The Northwest End Of The Concourse"
+description = "   You are at the concourse, the city wall is just west.  A small promenade\r\ngoes east, and the bridge is just north of here.  The concourse continues\r\nsouth along the city wall.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see the Bridge.\r\n"
+door = 0
+key = -1
+to_room = 3051
+
+[[rooms.exits]]
+dir = 1
+description = "You see the promenade.\r\n"
+door = 0
+key = -1
+to_room = 3101
+
+[[rooms.exits]]
+dir = 2
+description = "The promenade continues far south.\r\n"
+door = 0
+key = -1
+to_room = 3127
+[[rooms]]
+vnum = 3101
+name = "The Promenade"
+description = "   The river gently flows westwards just north of here.  The promenade\r\ncontinues further east and to the west you see the city wall.  Park Road\r\nleads south from here.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "The promenade continues.\r\n"
+door = 0
+key = -1
+to_room = 3102
+
+[[rooms.exits]]
+dir = 2
+description = "Park Road leads south.\r\n"
+door = 0
+key = -1
+to_room = 3131
+
+[[rooms.exits]]
+dir = 3
+description = "You see the Concourse.\r\n"
+door = 0
+key = -1
+to_room = 3100
+[[rooms]]
+vnum = 3102
+name = "The Promenade"
+description = "   The river gently flows westwards just north of here.  The promenade\r\ncontinues both east and west.  South of here you see the entrance to\r\nthe park, and a small building seems to be just west of the entrance.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "You see the promenade.\r\n"
+door = 0
+key = -1
+to_room = 3103
+
+[[rooms.exits]]
+dir = 2
+description = "You see the park entrance.\r\n"
+door = 0
+key = -1
+to_room = 3105
+
+[[rooms.exits]]
+dir = 3
+description = "You see the promenade.\r\n"
+door = 0
+key = -1
+to_room = 3101
+[[rooms]]
+vnum = 3103
+name = "The Promenade"
+description = "   The river gently flows westwards just north of here.  The promenade\r\ncontinues both east and west.  A small path leads south.  Looking across\r\nthe river you see the levee.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "You see the Concourse.\r\n"
+door = 0
+key = -1
+to_room = 3104
+
+[[rooms.exits]]
+dir = 2
+description = "The small path leads south.\r\n"
+door = 0
+key = -1
+to_room = 3132
+
+[[rooms.exits]]
+dir = 3
+description = "You see the promenade.\r\n"
+door = 0
+key = -1
+to_room = 3102
+[[rooms]]
+vnum = 3104
+name = "The Northeast End Of The Concourse"
+description = "   You are at the Concourse.  The city wall is just east and a small\r\npromenade goes west.  Looking across the river you see a building that\r\nresembles a warehouse.  The Concourse continues south along the city\r\nwall.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 2
+description = "The Concourse continues south.\r\n"
+door = 0
+key = -1
+to_room = 3130
+
+[[rooms.exits]]
+dir = 3
+description = "You see the promenade.\r\n"
+door = 0
+key = -1
+to_room = 3103
+
+[[rooms.extra]]
+keyword = "wall"
+description = "It is built from large grey rocks that have been fastened to each other with\r\nsome kind of mortar.  It is far too high to climb.\r\n"
+[[rooms]]
+vnum = 3105
+name = "The Park Entrance"
+description = "   You are standing just inside the small park of Midgaard.  To the north is\r\nthe promenade and a small path leads south into the park.  To your east is\r\nthe famous Park Cafe.\r\n"
+flags = "c"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see the promenade.\r\n"
+door = 0
+key = -1
+to_room = 3102
+
+[[rooms.exits]]
+dir = 1
+description = "You see Park Cafe.\r\n"
+door = 0
+key = -1
+to_room = 3106
+
+[[rooms.exits]]
+dir = 2
+description = "You see the park.\r\n"
+door = 0
+key = -1
+to_room = 3108
+[[rooms]]
+vnum = 3106
+name = "Park Cafe"
+description = "   You are inside Park Cafe, a very cozy place with many tables and\r\nseats where you can relax and enjoy the view.  To the east you can\r\nsee the entrance to the park.\r\n"
+flags = "dh"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+description = "You see the park entrance.\r\n"
+door = 0
+key = -1
+to_room = 3105
+[[rooms]]
+vnum = 3107
+name = "A Small Path In The Park"
+description = "   You are walking along a small path through the park.  The path continues\r\nsouth and east.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3108
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3113
+[[rooms]]
+vnum = 3108
+name = "A Small Path In The Park"
+description = "   You are standing on a small path inside the park.  The park entrance is\r\njust north of here, and Park Cafe is just east of the entrance.  The path\r\nleads further east and west.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see the northern park entrance.\r\n"
+door = 0
+key = -1
+to_room = 3105
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3109
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3107
+[[rooms]]
+vnum = 3109
+name = "A Small Path In The Park"
+description = "   You are on a small path running through the park.  It continues west and\r\nsouth and just north of here you see the southern wall of Park Cafe.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3115
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3108
+[[rooms]]
+vnum = 3110
+name = "Cityguard HeadQuarters"
+description = "   You are inside a tidy office.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "You see Park Road.\r\n"
+keyword = "door"
+door = 1
+key = 3105
+to_room = 3111
+[[rooms]]
+vnum = 3111
+name = "Park Road"
+description = "   The road continues north and south.  A building is just west of here, you\r\nnotice a sign on the door.  The park entrance is to the east.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3131
+
+[[rooms.exits]]
+dir = 1
+description = "You see the park entrance.\r\n"
+door = 0
+key = -1
+to_room = 3112
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3118
+
+[[rooms.exits]]
+dir = 3
+description = "You see the Cityguard HeadQuarters.\r\n"
+keyword = "door"
+door = 1
+key = 3105
+to_room = 3110
+
+[[rooms.extra]]
+keyword = "building door sign"
+description = "The sign on the door says:\r\n\r\n                 Cityguard HeadQuarters\r\n\r\n           WARNING: Authorized Personnel Only!\r\n\r\n"
+[[rooms]]
+vnum = 3112
+name = "The Western Park Entrance"
+description = "   You are standing at the western end of the park.  A small path leads east\r\ninto the park and going west through the entrance you will reach Park Road.\r\n"
+flags = "c"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3113
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3111
+[[rooms]]
+vnum = 3113
+name = "A Path In The Park"
+description = "   You are in the park.  The paths lead north and west.  Westward is the\r\npark entrance and to the east you see a small pond.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3107
+
+[[rooms.exits]]
+dir = 1
+description = "You see the pond.\r\n"
+door = 0
+key = -1
+to_room = 3114
+
+[[rooms.exits]]
+dir = 3
+description = "You see the western park entrance.\r\n"
+door = 0
+key = -1
+to_room = 3112
+[[rooms]]
+vnum = 3114
+name = "The Pond"
+description = "   You are swimming around in the pond, feeling rather stupid.  You can get\r\nback on the path from the eastern and western end of the pond.\r\n"
+flags = "0"
+sector = 6
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3115
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3113
+[[rooms]]
+vnum = 3115
+name = "A Path In The Park"
+description = "   You are in the park.  The paths lead north and east.  Eastward is the\r\npark entrance and to the west you see a small pond.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3109
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3116
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3114
+[[rooms]]
+vnum = 3116
+name = "The Eastern Park Entrance"
+description = "   You are standing at the eastern end of the park.  A small path leads west\r\ninto the park.  Going east through the entrance you will reach Emerald\r\nAvenue.\r\n"
+flags = "c"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3117
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3115
+[[rooms]]
+vnum = 3117
+name = "Emerald Avenue"
+description = "   You are standing on the north end of Emerald Avenue.  To the north is the\r\npromenade and to the west is the park entrance.  To the east is the not very\r\nbig Town Hall of Midgaard.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3132
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3137
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3119
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3116
+[[rooms]]
+vnum = 3118
+name = "Park Road"
+description = "   You are on Park Road which leads north and south.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3111
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3135
+[[rooms]]
+vnum = 3119
+name = "Emerald Avenue"
+description = "   You are standing at a bend on Emerald Avenue.  The road leads north and\r\nwest.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3117
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3133
+[[rooms]]
+vnum = 3120
+name = "The Road Crossing"
+description = "   You are in the middle of the road cross.  Roads lead in all directions.\r\nA huge black iron chain as thick as a tree trunk is fastened into the ground\r\nat the center of the road cross.  Its other end leads directly upwards towards\r\nthe sky.\r\nA road sign is here.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3133
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3136
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3134
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3135
+
+[[rooms.exits]]
+dir = 4
+description = "The chain disappears in the clouds.\r\n"
+door = 0
+key = -1
+to_room = 7914
+
+[[rooms.extra]]
+keyword = "chain"
+description = "The chain reaches the clouds high above you.  It must take some really\r\npowerful magic to hold such a chain in place.\r\n"
+
+[[rooms.extra]]
+keyword = "sign"
+description = "The sign points in all directions:\r\n\r\n   North - Emerald Avenue.\r\n   East  - Park Road.\r\n   South - Emerald Avenue.\r\n   West  - Park Road.\r\n\r\nSomeone has added the following with red paint:\r\n\r\n   Up    - Redferne's Flying Citadel.\r\n\r\n"
+[[rooms]]
+vnum = 3121
+name = "Emerald Avenue"
+description = "   You are standing at a bend on Emerald Avenue.  The road leads south and\r\neast.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3134
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3125
+[[rooms]]
+vnum = 3122
+name = "Park Road"
+description = "   You are on Park Road which leads south and north.  Elm Street is east of\r\nhere.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3136
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3123
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3126
+[[rooms]]
+vnum = 3123
+name = "Elm Street"
+description = "   You are on Elm street.  Park Road is to the west and Elm Street continues\r\nin eastward direction.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3124
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3122
+[[rooms]]
+vnum = 3124
+name = "The End Of Elm Street"
+description = "   You are at the end of Elm Street.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3123
+[[rooms]]
+vnum = 3125
+name = "Emerald Avenue"
+description = "   You are on Emerald Avenue which continues north.  The Concourse is south\r\nof here.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3121
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3128
+[[rooms]]
+vnum = 3126
+name = "Park Road"
+description = "   You are on Park Road which continues north.  The Concourse is south of\r\nhere.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3122
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3129
+[[rooms]]
+vnum = 3127
+name = "On The Concourse"
+description = "   You are at the southwest corner of the city wall.  The Concourse leads\r\nboth north and east.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3100
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3128
+
+[[rooms.exits]]
+dir = 3
+description = "Through the South Gate you can see a small path leading southwards.\r\n"
+door = 0
+key = -1
+to_room = 3504
+[[rooms]]
+vnum = 3128
+name = "On The Concourse"
+description = "   The Concourse continues both east and west.  Emerald Avenue is north of\r\nhere.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3125
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3129
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3127
+[[rooms]]
+vnum = 3129
+name = "On The Concourse"
+description = "   The Concourse continues both east and west.  Park Road is north of here\r\nand an iron grate leads south to the graveyard.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3126
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3130
+
+[[rooms.exits]]
+dir = 2
+description = "Through the solid iron bars you see the graveyard.\r\n"
+keyword = "grate"
+door = 2
+key = 3106
+to_room = 3150
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3128
+[[rooms]]
+vnum = 3130
+name = "On The Concourse"
+description = "   You are at the southeast corner of the city wall.  The Concourse leads\r\nboth north and west.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3104
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3129
+[[rooms]]
+vnum = 3131
+name = "Park Road"
+description = "   You are at Park Road which continues north and south.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3101
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3111
+[[rooms]]
+vnum = 3132
+name = "Emerald Avenue"
+description = "   You are at Emerald Avenue which continues north and south.  Penny Lane leads\r\neast from here.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3103
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3139
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3117
+[[rooms]]
+vnum = 3133
+name = "Emerald Avenue"
+description = "   You are standing at a bend on Emerald Avenue.  To the east the road goes on\r\nand to the south is the Road Crossing.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3119
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3120
+[[rooms]]
+vnum = 3134
+name = "Emerald Avenue"
+description = "   You are standing at a bend on Emerald Avenue.  To the west the road goes on\r\nand to the north is the Road Crossing.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3120
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3121
+[[rooms]]
+vnum = 3135
+name = "Park Road"
+description = "   You are at a bend on Park Road.  To the north the road goes on and to the\r\neast is the Road Crossing.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3118
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3120
+[[rooms]]
+vnum = 3136
+name = "Park Road"
+description = "   You are at a bend on Park Road.  To the south the road goes on and to the\r\nwest is the Road Crossing.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3122
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3120
+[[rooms]]
+vnum = 3137
+name = "The Waiting Room"
+description = "   You are standing in the waiting room at the town hall.  Wooden chairs stand\r\nalong the walls and a long desk with a typewriter is placed in the middle of\r\nthe room.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "It looks like some kind of office.\r\n"
+door = 0
+key = -1
+to_room = 3138
+
+[[rooms.exits]]
+dir = 3
+description = "The exit west leads to Emerald Avenue.\r\n"
+door = 0
+key = -1
+to_room = 3117
+
+[[rooms.extra]]
+keyword = "typewriter"
+description = "It is an ancient Quifatronic T-1000 mk I.  These machines are known for their\r\nincredible durability, and for their even more incredible weight.  They make\r\na Cray II look like a laptop.\r\n"
+
+[[rooms.extra]]
+keyword = "desk"
+description = "An extremely heavy desk.  It is so large that it doesn't even need drawers.\r\nEverything can be stored on its top.\r\n"
+
+[[rooms.extra]]
+keyword = "chair chairs"
+description = "Not the very least comfortable.\r\n"
+[[rooms]]
+vnum = 3138
+name = "The Mayor's Office"
+description = "   You are in the not very big office of the Mayor of Midgaard.  A large and\r\npolished but completely empty desk is standing in front of an armchair that\r\nlooks so comfortable that it most of all resembles a bed with the head end\r\nraised slightly.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+description = "The waiting room is to the west.\r\n"
+door = 0
+key = -1
+to_room = 3137
+
+[[rooms.extra]]
+keyword = "chair armchair"
+description = "This chair is really a masterpiece.  A chair where one can sit as comfortably\r\nas in a bed.  All auditoriums should be equipped with these things.  A shame\r\nthat there wouldn't be room for the students too, though.\r\n"
+
+[[rooms.extra]]
+keyword = "desk"
+description = "This desk is obviously very old.  Nevertheless it looks as if has never been\r\nused.\r\n"
+[[rooms]]
+vnum = 3139
+name = "Penny Lane"
+description = "   You are on Penny Lane.  Emerald Avenue is to the west and Penny Lane\r\ncontinues in eastward direction.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3140
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3132
+[[rooms]]
+vnum = 3140
+name = "Penny Lane"
+description = "   You are on Penny Lane.  The narrow road continues north and west.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3141
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3139
+[[rooms]]
+vnum = 3141
+name = "The End Of Penny Lane"
+description = "   You are at the end of Penny Lane.  The only exit appears to be south.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3140
+[[rooms]]
+vnum = 3150
+name = "A Gravel Road In The Graveyard"
+description = "   You are on a well-kept gravel road that leads north-south through the\r\ngraveyard.  On both sides of the road grow dark evergreen trees.  An iron\r\ngrate is to the north.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Through the solid iron bars you see the Concourse.\r\n"
+keyword = "grate"
+door = 2
+key = 3106
+to_room = 3129
+
+[[rooms.exits]]
+dir = 2
+description = "The gravel road continues southward.\r\n"
+door = 0
+key = -1
+to_room = 3151
+[[rooms]]
+vnum = 3151
+name = "A Gravel Road In The Graveyard"
+description = "  You are on a well-kept gravel road that leads north-south through the\r\ngraveyard.  On both sides of the road grow dark evergreen trees.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "The gravel road continues northwards.\r\n"
+door = 0
+key = -1
+to_room = 3150
+
+[[rooms.exits]]
+dir = 2
+description = "The gravel road continues southward.\r\n"
+door = 0
+key = -1
+to_room = 3152
+[[rooms]]
+vnum = 3152
+name = "A Gravel Road In The Graveyard"
+description = "  You are on a well-kept gravel road that leads north-south through the\r\ngraveyard.  On both sides of the road grow dark evergreen trees.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "The gravel road continues northwards.\r\n"
+door = 0
+key = -1
+to_room = 3151
+
+[[rooms.exits]]
+dir = 2
+description = "The gravel road continues southward.\r\n"
+door = 0
+key = -1
+to_room = 3153
+[[rooms]]
+vnum = 3153
+name = "A Gravel Road In The Graveyard"
+description = "  You are on a well-kept gravel road that leads north-south through the\r\ngraveyard.  On both sides of the road grow dark evergreen trees.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "The gravel road continues northwards.\r\n"
+door = 0
+key = -1
+to_room = 3152
+
+[[rooms.exits]]
+dir = 2
+description = "The gravel road continues southward to an open space before a small\r\nbuilding.\r\n"
+door = 0
+key = -1
+to_room = 3154
+[[rooms]]
+vnum = 3154
+name = "In Front Of The Chapel"
+description = "   You are on an open space before a small chapel.  A gravel road leads north\r\nthrough the graveyard and the chapel entrance is to the south.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "The gravel road continues northwards.\r\n"
+door = 0
+key = -1
+to_room = 3153
+
+[[rooms.exits]]
+dir = 2
+description = "The chapel door is made of dark wood.\r\n"
+keyword = "door"
+door = 1
+key = -1
+to_room = 3155
+[[rooms]]
+vnum = 3155
+name = "Inside The Chapel"
+description = "   You are in a small, dark chapel.  The dark brown glass in the tiny windows\r\ndo not let much light through.  A few rows of worn wooden benches stand here\r\nand an ancient altar sits in the middle of the floor.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "The chapel door is made of dark wood.\r\n"
+keyword = "door"
+door = 1
+key = -1
+to_room = 3154
+
+[[rooms.extra]]
+keyword = "benches rows"
+description = "The benches are not of the comfortable kind.\r\n"
+
+[[rooms.extra]]
+keyword = "altar"
+description = "The altar looks very old... you examine the floor around the altar and notice\r\nthat it seems less dusty than the rest of the room... someone must clean here\r\nregularly... maybe that old guy in Park Cafe, he looked like that sort...\r\n"
+
+[[rooms.extra]]
+keyword = "glass windows"
+description = "The windows must be meant to be dark.  At least they are completely clean.\r\n"
+[[rooms]]
+vnum = 3200
+name = "Under The Bridge"
+description = "   The arch under the bridge is covered by seaweed about a foot above the\r\nsurface of the river.  The water gently flows through an opening in the lower\r\npart of the city wall.\r\n"
+flags = "0"
+sector = 7
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3201
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 900
+
+[[rooms.extra]]
+keyword = "wall"
+description = "It is built from large grey rocks that have been fastened to each other with\r\nsome kind of mortar.  Looks pretty solid.\r\n"
+[[rooms]]
+vnum = 3201
+name = "On The River"
+description = "   North of here you see the miserable buildings of Poor Alley.  The\r\nriver flows west towards the bridge.  The riverbanks are too steep to\r\nclimb.\r\n"
+flags = "0"
+sector = 7
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3202
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3200
+[[rooms]]
+vnum = 3202
+name = "On The River"
+description = "   North of here you see the dump.  The river flows from east to west.  The\r\nriverbanks are too steep to climb.\r\n"
+flags = "0"
+sector = 7
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3203
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3201
+[[rooms]]
+vnum = 3203
+name = "On The River"
+description = "   The levee is directly north of here.  The river flows in an east west\r\ndirection.\r\n"
+flags = "0"
+sector = 7
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3049
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3204
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3202
+[[rooms]]
+vnum = 3204
+name = "On The River"
+description = "   You see the warehouse on the northern riverbank.  East of here you see the\r\ncity wall.  The river flows west towards the levee.\r\n"
+flags = "0"
+sector = 7
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3205
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3203
+[[rooms]]
+vnum = 3205
+name = "On The River"
+description = "   The river enters from a hole in the eastern city wall.  The hole has been\r\nblocked by several vertically positioned iron bars set into the wall.\r\n"
+flags = "0"
+sector = 7
+
+[[rooms.exits]]
+dir = 1
+description = "The iron bars make it difficult to pass through the hole in the wall.\r\nBeyond the bars you see that the river leads into a cavern below the\r\nmountain range to the east.\r\n"
+door = 0
+key = -1
+to_room = 5001
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3204

@@ -1,0 +1,1744 @@
+[[rooms]]
+vnum = 12001
+name = "The Judging Booth"
+description = "   You stand in the midst of a small room with windows on the east and south\r\nwalls.  These windows provide a complete view of the competition fields.\r\nThere are several scorecards, pencils and other items that are used by the\r\njudges sitting on a table.  The only exit is a trapdoor leading down.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 5
+description = "There is a rickety ladder leading down.\r\n"
+keyword = "trapdoor"
+door = 1
+key = 12033
+to_room = 12002
+
+[[rooms.extra]]
+keyword = "pencils pencil"
+description = "An ordinary #2 lead pencil.  Judging by the teeth marks on the shaft, the\r\nuser should see a dentist very soon!\r\n"
+
+[[rooms.extra]]
+keyword = "scorecards"
+description = "The cards all have been filled in with the judges evaluations of today's \r\ncombatants.  It seems that Sparticus is having a good day.\r\n"
+[[rooms]]
+vnum = 12002
+name = "Caesar's Private Box"
+description = "   This is the best view in the house!  You can see gladiators fighting or\r\nthe chariot races with an unobstructed view.  The seats are upholstered in\r\nred velvet and are in top-notch condition.  There is a rickety ladder leading\r\nup and a marble staircase leading down.\r\n"
+flags = "cd"
+sector = 0
+
+[[rooms.exits]]
+dir = 4
+description = "You see a rickety ladder with a trapdoor leading up.\r\n"
+keyword = "trapdoor"
+door = 1
+key = 12033
+to_room = 12001
+
+[[rooms.exits]]
+dir = 5
+description = "There is a marble staircase leading down.\r\n"
+door = 0
+key = -1
+to_room = 12003
+[[rooms]]
+vnum = 12003
+name = "The West Side Of The Commoner's Seating Area"
+description = "   This is the western side commoner's seating area.  There are row upon\r\nrow of rough wooden benches bolted to the floor.  There is stadium garbage\r\neverywhere and the smell makes you want to puke.  Stairs lead up to Caesar's \r\nprivate box, a small ramp leads down to the playing field and a hallway \r\nleads south.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 2
+description = "You see a small hallway that leads to a larger area.\r\n"
+door = 0
+key = -1
+to_room = 12004
+
+[[rooms.exits]]
+dir = 4
+description = "Watch your step!\r\n"
+door = 0
+key = -1
+to_room = 12002
+
+[[rooms.exits]]
+dir = 5
+description = "Watch your step!\r\n"
+door = 0
+key = -1
+to_room = 12010
+
+[[rooms.extra]]
+keyword = "seats benches"
+description = "The benches are made of rough cut lumber that has dried and split over time.\r\nYou would probably get splinters if sat on them.  The words 'BURT WAS HERE'\r\nhave been carved into one of the benches with exquisite care.\r\n"
+[[rooms]]
+vnum = 12004
+name = "The Southern Commoner's Seats"
+description = "   This is the southeastern part of the common seating areas.  The benches\r\nhere are made of stone and are probably centuries old.  A few scratches on\r\none of the benches catch your eye.  An acrid smell is coming from the east\r\nand a tunnel leads off to the north.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "The tunnel looks like it leads to another seating area.\r\n"
+door = 0
+key = -1
+to_room = 12003
+
+[[rooms.exits]]
+dir = 1
+description = "There is an acrid smell coming from that direction.\r\n"
+door = 0
+key = -1
+to_room = 12011
+
+[[rooms.extra]]
+keyword = "marks scratches"
+description = "They look like they form the words \"Onivel Cinemod Semaj\"  But you could be\r\nmistaken.\r\n"
+[[rooms]]
+vnum = 12005
+name = "The Abandoned Gate"
+description = "   This used to be a gateway to and from western Rome.  There is an iron gate\r\nblocking your way and judging by the amount of rust and foliage growing on the\r\nbars, it hasn't been open for years.  Looking through the gate at the barren\r\nlandscape that lies beyond, you can see why.  A dirt road leads off to the \r\neast, and a store is directly south.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "Through the clouds of dust, you can make out a passable road.\r\n"
+door = 0
+key = -1
+to_room = 12012
+
+[[rooms.exits]]
+dir = 2
+description = "You can barely make out a storefront through the foliage.\r\n"
+door = 0
+key = -1
+to_room = 12006
+
+[[rooms.exits]]
+dir = 3
+description = "The gate has been permanently rusted shut and is further secured by a large \r\nchain and padlock.  Don't even bother THINKING about trying to open it.\r\n"
+keyword = "gate"
+door = 2
+key = -1
+to_room = -1
+
+[[rooms.extra]]
+keyword = "gate"
+description = "The gate has been permanently rusted shut and is further secured by a large \r\nchain and padlock.  Don't even bother THINKING about trying to open it.\r\n"
+[[rooms]]
+vnum = 12006
+name = "Swords 'R  Us"
+description = "   Welcome to the weaponshop of Titus Andronicus!!  Rare halberds, whips,\r\nswords and other instruments of death are proudly displayed on the walls\r\nand in gleaming glass cases.  More common weapons are stacked like wood on\r\nthe floor.  To the north you can barely make out a gate.  There is a very\r\nsecure looking door to the south.\r\n"
+flags = "dh"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You can see a city gate to the north.\r\n"
+door = 0
+key = -1
+to_room = 12005
+
+[[rooms.exits]]
+dir = 2
+description = "There is a very secure looking door blocking your progress.  \r\n"
+keyword = "door"
+door = 2
+key = 12034
+to_room = 12007
+
+[[rooms.extra]]
+keyword = "swords weapons armor halberds whips"
+description = "Titus has enough hardware in here to outfit a large army.  Maybe that's why\r\nhe has a lucrative contract to sell weapons to the Emperor's armies for \r\noutrageous prices.\r\n"
+[[rooms]]
+vnum = 12007
+name = "The Back Room"
+description = "   If you thought that there were a lot of weapons in the front of the store,\r\nyou haven't seen anything yet!!  There is barely enough room to walk amongst\r\nthe crates of armor and swords.  No wonder Rome will stand for a thousand\r\nyears.  The only exit is through a door to the north.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "Through the piles of weapons, you can see a door leading north to the rest of \r\nthe store.\r\n"
+keyword = "door"
+door = 2
+key = 12034
+to_room = 12006
+
+[[rooms.extra]]
+keyword = "weapons swords crates armor weapon sword crate"
+description = "There are literally thousands of each.  Take your pick.\r\n"
+[[rooms]]
+vnum = 12008
+name = "Peanut Heaven"
+description = "   You are now so high up that you begin to feel lightheaded and your nose\r\nfeels like it is going to start bleeding.  There aren't even benches to sit\r\non here; just bare dirty stone.  The view of the surrounding country is\r\nspectacular.  Unfortunately you can barely see the playing field.  There is\r\na set of steps here, leading down.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 5
+description = "Watch your step!\r\n"
+door = 0
+key = -1
+to_room = 12015
+
+[[rooms.extra]]
+keyword = "landscape country"
+description = "You can see the entire city of Rome from here.  The buildings housing the \r\nRoman government are to the east.  To the south east, off in the distance,\r\nis the massive aqueduct and further in that direction lies the Mountain of\r\nthe Gods.\r\n"
+[[rooms]]
+vnum = 12009
+name = "The Practice And Warm-up Area"
+description = "   There are many gladiators, chariot drivers and their coaches here, warming\r\nup in preparation for the games.  The dust rising from the parched earth makes\r\nyou want to sneeze.  A short tunnel leads east and the thunder of pounding\r\nhooves and the clash of weapons can be heard coming from the south.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+description = "There is a large oval dirt-track in that direction.\r\n"
+door = 0
+key = -1
+to_room = 12016
+
+[[rooms.exits]]
+dir = 2
+description = "You can hear the clash of weapons and the thunder of hooves in that\r\ndirection.\r\n"
+door = 0
+key = -1
+to_room = 12010
+
+[[rooms.extra]]
+keyword = "coach trainer"
+description = "The coach tell you \"Stop bothering my athletes and get lost!\"\r\n"
+
+[[rooms.extra]]
+keyword = "chariot"
+description = "You see a two wheeled open cart which is obviously meant to be pulled by \r\nhorses.  The flaming paint-job and the large '01' stenciled on the side \r\nidentify the chariot as belonging to Drucilis 'Lightning-whip' Octavious,\r\na favorite driver of the masses.\r\n"
+
+[[rooms.extra]]
+keyword = "driver"
+description = "The driver is too busy changing a wheel on his chariot to notice you.\r\n"
+
+[[rooms.extra]]
+keyword = "gladiator"
+description = "He is a big muscular man with lots of armor.  He sizes you up and decides\r\nthat you aren't worth his time or trouble.\r\n"
+[[rooms]]
+vnum = 12010
+name = "The Jousting Arena"
+description = "   This is a wide open grassy plane... LOOK OUT!!!!  You are almost\r\nskewered by a gladiator's lance as he makes his charge.  A practicing\r\narea is due north.\r\n"
+flags = "c"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Through a small tunnel you can see athletes stretching and warming up for\r\nthe games.\r\n"
+door = 0
+key = -1
+to_room = 12009
+
+[[rooms.exits]]
+dir = 4
+description = "You see a set of steps leading up into the spectator stands.  \r\n"
+door = 0
+key = -1
+to_room = 12003
+
+[[rooms.extra]]
+keyword = "gladiator"
+description = "He is in the final stages of a charge against his opponent... THUD!  CLANG!\r\nCRASH!!!!... judging from the blood and the amount of distance that now\r\nseparates the gladiators head from the rest of his body, you can safely\r\nassume that this was the final combat of his life.\r\n"
+[[rooms]]
+vnum = 12011
+name = "The First-Aid Station"
+description = "   This is the place to come to if one is overcome by the heat and gore.\r\n(Or if a lion gets loose)  You see a jar of live leeches and other barbaric\r\nmedical apparati lying about here.  From the west comes the roar of the\r\ncrowd, and a hall leads east.  The healer will be with you shortly.\r\n"
+flags = "cd"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "You see hundreds, perhaps thousands of people.\r\n"
+door = 0
+key = -1
+to_room = 12018
+
+[[rooms.exits]]
+dir = 3
+description = "Rows of stone bleachers lie to the west.\r\n"
+door = 0
+key = -1
+to_room = 12004
+
+[[rooms.extra]]
+keyword = "leech leeches"
+description = "DISGUSTING!  Each is about the size of matchbox and very slimy.  You are VERY\r\nglad that you have access to a cleric!\r\n"
+[[rooms]]
+vnum = 12012
+name = "A Dirt Road"
+description = "   You are on a parched and dusty rural road which runs east and west.  There\r\nis a structure lying to the south.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+description = "Through the dust, you see a paved road.\r\n"
+door = 0
+key = -1
+to_room = 12019
+
+[[rooms.exits]]
+dir = 2
+description = "It is difficult to see through the haze and dust.\r\n"
+door = 0
+key = -1
+to_room = 12013
+
+[[rooms.exits]]
+dir = 3
+description = "It is difficult to see through the haze and dust.\r\n"
+door = 0
+key = -1
+to_room = 12005
+[[rooms]]
+vnum = 12013
+name = "The Commoner's House"
+description = "   You are standing in the main living quarters of a common Roman citizen.\r\nThe furnishings are sparse and it is warm here.  A putrid odor is coming\r\nfrom the east and passages lead north and south.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "A dusty road lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 12012
+
+[[rooms.exits]]
+dir = 1
+description = "What is that smell??!!!  It is enough to make a yak gag!!!\r\n"
+door = 0
+key = -1
+to_room = 12020
+
+[[rooms.exits]]
+dir = 2
+description = "You hazard a guess that a bedroom lies in that direction.\r\n"
+door = 0
+key = -1
+to_room = 12014
+
+[[rooms.extra]]
+keyword = "furnishings furniture"
+description = "The furniture that you see is very simple and plain.  It is made of rough hewn\r\nwood and fastened together with nails.  It looks very uncomfortable.\r\n"
+[[rooms]]
+vnum = 12014
+name = "The Bedchamber"
+description = "   This is the bedroom.  There is a hard and lumpy bed in the far corner.\r\nIt looks like the commoner's wife has been shirking her duties lately, as\r\nthere is a big pile of soiled laundry here.  The only way out is from where\r\nyou came.\r\n"
+flags = "cd"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the living quarters to the north.\r\n"
+door = 0
+key = -1
+to_room = 12013
+
+[[rooms.extra]]
+keyword = "laundry wash clothing"
+description = "It smells of sweat and is covered with mud.\r\n"
+[[rooms]]
+vnum = 12015
+name = "The Noblemans' Box"
+description = "  These are the 'better' seats used primarily by the upper class of Rome.\r\nThere is a large seating area to the east and a staircase leading up here.\r\nThe view of the chariot track is pretty good. \r\n"
+flags = "0"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "Rows upon rows of bleachers lie to the east.\r\n"
+door = 0
+key = -1
+to_room = 12022
+
+[[rooms.exits]]
+dir = 4
+description = "The stairs look safe enough.\r\n"
+door = 0
+key = -1
+to_room = 12008
+[[rooms]]
+vnum = 12016
+name = "The Race Track"
+description = "   This is a hard dirt track about a quarter of a mile long.  There are hoof\r\nprints everywhere, and you see a large cloud of dust approaching.  You had\r\nbetter move before you get run over.  A small tunnel leads west, you can see\r\nthe crowd to the east.  You can hear loud snarls and roars coming from below.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 3
+description = "You see athletes warming up and stretching.\r\n"
+door = 0
+key = -1
+to_room = 12009
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 12023
+
+[[rooms.exits]]
+dir = 5
+description = "Do you like lots of live lions that haven't been fed for a few days?\r\n"
+door = 0
+key = -1
+to_room = 12017
+[[rooms]]
+vnum = 12017
+name = "The Lion Pit"
+description = "   As you land at the bottom of this dirt-walled pit, the realization that a\r\npit full of lions is NOT a good thing to be hanging around in.  Several of\r\nthe gladiators gather around the edge of the pit to watch your demise.  You\r\nlook around you, and all you see is tawny fur and gaping jaws... it is too\r\nlate to run, too late to hide.\r\n   Twelve lions rip you and your belongings into a gory mass of bloodied\r\nleather, bronze, and bone.\r\n\r\n   What's that old saying? \r\n   Cats killed the curious?  Something like that, I'm sure...\r\n\r\n"
+flags = "bd"
+sector = 0
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 12010
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 12016
+[[rooms]]
+vnum = 12018
+name = "The South Entrance To The Coliseum"
+description = "   You are standing at the south entrance to the Coliseum.  There are\r\ncitizens of Rome everywhere, apparently in a mad rush to get in.  A\r\nstatue of Caligula the Mad Emperor overlooks the area.  There are long\r\nlines standing to the east, and an acrid smell is coming from the west.\r\nA busy road lies to the south.\r\n"
+flags = "c"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "The lines are very long and people look impatient.\r\n"
+door = 0
+key = -1
+to_room = 12025
+
+[[rooms.exits]]
+dir = 2
+description = "A road lies in that direction.\r\n"
+door = 0
+key = -1
+to_room = 12019
+
+[[rooms.exits]]
+dir = 3
+description = "An acrid, almost medicinal smell is coming from that direction.\r\n"
+door = 0
+key = -1
+to_room = 12011
+
+[[rooms.extra]]
+keyword = "statue caligula"
+description = "A larger than life stone statue of Caligula, the Mad Emperor, looks at you.\r\nIt looks like it is holding a phallus.  He has got a grin on his face that\r\nseems to say 'My horse would like you, I bet...'\r\n"
+[[rooms]]
+vnum = 12019
+name = "The Main Highway"
+description = "   This is a well built and heavily traveled road running from east to west\r\nand there is a large structure built entirely of stone to the north.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You can hear the roar of a large crowd of people coming from that direction.\r\n"
+door = 0
+key = -1
+to_room = 12018
+
+[[rooms.exits]]
+dir = 1
+description = "The highway continues to the east.\r\n"
+door = 0
+key = -1
+to_room = 12026
+
+[[rooms.exits]]
+dir = 3
+description = "The highway continues to the west.\r\n"
+door = 0
+key = -1
+to_room = 12012
+[[rooms]]
+vnum = 12020
+name = "The Outhouse"
+description = "   PEEEEEEEEEEEEEEEE-YEEEEEWWWWWWWW!!!!!  Boy does it stink in here!!!  You\r\ntaste bile in your mouth and your eyes begin to water.  As you wipe away your\r\ntears, you see that this is a small room, in the far corner of which a hole\r\nis dug.  The odor intensifies as you move closer and there is a roll of toilet\r\npaper sitting on the ground.  The only exit is to the west and your nose and\r\nstomach are strongly suggesting that you use it.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+description = "The living quarters lie in that direction.  Why don't you stop pussyfooting \r\naround and go that way??!!  Please?\r\n"
+door = 0
+key = -1
+to_room = 12013
+
+[[rooms.extra]]
+keyword = "roll paper"
+description = "Hey!!  This is first-class stuff!! - White Cloud brand with lotion.  The roll\r\nis about half-used.\r\n"
+
+[[rooms.extra]]
+keyword = "hole toilet"
+description = "You walk over to the hole and see that there is a large turd floating in a \r\npool black water about 2 feet below the surface of the ground.  As you lean\r\ncloser to get a better look, your nose catches a concentrated dose of the \r\nfragrant aroma wafting upwards.  Your stomach decides that it has had enough\r\nof this shoddy treatment and you puke until it is empty.\r\n"
+[[rooms]]
+vnum = 12021
+name = "The Slave Quarters"
+description = "   This is where the slaves sleep.  There are hard boards set out for use\r\nas beds and not much else.  The only exit is to the east.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "To the east, a well manicured path winds through the nobleman's estate.\r\n"
+door = 0
+key = -1
+to_room = 12027
+[[rooms]]
+vnum = 12022
+name = "The Common Seating"
+description = "   This is where many of the common Roman citizens are seated during the\r\ngames.  These are the cheapest seats in the house, as glare from the sun\r\nis usually a problem during the afternoon.  Like the other common seating\r\nareas, this place could stand extensive renovation and a thorough cleaning.\r\nThis area extends to the south and a much more elegant seating area can be\r\nseen to the west.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 2
+description = "The common seating area continues.\r\n"
+door = 0
+key = -1
+to_room = 12023
+
+[[rooms.exits]]
+dir = 3
+description = "The seating gets much fancier and elegant in that direction.\r\n"
+door = 0
+key = -1
+to_room = 12015
+[[rooms]]
+vnum = 12023
+name = "The Common Seating"
+description = "   This is where many of the common Roman citizens are seated during the\r\ngames.  Like the other commoners' areas in the coliseum, it could use\r\nextensive renovation and cleaning.  This area extends to the north and\r\nlots of noise can be heard coming from the south.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "The common seating area continues.\r\n"
+door = 0
+key = -1
+to_room = 12022
+
+[[rooms.exits]]
+dir = 2
+description = "You see hundreds, perhaps thousands of people.\r\n"
+door = 0
+key = -1
+to_room = 12024
+[[rooms]]
+vnum = 12024
+name = "The East Entrance To The Coliseum"
+description = "   You are standing at the east entrance to the Coliseum.  There are people \r\neverywhere, apparently in a mad rush to get in.  A statue of Tiberius, an \r\nEmperor of a time long since passed, stands here looking out over the crowd.  \r\nThere is a passage to the north, the ticket booth is to the south and a gate \r\nopening to the city lies to the east.\r\n"
+flags = "c"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see rows upon rows of dilapidated wooden bleachers.\r\n"
+door = 0
+key = -1
+to_room = 12023
+
+[[rooms.exits]]
+dir = 1
+description = "Nero Drive lies in that direction.\r\n"
+door = 0
+key = -1
+to_room = 12031
+
+[[rooms.exits]]
+dir = 2
+description = "There are VERY long lines standing outside the ticket booth.\r\n"
+door = 0
+key = -1
+to_room = 12025
+
+[[rooms.extra]]
+keyword = "statue tiberius"
+description = "The statue of Tiberius, made of iron, stands here.\r\n"
+[[rooms]]
+vnum = 12025
+name = "The Ticket Booth"
+description = "   Long lines are standing here, waiting to buy tickets.  There are three\r\nvendors working furiously.  Ticket stubs litter the ground and you can see\r\nthat the people are getting very impatient.  There is a large, open cashbox\r\nhere.  Main entrances to the Coliseum are to the north and west.  \r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see hundreds, if not thousands of people.\r\n"
+door = 0
+key = -1
+to_room = 12024
+
+[[rooms.exits]]
+dir = 3
+description = "You see hundreds, if not thousands of people.\r\n"
+door = 0
+key = -1
+to_room = 12018
+
+[[rooms.extra]]
+keyword = "cashbox"
+description = "It is a shame that the exchange rate for Roman money is so low.  What amounts\r\nto a fortune in Rome isn't even worth one gold coin.  The contents of the box\r\nadd up to about... well forget it.  It isn't worth your time or trouble to\r\ncarry it around.\r\n"
+[[rooms]]
+vnum = 12026
+name = "A Paved Road"
+description = "   You are on a paved road that runs east to west.  You can see an elaborate\r\nlooking estate to the south and to the north-west, off in the distance, you\r\ncan see a very large stone structure.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "The road leads off to the east.\r\n"
+door = 0
+key = -1
+to_room = 12033
+
+[[rooms.exits]]
+dir = 2
+description = "It looks like a Nobleman's estate.  We are talking RICH nobleman's estate.\r\n"
+keyword = "estate house"
+door = 0
+key = -1
+to_room = 12027
+
+[[rooms.exits]]
+dir = 3
+description = "The road leads west towards the highway.\r\n"
+door = 0
+key = -1
+to_room = 12019
+
+[[rooms.extra]]
+keyword = "structure"
+description = "That would probably be the Coliseum.  There are a few good matches scheduled\r\nfor today.\r\n"
+[[rooms]]
+vnum = 12027
+name = "A Noble Estate"
+description = "   You are on the grounds of a nobleman's estate which is hundreds of times\r\nthe size and splendor of anything that a common citizen of Rome would ever\r\nhope to own.  Everything is lush and green.  The grass is perfectly manicured\r\nand the trees are all bearing fruit.  Ornamental plants are in perfectly\r\nsituated to enhance and adorn the three statues of dedicated to gods Jupiter,\r\nVenus and Neptune.  A tranquil path leads east and west, there is a paved road\r\nto the north and an extravagant house lies to the south.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "You see a paved road in the distance.\r\n"
+door = 0
+key = -1
+to_room = 12026
+
+[[rooms.exits]]
+dir = 1
+description = "The path leads east through the estate.\r\n"
+door = 0
+key = -1
+to_room = 12034
+
+[[rooms.exits]]
+dir = 2
+description = "You see an incredible house off in the distance.\r\n"
+door = 0
+key = -1
+to_room = 12028
+
+[[rooms.exits]]
+dir = 3
+description = "Off through the trees, you see a small, plain hut.\r\n"
+door = 0
+key = -1
+to_room = 12021
+
+[[rooms.extra]]
+keyword = "trees tree shrubs shrub plants plant"
+description = "All of the plants, trees and shrubs are perfectly trimmed, without so much\r\nas a dead leaf anywhere to be seen.  You welcome the shade that they give\r\nfrom the harsh sun above.\r\n"
+
+[[rooms.extra]]
+keyword = "Neptune"
+description = "The statue of Neptune is made of pure jade and is holding a crystal trident.\r\nIt is sitting in the center of a small pond which has hundreds of beautiful\r\nfish swimming in it.\r\n"
+
+[[rooms.extra]]
+keyword = "Jupiter"
+description = "A statue made of pure gold depicts Jupiter sitting on his throne.  The throne\r\nlooks like it is made of silver.\r\n"
+
+[[rooms.extra]]
+keyword = "Venus"
+description = "Venus, the Roman goddess of beauty and knowledge is displayed in a all of her\r\nsplendor.\r\n"
+[[rooms]]
+vnum = 12028
+name = "An Opulent House"
+description = "   You stand in a house, the size and splendor of which almost defies the\r\nimagination.  The floor is done with hand crafted marble tile with silver\r\nand jeweled inlays.  The light coming through the exquisitely crafted stained\r\nglass windows bathes the room in splendor and the furniture looks as though\r\nit was made by master craftsmen from all over the empire.  A path through the\r\nestate is north of here.\r\n"
+flags = "cd"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see a well manicured path that winds through the estate.\r\n"
+door = 0
+key = -1
+to_room = 12027
+
+[[rooms.extra]]
+keyword = "furniture"
+description = "You hope to eventually be able to own a piece of furniture just like these \r\nsomeday.  These are only dreams, of course.\r\n"
+
+[[rooms.extra]]
+keyword = "windows"
+description = "They are intricate and the scenes that they depict cast honor on several of\r\nthe gods.\r\n"
+
+[[rooms.extra]]
+keyword = "floor tile"
+description = "Very expensive!  A lot of master craftsmen labored long and hard to produce\r\nsuch a work of art.\r\n"
+[[rooms]]
+vnum = 12029
+name = "The Great North Gate"
+description = "   This is the northern gateway to the city of Rome.  The huge gate appears\r\nto be closed and locked against intrusion.  A large road muddy road runs\r\nthrough the gate and into the countryside.  Nero Drive runs south from here.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "The gate is made of solid iron and is well maintained.\r\n"
+keyword = "gate"
+door = 2
+key = -1
+to_room = -1
+
+[[rooms.exits]]
+dir = 2
+description = "Nero Drive continues in that direction.\r\n"
+door = 0
+key = -1
+to_room = 12030
+
+[[rooms.extra]]
+keyword = "road"
+description = "The road is wide and very muddy.\r\n"
+
+[[rooms.extra]]
+keyword = "gate"
+description = "The gate is made of solid iron and is well maintained.\r\n"
+[[rooms]]
+vnum = 12030
+name = "Nero Drive"
+description = "   You are walking on a paved road that runs south through the city of Rome.\r\nA great gate is directly north of here.  The Roman citizens are very friendly\r\nand tip their hats or say hello as you pass.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "To the north, you can see a gate leading out of the city.\r\n"
+door = 0
+key = -1
+to_room = 12029
+
+[[rooms.exits]]
+dir = 2
+description = "Nero Drive continues in that direction.\r\n"
+door = 0
+key = -1
+to_room = 12031
+
+[[rooms.exits]]
+dir = 3
+description = "You see the bakery of Rome.\r\n"
+door = 0
+key = -1
+to_room = 12062
+[[rooms]]
+vnum = 12031
+name = "Nero Drive"
+description = "   You are walking on a great paved road that runs north and south through\r\nthe city.  People are hurrying from one place to another, but always stop\r\nto say hello.  Most of the people are either coming from or going to the\r\ntown square.  Nero Drive continues to the north, and you can see a large\r\nopen area to the south.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "Nero drive continues in that direction.\r\n"
+door = 0
+key = -1
+to_room = 12030
+
+[[rooms.exits]]
+dir = 2
+description = "It looks like the town square.\r\n"
+door = 0
+key = -1
+to_room = 12032
+
+[[rooms.exits]]
+dir = 3
+description = "You see the an opulent estate.\r\n"
+door = 0
+key = -1
+to_room = 12024
+[[rooms]]
+vnum = 12032
+name = "The Town Square"
+description = "   You are standing in the middle of a large open area which is the common\r\narea of Rome.  During the day, this place is alive with the hustle and\r\nbustle of all of the citizens of Rome and everyone in the city is sure to\r\nstop by at some time or another.  There are several street vendors peddling\r\ntheir wares and the overall atmosphere is carnival-like in nature.  To the\r\nsoutheast, off in the distance, you can see the aqueduct and the buildings\r\nof the Roman government lie to the northwest.  Nero Drive leads north and\r\nsouth from here and Clay Avenue runs east.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "Nero Drive heads in the direction of the northern gate.\r\n"
+door = 0
+key = -1
+to_room = 12031
+
+[[rooms.exits]]
+dir = 1
+description = "Nero Drive heads in the direction of the south gate.\r\n"
+door = 0
+key = -1
+to_room = 12039
+
+[[rooms.exits]]
+dir = 2
+description = "A street made of hard packed clay runs in that direction towards the\r\naqueduct and buildings of the Roman government.\r\n"
+door = 0
+key = -1
+to_room = 12033
+
+[[rooms.extra]]
+keyword = "aqueduct"
+description = "To the southeast, off in the distance, stands a large stone structure that\r\nis used to channel water into the city.\r\n"
+
+[[rooms.extra]]
+keyword = "vendor vendors"
+description = "There are several sidewalk vendors here, selling fresh fruits and vegetables,\r\nhome baked goods, fine jewelry and other items.  Most of the items for sale\r\nare of very high quality.\r\n"
+[[rooms]]
+vnum = 12033
+name = "Nero Drive"
+description = "   You are walking on a paved road that runs north and south through the\r\ncity of Rome.  There are many people here, as polite as always.  Most of\r\nthem are either coming from or going to the town square which lies to the\r\nnorth.  Nero Drive continues to the south.  There is an observation area\r\noverlooking the aqueduct to the east and a paved road leads west.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "The town square lies in that direction.\r\n"
+door = 0
+key = -1
+to_room = 12032
+
+[[rooms.exits]]
+dir = 1
+description = "The aqueduct and mountain of the gods are in that direction.\r\n"
+door = 0
+key = -1
+to_room = 12040
+
+[[rooms.exits]]
+dir = 2
+description = "Nero Drive continues toward the South Gate.\r\n"
+door = 0
+key = -1
+to_room = 12034
+
+[[rooms.exits]]
+dir = 3
+description = "A paved road runs west through the city.\r\n"
+door = 0
+key = -1
+to_room = 12026
+[[rooms]]
+vnum = 12034
+name = "Nero Drive"
+description = "   This is a busy paved road that runs north through the city.  The people\r\nof Rome are very friendly and say hello as you pass.  A gate leading out of\r\nthe city lies to the south and a small path goes west towards a nobleman's\r\nestate.  To the east, off in the distance, lies the great mountain.  It is\r\nrumored that the Gods watch over and protect the empire from there.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "Nero Drive leads in that direction.\r\n"
+door = 0
+key = -1
+to_room = 12033
+
+[[rooms.exits]]
+dir = 2
+description = "You see many people entering and leaving the city through a large gate in the\r\nwalls protecting the city.\r\n"
+door = 0
+key = -1
+to_room = 12035
+
+[[rooms.exits]]
+dir = 3
+description = "It looks like a nobleman's estate.  We are talking RICH nobleman's estate.\r\n"
+door = 0
+key = -1
+to_room = 12027
+[[rooms]]
+vnum = 12035
+name = "The South Gate"
+description = "   This is the southern gateway to the city of Rome.  The bronze gate is\r\nclosed and locked.  Looking through the bars, you see a heavily traveled\r\nroad leading out of the city.  Nero Drive starts here and runs north and\r\na wizard's shop lies to the east.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "Nero Drive leads towards the center of town.\r\n"
+door = 0
+key = -1
+to_room = 12034
+
+[[rooms.exits]]
+dir = 1
+description = "A small store, from which an occasional detonation can be heard, lies off\r\nin that direction.  It appears to be surrounded by a rolling pink mist.\r\n"
+door = 0
+key = -1
+to_room = 12042
+
+[[rooms.exits]]
+dir = 2
+description = "The gate appears to be closed and locked against intruders.\r\n"
+keyword = "gate"
+door = 2
+key = -1
+to_room = -1
+
+[[rooms.extra]]
+keyword = "gate"
+description = "The gate appears to be closed and locked against intruders.\r\n"
+[[rooms]]
+vnum = 12036
+name = "The Emperor's Private Office"
+description = "   You are standing in the Emperor's private office.  The room is richly\r\nfurnished with the finest of the loot brought back from conquests of far\r\naway lands.  There is a massive, intricately carved desk here, upon which\r\nare important documents, decrees and other paperwork involved in running\r\nthe empire.  On the far wall, there is a marble bookcase that is well\r\nstocked with the works of Homer, Plato, Socrates and other wise men.\r\nFurther, it seems that the current Emperor likes flowers as there are\r\nmany potted and cut specimens throughout the room.  There is a french\r\ndoor leading to the waiting room and a wooden door to the south.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "Through the door, you see a waiting room.\r\n"
+keyword = "doors french"
+door = 2
+key = 12035
+to_room = 12043
+
+[[rooms.exits]]
+dir = 2
+description = "The south door leads directly to the senate chambers.\r\n"
+keyword = "door wooden"
+door = 2
+key = 12035
+to_room = 12037
+
+[[rooms.extra]]
+keyword = "flowers plants flower plant"
+description = "The plants contribute to a very relaxing atmosphere.  \r\n"
+
+[[rooms.extra]]
+keyword = "bookcase books"
+description = "The books are very old and contain the wisdom of wise men from throughout the\r\nentire Roman empire.  They appear to be collecting dust.\r\n"
+
+[[rooms.extra]]
+keyword = "documents decrees paperwork document decree papers paper"
+description = "The documents are all written on reed scrolls made in Egypt and have been\r\nsealed with wax.  \r\n"
+
+[[rooms.extra]]
+keyword = "desk"
+description = "The desk is made of solid walnut and gold inlay.  It is exquisitely carved\r\nwith superior craftsmanship, the likes of which has rarely been seen.  It\r\nwas probably brought to Rome from Gaul.\r\n"
+[[rooms]]
+vnum = 12037
+name = "The Senate Chambers"
+description = "   This is the working room where elected senators from all over the empire\r\ngather to advise the Emperor.  An official seal of the Emperor is hanging on\r\nthe far wall.  There is a wooden door to the north and a bronze door to the\r\neast and doublehung door to the south.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "The door is made of thick walnut.\r\n"
+keyword = "door wooden"
+door = 2
+key = 12035
+to_room = 12036
+
+[[rooms.exits]]
+dir = 1
+description = "The door leads to the foyer.\r\n"
+keyword = "door bronze"
+door = 1
+key = 12036
+to_room = 12044
+
+[[rooms.exits]]
+dir = 2
+keyword = "door doublehung"
+door = 1
+key = 12037
+to_room = 12038
+[[rooms]]
+vnum = 12038
+name = "The House Of Commons"
+description = "   This is the lower house of the advising body to the Emperor.  Common men\r\nfrom all parts of Rome work here to further assist the senators in advising\r\nthe Emperor on critical matters of state.  The seal of the Emperor is painted\r\non the far wall.  The only exit is to the north.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see that the doublehung door leads to the senate chambers.\r\n"
+keyword = "door doublehung"
+door = 1
+key = 12104
+to_room = 12037
+[[rooms]]
+vnum = 12039
+name = "Clay Avenue"
+description = "   You are on a wide well traveled road running east and west through the\r\nheart of Rome.  There are large crowds of people to the west and the road\r\ncontinues to the east.  The aqueduct is directly south of here.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "Clay Avenue continues in that direction.\r\n"
+door = 0
+key = -1
+to_room = 12046
+
+[[rooms.exits]]
+dir = 2
+description = "You see an entrance to the aqueduct.\r\n"
+door = 0
+key = -1
+to_room = 12041
+
+[[rooms.exits]]
+dir = 3
+description = "There are large crowds of people in that direction.\r\n"
+door = 0
+key = -1
+to_room = 12032
+
+[[rooms.extra]]
+keyword = "crowds people"
+description = "It looks like some kind of bizarre or festival is occurring to the west.\r\nThere are hundreds of people of all classes shopping, talking or eating.\r\n"
+[[rooms]]
+vnum = 12040
+name = "The Observation Lookout"
+description = "   You are on a platform overlooking a massive aqueduct.  There is a\r\ntelescope mounted to the railing that surrounds the area and you can\r\nhear the gurgle of water as it is channeled into the city.  Off in\r\nthe distance, you can see the Mountain of the Gods.\r\nThere is a sign mounted to the railing and a ramp leads west.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 3
+description = "You can see a busy street in that direction.\r\n"
+door = 0
+key = -1
+to_room = 12033
+
+[[rooms.extra]]
+keyword = "sign"
+description = "     \r\n         ********************************************\r\n         *                                          *\r\n         *      The Roman Aquarian and Mountain     *\r\n         *            Observation Platform          *\r\n         *                                          *\r\n         *      Designed and built by the Froboz    *\r\n         *           Magic Platform Company         *\r\n         *                                          *\r\n         ********************************************\r\n\r\n"
+
+[[rooms.extra]]
+keyword = "aqueduct"
+description = "The aqueduct is a massive stone structure that channels water into Rome from\r\nthe Mountain of the Gods.  During the rainy season, it is filled to the top.\r\nHowever, due to recent drought, the water level appears to be very low.\r\n"
+
+[[rooms.extra]]
+keyword = "telescope"
+description = "If it were operational, it would offer a spectacular view of the Mountain of \r\nthe Gods.  Unfortunately, it appears to have been vandalized.\r\n"
+[[rooms]]
+vnum = 12041
+name = "The Aqueduct"
+description = "   You are in a massive stone structure that has been designed to channel\r\nwater into the city of Rome.  Due to the recent drought, the water level\r\nis low, allowing passage without a boat.  The walls and floor are covered\r\nwith algae and slime producing treacherous footing conditions.  There are\r\nexits to the north, south and east.\r\n"
+flags = "cd"
+sector = 6
+
+[[rooms.exits]]
+dir = 0
+description = "You can see a wide street to the north.\r\n"
+door = 0
+key = -1
+to_room = 12039
+
+[[rooms.exits]]
+dir = 1
+description = "You see more aqueduct.\r\n"
+door = 0
+key = -1
+to_room = 12048
+
+[[rooms.exits]]
+dir = 2
+description = "You see more aqueduct.\r\n"
+door = 0
+key = -1
+to_room = 12041
+
+[[rooms.exits]]
+dir = 3
+description = "You see more aqueduct.\r\n"
+door = 0
+key = -1
+to_room = 12054
+
+[[rooms.extra]]
+keyword = "slime algae"
+description = "Due to the availability of moisture and nutrients, a green, viscous slime has \r\ngrown and covered everything with a slippery coating.  It seems to go out of\r\nits way to drip on you.\r\n"
+[[rooms]]
+vnum = 12042
+name = "The Mage's Shop"
+description = "   You are standing in the mage's shop.  Magical ointments, charms and\r\npotions are sitting on shelves and behind a glass counter.  There is a\r\ndense neon blue fog hugging the floor here, making it impossible to see\r\nbelow your knees.  You suddenly hear mutterings coming from the back\r\nroom, possibly from...\r\nKKKKKAAAAAABBBBOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOMMMMMMMMMMMMMMMM!!!!!!\r\nYou are deafened by the noise from a tremendous explosion and the\r\nconcussion from the blast staggers you!  The shopkeeper seems to pay\r\nno heed to this. The door to the back room opens and an older man,\r\nwearing a pointed hat, whose face is smudged with soot sticks his head\r\nout.  'Is everyone alright?  Sorry about that.  I was testing a new\r\nspell.  I'll try to give advance notice next time.', he says.  The door\r\nthen closes.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "The door is reinforced with steel and looks VERY sturdy.  Considering the\r\n'test' that you just witnessed, you are glad that it stands between you and\r\nwhatever is going on in the back room.\r\n"
+keyword = "door"
+door = 2
+key = 12038
+to_room = 12049
+
+[[rooms.exits]]
+dir = 3
+description = "You see the south gate through the door.\r\n"
+door = 0
+key = -1
+to_room = 12035
+
+[[rooms.extra]]
+keyword = "fog mist"
+description = "This is some really strange stuff!  You have never seen anything this color\r\nbefore.  Your legs are totally obscured from the knee down.\r\n"
+[[rooms]]
+vnum = 12043
+name = "The Waiting Room"
+description = "   You are standing in a very large room with a high ceiling and there\r\nare a few people waiting here to see the Emperor on urgent matters.  The\r\nmaster scheduler tells you to have a seat and sends a page to inform the\r\nhis highness of your arrival.  There are large doors to the east and west\r\nand an exit leads south to the foyer.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "There is a sign on the door that says:  MUNICIPAL COURT OF ROME.  It appears \r\nto be open.\r\n"
+door = 0
+key = -1
+to_room = 12050
+
+[[rooms.exits]]
+dir = 2
+description = "The foyer is directly to the south.\r\n"
+door = 0
+key = -1
+to_room = 12044
+
+[[rooms.exits]]
+dir = 3
+description = "There is a large door to the west.\r\n"
+keyword = "door"
+door = 2
+key = 12035
+to_room = 12036
+[[rooms]]
+vnum = 12044
+name = "The Entrance Foyer"
+description = "   You have just entered the main government building of the Roman Empire\r\nand are standing in a massive room with an elaborately decorated domed roof.\r\nThere are many people here; messengers and senators being the most numerous.\r\nThere is a large, ornate door to the west, a hallway leads north and marble\r\nstairs that lead out of the building are to the south.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see a hallway leading north to what looks like a waiting room.\r\n"
+door = 0
+key = -1
+to_room = 12043
+
+[[rooms.exits]]
+dir = 3
+description = "There is a large door to the west that blocks your path.\r\n"
+keyword = "door"
+door = 1
+key = 12036
+to_room = 12037
+
+[[rooms.exits]]
+dir = 5
+description = "You see a stairway leading out of the building.\r\n"
+door = 0
+key = -1
+to_room = 12045
+[[rooms]]
+vnum = 12045
+name = "Outside The Capitol Building"
+description = "   You stand on white marble steps that lead up and into the Capitol\r\nBuilding.  There are several statues, none of any real significance,\r\nat the entrance to the building.  The main entrance to the building\r\nis at the top of the steps.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 4
+description = "The steps lead into the Capitol Building.\r\n"
+door = 0
+key = -1
+to_room = 12044
+
+[[rooms.exits]]
+dir = 5
+description = "The steps terminate onto Clay Avenue.\r\n"
+door = 0
+key = -1
+to_room = 12046
+
+[[rooms.extra]]
+keyword = "statue statues"
+description = "There is really nothing noteworthy about them.\r\n"
+
+[[rooms.extra]]
+keyword = "stairs stairway steps"
+description = "The stairs are immaculately polished and made of white marble.\r\n"
+[[rooms]]
+vnum = 12046
+name = "Clay Avenue"
+description = "  You are standing on a wide, heavily traveled road that runs east and\r\nwest through the heart of the city.  There are marble steps leading up.\r\nTo the south, off in the distance, you can see a large stone structure\r\nand a mountain that is partially obscured by the haze.  There is a\r\ngeneral store to the north.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "The general store lies in that direction.\r\n"
+door = 0
+key = -1
+to_room = 12063
+
+[[rooms.exits]]
+dir = 1
+description = "There is what appears to be a large gate in that direction.\r\n"
+door = 0
+key = -1
+to_room = 12051
+
+[[rooms.exits]]
+dir = 3
+description = "Clay Avenue continues.\r\n"
+door = 0
+key = -1
+to_room = 12039
+
+[[rooms.exits]]
+dir = 4
+description = "There are some white marble steps leading up.\r\n"
+door = 0
+key = -1
+to_room = 12045
+
+[[rooms.extra]]
+keyword = "mountain"
+description = "Off to the southwest, you can see  a huge mountain that is partially obscured\r\nby the haze.  It is rumored that the gods reside there and protect the city.\r\n"
+
+[[rooms.extra]]
+keyword = "stone structure aqueduct"
+description = "You see a massive stone structure, built several centuries ago, that is used\r\nto channel water into the city.\r\n"
+[[rooms]]
+vnum = 12047
+name = "The Summit Of The Mountain Of The Gods"
+description = "   You are at the summit of a very high mountain and are standing above\r\nthe clouds.  The sun is shining brilliantly here and the clouds below\r\nlook like balls of cotton.  The path that you have been walking on is\r\ndamp and the scent of lilac is in the air.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 5
+description = "You see a damp path leading back down the mountain.\r\n"
+door = 0
+key = -1
+to_room = 12052
+[[rooms]]
+vnum = 12048
+name = "The Aqueduct"
+description = "   You are in a massive stone structure that has been designed to channel\r\nwater into the city of Rome.  Due to the recent drought, the water level\r\nis low, allowing passage without a boat.  The walls and floor are covered\r\nwith algae and slime, producing treacherous footing conditions.  There are\r\nexits in all four cardinal directions.\r\n"
+flags = "d"
+sector = 6
+
+[[rooms.exits]]
+dir = 0
+description = "The aqueduct continues.\r\n"
+door = 0
+key = -1
+to_room = 12057
+
+[[rooms.exits]]
+dir = 1
+description = "The aqueduct continues.\r\n"
+door = 0
+key = -1
+to_room = 12041
+
+[[rooms.exits]]
+dir = 2
+description = "The aqueduct continues.\r\n"
+door = 0
+key = -1
+to_room = 12041
+
+[[rooms.exits]]
+dir = 3
+description = "The aqueduct continues.\r\n"
+door = 0
+key = -1
+to_room = 12048
+
+[[rooms.extra]]
+keyword = "slime algae"
+description = "Due to the availability of moisture and nutrients, a green viscous slime has\r\ngrown and covered everything with a slippery coating.  It seems to go out of\r\nits way to drip on you.\r\n"
+[[rooms]]
+vnum = 12049
+name = "Froboz's Workshop"
+description = "You are standing in the workshop of Froboz the Great, the most powerful and\r\nfamous mage that Rome has ever known.  Workbenches line the walls and are\r\ncovered with various test tubes, beakers, petri dishes and crucibles and\r\nthere is an odor in here that can best be described as a combination of old\r\nsweat socks and burning tires.  The only exit is back through the door\r\nthrough which you came.  In the middle of the room, you see a pile of ashes\r\nthat looks like it once was a body and Froboz is is busy making adjustments\r\non a new type of magic wand... possibly the one responsible for the explosion\r\na few minutes ago.  He removes a jeweler's loupe from his eye as he turns\r\naround.  'How in the name of Merlin did you get in here??!!' he asks.  'Oh,\r\nnevermind!  Since you are here, you can serve as witnesses to the final test\r\nof the new mages' spell:  \"ectowatt\".'  With this he makes a magical gesture\r\nand a paladin appears.  Crossing his fingers, Froboz waves the wand his\r\ndirection and what happens next is incredible!  The Paladin is enveloped in\r\nwhat appears to be a small, well contained, thermonuclear explosion.  When\r\nthe smoke clears you can see that the paladin and all of equipment has been\r\nreduced to a large pile of flaming cinders.  Froboz throws his head back and\r\ncackles with insane glee.  'Now, my young friends, what can I do for you?',\r\nhe asks.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+description = "There is a door, reinforced with steel, in that direction.\r\n"
+keyword = "door"
+door = 2
+key = 12038
+to_room = 12042
+
+[[rooms.extra]]
+keyword = "cinders ashes pile"
+description = "The ashes are a very fine grayish white powder that seems to be the only \r\nworldly remains of Froboz's \"test specimens\". \r\n"
+
+[[rooms.extra]]
+keyword = "workbench workbenches tubes beakers crucibles dishes"
+description = "These are all tools of great power.  You cannot even begin to understand what\r\nany of this stuff does.\r\n"
+[[rooms]]
+vnum = 12050
+name = "The Courtroom"
+description = "   You stand inside of a large courtroom in which common civil disputes and \r\ncriminal matters are decided.  There is a judge's bench and a witness stand\r\non the far side of the room and a jury's box along side.  The Emperor's seal\r\nis prominently displayed on the wall behind the judge's stand, reminding all\r\nwho enter that he is an extension of his highness.  There is a door, possibly \r\nleading to the judge's chambers, to the east and the waiting room is to the \r\nwest.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "The door might lead into the judge's private chambers.\r\n"
+keyword = "door"
+door = 1
+key = 12039
+to_room = 12055
+
+[[rooms.exits]]
+dir = 2
+description = "The holding cells lie in that direction.\r\n"
+door = 0
+key = -1
+to_room = 12060
+
+[[rooms.exits]]
+dir = 3
+description = "The waiting room lies in that direction.\r\n"
+door = 0
+key = -1
+to_room = 12043
+
+[[rooms.extra]]
+keyword = "seal"
+description = "The seal of the Emperor is mounted above the judge's stand.  \r\n"
+
+[[rooms.extra]]
+keyword = "bench stand box jury"
+description = "You see large wooden structures that are designed to separate the judge, jury\r\nand witnesses from the rest of the courtroom.  They are made of polished  \r\noak and are strictly functional.\r\n"
+[[rooms]]
+vnum = 12051
+name = "The East Gate Of Rome"
+description = "   You are standing inside of the eastern gate of Rome.  There are two tall \r\nspires built into the city wall, from which the guards can see the whole \r\neastern side of the city.  The gate is currently open and to the east, \r\nthere is a heavily used road, made of packed clay, that leads out of Rome. \r\nAnother road leads westward into the city.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "The clay road heads eastwards.\r\n"
+keyword = "gate"
+door = 1
+key = -1
+to_room = 12064
+
+[[rooms.exits]]
+dir = 3
+description = "The clay street leads into the city.\r\n"
+door = 0
+key = -1
+to_room = 12046
+
+[[rooms.extra]]
+keyword = "gate"
+description = "The gate is fabricated from iron and has been designed to keep intruders\r\nout of the city.\r\n"
+
+[[rooms.extra]]
+keyword = "spires towers"
+description = "There are two tall spires on either side of the gate and are constantly\r\nmanned by the city guards.  They are made of stone and stand about 40\r\nfeet tall. \r\n"
+[[rooms]]
+vnum = 12052
+name = "A Mountain Path"
+description = "   You stand on a small trail that leads up and down.  It has recently been \r\nraining and there are small puddles everywhere.  You are just below the\r\nclouds and the view of the surrounding countryside is breathtaking.  \r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 4
+description = "The trail leads up and enters the clouds.\r\n"
+door = 0
+key = -1
+to_room = 12047
+
+[[rooms.exits]]
+dir = 5
+description = "The trail leads down.\r\n"
+door = 0
+key = -1
+to_room = 12056
+
+[[rooms.extra]]
+keyword = "trail"
+description = "The mountain trail is a little muddy, due to the recent rains.  \r\n"
+[[rooms]]
+vnum = 12054
+name = "The Aqueduct"
+description = "   You are in a massive stone structure that has been designed to channel\r\nwater into the city of Rome.  Due to the recent drought, the water level\r\nis low, allowing passage without a boat.  The walls and floor are covered\r\nwith algae and slime, producing treacherous footing conditions.  There are\r\nexits in all four cardinal directions.\r\n"
+flags = "d"
+sector = 6
+
+[[rooms.exits]]
+dir = 0
+description = "The aqueduct continues.\r\n"
+door = 0
+key = -1
+to_room = 12041
+
+[[rooms.exits]]
+dir = 1
+description = "The aqueduct continues.\r\n"
+door = 0
+key = -1
+to_room = 12054
+
+[[rooms.exits]]
+dir = 2
+description = "The aqueduct continues.\r\n"
+door = 0
+key = -1
+to_room = 12057
+
+[[rooms.exits]]
+dir = 3
+description = "The aqueduct continues.\r\n"
+door = 0
+key = -1
+to_room = 12048
+
+[[rooms.extra]]
+keyword = "slime algae"
+description = "Due to the availability of moisture and nutrients, a green, viscous slime has\r\ngrown and covered the everything with a slippery coating.  It seems to go out\r\nof its way to drip on you.\r\n"
+[[rooms]]
+vnum = 12055
+name = "The Judge's Chambers"
+description = "   You are in a small room that is filled with legal tombs.  There is a\r\nsmall desk here, literally buried under legal documents.  There is also\r\na small window overlooking the northern part of the city.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+description = "The courtroom lies in that direction.\r\n"
+keyword = "door"
+door = 1
+key = 12039
+to_room = 12050
+
+[[rooms.extra]]
+keyword = "papers documents"
+description = "There are hundreds of pages of petitions, lawsuits and court orders sitting\r\non the desk.  One particularly interesting case involves a nobleman, a slave\r\nand a roll of toilet paper.\r\n"
+
+[[rooms.extra]]
+keyword = "tombs books"
+description = "The books are very large and filled with Roman legal precedent.\r\n"
+[[rooms]]
+vnum = 12056
+name = "A Mountain Path"
+description = "   You are standing on a small trail that leads through a grove of trees.\r\nEvery thing is lush and green here and it appears to have been raining\r\nrecently.  'This would be an ideal place for a picnic.' , you think to\r\nyourself.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 4
+description = "You see a small trail leading further up the mountain.\r\n"
+door = 0
+key = -1
+to_room = 12052
+
+[[rooms.exits]]
+dir = 5
+description = "You see a small trail, leading down.\r\n"
+door = 0
+key = -1
+to_room = 12059
+
+[[rooms.extra]]
+keyword = "trail path"
+description = "The path is a little muddy, possibly due to a recent thundershower.\r\n"
+
+[[rooms.extra]]
+keyword = "tree trees vegetation"
+description = "All of the vegetation is lush, green and in full bloom.  You wish that you \r\ncould take the time to stop and enjoy it properly.\r\n"
+[[rooms]]
+vnum = 12057
+name = "The Aqueduct"
+description = "   You are in a massive stone structure that has been designed to channel\r\nwater into the city of Rome.  Due to a recent drought, the water level is\r\nlow, allowing passage without a boat.  The walls and floor are covered\r\nwith algae and slime, producing treacherous footing conditions.  A valley\r\nlies to the south and the other cardinal directions lead further into the\r\naqueduct.\r\n"
+flags = "d"
+sector = 6
+
+[[rooms.exits]]
+dir = 0
+description = "The aqueduct continues.\r\n"
+door = 0
+key = -1
+to_room = 12054
+
+[[rooms.exits]]
+dir = 1
+description = "The aqueduct continues.\r\n"
+door = 0
+key = -1
+to_room = 12054
+
+[[rooms.exits]]
+dir = 2
+description = "You see a gorgeous valley.\r\n"
+door = 0
+key = -1
+to_room = 12058
+
+[[rooms.exits]]
+dir = 3
+description = "The aqueduct continues....\r\n"
+door = 0
+key = -1
+to_room = 12041
+
+[[rooms.extra]]
+keyword = "slime algae"
+description = "Due to the availability of moisture and nutrients, a green, viscous slime has\r\ngrown and covered everything with a slippery coating.  It seems to go out of\r\nits way to drip on you.\r\n"
+[[rooms]]
+vnum = 12058
+name = "The Valley Of The Gods"
+description = "   You stand in a tranquil valley at the base of a large mountain.  A quiet \r\nstream, with fruit trees growing along its banks, winds its way peacefully\r\nthrough the valley and enters a large stone structure that lies to the west.\r\nThere are birds singing and every now and then a ripple breaks the surface\r\nof the stream.  You can see a path leading through the trees to the up.\r\n"
+flags = "0"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+description = "A small path winds its way through the trees.\r\n"
+door = 0
+key = -1
+to_room = 12057
+
+[[rooms.exits]]
+dir = 4
+description = "You see a path leading up the mountain.\r\n"
+door = 0
+key = -1
+to_room = 12059
+
+[[rooms.extra]]
+keyword = "trees fruit"
+description = "The fruit trees, nourished by the fertile ground at the edge of the stream\r\nand sustained by the brilliant sunshine, line the banks of the stream and\r\nare laden with fruit.\r\n"
+
+[[rooms.extra]]
+keyword = "fish"
+description = "A variety of species swims peacefully in the cool, clear water.  \r\n"
+
+[[rooms.extra]]
+keyword = "stream brook"
+description = "A stream of the clearest, cleanest water that you have ever seen winds its\r\nway through the valley.\r\n"
+[[rooms]]
+vnum = 12059
+name = "A Mountain Path"
+description = "   You are standing on a path that leads up through a stand of large trees.  \r\nEverything is green and it seems like eternal spring - this is Mother Nature\r\nat her finest.  It is possible to descend into a tranquil valley from here.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 4
+description = "The path leads further up the mountain.\r\n"
+door = 0
+key = -1
+to_room = 12056
+
+[[rooms.exits]]
+dir = 5
+description = "The path widens out into a tranquil valley.\r\n"
+door = 0
+key = -1
+to_room = 12058
+
+[[rooms.extra]]
+keyword = "trees"
+description = "The trees are old and tower hundreds of feet above the ground.  If you stand\r\nstill and listen carefully, you can hear the birds singing.\r\n"
+[[rooms]]
+vnum = 12060
+name = "The Holding Cells"
+description = "   You are standing in the holding cell area, just off of the cortroom.  Those\r\nwho are recently convicted of serious crimes are brought here, pending torture\r\nand execution.  The courtroom lies to the north and another exit goes east.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "The courtroom lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 12050
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 12061
+
+[[rooms.extra]]
+keyword = "cells cell"
+description = "You can see small and very cramped cells which are filthy.  You shiver and \r\nvow to never do anything that would cause you to become a resident.\r\n"
+[[rooms]]
+vnum = 12061
+name = "The Torture Chamber"
+description = "   You are standing in a very small room in which there are many tools\r\ndesigned specifically for inflicting pain and suffering.  Some of them\r\nare familiar, such as the rack and the iron maidens.  Others, you have\r\nnever seen before and they make you wonder about the kind of sadistic\r\nmind that dreamt them up.  The only exit is to the west.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+description = "The holding cells lie in that direction.\r\n"
+door = 0
+key = -1
+to_room = 12060
+[[rooms]]
+vnum = 12062
+name = "The Roman Bakery"
+description = "   You are standing in the bakery of Rome and your mouth waters at the\r\ndelicious aromas wafting from the kitchen.  The only exit is to the east.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 12030
+[[rooms]]
+vnum = 12063
+name = "The General Store"
+description = "   You are standing in the only general store of Rome.  The walls and shelves \r\nare covered with all of the various items required by Roman citizens and \r\nstalwart adventurers.  Clay Avenue lies to the south.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "Clay Avenue lies in that direction.\r\n"
+door = 0
+key = -1
+to_room = 12046
+[[rooms]]
+vnum = 12064
+name = "Before Rome"
+description = "   You travel upon an East-West road wide enough for 30 men to march\r\nabreast.  It is packed hard through heavy use.  To the west stands the\r\nGates of Rome inviting you to enter and partake of all the glory and\r\nsplendor that is Rome.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 12065
+
+[[rooms.exits]]
+dir = 3
+keyword = "gate"
+door = 1
+key = -1
+to_room = 12051
+[[rooms]]
+vnum = 12065
+name = "Clay Road"
+description = "   You travel upon an East-West road wide enough for 30 men to march\r\nabreast.  It is packed hard through heavy use.  To the west, your eyes\r\ncatch the splendors of a mighty city.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 12066
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 12064
+[[rooms]]
+vnum = 12066
+name = "Clay Road"
+description = "   You travel upon an East-West road wide enough for 30 men to march\r\nabreast.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 12067
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 12065
+[[rooms]]
+vnum = 12067
+name = "The End Of The Clay Road"
+description = "   The mighty clay road turns into lesser, but still well traveled roads\r\nhere.  You feel a surge run through your body as you look East into the\r\nlands that Rome turned into its mighty empire.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "A dirt trail leads towards the desert to the east.\r\n"
+door = 0
+key = -1
+to_room = 12068
+
+[[rooms.exits]]
+dir = 3
+description = "The mighty clay road leads off in this direction.\r\n"
+door = 0
+key = -1
+to_room = 12066
+[[rooms]]
+vnum = 12068
+name = "A Small Dirt Trail"
+description = "   This small dirt path seems to be a joint between a large clay road\r\nlocated a short distance to the west and the expanse of sand which opens\r\nup before you to the east.  The clay road appears to lead through the\r\nfoothills towards the snowcapped mountain chain to the west.  Perhaps\r\nthere is a city or settlement in that direction.\r\n   You cannot see any breaks in the horizon of the sand which fills your\r\nvision as you look to the east, it seems to stretch forever.\r\n"
+flags = "c"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "The expanse of the Great Eastern Desert opens up before you.\r\n"
+door = 0
+key = -1
+to_room = 5028
+
+[[rooms.exits]]
+dir = 3
+description = "A large clay road begins a short distance to the west.\r\n"
+door = 0
+key = -1
+to_room = 12067

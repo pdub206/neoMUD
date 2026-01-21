@@ -1,0 +1,26 @@
+[[shops]]
+vnum = 3100
+producing = [3100, 3101, 3102, -1]
+buy_profit = 1.10
+sell_profit = 0.90
+broke_temper = 0
+bitvector = 0
+keeper = 3100
+trade_with = 0
+rooms = [3106, -1]
+open1 = 6
+close1 = 22
+open2 = 23
+close2 = 24
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s I haven't got such a drink."
+no_such_item2 = "%s I see no such thing."
+do_not_buy = "%s I do not buy, would you like a drink?"
+missing_cash1 = "%s BUG, Please report."
+missing_cash2 = "%s You can't afford such a fine drink, try the Grubby Inn."
+message_buy = "%s Fine, that'll be %d gold pieces."
+message_sell = "%s Bug, please report (%d)."

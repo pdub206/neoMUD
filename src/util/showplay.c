@@ -9,37 +9,53 @@
 #include "sysdep.h"
 
 #include "structs.h"
+#include "toml.h"
+
+#include <dirent.h>
+#include <sys/stat.h>
 
 
-void show(char *filename)
+static int show_file(const char *filename, int *num)
 {
   char sexname;
   char classname[10];
   FILE *fl;
-  struct char_file_u player;
-  int num = 0;
-  long size;
+  toml_table_t *tab, *cs, *pt;
+  toml_datum_t name, level, chclass, sex, idnum, gold, bank;
+  char errbuf[256];
 
-  if (!(fl = fopen(filename, "r+"))) {
-    perror("error opening playerfile");
-    exit(1);
-  }
-  fseek(fl, 0L, SEEK_END);
-  size = ftell(fl);
-  rewind(fl);
-  if (size % sizeof(struct char_file_u)) {
-    fprintf(stderr, "\aWARNING:  File size does not match structure, recompile showplay.\n");
-    fclose(fl);
-    exit(1);
+  if (!(fl = fopen(filename, "r")))
+    return (0);
+
+  tab = toml_parse_file(fl, errbuf, sizeof(errbuf));
+  fclose(fl);
+  if (!tab)
+    return (0);
+
+  name = toml_string_in(tab, "name");
+  level = toml_int_in(tab, "level");
+  chclass = toml_int_in(tab, "class");
+  sex = toml_int_in(tab, "sex");
+  cs = toml_table_in(tab, "char_specials");
+  pt = toml_table_in(tab, "points");
+  idnum.ok = 0;
+  gold.ok = 0;
+  bank.ok = 0;
+  if (cs)
+    idnum = toml_int_in(cs, "idnum");
+  if (pt) {
+    gold = toml_int_in(pt, "gold");
+    bank = toml_int_in(pt, "bank_gold");
   }
 
-  for (;;) {
-    fread(&player, sizeof(struct char_file_u), 1, fl);
-    if (feof(fl)) {
-      fclose(fl);
-      exit(0);
-    }
-    switch (player.chclass) {
+  if (!name.ok || !level.ok || !chclass.ok || !sex.ok || !idnum.ok || !gold.ok || !bank.ok) {
+    if (name.ok)
+      free(name.u.s);
+    toml_free(tab);
+    return (0);
+  }
+
+  switch (chclass.u.i) {
     case CLASS_THIEF:
       strcpy(classname, "Th");
       break;
@@ -57,7 +73,7 @@ void show(char *filename)
       break;
     }
 
-    switch (player.sex) {
+  switch (sex.u.i) {
     case SEX_FEMALE:
       sexname = 'F';
       break;
@@ -72,18 +88,84 @@ void show(char *filename)
       break;
     }
 
-    printf("%5d. ID: %5ld (%c) [%2d %s] %-16s %9dg %9db\n", ++num,
-	   player.char_specials_saved.idnum, sexname, player.level,
-	   classname, player.name, player.points.gold,
-	   player.points.bank_gold);
+  printf("%5d. ID: %5ld (%c) [%2d %s] %-16s %9d g %9d b\n", ++(*num),
+	 (long)idnum.u.i, sexname, (int)level.u.i, classname, name.u.s,
+	 (int)gold.u.i, (int)bank.u.i);
+
+  free(name.u.s);
+  toml_free(tab);
+  return (1);
+}
+
+void show(char *path)
+{
+  struct stat st;
+  int num = 0;
+
+  if (stat(path, &st) < 0) {
+    perror("error opening playerfile");
+    exit(1);
   }
+
+  if (S_ISDIR(st.st_mode)) {
+    static const char *dirs[] = {"A-E", "F-J", "K-O", "P-T", "U-Z", "ZZZ", NULL};
+    char testpath[PATH_MAX];
+    struct stat tst;
+    int i;
+
+    snprintf(testpath, sizeof(testpath), "%s/A-E", path);
+    if (stat(testpath, &tst) == 0 && S_ISDIR(tst.st_mode)) {
+      for (i = 0; dirs[i]; i++) {
+	DIR *dir;
+	struct dirent *ent;
+	char subdir[PATH_MAX];
+
+	snprintf(subdir, sizeof(subdir), "%s/%s", path, dirs[i]);
+	if (!(dir = opendir(subdir)))
+	  continue;
+
+	while ((ent = readdir(dir)) != NULL) {
+	  size_t len = strlen(ent->d_name);
+	  char filename[PATH_MAX];
+
+	  if (len <= 5 || strcmp(ent->d_name + len - 5, ".toml"))
+	    continue;
+
+	  snprintf(filename, sizeof(filename), "%s/%s", subdir, ent->d_name);
+	  show_file(filename, &num);
+	}
+	closedir(dir);
+      }
+    } else {
+      DIR *dir;
+      struct dirent *ent;
+
+      if (!(dir = opendir(path))) {
+	perror("error opening player directory");
+	exit(1);
+      }
+
+      while ((ent = readdir(dir)) != NULL) {
+	size_t len = strlen(ent->d_name);
+	char filename[PATH_MAX];
+
+	if (len <= 5 || strcmp(ent->d_name + len - 5, ".toml"))
+	  continue;
+
+	snprintf(filename, sizeof(filename), "%s/%s", path, ent->d_name);
+	show_file(filename, &num);
+      }
+      closedir(dir);
+    }
+  } else
+    show_file(path, &num);
 }
 
 
 int main(int argc, char **argv)
 {
   if (argc != 2)
-    printf("Usage: %s playerfile-name\n", argv[0]);
+    printf("Usage: %s player-dir-or-file\n", argv[0]);
   else
     show(argv[1]);
 

@@ -1,0 +1,119 @@
+[[rooms]]
+vnum = 1200
+name = "The Meeting Room Of The Gods"
+description = "   The meeting room is plain and very simple.  A circular table sits\r\nin the middle of the room, lit by some unseen light source.  There\r\nare many chairs around the table, all empty.  The Immortal Board Room\r\nis to the north.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "The Immortal Board Room can be seen to the north.\r\n"
+door = 0
+key = -1
+to_room = 1204
+[[rooms]]
+vnum = 1201
+name = "The Inn Of The Gods"
+description = "   The Inn of the Gods is a small room, holding only a shelf with many\r\nsmall precious stones on it.  When a God comes to rent his belongings,\r\nhis essence is stored in the stones.  The Immortal Board Room is to\r\nthe south.\r\n"
+flags = "dj"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "The Immortal Board Room can be seen to the south.\r\n"
+door = 0
+key = -1
+to_room = 1204
+[[rooms]]
+vnum = 1202
+name = "The Ice Box Of The Gods"
+description = "   The Ice Box is for little boys and girls that cannot play nice. Be good\r\nand maybe someone will come and get you.\r\n"
+flags = "defh"
+sector = 0
+[[rooms]]
+vnum = 1203
+name = "The Gods' Mortal Board Room"
+description = "   Here the Gods have magically created an exact copy of the mortal board\r\nroom.  Any God can easily post and read messages from the mortal board room\r\nwithout being seen by any mortals.  The Immortal Board Room is to the west.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+description = "The Immortal Board Room can be seen to the west.\r\n"
+door = 0
+key = -1
+to_room = 1204
+[[rooms]]
+vnum = 1204
+name = "The Immortal Board Room"
+description = "   The main hang out of the Gods, the Immortal Board Room is the place to\r\nbe.  Gods exchange messages here most every day.  The mortal board room is\r\nto the east and the meeting room for the gods is to the south.  To the north\r\nis the Gods' Inn and to the west is a post office for Gods.  There is a large\r\nstaircase leading down to the main temple in the city of Midgaard.  In the\r\nnortheast corner you spot a small staircase leading upwards.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "The Gods' Inn can be seen just to the north.\r\n"
+door = 0
+key = -1
+to_room = 1201
+
+[[rooms.exits]]
+dir = 1
+description = "The Mortal Board Room can be seen just to the east.\r\n"
+door = 0
+key = -1
+to_room = 1203
+
+[[rooms.exits]]
+dir = 2
+description = "The Gods' Meeting Room is located to the south.\r\n"
+door = 0
+key = -1
+to_room = 1200
+
+[[rooms.exits]]
+dir = 3
+description = "The Gods' Post Office is just to the west.\r\n"
+door = 0
+key = -1
+to_room = 1205
+
+[[rooms.exits]]
+dir = 4
+description = "There is a small stair in the corner leading up to the social room of\r\nthe Gods.\r\n"
+door = 0
+key = -1
+to_room = 1206
+
+[[rooms.exits]]
+dir = 5
+description = "You see the hustle and bustle of the Temple of Midgaard at the bottom of\r\nthe stairs.\r\n"
+door = 0
+key = -1
+to_room = 3001
+[[rooms]]
+vnum = 1205
+name = "The Post Office Of The Gods"
+description = "   The Post Office Of The Gods is the same as most Post Offices except that\r\nit is not as slow.  Even the Postal service knows not to anger the Gods.\r\nPiles of junk mail line the walls.  I guess even Gods get on mailing lists.\r\nThe Immortal Board Room is to the east.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "The Immortal Board Room is just to the east.\r\n"
+door = 0
+key = -1
+to_room = 1204
+[[rooms]]
+vnum = 1206
+name = "The Social Gathering Room"
+description = "   This elegantly decorated room has one simple purpose.  To socialize with\r\neveryone else around in one central location.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 5
+description = "The Immortal Board Room is just down through the floor.  Funny how you\r\ndidn't notice that exit before isn't it?\r\n"
+door = 0
+key = -1
+to_room = 1204

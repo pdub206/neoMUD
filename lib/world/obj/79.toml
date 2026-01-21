@@ -1,0 +1,380 @@
+[[objects]]
+vnum = 7900
+name = "key steel"
+short_descr = "a large key"
+description = "A large steel key has been left here."
+type = 18
+extra_flags = "c"
+wear_flags = "16385"
+values = [7900, 0, 0, 0]
+weight = 2
+cost = 0
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "steel key"
+description = "This huge key is made from solid steel.\r\n"
+[[objects]]
+vnum = 7901
+name = "key copper"
+short_descr = "a copper key"
+description = "A copper key has been left on the floor."
+type = 18
+extra_flags = "c"
+wear_flags = "16385"
+values = [7901, 0, 0, 0]
+weight = 2
+cost = 0
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "copper key"
+description = "This little key is made from copper.\r\n"
+[[objects]]
+vnum = 7902
+name = "key brass"
+short_descr = "a small brass key"
+description = "A small brass key lies here."
+type = 18
+extra_flags = "c"
+wear_flags = "16385"
+values = [7902, 0, 0, 0]
+weight = 1
+cost = 10
+rent = 4
+
+[[objects.extra_desc]]
+keyword = "key brass"
+description = "It is a small, simple brass key with no inscriptions or marks of any kind.\r\n"
+[[objects]]
+vnum = 7903
+name = "treasure coins"
+short_descr = "a huge treasure"
+description = "There is a huge treasure here, looking moderately valuable."
+type = 20
+extra_flags = "0"
+wear_flags = "1"
+values = [7734, 0, 0, 0]
+weight = 5
+cost = 7734
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "treasure"
+description = "This looks like a whole lot of coins, though not as many as you expected.\r\n"
+[[objects]]
+vnum = 7904
+name = "chest wooden"
+short_descr = "a wooden chest"
+description = "A wooden chest stands in the corner."
+type = 15
+extra_flags = "0"
+wear_flags = "0"
+values = [100, 15, 7902, 0]
+weight = 0
+cost = 0
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "chest wooden"
+description = "It is a robust chest made from short, heavy planks that have been fastened\r\ntogether with tenons.  It is equipped with a simple brass lock.\r\n"
+[[objects]]
+vnum = 7905
+name = "chest"
+short_descr = "a chest"
+description = "A heavy iron chest sits in one corner of the room."
+type = 15
+extra_flags = "f"
+wear_flags = "0"
+values = [15, 15, 7902, 0]
+weight = 0
+cost = 0
+rent = 0
+[[objects]]
+vnum = 7906
+name = "dagger plain black"
+short_descr = "a plain dagger"
+description = "A long black, but very plain, dagger rests here."
+type = 5
+extra_flags = "dfhn"
+wear_flags = "8193"
+values = [0, 5, 3, 11]
+weight = 3
+cost = 6500
+rent = 15000
+
+[[objects.affects]]
+location = 18
+modifier = -3
+
+[[objects.affects]]
+location = 19
+modifier = -1
+[[objects]]
+vnum = 7907
+name = "bracelet spiked"
+short_descr = "a large spiked bracelet"
+description = "A large spiked bracelet has been left here."
+type = 11
+extra_flags = "g"
+wear_flags = "4097"
+values = [0, 0, 0, 0]
+weight = 1
+cost = 1200
+rent = 2000
+
+[[objects.affects]]
+location = 17
+modifier = -4
+[[objects]]
+vnum = 7908
+name = "waybread bread"
+short_descr = "a waybread"
+description = "Some waybread has been put here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [24, 0, 0, 0]
+weight = 1
+cost = 50
+rent = 50
+
+[[objects.extra_desc]]
+keyword = "waybread bread"
+description = "The waybread is the traditional feed of elves when travelling, they\r\ncall it lembas.  It is said to refresh the weary traveler greatly.\r\n"
+[[objects]]
+vnum = 7909
+name = "ring gold goldring"
+short_descr = "a golden ring"
+description = "A shiny goldring has been abandoned here."
+type = 11
+extra_flags = "dfmpq"
+wear_flags = "3"
+values = [0, 0, 0, 0]
+weight = 20
+cost = 3500
+rent = 2000
+
+[[objects.affects]]
+location = 3
+modifier = 2
+[[objects]]
+vnum = 7910
+name = "sword bastard"
+short_descr = "a huge bastard sword"
+description = "There is a huge bastard sword here."
+type = 5
+extra_flags = "gklmn"
+wear_flags = "8193"
+values = [0, 2, 8, 3]
+weight = 18
+cost = 1700
+rent = 800
+
+[[objects.extra_desc]]
+keyword = "bastard sword"
+description = "Quite a heavy weapon, with a pure white hilt.\r\n"
+
+[[objects.affects]]
+location = 19
+modifier = 3
+[[objects]]
+vnum = 7911
+name = "helmet large"
+short_descr = "a large helmet"
+description = "There is a large helmet on the floor."
+type = 9
+extra_flags = "g"
+wear_flags = "17"
+values = [7, 0, 0, 0]
+weight = 5
+cost = 4500
+rent = 1500
+
+[[objects.extra_desc]]
+keyword = "large helmet"
+description = "This looks like some heavy protection, for the head of course.\r\n"
+[[objects]]
+vnum = 7912
+name = "helmet chaos"
+short_descr = "a chaos helmet"
+description = "On the floor is a grand evil-looking chaos helmet."
+type = 9
+extra_flags = "fgj"
+wear_flags = "17"
+values = [8, 0, 0, 0]
+weight = 8
+cost = 2300
+rent = 1000
+
+[[objects.extra_desc]]
+keyword = "chaos helmet"
+description = "This helmet has mounted some mean looking spikes on the front,\r\nmoreover it looks like good protection.\r\n"
+
+[[objects.affects]]
+location = 19
+modifier = 2
+
+[[objects.affects]]
+location = 24
+modifier = -2
+[[objects]]
+vnum = 7913
+name = "sword two-handed"
+short_descr = "a two-handed sword"
+description = "On the floor rests a enormous two-handed sword."
+type = 5
+extra_flags = "gjkm"
+wear_flags = "8193"
+values = [0, 3, 6, 3]
+weight = 22
+cost = 3500
+rent = 3500
+
+[[objects.extra_desc]]
+keyword = "two-handed sword"
+description = "You notice that there has been inscribed some runes and a sort of\r\npattern, which resembles flames running along the edge.\r\n"
+
+[[objects.extra_desc]]
+keyword = "runes"
+description = "On the blade you can read 'Flame And Strength United Are My Soul Power'.\r\n"
+
+[[objects.affects]]
+location = 17
+modifier = 10
+
+[[objects.affects]]
+location = 19
+modifier = 3
+[[objects]]
+vnum = 7914
+name = "plate breast silvery silver"
+short_descr = "a silvery breast plate"
+description = "There is a silvery breast plate on the floor."
+type = 9
+extra_flags = "gkl"
+wear_flags = "9"
+values = [10, 7000, 0, 0]
+weight = 70
+cost = 20000
+rent = 5000
+
+[[objects.extra_desc]]
+keyword = "plate breast silvery silver"
+description = "On the breast plate you notice a relief of large rose.  The metal seems\r\nto be some kind of silver or platinum.\r\n"
+[[objects]]
+vnum = 7915
+name = "plates leg silvery"
+short_descr = "some silvery leg plates"
+description = "On the floor you see some leg plates."
+type = 9
+extra_flags = "gkl"
+wear_flags = "33"
+values = [7, 7000, 0, 0]
+weight = 40
+cost = 12500
+rent = 5000
+
+[[objects.extra_desc]]
+keyword = "leg plates silvery silver"
+description = "They seem to be made from silver or platinum. You see the outline of a\r\nrose.\r\n"
+[[objects]]
+vnum = 7916
+name = "gloves silvery silver"
+short_descr = "a pair of silvery gloves"
+description = "You can see a pair of gloves on the floor."
+type = 9
+extra_flags = "gkl"
+wear_flags = "129"
+values = [5, 7000, 0, 0]
+weight = 14
+cost = 2500
+rent = 2000
+
+[[objects.extra_desc]]
+keyword = "gloves silvery silver"
+description = "The gloves are made of silver threads.\r\n"
+
+[[objects.affects]]
+location = 18
+modifier = 1
+[[objects]]
+vnum = 7917
+name = "helmet silvery silver"
+short_descr = "a silvery helmet"
+description = "The silvery helmet lies here."
+type = 9
+extra_flags = "gkl"
+wear_flags = "17"
+values = [8, 7000, 0, 0]
+weight = 35
+cost = 9000
+rent = 5000
+
+[[objects.extra_desc]]
+keyword = "helmet silvery silver"
+description = "The helmet is made from platinum or silver and has a white fur brush\r\nattached on the top.\r\n"
+[[objects]]
+vnum = 7918
+name = "shield rose"
+short_descr = "the shield of the rose"
+description = "The shield of the rose rests on the floor."
+type = 9
+extra_flags = "gkl"
+wear_flags = "513"
+values = [12, 7000, 0, 0]
+weight = 60
+cost = 15000
+rent = 7500
+
+[[objects.extra_desc]]
+keyword = "shield rose"
+description = "On the shield you see a clear and perfect painting of a dark red rose\r\non a white background. You also notice an inscription.\r\n"
+
+[[objects.extra_desc]]
+keyword = "inscription"
+description = "The inscription reads:\r\n\r\nPax Est Sanctuum\r\n\r\n"
+[[objects]]
+vnum = 7919
+name = "boots heavy plated"
+short_descr = "a pair of heavy plated boots"
+description = "A pair of heavy plated boots stand on the floor."
+type = 9
+extra_flags = "gkl"
+wear_flags = "65"
+values = [5, 7000, 0, 0]
+weight = 40
+cost = 3500
+rent = 3500
+
+[[objects.extra_desc]]
+keyword = "boots heavy plated"
+description = "The boots are made from a silvery metal.\r\n"
+[[objects]]
+vnum = 7920
+name = "plates arm silvery silver"
+short_descr = "some silvery arm plates"
+description = "On the floor you see some arm plates."
+type = 9
+extra_flags = "gkl"
+wear_flags = "257"
+values = [7, 7000, 0, 0]
+weight = 40
+cost = 12500
+rent = 5000
+
+[[objects.extra_desc]]
+keyword = "plates arm silvery silver"
+description = "They seem to be made from silver or platinum.  You see the outline of a\r\nrose.\r\n"
+[[objects]]
+vnum = 7921
+name = "barrel water"
+short_descr = "a barrel"
+description = "A water barrel has been left here."
+type = 17
+extra_flags = "0"
+wear_flags = "1"
+values = [40, 40, 15, 0]
+weight = 45
+cost = 60
+rent = 20

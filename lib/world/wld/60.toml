@@ -1,0 +1,2097 @@
+[[rooms]]
+vnum = 6000
+name = "The Edge Of The Forest"
+description = "   You are standing at the end of a dusty road, near the eastern edge of the\r\nlarge forest of Haon-Dor.  To the east you see the road heading back to the\r\nwalled city, Midgaard, and to the west is a narrow trail leading through the\r\nforest.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+description = "To the east a dusty road takes you back to the walls of Midgaard, and its large\r\nwest gate.\r\n"
+door = 0
+key = -1
+to_room = 6090
+
+[[rooms.exits]]
+dir = 3
+description = "You see a narrow forest trail winding westward in between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6001
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are quite tall considering most of them appear to be quite young.\r\nOn one of the trees, crude letters forming the word 'Haon-Dor' have been\r\ncarved into the bark.\r\n"
+
+[[rooms.extra]]
+keyword = "trail"
+description = "The forest trail winds westwards through the trees.\r\n"
+[[rooms]]
+vnum = 6001
+name = "A Trail Through The Light Forest"
+description = "   You are on a trail leading through the forest.  There seems to be a small\r\npath leading north into the shadows.  To the east is the forest edge and to\r\nthe west the trail leads further into the forest.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "You see evidence of a small path leading through a break in the trees to the\r\nnorth.\r\n"
+door = 0
+key = -1
+to_room = 6060
+
+[[rooms.exits]]
+dir = 1
+description = "The trail continues eastwards out of the forest.\r\n"
+door = 0
+key = -1
+to_room = 6000
+
+[[rooms.exits]]
+dir = 3
+description = "You see the narrow forest trail winding westwards in between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6002
+
+[[rooms.extra]]
+keyword = "birds insects animals"
+description = "Very cute little creatures, they seem to enjoy life.\r\n"
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees here are quite young and fresh.  They seem to accommodate many kinds\r\nof birds, insects and other small animals.\r\n"
+
+[[rooms.extra]]
+keyword = "trail"
+description = "The forest trail winds east-west through the trees.\r\n"
+[[rooms]]
+vnum = 6002
+name = "A Trail Through The Light Forest"
+description = "   You are on a narrow trail winding east and west through the forest.  To the\r\nwest, the forest gradually becomes more dense.  A small forest path leads off\r\nto the south.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+description = "The trail continues eastwards through the young trees.\r\n"
+door = 0
+key = -1
+to_room = 6001
+
+[[rooms.exits]]
+dir = 2
+description = "The small path leads south through the young trees.\r\n"
+door = 0
+key = -1
+to_room = 6011
+
+[[rooms.exits]]
+dir = 3
+description = "You see the narrow forest trail winding westwards into the dense forest.\r\n"
+door = 0
+key = -1
+to_room = 6003
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The young, slender trees look beautiful, their fresh, green leaves moving\r\nlightly in the wind.\r\n"
+
+[[rooms.extra]]
+keyword = "trail"
+description = "The forest trail winds east-west through the trees.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The narrow path is probably used by the animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6003
+name = "A Trail Through The Dense Forest"
+description = "   You are on a trail winding east and west through the dense forest.  To\r\nthe east, the forest gradually seems to become lighter.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+description = "The trail continues eastwards to the younger part of the forest.\r\n"
+door = 0
+key = -1
+to_room = 6002
+
+[[rooms.exits]]
+dir = 3
+description = "You see the narrow trail winding westwards through the dense forest.\r\n"
+door = 0
+key = -1
+to_room = 6004
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The dense crowns of the mature trees leave only a fraction of the sky to be\r\nseen through the leaves.\r\n"
+
+[[rooms.extra]]
+keyword = "trail"
+description = "The forest trail seems almost fragile compared to the massive trunks.\r\n"
+[[rooms]]
+vnum = 6004
+name = "A Trail Through The Dense Forest"
+description = "   You are on a trail winding east and west through the dense forest.  To the\r\nwest, the trees are so huge and their crowns so dense that forest remains in\r\ntotal darkness.  A small path leads south through the trees.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+description = "The trail continues eastwards through the dense forest.\r\n"
+door = 0
+key = -1
+to_room = 6003
+
+[[rooms.exits]]
+dir = 2
+description = "The small path leads south through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6005
+
+[[rooms.exits]]
+dir = 3
+description = "The narrow trail almost seems to disappear between the enormous trunks.\r\n"
+door = 0
+key = -1
+to_room = 6100
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The crowns of the old trees almost cut out all light.\r\n"
+
+[[rooms.extra]]
+keyword = "trail"
+description = "The forest trail seems almost fragile compared to the massive trunks.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The narrow path is probably used by the animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6005
+name = "A Small Path In The Dense Forest"
+description = "   You are on a small path leading through the dense forest.  The crowns of\r\nthe old trees leave the forest in an unreal twilight illumination.  The path\r\ncontinues north and south.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The small path leads north through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6004
+
+[[rooms.exits]]
+dir = 2
+description = "The small path leads south through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6006
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The narrow path is probably used by the animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6006
+name = "A Small Path In The Dense Forest"
+description = "   You are on a small path leading through the dense forest.  The crowns of\r\nthe old trees leave the forest in an unreal twilight illumination.  The path\r\ncontinues north and east.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The small path leads north through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6005
+
+[[rooms.exits]]
+dir = 1
+description = "The small path leads east through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6007
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The narrow path is probably used by the animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6007
+name = "An Intersection In The Dense Forest"
+description = "   You are on a small path leading through the dense forest.  The crowns of\r\nthe old trees leave the forest in an unreal twilight illumination.  The forest\r\ngradually lightens to the east.  Paths lead east, west and south.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+description = "You can barely make out a clearing to the east.\r\n"
+door = 0
+key = -1
+to_room = 6008
+
+[[rooms.exits]]
+dir = 2
+description = "The small path leads south through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6012
+
+[[rooms.exits]]
+dir = 3
+description = "The small path leads west through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6006
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The narrow path is probably used by the animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6008
+name = "The Forest Clearing"
+description = "   You are in a clearing in the forest.  Lots of fresh stumps of varying sizes\r\nprotrude from the ground and heavy logs are stacked neatly in a big pile\r\nsupported by stakes set into the ground.  Paths lead north, east and west.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The small path leads north through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6011
+
+[[rooms.exits]]
+dir = 1
+description = "The small path leads east through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6009
+
+[[rooms.exits]]
+dir = 3
+description = "The small path leads west through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6007
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+
+[[rooms.extra]]
+keyword = "stump stumps"
+description = "There are more stumps than logs and some of the stumps are partly covered in\r\nmoss.\r\n"
+
+[[rooms.extra]]
+keyword = "stake stakes"
+description = "The stakes keep the logs from rolling down.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The narrow path is probably used by the animals living in the forest.\r\n"
+
+[[rooms.extra]]
+keyword = "log logs"
+description = "Even though the logs have been chopped to shorter pieces, they are quite heavy\r\nas they are fresh and still filled with sap.\r\n"
+[[rooms]]
+vnum = 6009
+name = "Outside A Small Cabin In The Forest"
+description = "   You are outside a small cabin built entirely from heavy logs.  There is a\r\nwooden door to the north and small paths lead west and south through the trees.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The wooden door is quite sturdy but does not appear to be equipped with a lock.\r\n"
+keyword = "door wooden"
+door = 1
+key = -1
+to_room = 6010
+
+[[rooms.exits]]
+dir = 2
+description = "The small path leads south through the dense forest.\r\n"
+door = 0
+key = -1
+to_room = 6014
+
+[[rooms.exits]]
+dir = 3
+description = "The small path leads west through the light forest.\r\n"
+door = 0
+key = -1
+to_room = 6008
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are fairly young, not much more than a hundred years or so.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The path is probably used by the cabin's inhabitants.\r\n"
+
+[[rooms.extra]]
+keyword = "cabin logs log"
+description = "It looks simple but comfortable and the slender trees make the whole place seem\r\npretty idyllic.  It is a cabin built from wooden logs.\r\n"
+[[rooms]]
+vnum = 6010
+name = "Inside The Cabin"
+description = "   You are inside a small one-room cabin made entirely from heavy logs.\r\nIt is very sparsely furnished, containing only the most basic housekeeping\r\nequipment, such as a bed, a chair and a table.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "The wooden door leads south.\r\n"
+keyword = "door wooden"
+door = 1
+key = -1
+to_room = 6009
+
+[[rooms.extra]]
+keyword = "carving carvings carved"
+description = "On the table is carved :\r\n                                                  /) /)\r\n          Danny and Mari, Oct 31, 1991           ( o o )\r\n                                                  = x =\r\n                                                 m     m\r\n                                              ***(========-\r\n"
+
+[[rooms.extra]]
+keyword = "table"
+description = "A heavy table that doesn't even appear to rock.  It seems to have something\r\ncarved on it.\r\n"
+
+[[rooms.extra]]
+keyword = "chair"
+description = "It is made from oak and looks strong and sturdy.\r\n"
+
+[[rooms.extra]]
+keyword = "bed"
+description = "It is definitely not the most comfortable bed you have seen in your life.\r\n"
+[[rooms]]
+vnum = 6011
+name = "A Small Path Through The Light Forest"
+description = "   You are on a small path leading through the forest.  The trees are tall and\r\nslender.  Paths lead north and south.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The path leads north through the young trees.\r\n"
+door = 0
+key = -1
+to_room = 6002
+
+[[rooms.exits]]
+dir = 2
+description = "The path leads south through the young trees.\r\n"
+door = 0
+key = -1
+to_room = 6008
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are fairly young, not much more than a hundred years or so.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The narrow path is probably used by the animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6012
+name = "An Intersection In The Dense Forest"
+description = "   You are on a small path leading through the dense forest.  The crowns of the\r\nold trees leave the forest floor in an unreal twilight illumination.  Paths\r\nlead north, east and south.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The small path leads north through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6007
+
+[[rooms.exits]]
+dir = 1
+description = "The small path leads east through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6013
+
+[[rooms.exits]]
+dir = 2
+description = "The small path leads south through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6021
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The narrow path is probably used by the animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6013
+name = "A Small Path In The Dense Forest"
+description = "   You are on a small path leading through the dense forest.  The crowns of\r\nthe old trees leave the forest in an unreal twilight illumination.  The path\r\ncontinues east and west.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+description = "The small path leads east through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6014
+
+[[rooms.exits]]
+dir = 3
+description = "The small path leads west through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6012
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The narrow path is probably used by the animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6014
+name = "An Intersection In The Dense Forest"
+description = "   You are on a small path leading through the dense forest.  The forest\r\ngradually lightens to the north.  Paths lead north, east and west.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The path leads north to a lighter part of the forest.\r\n"
+door = 0
+key = -1
+to_room = 6009
+
+[[rooms.exits]]
+dir = 1
+description = "The small path leads east through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6015
+
+[[rooms.exits]]
+dir = 3
+description = "The small path leads west through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6013
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The crowns of the old trees leave the forest in an unreal twilight\r\nillumination.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The narrow path is probably used by the animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6015
+name = "A Small Path In The Dense Forest"
+description = "   You are on a small path leading through the dense forest.  The crowns of\r\nthe old trees leave the forest in an unreal twilight illumination.  The path\r\ncontinues south and west.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 2
+description = "The small path leads south through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6016
+
+[[rooms.exits]]
+dir = 3
+description = "The small path leads west through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6014
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The narrow path is probably used by the animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6016
+name = "A Small Path In The Dense Forest"
+description = "   You are on a small path leading through the dense forest.  The crowns of\r\nthe old trees leave the forest in an unreal twilight illumination.  The path\r\ncontinues north, south and east.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The small path leads north through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6015
+
+[[rooms.exits]]
+dir = 1
+description = "The small path leads east through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6028
+
+[[rooms.exits]]
+dir = 2
+description = "The small path leads south through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6017
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The narrow path is probably used by the animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6017
+name = "A Small Path In The Dense Forest"
+description = "   You are at a turn on a small path leading through the dense forest.  The\r\nforest seems to become lighter to the west.  The path continues north and west.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The small path leads north through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6016
+
+[[rooms.exits]]
+dir = 3
+description = "The small path leads west through the trees to a lighter part of the forest.\r\n"
+door = 0
+key = -1
+to_room = 6018
+
+[[rooms.extra]]
+keyword = "up branches branch large"
+description = "The branch of a large oak stretches out above the path from the east.\r\n"
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The crowns of the old trees leave the forest in an unreal twilight\r\nillumination.  A large branch looms above you, over the path.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The narrow path is probably used by the animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6018
+name = "An Intersection In The Light Forest"
+description = "   You are on a small path leading through the forest.  A path leads north to\r\na small field and other paths lead east and west into the dense forest.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The path leads north to a small, grassy field.\r\n"
+door = 0
+key = -1
+to_room = 6023
+
+[[rooms.exits]]
+dir = 1
+description = "The path leads east to a dense part of the forest.\r\n"
+door = 0
+key = -1
+to_room = 6017
+
+[[rooms.exits]]
+dir = 3
+description = "The path leads west to a dense part of the forest.\r\n"
+door = 0
+key = -1
+to_room = 6019
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The tall trees are young and slender, not much more than a hundred years or so.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The narrow path is probably used by the animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6019
+name = "A Small Path In The Dense Forest"
+description = "   You are on a small path leading through the dense forest.  The forest seems\r\nto become lighter to the east.  The path continues north and east.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The small path leads north through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6020
+
+[[rooms.exits]]
+dir = 1
+description = "The small path leads east through the trees to a lighter part of the forest.\r\n"
+door = 0
+key = -1
+to_room = 6018
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The crowns of the old trees leave the forest in an unreal twilight\r\nillumination.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The narrow path is probably used by the animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6020
+name = "A Small Path In The Dense Forest"
+description = "   You are on a small path leading through the dense forest.  The crowns of\r\nthe old trees leave the forest in an unreal twilight illumination.  The path\r\ncontinues south and west.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 2
+description = "The small path leads south through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6019
+
+[[rooms.exits]]
+dir = 3
+description = "The small path leads west through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6021
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The narrow path is probably used by the animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6021
+name = "A Small Path In The Dense Forest"
+description = "   You are on a small path leading through the dense forest.  To the west\r\nyou see a dark cave entrance, leading into a small hillside.  The path\r\ncontinues north and east.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The small path leads north through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6012
+
+[[rooms.exits]]
+dir = 1
+description = "The small path leads east through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6020
+
+[[rooms.exits]]
+dir = 3
+description = "The cave is very dark.\r\n"
+door = 0
+key = -1
+to_room = 6022
+
+[[rooms.extra]]
+keyword = "cave entrance"
+description = "The irregular opening is eight feet wide and six feet tall.  An acrid smell\r\nemanates from within.\r\n"
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The crowns of the old trees leave the forest in an unreal twilight\r\nillumination.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The narrow path is probably used by the animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6022
+name = "Inside The Cave"
+description = "   You are in a natural cave.  Various sorts of debris cover the stone floor,\r\nemitting a rather unpleasant smell that makes the air thick and hard to\r\nbreathe.  The only obvious exit is east.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "The cave opening is to the east.\r\n"
+door = 0
+key = -1
+to_room = 6021
+
+[[rooms.extra]]
+keyword = "air smell"
+description = "Kind of transparent, but quite noticeable nevertheless.\r\n"
+
+[[rooms.extra]]
+keyword = "cave walls floor stone"
+description = "Quite uninteresting.\r\n"
+
+[[rooms.extra]]
+keyword = "debris"
+description = "It consists mostly of gnawed bones mixed with small pieces of torn fur.\r\n"
+[[rooms]]
+vnum = 6023
+name = "A Grassy Field"
+description = "   You are in a grass covered field somewhere in the forest.  The tall grass\r\nnearly reaches your waist, and the surrounding oaks and beeches form an almost\r\nwall-like thicket on the east side of the field.  To the northeast you can see\r\na small lake.  A small path leads south through the trees, and the field opens\r\nup to the north and west.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "Wind blowing in from the north carries with it the smell of a newly killed\r\nanimal, as well as the noise of many birds, which you can see circling there.\r\n"
+door = 0
+key = -1
+to_room = 6026
+
+[[rooms.exits]]
+dir = 1
+description = "The ground slopes gently downward to the eastern tree line.\r\n"
+door = 0
+key = -1
+to_room = 6024
+
+[[rooms.exits]]
+dir = 2
+description = "The small path leads south in between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6018
+
+[[rooms.extra]]
+keyword = "birds bird circling"
+description = "Many carrion birds are circling to the north, you presume they are waiting for\r\ntheir turn to feast on a corpse.\r\n"
+
+[[rooms.extra]]
+keyword = "tree trees thicket"
+description = "The trees form a close thicket, blocking any exit to the west.\r\n"
+
+[[rooms.extra]]
+keyword = "path"
+description = "The narrow path is probably used by the animals living in the forest.\r\n"
+
+[[rooms.extra]]
+keyword = "grass"
+description = "The tall grass makes a nice hiding place for animals.\r\n"
+[[rooms]]
+vnum = 6024
+name = "The Lower Part Of The Grassy Field"
+description = "   You are in a lower part of the grassy field, south of a small lake.  The\r\ngrass here has been trampled by the many animals coming here for water, leaving\r\nthe ground covered in tracks of different types.  To the west you see a break\r\nin the wall of trees surrounding the field, and to the north is a small lake.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "The animal tracks lead off to the north, and around the lake there.\r\n"
+door = 0
+key = -1
+to_room = 6025
+
+[[rooms.exits]]
+dir = 3
+description = "To the south-west you see a break in the tree line, leading back to the\r\nforest path.\r\n"
+door = 0
+key = -1
+to_room = 6023
+
+[[rooms.extra]]
+keyword = "tree trees thicket"
+description = "The trees form a close thicket, blocking any exit to the south and east.\r\n"
+
+[[rooms.extra]]
+keyword = "path trampled"
+description = "The trampled grass path leads to the lake north of here.\r\n"
+
+[[rooms.extra]]
+keyword = "grass"
+description = "The tall grass makes a nice hiding place for animals.\r\n"
+[[rooms]]
+vnum = 6025
+name = "Beside The Lake In A Grassy Field"
+description = "   The grass stops shortly before the lake, replaced by mud covered in tracks\r\nfrom the local animals.  When you come close many animals scatter into the tall\r\ngrass and some even into the forest.  To the west you see birds circling in the\r\nhigh in the air, and to the north you see a small lake, surrounded by tall\r\nreeds.  The field continues to the south, and the forest blocks passage to the\r\neast.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "The lake looks inviting, and you can see some sort of water fowl floating\r\naround among the reeds.\r\n"
+door = 0
+key = -1
+to_room = 6027
+
+[[rooms.exits]]
+dir = 2
+description = "To the south an animal trail leads of towards a the other side of the lower\r\nfield.\r\n"
+door = 0
+key = -1
+to_room = 6024
+
+[[rooms.exits]]
+dir = 3
+description = "The smell of carrion drifts down to you from higher on the field to the west.\r\n"
+door = 0
+key = -1
+to_room = 6026
+
+[[rooms.extra]]
+keyword = "track tracks mud"
+description = "You see tracks of both hooved and other sorts of animals.  Evidence of all\r\nsizes of animals is here in the mud, showing just how lively the forest is.\r\n"
+
+[[rooms.extra]]
+keyword = "birds bird circling"
+description = "Many carrion birds are circling to the west, you presume they are waiting for\r\ntheir turn to feast on a corpse.\r\n"
+
+[[rooms.extra]]
+keyword = "tree trees thicket"
+description = "The trees form a close thicket, blocking any exit to the north or east.\r\n"
+
+[[rooms.extra]]
+keyword = "lake"
+description = "Animals from all around come here to drink.  The lake itself is not very big,\r\nbut it stretches off to the north from here.\r\n"
+
+[[rooms.extra]]
+keyword = "grass"
+description = "The tall grass makes a nice hiding place for animals.\r\n"
+[[rooms]]
+vnum = 6026
+name = "The Northern Section Of A Grassy Field"
+description = "   As you come close, scavenging animals and birds of all sorts scatter,\r\nleaving only the boldest and stupidest encircling the corpse of a large boar.\r\nCarrion birds circle overhead, and smaller animals stare out of the tall grass\r\nat you.  The grass here has been trampled, and a large area around the corpse\r\nis stained by blood.  A trail leads down the sloping field to a lake, and to\r\nthe south you see the path back to the forest.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+description = "A small lake lies down the sloping field to the east.  Some of the animals\r\nthat fled from here have gone there, and are watching, waiting for you to\r\nleave so they can resume their feasting.\r\n"
+door = 0
+key = -1
+to_room = 6025
+
+[[rooms.exits]]
+dir = 2
+description = "The field continues to the south, and you can see the path back to the forest\r\nthere.\r\n"
+door = 0
+key = -1
+to_room = 6023
+
+[[rooms.extra]]
+keyword = "animal animals small"
+description = "Several pairs of eyes peer out at you, urging you to leave.  The just might\r\ndecide that en masse they could kill you, so you probably don't want to tarry\r\nhere.\r\n"
+
+[[rooms.extra]]
+keyword = "birds circling"
+description = "Many birds of varying size circle overhead, waiting for you to leave.  You\r\nhope they don't decide that you could be a corpse with just a little effort.\r\n"
+
+[[rooms.extra]]
+keyword = "tree trees thicket"
+description = "The trees form a close thicket, blocking any exit to the north and west.\r\n"
+
+[[rooms.extra]]
+keyword = "path"
+description = "The narrow path is probably used by the animals living in the forest.\r\n"
+
+[[rooms.extra]]
+keyword = "grass"
+description = "The tall grass makes a nice hiding place for animals.  You see some of the\r\nanimals you frightened away peeking furtively out at you.\r\n"
+[[rooms]]
+vnum = 6027
+name = "On The Lake"
+description = "   You are in the middle of a small lake, fed from a small stream coming\r\nthrough the forest from the northwest.  The water is not that clear, but\r\nyou can see fish swimming around below you.  The bank is clear to the\r\nsouth, providing a safe place to get back to the field.\r\n"
+flags = "0"
+sector = 7
+
+[[rooms.exits]]
+dir = 2
+description = "Some animals have gathered on the bank to watch you, curious about what you\r\nare doing.\r\n"
+door = 0
+key = -1
+to_room = 6025
+
+[[rooms.extra]]
+keyword = "reed reeds"
+description = "Reeds grow up around the edges of the lake, providing cover for the small\r\nwater fowl that live here.\r\n"
+
+[[rooms.extra]]
+keyword = "tree trees thicket"
+description = "Trees cover the bank on most sides, preventing you from docking there.\r\n"
+
+[[rooms.extra]]
+keyword = "lake"
+description = "Animals from all around come here to drink.  The lake itself is not very big,\r\nbut it stretches off to the north from here.\r\n"
+
+[[rooms.extra]]
+keyword = "fish"
+description = "Trout and perhaps a catfish or two swim about below you, totally ignoring\r\nyour presence.\r\n"
+[[rooms]]
+vnum = 6028
+name = "A Small Path In The Dense Forest"
+description = "   You are on a small path leading through the dense forest.  The crowns of\r\nthe old trees leave the forest in an unreal twilight illumination.  The path\r\ncontinues to the west and south.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6029
+
+[[rooms.exits]]
+dir = 3
+description = "The small path leads west through the trees.\r\n"
+door = 0
+key = -1
+to_room = 6016
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The narrow path is probably used by the animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6029
+name = "Near A Large Tree In The Dense Forest"
+description = "   You are at the end of a small path leading through the dense forest.  The\r\ncrowns of the old trees leave the forest in an unreal twilight illumination.\r\nThis rough clearing is dominated by a very large oak tree, probably the\r\nlargest in this part of the forest.  The path leads back to the north.\r\n"
+flags = "c"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6028
+
+[[rooms.exits]]
+dir = 4
+description = "You see the lower branches of the towering oak.\r\n"
+door = 0
+key = -1
+to_room = 6030
+
+[[rooms.extra]]
+keyword = "top highest high"
+description = "You could probably see most of the forest, and perhaps even the city from the\r\ntop of the tree... of course, you'd have to deal with whatever that shape is\r\npacing on one of the upper limbs.\r\n"
+
+[[rooms.extra]]
+keyword = "limb limbs"
+description = "They look quite sturdy, certainly capable of holding your weight should you\r\ndecide to climb up the tree using them.\r\n"
+
+[[rooms.extra]]
+keyword = "animal shape"
+description = "From here it looks vaguely feline, though you could get a much better view\r\nfrom in the tree.  You are not sure if it has seen you yet.\r\n"
+
+[[rooms.extra]]
+keyword = "large oak tree"
+description = "It has some lower branches that you think you could reach if you stretched.\r\nYou might even be able to climb all the top, though from here it looks like\r\nsomething else had that idea before you.  There is a faint animal shape pacing\r\non one of the highest branches.\r\n"
+
+[[rooms.extra]]
+keyword = "trees"
+description = "The trees are mostly old beeches and oaks, with one large oak off to your\r\nright.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The narrow path is probably used by the animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6030
+name = "In The Lower Branches Of A Large Oak"
+description = "   You are in a huge oak, about one third of the way to the top.  The branches\r\nabove you block out much of the light, but enough filters through for you to\r\nsee.  Small animals and birds scatter at your approach, rustling the leaves\r\nall about you.  You could easily climb back down to the ground, or continue up\r\nthe tree.  One large branch juts outward to the west, possibly providing a\r\nthird choice of exit.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 3
+description = "This limb looks large and strong enough for you to walk most of the way along\r\nits length to the west.\r\n"
+door = 0
+key = -1
+to_room = 6031
+
+[[rooms.exits]]
+dir = 4
+description = "More large branches spread out from the tree above you.\r\n"
+door = 0
+key = -1
+to_room = 6032
+
+[[rooms.exits]]
+dir = 5
+description = "The rough clearing is just a quick climb and jump below you.\r\n"
+door = 0
+key = -1
+to_room = 6029
+
+[[rooms.extra]]
+keyword = "top highest high"
+description = "You could probably see most of the forest, and perhaps even the city from the\r\ntop of the tree... of course, you would have to deal with whatever that shape\r\nis that you see pacing on one of the upper limbs.\r\n"
+
+[[rooms.extra]]
+keyword = "limb limbs"
+description = "They look quite sturdy, certainly capable of holding your weight should you\r\ndecide to climb around in the tree using them.\r\n"
+
+[[rooms.extra]]
+keyword = "pacing pace animal shape"
+description = "From here it looks feline.  You still don't think it has noticed you, despite\r\nthe noise you made while climbing up here.\r\n"
+
+[[rooms.extra]]
+keyword = "feline"
+description = "The shape above you moves with definite grace and confidence.  You think that\r\nit must be a Bobcat, stalking smaller tree-dwelling animals.\r\n"
+
+[[rooms.extra]]
+keyword = "animals bird birds"
+description = "A variety of squirrels, chipmunks, and birds make their homes in this and the\r\nsurrounding trees.  If you look closely you may be able to see some of their\r\nrapidly emptying nests.\r\n"
+
+[[rooms.extra]]
+keyword = "nest nests"
+description = "After a short period of looking, you notice a bird's nest on a limb not far\r\nabove you, and a large squirrel's nest in the crook of a large limb that\r\nstretches out towards the west.\r\n"
+[[rooms]]
+vnum = 6031
+name = "Out On A Limb In A Large Oak"
+description = "   This sturdy branch hangs far out over a path to the west, which you might\r\nbe able to jump down to.  Several squirrels scamper into hiding as you\r\napproach, leaving you alone and swaying slightly with the wind.  To your north\r\nyou can see a small log cabin through the trees, and to the southeast there\r\nseems to be some sort of clearing, with many birds circling above it.\r\n"
+flags = "c"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+description = "Back to the east you see the tree trunk.  It is much less precarious there\r\ncompared to here... perhaps you should go back.\r\n"
+door = 0
+key = -1
+to_room = 6030
+
+[[rooms.exits]]
+dir = 5
+description = "Below you is a small path, probably used by the forest animals.  You think\r\nthat you could jump down with a little effort.\r\n"
+door = 0
+key = -1
+to_room = 6016
+
+[[rooms.extra]]
+keyword = "top highest high"
+description = "You could probably see most of the forest, and perhaps even the city from the\r\ntop of the tree... of course, you would have to deal with whatever that shape\r\nis that you see pacing on one of the upper limbs.\r\n"
+
+[[rooms.extra]]
+keyword = "limb limbs"
+description = "The limbs look quite sturdy, certainly capable of holding your weight should\r\nyou decide to climb around in the tree using them.\r\n"
+
+[[rooms.extra]]
+keyword = "pacing pace animal shape"
+description = "From here it looks feline.  You still don't think it has noticed you, despite\r\nthe noise you made while climbing up here.\r\n"
+
+[[rooms.extra]]
+keyword = "feline"
+description = "The shape above you moves with definite grace and confidence.  You think that\r\nit must be a Bobcat, stalking smaller tree-dwelling animals.\r\n"
+
+[[rooms.extra]]
+keyword = "animals bird birds"
+description = "A variety of squirrels, chipmunks, and birds make their homes in this and the\r\nsurrounding trees.  If you look closely you may be able to see some of their\r\nrapidly emptying nests.\r\n"
+
+[[rooms.extra]]
+keyword = "nest nests"
+description = "You notice that several of the squirrels sought refuge in a large nest that is\r\nwell within your reach.  Looking into the nest, you see two pairs of eyes\r\nstaring back at you.\r\n"
+[[rooms]]
+vnum = 6032
+name = "Midway To The Top Of The Large Oak"
+description = "   You are in a huge oak, about midway to the top.  The branches above you\r\nblock out much of the light, but enough filters through for you to see.  A few\r\nbirds have remained to watch you from the fringe branches, well out of your\r\nreach.  Scratches mar the tree here, and torn bark is scattered near you on the\r\nbranch.  It would seem some large forest cat lives nearby, so you had better be\r\ncareful!  You can continue a bit farther up the tree, or descend to limbs that\r\ndon't sway so much.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 4
+description = "Above you the tree narrows farther, but it still looks like you could climb up\r\nthere.  A feline shape is pacing about above you, trying to get to a large\r\nwounded bird.  Perhaps you should try to see what sort of cat this is before\r\nyou interrupt its hunt... it might eat you instead of the bird.\r\n"
+door = 0
+key = -1
+to_room = 6033
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 6030
+
+[[rooms.extra]]
+keyword = "top highest high"
+description = "You could probably see most of the forest, and perhaps even the city from the\r\ntop of the tree... of course, you would have to deal with whatever that shape\r\nis that you see pacing on one of the upper limbs.\r\n"
+
+[[rooms.extra]]
+keyword = "limb limbs"
+description = "They look quite sturdy, certainly capable of holding your weight should you\r\ndecide to climb around in the tree using them.\r\n"
+
+[[rooms.extra]]
+keyword = "feline cat pacing pace shape"
+description = "It looks like a Bobcat, and it seems quite intent on getting to a large bird\r\nthat it has wounded.  It has not seen you yet, or perhaps just thinks you are\r\ntoo easy a meal.\r\n"
+
+[[rooms.extra]]
+keyword = "animal animals bird birds"
+description = "A variety of squirrels, chipmunks, and birds make their homes in this and the\r\nsurrounding trees.  If you look closely you may be able to see some of their\r\nrapidly emptying nests.\r\n"
+
+[[rooms.extra]]
+keyword = "nest nests"
+description = "A medium sized bird's nest is close to you here, and it looks like it has some\r\nnice looking eggs in it too!\r\n"
+[[rooms]]
+vnum = 6033
+name = "High In The Large Oak"
+description = "   The tree top gently sways in the wind, and you think you are as high as\r\nyou can safely go in the tree.  The limbs here show evidence of a small battle,\r\nwith ripped bark and loose feathers scattered everywhere.  Looking around, you\r\ncan see the forest stretching out below you in all directions.  To the east you\r\nsee Midgaard, and to the south the river runs through a deep chasm.  North and\r\nwest of here you can see another small village, and on the western horizon you\r\nsee a large mountain.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 5
+description = "Below you many of the animals you frightened earlier have returned to their\r\nvarious nests and homes.  You can see a small hint of the path far below you\r\nthrough the branches.\r\n"
+door = 0
+key = -1
+to_room = 6032
+
+[[rooms.extra]]
+keyword = "river chasm"
+description = "To the south you see a river flowing roughly from the northeast to the west.\r\nIt emerges from a dark opening in the side of a mountain and flows through\r\nMidgaard, and on into the forest.  It has eroded a deep chasm in the soft stone\r\nunder the forest floor, and is not visible for long after it enters the forest\r\nproper.\r\n"
+
+[[rooms.extra]]
+keyword = "mountain range northeast"
+description = "A long mountain range stretches across the horizon to the north and northeast.\r\nYou have heard rumors of many different sorts of creatures living there,\r\nvarying from Dwarves and Humans to Ogres and various humanoid creatures.  Some\r\nsay that evil Dark Elves dwell in the underworld deep below the lands of the\r\nDwarves.  The caves of Moria also are found there, populated by all sorts of\r\nevil creatures.\r\n"
+
+[[rooms.extra]]
+keyword = "around trees everywhere woods forest"
+description = "Off to the southwest you can see a grass covered field, and a small lake;\r\nnortwest of you is a small cabin and a large pile of wood.  Far to west the\r\ntreetops form a tight canopy, blocking out almost all sunlight and your view.\r\nIt is said that large wolves live there.  You've also heard rumors of horrible\r\nspiders and drow living there.  You'd be best off leaving that area to more\r\nexperienced adventurers. \r\n"
+[[rooms]]
+vnum = 6060
+name = "A Shaded Path Through The Forest"
+description = "   You are on a small shaded path leading through the trees.  The forest\r\ngradually lightens to the east.  The path continues to the north, and to the\r\nsouth you see the main trail.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The path winds its way between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6065
+
+[[rooms.exits]]
+dir = 2
+description = "Through a break in the tree line you see the main trail that heads back towards\r\nMidgaard.\r\n"
+door = 0
+key = -1
+to_room = 6001
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "They are mostly young oaks and tall beeches.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths shaded"
+description = "The shaded path is probably used by the small animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6061
+name = "A Shaded Path Through The Forest"
+description = "   You are at a turn on a small shadowed path leading through the forest.  The\r\nforest seems to become lighter to the west.  The path continues north and west.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The path winds its way between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6066
+
+[[rooms.exits]]
+dir = 3
+description = "The path winds its way between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6062
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The crowns of the old trees leave the forest in an unreal twilight\r\nillumination.  A large branch looms above you, over the path.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths shaded shadowed"
+description = "The shadowy path is probably used by the small animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6062
+name = "A Shaded Path Through The Dense Forest"
+description = "   You are on a small shaded path leading through the dense forest.  The\r\ncrowns of the old trees leave the forest floor in an unreal twililght\r\nillumination.  To the north you see a small clearing.  Paths lead east and\r\nwest.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "Through the underbrush you see a small clearing.\r\n"
+door = 0
+key = -1
+to_room = 6067
+
+[[rooms.exits]]
+dir = 1
+description = "The path winds its way between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6061
+
+[[rooms.exits]]
+dir = 3
+description = "The path winds its way between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6063
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths shaded shadowy"
+description = "The shaded path is probably used by the small animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6063
+name = "A Shaded Path Through The Dense Forest"
+description = "   You are on a small shaded path through the dense forest.  The crowns of\r\nthe old trees leave the forest in an unreal twilight illumination.  The path\r\ncontinues north and east.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The path winds its way between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6068
+
+[[rooms.exits]]
+dir = 1
+description = "The path winds its way between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6062
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths shaded"
+description = "The shaded path is probably used by the animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6064
+name = "A Shadowy Path Through The Dense Forest"
+description = "   You are on a small shadowy path leading through the dense forest.  The\r\ncrowns of the old trees leave the forest in an unreal twilight illumination.\r\nThe path continues north and south.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The path winds its way between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6069
+
+[[rooms.exits]]
+dir = 2
+description = "The path winds its way into darkness.\r\n"
+door = 0
+key = -1
+to_room = 6100
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths shadowy"
+description = "The shadowy path is probably used by the animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6065
+name = "A Shaded Path Through The Forest"
+description = "   You are at a turn on a small shaded path winding through the trees.  The\r\nforest gradually becomes more dense to the west.  The path continues west and\r\nsouth from here.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 2
+description = "Through the trees to the south you can almost see the main trail leading back\r\nto Midgaard.\r\n"
+door = 0
+key = -1
+to_room = 6060
+
+[[rooms.exits]]
+dir = 3
+description = "The path winds its way between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6066
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly young oaks and tall beeches.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths shaded"
+description = "The shadowed path is probably used by the small animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6066
+name = "A Fork On The Shaded Path Through The Forest"
+description = "   You are at a fork in the small shaded path winding through the trees.  The\r\nforest gradually becomes more dense to the west.  The path branches to the\r\nnorth and south here, and also continues to the east.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The path winds its way between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6071
+
+[[rooms.exits]]
+dir = 1
+description = "The path winds its way between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6065
+
+[[rooms.exits]]
+dir = 2
+description = "The path winds its way between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6061
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths shaded"
+description = "The shaded path is probably used by the small animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6067
+name = "At The Fallen Tree"
+description = "   You are standing in a small clearing, beside a large fallen tree.  A large\r\namount of the tree has already decomposed, but some pieces remain, scattered\r\nabout the clearing.  Paths border the clearing to the north and south.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "A shaded path winds its way northeast between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6072
+
+[[rooms.exits]]
+dir = 2
+description = "A shaded path winds its way east between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6062
+
+[[rooms.extra]]
+keyword = "under animal den"
+description = "Under a log you think you see some sort of hole, or animal's den.  Looking\r\ncloser, you can make out the form of what you believe to be a Badger resting\r\ninside of the den.\r\n"
+
+[[rooms.extra]]
+keyword = "clearing clear"
+description = "When the large tree fell it must have brought a few of the smaller trees down\r\nwith it in order to make a clearing like this.\r\n"
+
+[[rooms.extra]]
+keyword = "fallen rotten decomposed tree"
+description = "The tree has mostly rotted away, providing nourishment to many small plants\r\ngrowing here in the clearing.  The few pieces that remain are not all that\r\nlarge, but one log in particular catches your eye and seems to remind you of\r\nsomething.  Under one of these logs would be a great place for an animal to\r\nmake its den...\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The shaded paths are probably used by the animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6068
+name = "An Intersection On The Shaded Path"
+description = "   You are on a small shaded path leading through the dense forest.  The\r\ncrowns of the old trees leave the forest in an unreal twilight illumination.\r\nThe path continues north, south, and west.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The path winds its way between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6073
+
+[[rooms.exits]]
+dir = 2
+description = "The path winds its way between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6063
+
+[[rooms.exits]]
+dir = 3
+description = "The path winds its way between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6069
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths shaded"
+description = "The shaded path is probably used by the animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6069
+name = "A Shadowy Path Through The Dense Forest"
+description = "   You are on a small shadowy path leading through the dense forest.  The\r\ncrowns of the old trees leave the forest in an unreal twilight illumination.\r\nThe path continues south and east.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+description = "The path winds its way between the old trees.\r\n"
+door = 0
+key = -1
+to_room = 6068
+
+[[rooms.exits]]
+dir = 2
+description = "The path winds its way between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6064
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths shaded shadowy"
+description = "The shadowy path is probably used by the animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6070
+name = "Off Of The Path In The Shaded Forest"
+description = "   You are wandering amongst the trees in the light forest, without the aid\r\nof a path or trail.  More sunlight trickles through the treetops here, making\r\nyour travel a bit easier.  Small animals scurry away as you approach.  You\r\nare no longer on a path, so you may go whichever way you please.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The trees seem to part, exposing a trail into the shade.\r\n"
+door = 0
+key = -1
+to_room = 6078
+
+[[rooms.exits]]
+dir = 1
+description = "The trees seem to part, exposing a trail into the shade.\r\n"
+door = 0
+key = -1
+to_room = 6070
+
+[[rooms.exits]]
+dir = 2
+description = "The trees seem to part, exposing a trail into the shade.\r\n"
+door = 0
+key = -1
+to_room = 6061
+
+[[rooms.exits]]
+dir = 3
+description = "The trees seem to part, exposing a trail into the shade.\r\n"
+door = 0
+key = -1
+to_room = 6072
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are younger here than to those to the west.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The path is long behind you now... you aren't sure which direction it lies\r\nin anymore.\r\n"
+[[rooms]]
+vnum = 6071
+name = "A Shaded Path Through The Forest"
+description = "   You are on a small shaded path leading in between the trees.  The forest\r\ngradually lightens to the east.  Paths lead west and south, and you think you\r\nsee a small path leading eastward.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+description = "It looks like a small path begins between two trees to the east, but you\r\naren't quite certain.\r\n"
+door = 0
+key = -1
+to_room = 6070
+
+[[rooms.exits]]
+dir = 2
+description = "The path winds its way through the trees to an split in the path.\r\n"
+door = 0
+key = -1
+to_room = 6066
+
+[[rooms.exits]]
+dir = 3
+description = "The path winds its way between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6072
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths shadowy shadowed"
+description = "The shadowy path is probably used by the small animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6072
+name = "A Shaded Path Though The Forest"
+description = "   You are on a small shaded path leading between the trees.  The forest\r\ngradually becomes more dense to the west.  Paths lead north and east, and you\r\nsee a small clearing to the south.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The path winds its way between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6075
+
+[[rooms.exits]]
+dir = 1
+description = "The path winds its way between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6071
+
+[[rooms.exits]]
+dir = 2
+description = "A lightly traveled path heads southward to a small clearing.\r\n"
+door = 0
+key = -1
+to_room = 6067
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths shaded"
+description = "The shaded path is probably used by the small animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6073
+name = "A Shadowy Path Through The Dense Forest"
+description = "   You are on a small shadowy path leading through the dense forest.  To the\r\nnorth the terrain becomes quite hilly and rough.  The crowns of the old trees\r\nleave the forest in an unreal twilight illumination.  The path continues north\r\nand south.\r\n"
+flags = "0"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+description = "The path winds its way into the hills and denser forest.\r\n"
+door = 0
+key = -1
+to_room = 6076
+
+[[rooms.exits]]
+dir = 2
+description = "The path winds its way between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6068
+
+[[rooms.extra]]
+keyword = "hill hills terrain"
+description = "To the northwest you see hills covered by dense forest.\r\n"
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths shadowy"
+description = "The shadowy path is probably used by the animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6074
+name = "A Small Trail Through The Forest"
+description = "   You have just left the shaded path, and you are now standing at the head of\r\na very short trail.  It looks like someone begin clearing away the underbrush\r\nhere, but didn't get finished.  You may leave in any direction, but the path\r\nis to the west.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The trees seem to part, exposing a trail into the shade.\r\n"
+door = 0
+key = -1
+to_room = 6074
+
+[[rooms.exits]]
+dir = 1
+description = "The trees seem to part, exposing a trail into the shade.\r\n"
+door = 0
+key = -1
+to_room = 6070
+
+[[rooms.exits]]
+dir = 2
+description = "The trees seem to part, exposing a trail into the shade.\r\n"
+door = 0
+key = -1
+to_room = 6070
+
+[[rooms.exits]]
+dir = 3
+description = "Through the underbrush you see a small path winding its way northward.\r\n"
+door = 0
+key = -1
+to_room = 6075
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The narrow path is probably used by the animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6075
+name = "A Shaded Path Through The Forest"
+description = "   You are on a small shaded path leading between the trees.  The forest\r\ngradually becomes more dense to the west, and to the northwest the terrain\r\nis quite hilly.  The path continues north and south.  To the east you see a\r\ntrail winding through the younger section of the forest.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The path winds its way between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6078
+
+[[rooms.exits]]
+dir = 1
+description = "You think you see the beginnings of a small trail through the younger part of\r\nthe forest.\r\n"
+door = 0
+key = -1
+to_room = 6074
+
+[[rooms.exits]]
+dir = 2
+description = "The path winds its way between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6072
+
+[[rooms.extra]]
+keyword = "trail"
+description = "You think you see the beginnings of a small trail to the east, winding through\r\nthe younger part of the forest.\r\n"
+
+[[rooms.extra]]
+keyword = "hills hill terrain"
+description = "To the northwest the ground becomes more hilly. You have heard that a halfling\r\nvillage is somewhere in the hills.\r\n"
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths shaded"
+description = "The shaded path is probably used by the animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6076
+name = "In The Dense Forest Between The Hills"
+description = "   You are standing among tightly packed trees between several hills.  You\r\nlost track of the path long ago, and now must rely on your instincts to guide\r\nyou.  The ground is very rough and rocky here, and only the most hardy plants\r\nsurvive.  The crowns of the old trees leave the hills in an unreal twilight\r\nillumination.\r\n"
+flags = "c"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+description = "All you see are trees and hillsides.\r\n"
+door = 0
+key = -1
+to_room = 6081
+
+[[rooms.exits]]
+dir = 1
+description = "All you see are trees and hillsides.\r\n"
+door = 0
+key = -1
+to_room = 6077
+
+[[rooms.exits]]
+dir = 2
+description = "All you see are trees and hillsides.\r\n"
+door = 0
+key = -1
+to_room = 6076
+
+[[rooms.exits]]
+dir = 3
+description = "All you see are trees and a shadowy path.\r\n"
+door = 0
+key = -1
+to_room = 6073
+
+[[rooms.extra]]
+keyword = "hills hill"
+description = "Hills rise up all around you, blocking your view of the terrain.\r\n"
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The path is probably around here somewhere... if only you had paid more\r\nattention.\r\n"
+[[rooms]]
+vnum = 6077
+name = "In The Dense Forest Between The Hills"
+description = "   You are standing among tightly packed trees between several hills.  You\r\nlost track of the path long ago, and now must rely on your instincts to guide\r\nyou.  The ground is very rough and rocky here, and only the most hardy plants\r\nsurvive.  The crowns of the old trees leave the hills in an unreal twilight\r\nillumination.\r\n"
+flags = "c"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+description = "All you see are trees and hillsides.\r\n"
+door = 0
+key = -1
+to_room = 6081
+
+[[rooms.exits]]
+dir = 1
+description = "All you see are trees and hillsides.\r\n"
+door = 0
+key = -1
+to_room = 6076
+
+[[rooms.exits]]
+dir = 2
+description = "All you see are trees and hillsides.\r\n"
+door = 0
+key = -1
+to_room = 6079
+
+[[rooms.exits]]
+dir = 3
+description = "All you see are trees and hillsides.\r\n"
+door = 0
+key = -1
+to_room = 6077
+
+[[rooms.extra]]
+keyword = "hills hill"
+description = "Hills rise up all around you, blocking your view of the terrain.\r\n"
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The path is probably around here somewhere...if only you had paid more\r\nattention.\r\n"
+[[rooms]]
+vnum = 6078
+name = "In The Dense Forest Between The Hills"
+description = "   You are at the end of a small shaded path leading between the trees.  The\r\nforest is quite thick here, and the ground is very rough and hilly, halting\r\nyour progress.  The path lies to the south.\r\n"
+flags = "0"
+sector = 4
+
+[[rooms.exits]]
+dir = 2
+description = "The path winds its way between the trees.\r\n"
+door = 0
+key = -1
+to_room = 6075
+
+[[rooms.extra]]
+keyword = "hills hill"
+description = "The terrian is very hilly and rough to the north and west.  You have heard\r\nthat there is a halfling village somewhere in the hills.\r\n"
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths shaded"
+description = "The shaded path is probably used by the animals living in the forest.\r\n"
+[[rooms]]
+vnum = 6079
+name = "In The Dense Forest Between The Hills"
+description = "   You are standing among tightly packed trees between several hills.  You\r\nlost track of the path long ago, and now must rely on your instincts to guide\r\nyou.  The ground is very rough and rocky here, and only the most hardy plants\r\nsurvive.  The crowns of the old trees leave the hills in an unreal twilight\r\nillumination.\r\n"
+flags = "c"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+description = "All you see are trees and hillsides.\r\n"
+door = 0
+key = -1
+to_room = 6081
+
+[[rooms.exits]]
+dir = 1
+description = "All you see are trees and hillsides.\r\n"
+door = 0
+key = -1
+to_room = 6078
+
+[[rooms.exits]]
+dir = 2
+description = "All you see are trees and a shadowy path.\r\n"
+door = 0
+key = -1
+to_room = 6073
+
+[[rooms.exits]]
+dir = 3
+description = "All you see are trees and hillsides.\r\n"
+door = 0
+key = -1
+to_room = 6080
+
+[[rooms.extra]]
+keyword = "hills hill"
+description = "Hills rise up all around you, blocking your view of the terrain.\r\n"
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The path is probably around here somewhere...if only you had paid more\r\nattention.\r\n"
+[[rooms]]
+vnum = 6080
+name = "In The Dense Forest Between The Hills"
+description = "   You are standing among tightly packed trees between several hills.  You\r\nlost track of the path long ago, and now must rely on your instincts to guide\r\nyou.  The ground is very rough and rocky here, and only the most hardy plants\r\nsurvive.  The crowns of the old trees leave the hills in an unreal twilight\r\nillumination.\r\n"
+flags = "c"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+description = "All you see are trees and hillsides.\r\n"
+door = 0
+key = -1
+to_room = 6081
+
+[[rooms.exits]]
+dir = 1
+description = "All you see are trees and hillsides.\r\n"
+door = 0
+key = -1
+to_room = 6082
+
+[[rooms.exits]]
+dir = 2
+description = "All you see are trees and hillsides.\r\n"
+door = 0
+key = -1
+to_room = 6076
+
+[[rooms.exits]]
+dir = 3
+description = "All you see are trees and hillsides.\r\n"
+door = 0
+key = -1
+to_room = 6081
+
+[[rooms.extra]]
+keyword = "hills hill"
+description = "Hills rise up all around you, blocking your view of the terrain.\r\n"
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The path is probably around here somewhere...if only you had paid more\r\nattention.\r\n"
+[[rooms]]
+vnum = 6081
+name = "In The Dense Forest Between The Hills"
+description = "   You are standing among tightly packed trees between several hills.  You\r\nlost track of the path long ago, and now must rely on your instincts to guide\r\nyou.  The ground is very rough and rocky here, and only the most hardy plants\r\nsurvive.  The crowns of the old trees leave the hills in an unreal twilight\r\nillumination.\r\n"
+flags = "c"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+description = "All you see are trees and hillsides.\r\n"
+door = 0
+key = -1
+to_room = 6078
+
+[[rooms.exits]]
+dir = 1
+description = "All you see are trees and hillsides.\r\n"
+door = 0
+key = -1
+to_room = 6077
+
+[[rooms.exits]]
+dir = 2
+description = "All you see are trees and hillsides.\r\n"
+door = 0
+key = -1
+to_room = 6076
+
+[[rooms.exits]]
+dir = 3
+description = "All you see are trees and a shadowy path.\r\n"
+door = 0
+key = -1
+to_room = 6073
+
+[[rooms.extra]]
+keyword = "hills hill"
+description = "Hills rise up all around you, blocking your view of the terrain.\r\n"
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+
+[[rooms.extra]]
+keyword = "path paths"
+description = "The path is probably around here somewhere...if only you had paid more\r\nattention.\r\n"
+[[rooms]]
+vnum = 6082
+name = "In The Dense Forest Between The Hills"
+description = "   You are standing among tightly packed trees on a medium sized hill. The\r\ndense forest spreads out all around you, and the crowns of the old trees leave\r\nthe hills in an unreal twilight illumination.\r\n"
+flags = "c"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+description = "All you see are trees and hillsides.\r\n"
+door = 0
+key = -1
+to_room = 6081
+
+[[rooms.exits]]
+dir = 1
+description = "All you see are trees and hillsides.\r\n"
+door = 0
+key = -1
+to_room = 6079
+
+[[rooms.exits]]
+dir = 2
+description = "All you see are trees and hillsides.\r\n"
+door = 0
+key = -1
+to_room = 6076
+
+[[rooms.extra]]
+keyword = "hills hill"
+description = "Hills rise up all around you, blocking your view of the terrain.\r\n"
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "The trees are mostly old beeches and oaks.\r\n"
+[[rooms]]
+vnum = 6090
+name = "A Road Through The Plains"
+description = "   You are on a dust covered east-west road through the western plains.  An\r\noccasional hunter or adventurer can be seen, heading to or from the forest.\r\nTo the east is the walled city, Midgaard, and to the west the road ends at\r\nthe head of a narrow trail into a large forest.\r\n"
+flags = "c"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+description = "Far to the east you see the large walls guarding Midgaard.\r\n"
+door = 0
+key = -1
+to_room = 6091
+
+[[rooms.exits]]
+dir = 3
+description = "To the west the dusty trail ends, and becomes a narrow trail into the cool\r\nshadows of the forest.\r\n"
+door = 0
+key = -1
+to_room = 6000
+
+[[rooms.extra]]
+keyword = "road dust dusty"
+description = "The road is well used, and quite dusty.\r\n"
+
+[[rooms.extra]]
+keyword = "tree trees forest"
+description = "The trees are quite tall considering most of them appear to be quite young.\r\n"
+
+[[rooms.extra]]
+keyword = "trail"
+description = "The forest trail winds westwards through the trees.\r\n"
+[[rooms]]
+vnum = 6091
+name = "A Road Through The Plains"
+description = "   You are on a dust covered east-west road through the western plains.  An\r\noccasional hunter or adventurer can be seen, heading to or from the forest.\r\nTo the east is the walled city, Midgaard, and to the west the road continues \r\ntowards a large forest.\r\n"
+flags = "c"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+description = "Far to the east you see the walls and western gate of Midgaard.\r\n"
+door = 0
+key = -1
+to_room = 6092
+
+[[rooms.exits]]
+dir = 3
+description = "You see the large forest, Haon-Dor, stretching out far to the west, and to the\r\nnorthwest you the forest gives way to hills.\r\n"
+door = 0
+key = -1
+to_room = 6090
+
+[[rooms.extra]]
+keyword = "road dust dusty"
+description = "The road is well used, and quite dusty.\r\n"
+
+[[rooms.extra]]
+keyword = "tree trees"
+description = "Some small trees grow amongst the underbrush of the plains.  These slowly gain\r\nin height as you travel farther westward towards Haon-Dor\r\n"
+
+[[rooms.extra]]
+keyword = "forest haondor haon-dor"
+description = "The large forest of Haon-Dor spreads out to the west.  Small and large game\r\nis plentiful there... as is adventure, and of course, danger!\r\n"
+[[rooms]]
+vnum = 6092
+name = "A Road Through The Plains"
+description = "   You are on a dust covered east-west road crossing the grassy plains between\r\nMidgaard the forest of Haon-Dor.  An occasional hunter or adventurer can be \r\nseen, heading to or from the forest.  To the east is the walled city, Midgaard, \r\nand to the west the road continues towards a large forest.\r\n"
+flags = "c"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "To the east you see the walls and West Gate of Midgaard.\r\n"
+door = 0
+key = -1
+to_room = 3052
+
+[[rooms.exits]]
+dir = 3
+description = "To the west the road continues towards the forest.\r\n"
+door = 0
+key = -1
+to_room = 6091
+
+[[rooms.extra]]
+keyword = "road dust dusty"
+description = "The road is well used, and quite dusty.\r\n"
+
+[[rooms.extra]]
+keyword = "forest"
+description = "The large forest of Haon-dor spreads out to the west.  Small and large game\r\nis plentiful there...as is adventure, and of course, danger!\r\n"

@@ -1,0 +1,32 @@
+[[rooms]]
+vnum = 0
+name = "The Void"
+description = "   You don't think that you are not floating in nothing.  You can see\r\na strange portal located above you.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 4
+description = "The Temple of Midgaard floats above you.\r\n"
+door = 0
+key = -1
+to_room = 3001
+[[rooms]]
+vnum = 1
+name = "Limbo"
+description = "   You are floating in a formless void, detached from all sensation of physical\r\nmatter, surrounded by swirling glowing light, which fades into the relative\r\ndarkness around you without any trace of edges or shadow.\r\n   There is a \"No Tipping\" notice pinned to the darkness.\r\n"
+flags = "d"
+sector = 1
+[[rooms]]
+vnum = 3
+name = "A Totally Empty Room"
+description = "   The walls are completely bare... nothing at all in the room.\r\nHow... utterly bizarre and completely weird.  There is a strange\r\nportal just above you, and it almost looks as if there is some\r\nsort of room above you.\r\n"
+flags = "dj"
+sector = 0
+
+[[rooms.exits]]
+dir = 4
+description = "You notice that the portal above you looks almost like glass,\r\nalbeit very dirty glass.\r\n"
+door = 0
+key = -1
+to_room = 3048

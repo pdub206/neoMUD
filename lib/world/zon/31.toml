@@ -1,0 +1,361 @@
+[[zones]]
+vnum = 31
+name = "Southern part of Midgaard"
+bot = 3100
+top = 3299
+lifespan = 40
+reset_mode = 2
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 3060
+arg2 = 20
+arg3 = 3111
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 3022
+arg2 = 100
+arg3 = 16
+
+[[zones.commands]]
+command = "G"
+if_flag = 1
+arg1 = 3105
+arg2 = 2
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 3060
+arg2 = 20
+arg3 = 3111
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 3022
+arg2 = 100
+arg3 = 16
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 3060
+arg2 = 20
+arg3 = 3111
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 3022
+arg2 = 100
+arg3 = 16
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 3060
+arg2 = 20
+arg3 = 3111
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 3022
+arg2 = 100
+arg3 = 16
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 3068
+arg2 = 4
+arg3 = 3106
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 3100
+arg2 = 1
+arg3 = 3106
+
+[[zones.commands]]
+command = "G"
+if_flag = 1
+arg1 = 3100
+arg2 = 500
+
+[[zones.commands]]
+command = "G"
+if_flag = 1
+arg1 = 3101
+arg2 = 500
+
+[[zones.commands]]
+command = "G"
+if_flag = 1
+arg1 = 3102
+arg2 = 500
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 3101
+arg2 = 1
+arg3 = 3106
+
+[[zones.commands]]
+command = "G"
+if_flag = 1
+arg1 = 3106
+arg2 = 2
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 3102
+arg2 = 1
+arg3 = 3110
+
+[[zones.commands]]
+command = "G"
+if_flag = 1
+arg1 = 3107
+arg2 = 2
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 3103
+arg2 = 4
+arg3 = 3110
+
+[[zones.commands]]
+command = "M"
+if_flag = 1
+arg1 = 3103
+arg2 = 4
+arg3 = 3110
+
+[[zones.commands]]
+command = "M"
+if_flag = 1
+arg1 = 3103
+arg2 = 4
+arg3 = 3110
+
+[[zones.commands]]
+command = "M"
+if_flag = 1
+arg1 = 3103
+arg2 = 4
+arg3 = 3110
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 3104
+arg2 = 1
+arg3 = 3137
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 3105
+arg2 = 1
+arg3 = 3138
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 3112
+arg2 = 1
+arg3 = 17
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 3106
+arg2 = 1
+arg3 = 3120
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 3120
+arg2 = 1
+arg3 = 3114
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 3121
+arg2 = 1
+arg3 = 3114
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 3122
+arg2 = 1
+arg3 = 3109
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 3123
+arg2 = 2
+arg3 = 3113
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 3123
+arg2 = 2
+arg3 = 3115
+
+[[zones.commands]]
+command = "O"
+if_flag = 0
+arg1 = 3109
+arg2 = 1
+arg3 = 3110
+
+[[zones.commands]]
+command = "P"
+if_flag = 1
+arg1 = 3108
+arg2 = 1
+arg3 = 3109
+
+[[zones.commands]]
+command = "O"
+if_flag = 0
+arg1 = 3110
+arg2 = 1
+arg3 = 3110
+
+[[zones.commands]]
+command = "P"
+if_flag = 1
+arg1 = 3115
+arg2 = 1
+arg3 = 3110
+
+[[zones.commands]]
+command = "R"
+if_flag = 0
+arg1 = 3101
+arg2 = 3111
+
+[[zones.commands]]
+command = "O"
+if_flag = 0
+arg1 = 3111
+arg2 = 3
+arg3 = 3101
+
+[[zones.commands]]
+command = "R"
+if_flag = 0
+arg1 = 3102
+arg2 = 3111
+
+[[zones.commands]]
+command = "O"
+if_flag = 0
+arg1 = 3111
+arg2 = 3
+arg3 = 3102
+
+[[zones.commands]]
+command = "R"
+if_flag = 0
+arg1 = 3103
+arg2 = 3111
+
+[[zones.commands]]
+command = "O"
+if_flag = 0
+arg1 = 3111
+arg2 = 3
+arg3 = 3103
+
+[[zones.commands]]
+command = "R"
+if_flag = 0
+arg1 = 3141
+arg2 = 3113
+
+[[zones.commands]]
+command = "O"
+if_flag = 0
+arg1 = 3113
+arg2 = 1
+arg3 = 3141
+
+[[zones.commands]]
+command = "O"
+if_flag = 0
+arg1 = 3114
+arg2 = 1
+arg3 = 3141
+
+[[zones.commands]]
+command = "O"
+if_flag = 0
+arg1 = 3116
+arg2 = 1
+arg3 = 3155
+
+[[zones.commands]]
+command = "O"
+if_flag = 0
+arg1 = 3117
+arg2 = 1
+arg3 = 3124
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 3111
+arg2 = 3
+arg3 = 2
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 3110
+arg2 = 1
+arg3 = 2
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 3129
+arg2 = 2
+arg3 = 2
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 3150
+arg2 = 0
+arg3 = 2
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 3154
+arg2 = 2
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 3155
+arg2 = 0
+arg3 = 1

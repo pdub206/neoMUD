@@ -1,0 +1,1192 @@
+[[objects]]
+vnum = 5400
+name = "palace key"
+short_descr = "the palace key of New Thalos"
+description = "A large key bearing the crest of New Thalos lies here."
+type = 18
+extra_flags = "c"
+wear_flags = "ao"
+values = [5400, 0, 0, 0]
+weight = 5
+cost = 0
+rent = 0
+[[objects]]
+vnum = 5401
+name = "city key"
+short_descr = "the Key to the City of New Thalos"
+description = "The heavy city key lies here in the dust"
+type = 18
+extra_flags = "c"
+wear_flags = "ao"
+values = [5401, 0, 0, 0]
+weight = 5
+cost = 0
+rent = 0
+[[objects]]
+vnum = 5402
+name = "fountain water"
+short_descr = "the large central fountain"
+description = "The large central fountain domintating the central square rests here."
+type = 23
+extra_flags = "ce"
+wear_flags = "0"
+values = [9999, 9999, 0, 0]
+weight = 9999
+cost = 0
+rent = 0
+[[objects]]
+vnum = 5403
+name = "morningstar morning star"
+short_descr = "a morningstar"
+description = "A small spiked metal ball connected to a rod by links of chain lies here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 2, 5, 6]
+weight = 5
+cost = 1200
+rent = 500
+[[objects]]
+vnum = 5404
+name = "awl-pike"
+short_descr = "an awl-pike"
+description = "An awl pike lies here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 1, 12, 5]
+weight = 3
+cost = 2100
+rent = 100
+[[objects]]
+vnum = 5405
+name = "bardiche"
+short_descr = "a bardiche"
+description = "A bardiche lies here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 2, 6, 3]
+weight = 4
+cost = 1900
+rent = 110
+[[objects]]
+vnum = 5406
+name = "corbin bec"
+short_descr = "a bec de corbin"
+description = "A bec de corbin lies here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 1, 8, 3]
+weight = 3
+cost = 5400
+rent = 50
+[[objects]]
+vnum = 5407
+name = "guisarme bill"
+short_descr = "a bill-guisarme"
+description = "A bill-guisarme lies here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 1, 10, 3]
+weight = 3
+cost = 1300
+rent = 50
+[[objects]]
+vnum = 5408
+name = "fauchard"
+short_descr = "a fauchard"
+description = "A fauchard lies here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 1, 8, 1]
+weight = 3
+cost = 1250
+rent = 20
+[[objects]]
+vnum = 5409
+name = "glaive"
+short_descr = "a glaive"
+description = "A glaive lies here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 1, 10, 5]
+weight = 3
+cost = 1870
+rent = 20
+[[objects]]
+vnum = 5410
+name = "guisarme"
+short_descr = "a guisarme"
+description = "A guisarme lies here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 2, 4, 4]
+weight = 4
+cost = 1953
+rent = 20
+[[objects]]
+vnum = 5411
+name = "sickle"
+short_descr = "a sickle"
+description = "A sickle lies here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 2, 4, 3]
+weight = 1
+cost = 500
+rent = 10
+[[objects]]
+vnum = 5412
+name = "sword bastard two-handed"
+short_descr = "a two-handed bastard sword"
+description = "A two handed bastard sword lies here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 2, 8, 3]
+weight = 18
+cost = 12580
+rent = 10000
+[[objects]]
+vnum = 5413
+name = "scimitar"
+short_descr = "a scimitar"
+description = "A scimitar lies here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 1, 9, 3]
+weight = 10
+cost = 1200
+rent = 150
+
+[[objects.affects]]
+location = 19
+modifier = 1
+[[objects]]
+vnum = 5414
+name = "rapier"
+short_descr = "a rapier"
+description = "A rapier lies here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 1, 8, 3]
+weight = 10
+cost = 3100
+rent = 100
+
+[[objects.affects]]
+location = 18
+modifier = 1
+[[objects]]
+vnum = 5415
+name = "suit mail banded"
+short_descr = "a suit of banded mail"
+description = "A suit of banded mail lies here."
+type = 9
+extra_flags = "agmno"
+wear_flags = "9"
+values = [8, 0, 0, 0]
+weight = 25
+cost = 3400
+rent = 800
+[[objects]]
+vnum = 5416
+name = "suit brigandine"
+short_descr = "a suit of brigandine"
+description = "A suit of brigandine lies here."
+type = 9
+extra_flags = "agmo"
+wear_flags = "9"
+values = [7, 0, 0, 0]
+weight = 20
+cost = 2000
+rent = 420
+[[objects]]
+vnum = 5417
+name = "suit plate field"
+short_descr = "a suit of field plate"
+description = "A suit of field plate lies here."
+type = 9
+extra_flags = "agmno"
+wear_flags = "9"
+values = [9, 0, 0, 0]
+weight = 28
+cost = 4000
+rent = 1000
+[[objects]]
+vnum = 5418
+name = "suit ringmail ring mail"
+short_descr = "a suit of ringmail"
+description = "A suit of ringmail lies here."
+type = 9
+extra_flags = "n"
+wear_flags = "9"
+values = [5, 0, 0, 0]
+weight = 6
+cost = 1385
+rent = 100
+[[objects]]
+vnum = 5419
+name = "suit splintmail splint mail"
+short_descr = "a suit of splintmail"
+description = "A suit of splintmail aromr lies here."
+type = 9
+extra_flags = "m"
+wear_flags = "9"
+values = [4, 0, 0, 0]
+weight = 5
+cost = 2500
+rent = 100
+[[objects]]
+vnum = 5420
+name = "shield wooden"
+short_descr = "a wooden shield"
+description = "A wooden shield lies here"
+type = 9
+extra_flags = "0"
+wear_flags = "513"
+values = [1, 0, 0, 0]
+weight = 1
+cost = 10
+rent = 1
+[[objects]]
+vnum = 5421
+name = "shield splinted"
+short_descr = "a splinted shield"
+description = "A splinted shield lies here."
+type = 9
+extra_flags = "0"
+wear_flags = "513"
+values = [7, 0, 0, 0]
+weight = 8
+cost = 175
+rent = 17
+[[objects]]
+vnum = 5422
+name = "buckler shield"
+short_descr = "a buckler"
+description = "A buckler lies here."
+type = 9
+extra_flags = "0"
+wear_flags = "513"
+values = [1, 0, 0, 0]
+weight = 6
+cost = 30
+rent = 7
+[[objects]]
+vnum = 5423
+name = "jacket leather"
+short_descr = "a leather jacket"
+description = "A leather jacket lies here."
+type = 9
+extra_flags = "0"
+wear_flags = "9"
+values = [3, 0, 0, 0]
+weight = 6
+cost = 600
+rent = 200
+[[objects]]
+vnum = 5424
+name = "sleeves leather"
+short_descr = "a pair of leather sleeves"
+description = "A pair of leather sleeves lies here."
+type = 9
+extra_flags = "0"
+wear_flags = "257"
+values = [2, 0, 0, 0]
+weight = 2
+cost = 350
+rent = 200
+[[objects]]
+vnum = 5425
+name = "cap leather"
+short_descr = "a leather cap"
+description = "A leather cap lies here"
+type = 9
+extra_flags = "0"
+wear_flags = "17"
+values = [1, 0, 0, 0]
+weight = 2
+cost = 65
+rent = 200
+[[objects]]
+vnum = 5426
+name = "pants leather"
+short_descr = "a pair of leather pants"
+description = "A pair of leather pants lies here."
+type = 9
+extra_flags = "0"
+wear_flags = "33"
+values = [2, 0, 0, 0]
+weight = 2
+cost = 850
+rent = 200
+[[objects]]
+vnum = 5427
+name = "gloves leather"
+short_descr = "a pair of leather gloves"
+description = "A pair of leather gloves lies here."
+type = 9
+extra_flags = "0"
+wear_flags = "129"
+values = [2, 0, 0, 0]
+weight = 2
+cost = 150
+rent = 200
+[[objects]]
+vnum = 5428
+name = "boots padded leather"
+short_descr = "a pair of padded leather boots"
+description = "A pair of padded leather boots lies here."
+type = 9
+extra_flags = "0"
+wear_flags = "65"
+values = [2, 0, 0, 0]
+weight = 2
+cost = 410
+rent = 200
+[[objects]]
+vnum = 5429
+name = "jacket studded leather"
+short_descr = "a studded leather jacket"
+description = "A studded leather jacket lies here."
+type = 9
+extra_flags = "0"
+wear_flags = "9"
+values = [3, 0, 0, 0]
+weight = 10
+cost = 650
+rent = 200
+[[objects]]
+vnum = 5430
+name = "sleeves studded leather"
+short_descr = "a pair of studded leather sleeves"
+description = "A pair of studded leather sleeves lie here."
+type = 9
+extra_flags = "0"
+wear_flags = "257"
+values = [3, 0, 0, 0]
+weight = 3
+cost = 500
+rent = 200
+[[objects]]
+vnum = 5431
+name = "pants studded leather"
+short_descr = "a pair of studded leather pants"
+description = "A pair of studded leather pants lie here."
+type = 9
+extra_flags = "0"
+wear_flags = "33"
+values = [3, 0, 0, 0]
+weight = 3
+cost = 500
+rent = 200
+[[objects]]
+vnum = 5432
+name = "gloves studded leather"
+short_descr = "a pair of studded leather gloves"
+description = "A pair of studded leather gloves lie here."
+type = 9
+extra_flags = "0"
+wear_flags = "129"
+values = [3, 0, 0, 0]
+weight = 3
+cost = 500
+rent = 200
+[[objects]]
+vnum = 5433
+name = "shield leather"
+short_descr = "a leather shield"
+description = "A leather shield lies here."
+type = 9
+extra_flags = "0"
+wear_flags = "513"
+values = [5, 0, 0, 0]
+weight = 3
+cost = 50
+rent = 200
+[[objects]]
+vnum = 5434
+name = "sack"
+short_descr = "a sack"
+description = "A sack lies here"
+type = 15
+extra_flags = "0"
+wear_flags = "16385"
+values = [50, 0, 0, 0]
+weight = 1
+cost = 20
+rent = 200
+[[objects]]
+vnum = 5435
+name = "lamp oil oillamp"
+short_descr = "an oil lamp"
+description = "An oil lamp lies here"
+type = 1
+extra_flags = "0"
+wear_flags = "1"
+values = [0, 0, 48, 0]
+weight = 1
+cost = 100
+rent = 200
+[[objects]]
+vnum = 5436
+name = "backpack back pack"
+short_descr = "a backpack"
+description = "A backpack lies here"
+type = 15
+extra_flags = "0"
+wear_flags = "1025"
+values = [75, 1, 0, 0]
+weight = 8
+cost = 100
+rent = 100
+[[objects]]
+vnum = 5437
+name = "basket"
+short_descr = "a basket"
+description = "A basket lies here."
+type = 15
+extra_flags = "0"
+wear_flags = "1"
+values = [50, 0, 0, 0]
+weight = 4
+cost = 250
+rent = 50
+[[objects]]
+vnum = 5438
+name = "pouch belt"
+short_descr = "a belt pouch"
+description = "A belt pouch lies here"
+type = 15
+extra_flags = "0"
+wear_flags = "2049"
+values = [25, 0, 0, 0]
+weight = 3
+cost = 100
+rent = 20
+[[objects]]
+vnum = 5439
+name = "candle"
+short_descr = "a candle"
+description = "A candle lies here"
+type = 1
+extra_flags = "0"
+wear_flags = "16385"
+values = [0, 0, 50, 0]
+weight = 1
+cost = 35
+rent = 10
+[[objects]]
+vnum = 5440
+name = "cheese"
+short_descr = "a hunk of cheese"
+description = "A hunk of cheese lies here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [5, 0, 0, 0]
+weight = 1
+cost = 5
+rent = 10
+[[objects]]
+vnum = 5441
+name = "bread"
+short_descr = "some bread"
+description = "Some bread lies here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [3, 0, 0, 0]
+weight = 1
+cost = 3
+rent = 10
+[[objects]]
+vnum = 5442
+name = "rations dry"
+short_descr = "some dry rations"
+description = "Some dry rations lie here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [20, 0, 0, 0]
+weight = 2
+cost = 20
+rent = 30
+[[objects]]
+vnum = 5443
+name = "rations iron"
+short_descr = "some iron rations"
+description = "A tin of iron rations lies here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [25, 0, 0, 0]
+weight = 3
+cost = 25
+rent = 50
+[[objects]]
+vnum = 5445
+name = "nuts"
+short_descr = "some nuts"
+description = "Some nuts lie scatterd on the ground."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [1, 0, 0, 0]
+weight = 1
+cost = 1
+rent = 10
+[[objects]]
+vnum = 5446
+name = "belt"
+short_descr = "a belt"
+description = "A nicely made belt lies here."
+type = 9
+extra_flags = "0"
+wear_flags = "2049"
+values = [0, 0, 0, 0]
+weight = 2
+cost = 2
+rent = 10
+[[objects]]
+vnum = 5447
+name = "boots hiking"
+short_descr = "a pair of hiking boots"
+description = "A nicely made pair of boots lies here."
+type = 9
+extra_flags = "0"
+wear_flags = "65"
+values = [0, 0, 0, 0]
+weight = 3
+cost = 390
+rent = 10
+[[objects]]
+vnum = 5448
+name = "cloak fur"
+short_descr = "a fur cloak"
+description = "A nicely made fur cloak lies here."
+type = 9
+extra_flags = "0"
+wear_flags = "1025"
+values = [0, 0, 0, 0]
+weight = 2
+cost = 4550
+rent = 50
+[[objects]]
+vnum = 5449
+name = "girdle"
+short_descr = "a girdle"
+description = "A nicely made girdle lies here."
+type = 9
+extra_flags = "0"
+wear_flags = "2049"
+values = [0, 0, 0, 0]
+weight = 1
+cost = 375
+rent = 10
+[[objects]]
+vnum = 5450
+name = "hose"
+short_descr = "a pair of hose"
+description = "A nicely made pair of hose lies here."
+type = 9
+extra_flags = "0"
+wear_flags = "33"
+values = [0, 0, 0, 0]
+weight = 1
+cost = 120
+rent = 10
+[[objects]]
+vnum = 5451
+name = "robe common"
+short_descr = "a common robe"
+description = "A nicely made robe of common cloth lies here."
+type = 9
+extra_flags = "0"
+wear_flags = "5"
+values = [0, 0, 0, 0]
+weight = 2
+cost = 90
+rent = 20
+[[objects]]
+vnum = 5452
+name = "robe embroidered"
+short_descr = "an embroidered robe"
+description = "A nicely made robe of embroidered cloth lies here."
+type = 9
+extra_flags = "0"
+wear_flags = "5"
+values = [0, 0, 0, 0]
+weight = 2
+cost = 2500
+rent = 5
+[[objects]]
+vnum = 5453
+name = "sandals"
+short_descr = "a pair of sandals"
+description = "A nicely made pair of sandals lies here."
+type = 9
+extra_flags = "0"
+wear_flags = "65"
+values = [0, 0, 0, 0]
+weight = 1
+cost = 15
+rent = 10
+[[objects]]
+vnum = 5454
+name = "sash"
+short_descr = "a sash"
+description = "A nicely made sash lies here."
+type = 9
+extra_flags = "0"
+wear_flags = "2049"
+values = [0, 0, 0, 0]
+weight = 1
+cost = 20
+rent = 10
+[[objects]]
+vnum = 5455
+name = "jacket silk"
+short_descr = "a silk jacket"
+description = "A nicely made silk jacket lies here."
+type = 9
+extra_flags = "0"
+wear_flags = "1025"
+values = [0, 0, 0, 0]
+weight = 1
+cost = 3800
+rent = 100
+[[objects]]
+vnum = 5456
+name = "egg"
+short_descr = "an egg"
+description = "An egg lies here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [2, 0, 0, 0]
+weight = 1
+cost = 3
+rent = 10
+[[objects]]
+vnum = 5457
+name = "carrot"
+short_descr = "a carrot"
+description = "A carrot lies here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [3, 0, 0, 0]
+weight = 1
+cost = 4
+rent = 10
+[[objects]]
+vnum = 5458
+name = "tomato"
+short_descr = "a tomato"
+description = "A tomato lies here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [2, 0, 0, 0]
+weight = 1
+cost = 8
+rent = 10
+[[objects]]
+vnum = 5459
+name = "fig"
+short_descr = "a fig"
+description = "A fig lies here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [1, 0, 0, 0]
+weight = 1
+cost = 2
+rent = 10
+[[objects]]
+vnum = 5460
+name = "dates"
+short_descr = "some dates"
+description = "A bunch of dates lies here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [2, 0, 0, 0]
+weight = 1
+cost = 4
+rent = 10
+[[objects]]
+vnum = 5461
+name = "lamb leg"
+short_descr = "a leg of lamb"
+description = "A leg of lamb lies here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [10, 0, 0, 0]
+weight = 2
+cost = 10
+rent = 20
+[[objects]]
+vnum = 5462
+name = "beef side"
+short_descr = "a side of beef"
+description = "A side of beef lies here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [15, 0, 0, 0]
+weight = 5
+cost = 20
+rent = 50
+[[objects]]
+vnum = 5463
+name = "chicken whole"
+short_descr = "a whole chicken"
+description = "A whole skinned chicken lies here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [12, 0, 0, 0]
+weight = 3
+cost = 12
+rent = 30
+[[objects]]
+vnum = 5464
+name = "herring salted"
+short_descr = "a salted herring"
+description = "A salted herring lies here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [8, 0, 0, 0]
+weight = 1
+cost = 8
+rent = 10
+[[objects]]
+vnum = 5465
+name = "muscle"
+short_descr = "a muscle"
+description = "A muscle lies here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [4, 0, 0, 0]
+weight = 1
+cost = 4
+rent = 10
+[[objects]]
+vnum = 5467
+name = "glass liquor blue oasis whisky"
+short_descr = "a glass"
+description = "A glass of blue alcohol rests here."
+type = 17
+extra_flags = "0"
+wear_flags = "1"
+values = [5, 5, 5, 0]
+weight = 1
+cost = 1800
+rent = 10
+[[objects]]
+vnum = 5468
+name = "glass wine"
+short_descr = "a glass"
+description = "A glass rests here."
+type = 17
+extra_flags = "0"
+wear_flags = "1"
+values = [1, 1, 2, 0]
+weight = 1
+cost = 3800
+rent = 10
+[[objects]]
+vnum = 5469
+name = "bottle grog ale"
+short_descr = "a bottle of grog"
+description = "A bottle lies here."
+type = 17
+extra_flags = "0"
+wear_flags = "1"
+values = [2, 2, 3, 0]
+weight = 1
+cost = 8000
+rent = 10
+[[objects]]
+vnum = 5470
+name = "vial glowing blue"
+short_descr = "a glowing blue vial"
+description = "A glowing blue vial lies here."
+type = 10
+extra_flags = "ag"
+wear_flags = "16385"
+values = [12, 1, 3, -1]
+weight = 1
+cost = 800
+rent = 15
+
+[[objects.extra_desc]]
+keyword = "vial glowing blue"
+description = "The blueish liquid inside this potion bottle is glowing with\r\na strange light.  There is a small label that reads 'Protection'\r\n"
+[[objects]]
+vnum = 5471
+name = "potion green"
+short_descr = "a deep-green potion"
+description = "A deep-green potion lies here."
+type = 10
+extra_flags = "ag"
+wear_flags = "16385"
+values = [10, 15, 35, -1]
+weight = 1
+cost = 5000
+rent = 15
+
+[[objects.extra_desc]]
+keyword = "potion green"
+description = "The potion inside the bottle is a greenish colour and has a\r\nsmall label which reads 'Curative'\r\n"
+[[objects]]
+vnum = 5472
+name = "potion crystal clear"
+short_descr = "a crystal clear potion"
+description = "A crystal clear potion lies here."
+type = 10
+extra_flags = "g"
+wear_flags = "16385"
+values = [10, 50, 51, 35]
+weight = 1
+cost = 3000
+rent = 15
+
+[[objects.extra_desc]]
+keyword = "potion crystal clear"
+description = "This glass bottle appears to contain a clear liquid.  There is a\r\nlabel on the bottle which reads 'Preparation'\r\n"
+[[objects]]
+vnum = 5473
+name = "potion white"
+short_descr = "an off-white potion"
+description = "An off-white potion lies here."
+type = 10
+extra_flags = "0"
+wear_flags = "16385"
+values = [15, 14, 28, 36]
+weight = 1
+cost = 3000
+rent = 15
+
+[[objects.extra_desc]]
+keyword = "potion white"
+description = "This potion bottle contains a whitish liquid that looks rather thick.\r\nA small label reads 'Redemption'\r\n"
+[[objects]]
+vnum = 5474
+name = "potion dark blue"
+short_descr = "a dark blue potion"
+description = "A dark blue potion lies here."
+type = 10
+extra_flags = "0"
+wear_flags = "16385"
+values = [10, 35, 14, -1]
+weight = 1
+cost = 4000
+rent = 15
+
+[[objects.extra_desc]]
+keyword = "potion dark blue"
+description = "This dark blue potion has a small label on it reading 'Restoration'\r\n"
+[[objects]]
+vnum = 5475
+name = "bottle scorpion flaming beer"
+short_descr = "a flaming scorpion"
+description = "A bottle of strong beer lies here."
+type = 17
+extra_flags = "0"
+wear_flags = "1"
+values = [5, 5, 1, 0]
+weight = 1
+cost = 500
+rent = 10
+[[objects]]
+vnum = 5476
+name = "barrel beer"
+short_descr = "a barrel"
+description = "A barrel of beer lies here."
+type = 17
+extra_flags = "0"
+wear_flags = "1"
+values = [10, 10, 1, 0]
+weight = 15
+cost = 900
+rent = 50
+[[objects]]
+vnum = 5477
+name = "shot whisky"
+short_descr = "a shot"
+description = "A shot of strong liquor lies here."
+type = 17
+extra_flags = "0"
+wear_flags = "1"
+values = [1, 1, 5, 0]
+weight = 1
+cost = 350
+rent = 10
+[[objects]]
+vnum = 5478
+name = "scroll recall"
+short_descr = "a scroll of recall"
+description = "A scroll of recall lies here."
+type = 2
+extra_flags = "g"
+wear_flags = "16385"
+values = [12, 42, -1, -1]
+weight = 4
+cost = 2000
+rent = 25
+[[objects]]
+vnum = 5479
+name = "wand grey silver"
+short_descr = "a grey-silver wand"
+description = "A grey-silver wand lies here."
+type = 3
+extra_flags = "gnop"
+wear_flags = "16385"
+values = [15, 1, 1, 6]
+weight = 1
+cost = 10000
+rent = 15
+
+[[objects.extra_desc]]
+keyword = "wand grey silver"
+description = "You see a small engraved storm cloud at the base of this wand.\r\n"
+[[objects]]
+vnum = 5480
+name = "wand yellow"
+short_descr = "a wand of glinting yellow"
+description = "A wand of glinting yellow lies here."
+type = 3
+extra_flags = "g"
+wear_flags = "16385"
+values = [1, 1, 1, 19]
+weight = 1
+cost = 666
+rent = 15
+
+[[objects.extra_desc]]
+keyword = "wand yellow"
+description = "You see a shape slowly fading into existance at the base of this wand.\r\n"
+[[objects]]
+vnum = 5481
+name = "wand oak"
+short_descr = "an oak wand"
+description = "A wand of oak lies here."
+type = 3
+extra_flags = "g"
+wear_flags = "16385"
+values = [5, 1, 1, 32]
+weight = 1
+cost = 500
+rent = 15
+[[objects]]
+vnum = 5482
+name = "wand pink"
+short_descr = "a pink wand"
+description = "A pink wand lies here"
+type = 3
+extra_flags = "g"
+wear_flags = "16385"
+values = [3, 1, 1, 38]
+weight = 1
+cost = 5000
+rent = 15
+[[objects]]
+vnum = 5483
+name = "shears sewing"
+short_descr = "a pair of sewing shears"
+description = "A pair of sewing shears lies here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 1, 4, 1]
+weight = 2
+cost = 100
+rent = 50
+[[objects]]
+vnum = 5484
+name = "cleaver meat"
+short_descr = "a meat cleaver"
+description = "A meat cleaver lies here"
+type = 5
+extra_flags = "cd"
+wear_flags = "8193"
+values = [0, 1, 5, 0]
+weight = 5
+cost = 100
+rent = 10
+[[objects]]
+vnum = 5485
+name = "pen fountain"
+short_descr = "a fountain pen"
+description = "A fountain pen lies here."
+type = 5
+extra_flags = "b"
+wear_flags = "8193"
+values = [0, 1, 3, 11]
+weight = 1
+cost = 100
+rent = 5
+[[objects]]
+vnum = 5486
+name = "hammer sledge"
+short_descr = "a sledge hammer"
+description = "A sledge hammer lies here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 2, 3, 6]
+weight = 24
+cost = 200
+rent = 40
+[[objects]]
+vnum = 5487
+name = "shoe horse"
+short_descr = "a horse shoe"
+description = "A horse shoe lies here."
+type = 9
+extra_flags = "bg"
+wear_flags = "16389"
+values = [1, 0, 0, 0]
+weight = 2
+cost = 1000
+rent = 200
+
+[[objects.affects]]
+location = 18
+modifier = 1
+[[objects]]
+vnum = 5488
+name = "saddle"
+short_descr = "a saddle"
+description = "A saddle lies here."
+type = 12
+extra_flags = "0"
+wear_flags = "1"
+values = [0, 0, 0, 0]
+weight = 4
+cost = 100
+rent = 50
+[[objects]]
+vnum = 5489
+name = "crop riding"
+short_descr = "a riding crop"
+description = "A riding crop lies here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 1, 4, 2]
+weight = 1
+cost = 50
+rent = 10
+[[objects]]
+vnum = 5490
+name = "chessboard"
+short_descr = "a chessboard"
+description = "A heavy marble chessboard lies here."
+type = 5
+extra_flags = "0"
+wear_flags = "16385"
+values = [0, 1, 30, 6]
+weight = 10
+cost = 100
+rent = 20
+[[objects]]
+vnum = 5491
+name = "seed sesame"
+short_descr = "a sesame seed"
+description = "A sesame seed lies here."
+type = 19
+extra_flags = "0"
+wear_flags = "16385"
+values = [6, 0, 0, 0]
+weight = 1
+cost = 10
+rent = 0
+[[objects]]
+vnum = 5492
+name = "spear gae bolg"
+short_descr = "Gae Bolg"
+description = "A beautiful spear is lying on the ground here."
+type = 5
+extra_flags = "agmno"
+wear_flags = "8193"
+values = [0, 5, 3, 11]
+weight = 12
+cost = 18000
+rent = 12500
+
+[[objects.extra_desc]]
+keyword = "spear gae bolg"
+description = "The beautiful, glowing spear is close to eight feet long and has\r\na bright, polished silver blade that tapers at the end into what\r\nmust be the finest point you have ever seen.\r\n"
+[[objects]]
+vnum = 5493
+name = "key"
+short_descr = "the jail key"
+description = "The key to the jail lies here."
+type = 18
+extra_flags = "c"
+wear_flags = "16385"
+values = [5493, 0, 0, 0]
+weight = 1
+cost = 100
+rent = 200
+[[objects]]
+vnum = 5494
+name = "key"
+short_descr = "the dungeon key"
+description = "The dungeon key lies here."
+type = 18
+extra_flags = "c"
+wear_flags = "16385"
+values = [5494, 0, 0, 0]
+weight = 1
+cost = 100
+rent = 200
+[[objects]]
+vnum = 5495
+name = "claw wolverine"
+short_descr = "the wolverine claw"
+description = "A claw from some animal lies here."
+type = 5
+extra_flags = "bl"
+wear_flags = "8193"
+values = [0, 3, 6, 8]
+weight = 2
+cost = 400
+rent = 50
+
+[[objects.affects]]
+location = 13
+modifier = -20
+[[objects]]
+vnum = 5496
+name = "wrath allah mace"
+short_descr = "the wrath of Allah"
+description = "A large ornate mace floats above the ground here."
+type = 5
+extra_flags = "agmop"
+wear_flags = "8193"
+values = [0, 4, 4, 6]
+weight = 16
+cost = 25000
+rent = 12500
+
+[[objects.extra_desc]]
+keyword = "wrath allah mace"
+description = "This enormous weapon looks like it could pound the stuffing out of\r\nanything or anyone around.\r\n"

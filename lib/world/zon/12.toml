@@ -1,0 +1,75 @@
+[[zones]]
+vnum = 12
+name = "God Simplex"
+bot = 1200
+top = 1299
+lifespan = 10
+reset_mode = 2
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 1201
+arg2 = 1
+arg3 = 1205
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 1200
+arg2 = 1
+arg3 = 1201
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 1202
+arg2 = 2
+arg3 = 1201
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 1202
+arg2 = 2
+arg3 = 1200
+
+[[zones.commands]]
+command = "R"
+if_flag = 0
+arg1 = 1206
+arg2 = 3096
+
+[[zones.commands]]
+command = "O"
+if_flag = 0
+arg1 = 3096
+arg2 = 5
+arg3 = 1206
+
+[[zones.commands]]
+command = "O"
+if_flag = 0
+arg1 = 3097
+arg2 = 1
+arg3 = 1202
+
+[[zones.commands]]
+command = "O"
+if_flag = 0
+arg1 = 3098
+arg2 = 1
+arg3 = 1204
+
+[[zones.commands]]
+command = "R"
+if_flag = 0
+arg1 = 1203
+arg2 = 3099
+
+[[zones.commands]]
+command = "O"
+if_flag = 0
+arg1 = 3099
+arg2 = 2
+arg3 = 1203

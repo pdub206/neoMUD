@@ -1,0 +1,160 @@
+[[objects]]
+vnum = 900
+name = "key golden heavy"
+short_descr = "a golden key"
+description = "A heavy golden key lies here."
+type = 18
+extra_flags = "c"
+wear_flags = "16385"
+values = [900, 0, 0, 0]
+weight = 1
+cost = 0
+rent = 0
+[[objects]]
+vnum = 901
+name = "shield minotaur"
+short_descr = "a dark minotaur shield"
+description = "A dark minotaur shield has been left here."
+type = 9
+extra_flags = "dgh"
+wear_flags = "513"
+values = [12, 0, 0, 0]
+weight = 12
+cost = 5000
+rent = 1350
+
+[[objects.extra_desc]]
+keyword = "shield minotaur"
+description = "A strong, sturdy shield.  It brings to mind legends of a shield that\r\nprovided protection from poisonous gases.\r\n"
+
+[[objects.affects]]
+location = 23
+modifier = -4
+[[objects]]
+vnum = 902
+name = "potion speckled"
+short_descr = "a speckled potion"
+description = "A speckled potion speckles here."
+type = 10
+extra_flags = "g"
+wear_flags = "1"
+values = [15, 15, 15, 15]
+weight = 2
+cost = 1300
+rent = 500
+[[objects]]
+vnum = 903
+name = "gauntlets troll"
+short_descr = "a pair of troll gauntlets"
+description = "A pair of gauntlets made from troll skin lie on the ground."
+type = 9
+extra_flags = "g"
+wear_flags = "129"
+values = [5, 0, 0, 0]
+weight = 8
+cost = 2000
+rent = 1350
+[[objects]]
+vnum = 904
+name = "ring platinum"
+short_descr = "a platinum ring"
+description = "A shining ring of platinum lies here.  It has a tiny inscription."
+type = 1
+extra_flags = "agh"
+wear_flags = "16387"
+values = [0, 0, -1, 0]
+weight = 1
+cost = 2000
+rent = 5500
+
+[[objects.extra_desc]]
+keyword = "ring platinum inscription"
+description = "The inscription on the ring reads:\r\n\r\nCursed be the gods that supply coins to mortals!\r\nAnd cursed be the mortal that accepts valuable gifts from the gods!\r\nEspecially cursed are those who do not leave the toilet seat up!\r\n\r\n"
+
+[[objects.affects]]
+location = 17
+modifier = 10
+
+[[objects.affects]]
+location = 18
+modifier = 2
+[[objects]]
+vnum = 905
+name = "flail"
+short_descr = "a flail"
+description = "A flail has been carelessly left here."
+type = 5
+extra_flags = "fgh"
+wear_flags = "8193"
+values = [0, 3, 4, 7]
+weight = 8
+cost = 5000
+rent = 3500
+
+[[objects.affects]]
+location = 19
+modifier = 2
+[[objects]]
+vnum = 906
+name = "coins gold treasure"
+short_descr = "a great pile of treasure"
+description = "A great, gleaming pile of treasure lies at your feet."
+type = 20
+extra_flags = "0"
+wear_flags = "1"
+values = [43500, 0, 0, 0]
+weight = 20
+cost = 43500
+rent = 0
+[[objects]]
+vnum = 907
+name = "spear heavy"
+short_descr = "a heavy spear"
+description = "A heavy spear has been tossed on the ground here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 1, 7, 11]
+weight = 8
+cost = 450
+rent = 200
+
+[[objects.affects]]
+location = 19
+modifier = 1
+[[objects]]
+vnum = 908
+name = "trident"
+short_descr = "a trident"
+description = "There is a warrior's trident here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 2, 4, 11]
+weight = 8
+cost = 350
+rent = 200
+
+[[objects.extra_desc]]
+keyword = "trident"
+description = "This is a common trident, often used by gladiators or mermen.  It has\r\nthree sharp prongs jutting from the business end and a smooth wooden\r\nhandle with two comfortable grip points.\r\n"
+[[objects]]
+vnum = 909
+name = "boots boat"
+short_descr = "a pair of boots"
+description = "A pair of boots sit here in a puddle of water."
+type = 22
+extra_flags = "deq"
+wear_flags = "65"
+values = [0, 0, 0, 0]
+weight = 1
+cost = 5000
+rent = 1850
+
+[[objects.extra_desc]]
+keyword = "boots boat"
+description = "The boots are made of a strange lightweight hide and float in a puddle\r\nof water.\r\n"
+
+[[objects.affects]]
+location = 14
+modifier = -20

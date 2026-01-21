@@ -1,0 +1,348 @@
+[[objects]]
+vnum = 6101
+name = "sign"
+short_descr = "a sign"
+description = "An old, battered sign lies on the ground."
+type = 12
+extra_flags = "0"
+wear_flags = "1"
+values = [0, 0, 0, 0]
+weight = 10
+cost = 2
+rent = 2
+
+[[objects.extra_desc]]
+keyword = "sign"
+description = "Only some of the letters are legible :-\r\n                _\r\n      _________| |_________\r\n     /         | |         \\\r\n    /  CAR.AX  | |  M.STY   \\\r\n    \\  M..SI.N | |  SW..P   /\r\n     \\_________| |_________/\r\n               | |\r\n\r\n"
+[[objects]]
+vnum = 6102
+name = "tree opening"
+short_descr = "a colossal tree"
+description = "A colossal tree blocks the way westward."
+type = 15
+extra_flags = "0"
+wear_flags = "0"
+values = [1000, 0, 0, 0]
+weight = 0
+cost = 0
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "tree"
+description = "This enormous tree must be a thousand years old.  Its rough bark looks grey\r\nand pale and is decorated with scratches and clawmarks.  On its west side is\r\na small opening just above ground level.\r\n"
+
+[[objects.extra_desc]]
+keyword = "opening"
+description = "The opening is far too narrow for you to squeeze through but it looks as if\r\nthe tree is hollow.\r\n"
+[[objects]]
+vnum = 6103
+name = "branch grey long"
+short_descr = "a long, grey branch"
+description = "A long, grey branch rests heavily on the ground."
+type = 1
+extra_flags = "0"
+wear_flags = "16385"
+values = [0, 0, 25, 0]
+weight = 20
+cost = 1
+rent = 3
+
+[[objects.extra_desc]]
+keyword = "branch grey long"
+description = "It is quite heavy and looks as if it has been dropped from great height.  It\r\nis long dead and very dry.  Could probably be lighted quite easily.\r\n"
+[[objects]]
+vnum = 6104
+name = "branch grey long"
+short_descr = "a long, grey branch"
+description = "A long, grey branch rests heavily on the ground."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 2, 6, 7]
+weight = 18
+cost = 60
+rent = 20
+
+[[objects.extra_desc]]
+keyword = "branch grey long"
+description = "It is very heavy and looks as if it has been dropped from great height.  It\r\nis long and straight and the wood is very hard, still being full of sap.\r\nAlthough it does not fit very well in your hand, it could be used as a clumsy\r\nbut very heavy weapon.\r\n"
+
+[[objects.affects]]
+location = 18
+modifier = -2
+[[objects]]
+vnum = 6105
+name = "branch grey long"
+short_descr = "a long, grey branch"
+description = "A long, grey branch rests heavily on the ground."
+type = 13
+extra_flags = "0"
+wear_flags = "1"
+values = [0, 0, 0, 0]
+weight = 40
+cost = 0
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "branch grey long"
+description = "It is very heavy and looks as if it has been dropped from great height.  It\r\nis somewhat twisted and the hard wood is still full of sap.\r\n"
+[[objects]]
+vnum = 6106
+name = "toadstool"
+short_descr = "a toadstool"
+description = "A large toadstool grows nearby."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [12, 0, 0, 0]
+weight = 5
+cost = 20
+rent = 20
+
+[[objects.extra_desc]]
+keyword = "toadstool"
+description = "It is a large, brown boletus that must weigh nearly five pounds.  The top\r\nsurface is covered in a thin layer of transparent slime that emits a weak,\r\nmusty smell.  Not the most delicious thing you have seen.\r\n"
+[[objects]]
+vnum = 6107
+name = "toadstool"
+short_descr = "a toadstool"
+description = "A large toadstool grows nearby."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [12, 0, 0, 1]
+weight = 5
+cost = 20
+rent = 20
+
+[[objects.extra_desc]]
+keyword = "toadstool"
+description = "It is a large, brown boletus that must weigh nearly five pounds.  It\r\nhas small white spots and the top surface is covered in a thin layer\r\nof transparent slime that emits a weak, musty smell.  Not the most\r\ndelicious thing you have seen.\r\n"
+[[objects]]
+vnum = 6108
+name = "coins gold"
+short_descr = "a big pile of gold coins"
+description = "A big pile of gold coins is lying here."
+type = 20
+extra_flags = "0"
+wear_flags = "1"
+values = [15326, 0, 0, 0]
+weight = 15
+cost = 15326
+rent = 0
+[[objects]]
+vnum = 6109
+name = "potion blue"
+short_descr = "a blue potion"
+description = "A blue potion has been left here."
+type = 10
+extra_flags = "g"
+wear_flags = "1"
+values = [15, 28, -1, -1]
+weight = 2
+cost = 68000
+rent = 5000
+
+[[objects.extra_desc]]
+keyword = "potion blue"
+description = "It has a nice deep blue color and a smell like peppermint.\r\n"
+[[objects]]
+vnum = 6110
+name = "potion yellow musky"
+short_descr = "a musky yellow potion"
+description = "A yellow potion has been left here."
+type = 10
+extra_flags = "g"
+wear_flags = "1"
+values = [15, 39, -1, -1]
+weight = 2
+cost = 1000
+rent = 200
+
+[[objects.extra_desc]]
+keyword = "potion yellow musky"
+description = "It has a deep yellow color and and a strong spicy smell.\r\n"
+[[objects]]
+vnum = 6111
+name = "shield round large"
+short_descr = "a large round shield"
+description = "A large round shield has been left here."
+type = 9
+extra_flags = "0"
+wear_flags = "513"
+values = [5, 0, 0, 0]
+weight = 15
+cost = 300
+rent = 800
+
+[[objects.extra_desc]]
+keyword = "shield round large"
+description = "It is made from hard wood that has been reinforced with heavy iron bands.\r\n"
+[[objects]]
+vnum = 6112
+name = "crown iron"
+short_descr = "an iron crown"
+description = "An iron crown rests on the ground."
+type = 9
+extra_flags = "g"
+wear_flags = "17"
+values = [6, 0, 0, 0]
+weight = 20
+cost = 7000
+rent = 500
+
+[[objects.extra_desc]]
+keyword = "crown iron"
+description = "It is a heavy human-sized crown made from solid iron.\r\n"
+[[objects]]
+vnum = 6113
+name = "sceptre iron"
+short_descr = "an iron sceptre"
+description = "An iron sceptre lies on the ground."
+type = 1
+extra_flags = "g"
+wear_flags = "16385"
+values = [0, 0, -1, 0]
+weight = 10
+cost = 5000
+rent = 700
+
+[[objects.extra_desc]]
+keyword = "sceptre iron"
+description = "It is a heavy sceptre made from solid iron.\r\n"
+[[objects]]
+vnum = 6114
+name = "ring iron"
+short_descr = "an iron ring"
+description = "An iron ring has been left here."
+type = 11
+extra_flags = "g"
+wear_flags = "3"
+values = [0, 0, 0, 0]
+weight = 10
+cost = 5000
+rent = 500
+
+[[objects.extra_desc]]
+keyword = "ring iron"
+description = "It is a quite heavy human-sized ring made from solid iron.  It lacks\r\ndecorations of any kind.\r\n"
+
+[[objects.affects]]
+location = 17
+modifier = -4
+
+[[objects.affects]]
+location = 9
+modifier = 1
+[[objects]]
+vnum = 6115
+name = "star morning-star"
+short_descr = "the morning star"
+description = "the morning star is here collecting dust while it lies on the ground."
+type = 5
+extra_flags = "g"
+wear_flags = "8193"
+values = [0, 2, 9, 7]
+weight = 10
+cost = 15000
+rent = 2000
+
+[[objects.affects]]
+location = 18
+modifier = 2
+[[objects]]
+vnum = 6116
+name = "shirt scale"
+short_descr = "a black dragon scale shirt"
+description = "A black dragon scale shirt has been left here."
+type = 9
+extra_flags = "g"
+wear_flags = "9"
+values = [6, 0, 0, 0]
+weight = 10
+cost = 10000
+rent = 100
+
+[[objects.extra_desc]]
+keyword = "shirt scale"
+description = "It is a sleeveless shirt made from big, black dragon scales joined\r\nwith silver threads.  Its inside has been made from the soft skin\r\non the dragon's belly, making it very comfortable to wear.  The word\r\n'Isha' has been engraved on one of the scales.\r\n"
+[[objects]]
+vnum = 6117
+name = "skirt scale"
+short_descr = "a black dragon scale skirt"
+description = "A black dragon scale skirt has been left here."
+type = 9
+extra_flags = "g"
+wear_flags = "33"
+values = [6, 0, 0, 0]
+weight = 8
+cost = 5000
+rent = 100
+
+[[objects.extra_desc]]
+keyword = "skirt scale"
+description = "It is a short skirt made from big, black dragon scales joined with\r\nsilver threads.  Its inside has been made from the soft skin on the\r\ndragon's belly, making it very comfortable to wear.  The word 'Isha'\r\nhas been engraved on one of the scales.\r\n"
+[[objects]]
+vnum = 6118
+name = "cloak black"
+short_descr = "a black, hooded cloak"
+description = "A large, hooded cloak, as dark as the night, has been left here."
+type = 11
+extra_flags = "g"
+wear_flags = "1025"
+values = [0, 0, 0, 0]
+weight = 20
+cost = 8000
+rent = 4000
+
+[[objects.extra_desc]]
+keyword = "cloak black"
+description = "It is a heavy, black cloak with a large hood.  The word 'Isha' is written\r\ninside it with a silver thread.\r\n"
+
+[[objects.affects]]
+location = 17
+modifier = -6
+
+[[objects.affects]]
+location = 24
+modifier = -4
+[[objects]]
+vnum = 6119
+name = "belt silver"
+short_descr = "a broad silver belt"
+description = "A broad silver belt has been left here."
+type = 9
+extra_flags = "ag"
+wear_flags = "2049"
+values = [6, 0, 0, 0]
+weight = 4
+cost = 5000
+rent = 3500
+
+[[objects.extra_desc]]
+keyword = "belt silver"
+description = "It is a broad belt made from tiny silver rings woven together.\r\n"
+[[objects]]
+vnum = 6120
+name = "sword long slender"
+short_descr = "a long, slender sword"
+description = "A long, slender sword lies on the ground."
+type = 5
+extra_flags = "agjl"
+wear_flags = "8193"
+values = [0, 3, 6, 3]
+weight = 4
+cost = 30000
+rent = 6000
+
+[[objects.extra_desc]]
+keyword = "sword long slender"
+description = "It is a long, slender sword that seems to be made from silver.  The word\r\n'Isha' has been engraved on the hilt.\r\n"
+
+[[objects.affects]]
+location = 18
+modifier = 4
+
+[[objects.affects]]
+location = 19
+modifier = 2

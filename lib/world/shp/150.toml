@@ -1,0 +1,64 @@
+[[shops]]
+vnum = 15019
+producing = [15012, 3050, 3052, -1]
+buy_profit = 1.20
+sell_profit = 0.30
+broke_temper = 2
+bitvector = 2
+keeper = 15019
+trade_with = 40
+rooms = [15052, -1]
+open1 = 2
+close1 = 8
+open2 = 20
+close2 = 28
+
+[[shops.trade]]
+type = 2
+
+[[shops.trade]]
+type = 3
+
+[[shops.trade]]
+type = 4
+
+[[shops.trade]]
+type = 10
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s But I have no such thing for sale."
+no_such_item2 = "%s But you do not have this item."
+do_not_buy = "%s I have no interest in that."
+missing_cash1 = "%s I am sorry, but I can not afford such a valuable item."
+missing_cash2 = "%s But you can not afford that item."
+message_buy = "%s It will cost you %d coins."
+message_sell = "%s Here, you shall have %d coins for it."
+[[shops]]
+vnum = 15022
+producing = [15019, 15020, -1]
+buy_profit = 1.10
+sell_profit = 1.00
+broke_temper = 0
+bitvector = 2
+keeper = 15022
+trade_with = 0
+rooms = [15005, -1]
+open1 = 6
+close1 = 23
+open2 = 0
+close2 = 0
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s Je suis tres desole, mais je n'ai pas ca."
+no_such_item2 = "%s Mais, je n'achete pas!"
+do_not_buy = "%s Mais, je n'achete pas!"
+missing_cash1 = "%s Mais, je n'achete pas!"
+missing_cash2 = "%s Si vous n'avez d'argent, vous ne pouvez p'acheter!"
+message_buy = "%s Ca coute %d piece d'or, s'il vous plait."
+message_sell = "%s Oops - %d, a minor bug - please report!"

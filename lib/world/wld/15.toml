@@ -1,0 +1,812 @@
+[[rooms]]
+vnum = 1500
+name = "A Road Leading From The Bank"
+description = "   You find yourself on a small road leading away from the edge\r\nof the River of Lost Souls.  The dark waters of the River can\r\nbe seen and heard just south of here.  Looking to the east and\r\nwest, you see only the walls of the rocky cliffs.  Off to the\r\nnorth a strange path seems to lead straight into the depths of\r\nthe mountain.\r\n"
+flags = "c"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+description = "A strange path leads northwards.\r\n"
+door = 0
+key = -1
+to_room = 1501
+
+[[rooms.exits]]
+dir = 2
+description = "The River of Lost Souls flows just to the south of here.\r\n"
+door = 0
+key = -1
+to_room = 5619
+[[rooms]]
+vnum = 1501
+name = "A Long Road"
+description = "   You stand here in spiritual emptiness, beginning a long and dangerous\r\npath.  Your honest submission has already been made, but the truth of your\r\nheart has yet to be told.  Leave here now, and do not come back until\r\nyou have grown.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1502
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1500
+[[rooms]]
+vnum = 1502
+name = "A Long Road"
+description = "   You stop for a moment, screaming in frustration.  Surely it was that one\r\nsin that was avoidable, of all that you regret.  The hitting and the hurting\r\nflash briefly before you.  Moments later the pain passes, and the straight\r\npath reveals itself before you.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1503
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1501
+[[rooms]]
+vnum = 1503
+name = "A Long Road"
+description = "   The road clears, the fog and pain of the first few steps left behind\r\nyou.  Despite the sudden clarity, your mind is still haunted, images of\r\nan old woman kneeling in prayer, eyes closing, smiling and crying.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1504
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1502
+[[rooms]]
+vnum = 1504
+name = "A Long Road"
+description = "   Looking ahead, you can see that the path you have been following will\r\nsoon come to an end, but something in the cold and the breeze tells you\r\nthat that will be only the beginning of the journey.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1505
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1503
+[[rooms]]
+vnum = 1505
+name = "A Test for the Faithful"
+description = "   It is here finally that decisions must be made.  The first one that\r\nconfronts you is simple enough, to walk in the darkness, or to walk in\r\nthe light.  Only the depths of your soul can decide, but remember this\r\nmuch: the same truth lies at the end of both paths.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 1507
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 1506
+[[rooms]]
+vnum = 1506
+name = "Halls of the Forgotten"
+description = "   Even the darkest have a place on the road to the truth.  It is in this\r\nplace, so empty and forgotten, that God has chosen the worst, and brought\r\nthem close to Him for one last time.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 1513
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 1508
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 1505
+[[rooms]]
+vnum = 1507
+name = "Shahadah"
+description = "   It was written once, on an ancient parchment in a curious and flowing\r\nscript, that there is in fact no god but Allah, and that Muhammad was\r\nthe last of His Prophets.  With this recognition, all else became empty\r\nand meaningless.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 1523
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 1518
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 1505
+[[rooms]]
+vnum = 1508
+name = "Earthly Evil"
+description = "   Whatever it carries, that rage converts into a weapon.  Wrath supplies\r\nall with arms.  When an angry man thirsts for blood anything will serve\r\nhim for a spear.  Fury turns a stick into a cudgel.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1509
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 1506
+[[rooms]]
+vnum = 1509
+name = "Misguidance"
+description = "   Some have been brought here not for what they did, but what they\r\nfailed to do.  It is these, the poor souls that were presented the\r\nfair evidence and rejected it with an honest mind, that deserve our\r\npity the most of all.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1510
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1508
+[[rooms]]
+vnum = 1510
+name = "Temptation"
+description = "   Old tales tell of a conversation between the devil and the Prophet\r\nJesus: the devil offered him a kingdom, vast riches, the temptation of\r\na glorious near-death saved by his angels.  Even this Messenger of God\r\nwas forced to stop and think.  Imagine how hard it could be for the rest.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1511
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1509
+[[rooms]]
+vnum = 1511
+name = "Hypocrisy"
+description = "   He called the populace to strict religious purity, rigidly enforcing\r\nthe times of prayer and the most correct forms of the words of the Muezzin.\r\nAll of this he strengthened by his most impeccable example, shunning all\r\nriches and riding in tattered rags through his capital on the back of a\r\ndonkey.  Despite all this, remember.  Behind closed doors, all men are\r\nhypocrites.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1512
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1510
+[[rooms]]
+vnum = 1512
+name = "Hate"
+description = "   There is little in life much easier, and truthfully, little that is a\r\nquicker ticket to damnation.  You give brief thanks that you have come to\r\nthe end of these trials, but your words are drowned out by something\r\nmuch louder, a mechanical preaching that drowns your ears in anger.  You\r\nhear a steady, repetitive litany of the same phrase, over and over again:\r\n\"I go the way history dictates with the blind assurance of a sleep-walker.\"\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1528
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1511
+[[rooms]]
+vnum = 1513
+name = "Spiritual Danger"
+description = "   Some evils are tangible, solid, so evident that they spit you right in\r\nthe face.  Others are more clever, more subtle, and it is these that present\r\nthe greatest danger.  Looking down the hall before you, a great fear fills\r\nyour heart, and a great, heavy longing.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1514
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 1506
+[[rooms]]
+vnum = 1514
+name = "The Fall"
+description = "   In the beginning, he was the best, the most beautiful of all the angels,\r\nand God's most loved creation.  Look at your own beauty, human, and do what\r\nhe could not.  Look at your beauty, and learn to kneel!\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1515
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1513
+[[rooms]]
+vnum = 1515
+name = "Temptation"
+description = "   Temptation is the IF, the wondering, the second-guessing, the \"I will\r\nbe a better man... if...\"  And that if is usually taken, sitting alone,\r\nlistening to that voice, calling you, offering such an easy way, but such\r\na crooked one.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1516
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1514
+[[rooms]]
+vnum = 1516
+name = "The Last Day"
+description = "   The din of a great battle shakes these halls, the moans of the earth\r\nerupting at the shakings of the End Time.  Be ready for that day, be very\r\nready, for if you are not, he will claim you for one of his own.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1517
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1515
+[[rooms]]
+vnum = 1517
+name = "Flame"
+description = "   Undescribable horror and pain, a blackness drowned out only by the\r\nburning anguish, the inextinguishable fire coming not from some burning\r\nwood or molten lava but from the brightness and pain of the horrible,\r\ntortured souls that surround, everywhere you turn.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1530
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1516
+[[rooms]]
+vnum = 1518
+name = "Earthly Light"
+description = "   To slip into evil is easy, but walking this path is the hardest of\r\nall.  Even the four you will find here today have strayed from the line\r\nat least once in their lives, and there are still some living who curse\r\nthe very sound of their names.  Despite all this, confront them now, and\r\nlet their actions serve as your example.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1519
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 1507
+[[rooms]]
+vnum = 1519
+name = "The Light of the Rashidun"
+description = "   Many believed that the Prophet would never die, but when the stark\r\nevidence of his body confronted them, it soon became necessary to provide\r\nfor the future.  The four that came after are called the Rashidun, the\r\nrightly-guided Caliphs that would spread the word and the light, and with\r\nit forge one of history's greatest empires.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1520
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1518
+[[rooms]]
+vnum = 1520
+name = "The Light of the Rashidun"
+description = "   The first Caliphs were chosen by consultation with a noble council\r\nof elders, each of whom, hoping to lead the world of Islam alone, voted\r\nto elect the one amongst them they thought was the weakest.  Each time,\r\nthey were wrong.  Each one was more noble, more upright than the one\r\nbefore.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1521
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1519
+[[rooms]]
+vnum = 1521
+name = "The Light of the Rashidun"
+description = "   Every majestic and happy tale must end, usually all too soon, and thus\r\nit was with the golden age of the Caliphate.  The Rashidun were pure men,\r\ngood men, true to the path, but their followers soon began to bicker, and\r\ncivil war was on the horizon.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1522
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1520
+[[rooms]]
+vnum = 1522
+name = "The Light of the Rashidun"
+description = "   The end of the Rashidun was the beginning of Schism.  The memories\r\nof the Prophet and the living example of the Caliphs proved to be\r\ninsufficient example to the faithful.  Ali died, and some say that\r\nwith him the Caliphate died too, a martyr, his blood still flowing in\r\nthe nameless river.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1531
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1521
+[[rooms]]
+vnum = 1523
+name = "Spritual Reward"
+description = "   Behold, Allah is the Provider, the most Generous.  He would not suffer\r\nhis believers to walk the path of light without guidance.  He provided the\r\nProphets, may peace be upon them, and in the examples of their own growth,\r\nwe shall find the truth of our own.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1524
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 1507
+[[rooms]]
+vnum = 1524
+name = "Creation"
+description = "   In the creation of the heavens and the earth, and in the alternation of\r\nnight and day, there are signs for men of sense; those that remember Allah\r\nsay: \"Lord, You have not created this in vain!\"\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1525
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1523
+[[rooms]]
+vnum = 1525
+name = "Revelation"
+description = "   The Angel Gabriel came to him and said: \"Read!\"  He replied: \"But I\r\ncannot!\"  The order was repeated three times, until the Angel himself\r\nsaid: \"Read, in the name of your Lord who created man from clots of blood.\r\nPraise be to God, Lord of the Universe.\"\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1526
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1524
+[[rooms]]
+vnum = 1526
+name = "Conversion"
+description = "   Unbelievers, I do not worship what you worship, nor do you worship\r\nwhat I worship.  I shall never worship what you worship, nor will you\r\never worship what I worship.  You have your own religion, and I have\r\nmine.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1527
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1525
+[[rooms]]
+vnum = 1527
+name = "Deliverance"
+description = "   The balance had been made, the soul placed in readiness, and the final\r\nmeasurement taken.  For those that have come this far, surely this is the\r\nday of immortality!\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1533
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1526
+[[rooms]]
+vnum = 1528
+name = "Repentance"
+description = "   God forgives those who commit evil in ignorance, for He is all-knowing\r\nand wise.  But He will not forgive those who do evil, and when death comes\r\nto them, say: \"Now we repent!\"  For those We have prepared a woeful scourge.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 1529
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1512
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 1534
+[[rooms]]
+vnum = 1529
+name = "Pilgrimage"
+description = "   It is incumbent upon all Muslims to make the pilgrimage to Mecca once\r\nin their lifetime, if they are able, and for those unfortunate enough to\r\nfollow the lives of the lower evils, such a pilgrimage with an open and\r\ncontrite heart shall absolve them of all.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 1530
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 1528
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 1535
+[[rooms]]
+vnum = 1530
+name = "Intercession"
+description = "   It is written that no one may intercede with God on behalf of another.\r\nNo prayers from another may save the soul of a doomed man; his only hope\r\nis prayers of his own.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1517
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 1529
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 1536
+[[rooms]]
+vnum = 1531
+name = "The Upper Reaches"
+description = "   You have traveled the righteous path, and you have faced the examples\r\nof the true models of the Prophet.  Only the final journey awaits you;\r\nlive like this and you shall live forever.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 1532
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1522
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 1534
+[[rooms]]
+vnum = 1532
+name = "The Upper Reaches"
+description = "   When the records of men's deeds are laid open, and heaven is stripped\r\nbare; when Hell burns fiercely and Paradise is brought near: then each\r\nsoul shall know what it has done.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 1533
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 1531
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 1535
+[[rooms]]
+vnum = 1533
+name = "The Upper Reaches"
+description = "   You have traveled the righteous path, and your own journey has\r\nimitated the evolution of the most perfect soul.  Only one final\r\npath awaits you; die as the one in the room before, and your death\r\nwill mean nothing.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1527
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 1532
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 1536
+[[rooms]]
+vnum = 1534
+name = "The Final Facing"
+description = "   The last of the darkness lies behind you; only the straight path\r\nremains.  Go forth with a clean heart.  Only the penitent shall find\r\nwhat they seek.\r\n"
+flags = "cd"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 1535
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 1531
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 1528
+[[rooms]]
+vnum = 1535
+name = "The Final Facing"
+description = "   The last of the darkness lies behind you; only the straight path\r\nremains.  Go forth with a clean heart.  Only the penitent shall find\r\nwhat they seek.\r\n"
+flags = "cd"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1537
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 1536
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 1534
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 1532
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 1529
+[[rooms]]
+vnum = 1536
+name = "The Final Facing"
+description = "   The last of the darkness lies behind you; only the straight path\r\nremains.  Go forth with a clean heart.  Only the penitent shall find\r\nwhat they seek.\r\n"
+flags = "cd"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 1535
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 1533
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 1530
+[[rooms]]
+vnum = 1537
+name = "A Straight Path"
+description = "   The Compassionate, the Merciful, Sovereign of the Day of Judgment!\r\nYou alone we worship, and to You alone we turn for help.  Guide us to\r\nthe Straight Path, the path of those whom You have favored, not of\r\nthose who have gone astray.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1538
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1535
+[[rooms]]
+vnum = 1538
+name = "Progression"
+description = "   Were We worn out by the First Creation?  Yet they are in doubt about\r\na new creation.  WE created man.  We know the promptings of his soul,\r\nand are closer to him than his jugular vein.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1539
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1537
+[[rooms]]
+vnum = 1539
+name = "Judgment"
+description = "   Undoubtedly the shortest path is the straightest one.  Only one more\r\nstep awaits before a final decision is made and a home given to you for\r\nall eternity.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 1540
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1538
+[[rooms]]
+vnum = 1540
+name = "The Utmost Throne"
+description = "   You have come at last to the resting place of the most holy.  Startling\r\ncrystal clarity of vision has been granted to you; seven guardians rim\r\nthe periphery of the throne and all is bathed in a warm and clean light.\r\nIt is here that the final choice is to be made, and no defiance of yours\r\ncan change the outcome.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 1539

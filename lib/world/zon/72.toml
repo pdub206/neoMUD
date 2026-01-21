@@ -1,0 +1,367 @@
+[[zones]]
+vnum = 72
+name = "The Sewer Maze"
+bot = 7200
+top = 7299
+lifespan = 25
+reset_mode = 2
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7200
+arg2 = 1
+arg3 = 7201
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 7200
+arg2 = 1
+arg3 = 16
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 7203
+arg2 = 1
+arg3 = 3
+
+[[zones.commands]]
+command = "G"
+if_flag = 1
+arg1 = 7205
+arg2 = 1
+
+[[zones.commands]]
+command = "O"
+if_flag = 1
+arg1 = 7204
+arg2 = 6
+arg3 = 7200
+
+[[zones.commands]]
+command = "O"
+if_flag = 1
+arg1 = 7210
+arg2 = 1
+arg3 = 7200
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7201
+arg2 = 1
+arg3 = 7203
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 7201
+arg2 = 4
+arg3 = 16
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7202
+arg2 = 2
+arg3 = 7205
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 7202
+arg2 = 8
+arg3 = 16
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7202
+arg2 = 2
+arg3 = 7207
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 7202
+arg2 = 8
+arg3 = 16
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7203
+arg2 = 10
+arg3 = 7214
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 7211
+arg2 = 16
+arg3 = 16
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7203
+arg2 = 10
+arg3 = 7213
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 7211
+arg2 = 16
+arg3 = 16
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7203
+arg2 = 10
+arg3 = 7215
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 7211
+arg2 = 16
+arg3 = 16
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7203
+arg2 = 10
+arg3 = 7217
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 7211
+arg2 = 16
+arg3 = 16
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7203
+arg2 = 10
+arg3 = 7219
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7203
+arg2 = 10
+arg3 = 7221
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7203
+arg2 = 10
+arg3 = 7223
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7203
+arg2 = 10
+arg3 = 7225
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7203
+arg2 = 10
+arg3 = 7233
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7203
+arg2 = 10
+arg3 = 7233
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7204
+arg2 = 1
+arg3 = 7234
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7002
+arg2 = 5
+arg3 = 7285
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7002
+arg2 = 5
+arg3 = 7285
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 7190
+arg2 = 2
+arg3 = 2
+
+[[zones.commands]]
+command = "E"
+if_flag = 1
+arg1 = 7209
+arg2 = 4
+arg3 = 8
+
+[[zones.commands]]
+command = "G"
+if_flag = 1
+arg1 = 7208
+arg2 = 20
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7002
+arg2 = 5
+arg3 = 7285
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7000
+arg2 = 8
+arg3 = 7286
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7000
+arg2 = 8
+arg3 = 7286
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7000
+arg2 = 8
+arg3 = 7281
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7000
+arg2 = 8
+arg3 = 7281
+
+[[zones.commands]]
+command = "M"
+if_flag = 0
+arg1 = 7000
+arg2 = 8
+arg3 = 7280
+
+[[zones.commands]]
+command = "R"
+if_flag = 0
+arg1 = 7206
+arg2 = 7206
+
+[[zones.commands]]
+command = "O"
+if_flag = 0
+arg1 = 7206
+arg2 = 4
+arg3 = 7206
+
+[[zones.commands]]
+command = "R"
+if_flag = 0
+arg1 = 7211
+arg2 = 7208
+
+[[zones.commands]]
+command = "O"
+if_flag = 0
+arg1 = 7208
+arg2 = 20
+arg3 = 7211
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 7201
+arg2 = 3
+arg3 = 2
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 7200
+arg2 = 1
+arg3 = 2
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 7202
+arg2 = 0
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 7201
+arg2 = 2
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 7208
+arg2 = 0
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 7204
+arg2 = 2
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 7281
+arg2 = 2
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 7280
+arg2 = 0
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 7286
+arg2 = 0
+arg3 = 1
+
+[[zones.commands]]
+command = "D"
+if_flag = 0
+arg1 = 7285
+arg2 = 2
+arg3 = 1

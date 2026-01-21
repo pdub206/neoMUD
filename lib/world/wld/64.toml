@@ -1,0 +1,916 @@
+[[rooms]]
+vnum = 6400
+name = "A Mountain Trail"
+description = "   This trail leads up, up, up into the mountains.  You\r\nhope you don't fall down, because that would hurt, hurt,\r\nhurt!  The trail continues to the east, and you can go\r\nback down to the small hidden valley to the west.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6401
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4078
+[[rooms]]
+vnum = 6401
+name = "A Mountain Trail"
+description = "   You're really high up now.  You can keep going even\r\nfarther up into the mountains to the east, or go back\r\ndown to the west.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6402
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6400
+[[rooms]]
+vnum = 6402
+name = "A Mountain Trail"
+description = "   Wispy clouds are beginning to surround you now, and\r\nyour ears pop due to the altitude.  To the east, you see\r\nthe summit of the mountain, and from the way the nearby\r\nmountains are arranged behind it, you believe you're\r\non your way to a big valley.  You can also go down\r\nto the west.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6403
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6401
+[[rooms]]
+vnum = 6403
+name = "Near The Mountain's Peak"
+description = "   The peak of this mountain is another couple hundred\r\nfeet above you, but here is where the trail leads down\r\ninto the valley...  What an odd valley!\r\n   The valley seems to have been filled up by a hundreds\r\nof feet of lava many years ago.  It gives the valley an\r\nodd, 'flat' look and darkish ground.  The path leads\r\ndown east into the valley, and west back to civilization.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6404
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6402
+[[rooms]]
+vnum = 6404
+name = "The Trail To The Valley"
+description = "   The trail leads down into the valley, where, by judging\r\nby the height of the trees, the lava had cooled tens\r\nof decades ago.  Down below you see the path lead into\r\nthe small forest in the valley, and disappear out of\r\nsight.  East leads into the valley, West back to civilization.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6405
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6403
+[[rooms]]
+vnum = 6405
+name = "In The Valley"
+description = "   The ground has taken on the texture of dirt on the top,\r\nbut this valley is far too flat and too rocky to disguise\r\nthe catastrophe that happened here so long ago.  Looking\r\nup to the mountains ringing this area, you notice several\r\nmountains look as if they had 'exploded', which is strange,\r\nconsidering that they are not volcanos.\r\n   The path leads into the woods to the east, and back up\r\nthe mountain to the west.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6406
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6404
+[[rooms]]
+vnum = 6406
+name = "In A Clearing"
+description = "   You come to a small clearing now, after walking for several\r\nminutes through the silent woods.  An odd block sticks up\r\nhere and there in   the ground... wait a minute.  These\r\nstones seem a little too regular, and from the circle \r\nformation and size you could almost swear that they were...\r\ncrenellations?  Could some sort of building been buried\r\nby the lava here?  A rusty ring sticks out of the earth\r\nin the center... a trapdoor?  This is almost too good to\r\nbe true!\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6405
+
+[[rooms.exits]]
+dir = 5
+description = "An ancient trapdoor, grimed with earth and age.\r\n"
+keyword = "trapdoor trap"
+door = 1
+key = -1
+to_room = 6407
+[[rooms]]
+vnum = 6407
+name = "A Stairwell"
+description = "   This small room is the top of a stairwell leading down\r\ndeep into the tower.  A small trapdoor overhead leaks\r\nthe light of day around its edges.  To the south is a \r\nwooden door, preserved through the ages by means \r\nunknown.  To the west is a short hall.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+keyword = "door"
+door = 1
+key = -1
+to_room = 6408
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6409
+
+[[rooms.exits]]
+dir = 4
+description = "An ancient trapdoor, grimed with earth and age.\r\n"
+keyword = "trapdoor trap"
+door = 1
+key = -1
+to_room = 6406
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 6413
+[[rooms]]
+vnum = 6408
+name = "A Linen Closet"
+description = "   This small room holds many types of linen on shelves \r\nalong the walls.  They are undoubtedly preserved by\r\nmagic against the toil of the ages, since they seem\r\nfreshly washed and folded.  You wonder what sort of\r\nmage could wield so much power to waste on such little\r\nthings.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+keyword = "door"
+door = 1
+key = -1
+to_room = 6407
+
+[[rooms.extra]]
+keyword = "linen shelf shelves"
+description = "White sheets, pillow-cases, etc.  Not really anything that\r\nyou need, but interesting.\r\n"
+[[rooms]]
+vnum = 6409
+name = "A Corridor"
+description = "   This is only a clean corridor, that leads back to the \r\nstairwell to the east, and has doors leading to other\r\nrooms to the north and south.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+keyword = "door"
+door = 1
+key = -1
+to_room = 6411
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6407
+
+[[rooms.exits]]
+dir = 2
+keyword = "door"
+door = 1
+key = -1
+to_room = 6410
+[[rooms]]
+vnum = 6410
+name = "A Bathroom"
+description = "   This is some sort of bathroom, like you've never seen\r\nbefore...  Water appliances leading from nowhere deliver\r\nhot and cold running water to basins that drain to...\r\nwhere?  How strange!\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+keyword = "door"
+door = 1
+key = -1
+to_room = 6409
+[[rooms]]
+vnum = 6411
+name = "The Master Bedroom"
+description = "   This is an opulent room, decorated in silks and gold.\r\nThere is an ebony desk against one wall, cooled lava rock\r\nspilling over its surface from the window it once looked\r\nout at.  A nice, spacious closet is filled with clothes\r\njust cleaned and pressed.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+keyword = "door"
+door = 1
+key = -1
+to_room = 6409
+
+[[rooms.extra]]
+keyword = "closet"
+description = "Nice clothes, but not your size at all.\r\n"
+
+[[rooms.extra]]
+keyword = "desk"
+description = "The desk is basically uninteresting, as are the papers \r\non top of it...\r\n"
+[[rooms]]
+vnum = 6412
+name = "The Library"
+description = "   A great mages' library is contained on this floor of \r\nthe tower.  You feel you could learn anything you wanted\r\nto if you only looked and read long enough.  A door\r\nopens up back on the stairwell to the east.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+keyword = "door"
+door = 1
+key = -1
+to_room = 6413
+
+[[rooms.exits]]
+dir = 3
+description = "A big bookcase, that looks rather odd.\r\n"
+keyword = "bookcase"
+door = 1
+key = -1
+to_room = 6414
+
+[[rooms.extra]]
+keyword = "book books"
+description = "There are lots of books about everything here!\r\n"
+[[rooms]]
+vnum = 6413
+name = "The Stairwell"
+description = "   This stairwell continues up and down, and there is\r\na door to the west.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+keyword = "door"
+door = 1
+key = -1
+to_room = 6412
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 6407
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 6415
+[[rooms]]
+vnum = 6414
+name = "A Hidden Hall"
+description = "   This is a small hidden hall with a secret entrance to the\r\nlibrary on the north end of the west wall, and a trapdoor \r\non the south end.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "The backside of a movable bookcase.\r\n"
+keyword = "book bookcase"
+door = 1
+key = -1
+to_room = 6412
+
+[[rooms.exits]]
+dir = 5
+keyword = "trapdoor trap"
+door = 1
+key = -1
+to_room = 6416
+[[rooms]]
+vnum = 6415
+name = "A Stairwell"
+description = "   This stairwell continues up and down, and there is a door\r\nto the west opening up onto this level.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+keyword = "door"
+door = 1
+key = -1
+to_room = 6417
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 6413
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 6422
+[[rooms]]
+vnum = 6416
+name = "The Hidden Treasure Room"
+description = "   Jackpot!  A small room filled with treasure chests!  Go get them!\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 4
+keyword = "trapdoor trap"
+door = 1
+key = -1
+to_room = 6414
+[[rooms]]
+vnum = 6417
+name = "A Hallway"
+description = "   This hall runs through the tower.  There's more hall to\r\nthe west, and doors to your north and south.  A door to\r\nthe east leads back to the stairwell.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+keyword = "door"
+door = 1
+key = -1
+to_room = 6419
+
+[[rooms.exits]]
+dir = 1
+keyword = "door"
+door = 1
+key = -1
+to_room = 6415
+
+[[rooms.exits]]
+dir = 2
+keyword = "door"
+door = 1
+key = -1
+to_room = 6418
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6420
+[[rooms]]
+vnum = 6418
+name = "A Servant's Room"
+description = "   This seems to be a small servant's bedroom, sparsely\r\ndecorated and outfitted with a bed, nightstand, chair\r\nand table, etc.  Nothing real important here.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+keyword = "door"
+door = 1
+key = -1
+to_room = 6417
+[[rooms]]
+vnum = 6419
+name = "A Servant's Room"
+description = "   This seems to be a small servant's bedroom, sparsely \r\ndecorated and outfitted with a bed, nightstand, chair\r\nand table, etc.  Nothing real important here.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+keyword = "door"
+door = 1
+key = -1
+to_room = 6417
+[[rooms]]
+vnum = 6420
+name = "A Hallway"
+description = "   This hallway continues to the east, and has a door to \r\nthe north.  You could swear that the way this level is\r\narranged... nah, couldn't be.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+keyword = "door"
+door = 1
+key = -1
+to_room = 6421
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6417
+[[rooms]]
+vnum = 6421
+name = "A Servant's Room"
+description = "   This seems to be a small servant's bedroom, sparsely\r\ndecorated and outfitted with a bed, nightstand, chair\r\nand a table, etc.  Nothing real important here.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+keyword = "door"
+door = 1
+key = -1
+to_room = 6420
+[[rooms]]
+vnum = 6422
+name = "The Stairwell"
+description = "   This stairwell leads up and down, and there is a big\r\nopen room to your west.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6423
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 6415
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 6425
+[[rooms]]
+vnum = 6423
+name = "The Dining Hall"
+description = "   This is a large dining hall, with a long table that runs\r\ndown the length of it.  Chairs are set up along the sides\r\nto accomodate approximately 10 people.  There are paintings\r\nand tapestries on the walls, adding color to the stonework,\r\nThe cooled lava that had poured in the windows makes the place \r\nseem eerie somehow .  There is a door to the north, and\r\nthe stairwell is to the east.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+keyword = "door"
+door = 1
+key = -1
+to_room = 6424
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6422
+
+[[rooms.extra]]
+keyword = "tapestry tapestries painting paintings"
+description = "Many of these show scenes of high magic and heroism.\r\nJust like almost every tapestry and painting you've seen.\r\n"
+[[rooms]]
+vnum = 6424
+name = "The Kitchen Area"
+description = "   This is a well-stocked kitchen, the larders still fresh\r\nand full as if by magic.  Perhaps this would be a good\r\nplace to take a break.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+keyword = "door"
+door = 1
+key = -1
+to_room = 6423
+[[rooms]]
+vnum = 6425
+name = "The Stairwell"
+description = "   The stairwell leads up and down here, and there is a hall\r\nyou can enter to the west.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6426
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 6422
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 6429
+[[rooms]]
+vnum = 6426
+name = "A Hall"
+description = "   This area of the tower seems dank and oppressive.  The\r\nhall runs north-south, and there is an empty cell to your\r\nwest.  The stairwell is to your east.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6427
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6425
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6428
+
+[[rooms.extra]]
+keyword = "cell cells"
+description = "It is open, empty, and uninteresting.\r\n"
+[[rooms]]
+vnum = 6427
+name = "A Hall"
+description = "   This is the northern end of the hall.  There are cells to\r\nyour right and left, empty and awaiting occupants.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6426
+
+[[rooms.extra]]
+keyword = "cell cells"
+description = "It is open, empty, and uninteresting.\r\n"
+[[rooms]]
+vnum = 6428
+name = "A Hall"
+description = "   This is the southern end of the hall.  There are cells to\r\nyour right and left, empty and awaiting occupants.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6426
+
+[[rooms.extra]]
+keyword = "cell cells"
+description = "It is open, empty, and uninteresting.\r\n"
+[[rooms]]
+vnum = 6429
+name = "A Stairwell"
+description = "   The stairwell continues up and down here.  A large room\r\nopens up to the west.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6430
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 6425
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 6431
+[[rooms]]
+vnum = 6430
+name = "A Mage's Office"
+description = "   A small desk here is cluttered with magically preserved\r\npapers and documents.  None seem of value, except perhaps\r\nto a historian.  This place seems vaguely uninteresting...\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6429
+
+[[rooms.extra]]
+keyword = "desk"
+description = "It is cluttered with all sorts of papers.  Some look\r\nhalf interesting, actually.\r\n"
+
+[[rooms.extra]]
+keyword = "paper papers documents document"
+description = "Well, one of the papers relate a story about how the mage\r\nof this tower, Rand, angered many kings, and relates how\r\nthey set his armies on him.  You wonder if the lava\r\noutside was a failed attempt to destroy the armies...\r\n"
+[[rooms]]
+vnum = 6431
+name = "The Stairwell"
+description = "   The stairs go up and down here, and there is a room to the\r\nwest...\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6432
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 6429
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 6433
+[[rooms]]
+vnum = 6432
+name = "A Sitting Room"
+description = "   This is a simply furnished room, with chairs all about.\r\nA fireplace is inset into an inner wall, the chimney\r\nundoubtedly directed by magic...\r\n   This would be a nice place to rest awhile...\r\n"
+flags = "cd"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6431
+[[rooms]]
+vnum = 6433
+name = "The Stairwell"
+description = "    This is where the stairwell finally ends.  There is a hall\r\nto your west.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6434
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 6431
+[[rooms]]
+vnum = 6434
+name = "A Hallway"
+description = "   This small hallway on the former 'ground floor' ran north-\r\nsouth.  To the east is the stairwell that leads up into \r\nthe shadowy recesses of the tower.  To the west is the\r\nentrance way to the tower.  The north is completely blocked\r\noff by lava, and the way south is still clear.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6433
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6437
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6435
+[[rooms]]
+vnum = 6435
+name = "The Entranceway"
+description = "   This is a grand chamber with giant double-doors to the\r\nwest.  To the east is the main floor of the tower.  This\r\nroom is arranged highly attractively and very impressively,\r\nwith sculptures and tapistries everywhere.  The doors seem\r\nimpenetrable... you don't think you'd be able to get through\r\nthem if you really had to...\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6434
+
+[[rooms.exits]]
+dir = 3
+description = "These doors seem incredible.  Unfortunately, they're locked.\r\n"
+keyword = "door double"
+door = 1
+key = 0
+to_room = 6436
+
+[[rooms.extra]]
+keyword = "sculpture tapestry sculptures tapestries"
+description = "They look nice, but aren't very valuable.\r\n"
+[[rooms]]
+vnum = 6436
+name = "The Doorway"
+description = "   This was the entrance to the tower.  Now lava has blocked\r\nit up completely.  However:\r\n   It seems when the lava came down a man was outside the\r\ndoors.  He was blasted into the doors, and died instantly,\r\nbut his skeleton still clutches a staff in perfect \r\ncondition...\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "These double doors have the outline of a man blasted into them...\r\n"
+keyword = "double doors"
+door = 1
+key = 0
+to_room = 6435
+[[rooms]]
+vnum = 6437
+name = "The Hallway"
+description = "    This is the southern part of the hallway.  There is \r\na door to the west, barred with gleaming bands of lights.\r\nTo the north is more hallway.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6434
+
+[[rooms.exits]]
+dir = 3
+keyword = "door"
+door = 1
+key = -1
+to_room = 6438
+[[rooms]]
+vnum = 6438
+name = "The Stairs"
+description = "   Stairs lead down here into the tower's basement, or you\r\ncan head east into the main floor of the tower.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+keyword = "door"
+door = 1
+key = -1
+to_room = 6437
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 6439
+[[rooms]]
+vnum = 6439
+name = "The Stairs"
+description = "   Stairs lead up here to the main level, or you can go east\r\nto the basement of the tower.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6440
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 6438
+[[rooms]]
+vnum = 6440
+name = "An Alcove"
+description = "   This alcove leads into a huge room to your north, and\r\nto stairs leading down to the east, and stairs going \r\nup to your west.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6441
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6442
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6439
+[[rooms]]
+vnum = 6441
+name = "The Laboratory"
+description = "   This laboratory has lots of stuff in it.  Beakers,\r\nflasks, burners, tongs, mortars and pestles, jars filled\r\nwith normal things, jars filled with abnormal things, jars\r\nfilled with things you'd rather not think about...\r\nA search could reveal many things...\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6440
+
+[[rooms.extra]]
+keyword = "mortar mortars pestle pestles jar jars"
+description = "Looks like normal, fragile lab equipment to you.\r\n"
+
+[[rooms.extra]]
+keyword = "beaker beakers flask flasks burner burners tong tongs"
+description = "Looks like normal, fragile lab equipment to you.\r\n"
+[[rooms]]
+vnum = 6442
+name = "The Stairs"
+description = "   Stairs lead down here to the second level of the basement,\r\nor back west to the alcove.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6440
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 6443
+[[rooms]]
+vnum = 6443
+name = "The Stairs"
+description = "   Stairs lead up here to the first level of the basement, or\r\nyou can go east to another big room.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6444
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 6442
+[[rooms]]
+vnum = 6444
+name = "The Summoning Room"
+description = "   This room is darkly lit by a giant glowing pentagram in\r\nthe center of the room.  Bands of force encircle some\r\nsort of being trapped inside.  You think that going\r\ninside would be an EXTREMELY BAD idea...\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 6445
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 6443
+
+[[rooms.extra]]
+keyword = "being"
+description = "You can't see it clearly through the energy field of the\r\npentagram, but you sense that whatever it is, it is very,\r\nvery, very, very angry.\r\n"
+
+[[rooms.extra]]
+keyword = "pentagram"
+description = "It is centuries old.  You don't think standing close by\r\nwould be a good idea.\r\n"
+[[rooms]]
+vnum = 6445
+name = "Inside A Pentagram"
+description = "   The small god entrapped by the wizard looks at you with\r\nan insane expression.  Four hundred years of imprisonment\r\ndoesn't do much for one's...\r\n\r\n   OOPS!\r\n\r\n   He killed you!\r\n   You are dead, R.I.P.\r\n"
+flags = "bd"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 6444

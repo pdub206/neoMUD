@@ -19,6 +19,7 @@
 #include "interpreter.h"
 #include "utils.h"
 #include "spells.h"
+#include "toml.h"
 
 /* these factors should be unique integers */
 #define RENT_FACTOR 	1
@@ -49,7 +50,7 @@ int Crash_offer_rent(struct char_data *ch, struct char_data *recep, int display,
 int Crash_report_unrentables(struct char_data *ch, struct char_data *recep, struct obj_data *obj);
 void Crash_report_rent(struct char_data *ch, struct char_data *recep, struct obj_data *obj, long *cost, long *nitems, int display, int factor);
 struct obj_data *Obj_from_store(struct obj_file_elem object, int *location);
-int Obj_to_store(struct obj_data *obj, FILE *fl, int location);
+int Obj_to_store(struct obj_data *obj, struct obj_file_elem *object, int location);
 void update_obj_file(void);
 int Crash_write_rentcode(struct char_data *ch, FILE *fl, struct rent_info *rent);
 int gen_receptionist(struct char_data *ch, struct char_data *recep, int cmd, char *arg, int mode);
@@ -96,34 +97,236 @@ struct obj_data *Obj_from_store(struct obj_file_elem object, int *location)
 
 
 
-int Obj_to_store(struct obj_data *obj, FILE *fl, int location)
+int Obj_to_store(struct obj_data *obj, struct obj_file_elem *object, int location)
 {
   int j;
-  struct obj_file_elem object;
 
 #if !USE_AUTOEQ
   (void)location;
 #endif
 
-  object.item_number = GET_OBJ_VNUM(obj);
+  object->item_number = GET_OBJ_VNUM(obj);
 #if USE_AUTOEQ
-  object.location = location;
+  object->location = location;
 #endif
-  object.value[0] = GET_OBJ_VAL(obj, 0);
-  object.value[1] = GET_OBJ_VAL(obj, 1);
-  object.value[2] = GET_OBJ_VAL(obj, 2);
-  object.value[3] = GET_OBJ_VAL(obj, 3);
-  object.extra_flags = GET_OBJ_EXTRA(obj);
-  object.weight = GET_OBJ_WEIGHT(obj);
-  object.timer = GET_OBJ_TIMER(obj);
-  object.bitvector = GET_OBJ_AFFECT(obj);
+  object->value[0] = GET_OBJ_VAL(obj, 0);
+  object->value[1] = GET_OBJ_VAL(obj, 1);
+  object->value[2] = GET_OBJ_VAL(obj, 2);
+  object->value[3] = GET_OBJ_VAL(obj, 3);
+  object->extra_flags = GET_OBJ_EXTRA(obj);
+  object->weight = GET_OBJ_WEIGHT(obj);
+  object->timer = GET_OBJ_TIMER(obj);
+  object->bitvector = GET_OBJ_AFFECT(obj);
   for (j = 0; j < MAX_OBJ_AFFECT; j++)
-    object.affected[j] = obj->affected[j];
+    object->affected[j] = obj->affected[j];
+  return (1);
+}
 
-  if (fwrite(&object, sizeof(struct obj_file_elem), 1, fl) < 1) {
-    perror("SYSERR: error writing object in Obj_to_store");
+static int toml_int_required(const toml_table_t *tab, const char *key,
+			     const char *context, const char *filename)
+{
+  toml_datum_t val = toml_int_in(tab, key);
+
+  if (!val.ok) {
+    log("SYSERR: TOML file %s missing integer '%s' in %s.", filename, key, context);
+    exit(1);
+  }
+
+  return ((int)val.u.i);
+}
+
+static toml_array_t *toml_array_required(const toml_table_t *tab, const char *key,
+					 const char *context, const char *filename)
+{
+  toml_array_t *arr = toml_array_in(tab, key);
+
+  if (!arr) {
+    log("SYSERR: TOML file %s missing array '%s' in %s.", filename, key, context);
+    exit(1);
+  }
+
+  return (arr);
+}
+
+static void write_obj_file_elem_toml(FILE *fp, struct obj_file_elem *object)
+{
+  int i;
+
+  fputs("\n[[objects]]\n", fp);
+  fprintf(fp, "item_number = %d\n", object->item_number);
+#if USE_AUTOEQ
+  fprintf(fp, "location = %d\n", object->location);
+#endif
+  fprintf(fp, "values = [%d, %d, %d, %d]\n",
+	  object->value[0], object->value[1], object->value[2], object->value[3]);
+  fprintf(fp, "extra_flags = %d\n", object->extra_flags);
+  fprintf(fp, "weight = %d\n", object->weight);
+  fprintf(fp, "timer = %d\n", object->timer);
+  fprintf(fp, "bitvector = %ld\n", object->bitvector);
+
+  for (i = 0; i < MAX_OBJ_AFFECT; i++) {
+    if (object->affected[i].location == APPLY_NONE && object->affected[i].modifier == 0)
+      continue;
+    fputs("\n[[objects.affects]]\n", fp);
+    fprintf(fp, "location = %d\n", object->affected[i].location);
+    fprintf(fp, "modifier = %d\n", object->affected[i].modifier);
+  }
+}
+
+static int read_obj_file_elem_toml(toml_table_t *tab, struct obj_file_elem *object,
+				   const char *filename)
+{
+  toml_array_t *vals, *affs;
+  int i;
+
+  object->item_number = toml_int_required(tab, "item_number", "object", filename);
+#if USE_AUTOEQ
+  object->location = toml_int_required(tab, "location", "object", filename);
+#endif
+  vals = toml_array_required(tab, "values", "object", filename);
+  if (toml_array_nelem(vals) < 4) {
+    log("SYSERR: TOML file %s has object with fewer than 4 values.", filename);
+    exit(1);
+  }
+  for (i = 0; i < 4; i++) {
+    toml_datum_t val = toml_int_at(vals, i);
+    if (!val.ok) {
+      log("SYSERR: TOML file %s has invalid values[%d].", filename, i);
+      exit(1);
+    }
+    object->value[i] = (int)val.u.i;
+  }
+  object->extra_flags = toml_int_required(tab, "extra_flags", "object", filename);
+  object->weight = toml_int_required(tab, "weight", "object", filename);
+  object->timer = toml_int_required(tab, "timer", "object", filename);
+  object->bitvector = toml_int_required(tab, "bitvector", "object", filename);
+
+  for (i = 0; i < MAX_OBJ_AFFECT; i++) {
+    object->affected[i].location = APPLY_NONE;
+    object->affected[i].modifier = 0;
+  }
+
+  affs = toml_array_in(tab, "affects");
+  if (affs) {
+    int count = toml_array_nelem(affs);
+    if (count > MAX_OBJ_AFFECT)
+      count = MAX_OBJ_AFFECT;
+    for (i = 0; i < count; i++) {
+      toml_table_t *aff = toml_table_at(affs, i);
+      if (!aff) {
+	log("SYSERR: TOML file %s has non-table affects entry.", filename);
+	exit(1);
+      }
+      object->affected[i].location = toml_int_required(aff, "location", "affects", filename);
+      object->affected[i].modifier = toml_int_required(aff, "modifier", "affects", filename);
+    }
+  }
+
+  return (1);
+}
+
+static int read_rent_toml(const char *filename, struct rent_info *rent,
+			  struct obj_file_elem **objects, int *objcount)
+{
+  char errbuf[256];
+  toml_table_t *tab, *rent_tab;
+  toml_array_t *objs;
+  FILE *fl;
+  int count, i;
+
+  if (objects)
+    *objects = NULL;
+  if (objcount)
+    *objcount = 0;
+
+  if (!(fl = fopen(filename, "r")))
+    return (0);
+
+  tab = toml_parse_file(fl, errbuf, sizeof(errbuf));
+  fclose(fl);
+  if (!tab) {
+    log("SYSERR: TOML parse error in %s: %s", filename, errbuf);
     return (0);
   }
+
+  rent_tab = toml_table_in(tab, "rent");
+  if (!rent_tab) {
+    toml_free(tab);
+    log("SYSERR: TOML file %s missing [rent].", filename);
+    return (0);
+  }
+
+  rent->time = toml_int_required(rent_tab, "time", "rent", filename);
+  rent->rentcode = toml_int_required(rent_tab, "rentcode", "rent", filename);
+  rent->net_cost_per_diem = toml_int_required(rent_tab, "net_cost_per_diem", "rent", filename);
+  rent->gold = toml_int_required(rent_tab, "gold", "rent", filename);
+  rent->account = toml_int_required(rent_tab, "account", "rent", filename);
+  rent->nitems = toml_int_required(rent_tab, "nitems", "rent", filename);
+  rent->spare0 = toml_int_required(rent_tab, "spare0", "rent", filename);
+  rent->spare1 = toml_int_required(rent_tab, "spare1", "rent", filename);
+  rent->spare2 = toml_int_required(rent_tab, "spare2", "rent", filename);
+  rent->spare3 = toml_int_required(rent_tab, "spare3", "rent", filename);
+  rent->spare4 = toml_int_required(rent_tab, "spare4", "rent", filename);
+  rent->spare5 = toml_int_required(rent_tab, "spare5", "rent", filename);
+  rent->spare6 = toml_int_required(rent_tab, "spare6", "rent", filename);
+  rent->spare7 = toml_int_required(rent_tab, "spare7", "rent", filename);
+
+  if (objects) {
+    objs = toml_array_in(tab, "objects");
+    if (objs) {
+      count = toml_array_nelem(objs);
+      if (count > 0) {
+	CREATE(*objects, struct obj_file_elem, count);
+	for (i = 0; i < count; i++) {
+	  toml_table_t *otab = toml_table_at(objs, i);
+	  if (!otab) {
+	    log("SYSERR: TOML file %s has non-table object entry.", filename);
+	    toml_free(tab);
+	    return (0);
+	  }
+	  read_obj_file_elem_toml(otab, &(*objects)[i], filename);
+	}
+	if (objcount)
+	  *objcount = count;
+      }
+    }
+  }
+
+  toml_free(tab);
+  return (1);
+}
+
+static int write_rent_toml(const char *filename, struct rent_info *rent,
+			   struct obj_file_elem *objects, int objcount)
+{
+  FILE *fl;
+  int i;
+
+  if (!(fl = fopen(filename, "w"))) {
+    log("SYSERR: Unable to write rent file %s: %s", filename, strerror(errno));
+    return (0);
+  }
+
+  fputs("[rent]\n", fl);
+  fprintf(fl, "time = %d\n", rent->time);
+  fprintf(fl, "rentcode = %d\n", rent->rentcode);
+  fprintf(fl, "net_cost_per_diem = %d\n", rent->net_cost_per_diem);
+  fprintf(fl, "gold = %d\n", rent->gold);
+  fprintf(fl, "account = %d\n", rent->account);
+  fprintf(fl, "nitems = %d\n", rent->nitems);
+  fprintf(fl, "spare0 = %d\n", rent->spare0);
+  fprintf(fl, "spare1 = %d\n", rent->spare1);
+  fprintf(fl, "spare2 = %d\n", rent->spare2);
+  fprintf(fl, "spare3 = %d\n", rent->spare3);
+  fprintf(fl, "spare4 = %d\n", rent->spare4);
+  fprintf(fl, "spare5 = %d\n", rent->spare5);
+  fprintf(fl, "spare6 = %d\n", rent->spare6);
+  fprintf(fl, "spare7 = %d\n", rent->spare7);
+
+  for (i = 0; i < objcount; i++)
+    write_obj_file_elem_toml(fl, &objects[i]);
+
+  fclose(fl);
   return (1);
 }
 
@@ -252,20 +455,10 @@ int Crash_delete_crashfile(struct char_data *ch)
 {
   char filename[MAX_INPUT_LENGTH];
   struct rent_info rent;
-  int numread;
-  FILE *fl;
 
   if (!get_filename(filename, sizeof(filename), CRASH_FILE, GET_NAME(ch)))
     return (0);
-  if (!(fl = fopen(filename, "rb"))) {
-    if (errno != ENOENT)	/* if it fails, NOT because of no file */
-      log("SYSERR: checking for crash file %s (3): %s", filename, strerror(errno));
-    return (0);
-  }
-  numread = fread(&rent, sizeof(struct rent_info), 1, fl);
-  fclose(fl);
-
-  if (numread == 0)
+  if (!read_rent_toml(filename, &rent, NULL, NULL))
     return (0);
 
   if (rent.rentcode == RENT_CRASH)
@@ -279,24 +472,10 @@ int Crash_clean_file(char *name)
 {
   char filename[MAX_STRING_LENGTH];
   struct rent_info rent;
-  int numread;
-  FILE *fl;
 
   if (!get_filename(filename, sizeof(filename), CRASH_FILE, name))
     return (0);
-  /*
-   * open for write so that permission problems will be flagged now, at boot
-   * time.
-   */
-  if (!(fl = fopen(filename, "r+b"))) {
-    if (errno != ENOENT)	/* if it fails, NOT because of no file */
-      log("SYSERR: OPENING OBJECT FILE %s (4): %s", filename, strerror(errno));
-    return (0);
-  }
-  numread = fread(&rent, sizeof(struct rent_info), 1, fl);
-  fclose(fl);
-
-  if (numread == 0)
+  if (!read_rent_toml(filename, &rent, NULL, NULL))
     return (0);
 
   if ((rent.rentcode == RENT_CRASH) ||
@@ -345,25 +524,16 @@ void update_obj_file(void)
 
 void Crash_listrent(struct char_data *ch, char *name)
 {
-  FILE *fl;
   char filename[MAX_INPUT_LENGTH];
-  struct obj_file_elem object;
+  struct obj_file_elem *objects = NULL;
   struct obj_data *obj;
   struct rent_info rent;
-  int numread;
+  int i, objcount = 0;
 
   if (!get_filename(filename, sizeof(filename), CRASH_FILE, name))
     return;
-  if (!(fl = fopen(filename, "rb"))) {
+  if (!read_rent_toml(filename, &rent, &objects, &objcount)) {
     send_to_char(ch, "%s has no rent file.\r\n", name);
-    return;
-  }
-  numread = fread(&rent, sizeof(struct rent_info), 1, fl);
-
-  /* Oops, can't get the data, punt. */
-  if (numread == 0) {
-    send_to_char(ch, "Error reading rent information.\r\n");
-    fclose(fl);
     return;
   }
 
@@ -386,33 +556,23 @@ void Crash_listrent(struct char_data *ch, char *name)
     send_to_char(ch, "Undef\r\n");
     break;
   }
-  while (!feof(fl)) {
-    if (fread(&object, sizeof(struct obj_file_elem), 1, fl) != 1) {
-      if (feof(fl))
-        break;
-      fclose(fl);
-      return;
-    }
-    if (ferror(fl)) {
-      fclose(fl);
-      return;
-    }
-    if (!feof(fl))
-      if (real_object(object.item_number) != NOTHING) {
-	obj = read_object(object.item_number, VIRTUAL);
+  for (i = 0; i < objcount; i++) {
+    if (real_object(objects[i].item_number) != NOTHING) {
+      obj = read_object(objects[i].item_number, VIRTUAL);
 #if USE_AUTOEQ
-	send_to_char(ch, " [%5d] (%5dau) <%2d> %-20s\r\n",
-		object.item_number, GET_OBJ_RENT(obj),
-		object.location, obj->short_description);
+      send_to_char(ch, " [%5d] (%5dau) <%2d> %-20s\r\n",
+		objects[i].item_number, GET_OBJ_RENT(obj),
+		objects[i].location, obj->short_description);
 #else
-	send_to_char(ch, " [%5d] (%5dau) %-20s\r\n",
-		object.item_number, GET_OBJ_RENT(obj),
+      send_to_char(ch, " [%5d] (%5dau) %-20s\r\n",
+		objects[i].item_number, GET_OBJ_RENT(obj),
 		obj->short_description);
 #endif
-	extract_obj(obj);
-      }
+      extract_obj(obj);
+    }
   }
-  fclose(fl);
+  if (objects)
+    free(objects);
 }
 
 
@@ -420,10 +580,21 @@ int Crash_write_rentcode(struct char_data *ch, FILE *fl, struct rent_info *rent)
 {
   (void)ch;
 
-  if (fwrite(rent, sizeof(struct rent_info), 1, fl) < 1) {
-    perror("SYSERR: writing rent code");
-    return (0);
-  }
+  fputs("[rent]\n", fl);
+  fprintf(fl, "time = %d\n", rent->time);
+  fprintf(fl, "rentcode = %d\n", rent->rentcode);
+  fprintf(fl, "net_cost_per_diem = %d\n", rent->net_cost_per_diem);
+  fprintf(fl, "gold = %d\n", rent->gold);
+  fprintf(fl, "account = %d\n", rent->account);
+  fprintf(fl, "nitems = %d\n", rent->nitems);
+  fprintf(fl, "spare0 = %d\n", rent->spare0);
+  fprintf(fl, "spare1 = %d\n", rent->spare1);
+  fprintf(fl, "spare2 = %d\n", rent->spare2);
+  fprintf(fl, "spare3 = %d\n", rent->spare3);
+  fprintf(fl, "spare4 = %d\n", rent->spare4);
+  fprintf(fl, "spare5 = %d\n", rent->spare5);
+  fprintf(fl, "spare6 = %d\n", rent->spare6);
+  fprintf(fl, "spare7 = %d\n", rent->spare7);
   return (1);
 }
 
@@ -436,15 +607,16 @@ int Crash_write_rentcode(struct char_data *ch, FILE *fl, struct rent_info *rent)
  */
 int Crash_load(struct char_data *ch)
 {
-  FILE *fl;
   char filename[MAX_STRING_LENGTH];
-  struct obj_file_elem object;
+  struct obj_file_elem *objects = NULL;
   struct rent_info rent;
   int cost, orig_rent_code, num_objs = 0, j;
   float num_of_days;
   /* AutoEQ addition. */
   struct obj_data *obj, *obj2, *cont_row[MAX_BAG_ROWS];
   int location;
+  int objcount = 0;
+  int i;
 
   /* Empty all of the container lists (you never know ...) */
   for (j = 0; j < MAX_BAG_ROWS; j++)
@@ -452,7 +624,7 @@ int Crash_load(struct char_data *ch)
 
   if (!get_filename(filename, sizeof(filename), CRASH_FILE, GET_NAME(ch)))
     return (1);
-  if (!(fl = fopen(filename, "r+b"))) {
+  if (!read_rent_toml(filename, &rent, &objects, &objcount)) {
     if (errno != ENOENT) {	/* if it fails, NOT because of no file */
       log("SYSERR: READING OBJECT FILE %s (5): %s", filename, strerror(errno));
       send_to_char(ch,
@@ -463,23 +635,15 @@ int Crash_load(struct char_data *ch)
     mudlog(NRM, MAX(LVL_IMMORT, GET_INVIS_LEV(ch)), TRUE, "%s entering game with no equipment.", GET_NAME(ch));
     return (1);
   }
-  if (!feof(fl)) {
-    if (fread(&rent, sizeof(struct rent_info), 1, fl) != 1) {
-      fclose(fl);
-      return (1);
-    }
-  } else {
-    log("SYSERR: Crash_load: %s's rent file was empty!", GET_NAME(ch));
-    return (1);
-  }
 
   if (rent.rentcode == RENT_RENTED || rent.rentcode == RENT_TIMEDOUT) {
     num_of_days = (float) (time(0) - rent.time) / SECS_PER_REAL_DAY;
     cost = (int) (rent.net_cost_per_diem * num_of_days);
     if (cost > GET_GOLD(ch) + GET_BANK_GOLD(ch)) {
-      fclose(fl);
       mudlog(BRF, MAX(LVL_IMMORT, GET_INVIS_LEV(ch)), TRUE, "%s entering game, rented equipment lost (no $).", GET_NAME(ch));
       Crash_crashsave(ch);
+      if (objects)
+	free(objects);
       return (2);
     } else {
       GET_BANK_GOLD(ch) -= MAX(cost - GET_GOLD(ch), 0);
@@ -507,23 +671,9 @@ int Crash_load(struct char_data *ch)
     break;
   }
 
-  while (!feof(fl)) {
-    if (fread(&object, sizeof(struct obj_file_elem), 1, fl) != 1) {
-      if (feof(fl))
-        break;
-      perror("SYSERR: Reading crash file: Crash_load");
-      fclose(fl);
-      return (1);
-    }
-    if (ferror(fl)) {
-      perror("SYSERR: Reading crash file: Crash_load");
-      fclose(fl);
-      return (1);
-    }
-    if (feof(fl))
-      break;
+  for (i = 0; i < objcount; i++) {
     ++num_objs;
-    if ((obj = Obj_from_store(object, &location)) == NULL)
+    if ((obj = Obj_from_store(objects[i], &location)) == NULL)
       continue;
 
     auto_equip(ch, obj, location);
@@ -630,10 +780,10 @@ int Crash_load(struct char_data *ch)
   /* turn this into a crash file by re-writing the control block */
   rent.rentcode = RENT_CRASH;
   rent.time = time(0);
-  rewind(fl);
-  Crash_write_rentcode(ch, fl, &rent);
+  write_rent_toml(filename, &rent, objects, objcount);
 
-  fclose(fl);
+  if (objects)
+    free(objects);
 
   if ((orig_rent_code == RENT_RENTED) || (orig_rent_code == RENT_CRYO))
     return (0);
@@ -651,7 +801,12 @@ int Crash_save(struct obj_data *obj, FILE *fp, int location)
   if (obj) {
     Crash_save(obj->next_content, fp, location);
     Crash_save(obj->contains, fp, MIN(0, location) - 1);
-    result = Obj_to_store(obj, fp, location);
+    {
+      struct obj_file_elem object;
+      result = Obj_to_store(obj, &object, location);
+      if (result)
+	write_obj_file_elem_toml(fp, &object);
+    }
 
     for (tmp = obj->in_obj; tmp; tmp = tmp->in_obj)
       GET_OBJ_WEIGHT(tmp) -= GET_OBJ_WEIGHT(obj);
@@ -761,9 +916,10 @@ void Crash_crashsave(struct char_data *ch)
 
   if (!get_filename(buf, sizeof(buf), CRASH_FILE, GET_NAME(ch)))
     return;
-  if (!(fp = fopen(buf, "wb")))
+  if (!(fp = fopen(buf, "w")))
     return;
 
+  memset(&rent, 0, sizeof(rent));
   rent.rentcode = RENT_CRASH;
   rent.time = time(0);
   if (!Crash_write_rentcode(ch, fp, &rent)) {
@@ -804,7 +960,7 @@ void Crash_idlesave(struct char_data *ch)
 
   if (!get_filename(buf, sizeof(buf), CRASH_FILE, GET_NAME(ch)))
     return;
-  if (!(fp = fopen(buf, "wb")))
+  if (!(fp = fopen(buf, "w")))
     return;
 
   Crash_extract_norent_eq(ch);
@@ -841,8 +997,8 @@ void Crash_idlesave(struct char_data *ch)
       return;
     }
   }
+  memset(&rent, 0, sizeof(rent));
   rent.net_cost_per_diem = cost;
-
   rent.rentcode = RENT_TIMEDOUT;
   rent.time = time(0);
   rent.gold = GET_GOLD(ch);
@@ -883,12 +1039,13 @@ void Crash_rentsave(struct char_data *ch, int cost)
 
   if (!get_filename(buf, sizeof(buf), CRASH_FILE, GET_NAME(ch)))
     return;
-  if (!(fp = fopen(buf, "wb")))
+  if (!(fp = fopen(buf, "w")))
     return;
 
   Crash_extract_norent_eq(ch);
   Crash_extract_norents(ch->carrying);
 
+  memset(&rent, 0, sizeof(rent));
   rent.net_cost_per_diem = cost;
   rent.rentcode = RENT_RENTED;
   rent.time = time(0);
@@ -929,7 +1086,7 @@ void Crash_cryosave(struct char_data *ch, int cost)
 
   if (!get_filename(buf, sizeof(buf), CRASH_FILE, GET_NAME(ch)))
     return;
-  if (!(fp = fopen(buf, "wb")))
+  if (!(fp = fopen(buf, "w")))
     return;
 
   Crash_extract_norent_eq(ch);
@@ -937,6 +1094,7 @@ void Crash_cryosave(struct char_data *ch, int cost)
 
   GET_GOLD(ch) = MAX(0, GET_GOLD(ch) - cost);
 
+  memset(&rent, 0, sizeof(rent));
   rent.rentcode = RENT_CRYO;
   rent.time = time(0);
   rent.gold = GET_GOLD(ch);

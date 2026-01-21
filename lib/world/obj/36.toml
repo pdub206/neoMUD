@@ -1,0 +1,280 @@
+[[objects]]
+vnum = 3600
+name = "armour black pawn"
+short_descr = "some Black Pawn Armour"
+description = "A pile of black armour is here."
+type = 9
+extra_flags = "j"
+wear_flags = "9"
+values = [1, 0, 0, 0]
+weight = 13
+cost = 300
+rent = 1
+[[objects]]
+vnum = 3601
+name = "armour white pawn"
+short_descr = "some White Pawn Armour"
+description = "A pile of white armour is here."
+type = 9
+extra_flags = "k"
+wear_flags = "9"
+values = [1, 0, 0, 0]
+weight = 13
+cost = 300
+rent = 1
+[[objects]]
+vnum = 3602
+name = "sword black pawn"
+short_descr = "a Black Pawn's Sword"
+description = "The sword of a Black Pawn lies here."
+type = 5
+extra_flags = "j"
+wear_flags = "8193"
+values = [0, 3, 4, 3]
+weight = 10
+cost = 100
+rent = 1
+[[objects]]
+vnum = 3603
+name = "sword white pawn"
+short_descr = "a White Pawn's Sword"
+description = "The sword of a White Pawn lies here."
+type = 5
+extra_flags = "k"
+wear_flags = "8193"
+values = [0, 3, 4, 3]
+weight = 10
+cost = 100
+rent = 1
+[[objects]]
+vnum = 3604
+name = "armour black rook"
+short_descr = "some Black Rook Armour"
+description = "Some armour made from the remains of a black rook lies heaped on the floor."
+type = 9
+extra_flags = "ahj"
+wear_flags = "9"
+values = [2, 0, 0, 0]
+weight = 60
+cost = 17000
+rent = 5
+
+[[objects.affects]]
+location = 17
+modifier = 2
+
+[[objects.affects]]
+location = 5
+modifier = 1
+[[objects]]
+vnum = 3605
+name = "armour white rook"
+short_descr = "some White Rook Armour"
+description = "Some armour made from the remains of a white rook lies heaped on the floor."
+type = 9
+extra_flags = "agk"
+wear_flags = "9"
+values = [2, 0, 0, 0]
+weight = 60
+cost = 17000
+rent = 5
+
+[[objects.affects]]
+location = 17
+modifier = 2
+
+[[objects.affects]]
+location = 5
+modifier = 1
+[[objects]]
+vnum = 3606
+name = "lance black knight"
+short_descr = "the Lance of the Black Knight"
+description = "The Lance of the Black Knight lies here, waiting to rust."
+type = 5
+extra_flags = "bgj"
+wear_flags = "8193"
+values = [0, 3, 6, 6]
+weight = 18
+cost = 10000
+rent = 3
+
+[[objects.affects]]
+location = 19
+modifier = 2
+
+[[objects.affects]]
+location = 23
+modifier = 5
+[[objects]]
+vnum = 3607
+name = "lance white knight"
+short_descr = "the Lance of the White Knight"
+description = "The Lance of the White Knight lies here, waiting to rust."
+type = 5
+extra_flags = "bgk"
+wear_flags = "8193"
+values = [0, 3, 6, 6]
+weight = 18
+cost = 10000
+rent = 3
+
+[[objects.affects]]
+location = 19
+modifier = 2
+
+[[objects.affects]]
+location = 23
+modifier = 5
+[[objects]]
+vnum = 3608
+name = "staff black bishop"
+short_descr = "the Staff of the Black Bishop"
+description = "The Black Bishop's Staff is lying here."
+type = 4
+extra_flags = "agj"
+wear_flags = "16385"
+values = [20, 5, 5, 36]
+weight = 3
+cost = 20000
+rent = 6
+[[objects]]
+vnum = 3609
+name = "staff white bishop"
+short_descr = "the Staff of the White Bishop"
+description = "The White Bishop's Staff is lying here."
+type = 4
+extra_flags = "agk"
+wear_flags = "16385"
+values = [20, 5, 5, 36]
+weight = 3
+cost = 20000
+rent = 6
+[[objects]]
+vnum = 3610
+name = "crown black queen"
+short_descr = "the Crown of the Black Queen"
+description = "The Crown of the Black Queen lies here, looking neglected."
+type = 9
+extra_flags = "bgj"
+wear_flags = "17"
+values = [2, 0, 0, 0]
+weight = 4
+cost = 3000
+rent = 5
+
+[[objects.affects]]
+location = 3
+modifier = 1
+
+[[objects.affects]]
+location = 4
+modifier = 1
+[[objects]]
+vnum = 3611
+name = "crown white queen"
+short_descr = "the Crown of the White Queen"
+description = "The Crown of the White Queen lies here, looking neglected."
+type = 9
+extra_flags = "bgk"
+wear_flags = "17"
+values = [2, 0, 0, 0]
+weight = 4
+cost = 3000
+rent = 5
+
+[[objects.affects]]
+location = 3
+modifier = 1
+
+[[objects.affects]]
+location = 4
+modifier = 1
+[[objects]]
+vnum = 3612
+name = "sceptre black king"
+short_descr = "the Black King's Sceptre"
+description = "The Sceptre of the Black King lies here, collecting dust."
+type = 8
+extra_flags = "bfgj"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 200
+cost = 85000
+rent = 1
+
+[[objects.affects]]
+location = 1
+modifier = 1
+
+[[objects.affects]]
+location = 18
+modifier = 1
+[[objects]]
+vnum = 3613
+name = "sceptre white king"
+short_descr = "the White King's Sceptre"
+description = "The Sceptre of the White King lies here, collecting dust."
+type = 8
+extra_flags = "bfgk"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 300
+cost = 85000
+rent = 10
+
+[[objects.affects]]
+location = 1
+modifier = 1
+
+[[objects.affects]]
+location = 18
+modifier = 1
+[[objects]]
+vnum = 3614
+name = "key black treasury"
+short_descr = "The Key to the Black Treasury"
+description = "There is a sinister black key lying here."
+type = 18
+extra_flags = "cdfq"
+wear_flags = "16385"
+values = [3614, 0, 0, 0]
+weight = 1
+cost = 1000
+rent = 300
+[[objects]]
+vnum = 3615
+name = "key white treasury"
+short_descr = "the Key to the White Treasury"
+description = "There is a bright white key lying here."
+type = 18
+extra_flags = "cdfq"
+wear_flags = "16385"
+values = [3615, 0, 0, 0]
+weight = 1
+cost = 1000
+rent = 300
+[[objects]]
+vnum = 3616
+name = "coins gold black royal treasure"
+short_descr = "the Black Royal Treasure"
+description = "There are a LOT of coins here."
+type = 20
+extra_flags = "0"
+wear_flags = "1"
+values = [10000, 0, 0, 0]
+weight = 10
+cost = 10000
+rent = 0
+[[objects]]
+vnum = 3617
+name = "coins gold white royal treasure"
+short_descr = "the White Royal Treasure"
+description = "There are a LOT of coins here."
+type = 20
+extra_flags = "0"
+wear_flags = "1"
+values = [10000, 0, 0, 0]
+weight = 10
+cost = 10000
+rent = 0

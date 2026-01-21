@@ -1,0 +1,664 @@
+[[objects]]
+vnum = 5200
+name = "vest ringmail"
+short_descr = "a ringmail vest"
+description = "A vest made of iron rings lies heaped on the floor."
+type = 9
+extra_flags = "ag"
+wear_flags = "9"
+values = [6, 0, 0, 0]
+weight = 60
+cost = 12000
+rent = 400
+
+[[objects.affects]]
+location = 17
+modifier = -1
+[[objects]]
+vnum = 5201
+name = "helm iron"
+short_descr = "an iron helm"
+description = "An iron helm has been left on the ground."
+type = 9
+extra_flags = "0"
+wear_flags = "17"
+values = [7, 0, 0, 0]
+weight = 10
+cost = 5000
+rent = 800
+
+[[objects.affects]]
+location = 18
+modifier = -2
+[[objects]]
+vnum = 5202
+name = "gauntlets iron"
+short_descr = "a pair of iron gauntlets"
+description = "A pair of iron gauntlets rests heavily on the ground."
+type = 9
+extra_flags = "0"
+wear_flags = "129"
+values = [7, 0, 0, 0]
+weight = 10
+cost = 2200
+rent = 900
+
+[[objects.affects]]
+location = 18
+modifier = -3
+
+[[objects.affects]]
+location = 19
+modifier = 1
+[[objects]]
+vnum = 5203
+name = "sleeves iron"
+short_descr = "a pair of iron sleeves"
+description = "A set of iron sleeves lies on the ground."
+type = 9
+extra_flags = "0"
+wear_flags = "257"
+values = [7, 0, 0, 0]
+weight = 10
+cost = 2450
+rent = 500
+
+[[objects.affects]]
+location = 18
+modifier = -4
+
+[[objects.affects]]
+location = 19
+modifier = 2
+[[objects]]
+vnum = 5204
+name = "boots iron"
+short_descr = "a pair of iron boots"
+description = "A pair of iron boots has been left here."
+type = 9
+extra_flags = "0"
+wear_flags = "65"
+values = [4, 0, 0, 0]
+weight = 6
+cost = 800
+rent = 200
+
+[[objects.affects]]
+location = 18
+modifier = -1
+
+[[objects.affects]]
+location = 2
+modifier = -2
+[[objects]]
+vnum = 5205
+name = "greaves iron"
+short_descr = "a set of iron greaves"
+description = "A set of iron greaves lie here unattended."
+type = 9
+extra_flags = "0"
+wear_flags = "33"
+values = [7, 0, 0, 0]
+weight = 10
+cost = 5400
+rent = 210
+
+[[objects.affects]]
+location = 18
+modifier = -3
+
+[[objects.affects]]
+location = 2
+modifier = -3
+[[objects]]
+vnum = 5206
+name = "girth iron"
+short_descr = "an iron girth"
+description = "A small iron girth lies at your feet."
+type = 9
+extra_flags = "0"
+wear_flags = "2049"
+values = [4, 0, 0, 0]
+weight = 6
+cost = 4200
+rent = 600
+[[objects]]
+vnum = 5207
+name = "plate breast iron"
+short_descr = "a battered iron breast plate"
+description = "A battered iron breast plate lies here."
+type = 9
+extra_flags = "0"
+wear_flags = "9"
+values = [5, 0, 0, 0]
+weight = 125
+cost = 13000
+rent = 150
+
+[[objects.affects]]
+location = 18
+modifier = -6
+[[objects]]
+vnum = 5208
+name = "shield iron"
+short_descr = "a sturdy iron shield"
+description = "A small, but sturdy, iron shield has been left here."
+type = 9
+extra_flags = "gh"
+wear_flags = "513"
+values = [5, 0, 0, 0]
+weight = 5
+cost = 500
+rent = 1000
+
+[[objects.affects]]
+location = 23
+modifier = -2
+
+[[objects.affects]]
+location = 24
+modifier = -2
+[[objects]]
+vnum = 5210
+name = "potion black"
+short_descr = "a black potion"
+description = "A jet black potion sits upright waiting to be taken."
+type = 10
+extra_flags = "fg"
+wear_flags = "1"
+values = [16, 4, 36, 39]
+weight = 5
+cost = 6000
+rent = 1000
+[[objects]]
+vnum = 5211
+name = "potion orange"
+short_descr = "an orange potion"
+description = "A small orange potion lies here."
+type = 10
+extra_flags = "fg"
+wear_flags = "1"
+values = [20, 44, -1, -1]
+weight = 10
+cost = 7500
+rent = 200
+[[objects]]
+vnum = 5213
+name = "staff serpentine"
+short_descr = "a green serpentine staff"
+description = "A green serpentine staff has been left here."
+type = 4
+extra_flags = "fg"
+wear_flags = "16385"
+values = [15, 2, 2, 23]
+weight = 12
+cost = 6600
+rent = 300
+[[objects]]
+vnum = 5214
+name = "ball quartz"
+short_descr = "a smooth quartz ball"
+description = "A smooth quartz ball lies here gleaming."
+type = 1
+extra_flags = "g"
+wear_flags = "16385"
+values = [0, 0, 72, 0]
+weight = 30
+cost = 3050
+rent = 950
+[[objects]]
+vnum = 5215
+name = "scroll tattered"
+short_descr = "a tattered scroll"
+description = "A worn and tattered scroll has been left here."
+type = 2
+extra_flags = "g"
+wear_flags = "1"
+values = [24, 24, 44, 4]
+weight = 15
+cost = 11000
+rent = 4000
+[[objects]]
+vnum = 5216
+name = "scroll bound"
+short_descr = "a bound scroll"
+description = "A bound scroll of detection lies at your feet."
+type = 2
+extra_flags = "g"
+wear_flags = "1"
+values = [15, 18, 19, 20]
+weight = 15
+cost = 4200
+rent = 100
+[[objects]]
+vnum = 5217
+name = "flute silver"
+short_descr = "a silver flute"
+description = "A brilliant silver flute glimmers from beneath a rock."
+type = 4
+extra_flags = "fg"
+wear_flags = "16385"
+values = [18, 2, 2, 7]
+weight = 3
+cost = 10500
+rent = 8000
+[[objects]]
+vnum = 5218
+name = "talisman demon"
+short_descr = "a demon-faced talisman"
+description = "A demon-faced talisman glares at you angrily."
+type = 9
+extra_flags = "agh"
+wear_flags = "5"
+values = [5, 0, 0, 0]
+weight = 11
+cost = 2500
+rent = 150
+
+[[objects.affects]]
+location = 1
+modifier = -10
+
+[[objects.affects]]
+location = 2
+modifier = -8
+[[objects]]
+vnum = 5219
+name = "venison chunk"
+short_descr = "a chunk of venison"
+description = "A large chunk of venison sits here, ready to be eaten."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [24, 0, 0, 0]
+weight = 20
+cost = 100
+rent = 20
+[[objects]]
+vnum = 5220
+name = "fountain blood cracked"
+short_descr = "a large cracked fountain"
+description = ""
+type = 23
+extra_flags = "0"
+wear_flags = "0"
+values = [10, 10, 13, 1]
+weight = 0
+cost = 0
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "fountain blood cracked"
+description = "A pool of blood lies in the bottom of the fountain.\r\n"
+[[objects]]
+vnum = 5221
+name = "sword two-handed"
+short_descr = "a two-handed sword"
+description = "A nice two-handed sword hangs on a hook in the wall."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 3, 6, 3]
+weight = 22
+cost = 55000
+rent = 8000
+
+[[objects.affects]]
+location = 18
+modifier = -3
+
+[[objects.affects]]
+location = 19
+modifier = 4
+[[objects]]
+vnum = 5222
+name = "robe black silk"
+short_descr = "a black silk robe"
+description = "A black silk robe lies heaped in one corner."
+type = 9
+extra_flags = "0"
+wear_flags = "1025"
+values = [1, 0, 0, 0]
+weight = 6
+cost = 1300
+rent = 500
+[[objects]]
+vnum = 5223
+name = "cloak green"
+short_descr = "a dark green cloak"
+description = "A beautiful dark green cloak has been dropped here by someone."
+type = 9
+extra_flags = "ag"
+wear_flags = "5"
+values = [0, 0, 0, 0]
+weight = 12
+cost = 14500
+rent = 4000
+
+[[objects.affects]]
+location = 13
+modifier = 8
+
+[[objects.affects]]
+location = 17
+modifier = -5
+[[objects]]
+vnum = 5224
+name = "seal ebony"
+short_descr = "an engraved ebony seal"
+description = "A small, engraved ebony seal is here."
+type = 18
+extra_flags = "c"
+wear_flags = "16385"
+values = [5224, 0, 0, 0]
+weight = 2
+cost = 0
+rent = 0
+[[objects]]
+vnum = 5225
+name = "desk curved"
+short_descr = "the desk"
+description = ""
+type = 15
+extra_flags = "0"
+wear_flags = "0"
+values = [100, 13, 5224, 0]
+weight = 0
+cost = 0
+rent = 0
+[[objects]]
+vnum = 5226
+name = "seal ivory"
+short_descr = "an engraved ivory seal"
+description = "A small, engraved ivory seal lies here."
+type = 18
+extra_flags = "c"
+wear_flags = "16385"
+values = [5226, 0, 0, 0]
+weight = 2
+cost = 0
+rent = 0
+[[objects]]
+vnum = 5227
+name = "cabinet glass"
+short_descr = "the glass cabinet"
+description = ""
+type = 15
+extra_flags = "0"
+wear_flags = "0"
+values = [500, 13, 5226, 0]
+weight = 0
+cost = 0
+rent = 0
+[[objects]]
+vnum = 5228
+name = "arm rotted"
+short_descr = "a half-rotted arm"
+description = "A half-rotted arm floats lazily past your feet."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [50, 0, 0, 1]
+weight = 20
+cost = 0
+rent = 10
+[[objects]]
+vnum = 5230
+name = "stone pale blue"
+short_descr = "a pale blue stone"
+description = "A pale blue stone sits here."
+type = 8
+extra_flags = "dg"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 10
+cost = 5500
+rent = 600
+
+[[objects.affects]]
+location = 1
+modifier = 1
+[[objects]]
+vnum = 5231
+name = "stone scarlet blue"
+short_descr = "a scarlet and blue stone"
+description = "A pretty scarlet and blue stone has been dropped here."
+type = 8
+extra_flags = "dg"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 10
+cost = 5500
+rent = 600
+
+[[objects.affects]]
+location = 3
+modifier = 1
+[[objects]]
+vnum = 5232
+name = "stone blue incandescent"
+short_descr = "an incandescent blue stone"
+description = "A small incandescent blue stone lies here."
+type = 8
+extra_flags = "dg"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 10
+cost = 5500
+rent = 600
+
+[[objects.affects]]
+location = 4
+modifier = 1
+[[objects]]
+vnum = 5233
+name = "stone red deep"
+short_descr = "a deep red stone"
+description = "Someone has left a deep red stone here."
+type = 8
+extra_flags = "dg"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 10
+cost = 5500
+rent = 600
+
+[[objects.affects]]
+location = 2
+modifier = 1
+[[objects]]
+vnum = 5234
+name = "stone pink"
+short_descr = "a pink stone"
+description = "A tiny pink stone lies at your feet."
+type = 8
+extra_flags = "dg"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 10
+cost = 5500
+rent = 600
+
+[[objects.affects]]
+location = 5
+modifier = 1
+[[objects]]
+vnum = 5235
+name = "stone pearly white"
+short_descr = "a pearly white stone"
+description = "A lovely, pearly white stone has been carelessly left here."
+type = 8
+extra_flags = "dg"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 10
+cost = 8700
+rent = 600
+
+[[objects.affects]]
+location = 13
+modifier = 1
+[[objects]]
+vnum = 5236
+name = "stone lavender pale"
+short_descr = "a pale lavender stone"
+description = "A beautiful pale lavender stone lies here."
+type = 8
+extra_flags = "dgh"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 10
+cost = 4300
+rent = 600
+
+[[objects.affects]]
+location = 24
+modifier = -2
+[[objects]]
+vnum = 5237
+name = "stone lavender green"
+short_descr = "a lavender and green stone"
+description = "A stunning lavender and green stone rests on the ground."
+type = 8
+extra_flags = "dgh"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 10
+cost = 4700
+rent = 600
+
+[[objects.affects]]
+location = 24
+modifier = -4
+[[objects]]
+vnum = 5238
+name = "stone rose dusty"
+short_descr = "a dusty rose stone"
+description = "A stone is here, sort of a dusty rose color and very pretty."
+type = 8
+extra_flags = "dg"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 10
+cost = 9800
+rent = 600
+
+[[objects.affects]]
+location = 17
+modifier = -1
+[[objects]]
+vnum = 5239
+name = "stone grey dull"
+short_descr = "a dull grey stone"
+description = "You can barely make out a dull grey stone on the ground."
+type = 8
+extra_flags = "dg"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 10
+cost = 20
+rent = 200
+[[objects]]
+vnum = 5240
+name = "stone purple vibrant"
+short_descr = "a vibrant purple stone"
+description = "A stunningly vibrant purple stone attracts your attention."
+type = 8
+extra_flags = "dgh"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 10
+cost = 10200
+rent = 1000
+
+[[objects.affects]]
+location = 13
+modifier = -50
+[[objects]]
+vnum = 5241
+name = "stone pink green"
+short_descr = "a pink and green stone"
+description = "A bright pink and green stone has been left here."
+type = 8
+extra_flags = "dgh"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 10
+cost = 6600
+rent = 1000
+
+[[objects.affects]]
+location = 18
+modifier = -5
+[[objects]]
+vnum = 5242
+name = "stone green pale"
+short_descr = "a pale green stone"
+description = "A pale green stone lies here collecting dust."
+type = 8
+extra_flags = "dgh"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 10
+cost = 7100
+rent = 1000
+
+[[objects.affects]]
+location = 19
+modifier = -5
+[[objects]]
+vnum = 5243
+name = "stone clear"
+short_descr = "a clear stone"
+description = "An odd clear stone lies at your feet."
+type = 8
+extra_flags = "dgh"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 10
+cost = 8900
+rent = 1000
+
+[[objects.affects]]
+location = 17
+modifier = -3
+[[objects]]
+vnum = 5244
+name = "stone iridescent"
+short_descr = "an iridescent stone"
+description = "A large iridescent stone has been left here."
+type = 8
+extra_flags = "dgh"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 10
+cost = 3700
+rent = 1000
+
+[[objects.affects]]
+location = 13
+modifier = -100
+[[objects]]
+vnum = 5250
+name = "mandolin"
+short_descr = "a mandolin"
+description = "A mandolin lies against the wall."
+type = 4
+extra_flags = "g"
+wear_flags = "16385"
+values = [13, 3, 3, 15]
+weight = 20
+cost = 3000
+rent = 1500
+[[objects]]
+vnum = 5251
+name = "harp golden"
+short_descr = "a golden harp"
+description = "A battered golden harp has been tipped over."
+type = 4
+extra_flags = "g"
+wear_flags = "16385"
+values = [18, 1, 1, 6]
+weight = 100
+cost = 2500
+rent = 800

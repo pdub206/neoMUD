@@ -1,0 +1,485 @@
+[[shops]]
+vnum = 5405
+producing = [5467, 5468, 5469, -1]
+buy_profit = 1.10
+sell_profit = 1.00
+broke_temper = 1
+bitvector = 2
+keeper = 5405
+trade_with = 0
+rooms = [5402, -1]
+open1 = 0
+close1 = 28
+open2 = 0
+close2 = 0
+
+[[shops.trade]]
+type = 17
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s I don't know how to make one of those!"
+no_such_item2 = "%s I don't *buy* drinks... we sell 'em!"
+do_not_buy = "%s I don't *buy* drinks... we sell 'em!"
+missing_cash1 = "%s I don't *buy* drinks... we sell 'em!"
+missing_cash2 = "%s I don't give 'em away free, you know!"
+message_buy = "%s That's %d gold."
+message_sell = "%s I don't *buy* drinks... we sell 'em!"
+[[shops]]
+vnum = 5410
+producing = [5440, 5441, 5442, 5443, 5445, 5491, -1]
+buy_profit = 1.10
+sell_profit = 1.00
+broke_temper = 0
+bitvector = 2
+keeper = 5410
+trade_with = 0
+rooms = [5535, -1]
+open1 = 0
+close1 = 28
+open2 = 0
+close2 = 0
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s Haven't got that on storage - try list!"
+no_such_item2 = "%s I don't buy!"
+do_not_buy = "%s I don't buy!"
+missing_cash1 = "%s I don't buy!"
+missing_cash2 = "%s If you have no money, you'll have to go!"
+message_buy = "%s That'll be %d coins."
+message_sell = "%s Oops - %d a minor bug - please report!"
+[[shops]]
+vnum = 5411
+producing = [5434, 5435, 5436, 5437, 5438, 5439, -1]
+buy_profit = 1.50
+sell_profit = 0.40
+broke_temper = 0
+bitvector = 2
+keeper = 5411
+trade_with = 0
+rooms = [5528, -1]
+open1 = 0
+close1 = 28
+open2 = 0
+close2 = 0
+
+[[shops.trade]]
+type = 1
+
+[[shops.trade]]
+type = 15
+
+[[shops.trade]]
+type = 19
+
+[[shops.trade]]
+type = 13
+
+[[shops.trade]]
+type = 8
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s Haven't got that on storage - try list!"
+no_such_item2 = "%s You don't seem to have that."
+do_not_buy = "%s I don't buy THAT... Try another shop."
+missing_cash1 = "%s I can't afford such a treasure."
+missing_cash2 = "%s You can't afford it!"
+message_buy = "%s That'll be %d coins, please."
+message_sell = "%s You'll get %d coins for it!"
+[[shops]]
+vnum = 5413
+producing = [5446, 5447, 5448, 5449, 5450, 5451, 5452, 5453, 5454, 5455, -1]
+buy_profit = 1.05
+sell_profit = 0.15
+broke_temper = 0
+bitvector = 2
+keeper = 5413
+trade_with = 0
+rooms = [5514, -1]
+open1 = 0
+close1 = 28
+open2 = 0
+close2 = 0
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s Sorry, I haven't got exactly that item."
+no_such_item2 = "%s You don't seem to have that."
+do_not_buy = "%s I don't buy such items."
+missing_cash1 = "%s That is too expensive for me!"
+missing_cash2 = "%s You can't afford it!"
+message_buy = "%s That'll be %d coins, please."
+message_sell = "%s You'll get %d coins for it!"
+[[shops]]
+vnum = 5414
+producing = [5456, 5457, 5458, 5459, 5460, -1]
+buy_profit = 1.30
+sell_profit = 1.00
+broke_temper = 0
+bitvector = 2
+keeper = 5414
+trade_with = 0
+rooms = [5515, -1]
+open1 = 0
+close1 = 28
+open2 = 0
+close2 = 0
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s I've never heard of that... what kind of vegetable is it?"
+no_such_item2 = "%s I don't buy."
+do_not_buy = "%s I don't buy."
+missing_cash1 = "%s I don't buy."
+missing_cash2 = "%s If you come back with more money, I may consider selling it."
+message_buy = "%s That's %d coins... can I wrap it up for you?"
+message_sell = "%s I don't buy."
+[[shops]]
+vnum = 5415
+producing = [5461, 5462, 5463, -1]
+buy_profit = 1.10
+sell_profit = 1.00
+broke_temper = 0
+bitvector = 2
+keeper = 5415
+trade_with = 0
+rooms = [5522, -1]
+open1 = 0
+close1 = 28
+open2 = 0
+close2 = 0
+
+[[shops.trade]]
+type = 19
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s I didn't kill any of those this season, sorry."
+no_such_item2 = "%s I don't buy that."
+do_not_buy = "%s I don't buy that."
+missing_cash1 = "%s I don't buy that when I don't have the money."
+missing_cash2 = "%s That costs money.  Something you don't have... sorry."
+message_buy = "%s That costs %d coins."
+message_sell = "%s Here are %d coins, thank you for your business."
+[[shops]]
+vnum = 5416
+producing = [5415, 5416, 5417, 5418, 5419, 5420, 5421, -1]
+buy_profit = 1.30
+sell_profit = 0.50
+broke_temper = 2
+bitvector = 2
+keeper = 5416
+trade_with = 40
+rooms = [5529, -1]
+open1 = 0
+close1 = 28
+open2 = 0
+close2 = 0
+
+[[shops.trade]]
+type = 9
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s Haven't got that on storage - try list!"
+no_such_item2 = "%s You don't seem to have that."
+do_not_buy = "%s I only buy armours.. Go away!"
+missing_cash1 = "%s That is too expensive for me - Try a wizard!"
+missing_cash2 = "%s You can't afford it!"
+message_buy = "%s That'll be %d coins, please."
+message_sell = "%s You'll get %d coins for it!"
+[[shops]]
+vnum = 5417
+producing = [5403, 5404, 5405, 5406, 5407, 5408, 5409, 5410, 5411, 5412, 5413, 5414, -1]
+buy_profit = 1.30
+sell_profit = 0.40
+broke_temper = 0
+bitvector = 2
+keeper = 5417
+trade_with = 0
+rooms = [5536, -1]
+open1 = 0
+close1 = 28
+open2 = 0
+close2 = 0
+
+[[shops.trade]]
+type = 5
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s I haven't got that kind of a weapon"
+no_such_item2 = "%s You don't carry that weapon"
+do_not_buy = "%s I only buy weapons."
+missing_cash1 = "%s I can't afford such a great weapon"
+missing_cash2 = "%s Sorry, but NO CREDIT"
+message_buy = "%s That just costs %d coins."
+message_sell = "%s Here is %d coins for that."
+[[shops]]
+vnum = 5418
+producing = [-1]
+buy_profit = 2.00
+sell_profit = 0.50
+broke_temper = 0
+bitvector = 2
+keeper = 5418
+trade_with = 0
+rooms = [5432, -1]
+open1 = 6
+close1 = 12
+open2 = 13
+close2 = 20
+
+[[shops.trade]]
+type = 19
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s Sorry buddy, I don't sell that."
+no_such_item2 = "%s Why don't you sell something you own?"
+do_not_buy = "%s I don't buy such items!"
+missing_cash1 = "%s That is much to valuable for you to let go!"
+missing_cash2 = "%s No money.  Off with ya then!"
+message_buy = "%s That will be %d gold."
+message_sell = "%s Here is %d gold for that."
+[[shops]]
+vnum = 5433
+producing = [-1]
+buy_profit = 1.10
+sell_profit = 1.00
+broke_temper = 2
+bitvector = 2
+keeper = 5433
+trade_with = 8
+rooms = [5403, 5404, 5405, 5406, 5407, 5408, 5409, 5410, 5414, 5415, 5416, 5417, 5418, 5419, 5420, 5421, 5422, 5424, 5425, 5426, 5427, 5428, 5429, 5430, 5434, 5435, 5436, 5437, 5438, 5439, 5440, 5441, 5442, 5444, 5445, 5446, 5447, 5448, 5449, 5450, 5451, 5452, 5453, 5454, 5455, 5456, 5460, 5461, 5462, 5463, 5464, -1]
+open1 = 0
+close1 = 28
+open2 = 0
+close2 = 0
+
+[[shops.trade]]
+type = 2
+
+[[shops.trade]]
+type = 3
+
+[[shops.trade]]
+type = 4
+
+[[shops.trade]]
+type = 8
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s Don't have one, but I think I might be able to find one..."
+no_such_item2 = "%s You have one?  Really?  Let me see!"
+do_not_buy = "%s I'm not interested.  Anything else?"
+missing_cash1 = "%s Too rich for my blood!"
+missing_cash2 = "%s Perhaps you should go visit the bank first..."
+message_buy = "%s That's just %d coins, cash in advance."
+message_sell = "%s I'll take that for %d coins, thank you!"
+[[shops]]
+vnum = 5465
+producing = [3060, 3061, -1]
+buy_profit = 1.20
+sell_profit = 0.90
+broke_temper = 0
+bitvector = 2
+keeper = 5465
+trade_with = 0
+rooms = [5542, -1]
+open1 = 6
+close1 = 22
+open2 = 0
+close2 = 0
+
+[[shops.trade]]
+type = 22
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s Sorry pal, I have not got that kind of ship."
+no_such_item2 = "%s Ok, but let me see it first."
+do_not_buy = "%s I only trade ships."
+missing_cash1 = "%s I can't afford such a nice ship."
+missing_cash2 = "%s This ship is too expensive for you."
+message_buy = "%s Here is your ship, I'll take %d gold coins."
+message_sell = "%s What a fine deal, you get %d gold coins."
+[[shops]]
+vnum = 5466
+producing = [5487, 5488, 5489, -1]
+buy_profit = 1.20
+sell_profit = 0.50
+broke_temper = 0
+bitvector = 2
+keeper = 5466
+trade_with = 0
+rooms = [5544, -1]
+open1 = 0
+close1 = 28
+open2 = 0
+close2 = 0
+
+[[shops.trade]]
+type = 9
+
+[[shops.trade]]
+type = 5
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s Havn't got that in storage, try LIST!"
+no_such_item2 = "%s You can't sell what you dont HAVE!"
+do_not_buy = "%s Sorry, I'm not a fence."
+missing_cash1 = "%s I'd love to buy it, I just can't spare the coinage"
+missing_cash2 = "%s Bah, come back when you can pay!"
+message_buy = "%s That'll be %d coins -- thank you."
+message_sell = "%s I'll give ya %d coins for that!"
+[[shops]]
+vnum = 5479
+producing = [5470, 5471, 5472, 5473, 5474, -1]
+buy_profit = 1.20
+sell_profit = 1.00
+broke_temper = 0
+bitvector = 2
+keeper = 5479
+trade_with = 0
+rooms = [5523, -1]
+open1 = 7
+close1 = 17
+open2 = 0
+close2 = 0
+
+[[shops.trade]]
+type = 10
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s We don't have any of those, Sugar."
+no_such_item2 = "%s Are you sure you have one, handsome?"
+do_not_buy = "%s I don't buy those, darling."
+missing_cash1 = "%s I'm a little strapped -- how about a gift?"
+missing_cash2 = "%s Perhaps later, when you've more cash, honey."
+message_buy = "%s That's %d coins, love."
+message_sell = "%s Here's %d coins, friend."
+[[shops]]
+vnum = 5480
+producing = [5478, 5479, 5480, 5481, 5482, -1]
+buy_profit = 1.80
+sell_profit = 0.50
+broke_temper = 0
+bitvector = 2
+keeper = 5480
+trade_with = 0
+rooms = [5524, -1]
+open1 = 0
+close1 = 12
+open2 = 13
+close2 = 20
+
+[[shops.trade]]
+type = 11
+
+[[shops.trade]]
+type = 12
+
+[[shops.trade]]
+type = 3
+
+[[shops.trade]]
+type = 4
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s Sorry buddy, I don't sell that."
+no_such_item2 = "%s Why don't you sell something you own?"
+do_not_buy = "%s I don't buy that kind of crap!"
+missing_cash1 = "%s That is much to valuable for you to let go!"
+missing_cash2 = "%s No money.  I killed my mother for less."
+message_buy = "%s That will be %d gold."
+message_sell = "%s Here is %d gold for that."
+[[shops]]
+vnum = 5483
+producing = [5475, 5476, 5477, -1]
+buy_profit = 1.30
+sell_profit = 1.00
+broke_temper = 0
+bitvector = 2
+keeper = 5483
+trade_with = 0
+rooms = [5538, -1]
+open1 = 0
+close1 = 28
+open2 = 0
+close2 = 0
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s It's very noisy in here, what did you say you wanted to buy?"
+no_such_item2 = "%s I don't buy!"
+do_not_buy = "%s I don't buy!"
+missing_cash1 = "%s I don't buy!"
+missing_cash2 = "%s Are you drunk or what ?? - NO CREDIT!"
+message_buy = "%s That'll be - say %d coins."
+message_sell = "%s Oops - %d a minor bug - please report!"
+[[shops]]
+vnum = 5484
+producing = [5422, 5423, 5524, 5525, 5526, 5527, 5528, 5529, 5530, 5531, 5532, 5533, -1]
+buy_profit = 1.10
+sell_profit = 0.50
+broke_temper = 0
+bitvector = 2
+keeper = 5484
+trade_with = 0
+rooms = [5537, -1]
+open1 = 0
+close1 = 28
+open2 = 0
+close2 = 0
+
+[[shops.trade]]
+type = 9
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s Havn't got that in storage, try LIST!"
+no_such_item2 = "%s You can't sell what you dont HAVE!"
+do_not_buy = "%s Sorry, I'm not a fence."
+missing_cash1 = "%s I'd love to buy it, I just can't spare the coinage"
+missing_cash2 = "%s Bah, come back when you can pay!"
+message_buy = "%s That'll be %d coins -- thank you."
+message_sell = "%s I'll give ya %d coins for that!"

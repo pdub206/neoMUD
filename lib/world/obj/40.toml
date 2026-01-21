@@ -1,0 +1,212 @@
+[[objects]]
+vnum = 4000
+name = "ring yellow green"
+short_descr = "a yellow and green ring"
+description = "A ring is here, with yellow and green ornamentation.  It looks very old."
+type = 9
+extra_flags = "dhq"
+wear_flags = "3"
+values = [0, 0, 0, 0]
+weight = 1
+cost = 50
+rent = 20
+
+[[objects.extra_desc]]
+keyword = "ring yellow green"
+description = "It feels heavy.\r\n"
+
+[[objects.affects]]
+location = 1
+modifier = -2
+[[objects]]
+vnum = 4001
+name = "corpse goblin"
+short_descr = "a goblin's corpse"
+description = "A halfway decayed corpse of a goblin is here, giving off a foul odor."
+type = 15
+extra_flags = "0"
+wear_flags = "1"
+values = [1, 0, -1, 0]
+weight = 20
+cost = 0
+rent = 500
+[[objects]]
+vnum = 4002
+name = "coins"
+short_descr = "some coins"
+description = "A small pile of coins is on the ground."
+type = 20
+extra_flags = "0"
+wear_flags = "1"
+values = [500, 0, 0, 0]
+weight = 0
+cost = 0
+rent = 0
+[[objects]]
+vnum = 4050
+name = "potion purple"
+short_descr = "a purple potion"
+description = "A purple potion is here."
+type = 10
+extra_flags = "0"
+wear_flags = "16385"
+values = [17, 14, 36, 33]
+weight = 1
+cost = 35500
+rent = 2000
+
+[[objects.extra_desc]]
+keyword = "potion purple"
+description = "It looks rather strange!\r\n"
+[[objects]]
+vnum = 4051
+name = "helmet metal"
+short_descr = "a metal helmet"
+description = "A metal helmet in here."
+type = 9
+extra_flags = "g"
+wear_flags = "17"
+values = [-5, 0, 0, 0]
+weight = 4
+cost = 3000
+rent = 100
+
+[[objects.extra_desc]]
+keyword = "helmet metal"
+description = "It looks somehow magical!.\r\n"
+
+[[objects.affects]]
+location = 24
+modifier = -2
+
+[[objects.affects]]
+location = 23
+modifier = -2
+[[objects]]
+vnum = 4052
+name = "mushroom"
+short_descr = "a mushroom"
+description = "A small mushroom is here."
+type = 19
+extra_flags = "0"
+wear_flags = "16385"
+values = [2, 0, 0, 1]
+weight = 1
+cost = 9
+rent = 3
+
+[[objects.extra_desc]]
+keyword = "mushroom"
+description = "Let's put it this way - I wouldn't eat it!!\r\n"
+[[objects]]
+vnum = 4053
+name = "dirk"
+short_descr = "a thieves' dirk"
+description = "A beautifully crafted dirk is lying here."
+type = 5
+extra_flags = "np"
+wear_flags = "8193"
+values = [0, 2, 4, 11]
+weight = 2
+cost = 850
+rent = 500
+
+[[objects.extra_desc]]
+keyword = "dirk"
+description = "It is a medium sized, beautifully crafted dirk made from some greyish alloy.\r\nIts blade is double-edged and very thin... this looks like a good thieves'\r\nweapon.\r\n"
+
+[[objects.affects]]
+location = 18
+modifier = 1
+
+[[objects.affects]]
+location = 19
+modifier = 1
+[[objects]]
+vnum = 4100
+name = "blade black demon"
+short_descr = "a black demon blade"
+description = "A black demon blade is here."
+type = 5
+extra_flags = "mjl"
+wear_flags = "8193"
+values = [0, 3, 4, 11]
+weight = 8
+cost = 10000
+rent = 800
+
+[[objects.extra_desc]]
+keyword = "blade black demon"
+description = "You'll become as evil as the weapon, if you use it as you sense the forces\r\nof evil controlling the weapon...\r\n"
+[[objects]]
+vnum = 4101
+name = "gloves swordmans"
+short_descr = "a pair of swordsmans' gloves"
+description = "A pair of finely crafted gloves are lying on the ground here."
+type = 9
+extra_flags = "j"
+wear_flags = "129"
+values = [0, 0, 0, 0]
+weight = 1
+cost = 3500
+rent = 800
+
+[[objects.extra_desc]]
+keyword = "gloves swordsmans"
+description = "They look like the right kind of equipment to use when fighting.\r\n"
+
+[[objects.affects]]
+location = 18
+modifier = 2
+
+[[objects.affects]]
+location = 19
+modifier = 1
+[[objects]]
+vnum = 4102
+name = "scroll ysafg"
+short_descr = "a scroll which reads 'ysafg'"
+description = "A scroll which reads 'ysafg', it looks very fragile and quite old."
+type = 2
+extra_flags = "0"
+wear_flags = "1"
+values = [1, 44, -1, -1]
+weight = 1
+cost = 1500
+rent = 10
+
+[[objects.extra_desc]]
+keyword = "scroll ysafg"
+description = "It looks informative.\r\n"
+[[objects]]
+vnum = 4103
+name = "slime mould green"
+short_descr = "a green slime mould"
+description = "A green slime mould is here.  Stinks like you wouldn't believe!"
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [24, 0, 0, 0]
+weight = 1
+cost = 20
+rent = 8
+
+[[objects.extra_desc]]
+keyword = "smile mould"
+description = "It wasn't meant to be food -- at least, certainly not for humans.\r\n"
+[[objects]]
+vnum = 4104
+name = "slime mould green"
+short_descr = "a green slime mould"
+description = "A green slime mould is here.  Stinks like you wouldn't believe!"
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [24, 0, 0, 1]
+weight = 1
+cost = 20
+rent = 8
+
+[[objects.extra_desc]]
+keyword = "smile mould"
+description = "It wasn't meant to be food -- at least, certainly not for humans.\r\n"

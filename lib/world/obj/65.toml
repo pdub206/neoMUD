@@ -1,0 +1,232 @@
+[[objects]]
+vnum = 6500
+name = "key treasury"
+short_descr = "a treasury key"
+description = "There is a key for the treasury lying here."
+type = 18
+extra_flags = "c"
+wear_flags = "16385"
+values = [6500, 0, 0, 0]
+weight = 1
+cost = 0
+rent = 0
+[[objects]]
+vnum = 6501
+name = "gold treasure coins"
+short_descr = "the Queen's treasure"
+description = "A large pile of treasure has been left here, it must be the Queen's."
+type = 20
+extra_flags = "0"
+wear_flags = "1"
+values = [65000, 0, 0, 0]
+weight = 20
+cost = 65000
+rent = 0
+[[objects]]
+vnum = 6502
+name = "key mine"
+short_descr = "a mine key"
+description = "There is a key to the mines lying here."
+type = 18
+extra_flags = "c"
+wear_flags = "16385"
+values = [6502, 0, 0, 0]
+weight = 1
+cost = 0
+rent = 0
+[[objects]]
+vnum = 6503
+name = "key bright gold"
+short_descr = "a bright golden key"
+description = "There is a bright golden key lying here."
+type = 18
+extra_flags = "c"
+wear_flags = "16385"
+values = [6503, 0, 0, 0]
+weight = 1
+cost = 0
+rent = 0
+[[objects]]
+vnum = 6504
+name = "hammer dwarven"
+short_descr = "a dwarven hammer"
+description = "There is a dwarven hammer lying here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 2, 6, 7]
+weight = 13
+cost = 5500
+rent = 1000
+[[objects]]
+vnum = 6505
+name = "plate dwarven mail"
+short_descr = "the dwarven plate mail"
+description = "There is dwarven plate mail lying here."
+type = 9
+extra_flags = "0"
+wear_flags = "9"
+values = [6, 0, 0, 0]
+weight = 80
+cost = 4500
+rent = 300
+[[objects]]
+vnum = 6506
+name = "stick black long"
+short_descr = "a long, black stick"
+description = "There is a long, black stick lying here."
+type = 4
+extra_flags = "q"
+wear_flags = "16385"
+values = [4, 2, 2, 28]
+weight = 1
+cost = 100
+rent = 6000
+[[objects]]
+vnum = 6507
+name = "stick black long"
+short_descr = "a long, black stick"
+description = "There is a long, black stick here."
+type = 1
+extra_flags = "q"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 1
+cost = 100
+rent = 6000
+[[objects]]
+vnum = 6508
+name = "club dwarven"
+short_descr = "a dwarven club"
+description = "There is a dwarven club lying here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 2, 3, 3]
+weight = 12
+cost = 3000
+rent = 300
+[[objects]]
+vnum = 6509
+name = "axe two-handed dwarven"
+short_descr = "a two-handed dwarven axe"
+description = "A two-handed dwarven axe is here."
+type = 5
+extra_flags = "g"
+wear_flags = "8193"
+values = [0, 2, 7, 3]
+weight = 14
+cost = 5000
+rent = 3000
+
+[[objects.affects]]
+location = 18
+modifier = 2
+
+[[objects.affects]]
+location = 1
+modifier = 2
+[[objects]]
+vnum = 6510
+name = "helmet dwarven"
+short_descr = "a dwarven helmet"
+description = "A dwarven helmet is here."
+type = 9
+extra_flags = "0"
+wear_flags = "17"
+values = [4, 0, 0, 0]
+weight = 4
+cost = 2500
+rent = 500
+[[objects]]
+vnum = 6511
+name = "ring gold dwarven"
+short_descr = "a golden dwarven ring"
+description = "A golden dwarven ring is lying here."
+type = 11
+extra_flags = "g"
+wear_flags = "3"
+values = [0, 0, 0, 0]
+weight = 1
+cost = 10000
+rent = 10000
+
+[[objects.affects]]
+location = 18
+modifier = 1
+
+[[objects.affects]]
+location = 19
+modifier = 1
+[[objects]]
+vnum = 6512
+name = "gloves dwarven"
+short_descr = "a pair of dwarven gloves"
+description = "A pair of thick dwarven gloves lay here."
+type = 9
+extra_flags = "0"
+wear_flags = "129"
+values = [1, 0, 0, 0]
+weight = 2
+cost = 4000
+rent = 200
+
+[[objects.affects]]
+location = 5
+modifier = 1
+
+[[objects.affects]]
+location = 2
+modifier = 1
+[[objects]]
+vnum = 6513
+name = "coal chunk"
+short_descr = "a chunk of coal"
+description = "There is a chunk of coal here."
+type = 13
+extra_flags = "0"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 100
+cost = 0
+rent = 0
+[[objects]]
+vnum = 6514
+name = "pick mining"
+short_descr = "a mining pick"
+description = "There is a mining pick here."
+type = 5
+extra_flags = "i"
+wear_flags = "8193"
+values = [0, 2, 3, 11]
+weight = 9
+cost = 300
+rent = 10
+
+[[objects.extra_desc]]
+keyword = "pick mining"
+description = "It looks almost blessed!\r\n"
+[[objects]]
+vnum = 6515
+name = "key deep green"
+short_descr = "a deep green key"
+description = "There is a deep green key lying here."
+type = 18
+extra_flags = "c"
+wear_flags = "16385"
+values = [6515, 0, 0, 0]
+weight = 10
+cost = 0
+rent = 0
+[[objects]]
+vnum = 6516
+name = "key old"
+short_descr = "an old key"
+description = "Someone seems to have dropped an old key."
+type = 18
+extra_flags = "c"
+wear_flags = "16385"
+values = [6516, 0, 0, 0]
+weight = 1
+cost = 0
+rent = 0

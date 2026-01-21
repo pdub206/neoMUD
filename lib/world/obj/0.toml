@@ -1,0 +1,40 @@
+[[objects]]
+vnum = 0
+name = "bug"
+short_descr = "a bug"
+description = "This object is BAD!  If you see it, there must be a bug in the game.  Please\r\nreport it immediately using the BUG command."
+type = 13
+extra_flags = "0"
+wear_flags = "0"
+values = [0, 0, 0, 0]
+weight = 0
+cost = 0
+rent = 0
+[[objects]]
+vnum = 1
+name = "wings"
+short_descr = "a pair of wings"
+description = "A pair of wings is sitting here."
+type = 9
+extra_flags = "0"
+wear_flags = "17"
+values = [6, 0, 0, 0]
+weight = 0
+cost = 0
+rent = 200
+[[objects]]
+vnum = 10
+name = "waybread bread"
+short_descr = "a waybread"
+description = "Some waybread has been put here."
+type = 19
+extra_flags = "g"
+wear_flags = "1"
+values = [24, 0, 0, 0]
+weight = 1
+cost = 50
+rent = 50
+
+[[objects.extra_desc]]
+keyword = "waybread bread"
+description = "The waybread is the traditional feed of elves when travelling, they\r\ncall it lembas.  It is said to refresh the weary traveler greatly.\r\n"

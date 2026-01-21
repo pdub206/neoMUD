@@ -25,6 +25,15 @@
 #include "structs.h"
 #include "utils.h"
 #include "db.h"
+#include "toml.h"
+
+#include <dirent.h>
+
+void initialize(void);
+void read_file(void);
+void add_name(byte level, char *name);
+void sort_names(void);
+void write_wizlist(FILE *out, int minlev, int maxlev);
 
 #define IMM_LMARG "   "
 #define IMM_NSIZE  16
@@ -81,23 +90,57 @@ void read_file(void)
 {
   void add_name(byte level, char *name);
 
-  struct char_file_u player;
-  FILE *fl;
+  static const char *dirs[] = {"A-E", "F-J", "K-O", "P-T", "U-Z", "ZZZ", NULL};
+  int i;
 
-  if (!(fl = fopen(PLAYER_FILE, "rb"))) {
-    perror("Error opening playerfile");
-    exit(1);
-  }
-  while (!feof(fl)) {
-    fread(&player, sizeof(struct char_file_u), 1, fl);
-    if (!feof(fl) && player.level >= MIN_LEVEL &&
-	!(IS_SET(player.char_specials_saved.act, PLR_FROZEN)) &&
-	!(IS_SET(player.char_specials_saved.act, PLR_NOWIZLIST)) &&
-	!(IS_SET(player.char_specials_saved.act, PLR_DELETED)))
-      add_name(player.level, player.name);
-  }
+  for (i = 0; dirs[i]; i++) {
+    DIR *dir;
+    struct dirent *ent;
+    char path[PATH_MAX];
 
-  fclose(fl);
+    snprintf(path, sizeof(path), "%s%s", PLAYER_DIR, dirs[i]);
+    if (!(dir = opendir(path)))
+      continue;
+
+    while ((ent = readdir(dir)) != NULL) {
+      size_t len = strlen(ent->d_name);
+      char filename[PATH_MAX];
+      FILE *fl;
+      toml_table_t *tab, *cs;
+      toml_datum_t name, level, act;
+      char errbuf[256];
+
+      if (len <= 5 || strcmp(ent->d_name + len - 5, ".toml"))
+	continue;
+
+      snprintf(filename, sizeof(filename), "%s%s"SLASH"%s", PLAYER_DIR, dirs[i], ent->d_name);
+      if (!(fl = fopen(filename, "r")))
+	continue;
+      tab = toml_parse_file(fl, errbuf, sizeof(errbuf));
+      fclose(fl);
+      if (!tab)
+	continue;
+
+      name = toml_string_in(tab, "name");
+      level = toml_int_in(tab, "level");
+      cs = toml_table_in(tab, "char_specials");
+      act.ok = 0;
+      if (cs)
+	act = toml_int_in(cs, "act");
+
+      if (name.ok && level.ok && act.ok &&
+	  level.u.i >= MIN_LEVEL &&
+	  !(IS_SET(act.u.i, PLR_FROZEN)) &&
+	  !(IS_SET(act.u.i, PLR_NOWIZLIST)) &&
+	  !(IS_SET(act.u.i, PLR_DELETED)))
+	add_name((byte)level.u.i, name.u.s);
+
+      if (name.ok)
+	free(name.u.s);
+      toml_free(tab);
+    }
+    closedir(dir);
+  }
 }
 
 
@@ -152,7 +195,8 @@ void write_wizlist(FILE * out, int minlev, int maxlev)
   char buf[100];
   struct level_rec *curr_level;
   struct name_rec *curr_name;
-  int i, j;
+  int i;
+  size_t j;
 
   fprintf(out,
 "*************************************************************************\n"
@@ -167,10 +211,10 @@ void write_wizlist(FILE * out, int minlev, int maxlev)
 	curr_level->params->level > maxlev)
       continue;
     i = 39 - (strlen(curr_level->params->level_name) >> 1);
-    for (j = 1; j <= i; j++)
+    for (j = 1; j <= (size_t)i; j++)
       fputc(' ', out);
     fprintf(out, "%s\n", curr_level->params->level_name);
-    for (j = 1; j <= i; j++)
+    for (j = 1; j <= (size_t)i; j++)
       fputc(' ', out);
     for (j = 1; j <= strlen(curr_level->params->level_name); j++)
       fputc('~', out);
@@ -185,15 +229,20 @@ void write_wizlist(FILE * out, int minlev, int maxlev)
 	  fprintf(out, IMM_LMARG);
 	else {
 	  i = 40 - (strlen(buf) >> 1);
-	  for (j = 1; j <= i; j++)
+	  for (j = 1; j <= (size_t)i; j++)
 	    fputc(' ', out);
 	}
 	fprintf(out, "%s\n", buf);
 	strcpy(buf, "");
       } else {
 	if (curr_level->params->level <= COL_LEVEL) {
-	  for (j = 1; j <= (IMM_NSIZE - strlen(curr_name->name)); j++)
-	    strcat(buf, " ");
+	  {
+	    int pad = IMM_NSIZE - (int)strlen(curr_name->name);
+	    if (pad < 0)
+	      pad = 0;
+	    for (j = 1; j <= (size_t)pad; j++)
+	      strcat(buf, " ");
+	  }
 	}
 	if (curr_level->params->level > COL_LEVEL)
 	  strcat(buf, "   ");
@@ -206,7 +255,7 @@ void write_wizlist(FILE * out, int minlev, int maxlev)
 	fprintf(out, "%s%s\n", IMM_LMARG, buf);
       else {
 	i = 40 - (strlen(buf) >> 1);
-	for (j = 1; j <= i; j++)
+	for (j = 1; j <= (size_t)i; j++)
 	  fputc(' ', out);
 	fprintf(out, "%s\n", buf);
       }

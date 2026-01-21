@@ -1,0 +1,1029 @@
+[[rooms]]
+vnum = 3500
+name = "The Plains"
+description = "   You are standing on the plains.  This is a vast desolate place where\r\nthe wind can howl undisturbed since nothing but you bars its way.  However\r\nyou are not the first to wander here.  Before you somebody has left a small\r\npath.  The path looks rather bewildered and is not the kind of path to lead\r\nto anywhere significant or important but it seems to have made up its mind\r\nto enter the hills far away north.  A narrow trail scars its way off to the\r\neast as it leads up towards a hillside.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4000
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3300
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3501
+[[rooms]]
+vnum = 3501
+name = "The Lane"
+description = "   You are strolling along a pleasant, shady lane.  The road is lined on both\r\nsides by tall, stately trees which lend the scene with a sense of quiet\r\nserenity.\r\n   You can follow the road north or south.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3500
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3502
+[[rooms]]
+vnum = 3502
+name = "The Laneway"
+description = "   The trees stand close here, and the tall, bushy undergrowth prevents you\r\nfrom seeing far in any direction save east, where a broad lane continues off\r\ninto the distance; and west, where the same lane continues towards what looks\r\nlike a fairly large city.  The muted sounds of city commotion reach your ears\r\nfrom a distance; stray dogs barking, children crying, and street salesmen\r\nshouting.\r\n   A steep path leads down from here to the northeast towards the Dwarven\r\nVillage, and a small trail leads through the trees towards the hills to the\r\nnorth.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3501
+
+[[rooms.exits]]
+dir = 1
+description = "You see a fairly large road leading towards a grand castle in the distance.\r\n"
+door = 0
+key = -1
+to_room = 15000
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3503
+
+[[rooms.exits]]
+dir = 5
+description = "The well trodden path leads down to the northeast towards a small bustling\r\nvillage.\r\n"
+door = 0
+key = -1
+to_room = 6500
+[[rooms]]
+vnum = 3503
+name = "The City Entrance"
+description = "   You stand on the outskirts of a large city - Midgaard; the capital of\r\nthis land.  The road leads east into the peace and quiet - and dangers -\r\nof the forest; and to the west it becomes the main street of the town;\r\nsurrounded by a confusion of shops, bars, and market places.\r\n"
+flags = "c"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3502
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3053
+[[rooms]]
+vnum = 3504
+name = "The South Gate"
+description = "   You are standing on a small, dusty path leading away from the south\r\ngate of Midgaard, to the forest of Miden'Nir (Goblinic for 'Green Blood').\r\nYou can still see the city to the east, but if you go south, there is\r\nfresh air and greenery.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+description = "You can see the walls of the South Gate.\r\n"
+door = 0
+key = -1
+to_room = 3127
+
+[[rooms.exits]]
+dir = 2
+description = "If you go south, you will enter the Miden'Nir.\r\n"
+door = 0
+key = -1
+to_room = 3505
+[[rooms]]
+vnum = 3505
+name = "The Trail To Miden'Nir"
+description = "   You are in a light forest.  A path leads south, but the passage to\r\nthe east is easy enough.  To the west, smoke can be seen rising above\r\nthe treetops.  The sprawl of Midgaard lies north of here.\r\n"
+flags = "c"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "To the north, you see the South Gate of Midgaard.\r\n"
+door = 0
+key = -1
+to_room = 3504
+
+[[rooms.exits]]
+dir = 1
+description = "More light forest.\r\n"
+door = 0
+key = -1
+to_room = 3506
+
+[[rooms.exits]]
+dir = 2
+description = "This path cuts through the darkness of the Miden'Nir.\r\n"
+door = 0
+key = -1
+to_room = 3507
+
+[[rooms.exits]]
+dir = 3
+description = "The Woodsman's Inn can be seen a short distance to the west, it appears\r\nto be the source of the smoke.  \r\n"
+door = 0
+key = -1
+to_room = 3570
+[[rooms]]
+vnum = 3506
+name = "The Miden'nir"
+description = "   You are in a dark forest.  To the east, mountains block passage.  From\r\nhere, only the lighter forest to the west or south offer a way to travel.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+description = "The mountains can be seen jutting up to the east.\r\n"
+door = 0
+key = -1
+to_room = 3550
+
+[[rooms.exits]]
+dir = 2
+description = "The forest is darker to the south.\r\n"
+door = 0
+key = -1
+to_room = 3509
+
+[[rooms.exits]]
+dir = 3
+description = "The forest gets lighter as you go west.\r\n"
+door = 0
+key = -1
+to_room = 3505
+[[rooms]]
+vnum = 3507
+name = "The Miden'nir"
+description = "   The forest is deep here and the wind blows through the trees and\r\nthrough your hair.  To the north, the forest gets lighter.  However,\r\nthe southern and western paths place you even deeper in the wood.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The forest is lighter in this direction.\r\n"
+door = 0
+key = -1
+to_room = 3505
+
+[[rooms.exits]]
+dir = 2
+description = "More and darker woods.\r\n"
+door = 0
+key = -1
+to_room = 3510
+
+[[rooms.exits]]
+dir = 3
+description = "There is a small path leading west.\r\n"
+door = 0
+key = -1
+to_room = 3508
+[[rooms]]
+vnum = 3508
+name = "On a Small Path"
+description = "   A path is here, leading east and south through the dark woods of\r\nMiden'nir.  Mountains slash the scenery to the west of here.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+description = "Wind-swept forest.\r\n"
+door = 0
+key = -1
+to_room = 3507
+
+[[rooms.exits]]
+dir = 2
+description = "To the south, the trail continues.\r\n"
+door = 0
+key = -1
+to_room = 3511
+[[rooms]]
+vnum = 3509
+name = "The Miden'nir"
+description = "   The trees of Miden'nir are lush and green, hiding the evil that lurks\r\nin these woods.  The trees become too thick to the west, but you may go\r\nnorth, south or travel toward the mountains that lie east of here.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The trees lighten up a bit this way.\r\n"
+door = 0
+key = -1
+to_room = 3506
+
+[[rooms.exits]]
+dir = 1
+description = "Huge grey mountains lie in this direction.\r\n"
+door = 0
+key = -1
+to_room = 3512
+
+[[rooms.exits]]
+dir = 2
+description = "The forest continues.\r\n"
+door = 0
+key = -1
+to_room = 3514
+[[rooms]]
+vnum = 3510
+name = "A Crossroads"
+description = "   Here footworn paths meet leading north, south and east.  The trees\r\nseem to be closing in on you at this point, and you can barely see\r\nthe sky through the thick branches above your head.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "Trees as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 3507
+
+[[rooms.exits]]
+dir = 1
+description = "There is an especially dark part of the forest this way.\r\n"
+door = 0
+key = -1
+to_room = 3514
+
+[[rooms.exits]]
+dir = 2
+description = "There is an especially dark section of forest this way.\r\n"
+door = 0
+key = -1
+to_room = 3516
+[[rooms]]
+vnum = 3511
+name = "The Trail"
+description = "   You are on a north-south trail through the woods.  To the west,\r\nimpassable mountains glare at you, and the thick woods and undergrowth\r\nprevent any movement westward.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The trail bends to the north.\r\n"
+door = 0
+key = -1
+to_room = 3508
+
+[[rooms.exits]]
+dir = 2
+description = "To the south, the path re-enters the forest.\r\n"
+door = 0
+key = -1
+to_room = 3515
+[[rooms]]
+vnum = 3512
+name = "The Miden'nir"
+description = "   The trees of Miden'nir are lush and green, hiding the evil that lurks\r\nin these woods.  You can go north toward the mountains, or west to the\r\nforest, but the steep mountains prevent any movement east.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The mountains can be seen to the north.\r\n"
+door = 0
+key = -1
+to_room = 3550
+
+[[rooms.exits]]
+dir = 2
+description = "A light section of forest.\r\n"
+door = 0
+key = -1
+to_room = 3513
+
+[[rooms.exits]]
+dir = 3
+description = "The forest continues here.\r\n"
+door = 0
+key = -1
+to_room = 3509
+[[rooms]]
+vnum = 3513
+name = "The Miden'nir"
+description = "   The forest is dark, and becomes even darker west.  You sense\r\nthat there is something evil hidden in these woods.  The forest\r\ngets lighter to the north.  The wind kicks up as you ponder your\r\noptions.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "There is a small clearing to the north.\r\n"
+door = 0
+key = -1
+to_room = 3512
+
+[[rooms.exits]]
+dir = 3
+description = "It gets darker and thicker this way.\r\n"
+door = 0
+key = -1
+to_room = 3514
+[[rooms]]
+vnum = 3514
+name = "The Deep Forest"
+description = "   It is quite dark here, forest surrounds you.  With each step, the\r\nforest seems to close around you, and get darker and more foreboding.\r\nIt might just be time to head back to somewhere safe.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "More forest.\r\n"
+door = 0
+key = -1
+to_room = 3509
+
+[[rooms.exits]]
+dir = 1
+description = "Lighter forest and mountains in the distance.\r\n"
+door = 0
+key = -1
+to_room = 3513
+
+[[rooms.exits]]
+dir = 2
+description = "More trees.\r\n"
+door = 0
+key = -1
+to_room = 3517
+
+[[rooms.exits]]
+dir = 3
+description = "The forest continues.\r\n"
+door = 0
+key = -1
+to_room = 3510
+[[rooms]]
+vnum = 3515
+name = "The Light Forest"
+description = "   The forest is light here and you can easily pick your way through the \r\ntrail.  To the east, the forest becomes thick and darker.  South, the\r\ntrail continues.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "A trail leading north-south.\r\n"
+door = 0
+key = -1
+to_room = 3511
+
+[[rooms.exits]]
+dir = 1
+description = "The trees get thicker as you go east.\r\n"
+door = 0
+key = -1
+to_room = 3516
+
+[[rooms.exits]]
+dir = 2
+description = "More trees and some small hills.\r\n"
+door = 0
+key = -1
+to_room = 3518
+[[rooms]]
+vnum = 3516
+name = "Some Muddy Ground"
+description = "   The ground is quite muddy here and puddles are all around.  Your\r\nboots make a disgusting SQUISH as you walk here.  You can go in any\r\nof the four cardinal directions from here.  Hopefully, it will be\r\ndryer.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The Miden'nir continues.\r\n"
+door = 0
+key = -1
+to_room = 3510
+
+[[rooms.exits]]
+dir = 1
+description = "More trees.\r\n"
+door = 0
+key = -1
+to_room = 3517
+
+[[rooms.exits]]
+dir = 2
+description = "The trees get VERY thick to the south.  You can barely see...\r\n"
+door = 0
+key = -1
+to_room = 3519
+
+[[rooms.exits]]
+dir = 3
+description = "Some light trees and daylight.\r\n"
+door = 0
+key = -1
+to_room = 3515
+[[rooms]]
+vnum = 3517
+name = "Near The Mountains"
+description = "   The most prominent feature here is the mountains that lie to the\r\neast.  You can only go north and west from here as the rocks stop all\r\nother movement.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "Many trees to the north.\r\n"
+door = 0
+key = -1
+to_room = 3514
+
+[[rooms.exits]]
+dir = 3
+description = "There is a bit of a slope downward to the west.\r\n"
+door = 0
+key = -1
+to_room = 3516
+[[rooms]]
+vnum = 3518
+name = "The Fading Trail"
+description = "   The trail becomes nearly unpassable here.  You can go north\r\nas the forest is relatively light.  To the south, you can see a\r\npath.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "You can see a trail this way.\r\n"
+door = 0
+key = -1
+to_room = 3515
+
+[[rooms.exits]]
+dir = 1
+description = "The trees are nearly trunk-to-trunk this way.\r\n"
+door = 0
+key = -1
+to_room = -1
+
+[[rooms.exits]]
+dir = 2
+description = "Dark forests.\r\n"
+door = 0
+key = -1
+to_room = 3522
+[[rooms]]
+vnum = 3519
+name = "The Dark Path"
+description = "   You are hemmed in by trees on either side of you.  The path\r\ncontinues north and south, and while is much to thick to explore\r\nwest, you can head off into the woods to the west.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The forest gets lighter this way.\r\n"
+door = 0
+key = -1
+to_room = 3516
+
+[[rooms.exits]]
+dir = 1
+description = "The forest continues.\r\n"
+door = 0
+key = -1
+to_room = 3520
+
+[[rooms.exits]]
+dir = 2
+description = "There is a strong stench coming from this direction.\r\n"
+door = 0
+key = -1
+to_room = 3521
+
+[[rooms.exits]]
+dir = 3
+description = "The trees are nearly trunk-to-trunk this way.\r\n"
+door = 0
+key = -1
+to_room = -1
+[[rooms]]
+vnum = 3520
+name = "The Dark Forest"
+description = "   You stomp your way through the underbrush.  The dark forest of\r\nMiden'nir get pretty thick here, and the branches high above your\r\nhead are so thick that they block out all direct sunlight.  While\r\nit is much too thick to go further east, you might be able to make\r\nyour way though the forest to the south and west.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 2
+description = "The thick forest continues.\r\n"
+door = 0
+key = -1
+to_room = 3523
+
+[[rooms.exits]]
+dir = 3
+description = "The thick forest continues.\r\n"
+door = 0
+key = -1
+to_room = 3519
+[[rooms]]
+vnum = 3521
+name = "The Carnage"
+description = "   Here, you see a gruesome sight.  Blood is everywhere... on the trees and\r\nsoaked into the ground.  Two carcasses lie in front of you, seeming to look\r\nup at you.  The forest is impassible to the south, but the other directions\r\nlook ok.\r\n"
+flags = "1"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "Darkness...\r\n"
+door = 0
+key = -1
+to_room = 3519
+
+[[rooms.exits]]
+dir = 1
+description = "Your light does not extend that far.\r\n"
+door = 0
+key = -1
+to_room = 3523
+
+[[rooms.exits]]
+dir = 3
+description = "More dark forest.\r\n"
+door = 0
+key = -1
+to_room = 3522
+
+[[rooms.extra]]
+keyword = "carcass body corpse carcasses bodies corpses"
+description = "The corpses looked as if they have been pierced by a large, jagged\r\nspear.  The damage these people sustained is simply amazing.  Worse,\r\nthe lips on the bodies are a light shade of blue, hinting at poison\r\nin their systems.\r\n"
+[[rooms]]
+vnum = 3522
+name = "Deep In The Forest Of Miden'nir"
+description = "   There is a sickening stench here.  It smells of blood and death.\r\nTo the north, you catch glimpses of daylight.  To the east, you\r\nsimply cannot see.  The trees are close and stifling.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "You see daylight and a trail to follow.\r\n"
+door = 0
+key = -1
+to_room = 3518
+
+[[rooms.exits]]
+dir = 1
+description = "The stench seems to becoming from this direction.\r\n"
+door = 0
+key = -1
+to_room = 3521
+[[rooms]]
+vnum = 3523
+name = "The Dark Forest"
+description = "   The branches above you block out all direct sunlight, making the forest\r\nin this area rather dark.  The forest continues east, where it meets the\r\nmountains.  The air is still and stuffy - a stench comes from the west and\r\nan ugly feeling causes the hair to rise on the back of your neck!\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "It appears to get much darker that direction.\r\n"
+door = 0
+key = -1
+to_room = 3520
+
+[[rooms.exits]]
+dir = 1
+description = "The forest appears to get much darker in this direction.\r\n"
+door = 0
+key = -1
+to_room = 3551
+
+[[rooms.exits]]
+dir = 3
+description = "The sky becomes lighter in this direction.\r\n"
+door = 0
+key = -1
+to_room = 3521
+[[rooms]]
+vnum = 3550
+name = "At The Foot Of The Mountains"
+description = "   You find yourself at the foot of the mountains, where it is much\r\nto steep to continue north or east.  You see the lush, green forest\r\nof Miden'nir to the south and west.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 2
+description = "The forest of Miden'nir spreads out before you.\r\n"
+door = 0
+key = -1
+to_room = 3512
+
+[[rooms.exits]]
+dir = 3
+description = "The forest of Miden'nir spreads out before you.\r\n"
+door = 0
+key = -1
+to_room = 3506
+[[rooms]]
+vnum = 3551
+name = "Deep In The Forest Of Miden'nir"
+description = "   The branches above you block out all direct sunlight, making\r\nthe forest in this area very dark.  The forest continues west,\r\nbut mountains block further exploration in all other directions,\r\nexcept south, where you notice a small tunnel dug into the\r\nmountainside.\r\n"
+flags = "a"
+sector = 3
+
+[[rooms.exits]]
+dir = 2
+description = "The tunnel leads into the mountainside.\r\n"
+door = 0
+key = -1
+to_room = 3552
+
+[[rooms.exits]]
+dir = 3
+description = "The forest continues, but appears to be getting lighter.\r\n"
+door = 0
+key = -1
+to_room = 3523
+[[rooms]]
+vnum = 3552
+name = "A Tunnel In The Mountains"
+description = "   The walls of this tunnel were carved out many years ago by the goblins\r\nof this forest.  The floor is well worn, and continues south, into the\r\nmountain, or back north out into the forest.\r\n"
+flags = "a"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "Outside, you see the forest of Miden'nir.\r\n"
+door = 0
+key = -1
+to_room = 3551
+
+[[rooms.exits]]
+dir = 2
+description = "The tunnel continues to the south.\r\n"
+door = 0
+key = -1
+to_room = 3553
+[[rooms]]
+vnum = 3553
+name = "A Tunnel In The Mountains"
+description = "   The tunnel gets lighter to the north, presumably leading out, while to\r\nthe south the passage gets smaller and smaller.  A small alcove has been\r\ncarved into the east wall.\r\n"
+flags = "a"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "The tunnel gets wider in this direction.\r\n"
+door = 0
+key = -1
+to_room = 3552
+
+[[rooms.exits]]
+dir = 1
+description = "You see a small alcove.\r\n"
+door = 0
+key = -1
+to_room = 3554
+
+[[rooms.exits]]
+dir = 2
+description = "The tunnel gets smaller in this direction.\r\n"
+door = 0
+key = -1
+to_room = 3555
+[[rooms]]
+vnum = 3554
+name = "A Small Alcove"
+description = "   A small alcove has been carved out here.  There are a bunch of twigs\r\nand leaves thrown into a pile here, probably serving as a bed.\r\n"
+flags = "a"
+sector = 1
+
+[[rooms.exits]]
+dir = 3
+description = "You see the main passageway.\r\n"
+door = 0
+key = -1
+to_room = 3553
+
+[[rooms.extra]]
+keyword = "twigs leaves bead"
+description = "The twigs and leaves have all been piled together as a makeshift bed for\r\nsome small humanoid.\r\n"
+[[rooms]]
+vnum = 3555
+name = "A Tunnel In The Mountains"
+description = "   As you explore further into the mountainside, the tunnel gets smaller\r\nand smaller to the south.  You almost have to hunch over to make your way\r\nthrough this area.  A small archway to the south leads into a large chamber.\r\n"
+flags = "a"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "The tunnel continues north.\r\n"
+door = 0
+key = -1
+to_room = 3553
+
+[[rooms.exits]]
+dir = 2
+description = "You see a small cavern.\r\n"
+door = 0
+key = -1
+to_room = 3556
+[[rooms]]
+vnum = 3556
+name = "The Goblin HeadQuarters"
+description = "   The tunnel widens into a large (well, large for goblins) cavern that\r\nserves as the living quarters for the goblins of Miden'nir.  The bones of\r\nnumbers woodland creatures are strewn about the room, the remanents of a\r\nrecent meal.\r\n"
+flags = "a"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "The tunnel heads north.\r\n"
+door = 0
+key = -1
+to_room = 3555
+[[rooms]]
+vnum = 3570
+name = "The Front Of The Inn"
+description = "   You are standing on a well-worn path which opens into a clearing.\r\nAn old, wooden building is here with smoke billowing from its\r\nchimney.  A painted sign is visible on the porch to the west.  You\r\ncould go north or south around the building or leave this place and\r\nreturn to the forest.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "You can go north around the Inn.\r\n"
+door = 0
+key = -1
+to_room = 3571
+
+[[rooms.exits]]
+dir = 1
+description = "Back through the trees to the Miden'nir.\r\n"
+door = 0
+key = -1
+to_room = 3505
+
+[[rooms.exits]]
+dir = 2
+description = "You can go south around the Inn.\r\n"
+door = 0
+key = -1
+to_room = 3572
+
+[[rooms.exits]]
+dir = 3
+description = "The front door of the Inn beckons.\r\n"
+door = 0
+key = -1
+to_room = 3574
+
+[[rooms.extra]]
+keyword = "sign"
+description = "The sign reads:\r\n\r\n   The Woodsman\r\n\r\n"
+[[rooms]]
+vnum = 3571
+name = "North Of The Inn"
+description = "   You are standing north of the Inn.  Things don't look much different\r\nfrom this angle.  The air here is filled with smells of smoke and cooking.\r\nSouth, the front porch is waiting for you... or you can see if there is\r\na back door.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 2
+description = "You see the front of the Inn.\r\n"
+door = 0
+key = -1
+to_room = 3570
+[[rooms]]
+vnum = 3572
+name = "South Of The Inn"
+description = "   You are standing south of the Inn.  You could easily go north and enter\r\nthrough the front door, or west and to the rear of the establishment.  You\r\nhere some muffled cries from a tiny trail leading south of here.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "This way leads to the front of the Inn.\r\n"
+door = 0
+key = -1
+to_room = 3570
+
+[[rooms.exits]]
+dir = 2
+description = "The trail heads south.\r\n"
+door = 0
+key = -1
+to_room = 3575
+
+[[rooms.exits]]
+dir = 3
+description = "This way leads to the back of the Inn.\r\n"
+door = 0
+key = -1
+to_room = 3573
+[[rooms]]
+vnum = 3573
+name = "Behind The Inn"
+description = "   You now stand behind the Inn.  The smell here is not so pleasant as\r\nthe keeper and his help throw a good deal of garbage here.  A couple of\r\npiles of rubbish are to the west, but you will smell the worse for\r\nmeddling there.  As a clean alternative, you can go north or east around\r\nthe Inn.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+description = "You can go around the Inn this way.\r\n"
+door = 0
+key = -1
+to_room = 3572
+
+[[rooms.exits]]
+dir = 3
+description = "Only rats and fool adventurers play in garbage.\r\n"
+door = 0
+key = -1
+to_room = 3578
+[[rooms]]
+vnum = 3574
+name = "The Woodsman Inn"
+description = "   You are in the common room of the Woodsman Inn.  A thin haze of smoke\r\nsits in the air here.  The Inn is often empty, as the forest has become\r\noverrun by goblins as of late, and it is no longer safe in these parts.\r\nThe bar is just north of here.  If you'd rather have your own table, one\r\nis empty to the south.\r\n"
+flags = "cd"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "The bar is here, manned by the Innkeeper.\r\n"
+door = 0
+key = -1
+to_room = 3576
+
+[[rooms.exits]]
+dir = 1
+description = "You can leave now and return to fresher air.\r\n"
+door = 0
+key = -1
+to_room = 3570
+
+[[rooms.exits]]
+dir = 2
+description = "An empty table is a rare commodity.\r\n"
+door = 0
+key = -1
+to_room = 3579
+
+[[rooms.exits]]
+dir = 3
+description = "There is a table to the south occupied by a heavy drinker.\r\n"
+door = 0
+key = -1
+to_room = 3577
+[[rooms]]
+vnum = 3575
+name = "The Ambush Point"
+description = "   This is a overgrown foot-trail south of the Inn.  It leads west, but you\r\nwould be hard pressed to follow it far.  A number of bushes are trampled on\r\nand some medium sized branches have been knocked down.  Obviously there has\r\nbeen a battle here rather recently.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The Inn lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3572
+
+[[rooms.exits]]
+dir = 3
+description = "A trail through the woods.\r\n"
+door = 0
+key = -1
+to_room = 3581
+[[rooms]]
+vnum = 3576
+name = "The Bar"
+description = "   This is where people use to come and enjoy the food, drink and\r\nhospitality of the Innkeeper, but as of late, he only serves the\r\nfew adventurers that manage to survive a trip through the forest.\r\nYou can leave south and return to the common room.\r\n"
+flags = "df"
+sector = 1
+
+[[rooms.exits]]
+dir = 2
+description = "You may retreat south back to the common room.\r\n"
+door = 0
+key = -1
+to_room = 3574
+[[rooms]]
+vnum = 3577
+name = "The Bard's Table"
+description = "   You are in a darker corner in the Inn.  A large round table with a few\r\nwooden chairs sits here.  There is a large stain on the table, the remnants\r\nof a spilled drink.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "You see the main floor of the Inn to the east.\r\n"
+door = 0
+key = -1
+to_room = 3574
+[[rooms]]
+vnum = 3578
+name = "The Garbage Dump"
+description = "You stand knee deep in garbage.  YECCH!!!  It smells terrible and who knows\r\nwhat vermin live in these piles of filth...\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+description = "You can return to cleaner lands this way.\r\n"
+door = 0
+key = -1
+to_room = 3573
+[[rooms]]
+vnum = 3579
+name = "A Quieter Section Of The Inn"
+description = "There seems to be no one in this end of the Woodsman, probably a safe place\r\nto rest and lick your wounds...\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the common room.\r\n"
+door = 0
+key = -1
+to_room = 3574
+[[rooms]]
+vnum = 3581
+name = "On The Trail Of The Horsemen"
+description = "   The path continues east and west of here.  You notice fresh tracks in\r\nthe soft ground that show the horsemen fled to the west.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+description = "Back to ambush point.\r\n"
+door = 0
+key = -1
+to_room = 3575
+
+[[rooms.exits]]
+dir = 3
+description = "The trail continues.\r\n"
+door = 0
+key = -1
+to_room = 3582
+[[rooms]]
+vnum = 3582
+name = "On The Trail Of The Horsemen"
+description = "   The path continues east and south.  You notice fresh tracks in the\r\nsoft ground that show the horsemen turned, and fled south.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+description = "The trail continues.\r\n"
+door = 0
+key = -1
+to_room = 3581
+
+[[rooms.exits]]
+dir = 2
+description = "The tracks lead south.\r\n"
+door = 0
+key = -1
+to_room = 3583
+[[rooms]]
+vnum = 3583
+name = "On The Trail Of The Horsemen"
+description = "   The trail of the horsemen continues east and north along this path\r\nthrough the forest.  The tracks are still fresh, so they must be near.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "The trail continues.\r\n"
+door = 0
+key = -1
+to_room = 3582
+
+[[rooms.exits]]
+dir = 3
+description = "The tracks lead east.\r\n"
+door = 0
+key = -1
+to_room = 3584
+[[rooms]]
+vnum = 3584
+name = "A Dead End Trail"
+description = "   The path comes to an abrupt end here, as the trees close around you and\r\nmake any further exploration impossible.  Fresh tracks cover the ground, and\r\nend right here.  The horsemen must be nearby.\r\n"
+flags = "0"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+description = "Back to along the trail.\r\n"
+door = 0
+key = -1
+to_room = 3583

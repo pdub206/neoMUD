@@ -1,0 +1,316 @@
+[[objects]]
+vnum = 1500
+name = "scales justice scale"
+short_descr = "the Scales of Justice"
+description = "Two beautiful plates shaped like scales have been left here."
+type = 12
+extra_flags = "ak"
+wear_flags = "ao"
+values = [0, 0, 0, 0]
+weight = 10
+cost = 15000
+rent = 2200
+
+[[objects.affects]]
+location = 3
+modifier = 1
+
+[[objects.affects]]
+location = 4
+modifier = 2
+
+[[objects.extra_desc]]
+keyword = "scales justice scale"
+description = "As you look at the scales, you notice that they seem to sway back and forth\r\nof their own accord, as if weighing something that is to you still unseen.\r\n"
+[[objects]]
+vnum = 1501
+name = "scroll parchment"
+short_descr = "the Scroll of the Messenger"
+description = "You see a solid and silver-lined scroll resting on the ground."
+type = 12
+extra_flags = "g"
+wear_flags = "ao"
+values = [0, 0, 0, 0]
+weight = 1
+cost = 500
+rent = 500
+
+[[objects.affects]]
+location = 14
+modifier = 15
+
+[[objects.affects]]
+location = 19
+modifier = -1
+
+[[objects.extra_desc]]
+keyword = "scroll parchment"
+description = "It seems to be some sort of spell designed to transport its user across\r\nvast distances, but how to make use of it is impossible to tell.\r\n"
+[[objects]]
+vnum = 1502
+name = "sword blazing"
+short_descr = "a blazing sword"
+description = "You are startled by the sight of a sword that glows as you approach it."
+type = 5
+extra_flags = "abgkn"
+wear_flags = "an"
+values = [0, 3, 4, 11]
+weight = 10
+cost = 5000
+rent = 900
+
+[[objects.affects]]
+location = 13
+modifier = -5
+
+[[objects.extra_desc]]
+keyword = "sword blazing"
+description = "The edge of the blade is lined with writing, religious verse apparently, in\r\na fine, silver-laced and flowing script.\r\n"
+[[objects]]
+vnum = 1503
+name = "protector faithful shield"
+short_descr = "the Protector of the Faithful"
+description = "A weighty looking shield has been abandoned by one unworthy to hold it."
+type = 9
+extra_flags = "kn"
+wear_flags = "aj"
+values = [15, 0, 0, 0]
+weight = 20
+cost = 5000
+rent = 1500
+
+[[objects.extra_desc]]
+keyword = "protector faithful shield"
+description = "It evades your attempts to focus on it, deflecting your gaze as it deflects\r\nthe weapons that will try to kill you.\r\n"
+[[objects]]
+vnum = 1504
+name = "armband band faded"
+short_descr = "a faded armband"
+description = "A ragged and faded looking piece of cloth has been left here, forgotten."
+type = 12
+extra_flags = "j"
+wear_flags = "ai"
+values = [0, 0, 0, 0]
+weight = 0
+cost = 15
+rent = 50
+
+[[objects.affects]]
+location = 6
+modifier = 2
+
+[[objects.affects]]
+location = 5
+modifier = -1
+
+[[objects.extra_desc]]
+keyword = "armband faded band"
+description = "It has some sort of militia insignia on it, perhaps an indication of a rank\r\nor award in some military order unknown to you.\r\n"
+[[objects]]
+vnum = 1505
+name = "scimitar jeweled"
+short_descr = "a jeweled scimitar"
+description = "A stunning curved blade glistens on the ground."
+type = 5
+extra_flags = "akn"
+wear_flags = "an"
+values = [0, 7, 1, 3]
+weight = 5
+cost = 5000
+rent = 500
+
+[[objects.extra_desc]]
+keyword = "scimitar jeweled"
+description = "The entire rim and edge of the scimitar's handle is bedecked in a gorgeous\r\narray of stones and precious metals.\r\n"
+[[objects]]
+vnum = 1506
+name = "ember charred"
+short_descr = "a charred ember"
+description = "You glance briefly at a smouldering ember that rests at your feet."
+type = 1
+extra_flags = "ajnop"
+wear_flags = "ao"
+values = [0, 0, -1, 0]
+weight = 0
+cost = 5
+rent = 2500
+
+[[objects.affects]]
+location = 18
+modifier = 2
+
+[[objects.affects]]
+location = 12
+modifier = 10
+
+[[objects.extra_desc]]
+keyword = "ember charred"
+description = "It glares back at you, almost angrily.\r\n"
+[[objects]]
+vnum = 1507
+name = "ethereal flame"
+short_descr = "an ethereal flame"
+description = "The entire room is aglow from the flame at your feet."
+type = 1
+extra_flags = "ajkop"
+wear_flags = "ao"
+values = [0, 0, -1, 0]
+weight = 0
+cost = 5
+rent = 2500
+
+[[objects.affects]]
+location = 12
+modifier = 8
+
+[[objects.affects]]
+location = 13
+modifier = 10
+
+[[objects.extra_desc]]
+keyword = "ethereal flame"
+description = "Even being near it fills you with a peaceful and comforted feeling.\r\n"
+[[objects]]
+vnum = 1508
+name = "key gates"
+short_descr = "the Key to the Gates"
+description = "You have found at last the Key to the Gates of eternity."
+type = 18
+extra_flags = "aikl"
+wear_flags = "ao"
+values = [1508, 0, 0, 0]
+weight = 0
+cost = 1000
+rent = 500
+
+[[objects.affects]]
+location = 3
+modifier = 2
+
+[[objects.extra_desc]]
+keyword = "key gates"
+description = "There are no gates.  They are inside of you.\r\n"
+[[objects]]
+vnum = 1509
+name = "history burnt book"
+short_descr = "a burnt history"
+description = "You have found a burnt book, some forgotten history lying on the ground."
+type = 13
+extra_flags = "0"
+wear_flags = "ao"
+values = [0, 0, 0, 0]
+weight = 2
+cost = 10
+rent = 500
+
+[[objects.affects]]
+location = 4
+modifier = 2
+
+[[objects.extra_desc]]
+keyword = "history burnt book"
+description = "So this is the jester's joke.  All of our works have turned to dust,\r\nand will end in nothing.  It is for this that he laughs.\r\n"
+[[objects]]
+vnum = 1510
+name = "surah book"
+short_descr = "a surah of the book"
+description = "You notice a thin parchment, with flowing script and rich decorative trim."
+type = 1
+extra_flags = "dklmn"
+wear_flags = "ao"
+values = [0, 0, -1, 0]
+weight = 0
+cost = 500
+rent = 8000
+
+[[objects.affects]]
+location = 18
+modifier = 3
+
+[[objects.affects]]
+location = 19
+modifier = 3
+
+[[objects.extra_desc]]
+keyword = "surah book"
+description = "Al-Kafirun\r\nSay: \"Oh ye that reject the Faith, I do not worship what you worship, nor\r\ndo you worship what I worship.  To you be your Way, and to me mine.\"\r\n"
+[[objects]]
+vnum = 1511
+name = "forge unity"
+short_descr = "the Forge of Unity"
+description = "It is surely the best of men who has left these gloves to aid you."
+type = 9
+extra_flags = "iklmn"
+wear_flags = "ah"
+values = [5, 0, 0, 0]
+weight = 5
+cost = 12000
+rent = 4000
+
+[[objects.affects]]
+location = 19
+modifier = 2
+
+[[objects.affects]]
+location = 13
+modifier = 10
+[[objects]]
+vnum = 1512
+name = "ankh"
+short_descr = "an Ankh"
+description = "You see a beautiful pendant of ancient and noble craftsmanship."
+type = 11
+extra_flags = "al"
+wear_flags = "ac"
+values = [0, 0, 0, 0]
+weight = 3
+cost = 5000
+rent = 2000
+
+[[objects.affects]]
+location = 12
+modifier = 10
+
+[[objects.affects]]
+location = 12
+modifier = 5
+
+[[objects.extra_desc]]
+keyword = "ankh"
+description = "It is an even earlier version of the old Christian cross, an oval loop\r\nabove the crossed arms of white gold.\r\n"
+[[objects]]
+vnum = 1513
+name = "amulet ra"
+short_descr = "the Amulet of Ra"
+description = "You have found a beautiful gleaming disc with a golden image of the sun god."
+type = 11
+extra_flags = "ag"
+wear_flags = "ac"
+values = [0, 0, 0, 0]
+weight = 5
+cost = 7500
+rent = 1500
+
+[[objects.affects]]
+location = 3
+modifier = 2
+
+[[objects.affects]]
+location = 4
+modifier = 2
+[[objects]]
+vnum = 1514
+name = "image azathoth graven"
+short_descr = "a graven image of Azathoth"
+description = "You frown in disgust at the hideous icon of a false god that you have found."
+type = 1
+extra_flags = "jlq"
+wear_flags = "ao"
+values = [0, 0, 0, 0]
+weight = 2
+cost = 1000
+rent = 500
+
+[[objects.affects]]
+location = 6
+modifier = 2

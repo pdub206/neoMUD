@@ -1,0 +1,1437 @@
+[[rooms]]
+vnum = 3300
+name = "A Scraggly Trail"
+description = "   This trail slopes up and away from the main road to \r\nthe west.  At points the trail seems to fade into \r\nobscurity against the grey stone and near-grey mountain \r\ngrass prevalent here.  The trail leads generally eastward \r\nand up higher into the rocky ground.  There is a sign \r\nhere, seemingly out-of-place in this rough country.\r\n"
+flags = "cg"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3301
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3500
+
+[[rooms.extra]]
+keyword = "sign"
+description = "        ,_____________________________.\r\n        |                             |\r\n\t|         Gabadiel's          |\r\n\t|          Smithery           |\r\n\t|      -------------->        |\r\n\t|\t\t\t      |\r\n        |           -- BUAG SIGNS INC.|\r\n\t`-----------------------------'\r\n\t\t     |  |\r\n\t\t     |  |\r\n\t\t     |  |\r\n\t\t     |  |     \r\n"
+[[rooms]]
+vnum = 3301
+name = "A Scraggly Trail"
+description = "   What could barely be called a trail leads west back \r\ndown the mountainside, and down into a very small valley \r\nwhere a small house sits in the middle of a well-groomed \r\nyard.  The door to the house is open and inviting, \r\nwelcoming you for a visit.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3300
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 3302
+[[rooms]]
+vnum = 3302
+name = "A Groomed Path"
+description = "   You are standing in the western end of a very, very \r\nsmall valley, just about room enough for the one house \r\nstanding to your east.  You can see from here that the \r\ndoor to the cozy cottage is open and inviting, but the \r\ninterior seems very dark.  A path bordered by shrubberies \r\nleads up to the structure, and ends where you are \r\nstanding; right by the easiest path back up into the \r\nmountains.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3303
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 3301
+[[rooms]]
+vnum = 3303
+name = "Outside A House"
+description = "   The path you are on leads from the front door of the\r\ncottage to your east, to the edge of the small valley\r\nto the west.  The building seems quiet...almost too\r\nquiet.  A small voice in the back of your head, the\r\nsame voice that has saved your life on countless\r\noccasions, seems to be telling you that something is\r\nvery, very wrong here.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+description = "It is a normal front door to a house.\r\n"
+keyword = "door front"
+door = 1
+key = -1
+to_room = 3304
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3302
+[[rooms]]
+vnum = 3304
+name = "The Smithery"
+description = "   Devastation greets your eyes.\r\n   The forge has been blasted apart, along with most of \r\nthe back door.  Hammers, tongs, and anvils lie about in \r\none gigantic mess, and the smith's bed smoulders yet.  \r\nThis place has been utterly wrecked and blasted apart, by \r\nmore than one man you would think from all the tracks in \r\nthe dust...\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "It is a normal hole torn in the wall leading outside into\r\na garden.\r\n"
+door = 0
+key = -1
+to_room = 3305
+
+[[rooms.exits]]
+dir = 3
+description = "It is a normal front door.\r\n"
+keyword = "door front"
+door = 1
+key = -1
+to_room = 3303
+
+[[rooms.extra]]
+keyword = "tracks dust"
+description = "Three sets of prints lead out where the back door used to stand.\r\n"
+
+[[rooms.extra]]
+keyword = "bed"
+description = "Ha!  Lucky, you were always lucky!  Under the pillow is a\r\nhalf-written letter, unaddressed.  The bits of text that\r\naren't smudged, burnt, and smeared tell tale of the smith/mage\r\nGabadiel's masterwork: a sword of unequalled power, and two\r\nswords that came before, discarded as 'Not quite what I was\r\nworking towards'.  Looking around, you notice a distinct lack\r\nof any swords.  You think you may have a motive now...\r\n"
+[[rooms]]
+vnum = 3305
+name = "A Small Garden"
+description = "   This garden was probably once kept orderly and weedless.\r\nUnfortunately, it seems someone has been careless with a\r\nfireball.  There is nothing here now but blast-marks and\r\nashes, and the remains of a trail leading to the east edge\r\nof this tiny valley.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3306
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3304
+
+[[rooms.extra]]
+keyword = "tracks track"
+description = "They lead east.\r\n"
+[[rooms]]
+vnum = 3306
+name = "Mountain Ridge"
+description = "   You are standing on a ridge in the mountains, just east\r\nof a very small valley.  You spot a tiny cottage sitting \r\nin the center of the valley, and the ridge continues \r\nsouth.  Looking at the sheer drops to the north and west, \r\nyou consider not taking those directions.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3307
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3305
+
+[[rooms.extra]]
+keyword = "tracks track"
+description = "The tracks lead south.\r\n"
+[[rooms]]
+vnum = 3307
+name = "The Mountain Ridge"
+description = "    The mountain range continues north from here, and \r\nwidens out into a small plateau just to your south.  Going\r\neast and west from here would be a bad idea, considering \r\nthe steepness of the drop.  From this height, you have a \r\nfairly good panoramic view to the south, including what \r\nappears to be a small mountain village to your south and \r\nwest, and a tall, ominous peak westwards from here.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3306
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3308
+
+[[rooms.extra]]
+keyword = "tracks track"
+description = "They lead south.\r\n"
+[[rooms]]
+vnum = 3308
+name = "The Diverging Paths"
+description = "   You are standing on a small plateau in the mountains, \r\njust south of a ridge that leads northwards through the \r\nrocky area.  To the east, south, and west are gentle \r\nslopes leading down into different areas of the mountains.\r\n   A giant, dark peak looks down over you to the west, \r\nlooking quite spooky indeed!\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3307
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3341
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3309
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3359
+
+[[rooms.extra]]
+keyword = "tracks track"
+description = "The three sets of tracks split up here, one west, one east,\r\none south.\r\n"
+[[rooms]]
+vnum = 3309
+name = "A Steep Slope"
+description = "   This slopes leads down and to the west from here.  Up \r\nabove, you see a plateau at the southern end of a long \r\nmountain ridge.  Surpisingly, there seems to be signs of \r\ntraffic in this area, leading into the large depression \r\nhere.  The going looks somewhat dangerous, and you decide \r\nto exercise a little caution.\r\n"
+flags = "0"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3308
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3310
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 3308
+
+[[rooms.extra]]
+keyword = "signs tracks"
+description = "A few boot prints lead way in the dust here.  There is \r\ndefinitely traffic here, but this area is not what you \r\nwould call well-travelled.\r\n"
+[[rooms]]
+vnum = 3310
+name = "A Small Plateau"
+description = "   You are standing upon another mini-plateau, bordered by\r\na sheer wall of rock to the north.  You can climb up the \r\nslope to the east, or continue along the flat area to the \r\nwest.  Another slope leads downwards to the south, looking\r\nunsafe but climbable.\r\n"
+flags = "0"
+sector = 4
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3309
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3314
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3311
+[[rooms]]
+vnum = 3311
+name = "A Small Plateau"
+description = "   This plateau ends here, with a steep drop-off to the \r\nsouth, and a solid wall of rock to the north.  Eastwards \r\nthe plateau continues, and you think you can climb up the \r\nsteep rocky slope just west of here.  You are afforded a \r\ngood view of the lower regions of this depression, and you\r\nthink you spot what might be a cave south and down from \r\nhere...\r\n"
+flags = "0"
+sector = 4
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3310
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3312
+[[rooms]]
+vnum = 3312
+name = "A Rocky Slope"
+description = "   This slope is fairly treacherous, but looks to be \r\nsomewhat safer to the north.  East the slope leads down \r\nto a small plateau that also looks considerably safer \r\nthan your other choices.  The shale under your feet \r\nslips badly, and you are almost thrown off balance; \r\nthis is no place to be without mountaineering equipment.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3313
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3311
+[[rooms]]
+vnum = 3313
+name = "The Overlook"
+description = "   You are standing on a point outcropping with a \r\nbeautiful view of the mountains to the north.  Far \r\nbelow, you see what appears to be a foot-path climb \r\nup to the central mountain, a peak that looks dark \r\nand disturbing.  You get very bad vibes from that \r\nmountain for some reason, and it doesn't seem like \r\na very good idea to try to find a way to get there.\r\n   The only safe way to leave this overlook is to \r\nthe south.\r\n"
+flags = "0"
+sector = 4
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3312
+[[rooms]]
+vnum = 3314
+name = "A Rocky Slope"
+description = "    You slip and slide your way across the steep ground, \r\ntrying desperately to keep your balance.  You can climb \r\nup to a small plateau to the north from here, or carefully\r\nhead down to the floor of the depression to the west.  \r\nYou're not sure which is safer...\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3310
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3315
+[[rooms]]
+vnum = 3315
+name = "The Depression Floor"
+description = "   A small path leads south here, away from the rocky \r\nslope leading up to the east.  A small spring burbles \r\nhere, evidently the cause of much of the traffic.  \r\nLooking up, you see sheer rock walls surrounding much \r\nof the depression, making an effective fortress of\r\nthis place.\r\n"
+flags = "0"
+sector = 4
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3314
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3316
+[[rooms]]
+vnum = 3316
+name = "The Depression Floor"
+description = "   The small path you are standing on leads north, and\r\neast into what appears to be a large cave hollowed out\r\nof the mountainside.  The whole place seems quiet, too\r\nquiet in fact.  Your little adventurer's intuition is\r\nbusily warning you of traps.\r\n"
+flags = "0"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3315
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3317
+[[rooms]]
+vnum = 3317
+name = "A Cave Entrance"
+description = "   A cave leads into the heart of the mountainside, well-\r\nlit by sconces upon the walls.  A large rock sits by \r\nthe side here, near a small firepit.  Debris litters the \r\narea; rabbit bones, half of a broken whetstone, and random\r\nlitter.  The ground is devoid of grass, and well trodden \r\nby many pairs of boots.  Strange that someone should live \r\nso deep in the mountains...\r\n"
+flags = "c"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3318
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3316
+[[rooms]]
+vnum = 3318
+name = "A Cave Passageway"
+description = "   You are near the entrance of the cave.  The outside \r\nlight streams in from the west, accompanied by a slight \r\nbreeze, making the flames in the sconces flutter a bit\r\nand throw stange shadows upon the walls.  This passageway \r\nheads north and south from here, each way seeming dark and\r\nstuffy compared to outdoors.  From the tracks in the \r\nfloor, you guess that the north is the more used.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3319
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3331
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3317
+[[rooms]]
+vnum = 3319
+name = "A Cave Passageway"
+description = "   The passage turns here, one end leading south, towards \r\nthe cave's entrance, and east -- that much deeper into the\r\nmountain.  The light sconces keep the area bright enough \r\nto see, but not nearly bright enough for you to be quite \r\ncomfortable in this strange place.  From far off you hear \r\nthe echoes of what sound to be voices.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3320
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3318
+[[rooms]]
+vnum = 3320
+name = "A Cave Passageway"
+description = "   This twisty passage leads east and west from here.  \r\nEastwards you hear the unmistakable sounds of low \r\nvoices.  The echoes seem to be playing funny effects \r\non you, however, and you are not sure  from how far \r\noff these voices might be coming.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3321
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3319
+[[rooms]]
+vnum = 3321
+name = "A Cave Passageway"
+description = "   The passage you are standing in turns west and south \r\nfrom here.  One of the sconces here is out, making this \r\narea extremely dark and hard to see in.  You do see lights\r\nfrom the south, however, seemingly brighter than the \r\nsconces you've seen along the walls so far.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3322
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3320
+[[rooms]]
+vnum = 3322
+name = "A Cave Passageway"
+description = "   This is a T-intersection in the cave passageway, the \r\nnorth leading back towards the cave's entrance (you \r\nthink!), the west leading towards a well-lighted area.  \r\nEastwards the passageway continues into the shadowy \r\nrecesses of the mountain uninvitingly.  The echoes of \r\nvoices are confusing you a bit, and you are not sure \r\nwhether you should try to remain quiet or not.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3321
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3324
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3323
+[[rooms]]
+vnum = 3323
+name = "A Cave"
+description = "   Many sconces line the walls here, casting light on \r\nsome weapon racks and chests of armor.  Everything\r\nis neat, orderly, and actually well-dusted.  Someone\r\ncares for these items...frequently it seems.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3322
+[[rooms]]
+vnum = 3324
+name = "A Cave Passageway"
+description = "   The passageway you are in leads south and west from \r\nhere.  Many large stones and rocks are on the floor of the\r\ncave, making walking difficult in the dim light from the \r\nsconces on the walls.  You hear the continued echo of \r\nvoices, seemingly fainter now.  Must be the strange \r\nacoustics of this place...\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3325
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3322
+[[rooms]]
+vnum = 3325
+name = "A Cave Passageway"
+description = "   The cave twists around like a coiled snake, leading \r\neast and north from here.  You begin to wonder if your \r\norientations are still correct.  That worries you for\r\nsome reason.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3324
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3326
+[[rooms]]
+vnum = 3326
+name = "A Cave Passageway"
+description = "   You can head north and west through the cave passageways\r\nhere, both ways dimly lit by the ever-present sconces on \r\nthe walls.  The echoes you heard earlier seem to be getting\r\nlouder, and seem to be coming from the northern passage.  \r\nYou feeled a bit chilled from the cooled cave air and \r\nshiver a bit in the faint whisper of a breeze.  This place \r\nis a little too eerie and dark to be comfortable in.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3327
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3325
+[[rooms]]
+vnum = 3327
+name = "A Cave Passageway"
+description = "   The echoes are growing louder, and seem to be coming \r\nfrom the northern end of this corridor.  Southwards you \r\nsee the tunnel continue right before yet another bend in \r\nthe passagway.  You spot a small piece of red cloth torn \r\nagainst a sharp rock jutting out from the passage's side.  \r\nIt looks like silk, very nice in fact.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3328
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3326
+[[rooms]]
+vnum = 3328
+name = "A Cave Passageway"
+description = "   The main passageway leads south from here, and a smaller\r\ncave tunnel leads away to the west.  Two large boulders \r\nsit against the wall, wiped clean of dirt and grime.  A \r\npaper food wrapper has been trodden under several pairs of \r\nfeet here; at best guess, you'd say this would probably be \r\na guard post.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3327
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3329
+[[rooms]]
+vnum = 3329
+name = "The End Of The Passageway"
+description = "   The cave passageway ends abruptly here to the north in a\r\nlarge wooden door set into the stone walls.  The craftsmanship\r\nis superb!  You can also head back to the main passage to the\r\nwest, where there seems to be more light than here.  An echo\r\nfrom down the passage makes you wonder for a moment if you are\r\nbeing followed, but you see nothing there...\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "It is a sturdy wooden door.\r\n"
+keyword = "door wooden"
+door = 1
+key = -1
+to_room = 3330
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3328
+[[rooms]]
+vnum = 3330
+name = "A Cavern"
+description = "   This natural cavern has been turned into a combination \r\noffice/storeroom.  A small brook rushes through the south \r\nwall, and flows back into the west wall through a tiny \r\nhole.  Boxes and crates are stacked against the walls, and \r\na beat up oaken desk stands near the door stacked with \r\npapers written upon by an unsteady hand.  Some large \r\nlanterns keep the place very well lighted.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "It is a sturdy wooden door.\r\n"
+keyword = "door wooden"
+door = 1
+key = -1
+to_room = 3329
+[[rooms]]
+vnum = 3331
+name = "A Cave Passageway"
+description = "   You are standing south of the main entrance to this \r\ncave.  The passage you are in continues south, very badly \r\nlit along its length by the sconces lining the walls \r\nevery fifteen feet or so.  From somewhere deep in the \r\nrecesses of the cave, you hear a faint, rhythmic thumping \r\nsound distorted by the passage's strange acoustics.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3318
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3332
+[[rooms]]
+vnum = 3332
+name = "A Cave Passageway"
+description = "   You are standing at the southern bend of this passage,\r\nable to head east and north from here.  The rock around you\r\nechoes the sound of far-off pounding to you, making the\r\nplace seem somehow alive, with a heartbeat.  This place\r\nis fairly eerie, now that you come to think of it.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3331
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3333
+[[rooms]]
+vnum = 3333
+name = "A Cave Passageway"
+description = "   The passageway makes a U-turn here, heading north and\r\nwestwards to the other side of the 'U'.  The air seems\r\nhumid and hard to breathe.  Some algae grows near the\r\nfloor in the slick spots, giving a definite subtle smell\r\nof rot to the air.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3334
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3332
+[[rooms]]
+vnum = 3334
+name = "A Cave Passageway"
+description = "   The tunnel twists to the south and east from here, \r\nits dark length seemingly dismal and lifeless.  A faint \r\nthumping sound reverberates from the walls, making you \r\nperk your ears for the direction of the noise.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3335
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3333
+[[rooms]]
+vnum = 3335
+name = "A Cave Passageway"
+description = "   This area darker than the rest of the passageway, due\r\nto the fact that the sconces along the walls stop abruptly\r\nhere.  The way to the south is completely dark, in direct\r\ncontrast to the tunnels to the west.  You peer hard to the\r\nsouth, but can make out nothing in the impenetrable \r\ndarkness.  And still that distant thumping impinges on \r\nyour consciousness...\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3336
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3334
+[[rooms]]
+vnum = 3336
+name = "A Cave Passageway"
+description = "   You are standing in a north-south tunnel carved \r\nnaturally through the stone of the mountain.  To the \r\nnorth the tunnel is lighted by sconces along the wall, \r\nbanishing the deep, deep darkness you now stand in.  To \r\nthe south you can see nothing.  A deep thumping noise \r\nseems to be getting louder and louder as you stand here, \r\ncoming from somewhere deep inside.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3335
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3337
+[[rooms]]
+vnum = 3337
+name = "A Cave Passageway"
+description = "   The passageway switches directions again in the dark \r\ngloom of the mountain, heading to the north and east from \r\nhere.  As you round the corner, a trick of the acoustics \r\nmake the deep thrumming and pounding you've been hearing \r\nsound as if its coming from two feet away!  Very unsettling.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3336
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3338
+[[rooms]]
+vnum = 3338
+name = "A Cave Passageway"
+description = "   The tunnel weaves around, twisting to the north and \r\nwest here.  The darkness around you is near total.  Ahead, \r\nyou hear the sounds of something metal banging against \r\nstone.  Could someone be mining out the tunnel, perhaps?\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3339
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3337
+[[rooms]]
+vnum = 3339
+name = "A Cave Passageway"
+description = "   A glimmer of light to the east alerts you to the fact\r\nthat something is going on in the tunnel nearby.  The south\r\nexit of the tunnel leads off into complete darkness.  All\r\naround on the ground are piles of earth and stone, making\r\nyou have to wend through the tunnel carefully.  Hmm.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3340
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3338
+[[rooms]]
+vnum = 3340
+name = "The End Of The Passage"
+description = "   The tunnel stops abruptly here at a fissure in the stone.\r\nAll around on the ground are rocks and gravel, mined from\r\nthe fissure in an attempt to widen it enough for passage.\r\nA few pieces of paper litter and wrappers tells you that\r\nthe work here is relatively recent.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3339
+[[rooms]]
+vnum = 3341
+name = "A Rocky Slope"
+description = "   This treacherous slope leads ever-downward quite a ways,\r\ndown to a valley where there seems to be a small village!  \r\nWhat a village is doing this far from civilization, and how\r\nthey survive you've no idea.  From the smoke wafting from \r\nsome of the chimneys, it looks like this place is still \r\ninhabited as well.\r\n   Now if you can only get down this slope without breaking\r\nan ankle...\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3342
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3308
+[[rooms]]
+vnum = 3342
+name = "A Rocky Slope"
+description = "   You're slipping and sliding across this slope, trying to\r\nget to your destination without breaking your leg or falling\r\nand shattering your head.  Below, you spot some movement in\r\nthe village, giving proof the place is not a ghost-town.\r\n   The main road of the village starts at the bottom of \r\nthe slope just to the east, and the slope continues west\r\nand up far, far up the mountain.\r\n"
+flags = "c"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3343
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3341
+[[rooms]]
+vnum = 3343
+name = "Main Road"
+description = "   This place leaves you very unimpressed.  And bored.  \r\nYou are definitely bored by this place.  The people are \r\nlistless, going about their daily chores with a slowness \r\nthat pains your eyes.  A slope to the west climbs up the \r\nmountainside, and two open shops made of wood and stone \r\nare to your north and south.  East-wards this road continues.\r\n   There is a small sign here.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3344
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3346
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3345
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3342
+
+[[rooms.extra]]
+keyword = "sign"
+description = "\r\n        ,_____________________________.\r\n        |                             |\r\n\t|   Stanneg by the Mountains  |\r\n\t|                             |\r\n\t|       Population: 27        |\r\n\t|\t\t\t      |\r\n        |           -- BUAG SIGNS INC.|\r\n\t`-----------------------------'\r\n\t\t     |  |\r\n\t\t     |  |\r\n\t\t     |  |\r\n\t\t     |  |   \r\n\r\n"
+[[rooms]]
+vnum = 3344
+name = "The Mountain Tavern"
+description = "   Hmm.  Looks like there's no one here, not even an bartender.\r\nEvidently you've come during off hours, since no bar could be\r\nTHIS dull.  The walls are decorated with mounted animal heads\r\nand arrows and longbows and other hunting equipment/trophies.\r\nAll of it looks rather plain.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3343
+[[rooms]]
+vnum = 3345
+name = "The General Store"
+description = "   A bored shopkeeper waves an idle hand towards his stock\r\nof stuff.  Browse, type list, buy, sell, whatever...\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3343
+[[rooms]]
+vnum = 3346
+name = "Main Road"
+description = "   Nothing is going on in this section of village either.  To the\r\neast is an actual road intersection, and to the west you see one\r\nof the ends of this road.  A large grassy area to the south is\r\nfenced off for a horse corral.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3348
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3347
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3343
+[[rooms]]
+vnum = 3347
+name = "The Corral"
+description = "   Many horses look up at you when you enter this corral.\r\nThe horses are kept in by a big wooden fence, which they\r\nseem quite happy to been kept in by.  You don't see anyone\r\naround taking care of these horses, but someone is probably\r\nclose by.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3346
+[[rooms]]
+vnum = 3348
+name = "The Intersection"
+description = "   You are standing in an intersection deep in the heart\r\nof Stanneg by the Mountains.  In fact, this is the ONLY\r\nintersection anywhere in Stanneg by the Mountain it \r\nappears.\r\n   There are some buildings to the north, and south, and\r\neast, and west.  None particularly stand out from the \r\nothers.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3349
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3355
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3353
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3346
+[[rooms]]
+vnum = 3349
+name = "A Small Road"
+description = "   This road runs north through Stanneg by the Mountains, \r\nif through would be the operative word for such a motley \r\ncollection of buildings.  Westwards is a small, open-roofed\r\nbuilding that appears to be a farmer's market.  The road \r\nyou are on continues north, and comes to an intersection \r\njust south of here.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3351
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3348
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3350
+[[rooms]]
+vnum = 3350
+name = "The Farmer's Market"
+description = "   One farmer's wife stands here, waiting for someone to\r\nbuy the food her family has grown.  She looks bored, but\r\nnot unhappy... no competition!\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3349
+[[rooms]]
+vnum = 3351
+name = "A Small Road"
+description = "   The small, north-south road running through Stanneg\r\nby the Mountains ends here, curving to become the front\r\nwalk of a private home to the east.  The road runs south\r\nfrom this house, towards the center of the village.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "A normal, wooden front door to a normal looking home.  It is\r\nnothing to write home about.\r\n"
+keyword = "door front"
+door = 1
+key = -1
+to_room = 3352
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3349
+[[rooms]]
+vnum = 3352
+name = "A Private Home"
+description = "   The interior of this home is simple and rustic.  A \r\nladder leads up to the loft, where the sleeping pallets \r\nare tucked away.  A wood-burning stove keeps the place \r\nwell heated and cozy.  A homemade rocking chair stands \r\ncrooked in the corner, draped with a old looking afghan.  \r\nThis home is a nice place, very comfortable.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+description = "There is a normal appearing door set in the western wall.\r\n"
+keyword = "door front"
+door = 1
+key = -1
+to_room = 3351
+[[rooms]]
+vnum = 3353
+name = "A Small Road"
+description = "   The road ends here, leading up to a stone house\r\nto the south.  Smoke rises from the chimney in a dark\r\nstream, and the windows are frosted over with humidity.\r\nNorth, you see the main intersection of Stanneg.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3348
+
+[[rooms.exits]]
+dir = 2
+description = "A normal looking front door made of wood serves as the entrance. \r\n"
+keyword = "door front"
+door = 1
+key = -1
+to_room = 3354
+[[rooms]]
+vnum = 3354
+name = "A Private Home"
+description = "   This home strikes you as unbearable warm and uncomfortable.\r\nThe fireplace is going at a full-bonfire, a mammoth stack of\r\nfirewood beside it against the wall.  The decorations seem\r\nsomewhat spartan and plain; a landscape, an old hunting \r\nbow... nothing much of interest.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see a normal looking wooden door.\r\n"
+keyword = "door front"
+door = 1
+key = -1
+to_room = 3353
+[[rooms]]
+vnum = 3355
+name = "Main Road"
+description = "   The main road through Stanneg ends here at a large well\r\nthat leads deep, deep into the earth.  To the north of the \r\nwell is a large building, with a large WELCOME mat outside \r\nits front door.  Westwards you see the a road intersection \r\nin the center of the tiny village.  Around you is a rocky \r\nterrain in the middle of this mountain range...not very \r\nmany places else to go.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "There is a large set of double doors, made of wood blocking the way.\r\n"
+keyword = "door doors double"
+door = 1
+key = -1
+to_room = 3356
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3348
+[[rooms]]
+vnum = 3356
+name = "Stanneg Inn"
+description = "   This is a plainly decorated room, the main room of the\r\nStanneg Inn.  A large arch to the west leads to a common\r\nroom where food and drink can be ordered, and a set of\r\nrickety wooden stairs lead up to the rooms are.  A thread-\r\nbare rug lies in the middle of the floor, evidently well-\r\nloved by a cat or two from the quantity of hair on it.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "There is a large set of double doors, made of wood set into the wall.\r\n"
+keyword = "door doors double"
+door = 1
+key = -1
+to_room = 3355
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3357
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 3358
+[[rooms]]
+vnum = 3357
+name = "The Common Room"
+description = "   A large fireplace warms this room in great waves of\r\nheat, to combat the chill drafts eminating from the windows\r\non the west and north sides of this room.  A few benches\r\nand tables are clustered in the center of the room, for\r\nthe use of the locals.  Fairly plain, for a frequented\r\ngathering place.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3356
+[[rooms]]
+vnum = 3358
+name = "The Reception"
+description = "   A hall leads away to the west lined with small brown\r\ndoors.  A small table has a ledger on it, seemingly\r\nalmost unused.  The hall is plain and without any \r\ndecoration, except for a nice painting of (what else)\r\na mountain hanging above the stairs that lead back\r\ndown to the inn proper.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 3356
+[[rooms]]
+vnum = 3359
+name = "A Rocky Slope"
+description = "   This slope is fairly shallow and easy to walk on, \r\ndespite the loose shale and gravel.  To the east is a high \r\nridge you could stand on, and to the west is a flat area \r\nnear two trails leading up and down into the mountains.  \r\nHigh above you, to your west, is that ominous, dark peak, \r\nwhich seems to radiating a sense of hopelessness...\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3308
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3360
+[[rooms]]
+vnum = 3360
+name = "A Ledge"
+description = "   This ledge overlooks a small path that leads up and \r\ndown from here.  Below, you see the path head down to a \r\nlarge flat area where a small cottage lies nestled in the \r\nmountains, smoke rising from it in a curling line.  Above, \r\nthe path seems to head towards that dark peak piercing the \r\nsky.  You notice a few boot-tracks in the earth, seemingly \r\nto lead down towards the cottage.\r\n"
+flags = "0"
+sector = 4
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3359
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 3363
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 3361
+[[rooms]]
+vnum = 3361
+name = "Outside Of A Cottage"
+description = "   Now that you approach closer to the cottage, you notice \r\nthat the smoke is not coming from the chimney, but rather \r\nthe gutted ruins of the building.  Something torched this \r\nplace, badly.  You see no signs of life among the wreckage.\r\nYou can enter one of the particularly large holes in the \r\nwall to the west, with caution.\r\n"
+flags = "0"
+sector = 4
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3362
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 3360
+[[rooms]]
+vnum = 3362
+name = "The Torched Cottage"
+description = "   This whole place is smouldering still from whatever \r\ndecided to try to burn it to the ground.  On the floor \r\nnear the center of the ruined structure is the burnt and \r\ndessicated corpse of a man, outstretched and blackened.  \r\nThere's not much to see here; whatever decided to destroy \r\nthis place did it very well.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3361
+[[rooms]]
+vnum = 3363
+name = "A Mountain Trail"
+description = "   This mountain trail leads straight up into the evil \r\nlooking mountains.  High above you, one mountain peak \r\nseems to radiate danger and fear, and the trail seems \r\nto be leading straight up to it.  You wonder if it is \r\nwise to continue this way...\r\n   The trail goes even higher up to the west, and back \r\ndown to the west.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3364
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 3360
+[[rooms]]
+vnum = 3364
+name = "A Mountain Trail"
+description = "   The trail leads up even higher into the mountains to the\r\nwest here.  You shiver as the cold mountain air washes over\r\nyou, and your back prickles as you wonder if anything lives\r\nup here, or anything _dangerous_ for that matter.  Maybe \r\nheading back down to the east would be a good idea...\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3363
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3365
+[[rooms]]
+vnum = 3365
+name = "A Mountain Trail"
+description = "   The trail leads up the side of the tallest mountain in \r\nthe range -- the one that sticks up into the dark sky like\r\na monument to death and futility.  The trail leads back to \r\nsafety to the east, and goes even higher to the west.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3364
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 3366
+[[rooms]]
+vnum = 3366
+name = "Near The Peak"
+description = "   This is as close to the peak as you're going to get, \r\nunless you use that tiny, tiny path leading up to your \r\nnorth.  Up the side of the mountain you see a great cave \r\nhollowed out, the inside pitch black.  The path leads down \r\nthe mountains to your east, which seems to be the best \r\nplace to go.\r\n"
+flags = "gj"
+sector = 5
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3367
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 3365
+[[rooms]]
+vnum = 3367
+name = "A Small, Dangerous Path"
+description = "   This path leads up, up, up the side of the mountain, to \r\nthe evil-seeming cave.  It also heads down to the south--a \r\nlot safer place to be.  In fact, you hear footsteps above \r\nyour head...\r\n"
+flags = "gj"
+sector = 5
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3366
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 3368
+[[rooms]]
+vnum = 3368
+name = "A Small, Dangerous Path"
+description = "   Unfortunately, you realize too late that this bigger \r\nledge that leads north to the darkened cave is an ideal \r\nspot for an ambush.  This ledge gives you a beautiful \r\npanoramic view of the entire mountain range, however.  \r\nBreathtaking!\r\n"
+flags = "gj"
+sector = 5
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3369
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 3367
+[[rooms]]
+vnum = 3369
+name = "The Cave Entrance"
+description = "   You are standing in the entrance of a simply huge cave!\r\nThe size is stunning!  All around the entrance are burnt \r\nbones and various types of wooden and metal debris.  Giant \r\nclaw marks are all along the ground, leading back deeper \r\ninto the cave.\r\n   Two tunnels lead off from here, one up, one down.  There\r\nare claw marks leading in either direction.\r\n"
+flags = "adgj"
+sector = 4
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3368
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 3370
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 3373
+[[rooms]]
+vnum = 3370
+name = "A Sloping Tunnel"
+description = "   The tunnels slopes up to the north deeper into the \r\nmountain.  A rather gusty breeze riffles your clothing \r\nfrom ahead somewhere.  The claw marks in the stone floor \r\ncontinue up the passage, through the darkness.\r\n"
+flags = "adgj"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3371
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 3369
+[[rooms]]
+vnum = 3371
+name = "A Sloping Tunnel"
+description = "   The tunnel continues its slope upwards, and the wind \r\nblows at you even stronger yet.  The claw tracks in the \r\nstone stop abruptly here, where there seems to be a lot\r\nof unearthed dirt and stone around, heaped upon the floor.  \r\nYou feel uneasy about this place.\r\n"
+flags = "adgj"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3372
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3370
+
+[[rooms.extra]]
+keyword = "floor"
+description = "The floor up ahead looks... strange.  You don't think going ahead\r\nwould be a good idea.\r\n"
+
+[[rooms.extra]]
+keyword = "claw claws track tracks mark marks"
+description = "They stop very abruptly here, right where the piles of earth begin,\r\nit seems.\r\n"
+
+[[rooms.extra]]
+keyword = "dirt stone"
+description = "It has been dug from somewhere, but where?\r\n"
+[[rooms]]
+vnum = 3372
+name = "The Pit"
+description = "  You fall through the illusionary floor.\r\n\r\n  You hit the poisoned spikes below.\r\n\r\n  You die very slowly of bloodloss, your head impaled at \r\nan awkward angle.\r\n\r\n  \r\n\r\n\r\n\r\n\r\n\r\n"
+flags = "bdgj"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3371
+[[rooms]]
+vnum = 3373
+name = "A Sloping Tunnel"
+description = "   This tunnel slopes deep, down into the mountain's heart.\r\nThe air feels still and uncomfortably warm, despite the \r\ncloseness of the cave's entrance above you.  There's a \r\ndeep, musky odor in the air, and the giant claw marks \r\ncontinue downwards.\r\n"
+flags = "adgj"
+sector = 4
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 3369
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 3374
+[[rooms]]
+vnum = 3374
+name = "A Sloping Tunnel"
+description = "   A bright light greets your eyes from the north, in \r\ndirect contrast to the darkness of the tunnel overhead.  \r\nYou break  out in a sweat due to the overwhelming warmth \r\nof the air.  The musky odor has grown quite intense, \r\ndrowning out everything else in the air and making it hard \r\nto breathe.  Something in your gut begins squirming \r\nuncomfortably as you wonder what's ahead...\r\n"
+flags = "adgj"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 3375
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 3373
+[[rooms]]
+vnum = 3375
+name = "The Lair"
+description = "   This place is huge!!!  It should be considering the \r\ndragon's great bulk.  However, instead of seeing the \r\ncustomary carnage and mound of gold that one is accustomed \r\nto seeing in a dragon lair, this one is decorated subtly \r\nwith tapestries and drapes, and other comforts of human \r\nlife.  There is even a huge-dragon sized bed -- undoubtedly \r\nconjured to life by its elder dragon owner.\r\n"
+flags = "dgj"
+sector = 4
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3374

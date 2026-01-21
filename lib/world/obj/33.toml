@@ -1,0 +1,384 @@
+[[objects]]
+vnum = 3300
+name = "orange"
+short_descr = "an orange"
+description = "An orange lies on the ground here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [8, 0, 0, 0]
+weight = 1
+cost = 8
+rent = 8
+
+[[objects.extra_desc]]
+keyword = "orange"
+description = "You wonder how it got here, seeing how \r\noranges are non-migratory.\r\n"
+[[objects]]
+vnum = 3301
+name = "bale wheat"
+short_descr = "a bale of wheat"
+description = "There is a bale of wheat here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [24, 0, 0, 0]
+weight = 100
+cost = 1000
+rent = 1000
+
+[[objects.extra_desc]]
+keyword = "bale wheat"
+description = "It doesn't look appetizing to you, but\r\na horse might enjoy this...\r\n"
+[[objects]]
+vnum = 3302
+name = "zither"
+short_descr = "a big zither"
+description = "A HUGE zither made of gold rests in the corner"
+type = 8
+extra_flags = "0"
+wear_flags = "1"
+values = [0, 0, 0, 0]
+weight = 40
+cost = 200000
+rent = 20000
+
+[[objects.extra_desc]]
+keyword = "zither"
+description = "Someone truly huge with big fingers might be\r\nable to play this.  You can't.\r\n"
+[[objects]]
+vnum = 3303
+name = "barrel perfume"
+short_descr = "a barrel of perfume"
+description = "You can smell a barrel on the other side of the room from here."
+type = 8
+extra_flags = "0"
+wear_flags = "1"
+values = [0, 0, 0, 0]
+weight = 20
+cost = 100000
+rent = 10000
+
+[[objects.extra_desc]]
+keyword = "barrel perfume"
+description = "Smells good...the label reads:\r\n\r\n   \"Somewhere between GPA and MUD there lies...\r\n\t\tOBSESSION\"\r\n"
+[[objects]]
+vnum = 3304
+name = "statue"
+short_descr = "a statue"
+description = "There is a statue of Aglandiir here, made of solid gold."
+type = 8
+extra_flags = "0"
+wear_flags = "1"
+values = [0, 0, 0, 0]
+weight = 30
+cost = 150000
+rent = 15000
+
+[[objects.extra_desc]]
+keyword = "statue"
+description = "He's a pretty striking chap, for a dragon.\r\n"
+[[objects]]
+vnum = 3305
+name = "halberd"
+short_descr = "a halberd"
+description = "A runed halberd lies on the ground here."
+type = 5
+extra_flags = "g"
+wear_flags = "8193"
+values = [0, 1, 12, 3]
+weight = 16
+cost = 10000
+rent = 3000
+
+[[objects.affects]]
+location = 18
+modifier = 5
+
+[[objects.extra_desc]]
+keyword = "halberd"
+description = "The runes glow with a bright light, making you\r\nthink that this might be a pretty decent weapon.\r\n"
+[[objects]]
+vnum = 3306
+name = "potion protection dun vial"
+short_descr = "a potion of protection"
+description = "A vial of a dun fluid is here."
+type = 10
+extra_flags = "a"
+wear_flags = "1"
+values = [20, 36, 1, 3]
+weight = 1
+cost = 10000
+rent = 2000
+
+[[objects.extra_desc]]
+keyword = "potion protection dun vial"
+description = "Looks thick, and brownish-grey (dun).  Ick!\r\n"
+[[objects]]
+vnum = 3307
+name = "crown"
+short_descr = "a dragon's crown"
+description = "Aglandiir's crown sits here, radiating a shield."
+type = 8
+extra_flags = "a"
+wear_flags = "0"
+values = [0, 0, 0, 0]
+weight = 400
+cost = 0
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "crown"
+description = "The shield repulses you, making you wonder how\r\nyou're going to get your hands on this huge, valuble\r\nchunk of gold...\r\n"
+[[objects]]
+vnum = 3308
+name = "apple"
+short_descr = "an apple"
+description = "A scrawny red apple sits here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [4, 0, 0, 0]
+weight = 1
+cost = 5
+rent = 2
+
+[[objects.extra_desc]]
+keyword = "apple"
+description = "It is not wormy... yet.\r\n"
+[[objects]]
+vnum = 3309
+name = "bread loaf"
+short_descr = "a loaf of bread"
+description = "A fresh loaf of bread lies here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [12, 0, 0, 0]
+weight = 1
+cost = 10
+rent = 5
+
+[[objects.extra_desc]]
+keyword = "bread loaf"
+description = "Mmmm... Rye!\r\n"
+[[objects]]
+vnum = 3310
+name = "melon"
+short_descr = "a melon"
+description = "A melon sits here, discarded evidently."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [8, 0, 0, 0]
+weight = 3
+cost = 8
+rent = 3
+
+[[objects.extra_desc]]
+keyword = "melon"
+description = "Wow!  Look at the size of that melon!\r\n"
+[[objects]]
+vnum = 3311
+name = "knife"
+short_descr = "a knife"
+description = "An exquisitely crafted knife rests here."
+type = 5
+extra_flags = "dn"
+wear_flags = "24577"
+values = [0, 3, 5, 11]
+weight = 8
+cost = 1000000
+rent = 20000
+
+[[objects.extra_desc]]
+keyword = "knife"
+description = "The craftsmanship... it takes your breath away!\r\nThis knife... it had to have been forged by the \r\nlegendary smith Gabadiel.  It must be worth a\r\nfortune!\r\n"
+
+[[objects.affects]]
+location = 18
+modifier = 3
+
+[[objects.affects]]
+location = 2
+modifier = 2
+[[objects]]
+vnum = 3312
+name = "sword long"
+short_descr = "a long sword"
+description = "A superb long sword sticks in the earth."
+type = 5
+extra_flags = "dmn"
+wear_flags = "24577"
+values = [0, 2, 7, 3]
+weight = 15
+cost = 750000
+rent = 15000
+
+[[objects.extra_desc]]
+keyword = "sword long"
+description = "This sword is light, but the heft is perfectly\r\nbalanced.  Such an incredible weapon can only have\r\nbe crafted by the legendary smith Gabadiel, and\r\nas such be worth a fortune!\r\n"
+
+[[objects.affects]]
+location = 18
+modifier = 2
+
+[[objects.affects]]
+location = 1
+modifier = 1
+[[objects]]
+vnum = 3313
+name = "sword short"
+short_descr = "a short sword"
+description = "A short sword lies here... a work of art!"
+type = 5
+extra_flags = "adimn"
+wear_flags = "24577"
+values = [0, 4, 6, 3]
+weight = 10
+cost = 10000000
+rent = 30000
+
+[[objects.extra_desc]]
+keyword = "sword short"
+description = "It brings tears to your eyes.  This must have\r\nbeen Gabadiel the smith's masterpiece; his final\r\nwork.  Simply invaluble.\r\n"
+
+[[objects.affects]]
+location = 18
+modifier = 4
+
+[[objects.affects]]
+location = 2
+modifier = 3
+[[objects]]
+vnum = 3314
+name = "corpse"
+short_descr = "a dismembered and burnt corpse"
+description = "A dismembered and burnt corpse lies on the ground here."
+type = 13
+extra_flags = "0"
+wear_flags = "0"
+values = [0, 0, 0, 0]
+weight = 1
+cost = 1
+rent = 1
+
+[[objects.extra_desc]]
+keyword = "corpse"
+description = "It is still smouldering a little; the culprits can't\r\nbe far off!\r\n"
+[[objects]]
+vnum = 3315
+name = "scimitar"
+short_descr = "a scimitar"
+description = "A scimitar as long as your arm lies here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 1, 7, 3]
+weight = 10
+cost = 500
+rent = 50
+
+[[objects.extra_desc]]
+keyword = "scimitar"
+description = "This weapon really isn't of too high a quality.\r\n"
+[[objects]]
+vnum = 3316
+name = "crate"
+short_descr = "a crate"
+description = "A crate is stacked here."
+type = 15
+extra_flags = "0"
+wear_flags = "1"
+values = [200, 5, 0, 0]
+weight = 50
+cost = 100
+rent = 20
+
+[[objects.extra_desc]]
+keyword = "crate"
+description = "It's a standard wooden crate.\r\n"
+[[objects]]
+vnum = 3317
+name = "bow hunting"
+short_descr = "a hunting bow"
+description = "A hunting bow lies here, unwanted"
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 1, 5, 11]
+weight = 6
+cost = 400
+rent = 40
+
+[[objects.extra_desc]]
+keyword = "bow hunting"
+description = "This is the type of weapon you would use to bag\r\nsome deer or rabbits, but not the type you'd take\r\ninto battle...\r\n"
+
+[[objects.affects]]
+location = 19
+modifier = 1
+[[objects]]
+vnum = 3318
+name = "vest leather"
+short_descr = "a leather vest"
+description = "A nice leather vest lies here."
+type = 9
+extra_flags = "g"
+wear_flags = "9"
+values = [6, 0, 0, 0]
+weight = 6
+cost = 5000
+rent = 500
+
+[[objects.extra_desc]]
+keyword = "vest leather"
+description = "The seams are delicately sewn with a enruned thread...\r\n"
+[[objects]]
+vnum = 3319
+name = "glass beer"
+short_descr = "a glass"
+description = "A glass of beer sits forgotten here."
+type = 17
+extra_flags = "0"
+wear_flags = "16385"
+values = [1, 1, 1, 0]
+weight = 2
+cost = 5
+rent = 1
+
+[[objects.extra_desc]]
+keyword = "glass"
+description = "This is a nice glass filled with homebrew.  There doesn't seem to\r\nbe too much stuff floating in it.\r\n"
+[[objects]]
+vnum = 3320
+name = "glass mead ale"
+short_descr = "a glass"
+description = "A big glass of mead sits here, cool and frosty."
+type = 17
+extra_flags = "0"
+wear_flags = "16385"
+values = [1, 1, 3, 0]
+weight = 2
+cost = 8
+rent = 3
+
+[[objects.extra_desc]]
+keyword = "glass mead"
+description = "Looks good.  Looks warm.  Doesn't matter; it still looks good.\r\n"
+[[objects]]
+vnum = 3321
+name = "shot whisky"
+short_descr = "a shot"
+description = "A shot of whisky is sitting here."
+type = 17
+extra_flags = "0"
+wear_flags = "16385"
+values = [1, 1, 5, 0]
+weight = 1
+cost = 10
+rent = 5
+
+[[objects.extra_desc]]
+keyword = "shot"
+description = "Whew!  Looks like potent stuff!\r\n"

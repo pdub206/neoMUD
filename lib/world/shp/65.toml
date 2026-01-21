@@ -1,0 +1,70 @@
+[[shops]]
+vnum = 6503
+producing = [3022, 6504, 6505, 6510, 6512, -1]
+buy_profit = 1.90
+sell_profit = 0.30
+broke_temper = 1
+bitvector = 2
+keeper = 6503
+trade_with = 0
+rooms = [6516, -1]
+open1 = 1
+close1 = 22
+open2 = 23
+close2 = 28
+
+[[shops.trade]]
+type = 9
+
+[[shops.trade]]
+type = 5
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s We don't have any in storage, sorry!"
+no_such_item2 = "%s Check your possessions, you don't have that."
+do_not_buy = "%s I don't care for those types of goods."
+missing_cash1 = "%s I can't afford something that great!"
+missing_cash2 = "%s You can't afford it, and don't ask a God for the money!"
+message_buy = "%s That'll cost you %d coins, please."
+message_sell = "%s You'll get %d coins for that."
+[[shops]]
+vnum = 6504
+producing = [3000, 3003, 3010, 3011, 3031, 6013, -1]
+buy_profit = 1.90
+sell_profit = 0.20
+broke_temper = 0
+bitvector = 2
+keeper = 6504
+trade_with = 0
+rooms = [6535, -1]
+open1 = 6
+close1 = 18
+open2 = 20
+close2 = 28
+
+[[shops.trade]]
+type = 1
+
+[[shops.trade]]
+type = 15
+
+[[shops.trade]]
+type = 17
+
+[[shops.trade]]
+type = 19
+
+[[shops.trade]]
+type = -1
+
+[shops.messages]
+no_such_item1 = "%s Haven't got that on storage!"
+no_such_item2 = "%s You don't seem to have that!"
+do_not_buy = "%s I don't buy those types, try another shop."
+missing_cash1 = "%s I cannot afford such a great treasure!"
+missing_cash2 = "%s You can't afford that!"
+message_buy = "%s That'll be %d coins, please."
+message_sell = "%s You'll get %d coins for that!"

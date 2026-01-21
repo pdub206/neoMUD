@@ -1,0 +1,2092 @@
+[[rooms]]
+vnum = 7200
+name = "The Treasury"
+description = "   You are in a small but well equipped treasury.  You can see some writing\r\non the wall.  The ceiling has a funny glow, which enables you to see.  You\r\ncan get back into the inner lair through the stone door which is east.\r\n"
+flags = "cd"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "You look back through the opening into the inner lair.\r\n"
+keyword = "door stone"
+door = 2
+key = 7205
+to_room = 7201
+
+[[rooms.extra]]
+keyword = "writing"
+description = "You read the number '666'.\r\n"
+
+[[rooms.extra]]
+keyword = "door stone"
+description = "This is a heavy black stone door it looks very solid.\r\n"
+[[rooms]]
+vnum = 7201
+name = "The Inner Lair"
+description = "   You are in a octagonal room with smooth purple stone walls.  The floor is \r\nmade from black stone.  In the western wall you see a large black stone door.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "You look back through the door into the lair.\r\n"
+keyword = "door wooden"
+door = 1
+key = -1
+to_room = 7202
+
+[[rooms.exits]]
+dir = 3
+description = "You see the treasury.\r\n"
+keyword = "door stone"
+door = 2
+key = 7205
+to_room = 7200
+[[rooms]]
+vnum = 7202
+name = "The Lair"
+description = "   On the floor you see a lot of human decay, like bones and skulls.  You\r\nalso see a lot of slime.  On the wall is a torch sitting in its sconce.  To\r\nthe north is a wooden door.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You can see the inner lair.\r\n"
+keyword = "door wooden"
+door = 1
+key = -1
+to_room = 7201
+
+[[rooms.exits]]
+dir = 1
+description = "You see another part of the lair.\r\n"
+door = 0
+key = -1
+to_room = 7205
+
+[[rooms.exits]]
+dir = 2
+description = "You see another part of the lair.\r\n"
+door = 0
+key = -1
+to_room = 7203
+
+[[rooms.extra]]
+keyword = "torch sconce"
+description = "The torch is bolted to the sconce and the sconce to the wall.\r\n"
+
+[[rooms.extra]]
+keyword = "slime"
+description = "The slime is slimy and uninteresting.\r\n"
+
+[[rooms.extra]]
+keyword = "skull skulls bones decay"
+description = "On all the skulls you notice that there is a three inch hole in the \r\nforehead.  All the bones are broken and old.\r\n"
+[[rooms]]
+vnum = 7203
+name = "The Lair"
+description = "   On the floor you see a lot of human decay, like bones and skulls.  You\r\nalso see a lot of slime.  On the wall is a torch sitting in its sconce.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see another part of the lair.\r\n"
+door = 0
+key = -1
+to_room = 7202
+
+[[rooms.exits]]
+dir = 1
+description = "You see another part of the lair.\r\n"
+door = 0
+key = -1
+to_room = 7206
+
+[[rooms.exits]]
+dir = 2
+description = "You see another part of the lair.\r\n"
+door = 0
+key = -1
+to_room = 7204
+
+[[rooms.extra]]
+keyword = "torch sconce"
+description = "The torch is bolted to the sconce and the sconce to the wall.\r\n"
+
+[[rooms.extra]]
+keyword = "slime"
+description = "The slime is slimy and uninteresting.\r\n"
+
+[[rooms.extra]]
+keyword = "skull skulls bones decay"
+description = "On all the skulls you notice that there is a three inch hole in the \r\nforehead.  All the bones are broken and old.\r\n"
+[[rooms]]
+vnum = 7204
+name = "The Lair"
+description = "   On the floor you see a lot of human decay, like bones and skulls.  You\r\nalso see a lot of slime.  On the wall is a torch sitting in its sconce.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see another part of the lair.\r\n"
+door = 0
+key = -1
+to_room = 7203
+
+[[rooms.exits]]
+dir = 1
+description = "You see another part of the lair.\r\n"
+door = 0
+key = -1
+to_room = 7207
+
+[[rooms.exits]]
+dir = 2
+description = "You see the lair entrance.\r\n"
+keyword = "door wooden"
+door = 1
+key = -1
+to_room = 7208
+
+[[rooms.extra]]
+keyword = "torch sconce"
+description = "The torch is bolted to the sconce and the sconce to the wall.\r\n"
+
+[[rooms.extra]]
+keyword = "slime"
+description = "The slime is slimy and uninteresting.\r\n"
+
+[[rooms.extra]]
+keyword = "skull skulls bones decay"
+description = "On all the skulls you notice that there is a three inch hole in the \r\nforehead.  All the bones are broken and old.\r\n"
+[[rooms]]
+vnum = 7205
+name = "The Lair"
+description = "   On the floor you see a lot of human decay, like bones and skulls.  You\r\nalso see a lot of slime.  On the wall is a torch sitting in its sconce.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 2
+description = "You see another part of the lair.\r\n"
+door = 0
+key = -1
+to_room = 7206
+
+[[rooms.exits]]
+dir = 3
+description = "You see another part of the lair.\r\n"
+door = 0
+key = -1
+to_room = 7202
+
+[[rooms.extra]]
+keyword = "torch sconce"
+description = "The torch is bolted to the sconce and the sconce to the wall.\r\n"
+
+[[rooms.extra]]
+keyword = "slime"
+description = "The slime is slimy and uninteresting.\r\n"
+
+[[rooms.extra]]
+keyword = "skull skulls bones decay"
+description = "On all the skulls you notice that there is a three inch hole in the \r\nforehead.  All the bones are broken and old.\r\n"
+[[rooms]]
+vnum = 7206
+name = "The Lair"
+description = "   On the floor you see a lot of human decay, like bones and skulls.  You\r\nalso see a lot of slime.  On the wall is a torch sitting in its sconce.\r\n"
+flags = "cd"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see another part of the lair.\r\n"
+door = 0
+key = -1
+to_room = 7205
+
+[[rooms.exits]]
+dir = 2
+description = "You see another part of the lair.\r\n"
+door = 0
+key = -1
+to_room = 7207
+
+[[rooms.exits]]
+dir = 3
+description = "You see another part of the lair.\r\n"
+door = 0
+key = -1
+to_room = 7203
+
+[[rooms.extra]]
+keyword = "torch sconce"
+description = "The torch is bolted to the sconce and the sconce to the wall.\r\n"
+
+[[rooms.extra]]
+keyword = "slime"
+description = "The slime is slimy and uninteresting.\r\n"
+
+[[rooms.extra]]
+keyword = "bones decay"
+description = "All the bones are broken and old.\r\n"
+[[rooms]]
+vnum = 7207
+name = "The Lair"
+description = "   On the floor you see a lot of human decay, like bones and skulls.  You\r\nalso see a lot of slime.  On the wall is a torch sitting in its sconce.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see another part of the lair.\r\n"
+door = 0
+key = -1
+to_room = 7206
+
+[[rooms.exits]]
+dir = 3
+description = "You see another part of the lair.\r\n"
+door = 1
+key = -1
+to_room = 7204
+
+[[rooms.extra]]
+keyword = "torch sconce"
+description = "The torch is bolted to the sconce and the sconce to the wall.\r\n"
+
+[[rooms.extra]]
+keyword = "slime"
+description = "The slime is slimy and uninteresting.\r\n"
+
+[[rooms.extra]]
+keyword = "skull skulls bones decay"
+description = "On all the skulls you notice that there is a three inch hole in the \r\nforehead.  All the bones are broken and old.\r\n"
+[[rooms]]
+vnum = 7208
+name = "The Lair Entrance"
+description = "   You are in a dry part of the sewer.  To the north is a wooden door,\r\nyou can see some slime at the lower part of the door.  You also see\r\nsome skulls and some broken bones.\r\n"
+flags = "acd"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "You can see the lair.\r\n"
+keyword = "door wooden"
+door = 1
+key = -1
+to_room = 7204
+
+[[rooms.exits]]
+dir = 1
+description = "You see a crawlway.\r\n"
+door = 0
+key = -1
+to_room = 7209
+
+[[rooms.extra]]
+keyword = "slime"
+description = "The slime is slimy and uninteresting.\r\n"
+[[rooms]]
+vnum = 7209
+name = "The Crawlway"
+description = "   You are in a narrow crawlway.  It is rather boring here.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+description = "You see a four-way junction.\r\n"
+door = 0
+key = -1
+to_room = 7210
+
+[[rooms.exits]]
+dir = 3
+description = "You see the entrance to a lair.\r\n"
+door = 0
+key = -1
+to_room = 7208
+[[rooms]]
+vnum = 7210
+name = "The Four-Way Junction"
+description = "   You are in a sewer junction.  To the north is a small hole, to the west\r\nis a narrow crawlway and to the east and south the sewer continues.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "You can see a small cave-like room.\r\n"
+door = 0
+key = -1
+to_room = 7211
+
+[[rooms.exits]]
+dir = 1
+description = "You can see a sewer drain.\r\n"
+door = 0
+key = -1
+to_room = 7212
+
+[[rooms.exits]]
+dir = 2
+description = "You can see a sewer drain.\r\n"
+door = 0
+key = -1
+to_room = 7215
+
+[[rooms.exits]]
+dir = 3
+description = "You can see a narrow crawlway.\r\n"
+door = 0
+key = -1
+to_room = 7209
+[[rooms]]
+vnum = 7211
+name = "The Small Cave"
+description = "   You are in a collapsed sewer drain, which now is more like a small cave.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 2
+description = "You look back into the four-way junction.\r\n"
+door = 0
+key = -1
+to_room = 7210
+[[rooms]]
+vnum = 7212
+name = "The Sewer Drain"
+description = "   You are in a dry sewer drain which bends to the north.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "You can see the drain continuing north.\r\n"
+door = 0
+key = -1
+to_room = 7213
+
+[[rooms.exits]]
+dir = 3
+description = "You can see the four-way junction.\r\n"
+door = 0
+key = -1
+to_room = 7210
+[[rooms]]
+vnum = 7213
+name = "The Sewer Drain"
+description = "   You are in a dry sewer drain which bends to the east.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+description = "You can see the drain continuing east.\r\n"
+door = 0
+key = -1
+to_room = 7214
+
+[[rooms.exits]]
+dir = 2
+description = "You can see the drain continuing south.\r\n"
+door = 0
+key = -1
+to_room = 7212
+[[rooms]]
+vnum = 7214
+name = "The End Of The Drain"
+description = "   You are at the end of the drain around you the sewer has collapsed, the\r\nonly exit is west.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 3
+description = "You see the sewer drain.\r\n"
+door = 0
+key = -1
+to_room = 7213
+[[rooms]]
+vnum = 7215
+name = "The Half-Wet Drain"
+description = "   You are in a sewer drain where the floor is covered with water.  To\r\nthe north it looks more dry, south however the drain runs down into\r\nsome water.\r\n"
+flags = "ad"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+description = "To the north lies a dry four-way junction.\r\n"
+door = 0
+key = -1
+to_room = 7210
+
+[[rooms.exits]]
+dir = 2
+description = "To the south you see a sewer drain filled with water.\r\n"
+door = 0
+key = -1
+to_room = 7216
+
+[[rooms.extra]]
+keyword = "water"
+description = "The water is dirty but it looks like you would be able to swim in it.\r\n"
+[[rooms]]
+vnum = 7216
+name = "Under Water In The Sewer"
+description = "   You are swimming in some dirty water and are holding your breath.  You'd\r\nbetter continue onwards before you drown.  It is a good thing that you can\r\nhold your light above the water-level.\r\n"
+flags = "ad"
+sector = 6
+
+[[rooms.exits]]
+dir = 0
+description = "It is hard to see, but it looks like the drain runs slightly upwards.\r\n"
+door = 0
+key = -1
+to_room = 7215
+
+[[rooms.exits]]
+dir = 2
+description = "It is hard to see, but it looks like the drain runs a little bit upwards.\r\n"
+door = 0
+key = -1
+to_room = 7217
+[[rooms]]
+vnum = 7217
+name = "The Half-Dry Drain"
+description = "   You are in a half-dry sewer drain.  To the north the drain runs a little\r\nbit downwards into some water to the east you can see a small hole.  To the\r\nwest you see another drain.\r\n"
+flags = "ad"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+description = "You see the drain running down into some water.\r\n"
+door = 0
+key = -1
+to_room = 7216
+
+[[rooms.exits]]
+dir = 1
+description = "Through the hole you can just make out a very small room.\r\n"
+door = 0
+key = -1
+to_room = 7218
+
+[[rooms.exits]]
+dir = 3
+description = "You see a drain running to the west.\r\n"
+door = 0
+key = -1
+to_room = 7219
+
+[[rooms.extra]]
+keyword = "hole"
+description = "Through the hole you can just make out a very small room.\r\n"
+
+[[rooms.extra]]
+keyword = "water"
+description = "The water is dirty but it looks like you would be able to swim in it.\r\n"
+[[rooms]]
+vnum = 7218
+name = "The Very Small Room"
+description = "   You are in a very small room, it is pretty uninteresting.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 3
+description = "Through the little hole you can see a half-dry drain.\r\n"
+door = 0
+key = -1
+to_room = 7217
+[[rooms]]
+vnum = 7219
+name = "A Dry Sewer Drain"
+description = "   You are in a dry but dirty sewer drain.  The drain continues east and\r\nsouth.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+description = "You see a half-dry drain.\r\n"
+door = 0
+key = -1
+to_room = 7217
+
+[[rooms.exits]]
+dir = 2
+description = "You see another boring sewer drain.\r\n"
+door = 0
+key = -1
+to_room = 7220
+[[rooms]]
+vnum = 7220
+name = "A Boring Drain"
+description = "   You are in yet another sewer drain.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "You see a sewer drain continuing to the north.\r\n"
+door = 0
+key = -1
+to_room = 7219
+
+[[rooms.exits]]
+dir = 1
+description = "You can see another drain to the east.\r\n"
+door = 0
+key = -1
+to_room = 7221
+[[rooms]]
+vnum = 7221
+name = "The Sewer Drain"
+description = "   You are in a sewer drain, there is nothing special in here, except for a \r\nloud echo.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+description = "You can see another sewer drain.\r\n"
+door = 0
+key = -1
+to_room = 7222
+
+[[rooms.exits]]
+dir = 3
+description = "You can make out a sewer drain to the west.\r\n"
+door = 0
+key = -1
+to_room = 7220
+
+[[rooms.exits]]
+dir = 4
+description = "You can see a sewer line.\r\n"
+door = 0
+key = -1
+to_room = 7129
+[[rooms]]
+vnum = 7222
+name = "The Sewer Drain"
+description = "   You are in a drain, with some slimy water on the floor.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+description = "You see a sewer bend.\r\n"
+door = 0
+key = -1
+to_room = 7223
+
+[[rooms.exits]]
+dir = 3
+description = "You see a sewer drain.\r\n"
+door = 0
+key = -1
+to_room = 7221
+
+[[rooms.extra]]
+keyword = "slimy water"
+description = "The water floats to the east from here.\r\n"
+[[rooms]]
+vnum = 7223
+name = "The Sewer Bend"
+description = "   You find yourself in an ordinary sewer bend, which bends from west to\r\nnorth.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "You see a sewer drain.\r\n"
+door = 0
+key = -1
+to_room = 7224
+
+[[rooms.exits]]
+dir = 3
+description = "You see a sewer drain.\r\n"
+door = 0
+key = -1
+to_room = 7222
+[[rooms]]
+vnum = 7224
+name = "The Sewer Junction"
+description = "   You stand in a junction of three sewer drains.  You see some odd\r\nscratches on the pipe wall, as if from a gigantic rat.  North and\r\nsouth the sewer continues as usual, but west it looks a little\r\nstrange.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "You see nothing but a sewer drain.\r\n"
+door = 0
+key = -1
+to_room = 7225
+
+[[rooms.exits]]
+dir = 2
+description = "You see nothing but a sewer drain.\r\n"
+door = 0
+key = -1
+to_room = 7223
+
+[[rooms.exits]]
+dir = 3
+description = "You see a strange sewer pipe.\r\n"
+door = 0
+key = -1
+to_room = 7229
+[[rooms]]
+vnum = 7225
+name = "The Sewer"
+description = "   You are in a sewer, where the slimy water runs down through a tiny hole.\r\nYou see some odd scratches on the pipe wall, as from a gigantic rat.  There \r\nis a sewer drain south.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 2
+description = "You see a sewer drain.\r\n"
+door = 0
+key = -1
+to_room = 7224
+[[rooms]]
+vnum = 7229
+name = "The Strange Sewer"
+description = "   You are in a very strange sewer indeed, there are some odd scratches on\r\nthe pipe wall, as from a gigantic rat.  And you can see a lot of organic\r\ndecay like bones from animals AND humans.  West the drain runs slightly\r\nupwards.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+description = "You see a sewer junction.\r\n"
+door = 0
+key = -1
+to_room = 7224
+
+[[rooms.exits]]
+dir = 3
+description = "You see a slimy sewer drain.\r\n"
+door = 0
+key = -1
+to_room = 7230
+[[rooms]]
+vnum = 7230
+name = "The Damp Sewer"
+description = "   You are in a sewer drain with a funny damp substance on the floor, in the \r\nsubstance you see a lot of decay.  You see some odd scratches on the wall,\r\nas if from a gigantic rat.  Both to the east and west the pipe seems to run\r\ndown.\r\n"
+flags = "acd"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+description = "You see a sewer.\r\n"
+door = 0
+key = -1
+to_room = 7229
+
+[[rooms.exits]]
+dir = 3
+description = "You see a sewer.\r\n"
+door = 0
+key = -1
+to_room = 7231
+[[rooms]]
+vnum = 7231
+name = "The Strange Sewer"
+description = "   You are in an ordinary sewer except for a lot of scratches on the sewer\r\nwall, and a lot of debris on the floor.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+description = "You see a sewer.\r\n"
+door = 0
+key = -1
+to_room = 7230
+
+[[rooms.exits]]
+dir = 3
+description = "You see another sewer.\r\n"
+door = 0
+key = -1
+to_room = 7232
+
+[[rooms.extra]]
+keyword = "debris"
+description = "You see a lot of organic decay on the floor.\r\n"
+[[rooms]]
+vnum = 7232
+name = "The Sewer"
+description = "   You are in a sewer with more scratches on the walls.  And of course a whole\r\nlot of decay.  The drain runs east and north.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+description = "You see yet another sewer line.\r\n"
+door = 0
+key = -1
+to_room = 7233
+
+[[rooms.exits]]
+dir = 1
+description = "You see a sewer pipe.\r\n"
+door = 0
+key = -1
+to_room = 7231
+[[rooms]]
+vnum = 7233
+name = "The Sewer Drain"
+description = "   You stand in a sewer drain, you are able to see some kind of cave-like\r\nroom.  You see some odd scratches on the drain wall, as if from a gigantic\r\nrat.  The sewer leads south.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+description = "You see a cave-like room.\r\n"
+door = 0
+key = -1
+to_room = 7234
+
+[[rooms.exits]]
+dir = 2
+description = "You see a sewer.\r\n"
+door = 0
+key = -1
+to_room = 7232
+[[rooms]]
+vnum = 7234
+name = "The Rat's Lair"
+description = "   You are in a little cave.  You are able to see quite a lot of debris on\r\nthe floor.  There is a sewer drain west of here.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 3
+description = "You see the sewer system that way.\r\n"
+door = 0
+key = -1
+to_room = 7233
+[[rooms]]
+vnum = 7279
+name = "The Wall Of The Abyss"
+description = "   You hang onto some steps leading down into utter darkness.  There is an\r\nexit leading up as well, though you'll have to open the tiny rock again to\r\ndo so.\r\n"
+flags = "ad"
+sector = 5
+
+[[rooms.exits]]
+dir = 4
+keyword = "rock"
+door = 1
+key = -1
+to_room = 7111
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 7299
+[[rooms]]
+vnum = 7280
+name = "The Entrance"
+description = "   You are in a very dark room.  You notice that some faces are staring at\r\nyou from inside the walls.  In the middle of the room there is a small altar.\r\nTo the north there is a small round door.\r\n"
+flags = "ad"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A beam of red light seeps through a hole in the door.\r\n"
+keyword = "door small round"
+door = 1
+key = -1
+to_room = 7281
+
+[[rooms.exits]]
+dir = 4
+keyword = "altar secret"
+door = 1
+key = -1
+to_room = 7116
+
+[[rooms.extra]]
+keyword = "triangle"
+description = "The triangle is filled with small symbols.  They seem to be a language\r\nyou have never seen before.\r\n"
+
+[[rooms.extra]]
+keyword = "altar"
+description = "This altar is very special.  Faces appear to be smiling from it.  There\r\nis a triangle engraved in the top of it.\r\n"
+[[rooms]]
+vnum = 7281
+name = "The Corridor"
+description = "   The corridor is glowing oppressively in a red hue.  You can hear wailing\r\nthrough an open black hole to the east.  To the south there is a round door.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "The hole seems more black than the night.  It is appears to be \"eating\" the\r\nred light around it.\r\n"
+door = 0
+key = -1
+to_room = 7282
+
+[[rooms.exits]]
+dir = 2
+keyword = "door small round"
+door = 1
+key = -1
+to_room = 7280
+
+[[rooms.extra]]
+keyword = "walls"
+description = "The walls look alive.\r\n"
+
+[[rooms.extra]]
+keyword = "red light"
+description = "The red light glows from the walls.\r\n"
+
+[[rooms.extra]]
+keyword = "small round door"
+description = "The door is completely round without a keyhole.\r\n"
+[[rooms]]
+vnum = 7282
+name = "The Realm Of Lost Souls"
+description = "   You are standing in nothing.  All around you there are stars.\r\nSometimes a shadow flies closely by you, wailing very loudly.  To\r\nthe north there is a small bright hole.  To the west there is a\r\nsmall red hole.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You look into a very bright hole.\r\n"
+door = 0
+key = -1
+to_room = 7283
+
+[[rooms.exits]]
+dir = 3
+description = "You look into a red hole.\r\n"
+door = 0
+key = -1
+to_room = 7281
+
+[[rooms.extra]]
+keyword = "shadow"
+description = "The shadow looks like a man in great pain.\r\n"
+[[rooms]]
+vnum = 7283
+name = "The T-Crossing"
+description = "   You are in a small hallway.  There are doors to the east and to\r\nthe west.  To the south there are a black hole.  There is writing\r\nin the wall.  Wails can be heard from the south.\r\n"
+flags = "acd"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "It is too dark to tell.\r\n"
+door = 0
+key = -1
+to_room = 7286
+
+[[rooms.exits]]
+dir = 2
+description = "A black hole in the wall.\r\n"
+door = 0
+key = -1
+to_room = 7282
+
+[[rooms.exits]]
+dir = 3
+description = "You can see a big fire to the west.  It looks like a unhealthy\r\nplace to enter!\r\n"
+door = 0
+key = -1
+to_room = 7284
+
+[[rooms.extra]]
+keyword = "writing"
+description = "The writing says 'The one to the east, belongs to the beast.\r\nTo the west you will surely END your quest!'.\r\n"
+[[rooms]]
+vnum = 7284
+name = "The Firedeath"
+description = "   This room is very hot.  There are flames surrounding you.  You can\r\nsee no exits at all!  Skeletons are lying all over the floor.\r\n"
+flags = "cd"
+sector = 1
+
+[[rooms.extra]]
+keyword = "writing wall"
+description = "The writing says 'A prayer to the GODS will not be heard, though\r\nthe only exit is death... Mother, I love you'.\r\n"
+
+[[rooms.extra]]
+keyword = "skeletons"
+description = "The skeletons looks like they had suffered the death of hunger.\r\nOne of them looks like he has written something at the wall.\r\n"
+[[rooms]]
+vnum = 7285
+name = "The Torture Room"
+description = "   You are standing in a middle of a square room.  Along the walls skeletons \r\nare hanging in rusty chains.  In the middle of the room there is a big metal \r\nbox, covered with dust.  To the south you can just make out a small exit.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 2
+description = "It is too dark to tell.\r\n"
+keyword = "door iron"
+door = 1
+key = -1
+to_room = 7286
+
+[[rooms.extra]]
+keyword = "big metal box"
+description = "The metal box is covered with dust.  You notice that it was once filled with\r\ncoal, as you see some small pieces of it.\r\n"
+
+[[rooms.extra]]
+keyword = "skeletons"
+description = "When you look at the skeletons, you can see that they once had been in great \r\npain.  They are hanging in their arms, and some of them were killed with a\r\nsharp instrument.\r\n"
+[[rooms]]
+vnum = 7286
+name = "The Hell Yard"
+description = "   You are standing in a lot of mud.  A disgusting smell surrounds\r\nthe place, and makes you feel sick.  Small flames sometimes shoot\r\nup from the hot mud.  To the west there is a small door.  To the \r\nnorth you can see an iron door.\r\n"
+flags = "cd"
+sector = 5
+
+[[rooms.exits]]
+dir = 0
+description = "It is too dark to tell.\r\n"
+keyword = "door iron"
+door = 1
+key = -1
+to_room = 7285
+
+[[rooms.exits]]
+dir = 3
+description = "It is too dark to tell.\r\n"
+door = 0
+key = -1
+to_room = 7283
+[[rooms]]
+vnum = 7299
+name = "On The Walls Of The Abyss"
+description = "   You are clutching the steps on the wall so that you don't fall to the\r\nground down below.  You cannot see anymore handholds below you and thus\r\nthis stops your journey down, as the only exit is up.\r\n"
+flags = "ad"
+sector = 5
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 7279
+[[rooms]]
+vnum = 7300
+name = "Cave Entrance"
+description = "   You are standing in the cave entrance.  It is very dark down here.  There\r\nis writing on the wall.  There is an exit to the north.  A stairway leads up.\r\n"
+flags = "ad"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "To the north you can see a small tunnel.\r\n"
+door = 0
+key = -1
+to_room = 7301
+
+[[rooms.exits]]
+dir = 4
+description = "You can see the stairs going up into darkness.\r\n"
+door = 2
+key = -1
+to_room = 7102
+
+[[rooms.extra]]
+keyword = "writing wall"
+description = "The writing says 'BEWARE adventurer!'\r\n"
+[[rooms]]
+vnum = 7301
+name = "Cave Tunnel"
+description = "   You are walking in a tunnel.  It is very cold.  You can feel the presence\r\nof a living thing... SOMEWHERE.\r\n"
+flags = "ad"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "To the north you can see the tunnel continuing.\r\n"
+door = 0
+key = -1
+to_room = 7302
+
+[[rooms.exits]]
+dir = 2
+description = "To the south tunnel continuing.\r\n"
+door = 0
+key = -1
+to_room = 7300
+[[rooms]]
+vnum = 7302
+name = "Cave Room"
+description = "   You are standing in a room.  It is much cooler now.  The walls are glowing.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "To the east you see the tunnel going downwards.\r\n"
+door = 0
+key = -1
+to_room = 7303
+
+[[rooms.exits]]
+dir = 2
+description = "To the south you see a dark cave tunnel.\r\n"
+door = 0
+key = -1
+to_room = 7301
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 7321
+[[rooms]]
+vnum = 7303
+name = "The Cave T-Cross"
+description = "   You are standing in a mudlike substance.  The smell here is awful, it is\r\nrotten.  To the west you can see some light.\r\n"
+flags = "ad"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+description = "To the east the tunnel still goes downwards.\r\n"
+door = 0
+key = -1
+to_room = 7304
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 7308
+
+[[rooms.exits]]
+dir = 3
+description = "You can see some light to the west.\r\n"
+door = 0
+key = -1
+to_room = 7302
+
+[[rooms.extra]]
+keyword = "worms"
+description = "The worms are purple.  They do not look edible.\r\n"
+
+[[rooms.extra]]
+keyword = "mud"
+description = "When you examine the mud, you notice small worms crawling around.\r\n"
+[[rooms]]
+vnum = 7304
+name = "The Cave Turning-Point"
+description = "   The mud is getting deeper.  You are wondering, 'Would it be an idea to\r\nleave, before I disappear?'.  To the south you notice a flat round stone\r\nis blocking the way.  To the west you can see mud.\r\n"
+flags = "ad"
+sector = 2
+
+[[rooms.exits]]
+dir = 2
+description = "You can see an opening behind the stone.\r\n"
+keyword = "stone flat round"
+door = 1
+key = -1
+to_room = 7305
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 7303
+
+[[rooms.extra]]
+keyword = "flat round stone"
+description = "The stone looks very uninteresting.  BUT as you are about to turn away, you\r\nsee a strip of light coming through a small hole.  Conclusion: The stone is\r\nmoveable.\r\n"
+[[rooms]]
+vnum = 7305
+name = "The Secret Room"
+description = "   There is dust all over the place.  It looks like nobody has been here\r\nfor ages.  In the middle of the room you see a socket with a crystal globe.\r\nThe globe glows with a pulsing light.  To the north you see a stone door.\r\nTo the south you see a grey block.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see a round stone door.\r\n"
+keyword = "door round stone"
+door = 1
+key = -1
+to_room = 7304
+
+[[rooms.exits]]
+dir = 2
+description = "You see a grey block.\r\n"
+keyword = "block grey"
+door = 1
+key = -1
+to_room = 7306
+
+[[rooms.extra]]
+keyword = "crystal globe"
+description = "The crystal globe is glowing with a pulsing light.  It looks like there is\r\nsmoke inside it.\r\n"
+
+[[rooms.extra]]
+keyword = "socket"
+description = "The socket looks like the work of a dwarf.  It is VERY beautiful.\r\n"
+[[rooms]]
+vnum = 7306
+name = "The Mudhole"
+description = "   You are standing in a lot of mud.  The mud goes to your chest.  You feel\r\nthe presence of something IN the mud.  The only obvious exit is to the west.\r\n"
+flags = "ad"
+sector = 6
+
+[[rooms.exits]]
+dir = 0
+description = "You can see nothing at all.\r\n"
+keyword = "block grey"
+door = 1
+key = -1
+to_room = 7305
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 7307
+[[rooms]]
+vnum = 7307
+name = "A Tunnel"
+description = "   The mud goes to your knees.  Otherwise the tunnel looks very normal.\r\n"
+flags = "ad"
+sector = 5
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 7308
+
+[[rooms.exits]]
+dir = 1
+description = "You can see a mudhole.\r\n"
+door = 0
+key = -1
+to_room = 7306
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 7309
+[[rooms]]
+vnum = 7308
+name = "The Long Tunnel"
+description = "   Here there is almost no mud, as you stand at the top of a small rock.  Just\r\nbeside you there are a sign which says 'WARNING!  The worms are dangerous!'\r\n"
+flags = "ad"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You can see a lot of mud... Yuck!\r\n"
+door = 0
+key = -1
+to_room = 7303
+
+[[rooms.exits]]
+dir = 2
+description = "The tunnel goes a little downwards.\r\n"
+door = 0
+key = -1
+to_room = 7307
+[[rooms]]
+vnum = 7309
+name = "The Hot Room"
+description = "   You are very surprised, as this room for a change are hot instead of\r\ncold.  To the north it goes downwards into some mud.  There are also an\r\nexit to the west.\r\n"
+flags = "ad"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see a lot of mud.\r\n"
+door = 0
+key = -1
+to_room = 7307
+
+[[rooms.exits]]
+dir = 3
+description = "You see a entrance to a small room.\r\n"
+door = 0
+key = -1
+to_room = 7310
+[[rooms]]
+vnum = 7310
+name = "The Small Room"
+description = "   As you look around you notice a small statue.  There are exits to the west\r\nand to the east.\r\n"
+flags = "ad"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "It is pitch dark out there.\r\n"
+door = 0
+key = -1
+to_room = 7309
+
+[[rooms.exits]]
+dir = 3
+description = "You see a VERY long hallway.\r\n"
+door = 0
+key = -1
+to_room = 7311
+
+[[rooms.extra]]
+keyword = "small statue"
+description = "This is a statue of a imp, pointing to the west.  The imp looks like a man\r\nwith horns and a tail.\r\n"
+[[rooms]]
+vnum = 7311
+name = "The Stalagmite Cave"
+description = "   You are standing in a stalagmite cave.  Water is dripping from the walls.\r\nIt is very cold in here.\r\n"
+flags = "ad"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 7314
+
+[[rooms.exits]]
+dir = 1
+description = "You see a long hallway, and some mud.\r\n"
+door = 0
+key = -1
+to_room = 7310
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 7312
+
+[[rooms.extra]]
+keyword = "stalagmite"
+description = "The stalagmites are very tall, and looks very beautiful.\r\n"
+[[rooms]]
+vnum = 7312
+name = "The Stalagmite Tunnel"
+description = "   You has entered a small tunnel.  Here it is quite dry.  Maybe it would be a\r\ngood idea to rest here.\r\n"
+flags = "ad"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You can see a small cave to the north.\r\n"
+door = 0
+key = -1
+to_room = 7311
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 7313
+[[rooms]]
+vnum = 7313
+name = "The Spongy Room"
+description = "   You definitely do NOT like this area.  It is very dank, and most of the\r\nroom is wet.\r\n"
+flags = "cd"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 7312
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 7345
+[[rooms]]
+vnum = 7314
+name = "The Stalagmite T-Cross"
+description = "   You are standing in a cross.  To the north you can see some light.\r\nOtherwise it is dark.\r\n"
+flags = "cd"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see some light ahead.\r\n"
+door = 0
+key = -1
+to_room = 7317
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 7315
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 7311
+[[rooms]]
+vnum = 7315
+name = "The Blind End Room"
+description = "   This room is obviously a blind end.  To the north you see a primitive\r\npicture.\r\n"
+flags = "ad"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see a primitive picture of some people dancing around a huge sun.  The\r\nsun is about 7 feet in diameter, which shows the size of the picture.\r\n"
+keyword = "sun"
+door = 1
+key = -1
+to_room = 7316
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 7314
+
+[[rooms.extra]]
+keyword = "primitive picture"
+description = "You see some people dancing around a huge sun.  The sun is about 7 feet in\r\ndiameter, which shows the size of the picture.\r\n"
+[[rooms]]
+vnum = 7316
+name = "The Treasure Room"
+description = "   This room is richly ornamented.  The walls have been carved to show\r\npeople dancing around a moon which is drawn on the floor.  It looks very\r\nold, and it is very dusty.  To the south you see the back side of a secret\r\ndoor.\r\n"
+flags = "adj"
+sector = 1
+
+[[rooms.exits]]
+dir = 2
+description = "You can see a picture with some peeple crawling around a huge moon.\r\n"
+keyword = "moon door"
+door = 1
+key = -1
+to_room = 7315
+[[rooms]]
+vnum = 7317
+name = "The Square Lair"
+description = "   You are standing in the south-east part of the lair.  You can see a skeleton\r\nlying in the corner.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "Another part of the lair.\r\n"
+door = 0
+key = -1
+to_room = 7318
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 7314
+
+[[rooms.exits]]
+dir = 3
+description = "Another part of the lair.\r\n"
+door = 0
+key = -1
+to_room = 7320
+
+[[rooms.extra]]
+keyword = "skeleton"
+description = "It looks like a adventurer who wasn't lucky.  You'd better watch out...\r\n"
+[[rooms]]
+vnum = 7318
+name = "The Square Lair"
+description = "   You are standing in the north-east part of the lair.\r\nYou see a sign on the wall.\r\n"
+flags = "ad"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "You see a wooden door.\r\n"
+keyword = "door wooden"
+door = 1
+key = -1
+to_room = 7321
+
+[[rooms.exits]]
+dir = 2
+description = "Another part of the lair.\r\n"
+door = 0
+key = -1
+to_room = 7317
+
+[[rooms.exits]]
+dir = 3
+description = "Another part of the lair.\r\n"
+door = 0
+key = -1
+to_room = 7319
+
+[[rooms.extra]]
+keyword = "sign wall"
+description = "The sign says 'Gods of War I call you, my sword is by my side,\r\n               I seek a light free from all false pride'\r\n                       Reyemle Grug...\r\n"
+[[rooms]]
+vnum = 7319
+name = "The Square Lair"
+description = "   You are standing in the north-west part of the lair.  Here there is another\r\nsign.  There is an exit from the lair to the north.\r\n"
+flags = "ad"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see a small tunnel leading north.\r\n"
+door = 0
+key = -1
+to_room = 7322
+
+[[rooms.exits]]
+dir = 1
+description = "Another part of the lair.\r\n"
+door = 0
+key = -1
+to_room = 7318
+
+[[rooms.exits]]
+dir = 2
+description = "Another part of the lair.\r\n"
+door = 0
+key = -1
+to_room = 7320
+
+[[rooms.extra]]
+keyword = "sign"
+description = "The sign says 'I'm wandering around in a everlasting tale,\r\n               seeking the light to regain my pride\r\n                           Corama...\r\n"
+[[rooms]]
+vnum = 7320
+name = "The Lair End"
+description = "   You can see a table in front of you.  It is very dusty.  Five skeletons are\r\nsitting around the table.  Exits are north and east.\r\n"
+flags = "ad"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "The northern part of the lair.\r\n"
+door = 0
+key = -1
+to_room = 7319
+
+[[rooms.exits]]
+dir = 1
+description = "The eastern part of the lair.\r\n"
+door = 0
+key = -1
+to_room = 7317
+
+[[rooms.extra]]
+keyword = "dragon statue"
+description = "It looks like a silver dragon.  It is nailed onto the table.  The dragon sits\r\non a red dragon that looks dead.  But the eyes of the red dragon are glowing,\r\npulsating red.  You feel drained.\r\n"
+
+[[rooms.extra]]
+keyword = "skeleton skeletons"
+description = "They've obviously been killed somehow, but it doesn't look like it was by \r\nsword or club.\r\n"
+
+[[rooms.extra]]
+keyword = "table"
+description = "On the table there is dust, in the center there is a small statue of a\r\nDragon sleeping.\r\n"
+[[rooms]]
+vnum = 7321
+name = "The East Tunnel"
+description = "   You are standing in dark tunnel, the exits are east and west.  To the west\r\nyou see a wooden door.\r\n"
+flags = "cd"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "You can see a muddy tunnel.\r\n"
+door = 0
+key = -1
+to_room = 7302
+
+[[rooms.exits]]
+dir = 3
+description = "You can see a wooden door.\r\n"
+keyword = "door wooden"
+door = 1
+key = -1
+to_room = 7318
+[[rooms]]
+vnum = 7322
+name = "The North Tunnel"
+description = "   You are standing in a dark tunnel, it leads upwards.\r\n"
+flags = "ad"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "The dark tunnel continues.\r\n"
+door = 0
+key = -1
+to_room = 7323
+
+[[rooms.exits]]
+dir = 2
+description = "You can see the lair.\r\n"
+door = 0
+key = -1
+to_room = 7319
+
+[[rooms.exits]]
+dir = 3
+description = "You can see a cave entrance.\r\n"
+door = 0
+key = -1
+to_room = 7336
+[[rooms]]
+vnum = 7323
+name = "The L-Shaped Room"
+description = "   You are standing in deep darkness.  To the south there is a small exit.\r\nTo the east you can see a gaping hole.\r\n"
+flags = "ad"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 7324
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 7322
+[[rooms]]
+vnum = 7324
+name = "The Circular Hall"
+description = "   You are standing in round hall.  To the north, east and south you can see\r\na stone head hanging on the walls.\r\n"
+flags = "ad"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "You see a red dragon's head hanging on the wall.\r\n"
+keyword = "head red"
+door = 2
+key = 0
+to_room = 7324
+
+[[rooms.exits]]
+dir = 1
+description = "You see a green dragon's head hanging on the wall.\r\n"
+keyword = "head green"
+door = 1
+key = -1
+to_room = 7325
+
+[[rooms.exits]]
+dir = 2
+description = "You see a blue dragon's head hanging on the wall.\r\n"
+keyword = "head blue"
+door = 2
+key = 0
+to_room = 7324
+
+[[rooms.exits]]
+dir = 3
+description = "You see a room far away.\r\n"
+door = 0
+key = -1
+to_room = 7323
+
+[[rooms.extra]]
+keyword = "blue"
+description = "This looks like a good dragon.\r\n"
+
+[[rooms.extra]]
+keyword = "red"
+description = "This looks like a neutral dragon.\r\n"
+
+[[rooms.extra]]
+keyword = "green"
+description = "This looks like an evil dragon.\r\n"
+
+[[rooms.extra]]
+keyword = "head heads"
+description = "When you study the faces of the heads you see that they are faces of dragons.\r\nThe face to the north is red, the face to the east is green, and the face to\r\nthe south is blue.\r\n"
+[[rooms]]
+vnum = 7325
+name = "A Dusty Tunnel"
+description = "   You are standing in dust.  This place has not been touched for a long time. \r\nOtherwise it is quite boring here, looks like a place to rest!  To the west\r\nyou see the outline of a door.  A tunnel leads to the east.\r\n"
+flags = "cd"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "You see a tunnel which leads downwards.  It is quite dark.\r\n"
+door = 0
+key = -1
+to_room = 7326
+
+[[rooms.exits]]
+dir = 3
+description = "You can see the outline of a door.  Just like in the description!\r\n"
+keyword = "door"
+door = 1
+key = -1
+to_room = 7324
+[[rooms]]
+vnum = 7326
+name = "The Crossing"
+description = "   You are standing in a crossing of hallways.  You can leave this place\r\nin every direction, except up and down.  In the dust you notice strange\r\nfootprints.\r\n"
+flags = "ad"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 7331
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 7330
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 7327
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 7325
+
+[[rooms.extra]]
+keyword = "footprints foot"
+description = "You have never seen this kind of footprint before!\r\n"
+[[rooms]]
+vnum = 7327
+name = "The L-Shaped Room"
+description = "   You are standing in a L-shaped room.  You can hear noises from the long\r\ntunnel to the east.  You feel very afraid!\r\nA sign is hanging on the wall.\r\n"
+flags = "ad"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 7326
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 7328
+
+[[rooms.extra]]
+keyword = "sign"
+description = "The sign says:\r\n\r\nDANGER!!\r\n\r\n"
+[[rooms]]
+vnum = 7328
+name = "The Dragon's Lair"
+description = "   You can see burned walls, the floorstones are fiery red.  All kinds\r\nof bones are scattered all over the floor.  On the walls you can see\r\nsome burned shapes.  You smell burnt flesh.  Two creatures are half\r\nmelted into the floor.\r\n"
+flags = "d"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "You can see a long tunnel.\r\n"
+door = 0
+key = -1
+to_room = 7329
+
+[[rooms.exits]]
+dir = 3
+description = "You can see nothing but darkness.\r\n"
+door = 0
+key = -1
+to_room = 7327
+[[rooms]]
+vnum = 7329
+name = "The Burnt Room"
+description = "   You are in a room, which once has at one time been quite burnt.  There\r\nis writing on the wall.\r\n"
+flags = "ad"
+sector = 1
+
+[[rooms.exits]]
+dir = 2
+description = "You can see a red glow...\r\n"
+door = 0
+key = -1
+to_room = 7328
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 7330
+
+[[rooms.extra]]
+keyword = "writing"
+description = "The writing says:\r\n\r\n                        DANGER\r\n\r\n"
+[[rooms]]
+vnum = 7330
+name = "The Windy Tunnel"
+description = "   You are standing in a tunnel.  Above you, you can feel a breeze.\r\n"
+flags = "ad"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "It is too dark to tell.\r\n"
+door = 0
+key = -1
+to_room = 7329
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 7326
+
+[[rooms.extra]]
+keyword = "breeze"
+description = "The breeze comes from a hole above you.  NO way to get up there.\r\n"
+[[rooms]]
+vnum = 7331
+name = "The Glittering Room"
+description = "   This room is very bright.  On the walls you can see some silver.  Exits\r\nare west, east and south.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 7332
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 7326
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 7333
+
+[[rooms.extra]]
+keyword = "glitter walls silver"
+description = "The glittering silver looks like it is INSIDE the walls.\r\n"
+[[rooms]]
+vnum = 7332
+name = "The Secret Passageway"
+description = "   You have entered a tiny room.  There is only an exit to the west.\r\n"
+flags = "ad"
+sector = 1
+
+[[rooms.exits]]
+dir = 3
+description = "You can see a light to the west.\r\n"
+door = 0
+key = -1
+to_room = 7331
+[[rooms]]
+vnum = 7333
+name = "The End Of Long Tunnel"
+description = "   You are at a end of a long tunnel.  Right in front of you, you can see a\r\ngrey mass.  To the east you can see a tremendously long tunnel, but you know\r\nthat, you were just there.\r\n"
+flags = "ad"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+description = "A long tunnel.  JUST like in the description!\r\n"
+door = 0
+key = -1
+to_room = 7331
+
+[[rooms.exits]]
+dir = 3
+description = "A grey mass is blocking the way.\r\n"
+keyword = "mass grey"
+door = 1
+key = -1
+to_room = 7334
+
+[[rooms.extra]]
+keyword = "grey mass"
+description = "The mass is nothing but a mass, but it is quite suspicious!\r\n"
+[[rooms]]
+vnum = 7334
+name = "The Stair-Room"
+description = "   You are standing in a small room.  Drawings of faces in pain are on the\r\nwalls.  You can feel that darkness is ruling the place.  There is one exit:\r\nsouth.\r\n"
+flags = "ad"
+sector = 1
+
+[[rooms.exits]]
+dir = 2
+description = "Nothing but darkness...\r\n"
+door = 0
+key = -1
+to_room = 7335
+[[rooms]]
+vnum = 7335
+name = "A Dark Tunnel"
+description = "   You are standing in a dark tunnel.  It continues to the north and to the\r\nsouth.  Bones are spread on the floor.\r\n"
+flags = "ad"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 7334
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 7336
+
+[[rooms.extra]]
+keyword = "bones bone"
+description = "It looks like bones of a human.\r\n"
+[[rooms]]
+vnum = 7336
+name = "The Entrance To The Lair"
+description = "   The smell here is awful.  To the south you can see some smoke.  A tunnel\r\nleads north and east.\r\n"
+flags = "acd"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 7335
+
+[[rooms.exits]]
+dir = 1
+description = "A small cave is to the east.\r\n"
+door = 0
+key = -1
+to_room = 7322
+
+[[rooms.exits]]
+dir = 2
+description = "The only thing you can see is smoke.\r\n"
+door = 0
+key = -1
+to_room = 7337
+[[rooms]]
+vnum = 7337
+name = "The North-Eastern Part Of The Basilisk's Cave"
+description = "   It is hard to see here because of the smoke.  To the north you can barely\r\nsee a small tunnel.  Other exits are to the south and to the west.\r\n"
+flags = "ad"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 7336
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 7338
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 7339
+[[rooms]]
+vnum = 7338
+name = "The South-Eastern Part Of The Basilisk's Cave"
+description = "   There is a very small hole in wall from which the smoke is coming from. \r\nOtherwise it is pitch black.  Exits are north and west.\r\n"
+flags = "ad"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "You can see nothing but smoke.\r\n"
+door = 0
+key = -1
+to_room = 7337
+
+[[rooms.exits]]
+dir = 3
+description = "You can see nothing but smoke.\r\n"
+door = 0
+key = -1
+to_room = 7340
+
+[[rooms.extra]]
+keyword = "hole small"
+description = "It seems to be a small hole, about one foot in diameter.\r\n"
+[[rooms]]
+vnum = 7339
+name = "The North-Western Part Of The Basilisk's Cave"
+description = "   You can see some hay spread on the floor.  The smell is awful here, and it\r\nmakes you feel sick.  This place where the Basilisk sleeps.  Watch out...\r\nmaybe it is not far from here...\r\n"
+flags = "ad"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 7337
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 7340
+
+[[rooms.extra]]
+keyword = "hay"
+description = "The hay is very dirty.  The smell of it makes you feel sick.\r\n"
+[[rooms]]
+vnum = 7340
+name = "The South-Western Part Of The Basilisk's Cave"
+description = "   You can see nothing but smoke.  \r\n"
+flags = "ad"
+sector = 5
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 7339
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 7338
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 7341
+[[rooms]]
+vnum = 7341
+name = "The Small Cave"
+description = "   You are standing in small cave.  You can see some light at the end.  Exits\r\nare north and south.\r\n"
+flags = "acd"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "You can see only smoke.\r\n"
+door = 0
+key = -1
+to_room = 7340
+
+[[rooms.exits]]
+dir = 2
+description = "You can see a blue glow.  And you feel a fresh breeze... ahhhh...\r\n"
+door = 0
+key = -1
+to_room = 7342
+[[rooms]]
+vnum = 7342
+name = "The Northern End Of The Pool"
+description = "   You have wet feet, you are standing in water.  The water looks calm.  You\r\ncan see that it is a big lake.  Light seeps from the water.\r\n"
+flags = "d"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+description = "You can see a small cave.\r\n"
+door = 0
+key = -1
+to_room = 7341
+
+[[rooms.exits]]
+dir = 1
+description = "You can see more water.\r\n"
+door = 0
+key = -1
+to_room = 7343
+
+[[rooms.exits]]
+dir = 2
+description = "You can see water.\r\n"
+door = 0
+key = -1
+to_room = 7344
+[[rooms]]
+vnum = 7343
+name = "The Pool"
+description = "   You are swimming in water.  It is getting deep here.  It is also dark in\r\nthis end.\r\n"
+flags = "ad"
+sector = 6
+
+[[rooms.exits]]
+dir = 2
+description = "You can see some bubbles in the water.\r\n"
+door = 0
+key = -1
+to_room = 7345
+
+[[rooms.exits]]
+dir = 3
+description = "You see calm water.\r\n"
+door = 0
+key = -1
+to_room = 7342
+[[rooms]]
+vnum = 7344
+name = "The South End Of The Pool"
+description = "   You standing in water up to your neck!  You can only see water.\r\n"
+flags = "d"
+sector = 5
+
+[[rooms.exits]]
+dir = 0
+description = "You can see calm water.\r\n"
+door = 0
+key = -1
+to_room = 7342
+
+[[rooms.exits]]
+dir = 1
+description = "To dark to tell, but you can feel something nearby.\r\n"
+door = 0
+key = -1
+to_room = 7345
+[[rooms]]
+vnum = 7345
+name = "The Pool"
+description = "   You are swimming in DARKNESS.  You feel something touching your right leg.\r\n"
+flags = "ad"
+sector = 6
+
+[[rooms.exits]]
+dir = 0
+description = "To dark to tell.\r\n"
+door = 0
+key = -1
+to_room = 7343
+
+[[rooms.exits]]
+dir = 1
+description = "You can feel a warm breeze.\r\n"
+door = 0
+key = -1
+to_room = 7313
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 7344

@@ -1,0 +1,1972 @@
+[[rooms]]
+vnum = 4000
+name = "The Hills"
+description = "   You are on a path leading north, small hills surround you.\r\nYou feel the forces of evil approach you from the north.  Off\r\nin the distance to the northeast you can see the beginning of\r\na large mountain range.\r\n"
+flags = "c"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4001
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 3500
+[[rooms]]
+vnum = 4001
+name = "The Hills"
+description = "   You are on a small path leading north, dark threatening hills\r\nsurround you on almost all sides.  A fair distance off to the\r\nnorth, you can see the enormous shadow of a strangely solitaire\r\nmountain.\r\n"
+flags = "c"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4002
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4000
+[[rooms]]
+vnum = 4002
+name = "The End Of The Path"
+description = "   The path stops here, to the north is a single mountain and around\r\nyou are some threatening hills.  A small trail leads up the hillside\r\nthrough the rocks to a dark cave located to the north.  Off to the\r\nnortheast, you can see the southern end of what appears to be a large\r\nmountain range.\r\n"
+flags = "c"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4010
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4001
+[[rooms]]
+vnum = 4010
+name = "The Cave"
+description = "   You are standing in a small cave, about fifteen feet across at\r\nthe widest point and about forty feet long.  Off to the south you\r\nsense fresh air and you surmise that the entrance must be located\r\noff in that direction.  To the north a small tunnel continues into\r\nthe mountain.\r\n"
+flags = "ad"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4011
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4002
+[[rooms]]
+vnum = 4011
+name = "The Tunnel"
+description = "   You force your way into a narrow tunnel, aided by the wet walls\r\nwhich help you slide through the passageway.  The smell of mouldy\r\nmoss is growing greater the farther north you head, but you can smell\r\nfresh air off to the south as a light breeze wafts past you.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4014
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4010
+[[rooms]]
+vnum = 4012
+name = "The Tunnel"
+description = "   You find yourself at a turn in this narrow tunnel.  The tunnel\r\nappears to open up to the north into a cave of some sort while to\r\nthe east it leads onwards through the mountain.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4016
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4013
+[[rooms]]
+vnum = 4013
+name = "The Tunnel"
+description = "   Standing in the middle of the dusty floor of this tunnel, you can\r\nsee that it is not a highly travelled passageway.  It looks to lead\r\nin an east-west direction.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4014
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4012
+[[rooms]]
+vnum = 4014
+name = "The Tunnel"
+description = "   You find yourself at a small intersection of sorts in this tunnel.\r\nThe main tunnel appears to curve from south to west but there is an\r\nentrance into a cave to the north.  The entrance itself looks to be\r\nunnatural and much more recent than the tunnel or even the cave.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4018
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4011
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4013
+[[rooms]]
+vnum = 4015
+name = "The Tunnel"
+description = "   You clamber on through this narrow tunnel.  The walls are damp\r\nwith condensation and the weight of the rock above you is beginning\r\nto make you feel almost claustrophobic.  The tunnel makes a jagged\r\nturn from west to north here.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4019
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4014
+[[rooms]]
+vnum = 4016
+name = "The Large Cave"
+description = "   You find yourself in a fairly large cave.  Large enough that the\r\neastern and western ends are almots completely shrouded in darkness.\r\nA small tunnel breaks through the southern wall, and it too is full\r\nof shadows.\r\n"
+flags = "ad"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4017
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4012
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4023
+[[rooms]]
+vnum = 4017
+name = "The Large Cave"
+description = "   You move along the cave to the west end of it and find that there\r\nappears to be no other exit from here.  The walls are fairly smooth\r\nand look to have been naturally carved out of the rock by the passage\r\nof water.\r\n"
+flags = "ad"
+sector = 2
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4016
+[[rooms]]
+vnum = 4018
+name = "The Cave"
+description = "   You find yourself at the southern end of a cave as it begins\r\nto turn into a tunnel which leads off to the south.  The cave\r\ncontinues northwards deeper into the darkness.\r\nYou notice a large pile of bones in the corner.\r\n"
+flags = "ad"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4025
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4014
+
+[[rooms.extra]]
+keyword = "pile bones"
+description = "You had better watch out - some of the bones are human!\r\n"
+[[rooms]]
+vnum = 4019
+name = "The Tunnel"
+description = "   You stand in the middle of a fairly wide passageway that leads\r\nin a north-south direction.  The walls are quite smooth, almost as\r\nif a river had gouged them out of the earth.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4026
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4015
+[[rooms]]
+vnum = 4020
+name = "The Hole"
+description = "   You are standing in a small alcove off the main tunnel.  There is\r\na fairly wide hole broken through the floor of the alcove.  The only\r\nother exit is to the north.\r\n"
+flags = "acd"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4027
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 4064
+[[rooms]]
+vnum = 4021
+name = "The Hole"
+description = "   As you stand at the end of this tunnel, you notice a large hole\r\nsitting in the floor by the northwestern corner of the walls.  The\r\ntunnel itself leads off towards the east.  The air here feels very\r\ndamp and you feel like your clothes are becoming sticky with sweat.\r\n"
+flags = "acd"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4022
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 4115
+[[rooms]]
+vnum = 4022
+name = "The Damp Tunnel"
+description = "   You are standing in the middle of a damp tunnel.  The moisture\r\nin the air is so thick that you can almost seem it seeping into your\r\nclothes.  The tunnel continues to the north and west.  A large cave\r\nopens up to the east.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4024
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4023
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4021
+[[rooms]]
+vnum = 4023
+name = "The Large Cave"
+description = "   You are in the western part of the large cave, to the east you can\r\nsee a tunnel.  The air near the tunnel entrance is heavy with moisture,\r\ngiving you a feeling as if you were standing in the rain.  The walls\r\nof the cave are almost totally shrouded in darkness and shadow as is\r\nthe southern end of the cavern.\r\n"
+flags = "ad"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4016
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4022
+[[rooms]]
+vnum = 4024
+name = "The Damp Tunnel"
+description = "   The tunnel you are in now is very humid, and the air seems to almost\r\nhang with moisture.  The walls drip with an almost constant water flow,\r\nand the ground is covered with small pools of stagnent water.\r\n   The tunnel leads away to the south, and to the west you can feel that\r\nthe air is even damper than here.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4022
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4059
+[[rooms]]
+vnum = 4025
+name = "The Cave"
+description = "   You find yourself standing in the northern end of a reasonably\r\nlarge cave.  The cave wall to the east has an opening that appears\r\nto lead to a junction of several tunnels.\r\n"
+flags = "ad"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4026
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4018
+[[rooms]]
+vnum = 4026
+name = "The Many Tunnels"
+description = "   You find yourself standing in the midst of an intersection\r\nof numerous tunnels.  There is a musty smell emanating from the\r\ntunnel to the north, whilst the one to the west appears to open\r\nup almost immediately into a cave.  The tunnels to the south and\r\neast are totally shrouded in darkness.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4028
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4027
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4019
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4025
+[[rooms]]
+vnum = 4027
+name = "The Tunnel"
+description = "   You find yourself at an elbow turn in the tunnel as it turns to the\r\nwest and north.  You spot a small alcove hidden in the shadows just to\r\nthe south of you, and you can feel a breeze coming from somewhere to the\r\nnorth you believe.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4029
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4020
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4026
+[[rooms]]
+vnum = 4028
+name = "The Smelly Tunnel"
+description = "   You are in a fairly small north-south leading tunnel.  There\r\nis a a small light visible off to the north.  As you stop for a\r\nmoment, you notice a strange smell from the north.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4030
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4026
+[[rooms]]
+vnum = 4029
+name = "The Cave"
+description = "   You are in a cave that is filled with fresh air, you sense the\r\nwind blowing from the north.  To the south you see a small tunnel\r\ncontinue into the mountain.\r\n"
+flags = "ad"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4031
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4027
+[[rooms]]
+vnum = 4030
+name = "The Light Cave"
+description = "   You are in a light cave, through a hole large above you, you\r\nsee the sky.  A small tunnel to the south is the only way out.\r\nYou notice the source of the strange smell, all around you there\r\nare corpses of several monsters.\r\n"
+flags = "d"
+sector = 2
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4028
+
+[[rooms.extra]]
+keyword = "corpse corpses"
+description = "Looking at the corpses lying around the cave, they all appear to\r\nhave been torn to shreds by some large creature.  As a further\r\nnot too unexpected point to note, they all smell terrible.\r\n"
+[[rooms]]
+vnum = 4031
+name = "The Valley"
+description = "   You are in a small valley, surrounded by hills and a mountain to \r\nthe south.  In the mountain there is a cave.  To the north you can\r\nenter the hills.  There is a small trail leading up a steep hill to\r\nthe east.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4032
+
+[[rooms.exits]]
+dir = 1
+description = "You spot a small trail leading into the hills to the east.\r\n"
+door = 0
+key = -1
+to_room = 4045
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4029
+[[rooms]]
+vnum = 4032
+name = "The Foothills"
+description = "   You are on a winding path that leads through the foothills on the\r\nnorth side of Mount Moria.  The path continues north.\r\n"
+flags = "0"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4033
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4031
+[[rooms]]
+vnum = 4033
+name = "The Intersection In The Foothills"
+description = "   You stand at a point by a small path that splits off here.  The\r\npath continues north and south while a rough trail leads east into\r\nthe mountains.\r\n"
+flags = "0"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4034
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4037
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4032
+[[rooms]]
+vnum = 4034
+name = "The Grassy Area In The Foothills"
+description = "   The grass here is unusually high.  You notice several areas where\r\nsomeone or something large has crushed spots of it down.  Several\r\nvery large rocks litter this area.  You can go north towards the end\r\nof the foothills, west to go deeper into the foothills, or south to\r\na small path intersection.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4035
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4033
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4042
+[[rooms]]
+vnum = 4035
+name = "At The Foothills' End"
+description = "   You find yourself standing at the northern edge of the foothills\r\nwhere they meet the plains which lie to the north.  You can head back\r\ninto the foothills to the south or the plains to the north.\r\n"
+flags = "0"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4036
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4034
+[[rooms]]
+vnum = 4036
+name = "The Plains"
+description = "   You are in the plains.  The path leads to the south.  As you look\r\naround you notice a small almost invisible trail leading away to the\r\nwest towards a copse of trees.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4035
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4075
+[[rooms]]
+vnum = 4037
+name = "The Path Through The Foothills"
+description = "   You stand on a path that leads through the foothills in an\r\neast-west direction.  Some distance off to the west you can see\r\na small intersection of paths and off to the east you see that\r\nthe path seems to come to an end as part of the mountain chain\r\njuts out of the ground, blocking your view of the sky.\r\n"
+flags = "0"
+sector = 4
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4038
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4033
+[[rooms]]
+vnum = 4038
+name = "The Base Of The Mountain"
+description = "   You find yourself standing at the bottom of a large mountain in\r\nthe mountain chain which begins at Mount Moria and stretches north\r\ntowards the top of the world.  A small path leads off through the\r\nfoothills towards the west, where you can see plains quite a ways\r\naway.  To the east you spot a small worn trail leading up the side\r\nof the mountain.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4039
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4037
+[[rooms]]
+vnum = 4039
+name = "A Trail Up The Mountain"
+description = "   You stand partway up the mountainside on a narrow yet well worn\r\ntrail.  The trail curves its way up the side of the mountain towards\r\nthe top and westwards down the mountain into the foothills below.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4038
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 4040
+[[rooms]]
+vnum = 4040
+name = "The Mountain Top"
+description = "   You find yourself at what is essentially the summit of this mountain.\r\nIt certainly seemed taller from the ground didn't it?  The plateau you\r\nstand on is close to thirty metres across and a small gouge in the north\r\nside of it looks to lead to a small cavern.  A small trail leads down\r\ntowards a valley that was hidden away on the east side of the mountain.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4041
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4076
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 4039
+[[rooms]]
+vnum = 4041
+name = "The Lion's Den"
+description = "   Following the gouge down to the cave entrance, you clamber through\r\nthe small entranceway only to find yourself in what appears to be the\r\nliving den of a large carnivorous animal!\r\n"
+flags = "ad"
+sector = 2
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4040
+[[rooms]]
+vnum = 4042
+name = "The Level Foothills"
+description = "   You continue to move through the foothills and notice that off in\r\nthe distance to the west, you can see a rather large cave entrance in\r\nthe side of a large hill.  The hill seems to jut up from the rest of\r\nthe foothills quite unnaturally.  A path leads off towards the east\r\nas it seems to begin from nothing here.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4034
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4043
+[[rooms]]
+vnum = 4043
+name = "The Cave Entrance"
+description = "   You stand in a large tunnel, much larger than it seemed from\r\nthe outside.  The ceiling is at least twenty feet above, and the\r\nwidth of the tunnel runs at least fifteen feet.  You can feel the\r\nfresh air coming from the east, and off to the west, it looks to\r\nlead into darkness.\r\n"
+flags = "d"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4042
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4044
+[[rooms]]
+vnum = 4044
+name = "The Hill Giant Cave"
+description = "   You find yourself inside a rather large cavern.  The ceiling stands\r\nat least twenty five feet above you, if not more.  The walls are so far\r\naway, that the shadows of the room obscure them almost completely.  Out\r\nof all of the grandeur in this cave however, nothing seems to catch your\r\neye quite as much as the enormous table standing in the middle of the\r\nsandy floor.  It stands tall enough for you to walk under it without the\r\nneed to hunch over.  A large tunnel leads out of the eastern wall of the\r\ncavern.\r\n"
+flags = "ad"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4043
+[[rooms]]
+vnum = 4045
+name = "The Steep Trail"
+description = "   This trail leads up a steep hill to a point where it levels out as\r\nit begins to pass between the mountains that surround you.  It continues\r\nthrough the hills to the east and heads down to the valley to the west.\r\n"
+flags = "c"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+description = "The rocky trail continues.\r\n"
+door = 0
+key = -1
+to_room = 4046
+
+[[rooms.exits]]
+dir = 3
+description = "The valley lies at the bottom of the steep trail.\r\n"
+door = 0
+key = -1
+to_room = 4031
+[[rooms]]
+vnum = 4046
+name = "Between The Mountains"
+description = "   The trail between the mountains seems almost endless as you continue\r\nto trek along it.  It continues to both the east and west.\r\n"
+flags = "c"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+description = "The trail continues eastwards.\r\n"
+door = 0
+key = -1
+to_room = 4047
+
+[[rooms.exits]]
+dir = 3
+description = "The trail continues westwards.\r\n"
+door = 0
+key = -1
+to_room = 4045
+[[rooms]]
+vnum = 4047
+name = "The Foothills"
+description = "   After a long trek, you find yourself in the foothills again.  You spot\r\na narrow trail leading away to the northwest not too far distant to the\r\nwest.\r\n"
+flags = "c"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+description = "You can head towards the narrow trail this way.\r\n"
+door = 0
+key = -1
+to_room = 4049
+
+[[rooms.exits]]
+dir = 3
+description = "The trail leading back through the mountains seems to go on forever.\r\n"
+door = 0
+key = -1
+to_room = 4046
+[[rooms]]
+vnum = 4048
+name = "The Foothills"
+description = "   A short trek through the foothills and you find yourself facing a\r\ntrail that leads between the mountains to the west.  The trail through\r\nthem looks to be very long and probably quite tiring.  You spot a narrow\r\ntrail leading away to the northwest not too far distant to the west.\r\n"
+flags = "c"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+description = "You can head towards the narrow trail this way.\r\n"
+door = 0
+key = -1
+to_room = 4049
+
+[[rooms.exits]]
+dir = 3
+description = "The trail leading through the mountains seems to go on forever.\r\n"
+door = 0
+key = -1
+to_room = 4046
+[[rooms]]
+vnum = 4049
+name = "The Foothills"
+description = "   You are at a point on the trail where it turns slowly from an\r\nalmost straight westwards trail into a trail meandering towards\r\nthe northwest. \r\n"
+flags = "c"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+description = "A small trail leads away to the northwest.\r\n"
+door = 0
+key = -1
+to_room = 5628
+
+[[rooms.exits]]
+dir = 3
+description = "A trail heads towards the mountains to the west.\r\n"
+door = 0
+key = -1
+to_room = 4048
+[[rooms]]
+vnum = 4050
+name = "The Tunnel"
+description = "   You are at a bend in the tunnel here.  It turns from an eastwards\r\nheading to a southwards one.  The walls are cold and seem to be damp\r\nwith moisture.  you can see some greenish moss growing up near the\r\nroof of the passageway on the northern wall.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4051
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4053
+[[rooms]]
+vnum = 4051
+name = "The Tunnel"
+description = "   Standing in this part of the tunnel, you notice that not only does\r\nthe tunnel get suddenly narrower, but the floor does not seem to be\r\nnearly as smooth as it was before.  In fact, the floor drops almost\r\nfive feet in jagged steps as you look eastward.  The western path\r\nseems to be quite smooth however.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4052
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4050
+[[rooms]]
+vnum = 4052
+name = "The Tunnel"
+description = "   Continuing along the tunnel, you find that the floor has begun\r\nto smooth itself out once more.  Looking about, you notice a small\r\nspring of water bubbling up near the southern wall.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4100
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4051
+[[rooms]]
+vnum = 4053
+name = "The Tunnel"
+description = "   You continue along the tunnel to find yourself at a right\r\nangle turn.  The passage leads north and east from here.  The\r\nway to the north seems to be a longer tunnel which continues\r\non through the gloom of the underearth.  The way to the east\r\nis a fresh change from what would normally be found this far\r\nunderground in that the tunnel seems to open  up into a fairly\r\nlarge and well lit cave.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4050
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4054
+[[rooms]]
+vnum = 4054
+name = "The Light Cave"
+description = "   The cave you stand in now is lit by an eerie flickering light,\r\nwhich probably comes from the enormous fire which is burning a\r\nshort distance to the south in what looks to be the middle of\r\nthe cave.  The flickering light creates some really strange and\r\nalmost frightening shadows on the walls, almost hiding the two\r\ntunnels that lead away from here, one to the east and one to the\r\nwest.\r\n"
+flags = "d"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4055
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4056
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4053
+[[rooms]]
+vnum = 4055
+name = "The Maze"
+description = "   You stand in yet another small and damp tunnel.  The ceiling hangs\r\nquite low overhead and the passage twists off into darkness.  The only\r\nexit from here looks to be off to the west.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4054
+[[rooms]]
+vnum = 4056
+name = "The Light Cave"
+description = "   The cave you stand in now is lit by an eerie flickering light,\r\nwhich comes from the enormous fire which is burning right in\r\nfront of you in the middle of this large cave.  The fire gives\r\noff more than enough light to see both the north and south ends\r\nof the cave.\r\n"
+flags = "d"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4054
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4061
+
+[[rooms.extra]]
+keyword = "fire"
+description = "The fire seems to have been burning for quite a long time.  The\r\nceiling is covered with soot from the smoke, and ashes are littered\r\nall over the floor of the cave.\r\n"
+[[rooms]]
+vnum = 4057
+name = "The Maze"
+description = "   You stand in yet another small and damp tunnel.  The ceiling hangs\r\nquite low overhead and the passage twists off into darkness.  The only\r\nexits from here look to be off to the north and south.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4055
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4062
+[[rooms]]
+vnum = 4058
+name = "The Maze"
+description = "   You stand in yet another small and damp tunnel.  The ceiling hangs\r\nquite low overhead and the passage twists off into darkness.  The only\r\nexits from here look to be off to the south and west.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4063
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4057
+[[rooms]]
+vnum = 4059
+name = "The Tunnel"
+description = "   You are standing in a tunnel deep inside the heart of Mount Moria.  A\r\nsmall rivulet of water runs alongside the wall to the north as the tunnel\r\nseems to lead slightly down towards the east.\r\n   The tunnel continues on to the east as it plunges deeper into the earth,\r\nand upwards a bit towards the west where the air seems to be quite damp.\r\n"
+flags = "acd"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4060
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4024
+[[rooms]]
+vnum = 4060
+name = "The Tunnel"
+description = "   You stand in a section of this small tunnel which seems to be\r\nalmost level.  There is a small pool of water collecting beside\r\nthe north wall indicating perhaps a low spot on the floor.  The\r\npool is being fed by a small rivulet which is coursing along the\r\nnorthern wall from the west, but yet the water level in the pool\r\ndoes not seem to be changing.\r\n   Looking either way down the tunnel, you can see that the tunnel\r\nclimbs to the west, and to the east, a strange flickering light\r\nshows that the tunnel opens up into a cave of sorts.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4061
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4059
+[[rooms]]
+vnum = 4061
+name = "The Light Cave"
+description = "   The cave you stand in now is lit by an eerie flickering light,\r\nwhich probably comes from the enormous fire which is burning a\r\nshort distance to the north in what looks to be the middle of\r\nthe cave.  The flickering light creates some really strange and\r\nalmost frightening shadows on the walls, almost hiding the two\r\ntunnels that lead away from here, one to the west and one to the\r\nsouth.\r\n"
+flags = "d"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4056
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4065
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4060
+[[rooms]]
+vnum = 4062
+name = "The Maze"
+description = "   You stand in yet another small and damp tunnel.  The ceiling hangs\r\nquite low overhead and the passage twists off into darkness.  The only\r\nexits from here look to be off to the east and west.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4063
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4061
+[[rooms]]
+vnum = 4063
+name = "The Maze"
+description = "   You stand in yet another small and damp tunnel.  The ceiling hangs\r\nquite low overhead and the passage twists off into darkness.  The only\r\nexits from here look to be off to the east and north.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4058
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4064
+[[rooms]]
+vnum = 4064
+name = "The Tunnel"
+description = "   You stand in a small chamber beneath the earth.  The chamber\r\ncloses down to tunnel size to the west as the only obvious exit\r\nleads away in that direction.  Before heading off that way, you\r\ndecide to look around the cave.  The walls are slightly damp to\r\nthe touch, and the ceiling is very smooth.  Almost right in the\r\ncentre of the ceiling, a well rounded hole has been made.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4063
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 4020
+[[rooms]]
+vnum = 4065
+name = "The Maze"
+description = "   You stand in yet another small and damp tunnel.  The ceiling hangs\r\nquite low overhead and the passage twists off into darkness.  The only\r\nexits from here look to be off to the east and north.  To the north,\r\nyou can see the entrance to what looks to be a large and well lit cave.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4061
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4066
+[[rooms]]
+vnum = 4066
+name = "The Maze"
+description = "   You stand in yet another small and damp tunnel.  The ceiling hangs\r\nquite low overhead and the passage twists off into darkness.  The only\r\nexits from here look to be off to the east, south, and north.  To the\r\nsouth, the tunnel looks to open up into a cavern.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4062
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4067
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4069
+[[rooms]]
+vnum = 4067
+name = "The Maze"
+description = "   You stand in yet another small and damp tunnel.  The ceiling hangs\r\nquite low overhead and the passage twists off into darkness.  The only\r\nexits from here look to be off to the west and north.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4063
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4066
+[[rooms]]
+vnum = 4068
+name = "The Large Cave"
+description = "   You find yourself in what is perhaps the largest cave you\r\nhave ever been in.  It stretches through the darkness to the\r\neast and south.  The cave is nigh filled with echoes created\r\nby the sound of your breathing.  Stalactites and stalagmites\r\nhang down from the ceiling and climb upwards from the ground\r\nof the cavern respectively.\r\n"
+flags = "ad"
+sector = 2
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4069
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4070
+[[rooms]]
+vnum = 4069
+name = "The Large Cave"
+description = "   You find yourself in what is perhaps the largest cave you\r\nhave ever been in.  It stretches through the darkness to the\r\nwest and south.  The cave is nigh filled with echoes created\r\nby the sound of your breathing.  Stalactites and stalagmites\r\nhang down from the ceiling and climb upwards from the ground\r\nof the cavern respectively.  A narrow tunnel leads away from\r\nthe cave to the north.\r\n"
+flags = "ad"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4066
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4071
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4068
+[[rooms]]
+vnum = 4070
+name = "The Large Cave"
+description = "   You find yourself in what is perhaps the largest cave you\r\nhave ever been in.  It stretches through the darkness to the\r\neast and north.  The cave is nigh filled with echoes created\r\nby the sound of your breathing.  Stalactites and stalagmites\r\nhang down from the ceiling and climb upwards from the ground\r\nof the cavern respectively.\r\n"
+flags = "ad"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4068
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4071
+[[rooms]]
+vnum = 4071
+name = "The Large Cave"
+description = "   You find yourself in what is perhaps the largest cave you\r\nhave ever been in.  It stretches through the darkness to the\r\nwest and south.  The cave is nigh filled with echoes created\r\nby the sound of your breathing.  Stalactites and stalagmites\r\nhang down from the ceiling and climb upwards from the ground\r\nof the cavern respectively.  A narrow tunnel leads away from\r\nthe cave to the east.\r\n"
+flags = "ad"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4069
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4072
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4070
+[[rooms]]
+vnum = 4072
+name = "The Tunnel"
+description = "   You stand in a narrow tunnel.  It makes a turn from east to south\r\nhere as it heads through the rock of the mountain.  The western wall\r\nof the tunnel looks to have broken through a small, natural crack in\r\nthe rock to lead into what appears to be a fairly large cave.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4073
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4074
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4071
+[[rooms]]
+vnum = 4073
+name = "The End Of The Tunnel"
+description = "   The tunnel comes to a sudden halt here.  How very bizarre.  The\r\nonly exit is back to the west, where the tunnel leads back through\r\nthe mountain.  There is absolutely nothing of any interest down at\r\nthe end of this passageway either.  How odd.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4072
+[[rooms]]
+vnum = 4074
+name = "The Hole"
+description = "   You are at a small hole in the floor.  Alas, you can only leave\r\nnorth because to leave down into the unknown, you must be able to\r\nfit through the hole, which is far too small for you!\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4072
+
+[[rooms.exits]]
+dir = 5
+description = "The small hole in the floor refuses to give up its secrets about\r\nwhat can be found below.\r\n"
+door = 0
+key = -1
+to_room = -1
+
+[[rooms.extra]]
+keyword = "hole floor"
+description = "The small hole in the floor refuses to give up its secrets about\r\nwhat can be found below.\r\n"
+[[rooms]]
+vnum = 4075
+name = "The Copse Of Trees"
+description = "   Standing in this copse of trees gives you an eerie feeling.  Off to\r\nthe east you can see the plains, and just to the north a strange shadow\r\nseems to be changing shape constantly and almost seems to beckon you to\r\nenter it. \r\n"
+flags = "0"
+sector = 4
+
+[[rooms.exits]]
+dir = 0
+description = "There is a strange shadow forming before you.\r\n"
+door = 0
+key = -1
+to_room = 2500
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4036
+[[rooms]]
+vnum = 4076
+name = "On A Mountain Trail"
+description = "   You find yourself on a mountain trail twisting down towards a small\r\nhidden valley located in the shadow of another mountain a short distance\r\nto the east.  The trail is fairly rough going and looks to dip down into\r\nthe small valley before climbing up the side of the other mountain.  As\r\nyou look at the valley from a closer vantage point, you realize that it\r\nis much smaller than you had expected, being maybe thirty feet long.  It\r\nis quite surprising how deceptive distances can be this high up in the\r\nmountains, isn't it?\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4040
+
+[[rooms.exits]]
+dir = 5
+door = 0
+key = -1
+to_room = 4077
+[[rooms]]
+vnum = 4077
+name = "In The Hidden Valley"
+description = "   This valley seems to be a complete waste of a climb down the\r\nmountainside.  Of course, there is always the carefully hidden\r\ntrail that you just noticed on the eastern side of the valley,\r\nleading up the eastern mountain that is blocking most of the sky\r\nfrom you.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6400
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 4076
+[[rooms]]
+vnum = 4078
+name = "In The Hidden Valley"
+description = "   This small valley is hidden away in the shadow of the large\r\nmountain to the east.  The trail leading up it to the east seems\r\nto vanish before your eyes, but you are quickly able to find it\r\nonce again.  A trail leads up the mountain to the west as well.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 6400
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 4076
+[[rooms]]
+vnum = 4100
+name = "The Tunnel"
+description = "   As you continue along this tunnel which heads deeper and deeper into\r\nthe earth, you notice that the tunnel must be a lot steeper than you\r\npreviously expected as there is a small rivulet of water gushing down\r\nthe one side of the tunnel.  The tunnel appears to extend straight to\r\nthe east for quite some distance.\r\n"
+flags = "acd"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4101
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4052
+[[rooms]]
+vnum = 4101
+name = "The Long Tunnel"
+description = "   The tunnel seems to be slightly sloped here as it continues in its\r\neast-west direction.  The tunnel walls are far apart, almost allowing\r\nfor four people to travel abreast with ease.  The walls do not seem to\r\nbe very damp, but there is a small rivulet running along the northern\r\nwall of the tunnel.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4102
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4100
+[[rooms]]
+vnum = 4102
+name = "The Long Tunnel"
+description = "   As you travel along this long tunnel, you begin to wonder just\r\nhow long it is.  The walls are fairly far apart, but you can see\r\nthat they begin to close in rather rapidly to the east.  In fact,\r\nthe manner in which they come together almost reminds you of a\r\nfunnel.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4103
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4101
+[[rooms]]
+vnum = 4103
+name = "The Long Tunnel"
+description = "   You are standing in a long east-west tunnel.  It is not all that\r\nwide at this point, perhaps wide enough for two people to stand side\r\nby side without impeding each other.  Off to the west it appears that\r\nthe tunnel opens up some more while to the east it dives further down\r\ninto the earth, and you can see a small hole about two feet in diameter\r\nabout waist height in the southern wall.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4104
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4106
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4102
+[[rooms]]
+vnum = 4104
+name = "The Long Tunnel"
+description = "   You find yourself in a small bulbous cavern ending.  The somewhat\r\ncircular 'room' is about thirty feet in diameter and you can see one\r\nexit from it; a tunnel leading sharply upwards from the western wall.\r\nThe walls of this cavern are quite indistinct and you cannot see any\r\nmoss or dampness on them whatsoever.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4103
+[[rooms]]
+vnum = 4105
+name = "The Golden Cave"
+description = "   You are standing in what appears to be the north-east corner of\r\nthis large cavern.  The cave is lit by the eerie, soft, golden light\r\nwhich looks to be emanating from the walls themselves.  The cave\r\nitself is enormous, extending quite a distance to the west and south.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4108
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4106
+
+[[rooms.extra]]
+keyword = "light gold golden"
+description = "It looks good, but as you look closely you notice that it has no value.\r\n"
+[[rooms]]
+vnum = 4106
+name = "The Golden Cave"
+description = "   You are standing in what appears to be the north-west corner of\r\nthis large cavern.  The cave is lit by the eerie, soft, golden light\r\nwhich looks to be emanating from the walls themselves.  The cave\r\nitself is enormous, extending quite a distance to the east and south.\r\nThere is a hole in the northern wall, about two feet in diameter.\r\nAll that can be seen through the hole is darkness.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4103
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4105
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4109
+
+[[rooms.extra]]
+keyword = "light gold golden"
+description = "It looks good, but as you look closely you notice that it has no value.\r\n"
+[[rooms]]
+vnum = 4107
+name = "The Passage"
+description = "   You are standing at the elbow turn of a small passageway.  It turns\r\nquite sharply to the south and west.  To the south, it appears that the\r\npassage continues, but to the west you can see what almost appears to\r\nbe a golden light.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4113
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4108
+[[rooms]]
+vnum = 4108
+name = "The Golden Cave"
+description = "   You are standing in what appears to be the south-east corner of\r\nthis large cavern.  The cave is lit by the eerie, soft, golden light\r\nwhich looks to be emanating from the walls themselves.  The cave\r\nitself is enormous, extending quite a distance to the west and north.\r\nA crack in the wall to the east appears to lead into a passageway of\r\nsorts.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4105
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4107
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4109
+
+[[rooms.extra]]
+keyword = "light gold golden"
+description = "It looks good, but as you look closely you notice that it has no value.\r\n"
+[[rooms]]
+vnum = 4109
+name = "The Golden Cave"
+description = "   You are standing in what appears to be the middle of the western\r\nwall of this large cavern.  The cave is lit by the eerie, soft, golden\r\nlight which looks to be emanating from the walls themselves.  The cave\r\nitself is enormous, extending quite a distance to the east, south,\r\nand north.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4106
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4108
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4114
+
+[[rooms.extra]]
+keyword = "light gold golden"
+description = "It looks good, but as you look closely you notice that it has no value.\r\n"
+[[rooms]]
+vnum = 4110
+name = "The Hole"
+description = "   You find yourself standing in a small alcove as the tunnel comes to\r\na somewhat sudden end.  Looking about you suddenly notice a rather big\r\nhole in the floor of the tunnel.  In fact, it seems that another step\r\nforward and you would have fallen into it.\r\n   The tunnel itself leads to the west, and looking down into the hole\r\nin the floor reveals little beyond the fact that it seems to be very\r\ndeep and very dark.  There is a very strange smell emanating from the\r\nhole, it almost smells like something down there is rotting.\r\n"
+flags = "acd"
+sector = 3
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4111
+
+[[rooms.exits]]
+dir = 5
+description = "Before you head down, you drop a rock to see how deep the hole is...\r\nAfter about five minutes, it still hasn't hit bottom.  Thus, for\r\nreasons of sanity, you decide not to go this way.\r\n"
+door = 0
+key = -1
+to_room = -1
+
+[[rooms.extra]]
+keyword = "hole floor"
+description = "Before you head down, you drop a rock to see how deep the hole is...\r\nAfter about five minutes, it still hasn't hit bottom.  Thus, for\r\nreasons of sanity, you decide not to go this way.\r\n"
+[[rooms]]
+vnum = 4111
+name = "The Tunnel"
+description = "   The walls of this small tunnel are almost completely covered in a\r\nstrange orange moss that flakes off to the touch.  The tunnel leads\r\nin an east-west direction and the air within is very damp and very\r\nstagnant.  There is no detectable breeze at all but a strange smell\r\nemanates from the east.  There is a small, almost unnoticed hole in\r\nthe southern wall.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4110
+
+[[rooms.exits]]
+dir = 2
+description = "The hole looks very small.  You will probably have to crawl through\r\nit.\r\n"
+door = 0
+key = -1
+to_room = 4126
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4112
+
+[[rooms.extra]]
+keyword = "moss walls wall"
+description = "The moss on the walls is orange.  When you touch it, it feels very\r\nscrubby and flakes off to the touch leaving a slight orange tinge\r\non your fingertips.\r\n"
+[[rooms]]
+vnum = 4112
+name = "The Tunnel"
+description = "   The tunnel in which you currently stand is fairly wide (very wide\r\nrelative to almost all the other tunnels around here it seems) and\r\nyet the air is quite damp.  The walls have a thin coating of moisture\r\nupon them which looks and feels somewhat oiley.  The tunnel leads in\r\nan east-west direction.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4111
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4113
+
+[[rooms.extra]]
+keyword = "wall walls moisture coat coating"
+description = "The coating of moisture on the walls has strange little patterns of\r\ncolour weaving through it, almost as if someone had spilled oil on\r\na horizontal water surface.\r\n"
+[[rooms]]
+vnum = 4113
+name = "The Passage"
+description = "   This north-south passageway looks to be a natural creation, except\r\nthat the walls looks to have been roughly hewn in order to smooth them\r\na somewhat to make passage easier.  The walls still meander as the\r\npassage makes its way deeper into the bowels of the earth.  A bizarre\r\nshadow in the eastern wall leads you to suspect that a small passage\r\nmeets the tunnel there.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4107
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4112
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4116
+[[rooms]]
+vnum = 4114
+name = "The Golden Cave"
+description = "   You are standing in what appears to be the south-west corner of\r\nthis large cavern.  The cave is lit by the eerie, soft, golden light\r\nwhich looks to be emanating from the walls themselves.  The cave\r\nitself is enormous, extending quite a distance to the north and a\r\nstrange shadow formation seems to indicate a passage entrance to the\r\nwest.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4109
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4115
+
+[[rooms.extra]]
+keyword = "light gold golden"
+description = "It looks good, but as you look closely you notice that it has no value.\r\n"
+[[rooms]]
+vnum = 4115
+name = "The Dark Passage"
+description = "   You find yourself in a small passage ending.  It is quite dark in here.\r\nAs you look about the damp walls, you notice that the passageway almost\r\nappears to curve upwards towards the ceiling.  Looking up, you notice that\r\nthere is a small hole, just large enough to pass through.  Looking closely\r\nat the curved part of the wall, it appears that someone (or something) has\r\ncarved small handholds into the wall to ease passage upwards.  The tunnel\r\nitself leads off to the east.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4114
+
+[[rooms.exits]]
+dir = 4
+door = 0
+key = -1
+to_room = 4021
+[[rooms]]
+vnum = 4116
+name = "The Passage"
+description = "   You find yourself in quite an ordinary passageway which leads north\r\nand south.  It looks to be wide enough for two people to walk side by\r\nside with plenty of room.  The passage appears to be almost rectangular\r\nin form.  Far off to the south you can see the pinpoint of a light.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4113
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4120
+
+[[rooms.extra]]
+keyword = "light"
+description = "Well, you can't see where it comes from...\r\n"
+[[rooms]]
+vnum = 4117
+name = "The Secret Tunnel"
+description = "   You are currently standing in a narrow passageway that does not seem\r\nto have been heavily visited at any time.  It leads northwards towards\r\na lit room and south towards what appears to be a chamber.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4114
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4122
+[[rooms]]
+vnum = 4118
+name = "The Cave"
+description = "   This rather large cave is surprisingly very well lit.  There are\r\nabout twenty torches spread about the room set in sconces which hang\r\nseveral feet above your head.  The dancing shadows created by the\r\nflickering flames catch your eyes for a few minutes and threaten to\r\nhold you entranced.\r\n   Looking about the cave, it appears to continue to the west and\r\nsouth.  In the north wall a strange vertical crack looks as if it may\r\nlead somewhere.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "It looks like quite the tight fit.\r\n"
+door = 0
+key = -1
+to_room = 4126
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4123
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4119
+[[rooms]]
+vnum = 4119
+name = "The Cave"
+description = "   This rather large cave is surprisingly very well lit.  There are\r\nabout twenty torches spread about the room set in sconces which hang\r\nseveral feet above your head.  The dancing shadows created by the\r\nflickering flames catch your eyes for a few minutes and threaten to\r\nhold you entranced.\r\n   Looking about the cave, it appears to continue to the east and\r\nsouth.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4118
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4124
+
+[[rooms.exits]]
+dir = 3
+description = "The rock wall to the west looks odd for some strange reason.\r\n"
+keyword = "wall rock"
+door = 1
+key = -1
+to_room = 4121
+[[rooms]]
+vnum = 4120
+name = "The Passage"
+description = "   You stand in a fairly normal passage, slightly wider than is\r\nnecessary for one person, but not quite wide enough for two.  The\r\nceiling dips here rather surprisingly, or wait, is that because the\r\nfloor climbs upwards toward it?  The tunnel seems to narrow slightly\r\nmore as you look to the south, and widens up somewhat as you look\r\nnorthward.  The light to the south continues to flicker.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4116
+
+[[rooms.exits]]
+dir = 2
+door = 0
+key = -1
+to_room = 4125
+
+[[rooms.extra]]
+keyword = "light"
+description = "It nearly is enough to light the passage.\r\n"
+[[rooms]]
+vnum = 4121
+name = "The Secret Tunnel"
+description = "   You stand in a very unnatural hallway, about ten feet across and\r\nabout ten or twelve feet up.  The passageway funnels down towards \r\nthe west where it leads to a doorway that looks to be about five feet\r\nacross.  The east end of the tunnel comes to a sudden end at a very\r\nsmooth rock wall.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 1
+description = "The rock wall to the east looks like it might be able to be moved.\r\n"
+keyword = "wall rock"
+door = 1
+key = -1
+to_room = 4119
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4122
+
+[[rooms.extra]]
+keyword = "wall rock"
+description = "The rock wall to the east looks like it might be able to be moved.\r\n"
+[[rooms]]
+vnum = 4122
+name = "The Secret Chamber"
+description = "   You stand in a small chamber that you never would have thought\r\ncould exist.  This small, almost perfectly round cave does not\r\nappear to be a natural formation at all, since the walls are far\r\ntoo smooth and the doorways to the north and east are both almost\r\nexactly five feet wide and eleven feet tall.\r\n"
+flags = "ad"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4117
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4121
+[[rooms]]
+vnum = 4123
+name = "The Cave"
+description = "   This rather large cave is surprisingly very well lit.  There are\r\nabout twenty torches spread about the room set in sconces which hang\r\nseveral feet above your head.  The dancing shadows created by the\r\nflickering flames catch your eyes for a few minutes and threaten to\r\nhold you entranced.\r\n   Looking about the cave, it appears to continue to the west and\r\nnorth.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4118
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4124
+[[rooms]]
+vnum = 4124
+name = "The Cave"
+description = "   This rather large cave is surprisingly very well lit.  There are\r\nabout twenty torches spread about the room set in sconces which hang\r\nseveral feet above your head.  The dancing shadows created by the\r\nflickering flames catch your eyes for a few minutes and threaten to\r\nhold you entranced.\r\n   Looking about the cave, it appears to continue to the east and\r\nnorth.  There is a passageway leading out of the western wall of the\r\ncave which looks to turn northwards.\r\n"
+flags = "d"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4119
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4123
+
+[[rooms.exits]]
+dir = 3
+door = 0
+key = -1
+to_room = 4125
+[[rooms]]
+vnum = 4125
+name = "The Passage"
+description = "   You are at the end of a narrow passage which leads away from\r\nhere to the north.  The southern wall is bare and almost seems to\r\ndance with the shadows created by the flickering light emanating\r\nfrom the cave to the east.\r\n"
+flags = "d"
+sector = 3
+
+[[rooms.exits]]
+dir = 0
+door = 0
+key = -1
+to_room = 4120
+
+[[rooms.exits]]
+dir = 1
+door = 0
+key = -1
+to_room = 4124
+[[rooms]]
+vnum = 4126
+name = "The Crawlway"
+description = "   You are in a very narrow crawlway.  To back out of it, you would have\r\nto move carefully in order to not catch anything on the jutting rocks of\r\nthe ceiling and walls.  The diameter of the crawlway is about two feet,\r\nand is a rather tight squeeze.  You'd better hope that there aren't any\r\nworms or similar creatures down this way since it might be difficult to\r\ndefend yourself in here.\r\n"
+flags = "acdfgij"
+sector = 5
+
+[[rooms.exits]]
+dir = 0
+description = "You can see a small hole marking the north exit of the crawlway.\r\n"
+door = 0
+key = -1
+to_room = 4111
+
+[[rooms.exits]]
+dir = 2
+description = "You can see the light emanating from the southern exit of the crawlway.\r\n"
+door = 0
+key = -1
+to_room = 4118

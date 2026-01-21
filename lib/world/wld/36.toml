@@ -1,0 +1,2021 @@
+[[rooms]]
+vnum = 3600
+name = "The Great Chessboard Of Midgaard"
+description = "   You stand in the archway of the Chessboard of Midgaard.  The giant\r\nwooden gate is rusted open.\r\n   A narrow dirt path leads eastwards into the thick grass and the\r\nchessboard opens up to the west.\r\n"
+flags = "c"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "A dirt path leads away through the great field north of Midgaard.\r\n"
+door = 0
+key = -1
+to_room = 3066
+
+[[rooms.exits]]
+dir = 3
+description = "The huge chessboard opens up to the west.\r\n"
+door = 0
+key = -1
+to_room = 3632
+[[rooms]]
+vnum = 3601
+name = "A White Square"
+description = "   You are standing on a white marble square.  This is usually the home\r\nof the Black Queen's Rook.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3602
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3609
+[[rooms]]
+vnum = 3602
+name = "A Black Square"
+description = "   You are standing on a black marble square.  This is usually the home\r\nof the Black Queen's Knight.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3603
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3610
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3601
+[[rooms]]
+vnum = 3603
+name = "A White Square"
+description = "   You are standing on a white marble square.  This is usually the home\r\nof the Black Queen's Bishop.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3604
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3611
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3602
+[[rooms]]
+vnum = 3604
+name = "A Black Square"
+description = "   You are standing on a black marble square.  This is usually the home\r\nof the Black Queen.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3605
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3612
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3603
+
+[[rooms.exits]]
+dir = 5
+keyword = "marble square"
+door = 2
+key = 3614
+to_room = 3665
+[[rooms]]
+vnum = 3605
+name = "A White Square"
+description = "   You are standing on a white marble square.  This is usually the home\r\nof the Black King.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3606
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3613
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3604
+[[rooms]]
+vnum = 3606
+name = "A Black Square"
+description = "   You are standing on a black marble square.  This is usually the home\r\nof the Black King's Bishop.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3607
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3614
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3605
+[[rooms]]
+vnum = 3607
+name = "A White Square"
+description = "   You are standing on a white marble square.  This is usually the home\r\nof the Black King's Knight.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3608
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3615
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3606
+[[rooms]]
+vnum = 3608
+name = "A Black Square"
+description = "   You are standing on a black marble square.  This is usually the home\r\nof the Black King's Rook.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3616
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3607
+[[rooms]]
+vnum = 3609
+name = "A Black Square"
+description = "   You are standing on a black marble square.  This is usually the home\r\nof one of the Black Queen's Pawns.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3601
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3610
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3617
+[[rooms]]
+vnum = 3610
+name = "A White Square"
+description = "   You are standing on a white marble square.  This is usually the home\r\nof one of the Black Queen's Pawns.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3602
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3611
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3618
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3609
+[[rooms]]
+vnum = 3611
+name = "A Black Square"
+description = "   You are standing on a black marble square.  This is usually the home\r\nof one of the Black Queen's Pawns.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3603
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3612
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3619
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3610
+[[rooms]]
+vnum = 3612
+name = "A White Square"
+description = "   You are standing on a white marble square.  This is usually the home\r\nof one of the Black Queen's Pawns.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3604
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3613
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3620
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3611
+[[rooms]]
+vnum = 3613
+name = "A Black Square"
+description = "   You are standing on a black marble square.  This is usually the home\r\nof one of the Black King's Pawns.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3605
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3614
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3621
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3612
+[[rooms]]
+vnum = 3614
+name = "A White Square"
+description = "   You are standing on a white marble square.  This is usually the home\r\nof one of the Black King's Pawns.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3606
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3615
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3622
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3613
+[[rooms]]
+vnum = 3615
+name = "A Black Square"
+description = "   You are standing on a black marble square.  This is usually the home\r\nof one of the Black King's Pawns.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3607
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3616
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3623
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3614
+[[rooms]]
+vnum = 3616
+name = "A White Square"
+description = "   You are standing on a white marble square.  This is usually the home\r\nof one of the Black King's Pawns.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3608
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3624
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3615
+[[rooms]]
+vnum = 3617
+name = "A White Square"
+description = "   You are standing on a white marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3609
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3618
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3625
+[[rooms]]
+vnum = 3618
+name = "A Black Square"
+description = "   You are standing on a black marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3610
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3619
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3626
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3617
+[[rooms]]
+vnum = 3619
+name = "A White Square"
+description = "   You are standing on a white marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3611
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3620
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3627
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3618
+[[rooms]]
+vnum = 3620
+name = "A Black Square"
+description = "   You are standing on a black marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3612
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3621
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3628
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3619
+[[rooms]]
+vnum = 3621
+name = "A White Square"
+description = "   You are standing on a white marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3613
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3622
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3629
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3620
+[[rooms]]
+vnum = 3622
+name = "A Black Square"
+description = "   You are standing on a black marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3614
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3623
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3630
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3621
+[[rooms]]
+vnum = 3623
+name = "A White Square"
+description = "   You are standing on a white marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3615
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3624
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3631
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3622
+[[rooms]]
+vnum = 3624
+name = "A Black Square"
+description = "   You are standing on a black marble square.  You can see a rusty gate\r\nto the south.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3616
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3632
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3623
+[[rooms]]
+vnum = 3625
+name = "A Black Square"
+description = "   You are standing on a black marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3617
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3626
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3633
+[[rooms]]
+vnum = 3626
+name = "A White Square"
+description = "   You are standing on a white marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3618
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3627
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3634
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3625
+[[rooms]]
+vnum = 3627
+name = "A Black Square"
+description = "   You are standing on a black marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3619
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3628
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3635
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3626
+[[rooms]]
+vnum = 3628
+name = "A White Square"
+description = "   You are standing on a white marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3620
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3629
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3636
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3627
+[[rooms]]
+vnum = 3629
+name = "A Black Square"
+description = "   You are standing on a black marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3621
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3630
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3637
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3628
+[[rooms]]
+vnum = 3630
+name = "A White Square"
+description = "   You are standing on a white marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3622
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3631
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3638
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3629
+[[rooms]]
+vnum = 3631
+name = "A Black Square"
+description = "   You are standing on a black marble square.  There is a rusty gate\r\na short distance to the east.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3623
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3632
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3639
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3630
+[[rooms]]
+vnum = 3632
+name = "A White Square"
+description = "   You are standing on a white marble square.  There is a large rusty\r\ngate to the east.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3624
+
+[[rooms.exits]]
+dir = 1
+description = "The gate to the chessboard is just to the east.\r\n"
+door = 0
+key = -1
+to_room = 3600
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3640
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3631
+[[rooms]]
+vnum = 3633
+name = "A White Square"
+description = "   You are standing on a white marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3625
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3634
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3641
+[[rooms]]
+vnum = 3634
+name = "A Black Square"
+description = "   You are standing on a black marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3626
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3635
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3642
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3633
+[[rooms]]
+vnum = 3635
+name = "A White Square"
+description = "   You are standing on a white marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3627
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3636
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3643
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3634
+[[rooms]]
+vnum = 3636
+name = "A Black Square"
+description = "   You are standing on a black marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3628
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3637
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3644
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3635
+[[rooms]]
+vnum = 3637
+name = "A White Square"
+description = "   You are standing on a white marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3629
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3638
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3645
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3636
+[[rooms]]
+vnum = 3638
+name = "A Black Square"
+description = "   You are standing on a black marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3630
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3639
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3646
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3637
+[[rooms]]
+vnum = 3639
+name = "A White Square"
+description = "   You are standing on a white marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3631
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3640
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3647
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3638
+[[rooms]]
+vnum = 3640
+name = "A Black Square"
+description = "   You are standing on a black marble square.  There is a rusty gate\r\nto the north.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3632
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3648
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3639
+[[rooms]]
+vnum = 3641
+name = "A Black Square"
+description = "   You are standing on a black marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3633
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3642
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3649
+[[rooms]]
+vnum = 3642
+name = "A White Square"
+description = "   You are standing on a white marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3634
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3643
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3650
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3641
+[[rooms]]
+vnum = 3643
+name = "A Black Square"
+description = "   You are standing on a black marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3635
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3644
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3651
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3642
+[[rooms]]
+vnum = 3644
+name = "A White Square"
+description = "   You are standing on a white marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3636
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3645
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3652
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3643
+[[rooms]]
+vnum = 3645
+name = "A Black Square"
+description = "   You are standing on a black marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3637
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3646
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3653
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3644
+[[rooms]]
+vnum = 3646
+name = "A White Square"
+description = "   You are standing on a white marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3638
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3647
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3654
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3645
+[[rooms]]
+vnum = 3647
+name = "A Black Square"
+description = "   You are standing on a black marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3639
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3648
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3655
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3646
+[[rooms]]
+vnum = 3648
+name = "A White Square"
+description = "   You are standing on a white marble square.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3640
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3656
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3647
+[[rooms]]
+vnum = 3649
+name = "A White Square"
+description = "   You are standing on a white marble square.  This is usually the home\r\nof one of the White Queen's Pawns.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3641
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3650
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3657
+[[rooms]]
+vnum = 3650
+name = "A Black Square"
+description = "   You are standing on a black marble square.  This is usually the home\r\nof one of the White Queen's Pawns.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3642
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3651
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3658
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3649
+[[rooms]]
+vnum = 3651
+name = "A White Square"
+description = "   You are standing on a white marble square.  This is usually the home\r\nof one of the White Queen's Pawns.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3643
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3652
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3659
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3650
+[[rooms]]
+vnum = 3652
+name = "A Black Square"
+description = "   You are standing on a black marble square.  This is usually the home\r\nof one of the White Queen's Pawns.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3644
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3653
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3660
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3651
+[[rooms]]
+vnum = 3653
+name = "A White Square"
+description = "   You are standing on a white marble square.  This is usually the home\r\nof one of the White King's Pawns.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3645
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3654
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3661
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3652
+[[rooms]]
+vnum = 3654
+name = "A Black Square"
+description = "   You are standing on a black marble square.  This is usually the home\r\nof one of the White King's Pawns.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3646
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3655
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3662
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3653
+[[rooms]]
+vnum = 3655
+name = "A White Square"
+description = "   You are standing on a white marble square.  This is usually the home\r\nof one of the White King's Pawns.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3647
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3656
+
+[[rooms.exits]]
+dir = 2
+description = "A black square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3663
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3654
+[[rooms]]
+vnum = 3656
+name = "A Black Square"
+description = "   You are standing on a black marble square.  This is usually the home\r\nof one of the White King's Pawns.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3648
+
+[[rooms.exits]]
+dir = 2
+description = "A white square lies to the south.\r\n"
+door = 0
+key = -1
+to_room = 3664
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3655
+[[rooms]]
+vnum = 3657
+name = "A Black Square"
+description = "   You are standing on a black marble square.  This is usually the home\r\nof the White Queen's Rook.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3649
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3658
+[[rooms]]
+vnum = 3658
+name = "A White Square"
+description = "   You are standing on a white marble square.  This is usually the home\r\nof the White Queen's Knight.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3650
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3659
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3657
+[[rooms]]
+vnum = 3659
+name = "A Black Square"
+description = "   You are standing on a black marble square.  This is usually the home\r\nof the White Queen's Bishop.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3651
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3660
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3658
+[[rooms]]
+vnum = 3660
+name = "A White Square"
+description = "   You are standing on a white marble square.  This is usually the home\r\nof the White Queen.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3652
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3661
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3659
+
+[[rooms.exits]]
+dir = 5
+keyword = "marble square"
+door = 2
+key = 3615
+to_room = 3666
+[[rooms]]
+vnum = 3661
+name = "A Black Square"
+description = "   You are standing on a black marble square.  This is usually the home\r\nof the White King.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3653
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3662
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3660
+[[rooms]]
+vnum = 3662
+name = "A White Square"
+description = "   You are standing on a white marble square.  This is usually the home\r\nof the White King's Bishop.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3654
+
+[[rooms.exits]]
+dir = 1
+description = "A black square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3663
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3661
+[[rooms]]
+vnum = 3663
+name = "A Black Square"
+description = "   You are standing on a black marble square.  This is usually the home\r\nof the White King's Knight.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A white square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3655
+
+[[rooms.exits]]
+dir = 1
+description = "A white square lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 3664
+
+[[rooms.exits]]
+dir = 3
+description = "A white square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3662
+[[rooms]]
+vnum = 3664
+name = "A White Square"
+description = "   You are standing on a white marble square.  This is usually the home\r\nof the White King's Rook.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "A black square lies to the north.\r\n"
+door = 0
+key = -1
+to_room = 3656
+
+[[rooms.exits]]
+dir = 3
+description = "A black square lies to the west.\r\n"
+door = 0
+key = -1
+to_room = 3663
+[[rooms]]
+vnum = 3665
+name = "The Black Treasury"
+description = "   You are standing in the treasury of the Black Court.  Hopefully no one \r\nhas looted the Crown's treasure.\r\n"
+flags = "adj"
+sector = 0
+
+[[rooms.exits]]
+dir = 4
+description = "A small staircase rises above you.\r\n"
+keyword = "marble square"
+door = 2
+key = 3614
+to_room = 3604
+[[rooms]]
+vnum = 3666
+name = "The White Treasury"
+description = "   You are standing in the treasury of the White Court.  Hopefully no one \r\nhas looted the Crown's treasure.\r\n"
+flags = "adj"
+sector = 0
+
+[[rooms.exits]]
+dir = 4
+description = "A small staircase rises above you.\r\n"
+keyword = "marble square"
+door = 2
+key = 3615
+to_room = 3660

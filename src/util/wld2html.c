@@ -11,6 +11,7 @@
 
 #include "conf.h"
 #include "sysdep.h"
+#include "toml.h"
 
 
 #define NOWHERE    -1		/* nil reference for room-database         */
@@ -50,6 +51,8 @@ typedef sh_int obj_num;
 
 
 char buf[MAX_STRING_LENGTH];
+
+static long asciiflag_conv(char *flag);
 char buf1[MAX_STRING_LENGTH];
 char buf2[MAX_STRING_LENGTH];
 char arg[MAX_STRING_LENGTH];
@@ -152,6 +155,143 @@ void write_output(void);
 char *dir_names[] =
 {"North", "East", "South", "West", "Up", "Down"};
 
+static int toml_int_required(const toml_table_t *tab, const char *key,
+			     const char *context, const char *filename)
+{
+  toml_datum_t val = toml_int_in(tab, key);
+
+  if (!val.ok) {
+    fprintf(stderr, "TOML file %s missing integer '%s' in %s.\n", filename, key, context);
+    exit(1);
+  }
+
+  return ((int)val.u.i);
+}
+
+static char *toml_string_required(const toml_table_t *tab, const char *key,
+				  const char *context, const char *filename)
+{
+  toml_datum_t val = toml_string_in(tab, key);
+
+  if (!val.ok) {
+    fprintf(stderr, "TOML file %s missing string '%s' in %s.\n", filename, key, context);
+    exit(1);
+  }
+
+  if (val.u.s && !*val.u.s) {
+    free(val.u.s);
+    return (NULL);
+  }
+
+  return (val.u.s);
+}
+
+static char *toml_string_optional(const toml_table_t *tab, const char *key)
+{
+  toml_datum_t val = toml_string_in(tab, key);
+
+  if (!val.ok)
+    return (NULL);
+
+  if (val.u.s && !*val.u.s) {
+    free(val.u.s);
+    return (NULL);
+  }
+
+  return (val.u.s);
+}
+
+static void parse_room_toml(toml_table_t *room, const char *filename)
+{
+  static int room_nr = 0;
+  int vnum, sector, i, door;
+  char *flags;
+  toml_array_t *exits, *extra;
+  struct extra_descr_data *new_descr;
+
+  vnum = toml_int_required(room, "vnum", "room entry", filename);
+  world[room_nr].zone = 0;
+  world[room_nr].number = vnum;
+  world[room_nr].name = toml_string_required(room, "name", "room entry", filename);
+  world[room_nr].description = toml_string_required(room, "description", "room entry", filename);
+
+  flags = toml_string_required(room, "flags", "room entry", filename);
+  world[room_nr].room_flags = asciiflag_conv(flags);
+  free(flags);
+
+  sector = toml_int_required(room, "sector", "room entry", filename);
+  world[room_nr].sector_type = sector;
+
+  world[room_nr].light = 0;	/* Zero light sources */
+
+  for (i = 0; i < NUM_OF_DIRS; i++)
+    world[room_nr].dir_option[i] = NULL;
+
+  world[room_nr].ex_description = NULL;
+
+  exits = toml_array_in(room, "exits");
+  if (exits) {
+    int count = toml_array_nelem(exits);
+
+    for (i = 0; i < count; i++) {
+      toml_table_t *exit_tab = toml_table_at(exits, i);
+      int dir, key, to_room;
+
+      if (!exit_tab) {
+	fprintf(stderr, "TOML file %s has non-table exit entry.\n", filename);
+	exit(1);
+      }
+
+      dir = toml_int_required(exit_tab, "dir", "exit", filename);
+      if (dir < 0 || dir >= NUM_OF_DIRS) {
+	fprintf(stderr, "TOML file %s has invalid dir %d.\n", filename, dir);
+	exit(1);
+      }
+
+      CREATE(world[room_nr].dir_option[dir], struct room_direction_data, 1);
+      world[room_nr].dir_option[dir]->general_description =
+	toml_string_optional(exit_tab, "description");
+      world[room_nr].dir_option[dir]->keyword =
+	toml_string_optional(exit_tab, "keyword");
+
+      door = toml_int_required(exit_tab, "door", "exit", filename);
+      if (door == 1)
+	world[room_nr].dir_option[dir]->exit_info = EX_ISDOOR;
+      else if (door == 2)
+	world[room_nr].dir_option[dir]->exit_info = EX_ISDOOR | EX_PICKPROOF;
+      else
+	world[room_nr].dir_option[dir]->exit_info = 0;
+
+      key = toml_int_required(exit_tab, "key", "exit", filename);
+      to_room = toml_int_required(exit_tab, "to_room", "exit", filename);
+      world[room_nr].dir_option[dir]->key = key;
+      world[room_nr].dir_option[dir]->to_room = to_room;
+    }
+  }
+
+  extra = toml_array_in(room, "extra");
+  if (extra) {
+    int count = toml_array_nelem(extra);
+
+    for (i = 0; i < count; i++) {
+      toml_table_t *extra_tab = toml_table_at(extra, i);
+
+      if (!extra_tab) {
+	fprintf(stderr, "TOML file %s has non-table extra entry.\n", filename);
+	exit(1);
+      }
+
+      CREATE(new_descr, struct extra_descr_data, 1);
+      new_descr->keyword = toml_string_required(extra_tab, "keyword", "extra", filename);
+      new_descr->description = toml_string_required(extra_tab, "description", "extra", filename);
+      new_descr->next = world[room_nr].ex_description;
+      world[room_nr].ex_description = new_descr;
+    }
+  }
+
+  top_of_world = room_nr++;
+}
+
 
 /*************************************************************************
 *  routines for booting the system                                       *
@@ -234,16 +374,44 @@ int count_hash_records(FILE * fl)
 void index_boot(char *name)
 {
   FILE *db_file;
-  int rec_count = 0;
+  toml_table_t *tab;
+  toml_array_t *rooms;
+  char errbuf[256];
+  int rec_count, i;
 
   if (!(db_file = fopen(name, "r"))) {
     perror("error opening world file");
     exit(1);
   }
-  rec_count = count_hash_records(db_file);
+
+  tab = toml_parse_file(db_file, errbuf, sizeof(errbuf));
+  fclose(db_file);
+  if (!tab) {
+    fprintf(stderr, "TOML parse error in %s: %s\n", name, errbuf);
+    exit(1);
+  }
+
+  rooms = toml_array_in(tab, "rooms");
+  if (!rooms) {
+    toml_free(tab);
+    fprintf(stderr, "TOML file %s missing rooms array.\n", name);
+    exit(1);
+  }
+
+  rec_count = toml_array_nelem(rooms);
   CREATE(world, struct room_data, rec_count);
-  rewind(db_file);
-  discrete_load(db_file);
+
+  for (i = 0; i < rec_count; i++) {
+    toml_table_t *room = toml_table_at(rooms, i);
+    if (!room) {
+      toml_free(tab);
+      fprintf(stderr, "TOML file %s has non-table room entry.\n", name);
+      exit(1);
+    }
+    parse_room_toml(room, name);
+  }
+
+  toml_free(tab);
 }
 
 

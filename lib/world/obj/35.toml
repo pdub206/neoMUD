@@ -1,0 +1,136 @@
+[[objects]]
+vnum = 3500
+name = "sword small"
+short_descr = "a small sword"
+description = "A small sword lies here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 1, 6, 11]
+weight = 3
+cost = 60
+rent = 10
+[[objects]]
+vnum = 3501
+name = "sword long"
+short_descr = "a fine long sword"
+description = "A long sword has been left here."
+type = 5
+extra_flags = "an"
+wear_flags = "8193"
+values = [0, 1, 9, 3]
+weight = 8
+cost = 600
+rent = 10
+
+[[objects.affects]]
+location = 19
+modifier = 2
+[[objects]]
+vnum = 3502
+name = "club wooden"
+short_descr = "a wooden club"
+description = "A simple looking wooden club is here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 1, 3, 7]
+weight = 3
+cost = 12
+rent = 10
+[[objects]]
+vnum = 3503
+name = "jacket studded leather"
+short_descr = "a studded leather jacket"
+description = "A studded leather jacket is lying on the ground."
+type = 9
+extra_flags = "0"
+wear_flags = "9"
+values = [5, 0, 0, 0]
+weight = 20
+cost = 500
+rent = 10
+[[objects]]
+vnum = 3504
+name = "spear small"
+short_descr = "a small spear"
+description = "A small spear lies here."
+type = 5
+extra_flags = "m"
+wear_flags = "8193"
+values = [0, 5, 1, 11]
+weight = 15
+cost = 500
+rent = 120
+[[objects]]
+vnum = 3505
+name = "corpse mutilated"
+short_descr = "a mutilated corpse"
+description = "A mutilated corpse has been left on the ground here."
+type = 15
+extra_flags = "0"
+wear_flags = "0"
+values = [20, 0, -1, 0]
+weight = 25
+cost = 0
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "corpse mutilated"
+description = "Looks to be an aftermath of whatever caused this carnage.\r\n"
+[[objects]]
+vnum = 3506
+name = "corpse mutilated"
+short_descr = "a mutilated corpse"
+description = "A mutilated corpse has been left on the ground here."
+type = 15
+extra_flags = "0"
+wear_flags = "0"
+values = [20, 0, -1, 0]
+weight = 25
+cost = 0
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "corpse mutilated"
+description = "Looks to be an aftermath of whatever caused this carnage.\r\n"
+[[objects]]
+vnum = 3507
+name = "dagger ornate"
+short_descr = "an ornate dagger"
+description = "A beautiful looking dagger is stuck in the ground."
+type = 5
+extra_flags = "dfghkmnpq"
+wear_flags = "8193"
+values = [0, 3, 3, 11]
+weight = 4
+cost = 1000
+rent = 500
+
+[[objects.extra_desc]]
+keyword = "dagger ornate"
+description = "The hilt of this dagger looks to be two intertwined snakes.  At the end of\r\nit, there is a small red ruby.\r\n"
+
+[[objects.affects]]
+location = 18
+modifier = 5
+
+[[objects.affects]]
+location = 19
+modifier = -3
+[[objects]]
+vnum = 3508
+name = "gyroscope toy"
+short_descr = "the gyroscope"
+description = "A small toy is spinning about on the ground here."
+type = 9
+extra_flags = "b"
+wear_flags = "16387"
+values = [5, 0, 0, 0]
+weight = 1
+cost = 25
+rent = 600
+
+[[objects.extra_desc]]
+keyword = "gyroscope toy"
+description = "As the gyroscope spins around and around you find yourself almost\r\nhypnotized by its movement.\r\n"

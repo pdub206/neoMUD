@@ -19,10 +19,11 @@
 #include "utils.h"
 #include "house.h"
 #include "constants.h"
+#include "toml.h"
 
 /* external functions */
 struct obj_data *Obj_from_store(struct obj_file_elem object, int *location);
-int Obj_to_store(struct obj_data *obj, FILE *fl, int location);
+int Obj_to_store(struct obj_data *obj, struct obj_file_elem *object, int location);
 
 /* local globals */
 struct house_control_rec house_control[MAX_HOUSES];
@@ -43,6 +44,109 @@ void hcontrol_pay_house(struct char_data *ch, char *arg);
 ACMD(do_hcontrol);
 ACMD(do_house);
 
+static int toml_int_required(const toml_table_t *tab, const char *key,
+			     const char *context, const char *filename)
+{
+  toml_datum_t val = toml_int_in(tab, key);
+
+  if (!val.ok) {
+    log("SYSERR: TOML file %s missing integer '%s' in %s.", filename, key, context);
+    exit(1);
+  }
+
+  return ((int)val.u.i);
+}
+
+static toml_array_t *toml_array_required(const toml_table_t *tab, const char *key,
+					 const char *context, const char *filename)
+{
+  toml_array_t *arr = toml_array_in(tab, key);
+
+  if (!arr) {
+    log("SYSERR: TOML file %s missing array '%s' in %s.", filename, key, context);
+    exit(1);
+  }
+
+  return (arr);
+}
+
+static void write_obj_file_elem_toml(FILE *fp, struct obj_file_elem *object)
+{
+  int i;
+
+  fputs("\n[[objects]]\n", fp);
+  fprintf(fp, "item_number = %d\n", object->item_number);
+#if USE_AUTOEQ
+  fprintf(fp, "location = %d\n", object->location);
+#endif
+  fprintf(fp, "values = [%d, %d, %d, %d]\n",
+	  object->value[0], object->value[1], object->value[2], object->value[3]);
+  fprintf(fp, "extra_flags = %d\n", object->extra_flags);
+  fprintf(fp, "weight = %d\n", object->weight);
+  fprintf(fp, "timer = %d\n", object->timer);
+  fprintf(fp, "bitvector = %ld\n", object->bitvector);
+
+  for (i = 0; i < MAX_OBJ_AFFECT; i++) {
+    if (object->affected[i].location == APPLY_NONE && object->affected[i].modifier == 0)
+      continue;
+    fputs("\n[[objects.affects]]\n", fp);
+    fprintf(fp, "location = %d\n", object->affected[i].location);
+    fprintf(fp, "modifier = %d\n", object->affected[i].modifier);
+  }
+}
+
+static int read_obj_file_elem_toml(toml_table_t *tab, struct obj_file_elem *object,
+				   const char *filename)
+{
+  toml_array_t *vals, *affs;
+  int i;
+
+  object->item_number = toml_int_required(tab, "item_number", "object", filename);
+#if USE_AUTOEQ
+  object->location = toml_int_required(tab, "location", "object", filename);
+#endif
+  vals = toml_array_required(tab, "values", "object", filename);
+  if (toml_array_nelem(vals) < 4) {
+    log("SYSERR: TOML file %s has object with fewer than 4 values.", filename);
+    exit(1);
+  }
+  for (i = 0; i < 4; i++) {
+    toml_datum_t val = toml_int_at(vals, i);
+    if (!val.ok) {
+      log("SYSERR: TOML file %s has invalid values[%d].", filename, i);
+      exit(1);
+    }
+    object->value[i] = (int)val.u.i;
+  }
+  object->extra_flags = toml_int_required(tab, "extra_flags", "object", filename);
+  object->weight = toml_int_required(tab, "weight", "object", filename);
+  object->timer = toml_int_required(tab, "timer", "object", filename);
+  object->bitvector = toml_int_required(tab, "bitvector", "object", filename);
+
+  for (i = 0; i < MAX_OBJ_AFFECT; i++) {
+    object->affected[i].location = APPLY_NONE;
+    object->affected[i].modifier = 0;
+  }
+
+  affs = toml_array_in(tab, "affects");
+  if (affs) {
+    int count = toml_array_nelem(affs);
+    if (count > MAX_OBJ_AFFECT)
+      count = MAX_OBJ_AFFECT;
+    for (i = 0; i < count; i++) {
+      toml_table_t *aff = toml_table_at(affs, i);
+      if (!aff) {
+	log("SYSERR: TOML file %s has non-table affects entry.", filename);
+	exit(1);
+      }
+      object->affected[i].location = toml_int_required(aff, "location", "affects", filename);
+      object->affected[i].modifier = toml_int_required(aff, "modifier", "affects", filename);
+    }
+  }
+
+  return (1);
+}
+
 
 /* First, the basics: finding the filename; loading/saving objects */
 
@@ -52,7 +156,7 @@ int House_get_filename(room_vnum vnum, char *filename, size_t maxlen)
   if (vnum == NOWHERE)
     return (0);
 
-  snprintf(filename, maxlen, LIB_HOUSE"%d.house", vnum);
+  snprintf(filename, maxlen, LIB_HOUSE"%d.toml", vnum);
   return (1);
 }
 
@@ -60,36 +164,44 @@ int House_get_filename(room_vnum vnum, char *filename, size_t maxlen)
 /* Load all objects for a house */
 int House_load(room_vnum vnum)
 {
-  FILE *fl;
   char filename[MAX_STRING_LENGTH];
   struct obj_file_elem object;
   room_rnum rnum;
   int i;
+  FILE *fl;
+  toml_table_t *tab;
+  toml_array_t *objs;
+  char errbuf[256];
+  int count, idx;
 
   if ((rnum = real_room(vnum)) == NOWHERE)
     return (0);
   if (!House_get_filename(vnum, filename, sizeof(filename)))
     return (0);
-  if (!(fl = fopen(filename, "r+b")))	/* no file found */
+  if (!(fl = fopen(filename, "r")))	/* no file found */
     return (0);
-  while (!feof(fl)) {
-    if (fread(&object, sizeof(struct obj_file_elem), 1, fl) != 1) {
-      if (feof(fl))
-        break;
-      perror("SYSERR: Reading house file in House_load");
-      fclose(fl);
-      return (0);
-    }
-    if (ferror(fl)) {
-      perror("SYSERR: Reading house file in House_load");
-      fclose(fl);
-      return (0);
-    }
-    if (!feof(fl))
-      obj_to_room(Obj_from_store(object, &i), rnum);
+
+  tab = toml_parse_file(fl, errbuf, sizeof(errbuf));
+  fclose(fl);
+  if (!tab) {
+    log("SYSERR: TOML parse error in %s: %s", filename, errbuf);
+    return (0);
   }
 
-  fclose(fl);
+  objs = toml_array_required(tab, "objects", "house file", filename);
+  count = toml_array_nelem(objs);
+  for (idx = 0; idx < count; idx++) {
+    toml_table_t *otab = toml_table_at(objs, idx);
+    if (!otab) {
+      log("SYSERR: TOML file %s has non-table object entry.", filename);
+      toml_free(tab);
+      return (0);
+    }
+    read_obj_file_elem_toml(otab, &object, filename);
+    obj_to_room(Obj_from_store(object, &i), rnum);
+  }
+
+  toml_free(tab);
 
   return (1);
 }
@@ -105,7 +217,12 @@ int House_save(struct obj_data *obj, FILE *fp)
   if (obj) {
     House_save(obj->contains, fp);
     House_save(obj->next_content, fp);
-    result = Obj_to_store(obj, fp, 0);
+    {
+      struct obj_file_elem object;
+      result = Obj_to_store(obj, &object, 0);
+      if (result)
+	write_obj_file_elem_toml(fp, &object);
+    }
     if (!result)
       return (0);
 
@@ -139,7 +256,7 @@ void House_crashsave(room_vnum vnum)
     return;
   if (!House_get_filename(vnum, buf, sizeof(buf)))
     return;
-  if (!(fp = fopen(buf, "wb"))) {
+  if (!(fp = fopen(buf, "w"))) {
     perror("SYSERR: Error saving house file");
     return;
   }
@@ -175,37 +292,49 @@ void House_delete_file(room_vnum vnum)
 /* List all objects in a house file */
 void House_listrent(struct char_data *ch, room_vnum vnum)
 {
-  FILE *fl;
   char filename[MAX_STRING_LENGTH];
   char buf[MAX_STRING_LENGTH];
   struct obj_file_elem object;
   struct obj_data *obj;
   int i;
+  FILE *fl;
+  toml_table_t *tab;
+  toml_array_t *objs;
+  char errbuf[256];
+  int count, idx;
 
   if (!House_get_filename(vnum, filename, sizeof(filename)))
     return;
-  if (!(fl = fopen(filename, "rb"))) {
+  if (!(fl = fopen(filename, "r"))) {
     send_to_char(ch, "No objects on file for house #%d.\r\n", vnum);
     return;
   }
+
+  tab = toml_parse_file(fl, errbuf, sizeof(errbuf));
+  fclose(fl);
+  if (!tab) {
+    log("SYSERR: TOML parse error in %s: %s", filename, errbuf);
+    return;
+  }
+
   *buf = '\0';
-  while (!feof(fl)) {
-    if (fread(&object, sizeof(struct obj_file_elem), 1, fl) != 1) {
-      if (feof(fl))
-        break;
-      fclose(fl);
+  objs = toml_array_required(tab, "objects", "house file", filename);
+  count = toml_array_nelem(objs);
+  for (idx = 0; idx < count; idx++) {
+    toml_table_t *otab = toml_table_at(objs, idx);
+    if (!otab) {
+      log("SYSERR: TOML file %s has non-table object entry.", filename);
+      toml_free(tab);
       return;
     }
-    if (ferror(fl)) {
-      fclose(fl);
-      return;
-    }
-    if (!feof(fl) && (obj = Obj_from_store(object, &i)) != NULL) {
+    read_obj_file_elem_toml(otab, &object, filename);
+    if ((obj = Obj_from_store(object, &i)) != NULL) {
       send_to_char(ch, " [%5d] (%5dau) %s\r\n", GET_OBJ_VNUM(obj), GET_OBJ_RENT(obj), obj->short_description);
       free_obj(obj);
     }
   }
-  fclose(fl);
+
+  toml_free(tab);
 }
 
 

@@ -381,7 +381,8 @@ void init_game(ush_int port)
     close_socket(descriptor_list);
 
   CLOSE_SOCKET(mother_desc);
-  fclose(player_fl);
+  if (player_fl)
+    fclose(player_fl);
 
   log("Saving current MUD time.");
   save_mud_time(&time_info);
@@ -847,7 +848,8 @@ void heartbeat(int pulse)
     weather_and_time(1);
     affect_update();
     point_update();
-    fflush(player_fl);
+    if (player_fl)
+      fflush(player_fl);
   }
 
   if (auto_save && !(pulse % PULSE_AUTOSAVE)) {	/* 1 minute */

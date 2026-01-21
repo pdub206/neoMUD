@@ -1,0 +1,1408 @@
+[[objects]]
+vnum = 2500
+name = "key diamond"
+short_descr = "a diamond key"
+description = "A glinting key of diamond has been left here."
+type = 18
+extra_flags = "cdq"
+wear_flags = "16385"
+values = [2500, 0, 0, 0]
+weight = 2
+cost = 0
+rent = 0
+[[objects]]
+vnum = 2501
+name = "oven black"
+short_descr = "an oven"
+description = ""
+type = 15
+extra_flags = "0"
+wear_flags = "0"
+values = [1000, 5, -1, 0]
+weight = 1000
+cost = 1000
+rent = 1000
+[[objects]]
+vnum = 2502
+name = "locker"
+short_descr = "a meat locker"
+description = ""
+type = 15
+extra_flags = "0"
+wear_flags = "0"
+values = [1000, 5, -1, 0]
+weight = 1000
+cost = 1000
+rent = 1000
+
+[[objects.extra_desc]]
+keyword = "locker"
+description = "You just had the horrid thought that a cadaver might be in there.\r\n"
+[[objects]]
+vnum = 2503
+name = "rack spice"
+short_descr = "a spice rack"
+description = ""
+type = 15
+extra_flags = "0"
+wear_flags = "1"
+values = [50, 0, -1, 0]
+weight = 10
+cost = 1500
+rent = 500
+[[objects]]
+vnum = 2504
+name = "slice bread traveller"
+short_descr = "a slice of traveller's bread"
+description = "A slice of traveller's bread is here looking very tasty."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [15, 0, 0, 0]
+weight = 1
+cost = 12
+rent = 3
+[[objects]]
+vnum = 2505
+name = "chunk meat"
+short_descr = "a large chunk of meat"
+description = "A large chunk of meat is here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [24, 0, 0, 1]
+weight = 2
+cost = 20
+rent = 5
+[[objects]]
+vnum = 2506
+name = "sandwich"
+short_descr = "a finger sandwich"
+description = "A finger sandwich is here."
+type = 19
+extra_flags = "q"
+wear_flags = "1"
+values = [20, 0, 0, 0]
+weight = 2
+cost = 15
+rent = 5
+
+[[objects.extra_desc]]
+keyword = "sandwich finger"
+description = "It would look quite tasty if someone had first removed the fingernails!\r\n"
+[[objects]]
+vnum = 2507
+name = "broom straw"
+short_descr = "a straw broom"
+description = "A straw broom is here leaning against the wall."
+type = 22
+extra_flags = "d"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 5
+cost = 5
+rent = 600
+
+[[objects.extra_desc]]
+keyword = "broom straw"
+description = "A magical flying broomstick?  Nah!  Not here.\r\n"
+[[objects]]
+vnum = 2508
+name = "cabinet"
+short_descr = "a cabinet"
+description = "A cabinet is here."
+type = 15
+extra_flags = "0"
+wear_flags = "0"
+values = [5000, 5, -1, 0]
+weight = 10000
+cost = 10
+rent = 10
+[[objects]]
+vnum = 2509
+name = "bar silver"
+short_descr = "a bar of silver"
+description = "A bar of silver has been left here."
+type = 8
+extra_flags = "0"
+wear_flags = "1"
+values = [0, 0, 0, 0]
+weight = 10
+cost = 1000
+rent = 500
+[[objects]]
+vnum = 2510
+name = "bar gold"
+short_descr = "a bar of gold"
+description = "A bar of gold has been left here."
+type = 8
+extra_flags = "0"
+wear_flags = "1"
+values = [0, 0, 0, 0]
+weight = 11
+cost = 2000
+rent = 750
+[[objects]]
+vnum = 2511
+name = "bar mithril"
+short_descr = "a bar of mithril"
+description = "A bar of mithril has been left here."
+type = 8
+extra_flags = "0"
+wear_flags = "1"
+values = [0, 0, 0, 0]
+weight = 12
+cost = 3000
+rent = 950
+[[objects]]
+vnum = 2512
+name = "bar adamantite"
+short_descr = "a bar of adamantite"
+description = "A bar of adamantite has been left here."
+type = 8
+extra_flags = "0"
+wear_flags = "1"
+values = [0, 0, 0, 0]
+weight = 15
+cost = 5000
+rent = 1000
+[[objects]]
+vnum = 2513
+name = "hammer mithril"
+short_descr = "a mithril hammer"
+description = "a mithril hammer has been left here"
+type = 5
+extra_flags = "g"
+wear_flags = "8193"
+values = [0, 2, 6, 7]
+weight = 19
+cost = 10000
+rent = 1000
+
+[[objects.affects]]
+location = 18
+modifier = 2
+
+[[objects.affects]]
+location = 1
+modifier = 1
+[[objects]]
+vnum = 2514
+name = "chest"
+short_descr = "a chest"
+description = "A chest is here."
+type = 15
+extra_flags = "a"
+wear_flags = "0"
+values = [5000, 15, 1316, 0]
+weight = 1000
+cost = 1000
+rent = 1000
+[[objects]]
+vnum = 2515
+name = "key"
+short_descr = "a small key"
+description = "A small key has been left here."
+type = 18
+extra_flags = "cdq"
+wear_flags = "1"
+values = [2515, 0, 0, 0]
+weight = 1
+cost = 0
+rent = 0
+[[objects]]
+vnum = 2516
+name = "long sword"
+short_descr = "a long sword"
+description = "A long sword has been left here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 1, 8, 3]
+weight = 8
+cost = 10000
+rent = 1000
+
+[[objects.affects]]
+location = 18
+modifier = 1
+
+[[objects.affects]]
+location = 19
+modifier = 2
+[[objects]]
+vnum = 2517
+name = "dagger silver"
+short_descr = "a silver dagger"
+description = "A finely crafted dagger made of silver is on the ground here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 3, 3, 11]
+weight = 5
+cost = 15000
+rent = 1200
+
+[[objects.affects]]
+location = 18
+modifier = 2
+
+[[objects.affects]]
+location = 19
+modifier = 2
+[[objects]]
+vnum = 2518
+name = "scimitar"
+short_descr = "a curved scimitar"
+description = "A curved scimitar is here in a jewel-covered sheath."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 2, 7, 3]
+weight = 10
+cost = 17500
+rent = 1950
+
+[[objects.affects]]
+location = 13
+modifier = 3
+[[objects]]
+vnum = 2519
+name = "staff wooden"
+short_descr = "a wooden staff"
+description = "A wooden staff is against the wall here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 1, 4, 8]
+weight = 6
+cost = 10
+rent = 5
+[[objects]]
+vnum = 2520
+name = "cabinet silver"
+short_descr = "a silver chased cabinet"
+description = "A large cabinet with a silver finish is here."
+type = 15
+extra_flags = "0"
+wear_flags = "0"
+values = [5000, 15, 2523, 0]
+weight = 10000
+cost = 1
+rent = 1
+[[objects]]
+vnum = 2521
+name = "cabinet silver"
+short_descr = "a silver chased cabinet"
+description = "A large cabinet with a silver finish is here."
+type = 15
+extra_flags = "0"
+wear_flags = "0"
+values = [5000, 15, 2523, 0]
+weight = 10000
+cost = 1
+rent = 1
+[[objects]]
+vnum = 2522
+name = "key old"
+short_descr = "an old key"
+description = "An old key is here"
+type = 18
+extra_flags = "cdq"
+wear_flags = "1"
+values = [2522, 0, 0, 0]
+weight = 1
+cost = 0
+rent = 0
+[[objects]]
+vnum = 2523
+name = "key silvery"
+short_descr = "a silvery key"
+description = "A silvery key has been left here."
+type = 18
+extra_flags = "cdq"
+wear_flags = "1"
+values = [2523, 0, 0, 0]
+weight = 1
+cost = 0
+rent = 0
+[[objects]]
+vnum = 2524
+name = "key silvery"
+short_descr = "a silvery key"
+description = "A silvery key has been left here."
+type = 18
+extra_flags = "cdq"
+wear_flags = "1"
+values = [2524, 0, 0, 0]
+weight = 1
+cost = 0
+rent = 0
+[[objects]]
+vnum = 2525
+name = "staff red white"
+short_descr = "a red and white staff"
+description = "a red and white staff is leaning against the wall here"
+type = 4
+extra_flags = "0"
+wear_flags = "16385"
+values = [20, 3, 3, 28]
+weight = 8
+cost = 5500
+rent = 500
+[[objects]]
+vnum = 2526
+name = "staff burnt"
+short_descr = "a burnt staff"
+description = "A burnt staff is leaning against the wall here."
+type = 4
+extra_flags = "0"
+wear_flags = "16385"
+values = [20, 4, 4, 4]
+weight = 6
+cost = 1100
+rent = 600
+[[objects]]
+vnum = 2527
+name = "rod black"
+short_descr = "a black rod"
+description = "A black rod has been left here."
+type = 3
+extra_flags = "0"
+wear_flags = "16385"
+values = [20, 3, 3, 22]
+weight = 4
+cost = 1200
+rent = 200
+[[objects]]
+vnum = 2528
+name = "wand wooden"
+short_descr = "a wooden stick"
+description = "a wooden stick is here"
+type = 3
+extra_flags = "0"
+wear_flags = "16385"
+values = [20, 10, 10, 3]
+weight = 4
+cost = 600
+rent = 60
+[[objects]]
+vnum = 2529
+name = "wand metal"
+short_descr = "a metal wand"
+description = "A metal wand is here."
+type = 3
+extra_flags = "0"
+wear_flags = "16385"
+values = [20, 20, 4, 25]
+weight = 5
+cost = 2000
+rent = 350
+[[objects]]
+vnum = 2530
+name = "cauldron black"
+short_descr = "a black cauldron"
+description = "A large black cauldron is here bubbling."
+type = 15
+extra_flags = "0"
+wear_flags = "0"
+values = [1000, 0, -1, 0]
+weight = 5000
+cost = 5000
+rent = 500000
+[[objects]]
+vnum = 2531
+name = "wings bat"
+short_descr = "a small pair of bat wings"
+description = "A small pair of bat wings is here."
+type = 13
+extra_flags = "0"
+wear_flags = "1"
+values = [0, 0, 0, 0]
+weight = 2
+cost = 1
+rent = 1
+[[objects]]
+vnum = 2532
+name = "eyeball eye"
+short_descr = "an eyeball"
+description = "An eyeball has been left here"
+type = 13
+extra_flags = "0"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 1
+cost = 1
+rent = 1
+[[objects]]
+vnum = 2533
+name = "book tome"
+short_descr = "the book of magic"
+description = "An enormous book is lying open here"
+type = 15
+extra_flags = "ag"
+wear_flags = "0"
+values = [500, 0, -1, 0]
+weight = 5000
+cost = 0
+rent = 0
+[[objects]]
+vnum = 2534
+name = "spectacles glasses"
+short_descr = "a pair of spectacles"
+description = "A pair of wire-rimmed spectacles has been left here."
+type = 9
+extra_flags = "g"
+wear_flags = "17"
+values = [0, 0, 0, 0]
+weight = 4
+cost = 10000
+rent = 5000
+
+[[objects.affects]]
+location = 3
+modifier = 1
+
+[[objects.affects]]
+location = 4
+modifier = 1
+[[objects]]
+vnum = 2535
+name = "altar"
+short_descr = "a golden altar"
+description = ""
+type = 15
+extra_flags = "0"
+wear_flags = "0"
+values = [1000, 5, -1, 0]
+weight = 5000
+cost = 1
+rent = 1
+[[objects]]
+vnum = 2536
+name = "medallion heart"
+short_descr = "a heart shaped medallion"
+description = "A heart shaped medallion is here."
+type = 9
+extra_flags = "bdei"
+wear_flags = "5"
+values = [0, 0, 0, 0]
+weight = 3
+cost = 10000
+rent = 1000
+
+[[objects.affects]]
+location = 4
+modifier = 2
+
+[[objects.affects]]
+location = 5
+modifier = -1
+[[objects]]
+vnum = 2537
+name = "chest"
+short_descr = "a large chest"
+description = "A large chest is here."
+type = 15
+extra_flags = "ag"
+wear_flags = "0"
+values = [2000, 15, 2538, 0]
+weight = 5000
+cost = 500000
+rent = 5000000
+[[objects]]
+vnum = 2538
+name = "key intricate"
+short_descr = "an intricately carved key"
+description = "An intricately carved key has been left here."
+type = 18
+extra_flags = "acdgq"
+wear_flags = "16385"
+values = [2538, 0, 0, 0]
+weight = 1
+cost = 0
+rent = 0
+
+[[objects.affects]]
+location = 24
+modifier = -1
+[[objects]]
+vnum = 2539
+name = "a pile of coins"
+short_descr = "a pile of coins is here"
+description = "A pile of coins is here."
+type = 20
+extra_flags = "0"
+wear_flags = "1"
+values = [23574, 0, 0, 0]
+weight = 23
+cost = 23574
+rent = 0
+[[objects]]
+vnum = 2540
+name = "cloak brown"
+short_descr = "a brown cloak"
+description = "A travel worn cloak has carelessly been left here."
+type = 9
+extra_flags = "0"
+wear_flags = "5"
+values = [0, 0, 0, 0]
+weight = 5
+cost = 2000
+rent = 250
+
+[[objects.affects]]
+location = 17
+modifier = -5
+
+[[objects.affects]]
+location = 24
+modifier = -3
+[[objects]]
+vnum = 2541
+name = "chameleon poncho cloth"
+short_descr = "a chameleon poncho"
+description = "Some multicolored cloth is on the ground here"
+type = 9
+extra_flags = "g"
+wear_flags = "1025"
+values = [0, 0, 0, 0]
+weight = 4
+cost = 15000
+rent = 5000
+
+[[objects.affects]]
+location = 2
+modifier = 2
+
+[[objects.affects]]
+location = 17
+modifier = -3
+[[objects]]
+vnum = 2542
+name = "boots worn"
+short_descr = "a pair of old boots"
+description = "A pair of old boots is here, they look very comfortable."
+type = 9
+extra_flags = "g"
+wear_flags = "65"
+values = [0, 0, 0, 0]
+weight = 2
+cost = 3500
+rent = 900
+
+[[objects.affects]]
+location = 14
+modifier = 15
+[[objects]]
+vnum = 2543
+name = "ring seashell"
+short_descr = "a seashell ring"
+description = "A small seashell has been left here."
+type = 22
+extra_flags = "g"
+wear_flags = "3"
+values = [0, 0, 0, 0]
+weight = 2
+cost = 6500
+rent = 1100
+[[objects]]
+vnum = 2544
+name = "backpack leather"
+short_descr = "a leather backpack"
+description = "A leather backpack is here."
+type = 15
+extra_flags = "0"
+wear_flags = "1025"
+values = [750, 0, -1, 0]
+weight = 9
+cost = 750
+rent = 50
+[[objects]]
+vnum = 2545
+name = "cup brew herbal tea"
+short_descr = "a herbal brew"
+description = "A herbal brew is here."
+type = 17
+extra_flags = "0"
+wear_flags = "1"
+values = [5, 5, 11, 1]
+weight = 2
+cost = 11
+rent = 5
+[[objects]]
+vnum = 2546
+name = "waybread"
+short_descr = "a waybread"
+description = "A loaf of waybread has been left here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [32, 0, 0, 0]
+weight = 3
+cost = 65
+rent = 5
+[[objects]]
+vnum = 2547
+name = "cleaver"
+short_descr = "a meat cleaver"
+description = "A meat cleaver is sticking in the wall here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 3, 4, 1]
+weight = 8
+cost = 600
+rent = 100
+[[objects]]
+vnum = 2548
+name = "shackles chain"
+short_descr = "some chain shackles"
+description = "Some chain shackles have been discarded here"
+type = 13
+extra_flags = "gh"
+wear_flags = "2049"
+values = [0, 0, 0, 0]
+weight = 15
+cost = 750
+rent = 1000
+
+[[objects.affects]]
+location = 12
+modifier = -100
+
+[[objects.affects]]
+location = 14
+modifier = -82
+[[objects]]
+vnum = 2549
+name = "dagger silvery"
+short_descr = "a silvery dagger"
+description = "A long dagger that seems to be made of silver is here."
+type = 5
+extra_flags = "g"
+wear_flags = "8193"
+values = [0, 2, 4, 11]
+weight = 5
+cost = 1200
+rent = 500
+
+[[objects.affects]]
+location = 18
+modifier = 1
+[[objects]]
+vnum = 2550
+name = "scroll"
+short_descr = "a scroll"
+description = "A scroll is here."
+type = 2
+extra_flags = "0"
+wear_flags = "16385"
+values = [21, 4, 17, 38]
+weight = 5
+cost = 3000
+rent = 1000
+[[objects]]
+vnum = 2551
+name = "scroll bound"
+short_descr = "a bound scroll"
+description = "A bound scroll is here blowing in the breeze."
+type = 2
+extra_flags = "g"
+wear_flags = "16385"
+values = [16, 1, 2, 34]
+weight = 3
+cost = 9500
+rent = 3000
+
+[[objects.affects]]
+location = 17
+modifier = -6
+[[objects]]
+vnum = 2552
+name = "tube cylinder"
+short_descr = "a long cylindrical tube"
+description = "A long cylindrical tube is rolling around here."
+type = 15
+extra_flags = "g"
+wear_flags = "1"
+values = [100, 5, -1, 0]
+weight = 8
+cost = 500
+rent = 50
+[[objects]]
+vnum = 2553
+name = "scroll old"
+short_descr = "an old scroll"
+description = "An old scroll has been left here."
+type = 2
+extra_flags = "0"
+wear_flags = "16385"
+values = [10, 12, -1, -1]
+weight = 2
+cost = 500
+rent = 100
+[[objects]]
+vnum = 2554
+name = "scroll blue"
+short_descr = "a scroll written on blue paper"
+description = "A blue scroll has been left here."
+type = 2
+extra_flags = "g"
+wear_flags = "16385"
+values = [24, 24, -1, -1]
+weight = 5
+cost = 20000
+rent = 15000
+[[objects]]
+vnum = 2555
+name = "pouch leather"
+short_descr = "a leather pouch"
+description = "A leather pouch is on the ground here."
+type = 15
+extra_flags = "g"
+wear_flags = "16385"
+values = [150, 0, -1, 0]
+weight = 2
+cost = 1750
+rent = 50
+[[objects]]
+vnum = 2556
+name = "spoon silver"
+short_descr = "a silver stirring spoon"
+description = "A silver stirring spoon has been left here."
+type = 12
+extra_flags = "g"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 1
+cost = 5650
+rent = 900
+
+[[objects.affects]]
+location = 24
+modifier = -1
+[[objects]]
+vnum = 2557
+name = "potion blue"
+short_descr = "a blue potion"
+description = "A blue potion is here."
+type = 10
+extra_flags = "g"
+wear_flags = "16385"
+values = [24, 27, 27, 27]
+weight = 2
+cost = 9000
+rent = 500
+[[objects]]
+vnum = 2558
+name = "potion red"
+short_descr = "a bright red potion"
+description = "A bright red potion is here."
+type = 10
+extra_flags = "g"
+wear_flags = "16385"
+values = [15, 15, -1, -1]
+weight = 2
+cost = 1500
+rent = 500
+[[objects]]
+vnum = 2559
+name = "potion green"
+short_descr = "a green potion"
+description = "A green potion is here."
+type = 10
+extra_flags = "g"
+wear_flags = "16385"
+values = [20, 4, 2, 14]
+weight = 2
+cost = 1500
+rent = 150
+[[objects]]
+vnum = 2560
+name = "potion effervescent"
+short_descr = "an effervescent potion"
+description = "An effervescent potion is bubbling away here"
+type = 10
+extra_flags = "g"
+wear_flags = "16385"
+values = [16, 18, 19, 20]
+weight = 2
+cost = 1000
+rent = 150
+
+[[objects.extra_desc]]
+keyword = "potion effervescent"
+description = "Ahh!  Schwepes Sparkling Soda a refreshing drink.\r\n"
+[[objects]]
+vnum = 2561
+name = "white milky potion"
+short_descr = "a milky white potion"
+description = "A milky white potion is here."
+type = 10
+extra_flags = "0"
+wear_flags = "16385"
+values = [14, 42, -1, -1]
+weight = 2
+cost = 750
+rent = 50
+[[objects]]
+vnum = 2562
+name = "staff black"
+short_descr = "a black staff"
+description = "A black staff is leaning against the wall here."
+type = 4
+extra_flags = "g"
+wear_flags = "16385"
+values = [18, 2, 2, 2]
+weight = 5
+cost = 500
+rent = 50
+[[objects]]
+vnum = 2563
+name = "flute golden"
+short_descr = "a golden flute"
+description = "A golden flute has been left here."
+type = 4
+extra_flags = "fg"
+wear_flags = "16385"
+values = [22, 1, 1, 7]
+weight = 4
+cost = 15000
+rent = 5000
+
+[[objects.affects]]
+location = 3
+modifier = -6
+[[objects]]
+vnum = 2564
+name = "figurine humanoid small"
+short_descr = "a small figurine"
+description = "A small figurine in the shape of a humanoid is standing here."
+type = 4
+extra_flags = "g"
+wear_flags = "16385"
+values = [21, 10, 10, 32]
+weight = 4
+cost = 6000
+rent = 650
+[[objects]]
+vnum = 2565
+name = "belt holster"
+short_descr = "a holstered belt"
+description = "A holstered belt is here."
+type = 15
+extra_flags = "0"
+wear_flags = "2049"
+values = [20, 0, -1, 0]
+weight = 4
+cost = 290
+rent = 29
+[[objects]]
+vnum = 2566
+name = "wand"
+short_descr = "a blackened wand"
+description = "A blackened wand is here."
+type = 3
+extra_flags = "g"
+wear_flags = "16385"
+values = [17, 5, 1, 26]
+weight = 4
+cost = 2500
+rent = 500
+[[objects]]
+vnum = 2567
+name = "chisel runed"
+short_descr = "a runed chisel"
+description = "A runed chisel is here."
+type = 5
+extra_flags = "ag"
+wear_flags = "8193"
+values = [0, 2, 3, 11]
+weight = 6
+cost = 1500
+rent = 500
+
+[[objects.affects]]
+location = 2
+modifier = 1
+[[objects]]
+vnum = 2568
+name = "pouch belt beltpouch"
+short_descr = "a beltpouch"
+description = "A beltpouch is here."
+type = 15
+extra_flags = "0"
+wear_flags = "2049"
+values = [50, 0, -1, 0]
+weight = 5
+cost = 750
+rent = 50
+[[objects]]
+vnum = 2569
+name = "dust"
+short_descr = "some sparkling dust"
+description = "Some sparkling dust is in a pile here."
+type = 4
+extra_flags = "0"
+wear_flags = "16385"
+values = [20, 1, 1, 38]
+weight = 2
+cost = 1000
+rent = 150
+[[objects]]
+vnum = 2570
+name = "cowl dark"
+short_descr = "a dark cowl"
+description = "A dark cowl is here."
+type = 9
+extra_flags = "abgj"
+wear_flags = "5"
+values = [0, 0, 0, 0]
+weight = 5
+cost = 1200
+rent = 400
+
+[[objects.affects]]
+location = 17
+modifier = -8
+
+[[objects.affects]]
+location = 24
+modifier = -3
+[[objects]]
+vnum = 2571
+name = "wand ashen"
+short_descr = "an ashen wand"
+description = "An ashen wand is here"
+type = 3
+extra_flags = "j"
+wear_flags = "16385"
+values = [20, 4, 4, 5]
+weight = 4
+cost = 2000
+rent = 600
+[[objects]]
+vnum = 2572
+name = "club spiked"
+short_descr = "a huge spiked club"
+description = "A huge spiked club has been left here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 3, 5, 8]
+weight = 29
+cost = 750
+rent = 200
+[[objects]]
+vnum = 2573
+name = "robe grey"
+short_descr = "a grey robe"
+description = "A pile of grey cloth has been left here."
+type = 15
+extra_flags = "gjk"
+wear_flags = "1025"
+values = [50, 0, -1, 0]
+weight = 8
+cost = 5000
+rent = 750
+
+[[objects.affects]]
+location = 17
+modifier = -9
+
+[[objects.affects]]
+location = 24
+modifier = -2
+[[objects]]
+vnum = 2574
+name = "bracelet silver"
+short_descr = "a glinting silver bracelet"
+description = "A glinting hoop of silvery metal is here."
+type = 9
+extra_flags = "gjk"
+wear_flags = "4097"
+values = [0, 0, 0, 0]
+weight = 5
+cost = 5000
+rent = 500
+
+[[objects.affects]]
+location = 17
+modifier = -5
+[[objects]]
+vnum = 2575
+name = "cloak grey"
+short_descr = "a long grey cloak"
+description = "A pile of grey cloth has been left here."
+type = 9
+extra_flags = "gjk"
+wear_flags = "5"
+values = [0, 0, 0, 0]
+weight = 7
+cost = 12000
+rent = 1200
+
+[[objects.affects]]
+location = 17
+modifier = -12
+
+[[objects.affects]]
+location = 24
+modifier = -3
+[[objects]]
+vnum = 2576
+name = "staff"
+short_descr = "an iron shod staff"
+description = "A grey piece of wood shod in iron has been left here."
+type = 5
+extra_flags = "gjk"
+wear_flags = "8193"
+values = [0, 2, 7, 8]
+weight = 7
+cost = 9000
+rent = 3000
+
+[[objects.affects]]
+location = 18
+modifier = 3
+[[objects]]
+vnum = 2577
+name = "minor ward cube clear"
+short_descr = "a ward minor"
+description = "A small clear cube is sitting here."
+type = 9
+extra_flags = "ag"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 5
+cost = 5000
+rent = 1000
+
+[[objects.affects]]
+location = 17
+modifier = -5
+[[objects]]
+vnum = 2578
+name = "robe black"
+short_descr = "a black robe"
+description = "A pile of black cloth is on the ground here."
+type = 15
+extra_flags = "gjl"
+wear_flags = "1025"
+values = [50, 0, -1, 0]
+weight = 8
+cost = 5000
+rent = 750
+
+[[objects.affects]]
+location = 17
+modifier = -9
+
+[[objects.affects]]
+location = 24
+modifier = -2
+[[objects]]
+vnum = 2579
+name = "bracelet onyx"
+short_descr = "an onyx bracelet"
+description = "A hoop of black onyx is here."
+type = 9
+extra_flags = "gjl"
+wear_flags = "4097"
+values = [0, 0, 0, 0]
+weight = 6
+cost = 8500
+rent = 850
+
+[[objects.affects]]
+location = 19
+modifier = 2
+[[objects]]
+vnum = 2580
+name = "cloak black dark"
+short_descr = "a dark black cloak"
+description = "A pile of black cloth is on the ground here."
+type = 9
+extra_flags = "gjl"
+wear_flags = "5"
+values = [0, 0, 0, 0]
+weight = 8
+cost = 9000
+rent = 950
+
+[[objects.affects]]
+location = 17
+modifier = -12
+
+[[objects.affects]]
+location = 24
+modifier = -3
+[[objects]]
+vnum = 2581
+name = "shard black obsidian"
+short_descr = "a sharp shard of obsidian"
+description = "A piece of black glass is here."
+type = 5
+extra_flags = "gjl"
+wear_flags = "8193"
+values = [0, 2, 7, 1]
+weight = 8
+cost = 12000
+rent = 2000
+
+[[objects.affects]]
+location = 19
+modifier = 3
+[[objects]]
+vnum = 2582
+name = "robe white"
+short_descr = "a white robe"
+description = "A pile of white cloth is on the ground here."
+type = 15
+extra_flags = "gkl"
+wear_flags = "1025"
+values = [50, 0, -1, 0]
+weight = 7
+cost = 7500
+rent = 750
+
+[[objects.affects]]
+location = 17
+modifier = -9
+
+[[objects.affects]]
+location = 24
+modifier = -2
+[[objects]]
+vnum = 2583
+name = "bracelet white gold"
+short_descr = "a white gold bracelet"
+description = "A hoop of silvery metal is here."
+type = 9
+extra_flags = "gkl"
+wear_flags = "4097"
+values = [0, 0, 0, 0]
+weight = 5
+cost = 5000
+rent = 1000
+
+[[objects.affects]]
+location = 18
+modifier = 2
+[[objects]]
+vnum = 2584
+name = "cloak white"
+short_descr = "a white cloak"
+description = "A pile of white cloth is on the ground here."
+type = 9
+extra_flags = "gikl"
+wear_flags = "5"
+values = [0, 0, 0, 0]
+weight = 7
+cost = 9000
+rent = 1500
+
+[[objects.affects]]
+location = 17
+modifier = -12
+
+[[objects.affects]]
+location = 24
+modifier = -3
+[[objects]]
+vnum = 2585
+name = "ivory dagger"
+short_descr = "an ivory hilted dagger"
+description = "An ivory hilted dagger has been left here"
+type = 5
+extra_flags = "gikl"
+wear_flags = "8193"
+values = [0, 2, 6, 11]
+weight = 8
+cost = 12000
+rent = 1500
+
+[[objects.affects]]
+location = 18
+modifier = 1
+
+[[objects.affects]]
+location = 19
+modifier = 2
+[[objects]]
+vnum = 2586
+name = "collar spiked"
+short_descr = "a spiked collar"
+description = "A small spiked collar is here."
+type = 9
+extra_flags = "g"
+wear_flags = "5"
+values = [0, 0, 0, 0]
+weight = 9
+cost = 10000
+rent = 5000
+
+[[objects.affects]]
+location = 17
+modifier = -2
+
+[[objects.affects]]
+location = 19
+modifier = 3
+[[objects]]
+vnum = 2587
+name = "cloak shimmering"
+short_descr = "a shimmering cloak of many colors"
+description = "A multi-colored pile of cloth is here."
+type = 15
+extra_flags = "ag"
+wear_flags = "5"
+values = [100, 0, -1, 0]
+weight = 8
+cost = 25000
+rent = 5500
+
+[[objects.affects]]
+location = 17
+modifier = -15
+
+[[objects.affects]]
+location = 24
+modifier = -5
+[[objects]]
+vnum = 2588
+name = "emerald ring"
+short_descr = "a small emerald ring"
+description = "A small ring with a green gemstone is here."
+type = 9
+extra_flags = "g"
+wear_flags = "3"
+values = [0, 0, 0, 0]
+weight = 5
+cost = 50000
+rent = 10000
+
+[[objects.affects]]
+location = 12
+modifier = 20
+[[objects]]
+vnum = 2589
+name = "bracelet emerald"
+short_descr = "an emerald bracelet"
+description = "A beautifully crafted hoop of emerald is here."
+type = 9
+extra_flags = "g"
+wear_flags = "4097"
+values = [0, 0, 0, 0]
+weight = 5
+cost = 30000
+rent = 3500
+
+[[objects.affects]]
+location = 17
+modifier = -5
+
+[[objects.affects]]
+location = 3
+modifier = 1
+[[objects]]
+vnum = 2590
+name = "ward major clear crystal"
+short_descr = "a ward major"
+description = "A large clear crystal cube is here."
+type = 9
+extra_flags = "ag"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 6
+cost = 20000
+rent = 2000
+
+[[objects.affects]]
+location = 17
+modifier = -10
+
+[[objects.affects]]
+location = 24
+modifier = -2
+[[objects]]
+vnum = 2591
+name = "ebony kris"
+short_descr = "the ebony kris"
+description = "A wavy bladed knife made of ebony is here."
+type = 5
+extra_flags = "g"
+wear_flags = "8193"
+values = [0, 3, 4, 11]
+weight = 9
+cost = 60000
+rent = 5000
+
+[[objects.affects]]
+location = 2
+modifier = 2
+
+[[objects.affects]]
+location = 19
+modifier = 5
+[[objects]]
+vnum = 2592
+name = "green scale shirt"
+short_descr = "a tight fitting green dragon scale shirt"
+description = "Some green dragon scales which have been sewn together are here."
+type = 9
+extra_flags = "g"
+wear_flags = "9"
+values = [10, 0, 0, 0]
+weight = 9
+cost = 10000
+rent = 1000
+
+[[objects.extra_desc]]
+keyword = "green scale shirt"
+description = "this Green dragon scale shirt was made from a poor unfortunate green dragon.\r\n"
+
+[[objects.affects]]
+location = 2
+modifier = 3
+
+[[objects.affects]]
+location = 17
+modifier = -5
+[[objects]]
+vnum = 2593
+name = "key grey metal"
+short_descr = "a grey key"
+description = "A key made of a strange grey metal has been left here."
+type = 18
+extra_flags = "cdq"
+wear_flags = "16385"
+values = [2593, 0, 0, 0]
+weight = 2
+cost = 0
+rent = 0
+[[objects]]
+vnum = 2594
+name = "key black obsidian"
+short_descr = "a black key"
+description = "A key made of black obsidian has been left here."
+type = 18
+extra_flags = "cdq"
+wear_flags = "16385"
+values = [2594, 0, 0, 0]
+weight = 2
+cost = 0
+rent = 0
+[[objects]]
+vnum = 2595
+name = "key white ivory"
+short_descr = "a white key"
+description = "A key made of white ivory has been left here."
+type = 18
+extra_flags = "cdq"
+wear_flags = "16385"
+values = [2595, 0, 0, 0]
+weight = 2
+cost = 0
+rent = 0

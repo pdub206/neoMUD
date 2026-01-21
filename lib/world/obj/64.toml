@@ -1,0 +1,292 @@
+[[objects]]
+vnum = 6400
+name = "dagger glowing"
+short_descr = "a glowing dagger"
+description = "A glowing dagger glows here."
+type = 5
+extra_flags = "ag"
+wear_flags = "8193"
+values = [0, 1, 4, 11]
+weight = 1
+cost = 1000
+rent = 300
+
+[[objects.affects]]
+location = 18
+modifier = 3
+[[objects]]
+vnum = 6401
+name = "platemail glowing plate mail"
+short_descr = "the glowing platemail"
+description = "Some glowing platemail lies in a heap here."
+type = 9
+extra_flags = "ag"
+wear_flags = "9"
+values = [15, 0, 0, 0]
+weight = 150
+cost = 30000
+rent = 10000
+[[objects]]
+vnum = 6402
+name = "agate gem"
+short_descr = "an agate"
+description = "A small gem lies here."
+type = 8
+extra_flags = "0"
+wear_flags = "1"
+values = [0, 0, 0, 0]
+weight = 1
+cost = 5000
+rent = 500
+[[objects]]
+vnum = 6403
+name = "jade jewel"
+short_descr = "a piece of jade"
+description = "A small jewel gleams here."
+type = 8
+extra_flags = "0"
+wear_flags = "1"
+values = [0, 0, 0, 0]
+weight = 1
+cost = 10000
+rent = 1000
+[[objects]]
+vnum = 6404
+name = "sculpture"
+short_descr = "a piece of sculpture"
+description = "A nice piece of sculpture is here."
+type = 8
+extra_flags = "0"
+wear_flags = "1"
+values = [0, 0, 0, 0]
+weight = 75
+cost = 20000
+rent = 2000
+
+[[objects.extra_desc]]
+keyword = "sculpture"
+description = "It is of a beautiful woman, straining\r\nbeneath a heavy weight.  She looks\r\ntired, with chiseled tears staining\r\nher cheeks.  It makes you sad.\r\n"
+[[objects]]
+vnum = 6405
+name = "vial dragons blood"
+short_descr = "a vial of dragon's blood"
+description = "A small vial filled with a red fluid lies in the dust here."
+type = 10
+extra_flags = "0"
+wear_flags = "1"
+values = [7, 39, 39, 39]
+weight = 5
+cost = 48000
+rent = 20500
+[[objects]]
+vnum = 6406
+name = "amulet"
+short_descr = "an amulet"
+description = "An odd looking amulet has been discarded here."
+type = 9
+extra_flags = "ag"
+wear_flags = "5"
+values = [0, 0, 0, 0]
+weight = 3
+cost = 20000
+rent = 3000
+
+[[objects.affects]]
+location = 2
+modifier = 3
+[[objects]]
+vnum = 6407
+name = "pole tent"
+short_descr = "a tent pole"
+description = "A tent pole has been tossed away here."
+type = 3
+extra_flags = "ag"
+wear_flags = "16385"
+values = [25, 5, 5, 38]
+weight = 10
+cost = 25000
+rent = 5000
+[[objects]]
+vnum = 6408
+name = "bag powder wealth"
+short_descr = "a bag of powder of wealth"
+description = "A small bag filled with powder of wealth lies here."
+type = 20
+extra_flags = "ag"
+wear_flags = "1"
+values = [100000, 0, 0, 0]
+weight = 1
+cost = 100000
+rent = 0
+[[objects]]
+vnum = 6409
+name = "desk"
+short_descr = "a desk"
+description = "There is an ebony desk here."
+type = 15
+extra_flags = "0"
+wear_flags = "0"
+values = [100, 13, 0, 0]
+weight = 800
+cost = 0
+rent = 0
+[[objects]]
+vnum = 6410
+name = "book chaos"
+short_descr = "the Book of Chaos"
+description = "A book with a title written in moving letters rests here."
+type = 3
+extra_flags = "abgh"
+wear_flags = "16385"
+values = [20, 1, 1, 26]
+weight = 25
+cost = 100000
+rent = 25000
+[[objects]]
+vnum = 6411
+name = "book elder"
+short_descr = "the Book of the Elder"
+description = "A grey-bound book lies here."
+type = 3
+extra_flags = "abg"
+wear_flags = "16385"
+values = [30, 1, 1, 28]
+weight = 25
+cost = 300000
+rent = 50000
+[[objects]]
+vnum = 6412
+name = "lens occluded"
+short_descr = "the Occluded Lens"
+description = "A smoky lens about a foot around has been scuffled in the dirt here."
+type = 1
+extra_flags = "aghjk"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 20
+cost = 200000
+rent = 50000
+
+[[objects.affects]]
+location = 12
+modifier = 20
+
+[[objects.affects]]
+location = 4
+modifier = 1
+[[objects]]
+vnum = 6413
+name = "mevais herb leaf"
+short_descr = "a leaf of mevais"
+description = "A small black leaf of a mevais plant lies here, well preserved."
+type = 10
+extra_flags = "0"
+wear_flags = "1"
+values = [30, 27, 33, 4]
+weight = 1
+cost = 0
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "mevais herb leaf"
+description = "Quaffing this down might provide interesting effects.\r\n"
+[[objects]]
+vnum = 6414
+name = "bottle peska"
+short_descr = "a bottle of peska"
+description = "There is a bottle of a milky fluid here."
+type = 10
+extra_flags = "0"
+wear_flags = "1"
+values = [30, 28, 3, 1]
+weight = 12
+cost = 15000
+rent = 3000
+
+[[objects.extra_desc]]
+keyword = "bottle peska"
+description = "It is a milky concoction, with strange motes floating in it.\r\n"
+[[objects]]
+vnum = 6415
+name = "staff rand"
+short_descr = "Rand's staff"
+description = "There is a metal-shod staff here."
+type = 9
+extra_flags = "agnop"
+wear_flags = "16385"
+values = [8, 0, 0, 0]
+weight = 7
+cost = 100000
+rent = 25000
+
+[[objects.affects]]
+location = 12
+modifier = 5
+
+[[objects.affects]]
+location = 17
+modifier = 5
+[[objects]]
+vnum = 6416
+name = "chest wooden"
+short_descr = "a wooden chest"
+description = "There is a wooden chest here."
+type = 15
+extra_flags = "0"
+wear_flags = "0"
+values = [500, 13, 0, 0]
+weight = 0
+cost = 0
+rent = 0
+[[objects]]
+vnum = 6417
+name = "chest wooden"
+short_descr = "a wooden chest"
+description = "There is a wooden chest here."
+type = 15
+extra_flags = "0"
+wear_flags = "0"
+values = [500, 13, 0, 0]
+weight = 0
+cost = 0
+rent = 0
+[[objects]]
+vnum = 6418
+name = "chest wooden"
+short_descr = "a wooden chest"
+description = "There is a wooden chest here."
+type = 15
+extra_flags = "0"
+wear_flags = "0"
+values = [500, 13, 0, 0]
+weight = 0
+cost = 0
+rent = 0
+[[objects]]
+vnum = 6419
+name = "basin water"
+short_descr = "a water basin"
+description = "A basin filled with crisp, clean water is here."
+type = 17
+extra_flags = "a"
+wear_flags = "0"
+values = [100, 100, 0, 0]
+weight = 100
+cost = 0
+rent = 0
+[[objects]]
+vnum = 6420
+name = "food"
+short_descr = "some food"
+description = "There's some food lying here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [8, 0, 0, 0]
+weight = 3
+cost = 20
+rent = 10
+
+[[objects.extra_desc]]
+keyword = "food"
+description = "It is just random and assorted food.\r\nDon't ask questions.  It is only a game.\r\n"

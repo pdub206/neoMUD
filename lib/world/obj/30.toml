@@ -1,0 +1,780 @@
+[[objects]]
+vnum = 3000
+name = "barrel beer"
+short_descr = "a barrel"
+description = "A beer barrel has been left here."
+type = 17
+extra_flags = "0"
+wear_flags = "1"
+values = [50, 50, 1, 0]
+weight = 65
+cost = 300
+rent = 100
+[[objects]]
+vnum = 3001
+name = "bottle beer"
+short_descr = "a bottle"
+description = "A beer bottle has been left here."
+type = 17
+extra_flags = "0"
+wear_flags = "1"
+values = [8, 8, 1, 0]
+weight = 10
+cost = 20
+rent = 8
+[[objects]]
+vnum = 3002
+name = "bottle dark ale"
+short_descr = "a bottle"
+description = "A dark bottle of ale has been left here."
+type = 17
+extra_flags = "0"
+wear_flags = "1"
+values = [8, 8, 3, 0]
+weight = 10
+cost = 10
+rent = 3
+[[objects]]
+vnum = 3003
+name = "bottle firebreather"
+short_descr = "a bottle"
+description = "A bottle of firebreather has been left here."
+type = 17
+extra_flags = "0"
+wear_flags = "1"
+values = [8, 8, 7, 0]
+weight = 10
+cost = 50
+rent = 17
+[[objects]]
+vnum = 3004
+name = "bottle local"
+short_descr = "a bottle"
+description = "A dark bottle has been left here."
+type = 17
+extra_flags = "0"
+wear_flags = "1"
+values = [8, 8, 8, 0]
+weight = 10
+cost = 20
+rent = 7
+[[objects]]
+vnum = 3005
+name = "key dull metal"
+short_descr = "a key of dull metal"
+description = "A key made of a dull metal is lying on the ground here."
+type = 18
+extra_flags = "cdq"
+wear_flags = "16385"
+values = [3005, 0, 0, 0]
+weight = 1
+cost = 0
+rent = 0
+[[objects]]
+vnum = 3009
+name = "waybread bread"
+short_descr = "a waybread"
+description = "Some waybread has been put here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [24, 0, 0, 0]
+weight = 1
+cost = 50
+rent = 50
+
+[[objects.extra_desc]]
+keyword = "waybread bread"
+description = "The waybread is the traditional feed of elves when travelling, they\r\ncall it lembas.  It is said to refresh the weary traveler greatly.\r\n"
+[[objects]]
+vnum = 3010
+name = "bread loaf"
+short_descr = "a bread"
+description = "A loaf of bread has been left here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [12, 0, 0, 0]
+weight = 1
+cost = 10
+rent = 10
+[[objects]]
+vnum = 3011
+name = "danish pastry"
+short_descr = "a danish pastry"
+description = "A nice looking delicious danish pastry has been placed here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [5, 0, 0, 0]
+weight = 1
+cost = 5
+rent = 5
+[[objects]]
+vnum = 3012
+name = "taco mexican"
+short_descr = "a Mexican taco"
+description = "A tasty looking Mexican taco has been dropped here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [15, 0, 0, 0]
+weight = 1
+cost = 15
+rent = 15
+[[objects]]
+vnum = 3013
+name = "burrito hot"
+short_descr = "a spicy hot burrito"
+description = "A spicy looking burrito has been set here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [10, 0, 0, 0]
+weight = 1
+cost = 10
+rent = 10
+[[objects]]
+vnum = 3014
+name = "nachos nacho"
+short_descr = "some nachos with cheese"
+description = "Some nachos have been left here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [5, 0, 0, 0]
+weight = 1
+cost = 5
+rent = 5
+
+[[objects.extra_desc]]
+keyword = "nachos nacho"
+description = "They have cheese on them.  Looks like one of Uncle Juan's specials.\r\n"
+[[objects]]
+vnum = 3015
+name = "meat chunk"
+short_descr = "a piece of meat"
+description = "A rather dubious looking piece of meat is on the ground here."
+type = 19
+extra_flags = "0"
+wear_flags = "1"
+values = [14, 0, 0, 0]
+weight = 5
+cost = 24
+rent = 10
+
+[[objects.extra_desc]]
+keyword = "meat chunk"
+description = "It isn't so much that the meat looks poisoned or anything, but that you\r\njust are not sure of its origins.  You doubt that a hunter would drop a\r\nside of venison or rabbit meat... what in the world could this meat have\r\ncome from, you wonder...\r\n"
+[[objects]]
+vnum = 3020
+name = "dagger"
+short_descr = "a dagger"
+description = "A dagger with a long thin blade is here."
+type = 5
+extra_flags = "n"
+wear_flags = "8193"
+values = [0, 1, 4, 11]
+weight = 1
+cost = 10
+rent = 10
+[[objects]]
+vnum = 3021
+name = "sword small"
+short_descr = "a small sword"
+description = "A small sword lies here."
+type = 5
+extra_flags = "n"
+wear_flags = "8193"
+values = [0, 1, 6, 11]
+weight = 3
+cost = 60
+rent = 10
+
+[[objects.extra_desc]]
+keyword = "sword small"
+description = "The small sword seems to have an inscription of some sort inscription...\r\n"
+
+[[objects.extra_desc]]
+keyword = "inscription"
+description = "It says: 'May this sword be a good companion.'\r\n"
+[[objects]]
+vnum = 3022
+name = "sword long"
+short_descr = "a long sword"
+description = "A long sword has been left here."
+type = 5
+extra_flags = "n"
+wear_flags = "8193"
+values = [0, 1, 8, 3]
+weight = 8
+cost = 600
+rent = 10
+[[objects]]
+vnum = 3023
+name = "club wooden"
+short_descr = "a wooden club"
+description = "A simple looking wooden club is here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 1, 3, 7]
+weight = 3
+cost = 12
+rent = 10
+[[objects]]
+vnum = 3024
+name = "warhammer hammer"
+short_descr = "a warhammer"
+description = "A medium sized warhammer is here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 1, 5, 7]
+weight = 6
+cost = 50
+rent = 10
+[[objects]]
+vnum = 3025
+name = "flail large"
+short_descr = "a flail"
+description = "A large flail is here."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 2, 4, 7]
+weight = 6
+cost = 625
+rent = 10
+[[objects]]
+vnum = 3030
+name = "torch"
+short_descr = "a torch"
+description = "A large torch."
+type = 1
+extra_flags = "0"
+wear_flags = "16185"
+values = [0, 0, 24, 0]
+weight = 1
+cost = 10
+rent = 10
+[[objects]]
+vnum = 3031
+name = "lantern brass"
+short_descr = "a lantern"
+description = "A brass lantern is here."
+type = 1
+extra_flags = "0"
+wear_flags = "16185"
+values = [0, 0, 96, 0]
+weight = 1
+cost = 50
+rent = 10
+[[objects]]
+vnum = 3032
+name = "bag"
+short_descr = "a bag"
+description = "A small bag is here."
+type = 15
+extra_flags = "0"
+wear_flags = "16385"
+values = [50, 0, 0, 0]
+weight = 2
+cost = 20
+rent = 10
+[[objects]]
+vnum = 3033
+name = "box"
+short_descr = "a box"
+description = "A small box is here."
+type = 15
+extra_flags = "0"
+wear_flags = "16385"
+values = [10, 0, 0, 0]
+weight = 5
+cost = 50
+rent = 10
+[[objects]]
+vnum = 3034
+name = "atm teller bank machine"
+short_descr = "an automatic teller machine"
+description = "An automatic teller machine has been installed in the wall here."
+type = 12
+extra_flags = "cdeg"
+wear_flags = "0"
+values = [0, 0, 0, 0]
+weight = 5000
+cost = 0
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "atm teller bank machine"
+description = "There is a small note on the machine which says:\r\n\r\nTo use, type 'BALANCE', 'WITHDRAW <amount>', or 'DEPOSIT <amount>'.\r\nPlease report any strange occurrences to the bank manager.\r\n\r\n"
+[[objects]]
+vnum = 3035
+name = "fountain water"
+short_descr = "the large fountain"
+description = "A large fountain carved from blue-streaked marble is here, bubbling merrily."
+type = 23
+extra_flags = "cdeg"
+wear_flags = "0"
+values = [9999, 9999, 15, 0]
+weight = 9999
+cost = 0
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "marble blue streaked"
+description = "It is a well crafted fountain, carved from a single piece of very beautiful\r\nwhite marble shot through with electric blue streaks that look almost like\r\nlightning dancing along the sides of the fountain.  It seems to be enchanted\r\nin some manner, as the water level seems to never lower.\r\n"
+[[objects]]
+vnum = 3036
+name = "cashcard card atm"
+short_descr = "a cashcard"
+description = "A handy dandy cashcard is sitting on the ground here."
+type = 12
+extra_flags = "cdeg"
+wear_flags = "16385"
+values = [0, 0, 0, 0]
+weight = 1
+cost = 10000
+rent = 10
+
+[[objects.extra_desc]]
+keyword = "cashcard card atm"
+description = "There is some writing on the back of the card which reads:\r\n\r\nTo use, type 'BALANCE', 'WITHDRAW <amount>', or 'DEPOSIT <amount>'.\r\nPlease report any strange occurrences to the bank manager.\r\n\r\n"
+[[objects]]
+vnum = 3037
+name = "candle"
+short_descr = "a candle"
+description = "A candle lies here, unlit."
+type = 1
+extra_flags = "0"
+wear_flags = "16385"
+values = [0, 0, 4, 0]
+weight = 1
+cost = 5
+rent = 1
+
+[[objects.extra_desc]]
+keyword = "candle"
+description = "A home-made candle, how quaint!\r\n"
+[[objects]]
+vnum = 3038
+name = "nail"
+short_descr = "a nail"
+description = "A penny nail lies in the dust."
+type = 5
+extra_flags = "0"
+wear_flags = "8193"
+values = [0, 1, 1, 11]
+weight = 1
+cost = 5
+rent = 1
+
+[[objects.extra_desc]]
+keyword = "nail"
+description = "Its a common iron nail, used for carpentry work.\r\n"
+[[objects]]
+vnum = 3039
+name = "pot"
+short_descr = "a pot"
+description = "A cast-iron pot sits on the ground."
+type = 15
+extra_flags = "0"
+wear_flags = "1"
+values = [10, 0, 0, 0]
+weight = 10
+cost = 100
+rent = 20
+
+[[objects.extra_desc]]
+keyword = "pot"
+description = "It is a nice pot.  You could use it, if you ever settled down.\r\n"
+[[objects]]
+vnum = 3040
+name = "plate breast"
+short_descr = "a breast plate"
+description = "A breast plate is lying on the ground."
+type = 9
+extra_flags = "0"
+wear_flags = "9"
+values = [7, 0, 0, 0]
+weight = 100
+cost = 18000
+rent = 150
+[[objects]]
+vnum = 3041
+name = "shirt chain mail"
+short_descr = "a chain mail shirt"
+description = "A chain mail shirt is lying on the ground."
+type = 9
+extra_flags = "0"
+wear_flags = "9"
+values = [5, 0, 0, 0]
+weight = 60
+cost = 2500
+rent = 50
+[[objects]]
+vnum = 3042
+name = "shield wooden"
+short_descr = "a shield"
+description = "A small wooden shield is lying on the ground."
+type = 9
+extra_flags = "0"
+wear_flags = "513"
+values = [2, 0, 0, 0]
+weight = 3
+cost = 100
+rent = 10
+[[objects]]
+vnum = 3043
+name = "jacket soft leather"
+short_descr = "a leather jacket"
+description = "A soft leather jacket is lying on the ground."
+type = 9
+extra_flags = "0"
+wear_flags = "9"
+values = [2, 0, 0, 0]
+weight = 10
+cost = 200
+rent = 10
+[[objects]]
+vnum = 3044
+name = "jacket studded leather"
+short_descr = "a studded leather jacket"
+description = "A studded leather jacket is lying on the ground."
+type = 9
+extra_flags = "0"
+wear_flags = "9"
+values = [3, 0, 0, 0]
+weight = 20
+cost = 500
+rent = 10
+[[objects]]
+vnum = 3045
+name = "jacket scale mail"
+short_descr = "a scale mail jacket"
+description = "A scale mail jacket is lying on the ground."
+type = 9
+extra_flags = "0"
+wear_flags = "9"
+values = [4, 0, 0, 0]
+weight = 40
+cost = 1000
+rent = 10
+[[objects]]
+vnum = 3046
+name = "plate bronze breast"
+short_descr = "a bronze breast plate"
+description = "A bronze breast plate is lying on the ground."
+type = 9
+extra_flags = "0"
+wear_flags = "9"
+values = [6, 0, 0, 0]
+weight = 80
+cost = 7000
+rent = 100
+[[objects]]
+vnum = 3050
+name = "scroll identify"
+short_descr = "a scroll of identify"
+description = "A scroll has carelessly been left here."
+type = 2
+extra_flags = "g"
+wear_flags = "16385"
+values = [12, 201, -1, -1]
+weight = 1
+cost = 2001
+rent = 10
+
+[[objects.extra_desc]]
+keyword = "scroll identify"
+description = "The scroll has a magic formula drawn upon it:\r\n\r\n     ???\r\n    ?   ?\r\n       ?\r\n      ?\r\n      ?\r\n      *\r\n\r\n"
+[[objects]]
+vnum = 3051
+name = "potion yellow"
+short_descr = "a yellow potion of see invisible"
+description = "A small yellow potion has carelessly been left here."
+type = 10
+extra_flags = "g"
+wear_flags = "16385"
+values = [12, 19, -1, -1]
+weight = 1
+cost = 400
+rent = 10
+
+[[objects.extra_desc]]
+keyword = "potion yellow"
+description = "The potion has a small label 'Detect The Invisible'.\r\n"
+[[objects]]
+vnum = 3052
+name = "scroll recall"
+short_descr = "a scroll of recall"
+description = "A scroll has carelessly been left here."
+type = 2
+extra_flags = "g"
+wear_flags = "16385"
+values = [12, 42, -1, -1]
+weight = 4
+cost = 2001
+rent = 10
+
+[[objects.extra_desc]]
+keyword = "scroll recall"
+description = "The scroll has written a formulae of 'Word of Recall' upon it.\r\n"
+[[objects]]
+vnum = 3053
+name = "wand grey"
+short_descr = "a grey wand of invisibility"
+description = "A grey wand has carelessly been left here."
+type = 3
+extra_flags = "g"
+wear_flags = "16385"
+values = [12, 2, 2, 29]
+weight = 2
+cost = 4000
+rent = 100
+
+[[objects.extra_desc]]
+keyword = "wand grey"
+description = "The wand is an old dark grey stick.  You notice a small symbol etched at\r\nthe base of the wand.  It looks like this:\r\n\r\n     \\ /\r\n    - O -\r\n     / \\\r\n\r\n"
+[[objects]]
+vnum = 3054
+name = "staff gnarled"
+short_descr = "a gnarled staff"
+description = "A gnarled staff has carelessly been left here."
+type = 4
+extra_flags = "g"
+wear_flags = "16385"
+values = [12, 1, 1, 38]
+weight = 17
+cost = 7000
+rent = 5000
+
+[[objects.extra_desc]]
+keyword = "staff gnarled"
+description = "The staff is made of old oak, and is around five feet long. It fits\r\nperfectly into your hand. You notice a small symbol etched at the\r\nbase of the staff, it looks like:\r\n\r\n  ZZZZZ\r\n     Z\r\n    Z\r\n   Z\r\n  ZZZZZ  z   z\r\n\r\n"
+[[objects]]
+vnum = 3055
+name = "staff metal"
+short_descr = "a metal staff"
+description = "A metal staff has carelessly been left here."
+type = 4
+extra_flags = "g"
+wear_flags = "16385"
+values = [10, 8, 8, 15]
+weight = 7
+cost = 8500
+rent = 300
+
+[[objects.extra_desc]]
+keyword = "staff metal"
+description = "The staff is made of metals unknown to you.\r\n"
+[[objects]]
+vnum = 3060
+name = "raft"
+short_descr = "a raft"
+description = "A raft has been left here."
+type = 22
+extra_flags = "0"
+wear_flags = "1"
+values = [0, 0, 0, 0]
+weight = 75
+cost = 400
+rent = 10
+
+[[objects.extra_desc]]
+keyword = "raft"
+description = "The raft looks very primitive.\r\n"
+[[objects]]
+vnum = 3061
+name = "canoe"
+short_descr = "a canoe"
+description = "A canoe has been left here."
+type = 22
+extra_flags = "0"
+wear_flags = "1"
+values = [0, 0, 0, 0]
+weight = 32
+cost = 1000
+rent = 100
+
+[[objects.extra_desc]]
+keyword = "canoe"
+description = "The canoe is fairly light.\r\n"
+[[objects]]
+vnum = 3070
+name = "gauntlets bronze"
+short_descr = "a pair of bronze gauntlets"
+description = "A pair of bronze gauntlets is lying on the ground."
+type = 9
+extra_flags = "0"
+wear_flags = "129"
+values = [6, 0, 0, 0]
+weight = 8
+cost = 1750
+rent = 100
+[[objects]]
+vnum = 3071
+name = "gloves leather"
+short_descr = "a pair of leather gloves"
+description = "A pair of leather gloves is lying on the ground."
+type = 9
+extra_flags = "0"
+wear_flags = "129"
+values = [3, 0, 0, 0]
+weight = 3
+cost = 75
+rent = 10
+[[objects]]
+vnum = 3075
+name = "helmet bronze"
+short_descr = "a bronze helmet"
+description = "A bronze helmet is lying on the ground."
+type = 9
+extra_flags = "0"
+wear_flags = "17"
+values = [6, 0, 0, 0]
+weight = 8
+cost = 3500
+rent = 100
+[[objects]]
+vnum = 3076
+name = "cap leather"
+short_descr = "a leather cap"
+description = "A leather cap is lying on the ground."
+type = 9
+extra_flags = "0"
+wear_flags = "17"
+values = [3, 0, 0, 0]
+weight = 3
+cost = 150
+rent = 10
+[[objects]]
+vnum = 3080
+name = "leggings bronze"
+short_descr = "a pair of bronze leggings"
+description = "A pair of bronze leggings is lying on the ground."
+type = 9
+extra_flags = "0"
+wear_flags = "33"
+values = [6, 0, 0, 0]
+weight = 8
+cost = 3500
+rent = 100
+[[objects]]
+vnum = 3081
+name = "pants leather"
+short_descr = "a pair of leather pants"
+description = "A pair of leather pants is lying on the ground."
+type = 9
+extra_flags = "0"
+wear_flags = "33"
+values = [3, 0, 0, 0]
+weight = 8
+cost = 150
+rent = 10
+[[objects]]
+vnum = 3085
+name = "sleeves bronze"
+short_descr = "a pair of bronze sleeves"
+description = "A pair of bronze sleeves is lying on the ground."
+type = 9
+extra_flags = "0"
+wear_flags = "257"
+values = [6, 0, 0, 0]
+weight = 8
+cost = 1750
+rent = 100
+[[objects]]
+vnum = 3086
+name = "sleeves leather"
+short_descr = "a pair of leather sleeves"
+description = "A pair of leather sleeves is lying on the ground."
+type = 9
+extra_flags = "0"
+wear_flags = "257"
+values = [2, 0, 0, 0]
+weight = 4
+cost = 75
+rent = 10
+[[objects]]
+vnum = 3096
+name = "board social bulletin"
+short_descr = "a social bulletin board"
+description = "A large, sociable bulletin board is mounted on a wall here."
+type = 13
+extra_flags = "0"
+wear_flags = "0"
+values = [0, 0, 0, 0]
+weight = 0
+cost = 0
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "board"
+description = "If you can read this, the board is not working.\r\n"
+
+[[objects.extra_desc]]
+keyword = "social bulletin"
+description = "Use 'look board' to read the board.\r\n"
+[[objects]]
+vnum = 3097
+name = "board frozen bulletin"
+short_descr = "a frozen bulletin board"
+description = "A large bulletin board is here, carved from a block of ice."
+type = 13
+extra_flags = "0"
+wear_flags = "0"
+values = [0, 0, 0, 0]
+weight = 0
+cost = 0
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "board"
+description = "If you can read this, the board is not working.\r\n"
+
+[[objects.extra_desc]]
+keyword = "freeze bulletin"
+description = "Use 'look board' to read the board.\r\n"
+[[objects]]
+vnum = 3098
+name = "board holy bulletin"
+short_descr = "a holy bulletin board"
+description = "A large bulletin board is mounted on a wall here.  It glows with a faint aura."
+type = 13
+extra_flags = "0"
+wear_flags = "0"
+values = [0, 0, 0, 0]
+weight = 0
+cost = 0
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "board"
+description = "If you can read this, the board is not working.\r\n"
+
+[[objects.extra_desc]]
+keyword = "holy bulletin"
+description = "Use 'look board' to read the board.\r\n"
+[[objects]]
+vnum = 3099
+name = "board bulletin"
+short_descr = "a bulletin board"
+description = "A large bulletin board is mounted on a wall here."
+type = 13
+extra_flags = "0"
+wear_flags = "0"
+values = [0, 0, 0, 0]
+weight = 0
+cost = 0
+rent = 0
+
+[[objects.extra_desc]]
+keyword = "board"
+description = "If you can read this, the board is not working.\r\n"
+
+[[objects.extra_desc]]
+keyword = "bulletin"
+description = "Use 'look board' to read the board.\r\n"

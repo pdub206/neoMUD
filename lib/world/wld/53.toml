@@ -1,0 +1,1541 @@
+[[rooms]]
+vnum = 5300
+name = "The Great Eastern Desert"
+description = "   A vast desert stretches for miles, the sands constantly shifting around\r\nyou.  Rising out of the sand to the north you see a mighty pyramid.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "The sands of the desert continue onward towards the pyramid.\r\n"
+door = 0
+key = -1
+to_room = 5301
+
+[[rooms.exits]]
+dir = 1
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5040
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5050
+
+[[rooms.exits]]
+dir = 3
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5035
+
+[[rooms.extra]]
+keyword = "pyramid"
+description = "The massive pyramid rises out of the sand, a monument to long-dead pharoahs.\r\n"
+[[rooms]]
+vnum = 5301
+name = "At The Base Of The Pyramid"
+description = "   The mighty pyramid towers above you out of the hot desert sands, made\r\nfrom huge blocks of stone that have been coated over with a rough sandy\r\nplaster-like substance.  The face of the pyramid is steep, but you think\r\nyou might be able to climb it.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 2
+description = "Sand as far as the eye can see.\r\n"
+door = 0
+key = -1
+to_room = 5300
+
+[[rooms.exits]]
+dir = 4
+description = "The steep slope of the pyramid rises up before you.\r\n"
+door = 0
+key = -1
+to_room = 5302
+
+[[rooms.extra]]
+keyword = "pyramid"
+description = "You wonder how anyone could have built such a massive thing out in this\r\nheat.\r\n"
+[[rooms]]
+vnum = 5302
+name = "Climbing The Great Pyramid"
+description = "   Hot air rises off the sides of the pyramid, and the wind chokes you with\r\na flurry of sand and dust.  So far you have made it halfway up the side.  The\r\nwalls of the pyramid are quite steep.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 0
+description = "If you are daring you could try to skirt around to the northern side.\r\n"
+door = 0
+key = -1
+to_room = 5303
+
+[[rooms.exits]]
+dir = 2
+description = "If you are daring you could try to skirt around to the southern side.\r\n"
+door = 0
+key = -1
+to_room = 5304
+
+[[rooms.exits]]
+dir = 4
+description = "It looks too dangerous to try to climb any higher.\r\n"
+door = 0
+key = -1
+to_room = 5307
+
+[[rooms.exits]]
+dir = 5
+description = "Far below you are the burning sands of the desert.\r\n"
+door = 0
+key = -1
+to_room = 5301
+
+[[rooms.extra]]
+keyword = "pyramid"
+description = "You wonder how anyone could have built such a massive thing out in this\r\nheat.\r\n"
+[[rooms]]
+vnum = 5303
+name = "Climbing The Great Pyramid"
+description = "   Hot air rises off the sides of the pyramid, and the wind chokes you with\r\na flurry of sand and dust.  The walls of the pyramid are quite steep, and\r\nyou are having trouble keeping from sliding down into the sands below.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+description = "If you are daring you could try to skirt around to the eastern side.\r\n"
+door = 0
+key = -1
+to_room = 5305
+
+[[rooms.exits]]
+dir = 3
+description = "If you are daring you could try to skirt around to the western side.\r\n"
+door = 0
+key = -1
+to_room = 5302
+
+[[rooms.exits]]
+dir = 4
+description = "It looks too dangerous to try to climb any higher.\r\n"
+door = 0
+key = -1
+to_room = 5307
+
+[[rooms.exits]]
+dir = 5
+description = "This side of the pyramid has a dangerous drop before the sandy floor.\r\n"
+door = 0
+key = -1
+to_room = 5307
+
+[[rooms.extra]]
+keyword = "pyramid"
+description = "You wonder how anyone could have built such a massive thing out in this\r\nheat.\r\n"
+[[rooms]]
+vnum = 5304
+name = "Climbing The Great Pyramid"
+description = "   Hot air rises off the sides of the pyramid, and the wind chokes you with\r\na flurry of sand and dust.  The walls of the pyramid are quite steep, and\r\nyou are having trouble keeping from sliding down into the sands below.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 1
+description = "If you are daring you could try to skirt around to the eastern side.\r\n"
+door = 0
+key = -1
+to_room = 5305
+
+[[rooms.exits]]
+dir = 3
+description = "If you are daring you could try to skirt around to the western side.\r\n"
+door = 0
+key = -1
+to_room = 5302
+
+[[rooms.exits]]
+dir = 4
+description = "It looks too dangerous to try to climb any higher.\r\n"
+door = 0
+key = -1
+to_room = 5307
+
+[[rooms.exits]]
+dir = 5
+description = "This side of the pyramid has a dangerous drop before the sandy floor.\r\n"
+door = 0
+key = -1
+to_room = 5307
+
+[[rooms.extra]]
+keyword = "pyramid"
+description = "You wonder how anyone could have built such a massive thing out in this\r\nheat.\r\n"
+[[rooms]]
+vnum = 5305
+name = "Climbing The Great Pyramid"
+description = "   Here on the eastern side of the pyramid there is a little more shelter\r\nfrom the heat and wind.  The stone side is not nearly so slippery smooth\r\nfrom the ravages of time, and you think you may be able to even reach the\r\ntop from here.\r\n"
+flags = "0"
+sector = 5
+
+[[rooms.exits]]
+dir = 0
+description = "If you are daring you could try to skirt around to the northern side.\r\n"
+door = 0
+key = -1
+to_room = 5303
+
+[[rooms.exits]]
+dir = 2
+description = "If you are daring you could try to skirt around to the southern side.\r\n"
+door = 0
+key = -1
+to_room = 5304
+
+[[rooms.exits]]
+dir = 4
+description = "You see the apex of the pyramid many yards above you.\r\n"
+door = 0
+key = -1
+to_room = 5306
+
+[[rooms.exits]]
+dir = 5
+description = "This side of the pyramid has a dangerous drop before the sandy floor.\r\n"
+door = 0
+key = -1
+to_room = 5307
+
+[[rooms.extra]]
+keyword = "pyramid"
+description = "You wonder how anyone could have built such a massive thing out in this\r\nheat.\r\n"
+[[rooms]]
+vnum = 5306
+name = "The Apex Of The Great Pyramid"
+description = "   Bathed in sweat, you have managed to reach the summit of the great\r\npyramid.  The four sides of the pyramid slope sharply down into the\r\nhot sands in all four cardinal directions.\r\nA plaque has been set into the sandy stones beneath your feet.\r\n"
+flags = "0"
+sector = 1
+
+[[rooms.exits]]
+dir = 0
+description = "The north side of the pyramid slopes down into the sands.\r\nIt looks really dangerous.  I wouldn't go that way.\r\n"
+door = 0
+key = -1
+to_room = 5307
+
+[[rooms.exits]]
+dir = 1
+description = "The east side of the pyramid slopes down into the sands.\r\n"
+door = 0
+key = -1
+to_room = 5305
+
+[[rooms.exits]]
+dir = 2
+description = "The south side of the pyramid slopes down into the sands.\r\nIt looks really dangerous.  I wouldn't go that way.\r\n"
+door = 0
+key = -1
+to_room = 5307
+
+[[rooms.exits]]
+dir = 3
+description = "The west side of the pyramid slopes down into the sands.\r\nIt looks really dangerous.  I wouldn't go that way.\r\n"
+door = 0
+key = -1
+to_room = 5307
+
+[[rooms.exits]]
+dir = 5
+description = "You see some sandy stones pressed closely together to form a hard surface.\r\n"
+keyword = "stones"
+door = 1
+key = -1
+to_room = 5308
+
+[[rooms.extra]]
+keyword = "plaque"
+description = "The plaque reads:\r\n\r\n                        The Great Pyramid\r\n\r\n                Created by the Andersen work crew.\r\n\r\n"
+
+[[rooms.extra]]
+keyword = "stones"
+description = "As you look closer you can make out a crack in the center of the stones\r\nbeneath your feet.  With some effort you might be able to lift that \r\nsection up and get inside!\r\n"
+[[rooms]]
+vnum = 5307
+name = "On The Dangerous Stones"
+description = "   Here the elements have carved away at the sides of the pyramid quite a \r\nbit.  You aren't so sure of your footing anymore...\r\n\r\nSuddenly the wind picks up, and you lose your balance!\r\nYou tumble down the side of the pyramid, and fall to your death!\r\n\r\nSPLAT.\r\n\r\nOuch.\r\n"
+flags = "bd"
+sector = 0
+[[rooms]]
+vnum = 5308
+name = "A Ladder"
+description = "   You are climbing an ancient ladder that leads down into the depths of\r\nthe pyramid.  The air around is thick with layers of dust and a strange\r\nmusty smell.  Above you you see tiny beams of light coming through the\r\nstones of the ceiling.\r\n"
+flags = "cd"
+sector = 0
+
+[[rooms.exits]]
+dir = 4
+description = "You see the sandy stones of the ceiling.\r\n"
+keyword = "stones"
+door = 1
+key = -1
+to_room = 5306
+
+[[rooms.exits]]
+dir = 5
+description = "You see a small dusty chamber.\r\n"
+door = 0
+key = -1
+to_room = 5309
+
+[[rooms.extra]]
+keyword = "stones"
+description = "As you look closer you can make out a crack in the center of the stones\r\nabove your head.  With some effort you might be able to lift that section\r\nup and get outside!\r\n"
+[[rooms]]
+vnum = 5309
+name = "A Musty Chamber"
+description = "   You are standing in a dank, musty chamber just inside the pyramid. \r\nFootprints and other strange marks are set into the dusty floor here.\r\nIt would seem that some of the tenants of this monument are still alive.\r\nExits lead in all directions.   The door to the west is covered with\r\ninscriptions.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see a tiny crawlway raised about three feet off the ground.\r\n"
+door = 0
+key = -1
+to_room = 5312
+
+[[rooms.exits]]
+dir = 1
+description = "A dust-covered hallway leads off to the east.\r\n"
+door = 0
+key = -1
+to_room = 5339
+
+[[rooms.exits]]
+dir = 2
+description = "You see a small crack in the wall through which you might be able to slide.\r\n"
+door = 0
+key = -1
+to_room = 5324
+
+[[rooms.exits]]
+dir = 3
+description = "You see a large stone door, covered in sigils and hieroglyphs.\r\n"
+keyword = "door stone"
+door = 1
+key = -1
+to_room = 5310
+
+[[rooms.exits]]
+dir = 4
+description = "A small rickety ladder leads up.\r\n"
+door = 0
+key = -1
+to_room = 5308
+
+[[rooms.extra]]
+keyword = "sigils hieroglyphs inscriptions writing"
+description = "You cannot understand the strange glyphs that cover the door, but most of\r\nthem seem to depict scenes of fire and massive creatures of apparently\r\ntremendous strength.  You have a feeling that the glyphs are serving as a\r\nwarning.\r\n"
+
+[[rooms.extra]]
+keyword = "door stone"
+description = "The stone door is covered in strange inscriptions and hieroglyphs that warn\r\nyou not to proceed any further.\r\n"
+[[rooms]]
+vnum = 5310
+name = "The Fire Pool"
+description = "   This room is dominated by a massive raised pool that is filled with\r\nnot water but flames of intense heat.  The multicoloured flames lick out\r\nat you, searching for things to burn.  The pool proceeds to the east into\r\na small chamber.\r\n"
+flags = "cd"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "You see a large stone door.\r\n"
+keyword = "door stone"
+door = 1
+key = -1
+to_room = 5309
+
+[[rooms.exits]]
+dir = 3
+description = "You see a small chamber filled with fire.\r\n"
+door = 0
+key = -1
+to_room = 5311
+[[rooms]]
+vnum = 5311
+name = "The Chamber Of The Efreet"
+description = "   You make your way across the fire pool, and into a small stone chamber.\r\nHere the flames are nearly as high as your head, singeing your face and \r\nevaporating your sweat instantaneously.\r\n"
+flags = "d"
+sector = 7
+
+[[rooms.exits]]
+dir = 1
+description = "The pool of fire ends to the east.\r\n"
+door = 0
+key = -1
+to_room = 5310
+[[rooms]]
+vnum = 5312
+name = "A Tiny Crawlway"
+description = "   You have to go down onto your hands and knees to fit inside this tiny\r\nspace.  The crawlway is thick with sand and dust, and markings of the\r\npassage of other creatures.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "The crawlway continues to the north.\r\n"
+door = 0
+key = -1
+to_room = 5313
+
+[[rooms.exits]]
+dir = 2
+description = "The crawlway ends to the south in a musty chamber.\r\n"
+door = 0
+key = -1
+to_room = 5309
+
+[[rooms.exits]]
+dir = 4
+description = "A small hole above your head leads into a dank chamber.\r\n"
+door = 0
+key = -1
+to_room = 5337
+[[rooms]]
+vnum = 5313
+name = "A Tiny Crawlway"
+description = "   You are on your hands and knees, inside a small crawlway that winds\r\nthrough the inside of the pyramid.  The crawlway is thick with sand, dust, \r\nand markings of the passage of other creatures.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "The crawlway continues to the south.\r\n"
+door = 0
+key = -1
+to_room = 5312
+
+[[rooms.exits]]
+dir = 3
+description = "The crawlway continues to the west.\r\n"
+door = 0
+key = -1
+to_room = 5314
+[[rooms]]
+vnum = 5314
+name = "A Tiny Crawlway"
+description = "   You are on your hands and knees, inside a small crawlway that winds\r\nthrough the inside of the pyramid.  The crawlway is thick with sand, dust, \r\nand markings of the passage of other creatures.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "The crawlway continues to the east.\r\n"
+door = 0
+key = -1
+to_room = 5313
+
+[[rooms.exits]]
+dir = 3
+description = "The crawlway gets a little tighter to the west.\r\n"
+door = 0
+key = -1
+to_room = 5315
+[[rooms]]
+vnum = 5315
+name = "A Tightening In The Crawlway"
+description = "   Here you are forced to slide on your belly through a particularly tight\r\nsection of the crawlway, as the stones of the pyramid close together about\r\nyou.  Below you is a small, slippery-looking hole that plummets into\r\nblackness.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "The crawlway gets a little larger to the east.\r\n"
+door = 0
+key = -1
+to_room = 5314
+
+[[rooms.exits]]
+dir = 2
+description = "The crawlway continues to diminish in size to the south.\r\n"
+door = 0
+key = -1
+to_room = 5316
+
+[[rooms.exits]]
+dir = 5
+description = "The hole looks very slippery and very dark.\r\n"
+door = 0
+key = -1
+to_room = 5317
+[[rooms]]
+vnum = 5316
+name = "The Crawlway's End"
+description = "   The crawlway shrinks away to nothing as the sandy stones of the pyramid\r\nclose together into a space through which only a snake could fit.   There is\r\nbarely enough space to turn around and make your way back through the tiny\r\ncrawlway to the north.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "The crawlway gets a little larger to the north.\r\n"
+door = 0
+key = -1
+to_room = 5315
+[[rooms]]
+vnum = 5317
+name = "A Slippery Hole"
+description = "   The sides of this hole are slippery-smooth.  You lower yourself in, and \r\nproceed to move downward... when suddenly you lose your purchase!\r\n\r\nYou fall for what seems like an eternity, and smash into the stones below...\r\n\r\n\r\n\r\nUnder The Hole\r\n   You are in a small chamber underneath the slippery hole, far below\r\nthe pyramid now.   The floor is strewn with bones.  To the south is a\r\nsmall rocky crevasse.\r\n"
+flags = "acd"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "You see a rocky crevasse that proceeds deep under the pyramid.\r\n"
+door = 0
+key = -1
+to_room = 5319
+
+[[rooms.exits]]
+dir = 4
+description = "The hole looks far too slippery to climb back up.\r\n"
+door = 0
+key = -1
+to_room = -1
+
+[[rooms.extra]]
+keyword = "bones"
+description = "The bones have whitened and cracked in the dry air, apparently the remains \r\nof adventurers, thieves, and creatures that did not survive the fall.\r\n"
+[[rooms]]
+vnum = 5318
+name = "Under The Hole"
+description = "   You are in a small chamber underneath the slippery hole, far below\r\nthe pyramid now.   The floor is strewn with bones.  To the south is a\r\nsmall rocky crevasse.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "You see a rocky crevasse that proceeds deep under the pyramid.\r\n"
+door = 0
+key = -1
+to_room = 5319
+
+[[rooms.exits]]
+dir = 4
+description = "The hole looks far too slippery to climb back up.\r\n"
+door = 0
+key = -1
+to_room = -1
+
+[[rooms.extra]]
+keyword = "bones"
+description = "The bones have whitened and cracked in the dry air, apparently the remains \r\nof adventurers, thieves, and creatures that did not survive the fall.\r\n"
+[[rooms]]
+vnum = 5319
+name = "A Rough Crevasse"
+description = "   You are now exploring deep within a strange rocky crevasse that plunges\r\ndown into the rock on which the pyramid was constructed.  To the south you\r\nsee the flickering light of a fire, and the crevasse proceeds downward.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see a small stone chamber littered with bones.\r\n"
+door = 0
+key = -1
+to_room = 5318
+
+[[rooms.exits]]
+dir = 2
+description = "You see the flickering light of a small fire.\r\n"
+door = 0
+key = -1
+to_room = 5320
+
+[[rooms.exits]]
+dir = 5
+description = "The crevasse continues downward into total darkness.\r\n"
+door = 0
+key = -1
+to_room = 5321
+
+[[rooms.extra]]
+keyword = "rough"
+description = "As you look through the rough terrain, your eyes catch a small glint of light!\r\n"
+[[rooms]]
+vnum = 5320
+name = "A Small Fire"
+description = "   Here a small fire burns in a nook in the rocks, providing some warmth and\r\ncomforting light in the cold, dark, dry air.\r\nStanding here is a strange-looking old man, who stares at you balefully.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see a massive crevasse that plunges into darkness.\r\n"
+door = 0
+key = -1
+to_room = 5319
+
+[[rooms.extra]]
+keyword = "man old"
+description = "The old man looks like he has been trapped down here far too long, and\r\nhas begun to lose his mind.  He moves about slowly, cackling to himself.\r\n\r\nHe turns to you and shouts, 'nope measse!  nope measse!', then turns \r\nback and stares into the fire.\r\n\r\n'What a strange person,' you think to yourself.\r\n\r\n"
+[[rooms]]
+vnum = 5321
+name = "Down The Crevasse"
+description = "   The crevasse proceeds downward into the dark depths of the earth.\r\nThe air about you is now cold and quite dry, and your light source\r\ngutters in a cool breeze that wafts up from below.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 4
+description = "It is too dark for you to see any further along the crevasse.\r\n"
+door = 0
+key = -1
+to_room = 5319
+
+[[rooms.exits]]
+dir = 5
+description = "It is too dark for you to see any further along the crevasse.\r\n"
+door = 0
+key = -1
+to_room = 5322
+[[rooms]]
+vnum = 5322
+name = "At The Crevasse's End"
+description = "   Here the crevasse comes to an abrupt end.  A chilling wind howls\r\nat your face from a black shape to the south, but the light from your\r\nsource is too dim to see exactly what it is.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "You see a strange-looking black shape.\r\n"
+keyword = "sesame"
+door = 2
+key = 5323
+to_room = 5323
+
+[[rooms.exits]]
+dir = 4
+description = "It is too dark for you to see anything along the crevasse.\r\n"
+door = 0
+key = -1
+to_room = 5321
+
+[[rooms.extra]]
+keyword = "tiger head animal sesame"
+description = "You are now certain that the wind is the cold breath of some unearthly\r\ngiant animal, whose voice rumbles lowly on the breeze, and whose\r\nmassive jaws could easily swallow you whole.\r\n\r\nYou move closer for a better look, when suddenly a pair of eyes flashes.\r\nA cold voice echoes: 'SEEK YE THE DIAMOND... IN THE ROUGH...'\r\n\r\n... Then all is silent.\r\n"
+
+[[rooms.extra]]
+keyword = "black shape"
+description = "Wind howls about your ears like the roar of a tiger.  As your eyes\r\nadjust to the light the shape to the south almost seems to take the\r\nform of a massive animal head.\r\n"
+[[rooms]]
+vnum = 5323
+name = "The Vault Of The Lamp"
+description = "   The jaws of the massive stone tiger part wide to reveal a great vault.\r\nAn arched ceiling lies far above your head... and all about you is a low\r\nguttural rumbling noise and a chill wind.\r\nGiant heaps of ancient treasure, gold coins, and valuables surround you\r\non all sides.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "Through the jaws of the tiger you see the blackness of the crevasse.\r\n"
+door = 2
+key = 5323
+to_room = 5322
+
+[[rooms.extra]]
+keyword = "treasure gold coins valuables"
+description = "You reach for some of the tasty goodies, when you hear a loud rumbling\r\nsound and see a bright flash of light...\r\n\r\nThen the words: 'TAKE ONLY THE LAMP... TOUCH NOTHING ELSE.'\r\n\r\n... All is silent once again.\r\n"
+[[rooms]]
+vnum = 5324
+name = "A Crack In The Wall"
+description = "   You exhale, and squeeze yourself into the narrow crack in the wall.\r\nDust fills your eyes as you disturb it, and chunks of mortar and stone\r\nmixed with a touch of sand fall on you as you scrape your way through.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see a musty chamber.\r\n"
+door = 0
+key = -1
+to_room = 5309
+
+[[rooms.exits]]
+dir = 2
+description = "You see a tomb.\r\n"
+door = 0
+key = -1
+to_room = 5325
+[[rooms]]
+vnum = 5325
+name = "A Looted Tomb"
+description = "  The floor of this small tomb is littered with the lids of \r\nsmashed sarcophagi, bits of treasure dropped by thieves and\r\nlooters, and corpses pulled from their resting places.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see a small crack in the wall through which you might be able to slide.\r\n"
+door = 0
+key = -1
+to_room = 5324
+
+[[rooms.exits]]
+dir = 1
+description = "To the east is another tomb.\r\n"
+door = 0
+key = -1
+to_room = 5333
+
+[[rooms.exits]]
+dir = 3
+description = "To the west is another tomb.\r\n"
+door = 0
+key = -1
+to_room = 5326
+[[rooms]]
+vnum = 5326
+name = "A Demolished Tomb"
+description = "  This tomb has been utterly destroyed by thieves and looters in search of\r\nthe treasures of the pharoahs.  Nothing of interest remains in this room,\r\nexcept a large stone coffin that leans against the western wall.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "To the east is another tomb.\r\n"
+door = 0
+key = -1
+to_room = 5325
+
+[[rooms.exits]]
+dir = 3
+description = "You see a large stone coffin.\r\n"
+keyword = "coffin lid"
+door = 2
+key = 5312
+to_room = 5327
+
+[[rooms.extra]]
+keyword = "man garments pharoah"
+description = "As you look closer at the figure sculpted into the stone coffin you notice a\r\nsmall marking carved into its chest.  It looks like a scarab or small beetle\r\nwould fit into the small space, if properly sized.\r\n\r\nHmmm.\r\n"
+
+[[rooms.extra]]
+keyword = "coffin lid"
+description = "The coffin is sculpted into the form of a man, standing several heads above\r\nyou, and clad in the garments of pharoahs.  It has apparently been untouched\r\nby the ravages of time and the activities of looters.  Several markings on the \r\nside indicate spots where unsuccessful attempts were made to open the coffin.\r\n\r\nYou can't see any way to open it.\r\n"
+[[rooms]]
+vnum = 5327
+name = "A Stairway"
+description = "   You stand now at the head of a stairway that goes down into darkness.\r\nThe steps and walls are smooth sandy stone, covered with a thick layer\r\nof dust.  Some inscriptions are carved into the wall here.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "You see the backside of the coffin lid, featureless stone.\r\n"
+keyword = "coffin lid"
+door = 2
+key = -1
+to_room = 5326
+
+[[rooms.exits]]
+dir = 5
+description = "It is too dark to see down the stairway.\r\n"
+door = 0
+key = -1
+to_room = 5328
+
+[[rooms.extra]]
+keyword = "coffin lid"
+description = "On this side the coffin lid is smooth featureless stone.\r\n"
+
+[[rooms.extra]]
+keyword = "inscriptions"
+description = "You blow dust away from the inscriptions to read:\r\n\r\nBeware the curse of the mummy.\r\n\r\n"
+[[rooms]]
+vnum = 5328
+name = "A Stairway"
+description = "   You are on a stairway that disappears into darkness in both directions.\r\nThe smooth, uneven steps of the stairway have not been travelled in what\r\nappears to be centuries.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 4
+description = "It is too dark to see up the stairway.\r\n"
+door = 0
+key = -1
+to_room = 5327
+
+[[rooms.exits]]
+dir = 5
+description = "It is too dark to see down the stairway.\r\n"
+door = 0
+key = -1
+to_room = 5329
+[[rooms]]
+vnum = 5329
+name = "A Stairway"
+description = "   You stand now at the base of the uneven stairway.  The walls, floor,\r\nand ceiling of this small landing are covered with strange hieroglyphics.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "You see a seam in the stone wall.\r\n"
+keyword = "stone"
+door = 1
+key = -1
+to_room = 5330
+
+[[rooms.exits]]
+dir = 4
+description = "It is too dark to see up the stairway.\r\n"
+door = 0
+key = -1
+to_room = 5328
+
+[[rooms.extra]]
+keyword = "walls floor ceiling hieroglyphics"
+description = "The hieroglyphics are covered with a thick layer of dust.  You clear the\r\ndust away with your hand, and find that you cannot comprehend them.\r\n"
+[[rooms]]
+vnum = 5330
+name = "The Ancient Hall"
+description = "   Here the air is deathly still, motes of dust thickly obscuring your\r\nvision.  Several stone statues line the walls of the hall, depicting the \r\ngods of an ancient society.  Strange glyphs and sigils cover the walls, a \r\npeculiar pictorial form of written language that you don't understand.\r\n   Some steps lead to a raised dais to the south.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see a seam in the stone wall.\r\n"
+keyword = "stone"
+door = 1
+key = -1
+to_room = 5329
+
+[[rooms.exits]]
+dir = 2
+description = "You see a small raised dais.\r\n"
+door = 0
+key = -1
+to_room = 5331
+
+[[rooms.extra]]
+keyword = "writings glyphs sigils hieroglyphics symbols"
+description = "You don't understand the meaning of these symbols.\r\n"
+[[rooms]]
+vnum = 5331
+name = "A Raised Dais"
+description = "   You are at the southern end of the ancient hall, the dust and darkness\r\nabsorbing your light so that you cannot see past the steps of the dais.\r\nA low pedestal rests here.  You see something written into the face of it.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You cannot see past the steps of the dais.\r\n"
+door = 0
+key = -1
+to_room = 5330
+
+[[rooms.exits]]
+dir = 5
+description = "You see a seam in the stone floor.\r\n"
+keyword = "tomb"
+door = 1
+key = -1
+to_room = 5332
+
+[[rooms.extra]]
+keyword = "pedestal writings"
+description = "The writings are covered in sand and worn nearly away by the passage\r\nof time: 'I am Ramses the Damned, once counselor and aide to the mightiest\r\nof pharoahs and queens of this land.  Much time has passed since I last\r\nwalked the earth.  Disturb my rest at your peril.'\r\n"
+[[rooms]]
+vnum = 5332
+name = "The Tomb Of Ramses"
+description = "   You stand in an empty tomb, a cubicle no more then ten feet to a side.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 4
+description = "That leads back the way you came.\r\n"
+keyword = "tomb"
+door = 1
+key = -1
+to_room = 5331
+[[rooms]]
+vnum = 5333
+name = "A Ransacked Tomb"
+description = "  This tomb has been completely ransacked and destroyed by the actions\r\nof pyramid thieves and looters.  The floor is littered with junk.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "To the east is a low-ceilinged tunnel.\r\n"
+door = 0
+key = -1
+to_room = 5334
+
+[[rooms.exits]]
+dir = 3
+description = "To the west is another tomb.\r\n"
+door = 0
+key = -1
+to_room = 5325
+[[rooms]]
+vnum = 5334
+name = "A Tunnel"
+description = "   The low-ceilinged tunnel runs east-west.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "You cannot see into the darkness of the low tunnel.\r\n"
+door = 0
+key = -1
+to_room = 5335
+
+[[rooms.exits]]
+dir = 3
+description = "You see a tomb.\r\n"
+door = 0
+key = -1
+to_room = 5333
+[[rooms]]
+vnum = 5335
+name = "A Fork In The Tunnel"
+description = "   Here the tunnel forks off through a gaping hole down in the\r\nsouthern wall, continuing onward to the east and west as well.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "You cannot see into the darkness of the low tunnel.\r\n"
+door = 0
+key = -1
+to_room = 5336
+
+[[rooms.exits]]
+dir = 2
+description = "The hole is low, at the floor of the southern wall.\r\n"
+door = 0
+key = -1
+to_room = -1
+
+[[rooms.exits]]
+dir = 3
+description = "You cannot see into the darkness of the low tunnel.\r\n"
+door = 0
+key = -1
+to_room = 5334
+
+[[rooms.exits]]
+dir = 5
+description = "Through the hole you see rubble and sand.\r\n"
+door = 0
+key = -1
+to_room = 5346
+
+[[rooms.extra]]
+keyword = "hole"
+description = "The hole is low, at the floor of the southern wall.\r\n"
+[[rooms]]
+vnum = 5336
+name = "A Tunnel"
+description = "   The low-ceilinged tunnel makes a turn to the west and ends\r\nto the north as it spills out into a dusty hallway.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "The mouth of the tunnel is stone that has been torn away by looters.\r\n"
+door = 0
+key = -1
+to_room = 5342
+
+[[rooms.exits]]
+dir = 3
+description = "You cannot see into the darkness of the low tunnel.\r\n"
+door = 0
+key = -1
+to_room = 5335
+[[rooms]]
+vnum = 5337
+name = "A Dank Chamber"
+description = "   This chamber has a dank, dusty, musty smell to it.  Small footprints\r\nin the dust betray the recent passage of some sort of creatures.  A hole \r\nin the floor lies to the west and a stairway is to the east.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "You see a spiral stone stairway.\r\n"
+door = 0
+key = -1
+to_room = 5338
+
+[[rooms.exits]]
+dir = 3
+description = "You see only blackness through the hole in the floor.\r\n"
+door = 0
+key = -1
+to_room = 5312
+[[rooms]]
+vnum = 5338
+name = "A Spiral Stairway"
+description = "   Some dusty, broken stone stairs here spiral slowly in a constricted\r\nspace down towards a dusty hallway.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 4
+description = "The stairs spiral up into a dank chamber.\r\n"
+door = 0
+key = -1
+to_room = 5337
+
+[[rooms.exits]]
+dir = 5
+description = "The stairs spiral down into a dusty hallway.\r\n"
+door = 0
+key = -1
+to_room = 5341
+[[rooms]]
+vnum = 5339
+name = "A Dust-Covered Hallway"
+description = "   This hallway is covered with dust that has accumulated over the\r\ncenturies that the pyramid has stood.  Small markings and footprints\r\nin the dust betray the recent passage of others -- perhaps thieves?\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "The hallway proceeds to the east towards a strange smell.\r\n"
+door = 0
+key = -1
+to_room = 5340
+
+[[rooms.exits]]
+dir = 3
+description = "The hallway proceeds towards the west towards a musty smell.\r\n"
+door = 0
+key = -1
+to_room = 5309
+[[rooms]]
+vnum = 5340
+name = "A Smelly Chamber"
+description = "   This small chamber has a sickly putrescent smell to it, the\r\nsmell of formaldehyde and other ointments used to preserve the\r\ncorpses of those who died ages ago.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "You see a dusty hallway.\r\n"
+door = 0
+key = -1
+to_room = 5341
+
+[[rooms.exits]]
+dir = 3
+description = "You a dusty hallway.\r\n"
+door = 0
+key = -1
+to_room = 5339
+[[rooms]]
+vnum = 5341
+name = "A Dust-Covered Hallway"
+description = "   This hallway is covered with a thick, choking dust that rises\r\nup to obscure your light source and sting your eyes.  Small marks\r\nand footprints in the dust betray the recent passage of others.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "The hallway turns to the north.\r\n"
+door = 0
+key = -1
+to_room = 5342
+
+[[rooms.exits]]
+dir = 3
+description = "You smell something peculiar over there.\r\n"
+door = 0
+key = -1
+to_room = 5340
+
+[[rooms.exits]]
+dir = 4
+description = "A tightly spiralling stone stairway leads up.\r\n"
+door = 0
+key = -1
+to_room = 5338
+[[rooms]]
+vnum = 5342
+name = "A Turn In The Hallway"
+description = "   You are standing in an elbow turn in a dust-covered stone hallway,\r\nthat dead ends to the north and continues on to the west.  To the south\r\nthe stones of the pyramid have been torn asunder by thieves, making\r\na low-ceilinged tunnel.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "The hallway ends to the north.\r\n"
+door = 0
+key = -1
+to_room = 5343
+
+[[rooms.exits]]
+dir = 2
+description = "The tunnel is dark.\r\n"
+door = 0
+key = -1
+to_room = 5336
+
+[[rooms.exits]]
+dir = 3
+description = "The dust-covered hallway continues to the west.\r\n"
+door = 0
+key = -1
+to_room = 5341
+[[rooms]]
+vnum = 5343
+name = "A Dead End"
+description = "   The dust-covered hallway has come to an abrupt end at a stony,\r\nfeatureless wall.  Here and there are signs of the recent passage\r\nof others in the dust.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "The dusty hall continues to the south.\r\n"
+door = 0
+key = -1
+to_room = 5342
+
+[[rooms.exits]]
+dir = 5
+description = "The floor is quite dusty, and made of stone.  You see some cracks.\r\n"
+keyword = "floor"
+door = 1
+key = -1
+to_room = 5344
+
+[[rooms.extra]]
+keyword = "cracks"
+description = "The cracks look like you might be able to pull away some pieces of\r\nthe floor, perhaps even fit your body through the space you make.\r\n"
+[[rooms]]
+vnum = 5344
+name = "The Tomb Entrance"
+description = "   You are in a small, dark chamber that has stood undisturbed for\r\nmany years.  To the north stands a massive stone tomb, which is\r\ncovered in hieroglyphics and gold-lined carvings that mark it as the\r\nfinal resting place of the mighty pharoahs of this land.\r\n"
+flags = "acd"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see the tomb of the pharoahs.\r\n"
+keyword = "tomb"
+door = 1
+key = -1
+to_room = 5345
+
+[[rooms.exits]]
+dir = 4
+description = "The stone ceiling has some cracks in it, through which a dim light streams.\r\n"
+keyword = "ceiling"
+door = 1
+key = -1
+to_room = 5343
+
+[[rooms.extra]]
+keyword = "hieroglyphics carvings"
+description = "The markings indicate that this tomb is indeed the tomb of the greatest\r\npharoahs of the ancient civilization that built this massive pyramid.\r\n"
+
+[[rooms.extra]]
+keyword = "tomb"
+description = "The tomb looks like it has stood for many years, much like the pyramid\r\nwhich encloses it.  It is covered in small hieroglyphics.\r\n"
+[[rooms]]
+vnum = 5345
+name = "The Tomb Of The Pharoahs"
+description = "   Great golden sarcophogai line the walls of this massive tomb.  It has\r\nwithstood the passage of time intact, untouched by the hands of thieves\r\nand looters.  The treasures taken by the pharoahs to their graves still\r\nlie before your feet.\r\n"
+flags = "ad"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "That way leads back out of the tomb.\r\n"
+keyword = "tomb"
+door = 1
+key = -1
+to_room = 5344
+
+[[rooms.extra]]
+keyword = "treasures"
+description = "The treasures are dusty and fragile, but still seem quite valuable.\r\nYou decide not to take them out of respect for the ancient dead.\r\n"
+[[rooms]]
+vnum = 5346
+name = "A Rubble-Strewn Hallway"
+description = "   This hallway formerly had a beautiful arch to the ceiling, now\r\ncollapsed under the weight of the slowly settling stones of the\r\npyramid.  Now, a massive pile of rubble leads up into a hole high \r\nin the northern portion of the hallway.  To the south, through the \r\nrubble and fallen stones you see a sandstone crypt.\r\n"
+flags = "acd"
+sector = 0
+
+[[rooms.exits]]
+dir = 2
+description = "You see a sandstone crypt.\r\n"
+door = 0
+key = -1
+to_room = 5347
+
+[[rooms.exits]]
+dir = 4
+description = "From here you see only darkness.\r\n"
+door = 0
+key = -1
+to_room = 5335
+[[rooms]]
+vnum = 5347
+name = "A Sandstone Crypt"
+description = "   This small crypt is lit by a hole in the wall to the south, through\r\nwhich sand pours from the desert outside.  A hot wind blows in from the\r\ndesert, drying your skin instantly.  To the east and north the arched\r\nhallway continues.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "The arched hallway collapses into rubble shortly to the north.\r\n"
+door = 0
+key = -1
+to_room = 5346
+
+[[rooms.exits]]
+dir = 1
+description = "You see a beautifully arched hallway.\r\n"
+door = 0
+key = -1
+to_room = 5348
+
+[[rooms.exits]]
+dir = 2
+description = "You see a lot of sand.\r\n"
+door = 0
+key = -1
+to_room = 5353
+[[rooms]]
+vnum = 5348
+name = "An Arched Hall"
+description = "   This hallway has a beautiful arch to it, formed painstakingly and\r\nexquisitely out of the sandy stones of the pyramid.  The dust that\r\ncovers most of the rest of the pyramid interior is not present here,\r\nscoured away by the blowing of the desert winds that howl about\r\nyour ears.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 1
+description = "The arched hall proceeds to the east, making a sharp southward turn.\r\n"
+door = 0
+key = -1
+to_room = 5349
+
+[[rooms.exits]]
+dir = 3
+description = "The arched hall proceeds into a sandstone crypt.\r\n"
+door = 0
+key = -1
+to_room = 5347
+[[rooms]]
+vnum = 5349
+name = "An Arched Hall"
+description = "   This hallway has a beautiful arch to it, formed painstakingly and\r\nexquisitely out of the sandy stones of the pyramid.  To the east is\r\na small, golden-coloured crypt, and the hall proceeds to the south\r\nand north.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "The arched hall proceeds to the north, making a sharp westward turn.\r\n"
+door = 0
+key = -1
+to_room = 5348
+
+[[rooms.exits]]
+dir = 1
+description = "A small golden crypt lies to the east.\r\n"
+door = 0
+key = -1
+to_room = 5350
+
+[[rooms.exits]]
+dir = 2
+description = "The arched hall proceeds to the south.\r\n"
+door = 0
+key = -1
+to_room = 5351
+[[rooms]]
+vnum = 5350
+name = "A Golden Crypt"
+description = "   You stand inside a small crypt with walls and ceiling made of\r\ngolden bricks that obscure the large sandy stones of the pyramid.\r\nSmall rugs and tapestries are scattered about the floor here, and\r\nthey appear to have been used recently.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 3
+description = "You see an arched hall.\r\n"
+door = 0
+key = -1
+to_room = 5349
+
+[[rooms.extra]]
+keyword = "bricks"
+description = "The small golden bricks are very smooth and also quite soft.\r\n"
+
+[[rooms.extra]]
+keyword = "rug rugs tapestry tapestries"
+description = "The rugs and tapestries are very fine and worn with age, their colors\r\nnow faded.  They depict scenes of life in an ancient desert city.\r\n"
+[[rooms]]
+vnum = 5351
+name = "An Arched Hall"
+description = "   This hallway has a beautiful arch to it, formed painstakingly and\r\nexquisitely out of the sandy stones of the pyramid.  The arched\r\nhall proceeds to the north and ends to the south in a small vault.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "The arched hall continues to the north.\r\n"
+door = 0
+key = -1
+to_room = 5349
+
+[[rooms.exits]]
+dir = 2
+description = "You see a small vault from which a shining light issues.\r\n"
+door = 0
+key = -1
+to_room = 5352
+[[rooms]]
+vnum = 5352
+name = "A Shining Vault"
+description = "   The stones of the pyramid here take on a strange, twinkling quality,\r\nalmost seeming to shine with an internal light.  As you look closer you\r\nsee tiny glass-like glittery particles within the stones, that reflect\r\nthe light from your light source so perfectly that they seem to shine.\r\n"
+flags = "d"
+sector = 0
+
+[[rooms.exits]]
+dir = 0
+description = "You see a hall with a beautifully arched ceiling.\r\n"
+door = 0
+key = -1
+to_room = 5351
+
+[[rooms.extra]]
+keyword = "particles glass"
+description = "The glassy particles reflect and refract your light source in a myriad\r\nof dazzling colours that dance across your eyes and make you giggle.\r\n"
+[[rooms]]
+vnum = 5353
+name = "A Massive Sand Dune"
+description = "   You stand now on a massive sand dune on the southern side of\r\nthe pyramid.  At the foot of the sand dune to the north you see a\r\nsmall hole where the stones of the pyramid have collapsed.  Not\r\nfar to the south is a massive roiling sandstorm; the wind from the\r\nstorm howls and bites at your face even here.\r\n"
+flags = "c"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "You see a small hole leading back into the pyramid.\r\n"
+door = 0
+key = -1
+to_room = 5347
+
+[[rooms.exits]]
+dir = 2
+description = "You see only a wall of whirling, blowing, dry sand.\r\n"
+door = 0
+key = -1
+to_room = 5354
+
+[[rooms.extra]]
+keyword = "sand dune sandstorm"
+description = "The sand is very white, and very sandy.  There sure is a lot of it.\r\n"
+[[rooms]]
+vnum = 5354
+name = "A Swirling Sandstorm"
+description = "   You are caught in the midst of a massive sandstorm.  Howling winds\r\nbuffet you from all sides, and the sand tears at your skin, blinding\r\nyou and choking you.  You have lost all sense of direction.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "You see only a wall of whirling, blowing, dry sand.\r\n"
+door = 0
+key = -1
+to_room = 5353
+
+[[rooms.exits]]
+dir = 1
+description = "You see only a wall of whirling, blowing, dry sand.\r\n"
+door = 0
+key = -1
+to_room = 5354
+
+[[rooms.exits]]
+dir = 2
+description = "You see only a wall of whirling, blowing, dry sand.\r\n"
+door = 0
+key = -1
+to_room = 5355
+
+[[rooms.exits]]
+dir = 3
+description = "You see only a wall of whirling, blowing, dry sand.\r\n"
+door = 0
+key = -1
+to_room = 5354
+
+[[rooms.extra]]
+keyword = "sand"
+description = "Sand is about all you CAN see right now.  Unfortunately, it isn't very\r\ninteresting sand, only white, dry, and blowing all over the place.\r\n"
+[[rooms]]
+vnum = 5355
+name = "A Swirling Sandstorm"
+description = "   You are caught in the midst of a massive sandstorm.  Howling winds\r\nbuffet you from all sides, and the sand tears at your skin, blinding\r\nyou and choking you.  You have lost all sense of direction.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "You see only a wall of whirling, blowing, dry sand.\r\n"
+door = 0
+key = -1
+to_room = 5354
+
+[[rooms.exits]]
+dir = 1
+description = "You see only a wall of whirling, blowing, dry sand.\r\n"
+door = 0
+key = -1
+to_room = 5355
+
+[[rooms.exits]]
+dir = 2
+description = "You see only a wall of whirling, blowing, dry sand.\r\n"
+door = 0
+key = -1
+to_room = 5356
+
+[[rooms.exits]]
+dir = 3
+description = "You see only a wall of whirling, blowing, dry sand.\r\n"
+door = 0
+key = -1
+to_room = 5355
+
+[[rooms.extra]]
+keyword = "sand"
+description = "Sand is about all you CAN see right now.  Unfortunately, it isn't very\r\ninteresting sand, only white, dry, and blowing all over the place.\r\n"
+[[rooms]]
+vnum = 5356
+name = "A Swirling Sandstorm"
+description = "   You are caught in the midst of a massive sandstorm.  Howling winds\r\nbuffet you from all sides, and the sand tears at your skin, blinding\r\nyou and choking you.  You have lost all sense of direction.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "You see only a wall of whirling, blowing, dry sand.\r\n"
+door = 0
+key = -1
+to_room = 5355
+
+[[rooms.exits]]
+dir = 1
+description = "You see only a wall of whirling, blowing, dry sand.\r\n"
+door = 0
+key = -1
+to_room = 5356
+
+[[rooms.exits]]
+dir = 2
+description = "You see only a wall of whirling, blowing, dry sand.\r\n"
+door = 0
+key = -1
+to_room = 5357
+
+[[rooms.exits]]
+dir = 3
+description = "You see only a wall of whirling, blowing, dry sand.\r\n"
+door = 0
+key = -1
+to_room = 5356
+
+[[rooms.extra]]
+keyword = "sand"
+description = "Sand is about all you CAN see right now.  Unfortunately, it isn't very\r\ninteresting sand, only white, dry, and blowing all over the place.\r\n"
+[[rooms]]
+vnum = 5357
+name = "A Swirling Sandstorm"
+description = "   You are caught in the midst of a massive sandstorm.  Howling winds\r\nbuffet you from all sides, and the sand tears at your skin, blinding\r\nyou and choking you.  You have lost all sense of direction.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "You see only a wall of whirling, blowing, dry sand.\r\n"
+door = 0
+key = -1
+to_room = 5356
+
+[[rooms.exits]]
+dir = 1
+description = "You see only a wall of whirling, blowing, dry sand.\r\n"
+door = 0
+key = -1
+to_room = 5357
+
+[[rooms.exits]]
+dir = 2
+description = "You see only a wall of whirling, blowing, dry sand.\r\n"
+door = 0
+key = -1
+to_room = 5358
+
+[[rooms.exits]]
+dir = 3
+description = "You see only a wall of whirling, blowing, dry sand.\r\n"
+door = 0
+key = -1
+to_room = 5357
+
+[[rooms.extra]]
+keyword = "sand"
+description = "Sand is about all you CAN see right now.  Unfortunately, it isn't very\r\ninteresting sand, only white, dry, and blowing all over the place.\r\n"
+[[rooms]]
+vnum = 5358
+name = "A Massive Sand Dune"
+description = "   Somehow you managed to make your way through the howling winds\r\nof the sandstorm, and clamber up on this sand dune.  You can see the\r\nstorm to the north of you, and presumably the pyramid is somewhere\r\nbeyond it.  Nothing but flat, featureless, open dunes of sand lie in\r\nevery other direction.\r\n"
+flags = "0"
+sector = 2
+
+[[rooms.exits]]
+dir = 0
+description = "You see only a wall of whirling, blowing, dry sand.\r\n"
+door = 0
+key = -1
+to_room = 5357
+
+[[rooms.exits]]
+dir = 2
+description = "On the southern side of the sand dune is a small hole in the sand.\r\nFor some reason you seem unable to get to it.\r\n"
+keyword = "riddle"
+door = 2
+key = 5317
+to_room = 5359
+
+[[rooms.extra]]
+keyword = "hieroglyphics symbols"
+description = "Like most of the ancient hieroglyphics of this land, the symbols are\r\ntotally incomprehensible to you.  Perhaps the Sphinx has the answer\r\nto this ancient riddle.\r\n"
+
+[[rooms.extra]]
+keyword = "riddle"
+description = "A vision forms before your eyes, in glowing hieroglyphic symbols.\r\n"
+
+[[rooms.extra]]
+keyword = "sand dune"
+description = "The sand is very white, and very sandy.  There sure is a lot of it.\r\n"
+[[rooms]]
+vnum = 5359
+name = "Through The Hole In The Sand"
+description = "   You squeeze through the small hole in the sand and land in a small\r\nwhite chamber.  Above you is a small hole, reachable by climbing up\r\nthe small sandy slope down which you slid.\r\n"
+flags = "acd"
+sector = 0
+
+[[rooms.exits]]
+dir = 4
+description = "You see a sand dune.\r\n"
+door = 0
+key = -1
+to_room = 5358
