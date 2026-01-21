@@ -13,4 +13,4 @@ Makefile
 .cvsignore
 .accepted
 
-syslog
+syslog*
