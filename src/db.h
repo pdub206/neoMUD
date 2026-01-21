@@ -94,7 +94,6 @@
 
 #define PLAYER_DIR	LIB_PLRFILES	      /* player file directory */
 #define SUF_PLAYER	"toml"
-#define PLAYER_FILE	LIB_ETC"players"   /* legacy player database */
 #define MAIL_FILE	LIB_ETC"plrmail"   /* for the mudmail system	*/
 #define BAN_FILE	LIB_ETC"badsites"  /* for the siteban system	*/
 #define HCONTROL_FILE	LIB_ETC"hcontrol"  /* for the house system	*/

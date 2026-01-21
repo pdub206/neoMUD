@@ -51,7 +51,6 @@ zone_rnum top_of_zone_table = 0;/* top element of zone tab	 */
 struct message_list fight_messages[MAX_MESSAGES];	/* fighting messages	 */
 
 struct player_index_element *player_table = NULL;	/* index to plr file	 */
-FILE *player_fl = NULL;		/* file desc of player file	 */
 int top_of_p_table = 0;		/* ref to top of table		 */
 long top_idnum = 0;		/* highest idnum in use		 */
 

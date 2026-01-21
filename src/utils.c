@@ -629,7 +629,6 @@ int num_pc_in_room(struct room_data *room)
  *
  * XXX: Wonder if flushing streams includes sockets?
  */
-extern FILE *player_fl;
 void core_dump_real(const char *who, int line)
 {
   log("SYSERR: Assertion failed at %s:%d!", who, line);
@@ -640,8 +639,6 @@ void core_dump_real(const char *who, int line)
   fflush(stdout);
   fflush(stderr);
   fflush(logfile);
-  if (player_fl)
-    fflush(player_fl);
   /* Everything, just in case, for the systems that support it. */
   fflush(NULL);
 

@@ -65,6 +65,32 @@ void Crash_calculate_rent(struct obj_data *obj, int *cost);
 void Crash_rentsave(struct char_data *ch, int cost);
 void Crash_cryosave(struct char_data *ch, int cost);
 
+static void remove_legacy_obj_file(const char *name);
+
+static void remove_legacy_obj_file(const char *name)
+{
+  char filename[PATH_MAX];
+  char legacy[PATH_MAX];
+  char *dot;
+  size_t len;
+
+  if (!get_filename(filename, sizeof(filename), CRASH_FILE, name))
+    return;
+
+  dot = strrchr(filename, '.');
+  if (!dot)
+    return;
+
+  len = (size_t)(dot - filename);
+  if (len + 1 + strlen("objs") + 1 > sizeof(legacy))
+    return;
+
+  strncpy(legacy, filename, len);
+  legacy[len] = '\0';
+  strlcat(legacy, ".objs", sizeof(legacy));
+  remove(legacy);
+}
+
 
 struct obj_data *Obj_from_store(struct obj_file_elem object, int *location)
 {
@@ -943,6 +969,7 @@ void Crash_crashsave(struct char_data *ch)
   Crash_restore_weight(ch->carrying);
 
   fclose(fp);
+  remove_legacy_obj_file(GET_NAME(ch));
   REMOVE_BIT(PLR_FLAGS(ch), PLR_CRASH);
 }
 
@@ -1022,6 +1049,7 @@ void Crash_idlesave(struct char_data *ch)
     return;
   }
   fclose(fp);
+  remove_legacy_obj_file(GET_NAME(ch));
 
   Crash_extract_objs(ch->carrying);
 }
@@ -1069,6 +1097,7 @@ void Crash_rentsave(struct char_data *ch, int cost)
     return;
   }
   fclose(fp);
+  remove_legacy_obj_file(GET_NAME(ch));
 
   Crash_extract_objs(ch->carrying);
 }
@@ -1118,6 +1147,7 @@ void Crash_cryosave(struct char_data *ch, int cost)
     return;
   }
   fclose(fp);
+  remove_legacy_obj_file(GET_NAME(ch));
 
   Crash_extract_objs(ch->carrying);
   SET_BIT(PLR_FLAGS(ch), PLR_CRYO);

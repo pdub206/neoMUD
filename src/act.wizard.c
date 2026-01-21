@@ -23,7 +23,6 @@
 #include "constants.h"
 
 /*   external vars  */
-extern FILE *player_fl;
 extern struct attack_hit_type attack_hit_text[];
 extern char *class_abbrevs[];
 extern time_t boot_time;
